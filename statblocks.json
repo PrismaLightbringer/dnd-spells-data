@@ -1,0 +1,1794 @@
+[
+  {
+    "linked_spells": [
+      "summon-aberration"
+    ],
+    "name_en": "Aberrant Spirit",
+    "name_de": "Geisterhafte Aberration",
+    "type_en": "Medium Aberration, Neutral",
+    "type_de": "Mittelgroße Aberration, neutral",
+    "ac_en": "11 + the spell's level",
+    "ac_de": "11 + Zaubergrad",
+    "hp_en": "40 + 10 for each spell level above 4",
+    "hp_de": "40 + 10 für jeden Zaubergrad ab dem 5.",
+    "speed_en": "30 ft.; Fly 30 ft. (hover; Beholderkin only)",
+    "speed_de": "9 m, Fliegen 9 m (Schweben, nur Betrachter)",
+    "stats": {
+      "str": 16,
+      "dex": 10,
+      "con": 15,
+      "int": 16,
+      "wis": 10,
+      "cha": 6
+    },
+    "saves": {
+      "str": 3,
+      "dex": 0,
+      "con": 2,
+      "int": 3,
+      "wis": 0,
+      "cha": -2
+    },
+    "immunities_en": "Psychic",
+    "immunities_de": "Psychisch",
+    "senses_en": "Darkvision 60 ft., Passive Perception 10",
+    "senses_de": "Dunkelsicht 18 m, Passive Wahrnehmung 10",
+    "languages_en": "Deep Speech, understands the languages you know",
+    "languages_de": "Tiefensprache, versteht die Sprachen, die du kennst",
+    "cr_en": "None (XP 0; PB equals your Proficiency Bonus)",
+    "cr_de": "– (EP 0, ÜB entspricht deinem Übungsbonus)",
+    "traits": [
+      {
+        "name_en": "Regeneration (Slaad Only)",
+        "name_de": "Regeneration (nur Slaad)",
+        "desc_en": "The spirit regains 5 Hit Points at the start of its turn if it has at least 1 Hit Point.",
+        "desc_de": "Der Geist erhält zu Beginn seines Zugs 5 Trefferpunkte zurück, wenn er über mindestens 1 Trefferpunkt verfügt."
+      },
+      {
+        "name_en": "Whispering Aura (Mind Flayer Only)",
+        "name_de": "Flüsternde Aura (nur Gedankenschinder)",
+        "desc_en": "At the start of each of the spirit's turns, the spirit emits psionic energy if it doesn't have the Incapacitated condition. Wisdom Saving Throw: DC equals your spell save DC, each creature (other than you) within 5 feet of the spirit. Failure: 2d6 Psychic damage.",
+        "desc_de": "Zu Beginn jedes seiner Züge strahlt der Geist psionische Energie aus, sofern er nicht kampfunfähig ist. Weisheitsrettungswurf: Der SG entspricht deinem Zauberrettungswurf-SG, jede Kreatur (außer dir) im Abstand von bis zu 1,5 Metern vom Geist. Misserfolg: 2W6 psychischer Schaden."
+      }
+    ],
+    "actions": [
+      {
+        "name_en": "Multiattack",
+        "name_de": "Mehrfachangriff",
+        "desc_en": "The spirit makes a number of attacks equal to half this spell's level (round down).",
+        "desc_de": "Der Geist führt eine Anzahl von Angriffen aus, die der Hälfte des Zaubergrads entspricht (abgerundet)."
+      },
+      {
+        "name_en": "Claw (Slaad Only)",
+        "name_de": "Klaue (nur Slaad)",
+        "desc_en": "Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d10 + 3 + the spell's level Slashing damage, and the target can't regain Hit Points until the start of the spirit's next turn.",
+        "desc_de": "Nahkampfangriffswurf: Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite 1,5 Meter. Treffer: 1W10+3 + Zaubergrad Hiebschaden, und das Ziel kann bis zum Beginn des nächsten Zugs des Geists keine Trefferpunkte zurückerhalten."
+      },
+      {
+        "name_en": "Eye Ray (Beholderkin Only)",
+        "name_de": "Augenstrahl (nur Betrachter)",
+        "desc_en": "Ranged Attack Roll: Bonus equals your spell attack modifier, range 150 ft. Hit: 1d8 + 3 + the spell's level Psychic damage.",
+        "desc_de": "Fernkampfangriffswurf: Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite 45 Meter. Treffer: 1W8+3 + Zaubergrad psychischer Schaden."
+      },
+      {
+        "name_en": "Psychic Slam (Mind Flayer Only)",
+        "name_de": "Psychischer Hieb (nur Gedankenschinder)",
+        "desc_en": "Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + 3 + the spell's level Psychic damage.",
+        "desc_de": "Nahkampfangriffswurf: Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite 1,5 Meter. Treffer: 1W8+3 + Zaubergrad psychischer Schaden."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "summon-beast"
+    ],
+    "name_en": "Bestial Spirit",
+    "name_de": "Tiergeist",
+    "type_en": "Small Beast, Neutral",
+    "type_de": "Kleines Tier, neutral",
+    "ac_en": "11 + the spell's level",
+    "ac_de": "11 + Zaubergrad",
+    "hp_en": "20 (Air only) or 30 (Land and Water only) + 5 for each spell level above 2",
+    "hp_de": "20 (nur Luft) oder 30 (nur Land und Wasser) + 5 für jeden Zaubergrad ab dem 3.",
+    "speed_en": "30 ft.; Climb 30 ft. (Land only); Fly 60 ft. (Air only); Swim 30 ft. (Water only)",
+    "speed_de": "9 m, Klettern 9 m (nur Land), Fliegen 18 m (nur Luft), Schwimmen 9 m (nur Wasser)",
+    "stats": {
+      "str": 18,
+      "dex": 11,
+      "con": 16,
+      "int": 4,
+      "wis": 14,
+      "cha": 5
+    },
+    "saves": {
+      "str": 4,
+      "dex": 0,
+      "con": 3,
+      "int": -3,
+      "wis": 2,
+      "cha": -3
+    },
+    "senses_en": "Darkvision 60 ft., Passive Perception 12",
+    "senses_de": "Dunkelsicht 18 m, Passive Wahrnehmung 12",
+    "languages_en": "understands the languages you know",
+    "languages_de": "Versteht die Sprachen, die du sprichst",
+    "cr_en": "None (XP 0; PB equals your Proficiency Bonus)",
+    "cr_de": "– (EP 0, ÜB entspricht deinem Übungsbonus)",
+    "traits": [
+      {
+        "name_en": "Flyby (Air Only)",
+        "name_de": "Vorbeifliegen (nur Luft)",
+        "desc_en": "The spirit doesn't provoke Opportunity Attacks when it flies out of an enemy's reach.",
+        "desc_de": "Der Geist provoziert keine Gelegenheitsangriffe, wenn er die Reichweite eines Gegners verlässt."
+      },
+      {
+        "name_en": "Pack Tactics (Land and Water Only)",
+        "name_de": "Rudeltaktik (nur Land und Wasser)",
+        "desc_en": "The spirit has Advantage on an attack roll against a creature if at least one of the spirit's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.",
+        "desc_de": "Der Geist ist beim Angriffswurf gegen eine Kreatur im Vorteil, wenn sich mindestens einer seiner Verbündeten, der nicht kampfunfähig ist, im Abstand von bis zu 1,5 Metern von der Kreatur befindet."
+      },
+      {
+        "name_en": "Water Breathing (Water Only)",
+        "name_de": "Wasser atmen (nur Wasser)",
+        "desc_en": "The spirit can breathe only underwater.",
+        "desc_de": "Der Geist kann nur unter Wasser atmen."
+      }
+    ],
+    "actions": [
+      {
+        "name_en": "Multiattack",
+        "name_de": "Mehrfachangriff",
+        "desc_en": "The spirit makes a number of Rend attacks equal to half this spell's level (round down).",
+        "desc_de": "Der Geist führt eine Anzahl von Zerfetzen-Angriffen aus, die der Hälfte des Zaubergrads entspricht (abgerundet)."
+      },
+      {
+        "name_en": "Rend",
+        "name_de": "Zerfetzen",
+        "desc_en": "Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + 4 + the spell's level Piercing damage.",
+        "desc_de": "Nahkampfangriffswurf: Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite 1,5 Meter. Treffer: 1W8+4 + Zaubergrad Stichschaden."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "summon-celestial"
+    ],
+    "name_en": "Celestial Spirit",
+    "name_de": "Celestischer Geist",
+    "type_en": "Large Celestial, Neutral",
+    "type_de": "Großes celestisches Wesen, neutral",
+    "ac_en": "11 + the spell's level + 2 (Defender only)",
+    "ac_de": "11 + Zaubergrad + 2 (nur Verteidiger)",
+    "hp_en": "40 + 10 for each spell level above 5",
+    "hp_de": "40 + 10 für jeden Zaubergrad ab dem 6.",
+    "speed_en": "30 ft., Fly 40 ft.",
+    "speed_de": "9 m, Fliegen 12 m",
+    "stats": {
+      "str": 16,
+      "dex": 14,
+      "con": 16,
+      "int": 10,
+      "wis": 14,
+      "cha": 16
+    },
+    "saves": {
+      "str": 3,
+      "dex": 2,
+      "con": 3,
+      "int": 0,
+      "wis": 2,
+      "cha": 3
+    },
+    "resistances_en": "Radiant",
+    "resistances_de": "Gleißend",
+    "immunities_en": "Charmed, Frightened",
+    "immunities_de": "Bezaubert, Verängstigt",
+    "senses_en": "Darkvision 60 ft., Passive Perception 12",
+    "senses_de": "Dunkelsicht 18 m, Passive Wahrnehmung 12",
+    "languages_en": "Celestial, understands the languages you know",
+    "languages_de": "Celestisch, versteht die Sprachen, die du kennst",
+    "cr_en": "None (XP 0; PB equals your Proficiency Bonus)",
+    "cr_de": "– (EP 0, ÜB entspricht deinem Übungsbonus)",
+    "actions": [
+      {
+        "name_en": "Multiattack",
+        "name_de": "Mehrfachangriff",
+        "desc_en": "The spirit makes a number of attacks equal to half this spell's level (round down).",
+        "desc_de": "Der Geist führt eine Anzahl von Angriffen aus, die der Hälfte des Zaubergrads entspricht (abgerundet)."
+      },
+      {
+        "name_en": "Radiant Bow (Avenger Only)",
+        "name_de": "Gleißender Bogen (nur Rächer)",
+        "desc_en": "Ranged Attack Roll: Bonus equals your spell attack modifier, range 600 ft. Hit: 2d6 + 2 + the spell's level Radiant damage.",
+        "desc_de": "Fernkampfangriffswurf: Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite 180 Meter. Treffer: 2W6+2 + Zaubergrad gleißender Schaden."
+      },
+      {
+        "name_en": "Radiant Mace (Defender Only)",
+        "name_de": "Gleißender Streitkolben (nur Verteidiger)",
+        "desc_en": "Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d10 + 3 + the spell's level Radiant damage, and the spirit can choose itself or another creature it can see within 10 feet of the target. The chosen creature gains 1d10 Temporary Hit Points.",
+        "desc_de": "Nahkampfangriffswurf: Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite 1,5 Meter. Treffer: 1W10+3 + Zaubergrad gleißender Schaden. Der Geist kann sich selbst oder eine andere Kreatur, die von ihm gesehen werden kann, im Abstand von bis zu drei Metern vom Ziel auswählen. Die ausgewählte Kreatur erhält 1W10 temporäre Trefferpunkte."
+      },
+      {
+        "name_en": "Healing Touch (1/Day)",
+        "name_de": "Heilende Berührung (1-mal täglich)",
+        "desc_en": "The spirit touches another creature. The target regains Hit Points equal to 2d8 + the spell's level.",
+        "desc_de": "Der Geist berührt eine andere Kreatur. Das Ziel erhält Trefferpunkte zurück, die 2W8 + dem Zaubergrad entsprechen."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "summon-construct"
+    ],
+    "name_en": "Construct Spirit",
+    "name_de": "Konstruktgeist",
+    "type_en": "Medium Construct, Neutral",
+    "type_de": "Mittelgroßes Konstrukt, neutral",
+    "ac_en": "13 + the spell's level",
+    "ac_de": "13 + Zaubergrad",
+    "hp_en": "40 + 15 for each spell level above 4",
+    "hp_de": "40 + 15 für jeden Zaubergrad ab dem 5.",
+    "speed_en": "30 ft.",
+    "speed_de": "9 m",
+    "stats": {
+      "str": 18,
+      "dex": 10,
+      "con": 18,
+      "int": 14,
+      "wis": 11,
+      "cha": 5
+    },
+    "saves": {
+      "str": 4,
+      "dex": 0,
+      "con": 4,
+      "int": 2,
+      "wis": 0,
+      "cha": -3
+    },
+    "resistances_en": "Poison",
+    "resistances_de": "Gift",
+    "immunities_en": "Charmed, Exhaustion, Frightened, Paralyzed, Poisoned",
+    "immunities_de": "Bezaubert, Erschöpft, Gelähmt, Verängstigt, Vergiftet",
+    "senses_en": "Darkvision 60 ft., Passive Perception 10",
+    "senses_de": "Dunkelsicht 18 m, Passive Wahrnehmung 10",
+    "languages_en": "Understands the languages you know",
+    "languages_de": "Versteht die Sprachen, die du sprichst",
+    "cr_en": "None (XP 0; PB equals your Proficiency Bonus)",
+    "cr_de": "– (EP 0, ÜB entspricht deinem Übungsbonus)",
+    "traits": [
+      {
+        "name_en": "Heated Body (Metal Only)",
+        "name_de": "Erhitzter Körper (nur Metall)",
+        "desc_en": "A creature that hits the spirit with a melee attack or that starts its turn in a grapple with the spirit takes 1d10 Fire damage.",
+        "desc_de": "Eine Kreatur, die den Geist mit einem Nahkampfangriff trifft oder ihren Zug vom Geist gepackt beginnt, erleidet 1W10 Feuerschaden."
+      },
+      {
+        "name_en": "Stony Lethargy (Stone Only)",
+        "name_de": "Steinerne Lethargie (nur Stein)",
+        "desc_en": "When a creature starts its turn within 10 feet of the spirit, the spirit can target it with magical energy if the spirit can see it. Wisdom Saving Throw: DC equals your spell save DC, the target. Failure: Until the start of its next turn, the target can't make Opportunity Attacks, and its Speed is halved.",
+        "desc_de": "Wenn eine Kreatur im Abstand von bis zu drei Metern vom Geist beginnt, kann der Geist mit magischer Energie auf sie zielen, sofern er sie sehen kann. Weisheitsrettungswurf: Der SG entspricht deinem Zauberrettungswurf-SG, das Ziel. Misserfolg: Das Ziel kann bis zum Beginn seines nächsten Zugs keine Gelegenheitsangriffe ausführen, und seine Bewegungsrate ist halbiert."
+      }
+    ],
+    "actions": [
+      {
+        "name_en": "Multiattack",
+        "name_de": "Mehrfachangriff",
+        "desc_en": "The spirit makes a number of Slam attacks equal to half this spell's level (round down).",
+        "desc_de": "Der Geist führt eine Anzahl von Hiebangriffen aus, die der Hälfte des Zaubergrads entspricht (abgerundet)."
+      },
+      {
+        "name_en": "Slam",
+        "name_de": "Hieb",
+        "desc_en": "Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + 4 + the spell's level Bludgeoning damage.",
+        "desc_de": "Nahkampfangriffswurf: Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite 1,5 Meter. Treffer: 1W8+4 + Zaubergrad Wuchtschaden."
+      }
+    ],
+    "reactions": [
+      {
+        "name_en": "Berserk Lashing (Clay Only)",
+        "name_de": "Berserkerpeitsche (nur Ton)",
+        "desc_en": "Trigger: The spirit takes damage from a creature. Response: The spirit makes a Slam attack against that creature if possible, or the spirit moves up to half its Speed toward that creature without provoking Opportunity Attacks.",
+        "desc_de": "Auslöser: Der Geist erleidet Schaden durch eine Kreatur. Antwort: Der Geist führt einen Hiebangriff gegen die Kreatur aus, sofern möglich, oder er nähert sich der Kreatur bis zur Hälfte der Bewegungsrate, ohne Gelegenheitsangriffe zu provozieren."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "summon-dragon"
+    ],
+    "name_en": "Draconic Spirit",
+    "name_de": "Drakonischer Geist",
+    "type_en": "Large Dragon, Neutral",
+    "type_de": "Großer Drache, neutral",
+    "ac_en": "14 + the spell's level",
+    "ac_de": "14 + Zaubergrad",
+    "hp_en": "50 + 10 for each spell level above 5",
+    "hp_de": "50 + 10 für jeden Zaubergrad ab dem 6.",
+    "speed_en": "30 ft., Fly 60 ft., Swim 30 ft.",
+    "speed_de": "9 m, Fliegen 18 m, Schwimmen 9 m",
+    "stats": {
+      "str": 19,
+      "dex": 14,
+      "con": 17,
+      "int": 10,
+      "wis": 14,
+      "cha": 14
+    },
+    "saves": {
+      "str": 4,
+      "dex": 2,
+      "con": 3,
+      "int": 0,
+      "wis": 2,
+      "cha": 2
+    },
+    "resistances_en": "Acid, Cold, Fire, Lightning, Poison",
+    "resistances_de": "Blitz, Feuer, Gift, Kälte, Säure",
+    "immunities_en": "Charmed, Frightened, Poisoned",
+    "immunities_de": "Bezaubert, Verängstigt, Vergiftet",
+    "senses_en": "Blindsight 30 ft., Darkvision 60 ft., Passive Perception 12",
+    "senses_de": "Blindsicht 9 m, Dunkelsicht 18 m, Passive Wahrnehmung 12",
+    "languages_en": "Draconic, understands the languages you know",
+    "languages_de": "Drakonisch, versteht die Sprachen, die du kennst",
+    "cr_en": "None (XP 0; PB equals your Proficiency Bonus)",
+    "cr_de": "– (EP 0, ÜB entspricht deinem Übungsbonus)",
+    "traits": [
+      {
+        "name_en": "Shared Resistances",
+        "name_de": "Gemeinsame Resistenzen",
+        "desc_en": "When you summon the spirit, choose one of its Resistances. You have Resistance to the chosen damage type until the spell ends.",
+        "desc_de": "Wenn du den Geist beschwörst, wähle eine seiner Resistenzen aus. Du bist gegen die ausgewählte Schadensart resistent, bis der Zauber endet."
+      }
+    ],
+    "actions": [
+      {
+        "name_en": "Multiattack",
+        "name_de": "Mehrfachangriff",
+        "desc_en": "The spirit makes a number of Rend attacks equal to half this spell's level (round down), and it uses Breath Weapon.",
+        "desc_de": "Der Geist führt eine Anzahl von Zerfetzen-Angriffen in Höhe der Hälfte des Zaubergrades (abgerundet) aus und setzt seine Odemwaffe ein."
+      },
+      {
+        "name_en": "Rend",
+        "name_de": "Zerfetzen",
+        "desc_en": "Melee Attack: Bonus equals your spell attack modifier, reach 10 feet. Hit: 1d6 + 4 + the spell's level Piercing damage.",
+        "desc_de": "Nahkampfangriffswurf: Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite drei Meter. Treffer: 1W6+4 + Zaubergrad Stichschaden."
+      },
+      {
+        "name_en": "Breath Weapon",
+        "name_de": "Odemwaffe",
+        "desc_en": "Dexterity Saving Throw: DC equals your spell save DC, each creature in a 30-foot Cone. Failure: 2d6 damage of a type this spirit has Resistance to (your choice when you cast the spell). Success: Half damage.",
+        "desc_de": "Geschicklichkeitsrettungswurf: Der SG entspricht deinem Zauberrettungswurf-SG, alle Kreaturen in einem Kegel von neun Metern. Misserfolg: 2W6 Schaden von einer Art, gegen die dieser Geist resistent ist (nach deiner Wahl beim Wirken des Zaubers). Erfolg: Halber Schaden."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "summon-elemental"
+    ],
+    "name_en": "Elemental Spirit",
+    "name_de": "Elementargeist",
+    "type_en": "Medium Elemental, Neutral",
+    "type_de": "Mittelgroßer Elementar, neutral",
+    "ac_en": "11 + the spell's level",
+    "ac_de": "11 + Zaubergrad",
+    "hp_en": "50 + 10 for each spell level above 4",
+    "hp_de": "50 + 10 für jeden Zaubergrad ab dem 5.",
+    "speed_en": "40 ft.; Burrow 40 ft. (Earth only); Fly 40 ft. (hover; Air only); Swim 40 ft. (Water only)",
+    "speed_de": "12 m, Graben 12 m (nur Erde), Fliegen 12 m (Schweben, nur Luft), Schwimmen 12 m (nur Wasser)",
+    "stats": {
+      "str": 18,
+      "dex": 15,
+      "con": 17,
+      "int": 4,
+      "wis": 10,
+      "cha": 16
+    },
+    "saves": {
+      "str": 4,
+      "dex": 2,
+      "con": 3,
+      "int": -3,
+      "wis": 0,
+      "cha": 3
+    },
+    "resistances_en": "Acid (Water only), Lightning and Thunder (Air only), Piercing and Slashing (Earth only)",
+    "resistances_de": "Säure (nur Wasser), Blitz und Schall (nur Luft), Stichschaden und Hiebschaden (nur Erde)",
+    "immunities_en": "Fire (Fire only), Poison; Exhaustion, Paralyzed, Petrified, Poisoned",
+    "immunities_de": "Feuer (nur Feuer), Gift; Erschöpft, Gelähmt, Versteinert, Vergiftet",
+    "senses_en": "Darkvision 60 ft., Passive Perception 10",
+    "senses_de": "Dunkelsicht 18 m, Passive Wahrnehmung 10",
+    "languages_en": "Primordial, understands the languages you know",
+    "languages_de": "Urtümlich, versteht die Sprachen, die du kennst",
+    "cr_en": "None (XP 0; PB equals your Proficiency Bonus)",
+    "cr_de": "– (EP 0, ÜB entspricht deinem Übungsbonus)",
+    "traits": [
+      {
+        "name_en": "Amorphous Form (Air, Fire, and Water Only)",
+        "name_de": "Amorphe Gestalt (nur Feuer, Luft und Wasser)",
+        "desc_en": "The spirit can move through a space as narrow as 1 inch wide without it counting as Difficult Terrain.",
+        "desc_de": "Der Geist kann sich durch einen engen Bereich mit einer Breite von nur 2,5 Zentimetern bewegen, ohne dass dieser für ihn als schwieriges Gelände zählt."
+      }
+    ],
+    "actions": [
+      {
+        "name_en": "Multiattack",
+        "name_de": "Mehrfachangriff",
+        "desc_en": "The spirit makes a number of Slam attacks equal to half this spell's level (round down).",
+        "desc_de": "Der Geist führt eine Anzahl von Hiebangriffen aus, die der Hälfte des Zaubergrads entspricht (abgerundet)."
+      },
+      {
+        "name_en": "Slam",
+        "name_de": "Hieb",
+        "desc_en": "Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d10 + 4 + the spell's level Bludgeoning (Earth only), Cold (Water only), Lightning (Air only), or Fire (Fire only) damage.",
+        "desc_de": "Nahkampfangriffswurf: Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite 1,5 Meter. Treffer: 1W10+4 + Zaubergrad Wuchtschaden (nur Erde), Kälteschaden (nur Wasser), Blitzschaden (nur Luft) oder Feuerschaden (nur Feuer)."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "summon-fey"
+    ],
+    "name_en": "Fey Spirit",
+    "name_de": "Feengeist",
+    "type_en": "Small Fey, Neutral",
+    "type_de": "Kleines Feenwesen, neutral",
+    "ac_en": "12 + the spell's level",
+    "ac_de": "12 + Zaubergrad",
+    "hp_en": "30 + 10 for each spell level above 3",
+    "hp_de": "30 + 10 für jeden Zaubergrad ab dem 4.",
+    "speed_en": "30 ft., Fly 30 ft.",
+    "speed_de": "9 m, Fliegen 9 m",
+    "stats": {
+      "str": 13,
+      "dex": 16,
+      "con": 14,
+      "int": 14,
+      "wis": 11,
+      "cha": 16
+    },
+    "saves": {
+      "str": 1,
+      "dex": 3,
+      "con": 2,
+      "int": 2,
+      "wis": 0,
+      "cha": 3
+    },
+    "immunities_en": "Charmed",
+    "immunities_de": "Bezaubert",
+    "senses_en": "Darkvision 60 ft., Passive Perception 10",
+    "senses_de": "Dunkelsicht 18 m, Passive Wahrnehmung 10",
+    "languages_en": "Sylvan, understands the languages you know",
+    "languages_de": "Sylvanisch, versteht die Sprachen, die du kennst",
+    "cr_en": "None (XP 0; PB equals your Proficiency Bonus)",
+    "cr_de": "– (EP 0, ÜB entspricht deinem Übungsbonus)",
+    "actions": [
+      {
+        "name_en": "Multiattack",
+        "name_de": "Mehrfachangriff",
+        "desc_en": "The spirit makes a number of Fey Blade attacks equal to half this spell's level (round down).",
+        "desc_de": "Der Geist führt eine Anzahl von Feenklingen-Angriffen aus, die der Hälfte des Zaubergrads entspricht (abgerundet)."
+      },
+      {
+        "name_en": "Fey Blade",
+        "name_de": "Feenklinge",
+        "desc_en": "Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 2d6 + 3 + the spell's level Force damage.",
+        "desc_de": "Nahkampfangriffswurf: Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite 1,5 Meter. Treffer: 2W6+3 + Zaubergrad Energieschaden."
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name_en": "Fey Step",
+        "name_de": "Feenschritt",
+        "desc_en": "The spirit magically teleports up to 30 feet to an unoccupied space it can see. Then one of the following effects occurs, based on the spirit's chosen mood: Fuming: The spirit has Advantage on the next attack roll it makes before the end of this turn. Mirthful: Wisdom Saving Throw: DC equals your spell save DC, one creature the spirit can see within 10 feet of itself. Failure: The target is Charmed by you and the spirit for 1 minute or until the target takes any damage. Tricksy: The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which lasts until the end of its next turn.",
+        "desc_de": "Der Geist teleportiert sich auf magische Art bis zu neun Meter weit in einen freien Bereich, den er sehen kann. Dann tritt einer der folgenden Effekte auf, der auf der ausgewählten Stimmung des Geists beruht: Heiter: Weisheitsrettungswurf: Der SG entspricht deinem Zauberrettungswurf-SG, eine Kreatur im Abstand von bis zu drei Metern vom Geist, die er sehen kann. Misserfolg: Das Ziel ist eine Minute lang – oder bis es Schaden erleidet – von dir und dem Geist bezaubert. Trickreich: Der Geist füllt im Abstand von bis zu 1,5 Metern einen Würfel von drei Metern Kantenlänge mit magischer Dunkelheit. Diese bleibt bis zum Ende seines nächsten Zugs bestehen. Wütend: Der Geist ist bei seinem nächsten Angriffswurf vor dem Ende dieses Zugs im Vorteil."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "summon-fiend"
+    ],
+    "name_en": "Fiendish Spirit",
+    "name_de": "Unholdgeist",
+    "type_en": "Large Fiend, Neutral",
+    "type_de": "Großer Unhold, neutral",
+    "ac_en": "12 + the spell's level",
+    "ac_de": "12 + Zaubergrad",
+    "hp_en": "50 (Demon only) or 40 (Devil only) or 60 (Yugoloth only) + 15 for each spell level above 6",
+    "hp_de": "50 (nur Dämon) oder 40 (nur Teufel) oder 60 (nur Yugoloth) + 15 für jeden Zaubergrad ab dem 7.",
+    "speed_en": "40 ft.; Climb 40 ft. (Demon only); Fly 60 ft. (Devil only)",
+    "speed_de": "12 m, Klettern 12 m (nur Dämon), Fliegen 18 m (nur Teufel)",
+    "stats": {
+      "str": 13,
+      "dex": 16,
+      "con": 15,
+      "int": 10,
+      "wis": 10,
+      "cha": 16
+    },
+    "saves": {
+      "str": 1,
+      "dex": 3,
+      "con": 2,
+      "int": 0,
+      "wis": 0,
+      "cha": 3
+    },
+    "resistances_en": "Fire",
+    "resistances_de": "Feuer",
+    "immunities_en": "Poison; Poisoned",
+    "immunities_de": "Gift; Vergiftet",
+    "senses_en": "Darkvision 60 ft., Passive Perception 10",
+    "senses_de": "Dunkelsicht 18 m, Passive Wahrnehmung 10",
+    "languages_en": "Abyssal, Infernal, Telepathy 60 ft.",
+    "languages_de": "Abyssisch, Infernalisch, Telepathie auf 18 m",
+    "cr_en": "None (XP 0; PB equals your Proficiency Bonus)",
+    "cr_de": "– (EP 0, ÜB entspricht deinem Übungsbonus)",
+    "traits": [
+      {
+        "name_en": "Death Throes (Demon Only)",
+        "name_de": "Todeszuckungen (nur Dämon)",
+        "desc_en": "When the spirit drops to 0 Hit Points or the spell ends, the spirit explodes. Dexterity Saving Throw: DC equals your spell save DC, each creature in a 10-foot Emanation originating from the spirit. Failure: 2d10 plus this spell's level Fire damage. Success: Half damage.",
+        "desc_de": "Wenn die Trefferpunkte des Geists auf 0 sinken oder der Zauber endet, explodiert der Geist. Geschicklichkeitsrettungswurf: Der SG entspricht deinem Zauberrettungswurf-SG, alle Kreaturen in einer Ausströmung von drei Metern um den Geist. Misserfolg: 2W10 plus Zaubergrad Feuerschaden. Erfolg: Halber Schaden."
+      },
+      {
+        "name_en": "Devil's Sight (Devil Only)",
+        "name_de": "Teufelssicht (nur Teufel)",
+        "desc_en": "Magical Darkness doesn't impede the spirit's Darkvision.",
+        "desc_de": "Magische Dunkelheit beeinträchtigt die Dunkelsicht des Geists nicht."
+      },
+      {
+        "name_en": "Magic Resistance",
+        "name_de": "Magieresistenz",
+        "desc_en": "The spirit has Advantage on saving throws against spells and other magical effects.",
+        "desc_de": "Der Geist ist bei Rettungswürfen gegen Zauber und andere magische Effekte im Vorteil."
+      }
+    ],
+    "actions": [
+      {
+        "name_en": "Multiattack",
+        "name_de": "Mehrfachangriff",
+        "desc_en": "The spirit makes a number of attacks equal to half this spell's level (round down).",
+        "desc_de": "Der Geist führt eine Anzahl von Angriffen aus, die der Hälfte des Zaubergrads entspricht (abgerundet)."
+      },
+      {
+        "name_en": "Bite (Demon Only)",
+        "name_de": "Biss (nur Dämon)",
+        "desc_en": "Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d12 + 3 + the spell's level Necrotic damage.",
+        "desc_de": "Nahkampfangriffswurf: Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite 1,5 Meter. Treffer: 1W12+3 + Zaubergrad nekrotischer Schaden."
+      },
+      {
+        "name_en": "Claws (Yugoloth Only)",
+        "name_de": "Klauen (nur Yugoloth)",
+        "desc_en": "Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + 3 + the spell's level Slashing damage. Immediately after the attack hits or misses, the spirit can teleport up to 30 feet to an unoccupied space it can see.",
+        "desc_de": "Nahkampfangriffswurf: Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite 1,5 Meter. Treffer: 1W8+3 + Zaubergrad Hiebschaden. Sofort, nachdem der Angriff getroffen oder verfehlt hat, kann sich der Geist bis zu neun Meter weit in einen freien Bereich teleportieren, den er sehen kann."
+      },
+      {
+        "name_en": "Fiery Strike (Devil Only)",
+        "name_de": "Feuriger Schlag (nur Teufel)",
+        "desc_en": "Melee or Ranged Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. or range 150 ft. Hit: 2d6 + 3 + the spell's level Fire damage.",
+        "desc_de": "Nahkampf- oder Fernkampfangriffswurf: Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite 1,5 Meter oder 45 Meter. Treffer: 2W6+3 + Zaubergrad Feuerschaden."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "summon-undead"
+    ],
+    "name_en": "Undead Spirit",
+    "name_de": "Untoter Geist",
+    "type_en": "Medium Undead, Neutral",
+    "type_de": "Mittelgroßer Untoter, neutral",
+    "ac_en": "11 + the spell's level",
+    "ac_de": "11 + Zaubergrad",
+    "hp_en": "30 (Ghostly and Putrid only) or 20 (Skeletal only) + 10 for each spell level above 3",
+    "hp_de": "30 (nur Geisterhaft und Verwesend) oder 20 (nur Skelettartig) + 10 für jeden Zaubergrad ab dem 4.",
+    "speed_en": "30 ft.; Fly 40 ft. (hover; Ghostly only)",
+    "speed_de": "9 m, Fliegen 12 m (Schweben, nur Geisterhaft)",
+    "stats": {
+      "str": 12,
+      "dex": 16,
+      "con": 15,
+      "int": 4,
+      "wis": 10,
+      "cha": 9
+    },
+    "saves": {
+      "str": 1,
+      "dex": 3,
+      "con": 2,
+      "int": -3,
+      "wis": 0,
+      "cha": -1
+    },
+    "immunities_en": "Necrotic, Poison; Exhaustion, Frightened, Paralyzed, Poisoned",
+    "immunities_de": "Gift, Nekrotisch; Erschöpft, Gelähmt, Verängstigt, Vergiftet",
+    "senses_en": "Darkvision 60 ft., Passive Perception 10",
+    "senses_de": "Dunkelsicht 18 m, Passive Wahrnehmung 10",
+    "languages_en": "Understands the languages you know",
+    "languages_de": "Versteht die Sprachen, die du sprichst",
+    "cr_en": "None (XP 0; PB equals your Proficiency Bonus)",
+    "cr_de": "– (EP 0, ÜB entspricht deinem Übungsbonus)",
+    "traits": [
+      {
+        "name_en": "Festering Aura (Putrid Only)",
+        "name_de": "Faulige Aura (nur Verwesend)",
+        "desc_en": "Constitution Saving Throw: DC equals your spell save DC, any creature (other than you) that starts its turn within a 5-foot Emanation originating from the spirit. Failure: The creature has the Poisoned condition until the start of its next turn.",
+        "desc_de": "Konstitutionsrettungswurf: Der SG entspricht deinem Zauberrettungswurf-SG, eine Kreatur (außer dir), die ihren Zug in einer Ausströmung von 1,5 Metern, die vom Geist ausgeht, beginnt. Misserfolg: Die Kreatur ist bis zum Beginn ihres nächsten Zugs vergiftet."
+      },
+      {
+        "name_en": "Incorporeal Passage (Ghostly Only)",
+        "name_de": "Körperloser Durchgang (nur Geisterhaft)",
+        "desc_en": "The spirit can move through other creatures and objects as if they were Difficult Terrain. If it ends its turn inside an object, it is shunted to the nearest unoccupied space and takes 1d10 Force damage for every 5 feet traveled.",
+        "desc_de": "Der Geist kann sich durch andere Kreaturen und Gegenstände bewegen, als wären sie schwieriges Gelände. Wenn er seinen Zug in einem Gegenstand beendet, wird er zum nächsten freien Bereich geschoben und erleidet pro zurückgelegten 1,5 Metern 1W10 Energieschaden."
+      }
+    ],
+    "actions": [
+      {
+        "name_en": "Multiattack",
+        "name_de": "Mehrfachangriff",
+        "desc_en": "The spirit makes a number of attacks equal to half this spell's level (round down).",
+        "desc_de": "Der Geist führt eine Anzahl von Angriffen aus, die der Hälfte des Zaubergrads entspricht (abgerundet)."
+      },
+      {
+        "name_en": "Deathly Touch (Ghostly Only)",
+        "name_de": "Todesberührung (nur Geisterhaft)",
+        "desc_en": "Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + 3 + the spell's level Necrotic damage, and the target has the Frightened condition until the end of its next turn.",
+        "desc_de": "Nahkampfangriffswurf: Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite 1,5 Meter. Treffer: 1W8+3 + Zaubergrad nekrotischer Schaden, und das Ziel ist bis zum Ende seines nächsten Zugs verängstigt."
+      },
+      {
+        "name_en": "Grave Bolt (Skeletal Only)",
+        "name_de": "Grabesblitz (nur Skelettartig)",
+        "desc_en": "Ranged Attack Roll: Bonus equals your spell attack modifier, range 150 ft. Hit: 2d4 + 3 + the spell's level Necrotic damage.",
+        "desc_de": "Fernkampfangriffswurf: Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite 45 Meter. Treffer: 2W4+3 + Zaubergrad nekrotischer Schaden."
+      },
+      {
+        "name_en": "Rotting Claw (Putrid Only)",
+        "name_de": "Verrottende Klaue (nur Verwesend)",
+        "desc_en": "Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d6 + 3 + the spell's level Slashing damage. If the target has the Poisoned condition, it has the Paralyzed condition until the end of its next turn.",
+        "desc_de": "Nahkampfangriffswurf: Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite 1,5 Meter. Treffer: 1W6+3 + Zaubergrad Hiebschaden. Wenn das Ziel vergiftet ist, so ist es bis zum Ende seines nächsten Zugs gelähmt."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "animate-dead"
+    ],
+    "name_en": "Zombie",
+    "name_de": "Zombie",
+    "type_en": "Medium Undead, Neutral Evil",
+    "type_de": "Mittelgroßer Untoter, neutral böse",
+    "ac_en": "8",
+    "ac_de": "8",
+    "hp_en": "15 (2d8 + 6)",
+    "hp_de": "15 (2W8+6)",
+    "speed_en": "20 ft.",
+    "speed_de": "6 m",
+    "initiative_en": "-2 (8)",
+    "initiative_de": "-2 (8)",
+    "stats": {
+      "str": 13,
+      "dex": 6,
+      "con": 16,
+      "int": 3,
+      "wis": 6,
+      "cha": 5
+    },
+    "saves": {
+      "str": 1,
+      "dex": -2,
+      "con": 3,
+      "int": -4,
+      "wis": 0,
+      "cha": -3
+    },
+    "immunities_en": "Poison; Exhaustion, Poisoned",
+    "immunities_de": "Erschöpft, Gift, Vergiftet",
+    "senses_en": "Darkvision 60 ft., Passive Perception 8",
+    "senses_de": "Dunkelsicht 18 m, Passive Wahrnehmung 8",
+    "languages_en": "Understands the languages it knew in life but can't speak",
+    "languages_de": "Versteht Gemeinsprache, aber kann nicht sprechen",
+    "cr_en": "1/4 (XP 50; PB +2)",
+    "cr_de": "1/4 (EP 50, ÜB +2)",
+    "traits": [
+      {
+        "name_en": "Undead Fortitude",
+        "name_de": "Untote Ausdauer",
+        "desc_en": "If damage reduces the zombie to 0 Hit Points, it must make a Constitution saving throw with a DC of 5 plus the damage taken unless the damage is Radiant or from a Critical Hit. On a successful save, the zombie drops to 1 Hit Point instead.",
+        "desc_de": "Wenn die Trefferpunkte des Zombies durch Schaden auf 0 sinken, muss er einen Konstitutionsrettungswurf mit SG 5 plus erlittenem Schaden ausführen, sofern der Schaden nicht gleißend ist oder von einem kritischen Treffer stammt. Bei einem erfolgreichen Rettungswurf behält der Zombie 1 Trefferpunkt."
+      }
+    ],
+    "actions": [
+      {
+        "name_en": "Slam",
+        "name_de": "Hieb",
+        "desc_en": "Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Bludgeoning damage.",
+        "desc_de": "Nahkampfangriffswurf: +3, Reichweite 1,5 Meter. Treffer: 4 (1W6+1) Wuchtschaden."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "animate-dead"
+    ],
+    "name_en": "Skeleton",
+    "name_de": "Skelett",
+    "type_en": "Medium Undead, Lawful Evil",
+    "type_de": "Mittelgroßer Untoter, rechtschaffen böse",
+    "ac_en": "13",
+    "ac_de": "13",
+    "hp_en": "13 (2d8 + 4)",
+    "hp_de": "13 (2W8+4)",
+    "speed_en": "30 ft.",
+    "speed_de": "9 m",
+    "initiative_en": "+3 (13)",
+    "initiative_de": "+3 (13)",
+    "stats": {
+      "str": 10,
+      "dex": 16,
+      "con": 15,
+      "int": 6,
+      "wis": 8,
+      "cha": 5
+    },
+    "saves": {
+      "str": 0,
+      "dex": 3,
+      "con": 2,
+      "int": -2,
+      "wis": -1,
+      "cha": -3
+    },
+    "vulnerabilities_en": "Bludgeoning",
+    "vulnerabilities_de": "Wucht",
+    "immunities_en": "Poison; Exhaustion, Poisoned",
+    "immunities_de": "Erschöpft, Gift, Vergiftet",
+    "gear_en": "Shortbow, Shortsword",
+    "gear_de": "Kurzbogen, Kurzschwert",
+    "senses_en": "Darkvision 60 ft., Passive Perception 9",
+    "senses_de": "Dunkelsicht 18 m, Passive Wahrnehmung 9",
+    "languages_en": "Understands the languages it knew in life but can't speak",
+    "languages_de": "Versteht Gemeinsprache, aber kann nicht sprechen",
+    "cr_en": "1/4 (XP 50; PB +2)",
+    "cr_de": "1/4 (EP 50, ÜB +2)",
+    "actions": [
+      {
+        "name_en": "Shortsword",
+        "name_de": "Kurzschwert",
+        "desc_en": "Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Piercing damage.",
+        "desc_de": "Nahkampfangriffswurf: +5, Reichweite 1,5 Meter. Treffer: 6 (1W6+3) Stichschaden."
+      },
+      {
+        "name_en": "Shortbow",
+        "name_de": "Kurzbogen",
+        "desc_en": "Ranged Attack Roll: +5, range 80/320 ft. Hit: 6 (1d6 + 3) Piercing damage.",
+        "desc_de": "Fernkampfangriffswurf: +5, Reichweite 24/96 m. Treffer: 6 (1W6+3) Stichschaden."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "animate-objects"
+    ],
+    "name_en": "Animated Object",
+    "name_de": "Belebter Gegenstand",
+    "type_en": "Huge or Smaller Construct, Unaligned",
+    "type_de": "Konstrukt von höchstens riesiger Größe, gesinnungslos",
+    "ac_en": "15",
+    "ac_de": "15",
+    "hp_en": "10 (Medium or smaller), 20 (Large), 40 (Huge)",
+    "hp_de": "10 (höchstens mittelgroß), 20 (groß), 40 (riesig)",
+    "speed_en": "30 ft.",
+    "speed_de": "9 m",
+    "stats": {
+      "str": 16,
+      "dex": 10,
+      "con": 10,
+      "int": 3,
+      "wis": 3,
+      "cha": 1
+    },
+    "saves": {
+      "str": 3,
+      "dex": 0,
+      "con": 0,
+      "int": -4,
+      "wis": -4,
+      "cha": -5
+    },
+    "immunities_en": "Poison, Psychic; Charmed, Exhaustion, Frightened, Paralyzed, Poisoned",
+    "immunities_de": "Gift, Psychisch; Bezaubert, Erschöpft, Gelähmt, Verängstigt, Vergiftet",
+    "senses_en": "Blindsight 30 ft., Passive Perception 6",
+    "senses_de": "Blindsicht 9 m, Passive Wahrnehmung 6",
+    "languages_en": "Understands the languages you know",
+    "languages_de": "Versteht die Sprachen, die du sprichst",
+    "cr_en": "None (XP 0; PB equals your Proficiency Bonus)",
+    "cr_de": "– (EP 0, ÜB entspricht deinem Übungsbonus)",
+    "actions": [
+      {
+        "name_en": "Slam",
+        "name_de": "Hieb",
+        "desc_en": "Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: Force damage equal to 1d4 + 3 (Medium or smaller), 2d6 + 3 + your spellcasting ability modifier (Large), or 2d12 + 3 + your spellcasting ability modifier (Huge).",
+        "desc_de": "Nahkampfangriffswurf: Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite 1,5 Meter. Treffer: Energieschaden in Höhe von 1W4+3 (höchstens mittelgroß), 2W6+3 + deinem Zauberwirken-Attributsmodifikator (groß) oder 2W12+3 + deinem Zauberwirken-Attributsmodifikator (riesig)."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "find-steed",
+      "find-greater-steed"
+    ],
+    "name_en": "Otherworldly Steed",
+    "name_de": "Außerweltliches Reittier",
+    "type_en": "Large Celestial, Fey, or Fiend (Your Choice), Neutral",
+    "type_de": "Großes celestisches Wesen, Feenwesen oder Unhold (nach deiner Wahl), neutral",
+    "ac_en": "10 + 1 per spell level",
+    "ac_de": "10 + 1 pro Zaubergrad",
+    "hp_en": "5 + 10 per spell level (the steed has a number of Hit Dice [d10s] equal to the spell's level)",
+    "hp_de": "5 + 10 pro Zaubergrad (das Reittier verfügt über eine Anzahl von W10-Trefferwürfeln in Höhe des Zaubergrades)",
+    "speed_en": "60 ft., Fly 60 ft. (requires level 4+ spell)",
+    "speed_de": "18 m, Fliegen 18 m (erfordert einen Zauber des mindestens 4. Grades)",
+    "stats": {
+      "str": 18,
+      "dex": 12,
+      "con": 14,
+      "int": 6,
+      "wis": 12,
+      "cha": 8
+    },
+    "saves": {
+      "str": 4,
+      "dex": 1,
+      "con": 2,
+      "int": -2,
+      "wis": 1,
+      "cha": -1
+    },
+    "senses_en": "Passive Perception 11",
+    "senses_de": "Passive Wahrnehmung 11",
+    "languages_en": "Telepathy 1 mile (works only with you)",
+    "languages_de": "Telepathie auf 1,6 Kilometer (nur mit dir)",
+    "cr_en": "None (XP 0; PB equals your Proficiency Bonus)",
+    "cr_de": "– (EP 0, ÜB entspricht deinem Übungsbonus)",
+    "traits": [
+      {
+        "name_en": "Life Bond",
+        "name_de": "Lebensbindung",
+        "desc_en": "When you regain Hit Points from a level 1+ spell, the steed regains the same number of Hit Points if you're within 5 feet of it.",
+        "desc_de": "Wenn du Trefferpunkte durch einen Zauber ab dem 1. Grad zurückerhältst, erhält das Reittier die gleiche Anzahl von Trefferpunkten zurück, sofern du dich im Abstand von bis zu 1,5 Metern von ihm befindest."
+      }
+    ],
+    "actions": [
+      {
+        "name_en": "Otherworldly Slam",
+        "name_de": "Außerweltlicher Hieb",
+        "desc_en": "Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 plus the spell's level of Radiant (Celestial), Psychic (Fey), or Necrotic (Fiend) damage.",
+        "desc_de": "Nahkampfangriffswurf: Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite 1,5 Meter. Treffer: 1W8 plus Zaubergrad gleißender (celestisches Wesen), psychischer (Feenwesen) oder nekrotischer (Unhold) Schaden."
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name_en": "Fell Glare (Fiend Only; Recharges after a Long Rest)",
+        "name_de": "Böses Starren (nur Unhold, wird nach langer Rast aufgeladen)",
+        "desc_en": "Wisdom Saving Throw: DC equals your spell save DC, one creature within 60 feet the steed can see. Failure: The target has the Frightened condition until the end of your next turn.",
+        "desc_de": "Weisheitsrettungswurf: Der SG entspricht deinem Zauberrettungswurf-SG, eine Kreatur im Abstand von bis zu 18 Metern, die vom Reittier gesehen werden kann. Misserfolg: Das Ziel ist bis zum Ende deines nächsten Zugs verängstigt."
+      },
+      {
+        "name_en": "Fey Step (Fey Only; Recharges after a Long Rest)",
+        "name_de": "Feenschritt (nur Feenwesen, wird nach langer Rast aufgeladen)",
+        "desc_en": "The steed teleports, along with its rider, to an unoccupied space of your choice up to 60 feet away from itself.",
+        "desc_de": "Das Reittier teleportiert sich samt Reiter bis zu 18 Meter weit in einen freien Bereich deiner Wahl."
+      },
+      {
+        "name_en": "Healing Touch (Celestial Only; Recharges after a Long Rest)",
+        "name_de": "Heilende Berührung (nur celestisches Wesen, wird nach langer Rast aufgeladen)",
+        "desc_en": "One creature within 5 feet of the steed regains a number of Hit Points equal to 2d8 plus the spell's level.",
+        "desc_de": "Eine Kreatur im Abstand von bis zu 1,5 Metern vom Reittier erhält eine Anzahl von Trefferpunkten in Höhe von 2W8 plus Zaubergrad zurück."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "giant-insect"
+    ],
+    "name_en": "Giant Insect",
+    "name_de": "Rieseninsekt",
+    "type_en": "Large Beast, Unaligned",
+    "type_de": "Großes Tier, gesinnungslos",
+    "ac_en": "11 + the spell's level",
+    "ac_de": "11 + Zaubergrad",
+    "hp_en": "30 + 10 for each spell level",
+    "hp_de": "30 + 10 für jeden Zaubergrad ab dem 5.",
+    "speed_en": "40 ft., Climb 40 ft., Fly 40 ft. (Wasp only)",
+    "speed_de": "12 m, Klettern 12 m, Fliegen 12 m (nur Wespe)",
+    "stats": {
+      "str": 17,
+      "dex": 13,
+      "con": 15,
+      "int": 4,
+      "wis": 14,
+      "cha": 3
+    },
+    "saves": {
+      "str": 3,
+      "dex": 1,
+      "con": 2,
+      "int": -3,
+      "wis": 2,
+      "cha": -4
+    },
+    "senses_en": "Darkvision 60 ft., Passive Perception 12",
+    "senses_de": "Dunkelsicht 18 m, Passive Wahrnehmung 12",
+    "languages_en": "Understands the languages you know",
+    "languages_de": "Versteht die Sprachen, die du sprichst",
+    "cr_en": "None (XP 0; PB equals your Proficiency Bonus)",
+    "cr_de": "– (EP 0, ÜB entspricht deinem Übungsbonus)",
+    "traits": [
+      {
+        "name_en": "Spider Climb",
+        "name_de": "Spinnenklettern",
+        "desc_en": "The insect can climb difficult surfaces, including along ceilings, without needing to make an ability check.",
+        "desc_de": "Das Insekt kann ohne Attributswürfe schwierige Oberflächen erklimmen und sich an Decken entlang bewegen."
+      }
+    ],
+    "actions": [
+      {
+        "name_en": "Multiattack",
+        "name_de": "Mehrfachangriff",
+        "desc_en": "The insect makes a number of attacks equal to half this spell's level (round down).",
+        "desc_de": "Das Insekt führt eine Anzahl von Angriffen aus, die der Hälfte des Zaubergrads entspricht (abgerundet)."
+      },
+      {
+        "name_en": "Poison Jab",
+        "name_de": "Giftstich",
+        "desc_en": "Melee Attack Roll: Bonus equals your spell attack modifier, reach 10 ft. Hit: 1d6 + 3 plus the spell's level Piercing damage plus 1d4 Poison damage.",
+        "desc_de": "Nahkampfangriffswurf: Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite drei Meter. Treffer: 1W6+3 plus Zaubergrad Stichschaden sowie 1W4 Giftschaden."
+      },
+      {
+        "name_en": "Web Bolt (Spider Only)",
+        "name_de": "Netzbolzen (nur Spinne)",
+        "desc_en": "Ranged Attack Roll: Bonus equals your spell attack modifier, range 60 ft. Hit: 1d10 + 3 plus the spell's level Bludgeoning damage, and the target's Speed is reduced to 0 until the start of the insect's next turn.",
+        "desc_de": "Fernkampfangriffswurf: Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite 18 Meter. Treffer: 1W10+3 plus Zaubergrad Wuchtschaden, und die Bewegungsrate des Ziels ist bis zum Beginn des nächsten Zugs des Insekts auf 0 verringert."
+      }
+    ],
+    "bonus_actions": [
+      {
+        "name_en": "Venomous Spew (Centipede Only)",
+        "name_de": "Giftspeien (nur Tausendfüßler)",
+        "desc_en": "Constitution Saving Throw: Your spell save DC, one creature the insect can see within 10 feet. Failure: The target has the Poisoned condition until the start of the insect's next turn.",
+        "desc_de": "Konstitutionsrettungswurf: Dein Zauberrettungswurf-SG, eine Kreatur im Abstand von bis zu drei Metern, die vom Insekt gesehen werden kann. Misserfolg: Das Ziel ist bis zum Beginn des nächsten Zugs des Insekts vergiftet."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "find-familiar"
+    ],
+    "name_en": "Bat",
+    "name_de": "Fledermaus",
+    "type_en": "Tiny Beast, Unaligned",
+    "type_de": "Winziges Tier, gesinnungslos",
+    "ac_en": "12",
+    "ac_de": "12",
+    "hp_en": "1 (1d4 - 1)",
+    "hp_de": "1 (1W4-1)",
+    "speed_en": "5 ft., Fly 30 ft.",
+    "speed_de": "1,5 m, Fliegen 9 m",
+    "initiative_en": "+2 (12)",
+    "initiative_de": "+2 (12)",
+    "stats": {
+      "str": 2,
+      "dex": 15,
+      "con": 8,
+      "int": 2,
+      "wis": 12,
+      "cha": 4
+    },
+    "saves": {
+      "str": -4,
+      "dex": 2,
+      "con": -1,
+      "int": -4,
+      "wis": 1,
+      "cha": -3
+    },
+    "senses_en": "Blindsight 60 ft., Passive Perception 11",
+    "senses_de": "Blindsicht 18 m, Passive Wahrnehmung 11",
+    "languages_en": "None",
+    "languages_de": "–",
+    "cr_en": "0 (XP 10; PB +2)",
+    "cr_de": "0 (EP 10, ÜB +2)",
+    "actions": [
+      {
+        "name_en": "Bite",
+        "name_de": "Biss",
+        "desc_en": "Melee Attack Roll: +4, reach 5 ft. Hit: 1 Piercing damage.",
+        "desc_de": "Nahkampfangriffswurf: +4, Reichweite 1,5 Meter. Treffer: 1 Stichschaden."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "find-familiar"
+    ],
+    "name_en": "Badger",
+    "name_de": "Dachs",
+    "type_en": "Tiny Beast, Unaligned",
+    "type_de": "Winziges Tier, gesinnungslos",
+    "ac_en": "11",
+    "ac_de": "11",
+    "hp_en": "5 (1d4 + 3)",
+    "hp_de": "5 (1W4+3)",
+    "speed_en": "20 ft., Burrow 5 ft.",
+    "speed_de": "6 m, Graben 1,5 m",
+    "initiative_en": "+0 (10)",
+    "initiative_de": "+0 (10)",
+    "stats": {
+      "str": 10,
+      "dex": 11,
+      "con": 16,
+      "int": 2,
+      "wis": 12,
+      "cha": 5
+    },
+    "saves": {
+      "str": 0,
+      "dex": 0,
+      "con": 3,
+      "int": -4,
+      "wis": 1,
+      "cha": -3
+    },
+    "skills_en": "Perception +3",
+    "skills_de": "Wahrnehmung +3",
+    "resistances_en": "Poison",
+    "resistances_de": "Gift",
+    "senses_en": "Darkvision 30 ft., Passive Perception 13",
+    "senses_de": "Dunkelsicht 9 m, Passive Wahrnehmung 13",
+    "languages_en": "None",
+    "languages_de": "–",
+    "cr_en": "0 (XP 10; PB +2)",
+    "cr_de": "0 (EP 10, ÜB +2)",
+    "actions": [
+      {
+        "name_en": "Bite",
+        "name_de": "Biss",
+        "desc_en": "Melee Attack Roll: +2, reach 5 ft. Hit: 1 Piercing damage.",
+        "desc_de": "Nahkampfangriffswurf: +2, Reichweite 1,5 Meter. Treffer: 1 Stichschaden."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "find-familiar"
+    ],
+    "name_en": "Cat",
+    "name_de": "Katze",
+    "type_en": "Tiny Beast, Unaligned",
+    "type_de": "Winziges Tier, gesinnungslos",
+    "ac_en": "12",
+    "ac_de": "12",
+    "hp_en": "2 (1d4)",
+    "hp_de": "2 (1W4)",
+    "speed_en": "40 ft., Climb 40 ft.",
+    "speed_de": "12 m, Klettern 12 m",
+    "initiative_en": "+2 (12)",
+    "initiative_de": "+2 (12)",
+    "stats": {
+      "str": 3,
+      "dex": 15,
+      "con": 10,
+      "int": 3,
+      "wis": 12,
+      "cha": 7
+    },
+    "saves": {
+      "str": -4,
+      "dex": 4,
+      "con": 0,
+      "int": -4,
+      "wis": 1,
+      "cha": -2
+    },
+    "skills_en": "Perception +3, Stealth +4",
+    "skills_de": "Heimlichkeit +4, Wahrnehmung +3",
+    "senses_en": "Darkvision 60 ft., Passive Perception 13",
+    "senses_de": "Dunkelsicht 18 m, Passive Wahrnehmung 13",
+    "languages_en": "None",
+    "languages_de": "–",
+    "cr_en": "0 (XP 10; PB +2)",
+    "cr_de": "0 (EP 10, ÜB +2)",
+    "traits": [
+      {
+        "name_en": "Jumper",
+        "name_de": "Springer",
+        "desc_en": "The cat's jump distance is determined using its Dexterity rather than its Strength.",
+        "desc_de": "Die Sprungdistanz der Katze wird anhand ihrer Geschicklichkeit statt anhand ihrer Stärke bestimmt."
+      }
+    ],
+    "actions": [
+      {
+        "name_en": "Scratch",
+        "name_de": "Kratzen",
+        "desc_en": "Melee Attack Roll: +4, reach 5 ft. Hit: 1 Slashing damage.",
+        "desc_de": "Nahkampfangriffswurf: +4, Reichweite 1,5 Meter. Treffer: 1 Hiebschaden."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "find-familiar"
+    ],
+    "name_en": "Crab",
+    "name_de": "Krabbe",
+    "type_en": "Tiny Beast, Unaligned",
+    "type_de": "Winziges Tier, gesinnungslos",
+    "ac_en": "11",
+    "ac_de": "11",
+    "hp_en": "3 (1d4 + 1)",
+    "hp_de": "3 (1W4+1)",
+    "speed_en": "20 ft., Swim 20 ft.",
+    "speed_de": "6 m, Schwimmen 6 m",
+    "initiative_en": "+0 (10)",
+    "initiative_de": "+0 (10)",
+    "stats": {
+      "str": 6,
+      "dex": 11,
+      "con": 12,
+      "int": 1,
+      "wis": 8,
+      "cha": 2
+    },
+    "saves": {
+      "str": -2,
+      "dex": 0,
+      "con": 1,
+      "int": -5,
+      "wis": -1,
+      "cha": -4
+    },
+    "skills_en": "Stealth +2",
+    "skills_de": "Heimlichkeit +2",
+    "senses_en": "Blindsight 30 ft., Passive Perception 9",
+    "senses_de": "Blindsicht 9 m, Passive Wahrnehmung 9",
+    "languages_en": "None",
+    "languages_de": "–",
+    "cr_en": "0 (XP 10; PB +2)",
+    "cr_de": "0 (EP 10, ÜB +2)",
+    "traits": [
+      {
+        "name_en": "Amphibious",
+        "name_de": "Amphibisch",
+        "desc_en": "The crab can breathe air and water.",
+        "desc_de": "Die Krabbe kann Luft und Wasser atmen."
+      }
+    ],
+    "actions": [
+      {
+        "name_en": "Claw",
+        "name_de": "Klauen",
+        "desc_en": "Melee Attack Roll: +2, reach 5 ft. Hit: 1 Bludgeoning damage.",
+        "desc_de": "Nahkampfangriffswurf: +2, Reichweite 1,5 Meter. Treffer: 1 Wuchtschaden."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "find-familiar"
+    ],
+    "name_en": "Frog",
+    "name_de": "Frosch",
+    "type_en": "Tiny Beast, Unaligned",
+    "type_de": "Winziges Tier, gesinnungslos",
+    "ac_en": "11",
+    "ac_de": "11",
+    "hp_en": "1 (1d4 - 1)",
+    "hp_de": "1 (1W4-1)",
+    "speed_en": "20 ft., Swim 20 ft.",
+    "speed_de": "6 m, Schwimmen 6 m",
+    "initiative_en": "+1 (11)",
+    "initiative_de": "+1 (11)",
+    "stats": {
+      "str": 1,
+      "dex": 13,
+      "con": 8,
+      "int": 1,
+      "wis": 8,
+      "cha": 3
+    },
+    "saves": {
+      "str": -5,
+      "dex": 1,
+      "con": -1,
+      "int": -5,
+      "wis": -1,
+      "cha": -4
+    },
+    "skills_en": "Perception +1, Stealth +3",
+    "skills_de": "Heimlichkeit +3, Wahrnehmung +1",
+    "senses_en": "Darkvision 30 ft., Passive Perception 11",
+    "senses_de": "Dunkelsicht 9 m, Passive Wahrnehmung 11",
+    "languages_en": "None",
+    "languages_de": "–",
+    "cr_en": "0 (XP 10; PB +2)",
+    "cr_de": "0 (EP 10, ÜB +2)",
+    "traits": [
+      {
+        "name_en": "Amphibious",
+        "name_de": "Amphibisch",
+        "desc_en": "The frog can breathe air and water.",
+        "desc_de": "Der Frosch kann Luft und Wasser atmen."
+      },
+      {
+        "name_en": "Standing Leap",
+        "name_de": "Stehender Sprung",
+        "desc_en": "The frog's Long Jump is up to 10 feet and its High Jump is up to 5 feet with or without a running start.",
+        "desc_de": "Der Frosch kann mit oder ohne Anlauf bis zu drei Meter weit und bis zu 1,5 Meter hoch springen."
+      }
+    ],
+    "actions": [
+      {
+        "name_en": "Bite",
+        "name_de": "Biss",
+        "desc_en": "Melee Attack Roll: +3, reach 5 ft. Hit: 1 Piercing damage.",
+        "desc_de": "Nahkampfangriffswurf: +3, Reichweite 1,5 Meter. Treffer: 1 Stichschaden."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "find-familiar"
+    ],
+    "name_en": "Goat",
+    "name_de": "Ziege",
+    "type_en": "Medium Beast, Unaligned",
+    "type_de": "Mittelgroßes Tier, gesinnungslos",
+    "ac_en": "10",
+    "ac_de": "10",
+    "hp_en": "4 (1d8)",
+    "hp_de": "4 (1W8)",
+    "speed_en": "40 ft., Climb 30 ft.",
+    "speed_de": "12 m, Klettern 9 m",
+    "initiative_en": "+0 (10)",
+    "initiative_de": "+0 (10)",
+    "stats": {
+      "str": 11,
+      "dex": 10,
+      "con": 11,
+      "int": 2,
+      "wis": 10,
+      "cha": 5
+    },
+    "saves": {
+      "str": 0,
+      "dex": 0,
+      "con": 0,
+      "int": -4,
+      "wis": 0,
+      "cha": -3
+    },
+    "skills_en": "Perception +2",
+    "skills_de": "Wahrnehmung +2",
+    "senses_en": "Darkvision 60 ft., Passive Perception 12",
+    "senses_de": "Dunkelsicht 18 m, Passive Wahrnehmung 12",
+    "languages_en": "None",
+    "languages_de": "–",
+    "cr_en": "0 (XP 10; PB +2)",
+    "cr_de": "0 (EP 10, ÜB +2)",
+    "actions": [
+      {
+        "name_en": "Ram",
+        "name_de": "Rammen",
+        "desc_en": "Melee Attack Roll: +2, reach 5 ft. Hit: 1 Bludgeoning damage, or the goat deals 2 (1d4 + 1) Bludgeoning damage if it moved at least 20 feet straight toward the target immediately before the hit.",
+        "desc_de": "Nahkampfangriffswurf: +2, Reichweite 1,5 Meter. Treffer: 1 Wuchtschaden, oder die Ziege bewirkt 2 (1W4+1) Wuchtschaden, wenn sie sich unmittelbar vor dem Treffer mindestens sechs Meter weit in gerader Linie auf das Ziel zubewegt hat."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "find-familiar"
+    ],
+    "name_en": "Hawk",
+    "name_de": "Falke",
+    "type_en": "Tiny Beast, Unaligned",
+    "type_de": "Winziges Tier, gesinnungslos",
+    "ac_en": "13",
+    "ac_de": "13",
+    "hp_en": "1 (1d4 - 1)",
+    "hp_de": "1 (1W4-1)",
+    "speed_en": "10 ft., Fly 60 ft.",
+    "speed_de": "3 m, Fliegen 18 m",
+    "initiative_en": "+3 (13)",
+    "initiative_de": "+3 (13)",
+    "stats": {
+      "str": 5,
+      "dex": 16,
+      "con": 8,
+      "int": 2,
+      "wis": 14,
+      "cha": 6
+    },
+    "saves": {
+      "str": -3,
+      "dex": 3,
+      "con": -1,
+      "int": -4,
+      "wis": 2,
+      "cha": -2
+    },
+    "skills_en": "Perception +6",
+    "skills_de": "Wahrnehmung +6",
+    "senses_en": "Passive Perception 16",
+    "senses_de": "Passive Wahrnehmung 16",
+    "languages_en": "None",
+    "languages_de": "–",
+    "cr_en": "0 (XP 10; PB +2)",
+    "cr_de": "0 (EP 10, ÜB +2)",
+    "actions": [
+      {
+        "name_en": "Talons",
+        "name_de": "Krallen",
+        "desc_en": "Melee Attack Roll: +5, reach 5 ft. Hit: 1 Slashing damage.",
+        "desc_de": "Nahkampfangriffswurf: +5, Reichweite 1,5 Meter. Treffer: 1 Hiebschaden."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "find-familiar"
+    ],
+    "name_en": "Lizard",
+    "name_de": "Eidechse",
+    "type_en": "Tiny Beast, Unaligned",
+    "type_de": "Winziges Tier, gesinnungslos",
+    "ac_en": "10",
+    "ac_de": "10",
+    "hp_en": "2 (1d4)",
+    "hp_de": "2 (1W4)",
+    "speed_en": "20 ft., Climb 20 ft.",
+    "speed_de": "6 m, Klettern 6 m",
+    "initiative_en": "+0 (10)",
+    "initiative_de": "+0 (10)",
+    "stats": {
+      "str": 2,
+      "dex": 11,
+      "con": 10,
+      "int": 1,
+      "wis": 8,
+      "cha": 3
+    },
+    "saves": {
+      "str": -4,
+      "dex": 0,
+      "con": 0,
+      "int": -5,
+      "wis": -1,
+      "cha": -4
+    },
+    "senses_en": "Darkvision 30 ft., Passive Perception 9",
+    "senses_de": "Dunkelsicht 9 m, Passive Wahrnehmung 9",
+    "languages_en": "None",
+    "languages_de": "–",
+    "cr_en": "0 (XP 10; PB +2)",
+    "cr_de": "0 (EP 10, ÜB +2)",
+    "traits": [
+      {
+        "name_en": "Spider Climb",
+        "name_de": "Spinnenklettern",
+        "desc_en": "The lizard can climb difficult surfaces, including along ceilings, without needing to make an ability check.",
+        "desc_de": "Die Eidechse kann ohne Attributswürfe schwierige Oberflächen erklimmen und sich an Decken entlang bewegen."
+      }
+    ],
+    "actions": [
+      {
+        "name_en": "Bite",
+        "name_de": "Biss",
+        "desc_en": "Melee Attack Roll: +2, reach 5 ft. Hit: 1 Piercing damage.",
+        "desc_de": "Nahkampfangriffswurf: +2, Reichweite 1,5 Meter. Treffer: 1 Stichschaden."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "find-familiar"
+    ],
+    "name_en": "Octopus",
+    "name_de": "Oktopus",
+    "type_en": "Small Beast, Unaligned",
+    "type_de": "Kleines Tier, gesinnungslos",
+    "ac_en": "12",
+    "ac_de": "12",
+    "hp_en": "3 (1d6)",
+    "hp_de": "3 (1W6)",
+    "speed_en": "5 ft., Swim 30 ft.",
+    "speed_de": "1,5 m, Schwimmen 9 m",
+    "initiative_en": "+2 (12)",
+    "initiative_de": "+2 (12)",
+    "stats": {
+      "str": 4,
+      "dex": 15,
+      "con": 11,
+      "int": 3,
+      "wis": 10,
+      "cha": 4
+    },
+    "saves": {
+      "str": -3,
+      "dex": 2,
+      "con": 0,
+      "int": -4,
+      "wis": 0,
+      "cha": -3
+    },
+    "skills_en": "Perception +2, Stealth +6",
+    "skills_de": "Heimlichkeit +6, Wahrnehmung +2",
+    "senses_en": "Darkvision 30 ft., Passive Perception 12",
+    "senses_de": "Dunkelsicht 9 m, Passive Wahrnehmung 12",
+    "languages_en": "None",
+    "languages_de": "–",
+    "cr_en": "0 (XP 10; PB +2)",
+    "cr_de": "0 (EP 10, ÜB +2)",
+    "traits": [
+      {
+        "name_en": "Compression",
+        "name_de": "Kompression",
+        "desc_en": "The octopus can move through a space as narrow as 1 inch without squeezing.",
+        "desc_de": "Der Oktopus kann sich durch einen engen Bereich mit einer Breite von nur 2,5 Zentimetern bewegen, ohne sich quetschen zu müssen."
+      },
+      {
+        "name_en": "Water Breathing",
+        "name_de": "Wasser atmen",
+        "desc_en": "The octopus can breathe only underwater.",
+        "desc_de": "Der Oktopus kann nur unter Wasser atmen."
+      }
+    ],
+    "actions": [
+      {
+        "name_en": "Tentacles",
+        "name_de": "Tentakel",
+        "desc_en": "Melee Attack Roll: +4, reach 5 ft. Hit: 1 Bludgeoning damage.",
+        "desc_de": "Nahkampfangriffswurf: +4, Reichweite 1,5 Meter. Treffer: 1 Wuchtschaden."
+      }
+    ],
+    "reactions": [
+      {
+        "name_en": "Ink Cloud (1/Day)",
+        "name_de": "Tintenwolke (1-mal täglich)",
+        "desc_en": "Trigger: A creature ends its turn within 5 feet of the octopus while underwater. Response: The octopus releases ink that fills a 5-foot Cube centered on itself, and the octopus moves up to its Swim Speed. The Cube is Heavily Obscured for 1 minute or until a strong current or similar effect disperses the ink.",
+        "desc_de": "Auslöser: Eine Kreatur beendet ihren Zug unter Wasser im Abstand von bis zu 1,5 Metern vom Oktopus. Antwort: Der Oktopus stößt Tinte in einem Würfel von 1,5 Metern Kantenlänge um sich selbst aus und legt dann eine Strecke von bis zu seiner Schwimmbewegungsrate zurück. Der Würfel ist eine Minute lang, oder bis eine starke Strömung oder ein ähnlicher Effekt die Tinte verwirbelt, komplett verschleiert."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "find-familiar"
+    ],
+    "name_en": "Owl",
+    "name_de": "Eule",
+    "type_en": "Tiny Beast, Unaligned",
+    "type_de": "Winziges Tier, gesinnungslos",
+    "ac_en": "11",
+    "ac_de": "11",
+    "hp_en": "1 (1d4 - 1)",
+    "hp_de": "1 (1W4-1)",
+    "speed_en": "5 ft., Fly 60 ft.",
+    "speed_de": "1,5 m, Fliegen 18 m",
+    "initiative_en": "+1 (11)",
+    "initiative_de": "+1 (11)",
+    "stats": {
+      "str": 3,
+      "dex": 13,
+      "con": 8,
+      "int": 2,
+      "wis": 12,
+      "cha": 7
+    },
+    "saves": {
+      "str": -4,
+      "dex": 1,
+      "con": -1,
+      "int": -4,
+      "wis": 1,
+      "cha": -2
+    },
+    "skills_en": "Perception +5, Stealth +5",
+    "skills_de": "Heimlichkeit +5, Wahrnehmung +5",
+    "senses_en": "Darkvision 120 ft., Passive Perception 15",
+    "senses_de": "Dunkelsicht 36 m, Passive Wahrnehmung 15",
+    "languages_en": "None",
+    "languages_de": "–",
+    "cr_en": "0 (XP 10; PB +2)",
+    "cr_de": "0 (EP 10, ÜB +2)",
+    "traits": [
+      {
+        "name_en": "Flyby",
+        "name_de": "Vorbeifliegen",
+        "desc_en": "The owl doesn't provoke Opportunity Attacks when it flies out of an enemy's reach.",
+        "desc_de": "Die Eule provoziert keine Gelegenheitsangriffe, wenn sie die Reichweite eines Gegners verlässt."
+      }
+    ],
+    "actions": [
+      {
+        "name_en": "Talons",
+        "name_de": "Krallen",
+        "desc_en": "Melee Attack Roll: +3, reach 5 ft. Hit: 1 Slashing damage.",
+        "desc_de": "Nahkampfangriffswurf: +3, Reichweite 1,5 Meter. Treffer: 1 Hiebschaden."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "find-familiar"
+    ],
+    "name_en": "Rat",
+    "name_de": "Ratte",
+    "type_en": "Tiny Beast, Unaligned",
+    "type_de": "Winziges Tier, gesinnungslos",
+    "ac_en": "10",
+    "ac_de": "10",
+    "hp_en": "1 (1d4 - 1)",
+    "hp_de": "1 (1W4-1)",
+    "speed_en": "20 ft., Climb 20 ft.",
+    "speed_de": "6 m, Klettern 6 m",
+    "initiative_en": "+0 (10)",
+    "initiative_de": "+0 (10)",
+    "stats": {
+      "str": 2,
+      "dex": 11,
+      "con": 9,
+      "int": 2,
+      "wis": 10,
+      "cha": 4
+    },
+    "saves": {
+      "str": -4,
+      "dex": 0,
+      "con": -1,
+      "int": -4,
+      "wis": 0,
+      "cha": -3
+    },
+    "skills_en": "Perception +2",
+    "skills_de": "Wahrnehmung +2",
+    "senses_en": "Darkvision 30 ft., Passive Perception 12",
+    "senses_de": "Dunkelsicht 9 m, Passive Wahrnehmung 12",
+    "languages_en": "None",
+    "languages_de": "–",
+    "cr_en": "0 (XP 10; PB +2)",
+    "cr_de": "0 (EP 10, ÜB +2)",
+    "traits": [
+      {
+        "name_en": "Agile",
+        "name_de": "Flink",
+        "desc_en": "The rat doesn't provoke Opportunity Attacks when it moves out of an enemy's reach.",
+        "desc_de": "Die Ratte provoziert keine Gelegenheitsangriffe, wenn sie die Reichweite eines Gegners verlässt."
+      }
+    ],
+    "actions": [
+      {
+        "name_en": "Bite",
+        "name_de": "Biss",
+        "desc_en": "Melee Attack Roll: +2, reach 5 ft. Hit: 1 Piercing damage.",
+        "desc_de": "Nahkampfangriffswurf: +2, Reichweite 1,5 Meter. Treffer: 1 Stichschaden."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "find-familiar"
+    ],
+    "name_en": "Raven",
+    "name_de": "Rabe",
+    "type_en": "Tiny Beast, Unaligned",
+    "type_de": "Winziges Tier, gesinnungslos",
+    "ac_en": "12",
+    "ac_de": "12",
+    "hp_en": "2 (1d4)",
+    "hp_de": "2 (1W4)",
+    "speed_en": "10 ft., Fly 50 ft.",
+    "speed_de": "3 m, Fliegen 15 m",
+    "initiative_en": "+2 (12)",
+    "initiative_de": "+2 (12)",
+    "stats": {
+      "str": 2,
+      "dex": 14,
+      "con": 10,
+      "int": 5,
+      "wis": 13,
+      "cha": 6
+    },
+    "saves": {
+      "str": -4,
+      "dex": 2,
+      "con": 0,
+      "int": -3,
+      "wis": 1,
+      "cha": -2
+    },
+    "skills_en": "Perception +3",
+    "skills_de": "Wahrnehmung +3",
+    "senses_en": "Passive Perception 13",
+    "senses_de": "Passive Wahrnehmung 13",
+    "languages_en": "None",
+    "languages_de": "–",
+    "cr_en": "0 (XP 10; PB +2)",
+    "cr_de": "0 (EP 10, ÜB +2)",
+    "traits": [
+      {
+        "name_en": "Mimicry",
+        "name_de": "Stimmen nachahmen",
+        "desc_en": "The raven can mimic simple sounds it has heard, such as a whisper or chitter. A hearer can discern the imitations with a successful DC 10 Wisdom (Insight) check.",
+        "desc_de": "Der Rabe kann einfache Geräusche imitieren, die er gehört hat, beispielsweise Geflüster oder Tierlaute. Wer die Geräusche hört, kann sie mit einem erfolgreichen SG-10-Weisheitswurf (Motiv erkennen) als Imitationen erkennen."
+      }
+    ],
+    "actions": [
+      {
+        "name_en": "Beak",
+        "name_de": "Schnabel",
+        "desc_en": "Melee Attack Roll: +4, reach 5 ft. Hit: 1 Piercing damage.",
+        "desc_de": "Nahkampfangriffswurf: +4, Reichweite 1,5 Meter. Treffer: 1 Stichschaden."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "find-familiar"
+    ],
+    "name_en": "Scorpion",
+    "name_de": "Skorpion",
+    "type_en": "Tiny Beast, Unaligned",
+    "type_de": "Winziges Tier, gesinnungslos",
+    "ac_en": "11",
+    "ac_de": "11",
+    "hp_en": "1 (1d4 - 1)",
+    "hp_de": "1 (1W4-1)",
+    "speed_en": "10 ft.",
+    "speed_de": "3 m",
+    "initiative_en": "+0 (10)",
+    "initiative_de": "+0 (10)",
+    "stats": {
+      "str": 2,
+      "dex": 11,
+      "con": 8,
+      "int": 1,
+      "wis": 8,
+      "cha": 2
+    },
+    "saves": {
+      "str": -4,
+      "dex": 0,
+      "con": -1,
+      "int": -5,
+      "wis": -1,
+      "cha": -4
+    },
+    "senses_en": "Blindsight 10 ft., Passive Perception 9",
+    "senses_de": "Blindsicht 3 m, Passive Wahrnehmung 9",
+    "languages_en": "None",
+    "languages_de": "–",
+    "cr_en": "0 (XP 10; PB +2)",
+    "cr_de": "0 (EP 10, ÜB +2)",
+    "actions": [
+      {
+        "name_en": "Sting",
+        "name_de": "Stachel",
+        "desc_en": "Melee Attack Roll: +2, reach 5 ft. Hit: 1 Piercing damage plus 3 (1d6) Poison damage.",
+        "desc_de": "Nahkampfangriffswurf: +2, Reichweite 1,5 Meter. Treffer: 1 Stichschaden plus 3 (1W6) Giftschaden."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "find-familiar"
+    ],
+    "name_en": "Spider",
+    "name_de": "Spinne",
+    "type_en": "Tiny Beast, Unaligned",
+    "type_de": "Winziges Tier, gesinnungslos",
+    "ac_en": "12",
+    "ac_de": "12",
+    "hp_en": "1 (1d4 - 1)",
+    "hp_de": "1 (1W4-1)",
+    "speed_en": "20 ft., Climb 20 ft.",
+    "speed_de": "6 m, Klettern 6 m",
+    "initiative_en": "+2 (12)",
+    "initiative_de": "+2 (12)",
+    "stats": {
+      "str": 2,
+      "dex": 14,
+      "con": 8,
+      "int": 1,
+      "wis": 10,
+      "cha": 2
+    },
+    "saves": {
+      "str": -4,
+      "dex": 2,
+      "con": -1,
+      "int": -5,
+      "wis": 0,
+      "cha": -4
+    },
+    "skills_en": "Stealth +4",
+    "skills_de": "Heimlichkeit +4",
+    "senses_en": "Darkvision 30 ft., Passive Perception 10",
+    "senses_de": "Dunkelsicht 9 m, Passive Wahrnehmung 10",
+    "languages_en": "None",
+    "languages_de": "–",
+    "cr_en": "0 (XP 10; PB +2)",
+    "cr_de": "0 (EP 10, ÜB +2)",
+    "traits": [
+      {
+        "name_en": "Spider Climb",
+        "name_de": "Spinnenklettern",
+        "desc_en": "The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check.",
+        "desc_de": "Die Spinne kann ohne Attributswürfe schwierige Oberflächen erklimmen und sich an Decken entlang bewegen."
+      },
+      {
+        "name_en": "Web Walker",
+        "name_de": "Netzwandler",
+        "desc_en": "The spider ignores movement restrictions caused by webs, and the spider knows the location of any other creature in contact with the same web.",
+        "desc_de": "Die Spinne ignoriert Bewegungseinschränkungen durch Netze und weiß genau, wo sich andere Kreaturen aufhalten, die in Kontakt mit demselben Netz sind."
+      }
+    ],
+    "actions": [
+      {
+        "name_en": "Bite",
+        "name_de": "Biss",
+        "desc_en": "Melee Attack Roll: +4, reach 5 ft. Hit: 1 Piercing damage plus 2 (1d4) Poison damage.",
+        "desc_de": "Nahkampfangriffswurf: +4, Reichweite 1,5 Meter. Treffer: 1 Stichschaden plus 2 (1W4) Giftschaden."
+      }
+    ]
+  },
+  {
+    "linked_spells": [
+      "find-familiar"
+    ],
+    "name_en": "Weasel",
+    "name_de": "Wiesel",
+    "type_en": "Tiny Beast, Unaligned",
+    "type_de": "Winziges Tier, gesinnungslos",
+    "ac_en": "13",
+    "ac_de": "13",
+    "hp_en": "1 (1d4 - 1)",
+    "hp_de": "1 (1W4-1)",
+    "speed_en": "30 ft., Climb 30 ft.",
+    "speed_de": "9 m, Klettern 9 m",
+    "initiative_en": "+3 (13)",
+    "initiative_de": "+3 (13)",
+    "stats": {
+      "str": 3,
+      "dex": 16,
+      "con": 8,
+      "int": 2,
+      "wis": 12,
+      "cha": 3
+    },
+    "saves": {
+      "str": -4,
+      "dex": 3,
+      "con": -1,
+      "int": -4,
+      "wis": 1,
+      "cha": -4
+    },
+    "skills_en": "Acrobatics +5, Perception +3, Stealth +5",
+    "skills_de": "Akrobatik +5, Heimlichkeit +5, Wahrnehmung +3",
+    "senses_en": "Darkvision 60 ft., Passive Perception 13",
+    "senses_de": "Dunkelsicht 18 m, Passive Wahrnehmung 13",
+    "languages_en": "None",
+    "languages_de": "–",
+    "cr_en": "0 (XP 10; PB +2)",
+    "cr_de": "0 (EP 10, ÜB +2)",
+    "actions": [
+      {
+        "name_en": "Bite",
+        "name_de": "Biss",
+        "desc_en": "Melee Attack Roll: +5, reach 5 ft. Hit: 1 Piercing damage.",
+        "desc_de": "Nahkampfangriffswurf: +5, Reichweite 1,5 Meter. Treffer: 1 Stichschaden."
+      }
+    ]
+  }
+]
