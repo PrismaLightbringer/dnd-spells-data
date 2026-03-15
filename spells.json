@@ -9646,7 +9646,7 @@
   {
     "id": "thunderous-smite",
     "name_en": "Thunderous Smite",
-    "name_de": "Donner-Niederstrecken",
+    "name_de": "Donnerndes Niederstrecken",
     "level": 1,
     "school_en": "Evocation",
     "school_de": "Hervorrufungszauber",
@@ -9726,7 +9726,7 @@
   {
     "id": "toll-the-dead",
     "name_en": "Toll the Dead",
-    "name_de": "Toten läuten",
+    "name_de": "Totenläuten",
     "level": 0,
     "school_en": "Necromancy",
     "school_de": "Nekromantiezauber",
