@@ -1712,7 +1712,7 @@
   "subclass_progressions": [
     {
       "subclass_id": "rogue-arcane-trickster",
-      "spell_slot_table": "third_caster",
+      "spell_slot_table": "third_caster_arcane_trickster",
       "levels": [
         {
           "level": 3,

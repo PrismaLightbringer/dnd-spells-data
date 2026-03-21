@@ -1251,7 +1251,7 @@
           "casting_model": "prepared",
           "spellcasting_ability": "intelligence",
           "spellcasting_focus": "arcane_focus",
-          "spell_slot_table": "third_caster",
+          "spell_slot_table": "third_caster_eldritch_knight",
           "recharge": "long_rest",
           "cantrips": {
             "count_from_resource": "ek_cantrips_known",
@@ -1773,7 +1773,7 @@
     },
     {
       "subclass_id": "fighter-eldritch-knight",
-      "spell_slot_table": "third_caster",
+      "spell_slot_table": "third_caster_eldritch_knight",
       "levels": [
         {
           "level": 3,
