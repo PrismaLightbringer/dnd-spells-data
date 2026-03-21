@@ -1,0 +1,961 @@
+[
+  {
+    "id": "aasimar",
+    "name_en": "Aasimar",
+    "name_de": "Aasimar",
+    "flavor_en": "Aasimar (pronounced AH-sih-mar) are mortals who carry a spark of the Upper Planes within their souls. Whether descended from an angelic being or infused with celestial power, they can fan that spark to bring light, healing, and heavenly fury.\n\nAasimar can arise among any population of mortals. They resemble their parents, but they live for up to 160 years and have features that hint at their celestial heritage, such as metallic freckles, luminous eyes, a halo, or the skin color of an angel (silver, opalescent green, or coppery red). These features start subtle and become obvious when the aasimar learns to reveal their full celestial nature.",
+    "flavor_de": "Aasimar (Betonung auf erster Silbe) sind Sterbliche, die einen Funken der Oberen Ebenen in der Seele tragen. Ob sie von einem Engelswesen abstammen oder von celestischer Kraft erfüllt sind - sie können diesen Funken entfachen, um Licht und Heilung zu bringen oder himmlische Wut zu entfesseln.\n\nAasimar können aus jedem sterblichen Volk hervorgehen. Sie sehen ihren Eltern ähnlich, können jedoch bis zu 160 Jahre alt werden und haben Merkmale, die auf ihr celestisches Erbe hindeuten, beispielweise metallisch schimmernde Sommersprossen, leuchtende Augen, einen Heiligenschein oder die Hautfarbe eines Engels (silbern, strahlend grün oder kupferrot). Diese Merkmale sind zunächst subtil, werden aber offenkundig, wenn ein Aasimar lernt, seine volle celestische Natur zu enthüllen.",
+    "creature_type": "humanoid",
+    "size": {
+      "default": "medium",
+      "choice": ["medium", "small"],
+      "description_en": "Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species",
+      "description_de": "Mittelgroß (120–210 cm) oder Klein (60–120 cm) – lege die Größe fest, wenn du diese Spezies auswählst"
+    },
+    "speed_ft": 30,
+    "traits": [
+      {
+        "id": "aasimar-celestial-resistance",
+        "name_en": "Celestial Resistance",
+        "name_de": "Celestische Resistenz",
+        "level": null,
+        "player_choice": false,
+        "text_en": "You have Resistance to Necrotic damage and Radiant damage.",
+        "text_de": "Du bist gegen gleißenden und nekrotischen Schaden resistent.",
+        "grants": [
+          { "type": "damage_resistance", "damage_types": ["necrotic", "radiant"] }
+        ]
+      },
+      {
+        "id": "aasimar-darkvision",
+        "name_en": "Darkvision",
+        "name_de": "Dunkelsicht",
+        "level": null,
+        "player_choice": false,
+        "text_en": "You have Darkvision with a range of 60 feet.",
+        "text_de": "Du hast Dunkelsicht mit einer Reichweite von 18 Metern.",
+        "grants": [
+          { "type": "darkvision", "range_ft": 60 }
+        ]
+      },
+      {
+        "id": "aasimar-healing-hands",
+        "name_en": "Healing Hands",
+        "name_de": "Heilende Hände",
+        "level": null,
+        "player_choice": false,
+        "text_en": "As a Magic action, you touch a creature and roll a number of d4s equal to your Proficiency Bonus. The creature regains a number of Hit Points equal to the total rolled. Once you use this trait, you can't use it again until you finish a Long Rest.",
+        "text_de": "Als magische Aktion kannst du eine Kreatur berühren und mit einer Anzahl von W4 in Höhe deines Übungsbonus würfeln. Die Kreatur erhält Trefferpunkte in Höhe des Gesamtergebnisses zurück. Du kannst dieses Merkmal erst nach einer langen Rast erneut verwenden.",
+        "grants": [
+          {
+            "type": "active_ability",
+            "action_type": "magic_action",
+            "uses": 1,
+            "recharge": "long_rest",
+            "effect": {
+              "description_en": "Touch a creature; it regains HP equal to the total of a number of d4s equal to your Proficiency Bonus.",
+              "description_de": "Berühre eine Kreatur; sie erhält Trefferpunkte in Höhe des Gesamtergebnisses einer Anzahl von W4 in Höhe deines Übungsbonus zurück."
+            }
+          }
+        ]
+      },
+      {
+        "id": "aasimar-light-bearer",
+        "name_en": "Light Bearer",
+        "name_de": "Lichtträger",
+        "level": null,
+        "player_choice": false,
+        "text_en": "You know the Light cantrip. Charisma is your spellcasting ability for it.",
+        "text_de": "Du kennst den Zaubertrick Licht. Dein Attribut zum Wirken des Zaubers ist Charisma.",
+        "grants": [
+          { "type": "spell_access", "spell_id": "light", "spellcasting_ability": "charisma" }
+        ]
+      },
+      {
+        "id": "aasimar-celestial-revelation",
+        "name_en": "Celestial Revelation",
+        "name_de": "Celestische Offenbarung",
+        "level": 3,
+        "player_choice": true,
+        "choice_prompt_en": "Choose one of the three transformation options each time you use this trait: Heavenly Wings, Inner Radiance, or Necrotic Shroud.",
+        "choice_prompt_de": "Wähle bei jeder Verwendung dieses Merkmals eine der drei Verwandlungsoptionen: Himmlische Flügel, Inneres Strahlen oder Nekrotische Spukgestalt.",
+        "text_en": "When you reach character level 3, you can transform as a Bonus Action using one of the options below (choose the option each time you transform). The transformation lasts for 1 minute or until you end it (no action required). Once you transform, you can't do so again until you finish a Long Rest.\n\nOnce on each of your turns before the transformation ends, you can deal extra damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your Proficiency Bonus, and the extra damage's type is either Necrotic for Necrotic Shroud or Radiant for Heavenly Wings and Inner Radiance.\n\nHeavenly Wings: Two spectral wings sprout from your back temporarily. Until the transformation ends, you have a Fly Speed equal to your Speed.\n\nInner Radiance: Searing light temporarily radiates from your eyes and mouth. For the duration, you shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes Radiant damage equal to your Proficiency Bonus.\n\nNecrotic Shroud: Your eyes briefly become pools of darkness, and flightless wings sprout from your back temporarily. Creatures other than your allies within 10 feet of you must succeed on a Charisma saving throw (DC 8 plus your Charisma modifier and Proficiency Bonus) or have the Frightened condition until the end of your next turn.",
+        "text_de": "Wenn du die 3. Charakterstufe erreichst, kannst du dich als Bonusaktion entsprechend einer der Optionen unten verwandeln (wähle bei jeder Verwandlung eine Option aus). Die Verwandlung bleibt eine Minute lang bestehen, oder bis du sie beendest (keine Aktion erforderlich). Du kannst dieses Merkmal erst nach einer langen Rast erneut verwenden.\n\nBis zum Ende der Verwandlung kannst du einmal pro Zug einem Ziel, dem du mit einem Angriff oder einem Zauber Schaden zufügst, zusätzlichen Schaden zufügen. Der zusätzliche Schaden entspricht deinem Übungsbonus und ist entweder gleißend (bei Himmlische Flügel und Inneres Strahlen) oder nekrotisch (bei Nekrotische Spukgestalt).\n\nHimmlische Flügel: Dir wachsen vorübergehend zwei geisterhafte Flügel. Bis zum Ende der Verwandlung hast du eine Flugbewegungsrate in Höhe deiner Bewegungsrate.\n\nInneres Strahlen: Vorübergehend strahlt dir intensives Licht aus Augen und Mund. Für die Wirkungsdauer spendest du in einem Radius von drei Metern helles Licht und in einem Radius von weiteren drei Metern dämmriges Licht, und am Ende jedes deiner Züge erleidet jede Kreatur im Abstand von bis zu drei Metern von dir gleißenden Schaden in Höhe deines Übungsbonus.\n\nNekrotische Spukgestalt: Deine Augen werden kurz zu Tümpeln der Dunkelheit, und dir wachsen flugunfähige Flügel. Alle Kreaturen im Abstand von bis zu drei Metern von dir, die nicht mit dir verbündet sind, müssen einen Charismarettungswurf (SG 8 plus dein Charismamodifikator plus dein Übungsbonus) bestehen, oder sie sind bis zum Ende deines nächsten Zugs verängstigt.",
+        "grants": [
+          {
+            "type": "active_ability",
+            "action_type": "bonus_action",
+            "uses": 1,
+            "recharge": "long_rest",
+            "effect": {
+              "description_en": "Transform for 1 minute, choosing Heavenly Wings (fly speed = Speed), Inner Radiance (shed light; deal Radiant damage equal to Proficiency Bonus to nearby creatures at end of each turn), or Necrotic Shroud (frighten nearby creatures; DC 8 + Charisma modifier + Proficiency Bonus). Once per turn during the transformation, deal extra damage (Proficiency Bonus, type determined by option) to one target you damage.",
+              "description_de": "Verwandle dich für 1 Minute. Wähle Himmlische Flügel (Flugbewegungsrate = Bewegungsrate), Inneres Strahlen (Licht ausstrahlen; am Ende jedes Zugs gleißenden Schaden in Höhe des Übungsbonus an benachbarte Kreaturen) oder Nekrotische Spukgestalt (benachbarte Kreaturen verängstigen; SG 8 + Charismamodifikator + Übungsbonus). Einmal pro Zug kannst du einem Ziel, dem du Schaden zufügst, zusätzlichen Schaden in Höhe des Übungsbonus zufügen."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dragonborn",
+    "name_en": "Dragonborn",
+    "name_de": "Drachenblütiger",
+    "flavor_en": "The ancestors of dragonborn hatched from the eggs of chromatic and metallic dragons. One story holds that these eggs were blessed by the dragon gods Bahamut and Tiamat, who wanted to populate the multiverse with people created in their image. Another story claims that dragons created the first dragonborn without the gods' blessings. Whatever their origin, dragonborn have made homes for themselves on the Material Plane.\n\nDragonborn look like wingless, bipedal dragons—scaly, bright-eyed, and thick-boned with horns on their heads—and their coloration and other features are reminiscent of their draconic ancestors.",
+    "flavor_de": "Die Vorfahren von Drachenblütigen sind aus den Eiern chromatischer oder metallischer Drachen geschlüpft. Einer Geschichte zufolge wurden diese Eier von den Drachengottheiten Bahamut und Tiamat gesegnet, die das Multiversum mit ihren Ebenbildern bevölkern wollten. Andere behaupten, dass die ersten Drachenblütigen ohne göttlichen Segen von Drachen geschaffen wurden. Was immer ihr Ursprung sein mag - die Drachenblütigen haben sich auf der materiellen Ebene eine Heimat geschaffen.\n\nDrachenblütige sehen aus wie flügellose zweibeinige Drachen: Sie haben Schuppen, strahlende Augen, massive Knochen sowie Hörner. Ihre Farbgebung und andere Merkmale deuten auf die Art ihrer drakonischen Ahnen hin.",
+    "creature_type": "humanoid",
+    "size": {
+      "default": "medium",
+      "description_en": "Medium (about 5–7 feet tall)",
+      "description_de": "Mittelgroß (150–210 cm)"
+    },
+    "speed_ft": 30,
+    "traits": [
+      {
+        "id": "dragonborn-draconic-ancestry",
+        "name_en": "Draconic Ancestry",
+        "name_de": "Drakonische Abstammung",
+        "level": null,
+        "player_choice": true,
+        "choice_prompt_en": "Choose one dragon type from the Draconic Ancestors table: Black (Acid), Blue (Lightning), Brass (Fire), Bronze (Lightning), Copper (Acid), Gold (Fire), Green (Poison), Red (Fire), Silver (Cold), or White (Cold). This choice permanently determines your Breath Weapon damage type and Damage Resistance.",
+        "choice_prompt_de": "Wähle einen Drachen aus der Tabelle Drakonische Ahnen: Blau (Blitz), Bronze (Blitz), Gold (Feuer), Grün (Gift), Kupfer (Säure), Messing (Feuer), Rot (Feuer), Schwarz (Säure), Silber (Kälte) oder Weiß (Kälte). Diese Wahl bestimmt dauerhaft die Schadensart deiner Odemwaffe und Schadensresistenz.",
+        "text_en": "Your lineage stems from a dragon progenitor. Choose the kind of dragon from the Draconic Ancestors table. Your choice affects your Breath Weapon and Damage Resistance traits as well as your appearance.\n\nDraconic Ancestors table: Black – Acid, Blue – Lightning, Brass – Fire, Bronze – Lightning, Copper – Acid, Gold – Fire, Green – Poison, Red – Fire, Silver – Cold, White – Cold.",
+        "text_de": "Deine Abstammungslinie geht auf einen Drachenvorfahren zurück. Wähle die Art des Drachen aus der Tabelle Drakonische Ahnen aus. Diese Entscheidung bestimmt deine Odemwaffe, deine Schadensresistenz sowie dein Erscheinungsbild.\n\nTabelle Drakonische Ahnen: Blau – Blitz, Bronze – Blitz, Gold – Feuer, Grün – Gift, Kupfer – Säure, Messing – Feuer, Rot – Feuer, Schwarz – Säure, Silber – Kälte, Weiß – Kälte.",
+        "grants": [
+          {
+            "type": "choice",
+            "choose": 1,
+            "options": [
+              { "id": "draconic-ancestry-black", "name_en": "Black (Acid)", "name_de": "Schwarz (Säure)", "text_en": "Your draconic ancestor is a Black dragon. Your Breath Weapon and Damage Resistance use Acid damage.", "text_de": "Dein drakonischer Vorfahr ist ein Schwarzer Drache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Säureschaden.", "grants": [{ "type": "damage_resistance", "damage_types": ["acid"] }] },
+              { "id": "draconic-ancestry-blue", "name_en": "Blue (Lightning)", "name_de": "Blau (Blitz)", "text_en": "Your draconic ancestor is a Blue dragon. Your Breath Weapon and Damage Resistance use Lightning damage.", "text_de": "Dein drakonischer Vorfahr ist ein Blauer Drache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Blitzschaden.", "grants": [{ "type": "damage_resistance", "damage_types": ["lightning"] }] },
+              { "id": "draconic-ancestry-brass", "name_en": "Brass (Fire)", "name_de": "Messing (Feuer)", "text_en": "Your draconic ancestor is a Brass dragon. Your Breath Weapon and Damage Resistance use Fire damage.", "text_de": "Dein drakonischer Vorfahr ist ein Messingdrache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Feuerschaden.", "grants": [{ "type": "damage_resistance", "damage_types": ["fire"] }] },
+              { "id": "draconic-ancestry-bronze", "name_en": "Bronze (Lightning)", "name_de": "Bronze (Blitz)", "text_en": "Your draconic ancestor is a Bronze dragon. Your Breath Weapon and Damage Resistance use Lightning damage.", "text_de": "Dein drakonischer Vorfahr ist ein Bronzedrache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Blitzschaden.", "grants": [{ "type": "damage_resistance", "damage_types": ["lightning"] }] },
+              { "id": "draconic-ancestry-copper", "name_en": "Copper (Acid)", "name_de": "Kupfer (Säure)", "text_en": "Your draconic ancestor is a Copper dragon. Your Breath Weapon and Damage Resistance use Acid damage.", "text_de": "Dein drakonischer Vorfahr ist ein Kupferdrache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Säureschaden.", "grants": [{ "type": "damage_resistance", "damage_types": ["acid"] }] },
+              { "id": "draconic-ancestry-gold", "name_en": "Gold (Fire)", "name_de": "Gold (Feuer)", "text_en": "Your draconic ancestor is a Gold dragon. Your Breath Weapon and Damage Resistance use Fire damage.", "text_de": "Dein drakonischer Vorfahr ist ein Golddrache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Feuerschaden.", "grants": [{ "type": "damage_resistance", "damage_types": ["fire"] }] },
+              { "id": "draconic-ancestry-green", "name_en": "Green (Poison)", "name_de": "Grün (Gift)", "text_en": "Your draconic ancestor is a Green dragon. Your Breath Weapon and Damage Resistance use Poison damage.", "text_de": "Dein drakonischer Vorfahr ist ein Grüner Drache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Giftschaden.", "grants": [{ "type": "damage_resistance", "damage_types": ["poison"] }] },
+              { "id": "draconic-ancestry-red", "name_en": "Red (Fire)", "name_de": "Rot (Feuer)", "text_en": "Your draconic ancestor is a Red dragon. Your Breath Weapon and Damage Resistance use Fire damage.", "text_de": "Dein drakonischer Vorfahr ist ein Roter Drache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Feuerschaden.", "grants": [{ "type": "damage_resistance", "damage_types": ["fire"] }] },
+              { "id": "draconic-ancestry-silver", "name_en": "Silver (Cold)", "name_de": "Silber (Kälte)", "text_en": "Your draconic ancestor is a Silver dragon. Your Breath Weapon and Damage Resistance use Cold damage.", "text_de": "Dein drakonischer Vorfahr ist ein Silberdrache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Kälteschaden.", "grants": [{ "type": "damage_resistance", "damage_types": ["cold"] }] },
+              { "id": "draconic-ancestry-white", "name_en": "White (Cold)", "name_de": "Weiß (Kälte)", "text_en": "Your draconic ancestor is a White dragon. Your Breath Weapon and Damage Resistance use Cold damage.", "text_de": "Dein drakonischer Vorfahr ist ein Weißer Drache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Kälteschaden.", "grants": [{ "type": "damage_resistance", "damage_types": ["cold"] }] }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "dragonborn-breath-weapon",
+        "name_en": "Breath Weapon",
+        "name_de": "Odemwaffe",
+        "level": null,
+        "player_choice": false,
+        "text_en": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 damage of the type determined by your Draconic Ancestry trait. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10).\n\nYou can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.",
+        "text_de": "Wenn du in deinem Zug die Angriffsaktion ausführst, kannst du einen der Angriffe durch ein Ausatmen magischer Energie ersetzen, die sich entweder in einem Kegel von 4,5 Metern oder in einer neun Meter langen, 1,5 Meter breiten Linie ausbreitet (wähle die Form bei jedem Einsatz aus). Jede Kreatur in diesem Bereich muss einen Geschicklichkeitsrettungswurf (SG 8 plus dein Konstitutionsmodifikator plus dein Übungsbonus) ausführen. Scheitert der Wurf, so erleidet die Kreatur 1W10 Schaden der Art, die deiner drakonischen Abstammung entspricht. Bei einem erfolgreichen Rettungswurf erleidet die Kreatur halb so viel Schaden. Dieser Schaden wird um jeweils 1W10 erhöht, wenn du die 5. (2W10), die 11. (3W10) und die 17. (4W10) Charakterstufe erreichst.\n\nDie Häufigkeit, mit der du diese Odemwaffe einsetzen kannst, entspricht deinem Übungsbonus. Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück.",
+        "grants": [
+          {
+            "type": "active_ability",
+            "action_type": "replaces_attack",
+            "uses": "proficiency_bonus",
+            "recharge": "long_rest",
+            "effect": {
+              "save": { "type": "dexterity", "dc": "8 + constitution_modifier + proficiency_bonus" },
+              "area": { "choice": ["15ft_cone", "30ft_line_5ft_wide"] },
+              "damage": {
+                "type": "from_draconic_ancestry",
+                "scaling": {
+                  "type": "scaling_damage",
+                  "base_dice": "1d10",
+                  "scaling": [
+                    { "level": 5, "dice": "2d10" },
+                    { "level": 11, "dice": "3d10" },
+                    { "level": 17, "dice": "4d10" }
+                  ]
+                }
+              },
+              "on_save": "half_damage"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dragonborn-damage-resistance",
+        "name_en": "Damage Resistance",
+        "name_de": "Schadensresistenz",
+        "level": null,
+        "player_choice": false,
+        "text_en": "You have Resistance to the damage type determined by your Draconic Ancestry trait.",
+        "text_de": "Du bist gegen die Schadensart resistent, die mit deiner drakonischen Abstammung assoziiert ist.",
+        "grants": [
+          { "type": "damage_resistance", "damage_types": ["from_draconic_ancestry"] }
+        ]
+      },
+      {
+        "id": "dragonborn-darkvision",
+        "name_en": "Darkvision",
+        "name_de": "Dunkelsicht",
+        "level": null,
+        "player_choice": false,
+        "text_en": "You have Darkvision with a range of 60 feet.",
+        "text_de": "Du hast Dunkelsicht mit einer Reichweite von 18 Metern.",
+        "grants": [
+          { "type": "darkvision", "range_ft": 60 }
+        ]
+      },
+      {
+        "id": "dragonborn-draconic-flight",
+        "name_en": "Draconic Flight",
+        "name_de": "Drakonischer Flug",
+        "level": 5,
+        "player_choice": false,
+        "text_en": "When you reach character level 5, you can channel draconic magic to give yourself temporary flight. As a Bonus Action, you sprout spectral wings on your back that last for 10 minutes or until you retract the wings (no action required) or have the Incapacitated condition. During that time, you have a Fly Speed equal to your Speed. Your wings appear to be made of the same energy as your Breath Weapon. Once you use this trait, you can't use it again until you finish a Long Rest.",
+        "text_de": "Wenn du die 5. Charakterstufe erreichst, kannst du drakonische Magie kanalisieren, um vorübergehend fliegen zu können. Als Bonusaktion kannst du dir geisterhafte Flügel wachsen lassen, die zehn Minuten erhalten bleiben, oder bis du die Flügel verwirfst (keine Aktion erforderlich) oder kampfunfähig wirst. Mit den Flügeln hast du eine Flugbewegungsrate in Höhe deiner Bewegungsrate. Das Erscheinungsbild deiner Flügel entspricht der Energie deiner Odemwaffe. Du kannst dieses Merkmal erst nach einer langen Rast erneut verwenden.",
+        "grants": [
+          {
+            "type": "active_ability",
+            "action_type": "bonus_action",
+            "uses": 1,
+            "recharge": "long_rest",
+            "effect": {
+              "description_en": "Sprout spectral wings for 10 minutes (or until retracted or Incapacitated). Gain Fly Speed equal to your Speed.",
+              "description_de": "Geisterhafte Flügel für 10 Minuten (oder bis sie verworfen werden oder du kampfunfähig bist). Flugbewegungsrate in Höhe deiner Bewegungsrate."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dwarf",
+    "name_en": "Dwarf",
+    "name_de": "Zwerg",
+    "flavor_en": "Dwarves were raised from the earth in the elder days by a deity of the forge. Called by various names on different worlds—Moradin, Reorx, and others—that god gave dwarves an affinity for stone and metal and for living underground. The god also made them resilient like the mountains, with a life span of about 350 years.\n\nSquat and often bearded, the original dwarves carved cities and strongholds into mountainsides and under the earth. Their oldest legends tell of conflicts with the monsters of mountaintops and the Underdark, whether those monsters were towering giants or subterranean horrors. Inspired by those tales, dwarves of any culture often sing of valorous deeds—especially of the little overcoming the mighty.\n\nOn some worlds in the multiverse, the first settlements of dwarves were built in hills or mountains, and the families who trace their ancestry to those settlements call themselves hill dwarves or mountain dwarves, respectively. The Greyhawk and Dragonlance settings have such communities.",
+    "flavor_de": "Zwerge wurden in den alten Tagen von einer Gottheit der Schmiede aus der Erde erschaffen. Sie haben in den unterschiedlichen Welten verschiedene Namen - Moradin, Reorx und weitere. Die Gottheit hat ihnen eine Affinität zu Gestein, Metallen und einem unterirdischen Dasein mitgegeben. Außerdem sind sie zäh wie Gebirge und verfügen über eine Lebensspanne von etwa 350 Jahren.\n\nDie ersten Zwerge waren gedrungen und oft bärtig. Sie schufen Festungen und ganze Städte in den Bergen oder unter der Erde. Ihre ältesten Legenden handeln von Kriegen gegen die Monster der Berggipfel und des Unterreichs - turmhohe Riesen und unterirdische Schrecken. Diese Geschichten inspirieren die Zwerge aller Kulturen noch heute dazu, Heldentaten zu besingen. In solchen Liedern siegen häufig kleine Wesen über große und mächtige.\n\nIn manchen Welten des Multiversums entstanden die ersten zwergischen Ansiedlungen in Hügeln oder Bergen, und Zwergenfamilien, die ihre Herkunft auf solche Siedlungen zurückführen, nennen sich Hügelzwerge oder Gebirgszwerge. In den Kampagnenwelten von Greyhawk und Dragonlance gibt es solche Gemeinschaften.",
+    "creature_type": "humanoid",
+    "size": {
+      "default": "medium",
+      "description_en": "Medium (about 4–5 feet tall)",
+      "description_de": "Mittelgroß (120–150 cm)"
+    },
+    "speed_ft": 30,
+    "traits": [
+      {
+        "id": "dwarf-darkvision",
+        "name_en": "Darkvision",
+        "name_de": "Dunkelsicht",
+        "level": null,
+        "player_choice": false,
+        "text_en": "You have Darkvision with a range of 120 feet.",
+        "text_de": "Du hast Dunkelsicht mit einer Reichweite von 36 Metern.",
+        "grants": [
+          { "type": "darkvision", "range_ft": 120 }
+        ]
+      },
+      {
+        "id": "dwarf-dwarven-resilience",
+        "name_en": "Dwarven Resilience",
+        "name_de": "Zwergische Unverwüstlichkeit",
+        "level": null,
+        "player_choice": false,
+        "text_en": "You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned condition.",
+        "text_de": "Du bist gegen Giftschaden resistent. Außerdem bist du bei Rettungswürfen zum Vermeiden oder Beenden des Zustands Vergiftet im Vorteil.",
+        "grants": [
+          { "type": "damage_resistance", "damage_types": ["poison"] },
+          { "type": "advantage", "on": ["saving_throws_against_poisoned"] }
+        ]
+      },
+      {
+        "id": "dwarf-dwarven-toughness",
+        "name_en": "Dwarven Toughness",
+        "name_de": "Zwergische Zähigkeit",
+        "level": null,
+        "player_choice": false,
+        "text_en": "Your Hit Point maximum increases by 1, and it increases by 1 again whenever you gain a level.",
+        "text_de": "Dein Trefferpunktemaximum wird um 1 und bei jedem Stufenaufstieg um 1 weiteren Punkt erhöht.",
+        "grants": [
+          { "type": "hp_bonus_per_level", "bonus_per_level": 1 }
+        ]
+      },
+      {
+        "id": "dwarf-stonecunning",
+        "name_en": "Stonecunning",
+        "name_de": "Steingespür",
+        "level": null,
+        "player_choice": false,
+        "text_en": "As a Bonus Action, you gain Tremorsense with a range of 60 feet for 10 minutes. You must be on a stone surface or touching a stone surface to use this Tremorsense. The stone can be natural or worked.\n\nYou can use this Bonus Action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.",
+        "text_de": "Als Bonusaktion erhältst du zehn Minuten lang Erschütterungssinn mit einer Reichweite von 18 Metern. Du musst dich auf einer steinernen Oberfläche befinden oder eine solche berühren, um den Erschütterungssinn nutzen zu können. Es kann sich um naturbelassenen oder bearbeiteten Stein handeln.\n\nDie Häufigkeit, mit der du diese Bonusaktion ausführen kannst, entspricht deinem Übungsbonus. Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück.",
+        "grants": [
+          {
+            "type": "active_ability",
+            "action_type": "bonus_action",
+            "uses": "proficiency_bonus",
+            "recharge": "long_rest",
+            "effect": {
+              "description_en": "Gain Tremorsense (range 60 feet) for 10 minutes. Requires contact with a stone surface (natural or worked).",
+              "description_de": "Erhält Erschütterungssinn (Reichweite 18 Meter) für 10 Minuten. Erfordert Kontakt mit einer steinernen Oberfläche (naturbelassen oder bearbeitet)."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "elf",
+    "name_en": "Elf",
+    "name_de": "Elf",
+    "flavor_en": "Created by the god Corellon, the first elves could change their forms at will. They lost this ability when Corellon cursed them for plotting with the deity Lolth, who tried and failed to usurp Corellon's dominion. When Lolth was cast into the Abyss, most elves renounced her and earned Corellon's forgiveness, but that which Corellon had taken from them was lost forever.\n\nNo longer able to shape-shift at will, the elves retreated to the Feywild, where their sorrow was deepened by that plane's influence. Over time, curiosity led many of them to explore other planes of existence, including worlds in the Material Plane.\n\nElves have pointed ears and lack facial and body hair. They live for around 750 years, and they don't sleep but instead enter a trance when they need to rest. In that state, they remain aware of their surroundings while immersing themselves in memories and meditations.\n\nAn environment subtly transforms elves after they inhabit it for a millennium or more, and it grants them certain kinds of magic. Drow, high elves, and wood elves are examples of elves who have been transformed thus.\n\nDrow: Drow typically dwell in the Underdark and have been shaped by it. Some drow individuals and societies avoid the Underdark altogether yet carry its magic. In the Eberron setting, for example, drow dwell in rainforests and cyclopean ruins on the continent of Xen'drik.\n\nHigh Elves: High elves have been infused with the magic of crossings between the Feywild and the Material Plane. On some worlds, high elves refer to themselves by other names. For example, they call themselves sun or moon elves in the Forgotten Realms setting, Silvanesti and Qualinesti in the Dragonlance setting, and Aereni in the Eberron setting.\n\nWood Elves: Wood elves carry the magic of primeval forests within themselves. They are known by many other names, including wild elves, green elves, and forest elves. Grugach are reclusive wood elves of the Greyhawk setting, while the Kagonesti and the Tairnadal are wood elves of the Dragonlance and Eberron settings, respectively.",
+    "flavor_de": "Die ersten Elfen wurden vom Gott Corellon erschaffen und konnten ihre Gestalt nach ihren Wünschen ändern. Doch diese Fähigkeit verloren sie, als Corellon sie verfluchte, weil sie sich auf die Seite der Göttin Lolth geschlagen hatten. Lolth hatte erfolglos versucht, Corellon zu entmachten. Als Lolth in den Abyss geschleudert wurde, entsagten ihr die meisten Elfen. Corellon vergab ihnen, doch was er ihnen genommen hatte, war für immer verloren.\n\nIhrer Fähigkeit zum Gestaltwandeln beraubt, zogen die Elfen sich in die Feenwildnis zurück, wo sie durch den Einfluss jener Ebene noch unglücklicher wurden. Im Lauf der Zeit führte die Neugier sie auf andere Existenzebenen, auch in Welten der materiellen Ebene.\n\nElfen haben spitze Ohren und weder Gesichts- noch Körperbehaarung. Sie werden etwa 750 Jahre alt. Um sich auszuruhen, schlafen sie nicht, sondern fallen in eine Art Trance. In diesem Zustand sind sie sich ihrer Umgebung weiterhin bewusst, geben sich jedoch Erinnerungen und Meditationen hin.\n\nEine Umgebung verwandelt die Elfen subtil, wenn sie dort tausend Jahre und mehr verbracht haben, und gewährt ihnen bestimmte Arten von Magie. Drow, Hochelfen und Waldelfen sind Beispiele dafür.\n\nDrow: Drow leben üblicherweise im Unterreich und wurden von diesem beeinflusst. Es gibt auch Drow - Individuen und ganze Gesellschaften -, die das Unterreich meiden. Dennoch tragen sie seine Magie in sich. In der Kampagnenwelt Eberron leben Drow beispielsweise in den Regenwäldern und zyklopischen Ruinen des Kontinents Xen'drik.\n\nHochelfen: Hochelfen tragen die Magie von Kreuzungen zwischen der Feenwildnis und der materiellen Ebene in sich. In manchen Welten haben Hochelfen sich andere Namen gegeben. Beispielsweise nennen die Hochelfen der Vergessenen Reiche sich Sonnen- und Mondelfen. In Dragonlance bezeichnen sie sich als Silvanesti und Qualinesti. In Eberron heißen sie Aereni.\n\nWaldelfen: Waldelfen tragen die Magie urtümlicher Wälder in sich. Sie sind auch unter vielen anderen Namen bekannt, beispielsweise als Wildelfen, Grünelfen oder Kupferelfen. Grugach sind die einsiedlerischen Waldelfen aus Greyhawk. Kagonesti und Tairnadal sind die Waldelfen aus Dragonlance und Eberron.",
+    "creature_type": "humanoid",
+    "size": {
+      "default": "medium",
+      "description_en": "Medium (about 5–6 feet tall)",
+      "description_de": "Mittelgroß (150–180 cm)"
+    },
+    "speed_ft": 30,
+    "traits": [
+      {
+        "id": "elf-darkvision",
+        "name_en": "Darkvision",
+        "name_de": "Dunkelsicht",
+        "level": null,
+        "player_choice": false,
+        "text_en": "You have Darkvision with a range of 60 feet.",
+        "text_de": "Du hast Dunkelsicht mit einer Reichweite von 18 Metern.",
+        "grants": [
+          { "type": "darkvision", "range_ft": 60 }
+        ]
+      },
+      {
+        "id": "elf-elven-lineage",
+        "name_en": "Elven Lineage",
+        "name_de": "Elfische Abstammung",
+        "level": null,
+        "player_choice": true,
+        "choice_prompt_en": "Choose a lineage: Drow, High Elf, or Wood Elf. Also choose Intelligence, Wisdom, or Charisma as your spellcasting ability for the spells from this trait.",
+        "choice_prompt_de": "Wähle eine Abstammung: Drow, Hochelf oder Waldelf. Wähle außerdem Intelligenz, Weisheit oder Charisma als dein Attribut zum Zauberwirken für die Zauber dieses Merkmals.",
+        "text_en": "You are part of a lineage that grants you supernatural abilities. Choose a lineage from the Elven Lineages table. You gain the level 1 benefit of that lineage.\n\nWhen you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level.\n\nIntelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).\n\nDrow: The range of your Darkvision increases to 120 feet. You also know the Dancing Lights cantrip. Level 3: Faerie Fire. Level 5: Darkness.\nHigh Elf: You know the Prestidigitation cantrip. Whenever you finish a Long Rest, you can replace that cantrip with a different cantrip from the Wizard spell list. Level 3: Detect Magic. Level 5: Misty Step.\nWood Elf: Your Speed increases to 35 feet. You also know the Druidcraft cantrip. Level 3: Longstrider. Level 5: Pass without Trace.",
+        "text_de": "Du bist Teil einer Abstammungslinie, die dir übernatürliche Fähigkeiten gewährt. Wähle aus der Tabelle Elfische Abstammungen eine Abstammung aus. Du erhältst durch diese Linie den Vorzug für die 1. Stufe.\n\nWenn du die 3. und 5. Charakterstufe erreichst, erlernst du einen Zauber eines höheren Grades wie in der Tabelle angegeben. Du hast diesen Zauber stets vorbereitet. Du kannst ihn einmal wirken, ohne einen Zauberplatz zu verbrauchen. Diese Fähigkeit erhältst du nach einer langen Rast zurück. Du kannst den Zauber auch mit einem beliebigen verfügbaren Zauberplatz des entsprechenden Grades wirken.\n\nIntelligenz, Weisheit oder Charisma ist dein Attribut zum Wirken der Zauber dieser Abstammungslinie (wähle das Attribut aus, wenn du dich für eine Linie entscheidest).\n\nDrow: Die Reichweite deiner Dunkelsicht ist auf 36 Meter erhöht. Außerdem kennst du den Zaubertrick Tanzende Lichter. 3. Stufe: Feenfeuer. 5. Stufe: Dunkelheit.\nHochelf: Du kennst den Zaubertrick Taschenspielerei. Wann immer du eine lange Rast beendest, kannst du diesen Zaubertrick durch einen anderen Zaubertrick von der Zauberliste des Magiers ersetzen. 3. Stufe: Magie entdecken. 5. Stufe: Nebelschritt.\nWaldelf: Deine Bewegungsrate ist auf zehn Meter erhöht. Außerdem kennst du den Zaubertrick Druidenkunst. 3. Stufe: Lange Schritte. 5. Stufe: Spurloses Gehen.",
+        "grants": [
+          {
+            "type": "choice",
+            "choose": 1,
+            "options": [
+              {
+                "id": "drow-lineage",
+                "name_en": "Drow",
+                "name_de": "Drow",
+                "text_en": "The range of your Darkvision increases to 120 feet. You also know the Dancing Lights cantrip. Level 3: Faerie Fire (free cast, long rest recharge). Level 5: Darkness (free cast, long rest recharge).",
+                "text_de": "Die Reichweite deiner Dunkelsicht ist auf 36 Meter erhöht. Außerdem kennst du den Zaubertrick Tanzende Lichter. 3. Stufe: Feenfeuer (einmal ohne Zauberplatz, Wiederaufladung nach langer Rast). 5. Stufe: Dunkelheit (einmal ohne Zauberplatz, Wiederaufladung nach langer Rast).",
+                "grants": [
+                  { "type": "darkvision", "range_ft": 120 },
+                  {
+                    "type": "spell_progression",
+                    "spellcasting_ability_choice": ["intelligence", "wisdom", "charisma"],
+                    "spells": [
+                      { "level": 1, "spell_id": "dancing-lights", "type": "cantrip" },
+                      { "level": 3, "spell_id": "faerie-fire", "free_cast": 1, "recharge": "long_rest" },
+                      { "level": 5, "spell_id": "darkness", "free_cast": 1, "recharge": "long_rest" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "high-elf-lineage",
+                "name_en": "High Elf",
+                "name_de": "Hochelf",
+                "text_en": "You know the Prestidigitation cantrip. Whenever you finish a Long Rest, you can replace that cantrip with a different cantrip from the Wizard spell list. Level 3: Detect Magic (free cast, long rest recharge). Level 5: Misty Step (free cast, long rest recharge).",
+                "text_de": "Du kennst den Zaubertrick Taschenspielerei. Wann immer du eine lange Rast beendest, kannst du diesen Zaubertrick durch einen anderen Zaubertrick von der Zauberliste des Magiers ersetzen. 3. Stufe: Magie entdecken (einmal ohne Zauberplatz, Wiederaufladung nach langer Rast). 5. Stufe: Nebelschritt (einmal ohne Zauberplatz, Wiederaufladung nach langer Rast).",
+                "grants": [
+                  {
+                    "type": "spell_progression",
+                    "spellcasting_ability_choice": ["intelligence", "wisdom", "charisma"],
+                    "spells": [
+                      { "level": 1, "spell_id": "prestidigitation", "type": "cantrip", "note_en": "Can be swapped for any Wizard cantrip after each Long Rest.", "note_de": "Kann nach jeder langen Rast gegen einen beliebigen Magier-Zaubertrick ausgetauscht werden." },
+                      { "level": 3, "spell_id": "detect-magic", "free_cast": 1, "recharge": "long_rest" },
+                      { "level": 5, "spell_id": "misty-step", "free_cast": 1, "recharge": "long_rest" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "wood-elf-lineage",
+                "name_en": "Wood Elf",
+                "name_de": "Waldelf",
+                "text_en": "Your Speed increases to 35 feet. You also know the Druidcraft cantrip. Level 3: Longstrider (free cast, long rest recharge). Level 5: Pass without Trace (free cast, long rest recharge).",
+                "text_de": "Deine Bewegungsrate ist auf zehn Meter erhöht. Außerdem kennst du den Zaubertrick Druidenkunst. 3. Stufe: Lange Schritte (einmal ohne Zauberplatz, Wiederaufladung nach langer Rast). 5. Stufe: Spurloses Gehen (einmal ohne Zauberplatz, Wiederaufladung nach langer Rast).",
+                "grants": [
+                  { "type": "speed_bonus", "bonus_ft": 5 },
+                  {
+                    "type": "spell_progression",
+                    "spellcasting_ability_choice": ["intelligence", "wisdom", "charisma"],
+                    "spells": [
+                      { "level": 1, "spell_id": "druidcraft", "type": "cantrip" },
+                      { "level": 3, "spell_id": "longstrider", "free_cast": 1, "recharge": "long_rest" },
+                      { "level": 5, "spell_id": "pass-without-trace", "free_cast": 1, "recharge": "long_rest" }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "elf-fey-ancestry",
+        "name_en": "Fey Ancestry",
+        "name_de": "Feenblut",
+        "level": null,
+        "player_choice": false,
+        "text_en": "You have Advantage on saving throws you make to avoid or end the Charmed condition.",
+        "text_de": "Du bist bei Rettungswürfen zum Vermeiden oder Beenden des Zustands Bezaubert im Vorteil.",
+        "grants": [
+          { "type": "advantage", "on": ["saving_throws_against_charmed"] }
+        ]
+      },
+      {
+        "id": "elf-keen-senses",
+        "name_en": "Keen Senses",
+        "name_de": "Scharfe Sinne",
+        "level": null,
+        "player_choice": true,
+        "choice_prompt_en": "Choose proficiency in one of: Insight, Perception, or Survival.",
+        "choice_prompt_de": "Wähle Übung in einer der folgenden Fertigkeiten: Motiv erkennen, Wahrnehmung oder Überlebenskunst.",
+        "text_en": "You have proficiency in the Insight, Perception, or Survival skill.",
+        "text_de": "Du bist in einer der Fertigkeiten Motiv erkennen, Überlebenskunst oder Wahrnehmung geübt.",
+        "grants": [
+          { "type": "skill_proficiency", "choose": 1, "from": ["insight", "perception", "survival"] }
+        ]
+      },
+      {
+        "id": "elf-trance",
+        "name_en": "Trance",
+        "name_de": "Trance",
+        "level": null,
+        "player_choice": false,
+        "text_en": "You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.",
+        "text_de": "Du musst nicht schlafen und kannst nicht magisch zum Einschlafen gebracht werden. Du kannst eine lange Rast in vier Stunden beenden, wenn du diese Stunden in tranceartiger Meditation verbringst. Dabei bleibst du bei Bewusstsein.",
+        "grants": [
+          { "type": "special", "description_en": "No need to sleep; immune to magical sleep. Long Rest requires only 4 hours of trance meditation.", "description_de": "Kein Schlafbedürfnis; immun gegen magischen Schlaf. Lange Rast erfordert nur 4 Stunden Trancemeditation." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gnome",
+    "name_en": "Gnome",
+    "name_de": "Gnom",
+    "flavor_en": "Gnomes are magical folk created by gods of invention, illusions, and life underground. The earliest gnomes were seldom seen by other folk due to the gnomes' secretive nature and their propensity for living in forests and burrows. What they lacked in size, they made up for in cleverness. They confounded predators with traps and labyrinthine tunnels. They also learned magic from gods like Garl Glittergold, Baervan Wildwanderer, and Baravar Cloakshadow, who visited them in disguise. That magic eventually created the lineages of forest gnomes and rock gnomes.\n\nGnomes are petite folk with big eyes and pointed ears, who live around 425 years. Many gnomes like the feeling of a roof over their head, even if that \"roof\" is nothing more than a hat.",
+    "flavor_de": "Gnome sind ein magisches Volk, erschaffen von Göttern der Erfindungen, der Illusionen und des unterirdischen Lebens. Ihre frühesten Vertreter waren aufgrund ihrer Neigung zu einem Dasein in der Abgeschiedenheit von Wäldern und Bauen nahezu unbekannt. Was ihnen an Körpergröße fehlt, machen sie durch Gerissenheit wett. Verfolger verwirren sie mit Fallen und labyrinthartigen Tunneln. Ihre magischen Kenntnisse haben sie von Göttern erhalten, darunter Garl Glittergold, Baervan Wildwanderer und Baravar Schattenmantel, welcher sie inkognito aufsuchte. Durch diese Magie entstanden schließlich die Linien der Waldgnome und der Felsengnome.\n\nGnome sind kleine Leute mit großen Augen und spitzen Ohren. Sie werden etwa 425 Jahre alt. Viele von ihnen schätzen das Gefühl, ein Dach über dem Kopf zu haben - selbst wenn dieses Dach nur ein Hut ist.",
+    "creature_type": "humanoid",
+    "size": {
+      "default": "small",
+      "description_en": "Small (about 3–4 feet tall)",
+      "description_de": "Klein (90–120 cm)"
+    },
+    "speed_ft": 30,
+    "traits": [
+      {
+        "id": "gnome-darkvision",
+        "name_en": "Darkvision",
+        "name_de": "Dunkelsicht",
+        "level": null,
+        "player_choice": false,
+        "text_en": "You have Darkvision with a range of 60 feet.",
+        "text_de": "Du hast Dunkelsicht mit einer Reichweite von 18 Metern.",
+        "grants": [
+          { "type": "darkvision", "range_ft": 60 }
+        ]
+      },
+      {
+        "id": "gnome-gnomish-cunning",
+        "name_en": "Gnomish Cunning",
+        "name_de": "Gnomische Gerissenheit",
+        "level": null,
+        "player_choice": false,
+        "text_en": "You have Advantage on Intelligence, Wisdom, and Charisma saving throws.",
+        "text_de": "Du bist bei Charisma-, Intelligenz- und Weisheitsrettungswürfen im Vorteil.",
+        "grants": [
+          { "type": "advantage", "on": ["intelligence_saving_throws", "wisdom_saving_throws", "charisma_saving_throws"] }
+        ]
+      },
+      {
+        "id": "gnome-gnomish-lineage",
+        "name_en": "Gnomish Lineage",
+        "name_de": "Gnomische Abstammung",
+        "level": null,
+        "player_choice": true,
+        "choice_prompt_en": "Choose Forest Gnome or Rock Gnome. Also choose Intelligence, Wisdom, or Charisma as your spellcasting ability for the spells from this trait.",
+        "choice_prompt_de": "Wähle Waldgnom oder Felsengnom. Wähle außerdem Intelligenz, Weisheit oder Charisma als dein Attribut zum Zauberwirken für die Zauber dieses Merkmals.",
+        "text_en": "You are part of a lineage that grants you supernatural abilities. Choose one of the following options; whichever one you choose, Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage):\n\nForest Gnome: You know the Minor Illusion cantrip. You also always have the Speak with Animals spell prepared. You can cast it without a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. You can also use any spell slots you have to cast the spell.\n\nRock Gnome: You know the Mending and Prestidigitation cantrips. In addition, you can spend 10 minutes casting Prestidigitation to create a Tiny clockwork device (AC 5, 1 HP), such as a toy, fire starter, or music box. When you create the device, you determine its function by choosing one effect from Prestidigitation; the device produces that effect whenever you or another creature takes a Bonus Action to activate it with a touch. If the chosen effect has options within it, you choose one of those options for the device when you create it. For example, if you choose the spell's ignite-extinguish effect, you determine whether the device ignites or extinguishes fire; the device doesn't do both. You can have three such devices in existence at a time, and each falls apart 8 hours after its creation or when you dismantle it with a touch as a Utilize action.",
+        "text_de": "Du bist Teil einer Abstammungslinie, die dir übernatürliche Fähigkeiten gewährt. Wähle eine der folgenden Optionen aus. Charisma, Intelligenz oder Weisheit ist dein Attribut zum Wirken der Zauber dieser Abstammungslinie (wähle das Attribut aus, wenn du dich für eine Linie entscheidest).\n\nWaldgnom: Du kennst den Zaubertrick Einfache Illusion. Außerdem hast du den Zauber Mit Tieren sprechen stets vorbereitet. Die Anzahl der Male, die du den Zauber ohne Zauberplatz wirken kannst, entspricht deinem Übungsbonus. Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück. Du kannst den Zauber auch mit einem verfügbaren Zauberplatz wirken.\n\nFelsengnom: Du kennst die Zaubertricks Ausbessern und Taschenspielerei. Außerdem kannst du zehn Minuten verwenden und den Zaubertrick Taschenspielerei wirken, um ein winziges Uhrwerkgerät (RK 5, 1 TP) zu bauen, beispielsweise ein Spielzeug, einen Anzünder oder eine Spieluhr. Bestimme die Funktion des Geräts, indem du einen Effekt von Taschenspielerei auswählst. Das Gerät erzeugt den Effekt, wann immer du - oder eine andere Kreatur - eine Bonusaktion ausführst, um es mit einer Berührung zu aktivieren. Wenn der ausgewählte Effekt Optionen aufweist, entscheidest du dich für eine dieser Optionen, wenn du das Gerät baust. Du kannst bis zu drei dieser Geräte gleichzeitig verfügbar haben. Jedes Gerät fällt entweder acht Stunden nach seiner Erschaffung oder dann auseinander, wenn du es mit einer Berührung (eine Verwenden-Aktion) zerlegst.",
+        "grants": [
+          {
+            "type": "choice",
+            "choose": 1,
+            "options": [
+              {
+                "id": "forest-gnome-lineage",
+                "name_en": "Forest Gnome",
+                "name_de": "Waldgnom",
+                "text_en": "You know the Minor Illusion cantrip. You also always have the Speak with Animals spell prepared. You can cast it without a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. You can also use any spell slots you have to cast the spell.",
+                "text_de": "Du kennst den Zaubertrick Einfache Illusion. Außerdem hast du den Zauber Mit Tieren sprechen stets vorbereitet. Die Anzahl der Male, die du den Zauber ohne Zauberplatz wirken kannst, entspricht deinem Übungsbonus. Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück. Du kannst den Zauber auch mit einem verfügbaren Zauberplatz wirken.",
+                "grants": [
+                  {
+                    "type": "spell_progression",
+                    "spellcasting_ability_choice": ["intelligence", "wisdom", "charisma"],
+                    "spells": [
+                      { "level": 1, "spell_id": "minor-illusion", "type": "cantrip" },
+                      { "level": 1, "spell_id": "speak-with-animals", "free_cast": "proficiency_bonus", "recharge": "long_rest" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "rock-gnome-lineage",
+                "name_en": "Rock Gnome",
+                "name_de": "Felsengnom",
+                "text_en": "You know the Mending and Prestidigitation cantrips. In addition, you can spend 10 minutes casting Prestidigitation to create a Tiny clockwork device (AC 5, 1 HP), such as a toy, fire starter, or music box. When you create the device, you determine its function by choosing one effect from Prestidigitation; the device produces that effect whenever you or another creature takes a Bonus Action to activate it with a touch. If the chosen effect has options within it, you choose one of those options for the device when you create it. You can have three such devices in existence at a time, and each falls apart 8 hours after its creation or when you dismantle it with a touch as a Utilize action.",
+                "text_de": "Du kennst die Zaubertricks Ausbessern und Taschenspielerei. Außerdem kannst du zehn Minuten verwenden und den Zaubertrick Taschenspielerei wirken, um ein winziges Uhrwerkgerät (RK 5, 1 TP) zu bauen, beispielsweise ein Spielzeug, einen Anzünder oder eine Spieluhr. Bestimme die Funktion des Geräts, indem du einen Effekt von Taschenspielerei auswählst. Das Gerät erzeugt den Effekt, wann immer du - oder eine andere Kreatur - eine Bonusaktion ausführst, um es mit einer Berührung zu aktivieren. Du kannst bis zu drei dieser Geräte gleichzeitig verfügbar haben. Jedes Gerät fällt entweder acht Stunden nach seiner Erschaffung oder dann auseinander, wenn du es mit einer Berührung (eine Verwenden-Aktion) zerlegst.",
+                "grants": [
+                  {
+                    "type": "spell_progression",
+                    "spellcasting_ability_choice": ["intelligence", "wisdom", "charisma"],
+                    "spells": [
+                      { "level": 1, "spell_id": "mending", "type": "cantrip" },
+                      { "level": 1, "spell_id": "prestidigitation", "type": "cantrip" }
+                    ]
+                  },
+                  {
+                    "type": "special",
+                    "description_en": "Can spend 10 minutes casting Prestidigitation to create a Tiny clockwork device (AC 5, 1 HP). Up to 3 devices at once; each lasts 8 hours or until dismantled as a Utilize action.",
+                    "description_de": "Kann 10 Minuten damit verbringen, Taschenspielerei zu wirken, um ein winziges Uhrwerkgerät (RK 5, 1 TP) zu bauen. Bis zu 3 Geräte gleichzeitig; jedes hält 8 Stunden oder bis es als Verwenden-Aktion zerlegt wird."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "goliath",
+    "name_en": "Goliath",
+    "name_de": "Goliath",
+    "flavor_en": "Towering over most folk, goliaths are distant descendants of giants. Each goliath bears the favors of the first giants—favors that manifest in various supernatural boons, including the ability to quickly grow and temporarily approach the height of goliaths' gigantic kin.\n\nGoliaths have physical characteristics that are reminiscent of the giants in their family lines. For example, some goliaths look like stone giants, while others resemble fire giants. Whatever giants they count as kin, goliaths have forged their own path in the multiverse—unencumbered by the internecine conflicts that have ravaged giantkind for ages—and seek heights above those reached by their ancestors.",
+    "flavor_de": "Als entfernte Verwandte der Riesen überragen Goliaths die meisten anderen Humanoiden. Jeder Goliath trägt die Vorteile der ersten Riesen in sich. Diese Vorteile manifestieren sich als übernatürliche Gaben wie die Fähigkeit, rasch zu wachsen und vorübergehend die Größe der riesischen Verwandten anzunehmen.\n\nGoliaths haben körperliche Merkmale, die den Riesen ihrer Abstammungslinien entsprechen. So sehen manche von ihnen Steinriesen ähnlich, andere eher den Feuerriesen. Unabhängig von ihren riesischen Vorfahren haben Goliaths ihre eigenen Pfade im Multiversum ausgetreten - unbelastet von den Bruderkriegen, die ganze Zeitalter hindurch zwischen den Riesenarten tobten - und streben nach Höhen, die von ihren Vorfahren nie erreicht wurden.",
+    "creature_type": "humanoid",
+    "size": {
+      "default": "medium",
+      "description_en": "Medium (about 7–8 feet tall)",
+      "description_de": "Mittelgroß (210–240 cm)"
+    },
+    "speed_ft": 35,
+    "traits": [
+      {
+        "id": "goliath-giant-ancestry",
+        "name_en": "Giant Ancestry",
+        "name_de": "Riesige Abstammung",
+        "level": null,
+        "player_choice": true,
+        "choice_prompt_en": "Choose one of the six giant ancestry boons: Cloud's Jaunt, Fire's Burn, Frost's Chill, Hill's Tumble, Stone's Endurance, or Storm's Thunder.",
+        "choice_prompt_de": "Wähle einen der sechs riesischen Abstammungsvorzüge: Eiseskälte, Feuersbrunst, Felsenfestigkeit, Hügelsturz, Sturmdonner oder Wolkensprung.",
+        "text_en": "You are descended from Giants. Choose one of the following benefits—a supernatural boon from your ancestry; you can use the chosen benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest:\n\nCloud's Jaunt (Cloud Giant): As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see.\n\nFire's Burn (Fire Giant): When you hit a target with an attack roll and deal damage to it, you can also deal 1d10 Fire damage to that target.\n\nFrost's Chill (Frost Giant): When you hit a target with an attack roll and deal damage to it, you can also deal 1d6 Cold damage to that target and reduce its Speed by 10 feet until the start of your next turn.\n\nHill's Tumble (Hill Giant): When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the Prone condition.\n\nStone's Endurance (Stone Giant): When you take damage, you can take a Reaction to roll 1d12. Add your Constitution modifier to the number rolled and reduce the damage by that total.\n\nStorm's Thunder (Storm Giant): When you take damage from a creature within 60 feet of you, you can take a Reaction to deal 1d8 Thunder damage to that creature.",
+        "text_de": "Du stammst von Riesen ab. Wähle einen der folgenden Vorzüge als übernatürliche Gabe durch deine Abstammung aus. Die Anzahl der möglichen Anwendungen dieses Vorzugs entspricht deinem Übungsbonus. Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück.\n\nEiseskälte (Frostriese): Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du ihm zusätzlich 1W6 Kälteschaden zufügen und seine Bewegungsrate bis zum Beginn deines nächsten Zugs um drei Meter verringern.\n\nFeuersbrunst (Feuerriese): Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du ihm zusätzlich 1W10 Feuerschaden zufügen.\n\nFelsenfestigkeit (Steinriese): Wenn du Schaden erleidest, kannst du eine Reaktion ausführen, um mit 1W12 zu würfeln. Füge dem Ergebnis deinen Konstitutionsmodifikator hinzu und ziehe die Summe vom erlittenen Schaden ab.\n\nHügelsturz (Hügelriese): Wenn du eine Kreatur von höchstens großer Größe mit einem Angriffswurf triffst und ihr Schaden zufügst, kannst du sie außerdem umstoßen.\n\nSturmdonner (Sturmriese): Wenn dir eine Kreatur im Abstand von bis zu 18 Metern von dir Schaden zufügt, kannst du eine Reaktion ausführen, um dieser Kreatur 1W8 Schallschaden zuzufügen.\n\nWolkensprung (Wolkenriese): Als Bonusaktion kannst du dich auf magische Art bis zu neun Meter weit in einen freien Bereich teleportieren, den du sehen kannst.",
+        "grants": [
+          {
+            "type": "choice",
+            "choose": 1,
+            "options": [
+              {
+                "id": "clouds-jaunt",
+                "name_en": "Cloud's Jaunt (Cloud Giant)",
+                "name_de": "Wolkensprung (Wolkenriese)",
+                "text_en": "As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see. Uses: Proficiency Bonus per Long Rest.",
+                "text_de": "Als Bonusaktion kannst du dich auf magische Art bis zu neun Meter weit in einen freien Bereich teleportieren, den du sehen kannst. Anwendungen: Übungsbonus pro langer Rast.",
+                "grants": [{ "type": "active_ability", "action_type": "bonus_action", "uses": "proficiency_bonus", "recharge": "long_rest", "effect": { "description_en": "Teleport up to 30 feet to an unoccupied space you can see.", "description_de": "Teleportiere dich bis zu neun Meter weit in einen freien Bereich, den du sehen kannst." } }]
+              },
+              {
+                "id": "fires-burn",
+                "name_en": "Fire's Burn (Fire Giant)",
+                "name_de": "Feuersbrunst (Feuerriese)",
+                "text_en": "When you hit a target with an attack roll and deal damage to it, you can also deal 1d10 Fire damage to that target. Uses: Proficiency Bonus per Long Rest.",
+                "text_de": "Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du ihm zusätzlich 1W10 Feuerschaden zufügen. Anwendungen: Übungsbonus pro langer Rast.",
+                "grants": [{ "type": "active_ability", "action_type": "reaction_on_hit", "uses": "proficiency_bonus", "recharge": "long_rest", "effect": { "description_en": "Deal an additional 1d10 Fire damage to the target.", "description_de": "Füge dem Ziel zusätzlich 1W10 Feuerschaden zu." } }]
+              },
+              {
+                "id": "frosts-chill",
+                "name_en": "Frost's Chill (Frost Giant)",
+                "name_de": "Eiseskälte (Frostriese)",
+                "text_en": "When you hit a target with an attack roll and deal damage to it, you can also deal 1d6 Cold damage to that target and reduce its Speed by 10 feet until the start of your next turn. Uses: Proficiency Bonus per Long Rest.",
+                "text_de": "Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du ihm zusätzlich 1W6 Kälteschaden zufügen und seine Bewegungsrate bis zum Beginn deines nächsten Zugs um drei Meter verringern. Anwendungen: Übungsbonus pro langer Rast.",
+                "grants": [{ "type": "active_ability", "action_type": "reaction_on_hit", "uses": "proficiency_bonus", "recharge": "long_rest", "effect": { "description_en": "Deal an additional 1d6 Cold damage and reduce target's Speed by 10 feet until start of your next turn.", "description_de": "Füge zusätzlich 1W6 Kälteschaden zu und verringere die Bewegungsrate des Ziels bis zum Beginn deines nächsten Zugs um drei Meter." } }]
+              },
+              {
+                "id": "hills-tumble",
+                "name_en": "Hill's Tumble (Hill Giant)",
+                "name_de": "Hügelsturz (Hügelriese)",
+                "text_en": "When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the Prone condition. Uses: Proficiency Bonus per Long Rest.",
+                "text_de": "Wenn du eine Kreatur von höchstens großer Größe mit einem Angriffswurf triffst und ihr Schaden zufügst, kannst du sie außerdem umstoßen. Anwendungen: Übungsbonus pro langer Rast.",
+                "grants": [{ "type": "active_ability", "action_type": "reaction_on_hit", "uses": "proficiency_bonus", "recharge": "long_rest", "effect": { "description_en": "Give the target the Prone condition (Large or smaller targets only).", "description_de": "Versetzt das Ziel in den Zustand Liegend (nur Kreaturen von höchstens großer Größe)." } }]
+              },
+              {
+                "id": "stones-endurance",
+                "name_en": "Stone's Endurance (Stone Giant)",
+                "name_de": "Felsenfestigkeit (Steinriese)",
+                "text_en": "When you take damage, you can take a Reaction to roll 1d12. Add your Constitution modifier to the number rolled and reduce the damage by that total. Uses: Proficiency Bonus per Long Rest.",
+                "text_de": "Wenn du Schaden erleidest, kannst du eine Reaktion ausführen, um mit 1W12 zu würfeln. Füge dem Ergebnis deinen Konstitutionsmodifikator hinzu und ziehe die Summe vom erlittenen Schaden ab. Anwendungen: Übungsbonus pro langer Rast.",
+                "grants": [{ "type": "active_ability", "action_type": "reaction", "uses": "proficiency_bonus", "recharge": "long_rest", "effect": { "description_en": "Roll 1d12 + Constitution modifier and reduce incoming damage by that amount.", "description_de": "Würfle 1W12 + Konstitutionsmodifikator und reduziere den eingehenden Schaden um diesen Betrag." } }]
+              },
+              {
+                "id": "storms-thunder",
+                "name_en": "Storm's Thunder (Storm Giant)",
+                "name_de": "Sturmdonner (Sturmriese)",
+                "text_en": "When you take damage from a creature within 60 feet of you, you can take a Reaction to deal 1d8 Thunder damage to that creature. Uses: Proficiency Bonus per Long Rest.",
+                "text_de": "Wenn dir eine Kreatur im Abstand von bis zu 18 Metern von dir Schaden zufügt, kannst du eine Reaktion ausführen, um dieser Kreatur 1W8 Schallschaden zuzufügen. Anwendungen: Übungsbonus pro langer Rast.",
+                "grants": [{ "type": "active_ability", "action_type": "reaction", "uses": "proficiency_bonus", "recharge": "long_rest", "effect": { "description_en": "Deal 1d8 Thunder damage to the creature that damaged you (must be within 60 feet).", "description_de": "Füge der Kreatur, die dir Schaden zugefügt hat, 1W8 Schallschaden zu (muss sich innerhalb von 18 Metern befinden)." } }]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "goliath-large-form",
+        "name_en": "Large Form",
+        "name_de": "Große Gestalt",
+        "level": 5,
+        "player_choice": false,
+        "text_en": "Starting at character level 5, you can change your size to Large as a Bonus Action if you're in a big enough space. This transformation lasts for 10 minutes or until you end it (no action required). For that duration, you have Advantage on Strength checks, and your Speed increases by 10 feet. Once you use this trait, you can't use it again until you finish a Long Rest.",
+        "text_de": "Ab die 5. Charakterstufe kannst du deine Größe als Bonusaktion in die Kategorie Groß ändern, sofern du genügend Platz dazu hast. Diese Verwandlung bleibt zehn Minuten lang bestehen, oder bis du sie beendest (keine Aktion erforderlich). Während dieser Dauer bist du bei Stärkewürfen im Vorteil, und deine Bewegungsrate ist um drei Meter erhöht. Du kannst dieses Merkmal erst nach einer langen Rast erneut verwenden.",
+        "grants": [
+          {
+            "type": "active_ability",
+            "action_type": "bonus_action",
+            "uses": 1,
+            "recharge": "long_rest",
+            "effect": {
+              "description_en": "Become Large size for 10 minutes. Gain Advantage on Strength checks and +10 feet Speed.",
+              "description_de": "Werde für 10 Minuten groß. Erhalte Vorteil auf Stärkewürfe und +3 Meter Bewegungsrate."
+            }
+          }
+        ]
+      },
+      {
+        "id": "goliath-powerful-build",
+        "name_en": "Powerful Build",
+        "name_de": "Kräftiger Körperbau",
+        "level": null,
+        "player_choice": false,
+        "text_en": "You have Advantage on any saving throw you make to end the Grappled condition. You also count as one size larger when determining your carrying capacity.",
+        "text_de": "Du bist bei allen Attributswürfen zum Beenden des Zustands Gepackt im Vorteil. Außerdem gilt bei deiner Traglast die nächsthöhere Größenkategorie.",
+        "grants": [
+          { "type": "advantage", "on": ["saving_throws_to_end_grappled"] },
+          { "type": "special", "description_en": "Count as one size larger for carrying capacity.", "description_de": "Gilt bei der Traglast als eine Größenkategorie größer." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "halfling",
+    "name_en": "Halfling",
+    "name_de": "Halbling",
+    "flavor_en": "Cherished and guided by gods who value life, home, and hearth, halflings gravitate toward bucolic havens where family and community help shape their lives. That said, many halflings possess a brave and adventurous spirit that leads them on journeys of discovery, affording them the chance to explore a bigger world and make new friends along the way. Their size—similar to that of a human child—helps them pass through crowds unnoticed and slip through tight spaces.\n\nAnyone who has spent time around halflings, particularly halfling adventurers, has likely witnessed the storied \"luck of the halflings\" in action. When a halfling is in mortal danger, an unseen force seems to intervene on the halfling's behalf. Many halflings believe in the power of luck, and they attribute their unusual gift to one or more of their benevolent gods, including Yondalla, Brandobaris, and Charmalaine. The same gift might contribute to their robust life spans (about 150 years).\n\nHalfling communities come in all varieties. For every sequestered shire tucked away in an unspoiled part of the world, there's a crime syndicate like the Boromar Clan in the Eberron setting or a territorial mob of halflings like those in the Dark Sun setting.\n\nHalflings who prefer to live underground are sometimes called strongheart halflings or stouts. Nomadic halflings, as well as those who live among humans and other tall folk, are sometimes called lightfoot halflings or tallfellows.",
+    "flavor_de": "Halblinge werden von den Göttern des Lebens, des Heims und des Herds geschätzt und geleitet. Sie neigen dazu, sich mit Familie und Freunden idyllische Zufluchten zu schaffen. Nichtsdestotrotz besitzen viele von ihnen einen mutigen, abenteuerlustigen Geist, der sie auf Entdeckungsreisen führt. Dann erkunden sie die große weite Welt und finden dabei neue Freunde. Halblinge sind etwa so groß wie Menschenkinder, weswegen es ihnen leicht fällt, unbemerkt durch Ansammlungen von Personen zu gelangen und durch schmale Öffnungen zu schlüpfen.\n\nWer Zeit mit Halblingen, vor allem Halbling-Abenteurern verbracht hat, dem ist das sprichwörtliche Halblingsglück vermutlich nicht fremd. Wenn sich ein Halbling in ernster Gefahr befindet, scheint eine unsichtbare Macht zu seinen Gunsten einzugreifen. Viele Halblinge glauben an die Macht des Glücks und daran, dass sie ihre ungewöhnliche Gabe mindestens einem ihrer wohlmeinenden Götter wie Yondalla, Brandobaris oder Charmalaine zu verdanken haben. Auch ihre ansehnliche Lebensspanne von etwa 150 Jahren könnte dieser Gabe geschuldet sein.\n\nEs gibt alle möglichen Arten von Halblinggemeinschaften. Auf jede abgelegene Grafschaft in einem unverdorbenen Teil der Welt kommt ein Verbrechersyndikat wie der Boromar-Klan in Eberron oder ein territorialer Mob von Halblingen wie jener in der Welt der Dunklen Sonne.\n\nUnterirdisch lebende Halblinge werden bisweilen als Starkherz-Halblinge oder Stämmige bezeichnet. Nomadische Halblinge und solche, die unter Menschen und anderen größeren Völkern leben, werden manchmal Leichtfuß-Halblinge oder Großgefährten genannt.",
+    "creature_type": "humanoid",
+    "size": {
+      "default": "small",
+      "description_en": "Small (about 2–3 feet tall)",
+      "description_de": "Klein (60–90 cm)"
+    },
+    "speed_ft": 30,
+    "traits": [
+      {
+        "id": "halfling-brave",
+        "name_en": "Brave",
+        "name_de": "Tapferkeit",
+        "level": null,
+        "player_choice": false,
+        "text_en": "You have Advantage on saving throws you make to avoid or end the Frightened condition.",
+        "text_de": "Du bist bei Rettungswürfen zum Vermeiden oder Beenden des Zustands Verängstigt im Vorteil.",
+        "grants": [
+          { "type": "advantage", "on": ["saving_throws_against_frightened"] }
+        ]
+      },
+      {
+        "id": "halfling-halfling-nimbleness",
+        "name_en": "Halfling Nimbleness",
+        "name_de": "Halblingsgewandheit",
+        "level": null,
+        "player_choice": false,
+        "text_en": "You can move through the space of any creature that is a size larger than you, but you can't stop in the same space.",
+        "text_de": "Du kannst dich durch den Bereich jeder Kreatur bewegen, die mindestens eine Kategorie größer ist als du. Du kannst jedoch nicht in ihrem Bereich anhalten.",
+        "grants": [
+          { "type": "special", "description_en": "Can move through the space of any creature larger than you, but cannot stop there.", "description_de": "Kann sich durch den Bereich jeder Kreatur bewegen, die mindestens eine Größenkategorie größer ist, kann dort aber nicht anhalten." }
+        ]
+      },
+      {
+        "id": "halfling-luck",
+        "name_en": "Luck",
+        "name_de": "Halblingsglück",
+        "level": null,
+        "player_choice": false,
+        "text_en": "When you roll a 1 on the d20 of a D20 Test, you can reroll the die, and you must use the new roll.",
+        "text_de": "Wenn du bei einer W20-Prüfung eine 1 würfelst, kannst du erneut würfeln. In diesem Fall musst du das neue Ergebnis verwenden.",
+        "grants": [
+          { "type": "special", "description_en": "When you roll a 1 on a d20 Test, reroll and use the new result.", "description_de": "Wenn du bei einer W20-Prüfung eine 1 würfelst, würfele erneut und verwende das neue Ergebnis." }
+        ]
+      },
+      {
+        "id": "halfling-naturally-stealthy",
+        "name_en": "Naturally Stealthy",
+        "name_de": "Angeborene Verstohlenheit",
+        "level": null,
+        "player_choice": false,
+        "text_en": "You can take the Hide action even when you are obscured only by a creature that is at least one size larger than you.",
+        "text_de": "Du kannst die Verstecken-Aktion auch dann ausführen, wenn du nur von einer Kreatur verdeckt wirst, die mindestens eine Kategorie größer ist als du.",
+        "grants": [
+          { "type": "special", "description_en": "Can take the Hide action while obscured only by a creature at least one size larger than you.", "description_de": "Kann die Verstecken-Aktion ausführen, wenn nur von einer Kreatur verdeckt, die mindestens eine Größenkategorie größer ist." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "human",
+    "name_en": "Human",
+    "name_de": "Mensch",
+    "flavor_en": "Found throughout the multiverse, humans are as varied as they are numerous, and they endeavor to achieve as much as they can in the years they are given. Their ambition and resourcefulness are commended, respected, and feared on many worlds.\n\nHumans are as diverse in appearance as the people of Earth, and they have many gods. Scholars dispute the origin of humanity, but one of the earliest known human gatherings is said to have occurred in Sigil, the torus-shaped city at the center of the multiverse and the place where the Common language was born. From there, humans could have spread to every part of the multiverse, bringing the City of Doors' cosmopolitanism with them.",
+    "flavor_de": "Menschen gibt es im ganzen Multiversum. Sie sind so vielfältig wie zahlreich und versuchen, in ihrer Lebensspanne möglichst viel zu erreichen. Ihr Ehrgeiz und ihr Einfallsreichtum werden in vielen Welten geschätzt, respektiert und gefürchtet.\n\nDie Erscheinungsbilder von Menschen sind so divers wie die Völker der Erde, und Menschen haben viele Götter. Die Gelehrten streiten über die Herkunft der Menschheit, doch die frühesten menschlichen Versammlungen soll es in Sigil gegeben haben, jener ringförmigen Stadt in der Mitte des Multiversums, aus der auch die Gemeinsprache stammt. Von dort aus könnten die Menschen sich im gesamten Multiversum ausgebreitet und die Weltoffenheit der Stadt der Türen mitgebracht haben.",
+    "creature_type": "humanoid",
+    "size": {
+      "default": "medium",
+      "choice": ["medium", "small"],
+      "description_en": "Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species",
+      "description_de": "Mittelgroß (120–210 cm) oder Klein (60–120 cm) – lege die Größe fest, wenn du diese Spezies auswählst"
+    },
+    "speed_ft": 30,
+    "traits": [
+      {
+        "id": "human-resourceful",
+        "name_en": "Resourceful",
+        "name_de": "Einfallsreich",
+        "level": null,
+        "player_choice": false,
+        "text_en": "You gain Heroic Inspiration whenever you finish a Long Rest.",
+        "text_de": "Du erhältst Heldische Inspiration, wann immer du eine lange Rast beendest.",
+        "grants": [
+          { "type": "special", "description_en": "Gain Heroic Inspiration at the end of every Long Rest.", "description_de": "Erhalte Heldische Inspiration am Ende jeder langen Rast." }
+        ]
+      },
+      {
+        "id": "human-skillful",
+        "name_en": "Skillful",
+        "name_de": "Geschickt",
+        "level": null,
+        "player_choice": true,
+        "choice_prompt_en": "Choose proficiency in one skill of your choice.",
+        "choice_prompt_de": "Wähle Übung in einer Fertigkeit deiner Wahl.",
+        "text_en": "You gain proficiency in one skill of your choice.",
+        "text_de": "Du bist in einer Fertigkeit deiner Wahl geübt.",
+        "grants": [
+          { "type": "skill_proficiency", "choose": 1, "from": "any" }
+        ]
+      },
+      {
+        "id": "human-versatile",
+        "name_en": "Versatile",
+        "name_de": "Vielseitig",
+        "level": null,
+        "player_choice": true,
+        "choice_prompt_en": "Choose one Origin feat. Skilled is recommended.",
+        "choice_prompt_de": "Wähle ein Herkunftstalent deiner Wahl. Begabt wird empfohlen.",
+        "text_en": "You gain an Origin feat of your choice (see chapter 5). Skilled is recommended.",
+        "text_de": "Du erhältst ein Herkunftstalent deiner Wahl (siehe Kapitel 5). Begabt wird empfohlen.",
+        "grants": [
+          { "type": "feat", "category": "origin", "choose": 1 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "orc",
+    "name_en": "Orc",
+    "name_de": "Ork",
+    "flavor_en": "Orcs trace their creation to Gruumsh, a powerful god who roamed the wide open spaces of the Material Plane. Gruumsh equipped his children with gifts to help them wander great plains, vast caverns, and churning seas and to face the monsters that lurk there. Even when they turn their devotion to other gods, orcs retain Gruumsh's gifts: endurance, determination, and the ability to see in darkness.\n\nOrcs are, on average, tall and broad. They have gray skin, ears that are sharply pointed, and prominent lower canines that resemble small tusks. Orc youths on some worlds are told about their ancestors' great travels and travails. Inspired by those tales, many of those orcs wonder when Gruumsh will call on them to match the heroic deeds of old and if they will prove worthy of his favor. Other orcs are happy to leave old tales in the past and find their own way.",
+    "flavor_de": "Orks führen ihre Schöpfung auf Gruumsh zurück, einen mächtigen Gott, der die endlosen Weiten der materiellen Ebene durchstreifte. Gruumsh hat seine Kinder mit Gaben versehen, die ihnen helfen, durch weite Ebenen, riesige Höhlen und tobende Ozeane zu ziehen und gegen die Monster zu bestehen, die dort lauern. Selbst wenn die Orks sich anderen Göttern zuwenden, behalten sie doch die Gaben von Gruumsh: Ausdauer, Entschlossenheit und die Fähigkeit, im Dunkeln zu sehen.\n\nOrks sind im Allgemeinen groß und breit. Sie haben graue Haut, spitze Ohren und vorspringende untere Eckzähne, die Hauern ähneln. In manchen Welten wird jugendlichen Orks von den weiten Reisen und den Großtaten ihrer Ahnen erzählt. Davon inspiriert fragen sich die Jugendlichen, ob und wann Gruumsh sie für würdig befinden wird, in die Fußstapfen der Ahnen zu treten und eigene Heldentaten zu vollbringen. Andere Orks lassen die Vergangenheit gerne ruhen und suchen sich ihren eigenen Weg.",
+    "creature_type": "humanoid",
+    "size": {
+      "default": "medium",
+      "description_en": "Medium (about 6–7 feet tall)",
+      "description_de": "Mittelgroß (180–210 cm)"
+    },
+    "speed_ft": 30,
+    "traits": [
+      {
+        "id": "orc-adrenaline-rush",
+        "name_en": "Adrenaline Rush",
+        "name_de": "Adrenalinrausch",
+        "level": null,
+        "player_choice": false,
+        "text_en": "You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency Bonus.\n\nYou can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.",
+        "text_de": "Du kannst die Spurt-Aktion als Bonusaktion ausführen. In diesem Fall erhältst du temporäre Trefferpunkte in Höhe deines Übungsbonus.\n\nDie Häufigkeit, mit der du dieses Merkmal einsetzen kannst, entspricht deinem Übungsbonus. Du erhältst alle verbrauchten Anwendungen nach einer kurzen oder langen Rast zurück.",
+        "grants": [
+          {
+            "type": "active_ability",
+            "action_type": "bonus_action",
+            "uses": "proficiency_bonus",
+            "recharge": "short_or_long_rest",
+            "effect": {
+              "description_en": "Take the Dash action and gain Temporary Hit Points equal to your Proficiency Bonus.",
+              "description_de": "Führe die Spurt-Aktion aus und erhalte temporäre Trefferpunkte in Höhe deines Übungsbonus."
+            }
+          }
+        ]
+      },
+      {
+        "id": "orc-darkvision",
+        "name_en": "Darkvision",
+        "name_de": "Dunkelsicht",
+        "level": null,
+        "player_choice": false,
+        "text_en": "You have Darkvision with a range of 120 feet.",
+        "text_de": "Du hast Dunkelsicht mit einer Reichweite von 36 Metern.",
+        "grants": [
+          { "type": "darkvision", "range_ft": 120 }
+        ]
+      },
+      {
+        "id": "orc-relentless-endurance",
+        "name_en": "Relentless Endurance",
+        "name_de": "Durchhaltevermögen",
+        "level": null,
+        "player_choice": false,
+        "text_en": "When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. Once you use this trait, you can't do so again until you finish a Long Rest.",
+        "text_de": "Wenn deine Trefferpunkte auf 0 sinken, du aber nicht direkt stirbst, behältst du stattdessen 1 Trefferpunkt. Du kannst dieses Merkmal erst nach einer langen Rast erneut verwenden.",
+        "grants": [
+          {
+            "type": "active_ability",
+            "action_type": "no_action",
+            "uses": 1,
+            "recharge": "long_rest",
+            "effect": {
+              "description_en": "When reduced to 0 HP but not killed outright, drop to 1 HP instead.",
+              "description_de": "Wenn die Trefferpunkte auf 0 sinken, ohne direkt zu sterben, bleiben stattdessen 1 Trefferpunkt übrig."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tiefling",
+    "name_en": "Tiefling",
+    "name_de": "Tiefling",
+    "flavor_en": "Tieflings are either born in the Lower Planes or have fiendish ancestors who originated there. A tiefling (pronounced TEE-fling) is linked by blood to a devil, a demon, or some other Fiend. This connection to the Lower Planes is the tiefling's fiendish legacy, which comes with the promise of power yet has no effect on the tiefling's moral outlook.\n\nA tiefling chooses whether to embrace or lament their fiendish legacy. The three legacies are described below.\n\nAbyssal: The entropy of the Abyss, the chaos of Pandemonium, and the despair of Carceri call to tieflings who have the abyssal legacy. Horns, fur, tusks, and peculiar scents are common physical features of such tieflings, most of whom have the blood of demons coursing through their veins.\n\nChthonic: Tieflings who have the chthonic legacy feel not only the tug of Carceri but also the greed of Gehenna and the gloom of Hades. Some of these tieflings look cadaverous. Others possess the unearthly beauty of a succubus, or they have physical features in common with a night hag, a yugoloth, or some other Neutral Evil fiendish ancestor.\n\nInfernal: The infernal legacy connects tieflings not only to Gehenna but also the Nine Hells and the raging battlefields of Acheron. Horns, spines, tails, golden eyes, and a faint odor of sulfur or smoke are common physical features of such tieflings, most of whom trace their ancestry to devils.",
+    "flavor_de": "Tieflinge stammen entweder selbst von den Unteren Ebenen oder haben unholdische Ahnen, die von dort stammen. Sie sind mit Teufeln, Dämonen oder anderen Unholden blutsverwandt. Diese Verbindung mit den Unteren Ebenen ist das unholdische Erbe der Tieflinge, das Aussichten auf Macht, jedoch keine bestimmte moralische Einstellung bedeutet.\n\nJeder Tiefling wählt selbst aus, ob er sein unholdisches Erbe begrüßt oder beklagt. Die drei unholdischen Varianten werden im Folgenden beschrieben.\n\nAbyssisch: Die Entropie des Abyss, das Chaos des Pandämoniums und die Verzweiflung von Carceri liegen Tieflingen mit dem abyssischen Erbe im Blut. Hörner, Fell, Stoßzähne und eigenartige Gerüche sind bei ihnen übliche körperliche Merkmale, und in den Adern der meisten kreist Dämonenblut.\n\nChthonisch: Tieflinge mit dem chthonischen Erbe spüren nicht nur den Sog von Carceri, sondern auch die Gier von Gehenna und die Finsternis des Hades. Manche dieser Tieflinge sehen aus wie Kadaver. Andere besitzen die überirdische Schönheit von Sukkubi oder physische Merkmale von Nachtvetteln, Yugolothen oder anderen neutral bösen unholdischen Ahnen.\n\nInfernalisch: Das infernalische Erbe verbindet Tieflinge nicht nur mit Gehenna, sondern auch mit den Neun Höllen und den wüsten Schlachtfeldern von Acheron. Hörner, Stacheln, Schwänze, goldene Augen und ein leichter Schwefel- oder Rauchgeruch sind häufige physische Merkmale dieser Tieflinge, und die meisten von ihnen haben teuflische Vorfahren.",
+    "creature_type": "humanoid",
+    "size": {
+      "default": "medium",
+      "choice": ["medium", "small"],
+      "description_en": "Medium (about 4–7 feet tall) or Small (about 3–4 feet tall), chosen when you select this species",
+      "description_de": "Mittelgroß (120–210 cm) oder Klein (90–120 cm) – lege die Größe fest, wenn du diese Spezies auswählst"
+    },
+    "speed_ft": 30,
+    "traits": [
+      {
+        "id": "tiefling-darkvision",
+        "name_en": "Darkvision",
+        "name_de": "Dunkelsicht",
+        "level": null,
+        "player_choice": false,
+        "text_en": "You have Darkvision with a range of 60 feet.",
+        "text_de": "Du hast Dunkelsicht mit einer Reichweite von 18 Metern.",
+        "grants": [
+          { "type": "darkvision", "range_ft": 60 }
+        ]
+      },
+      {
+        "id": "tiefling-fiendish-legacy",
+        "name_en": "Fiendish Legacy",
+        "name_de": "Unholdisches Erbe",
+        "level": null,
+        "player_choice": true,
+        "choice_prompt_en": "Choose a legacy: Abyssal, Chthonic, or Infernal. Also choose Intelligence, Wisdom, or Charisma as your spellcasting ability for the spells from this trait.",
+        "choice_prompt_de": "Wähle ein Erbe: Abyssisch, Chthonisch oder Infernalisch. Wähle außerdem Intelligenz, Weisheit oder Charisma als dein Attribut zum Zauberwirken für die Zauber dieses Merkmals.",
+        "text_en": "You are the recipient of a legacy that grants you supernatural abilities. Choose a legacy from the Fiendish Legacies table. You gain the level 1 benefit of the chosen legacy.\n\nWhen you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level.\n\nIntelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy).\n\nAbyssal: You have Resistance to Poison damage. You also know the Poison Spray cantrip. Level 3: Ray of Sickness. Level 5: Hold Person.\nChthonic: You have Resistance to Necrotic damage. You also know the Chill Touch cantrip. Level 3: False Life. Level 5: Ray of Enfeeblement.\nInfernal: You have Resistance to Fire damage. You also know the Fire Bolt cantrip. Level 3: Hellish Rebuke. Level 5: Darkness.",
+        "text_de": "Dein Erbe gewährt dir übernatürliche Fähigkeiten. Wähle ein Erbe in der Tabelle Unholdisches Erbe aus. Du erhältst durch dieses Erbe den Vorzug für die 1. Stufe.\n\nWenn du die 3. und 5. Charakterstufe erreichst, erlernst du einen Zauber eines höheren Grades wie in der Tabelle angegeben. Du hast diesen Zauber stets vorbereitet. Du kannst ihn einmal wirken, ohne einen Zauberplatz zu verbrauchen. Diese Fähigkeit erhältst du nach einer langen Rast zurück. Du kannst den Zauber auch mit einem beliebigen verfügbaren Zauberplatz des entsprechenden Grades wirken.\n\nCharisma, Intelligenz oder Weisheit ist dein Attribut zum Wirken der Zauber dieses Erbes (wähle das Attribut aus, wenn du dich für ein Erbe entscheidest).\n\nAbyssisch: Du bist gegen Giftschaden resistent. Außerdem kennst du den Zaubertrick Gift versprühen. 3. Stufe: Strahl der Übelkeit. 5. Stufe: Person festhalten.\nChthonisch: Du bist gegen nekrotischen Schaden resistent. Außerdem kennst du den Zaubertrick Kalte Hand. 3. Stufe: Falsches Leben. 5. Stufe: Schwächestrahl.\nInfernalisch: Du bist gegen Feuerschaden resistent. Außerdem kennst du den Zaubertrick Feuerpfeil. 3. Stufe: Höllischer Tadel. 5. Stufe: Dunkelheit.",
+        "grants": [
+          {
+            "type": "choice",
+            "choose": 1,
+            "options": [
+              {
+                "id": "abyssal-legacy",
+                "name_en": "Abyssal",
+                "name_de": "Abyssisch",
+                "text_en": "You have Resistance to Poison damage. You also know the Poison Spray cantrip. Level 3: Ray of Sickness (free cast, long rest recharge). Level 5: Hold Person (free cast, long rest recharge).",
+                "text_de": "Du bist gegen Giftschaden resistent. Außerdem kennst du den Zaubertrick Gift versprühen. 3. Stufe: Strahl der Übelkeit (einmal ohne Zauberplatz, Wiederaufladung nach langer Rast). 5. Stufe: Person festhalten (einmal ohne Zauberplatz, Wiederaufladung nach langer Rast).",
+                "grants": [
+                  { "type": "damage_resistance", "damage_types": ["poison"] },
+                  {
+                    "type": "spell_progression",
+                    "spellcasting_ability_choice": ["intelligence", "wisdom", "charisma"],
+                    "spells": [
+                      { "level": 1, "spell_id": "poison-spray", "type": "cantrip" },
+                      { "level": 3, "spell_id": "ray-of-sickness", "free_cast": 1, "recharge": "long_rest" },
+                      { "level": 5, "spell_id": "hold-person", "free_cast": 1, "recharge": "long_rest" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "chthonic-legacy",
+                "name_en": "Chthonic",
+                "name_de": "Chthonisch",
+                "text_en": "You have Resistance to Necrotic damage. You also know the Chill Touch cantrip. Level 3: False Life (free cast, long rest recharge). Level 5: Ray of Enfeeblement (free cast, long rest recharge).",
+                "text_de": "Du bist gegen nekrotischen Schaden resistent. Außerdem kennst du den Zaubertrick Kalte Hand. 3. Stufe: Falsches Leben (einmal ohne Zauberplatz, Wiederaufladung nach langer Rast). 5. Stufe: Schwächestrahl (einmal ohne Zauberplatz, Wiederaufladung nach langer Rast).",
+                "grants": [
+                  { "type": "damage_resistance", "damage_types": ["necrotic"] },
+                  {
+                    "type": "spell_progression",
+                    "spellcasting_ability_choice": ["intelligence", "wisdom", "charisma"],
+                    "spells": [
+                      { "level": 1, "spell_id": "chill-touch", "type": "cantrip" },
+                      { "level": 3, "spell_id": "false-life", "free_cast": 1, "recharge": "long_rest" },
+                      { "level": 5, "spell_id": "ray-of-enfeeblement", "free_cast": 1, "recharge": "long_rest" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "infernal-legacy",
+                "name_en": "Infernal",
+                "name_de": "Infernalisch",
+                "text_en": "You have Resistance to Fire damage. You also know the Fire Bolt cantrip. Level 3: Hellish Rebuke (free cast, long rest recharge). Level 5: Darkness (free cast, long rest recharge).",
+                "text_de": "Du bist gegen Feuerschaden resistent. Außerdem kennst du den Zaubertrick Feuerpfeil. 3. Stufe: Höllischer Tadel (einmal ohne Zauberplatz, Wiederaufladung nach langer Rast). 5. Stufe: Dunkelheit (einmal ohne Zauberplatz, Wiederaufladung nach langer Rast).",
+                "grants": [
+                  { "type": "damage_resistance", "damage_types": ["fire"] },
+                  {
+                    "type": "spell_progression",
+                    "spellcasting_ability_choice": ["intelligence", "wisdom", "charisma"],
+                    "spells": [
+                      { "level": 1, "spell_id": "fire-bolt", "type": "cantrip" },
+                      { "level": 3, "spell_id": "hellish-rebuke", "free_cast": 1, "recharge": "long_rest" },
+                      { "level": 5, "spell_id": "darkness", "free_cast": 1, "recharge": "long_rest" }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tiefling-otherworldly-presence",
+        "name_en": "Otherworldly Presence",
+        "name_de": "Außerweltliche Präsenz",
+        "level": null,
+        "player_choice": false,
+        "text_en": "You know the Thaumaturgy cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Fiendish Legacy trait.",
+        "text_de": "Du kennst den Zaubertrick Thaumaturgie. Wenn du ihn mit diesem Merkmal wirkst, verwendest du das gleiche Attribut zum Zauberwirken wie bei deinem Merkmal Unholdisches Erbe.",
+        "grants": [
+          { "type": "spell_access", "spell_id": "thaumaturgy", "spellcasting_ability": "from_fiendish_legacy" }
+        ]
+      }
+    ]
+  }
+]
