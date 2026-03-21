@@ -1,0 +1,2411 @@
+[
+  {
+    "id": "alert",
+    "name_en": "Alert",
+    "name_de": "Wachsam",
+    "category": "origin",
+    "prerequisite_en": null,
+    "prerequisite_de": null,
+    "repeatable": false,
+    "ability_score_increase": null,
+    "benefits": [
+      {
+        "name_en": "Initiative Proficiency",
+        "name_de": "Initiative-Übung",
+        "text_en": "When you roll Initiative, you can add your Proficiency Bonus to the roll.",
+        "text_de": "Wenn du die Initiative auswürfelst, kannst du dem Ergebnis deinen Übungsbonus hinzufügen."
+      },
+      {
+        "name_en": "Initiative Swap",
+        "name_de": "Initiativetausch",
+        "text_en": "Immediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can't make this swap if you or the ally has the Incapacitated condition.",
+        "text_de": "Sofort nach dem Auswürfeln der Initiative kannst du deine Initiative mit der eines bereitwilligen Verbündeten im selben Kampf tauschen. Der Tausch ist nicht möglich, wenn mindestens einer von euch beiden kampfunfähig ist."
+      }
+    ]
+  },
+  {
+    "id": "crafter",
+    "name_en": "Crafter",
+    "name_de": "Handwerker",
+    "category": "origin",
+    "prerequisite_en": null,
+    "prerequisite_de": null,
+    "repeatable": false,
+    "ability_score_increase": null,
+    "benefits": [
+      {
+        "name_en": "Tool Proficiency",
+        "name_de": "Werkzeug, mit dem du geübt bist",
+        "text_en": "You gain proficiency with three different Artisan's Tools of your choice from the Fast Crafting table.",
+        "text_de": "Du erhältst Übung im Umgang mit drei verschiedenen Handwerkszeugen deiner Wahl aus der Tabelle „Flinkes Handwerk“."
+      },
+      {
+        "name_en": "Discount",
+        "name_de": "Rabatt",
+        "text_en": "Whenever you buy a nonmagical item, you receive a 20 percent discount on it.",
+        "text_de": "Wann immer du einen nichtmagischen Gegenstand kaufst, erhältst du einen Rabatt von 20 Prozent auf den Kauf."
+      },
+      {
+        "name_en": "Fast Crafting",
+        "name_de": "Flinkes Handwerk",
+        "text_en": "When you finish a Long Rest, you can craft one piece of gear from the Fast Crafting table, provided you have the Artisan's Tools associated with that item and have proficiency with those tools. The item lasts until you finish another Long Rest, at which point the item falls apart.\n\nFast Crafting table:\nCarpenter's Tools: Ladder, Torch\nLeatherworker's Tools: Case, Pouch\nMason's Tools: Block and Tackle\nPotter's Tools: Jug, Lamp\nSmith's Tools: Ball Bearings, Bucket, Caltrops, Grappling Hook, Iron Pot\nTinker's Tools: Bell, Shovel, Tinder Box\nWeaver's Tools: Basket, Rope, Net, Tent\nWoodcarver's Tools: Club, Greatclub, Quarterstaff",
+        "text_de": "Nach einer langen Rast kannst du einen Ausrüstungsgegenstand aus der Tabelle „Flinkes Handwerk“ herstellen, sofern du über das Handwerkszeug verfügst, das mit diesem Gegenstand assoziiert ist, und im Umgang mit diesem Werkzeug geübt bist. Der Gegenstand bleibt bis nach der nächsten langen Rast erhalten und zerfällt dann.\n\nTabelle Flinkes Handwerk:\nHolzschnitzerwerkzeug: Kampfstab, Knüppel, Zweihandknüppel\nLedererwerkzeug: Behälter, Beutel\nMaurerwerkzeug: Flaschenzug\nSchmiedewerkzeug: Eimer, Eisentopf, Enterhaken, Krähenfüße, Metallkügelchen\nSchreinerwerkzeug: Fackel, Leiter\nTöpferwerkzeug: Krug, Lampe\nTüftlerwerkzeug: Glocke, Schaufel, Zunder\nWeberwerkzeug: Korb, Netz, Seil, Zelt"
+      }
+    ]
+  },
+  {
+    "id": "healer",
+    "name_en": "Healer",
+    "name_de": "Heiler",
+    "category": "origin",
+    "prerequisite_en": null,
+    "prerequisite_de": null,
+    "repeatable": false,
+    "ability_score_increase": null,
+    "benefits": [
+      {
+        "name_en": "Battle Medic",
+        "name_de": "Kampfheiler",
+        "text_en": "If you have a Healer's Kit, you can expend one use of it and tend to a creature within 5 feet of yourself as a Utilize action. That creature can expend one of its Hit Point Dice, and you then roll that die. The creature regains a number of Hit Points equal to the roll plus your Proficiency Bonus.",
+        "text_de": "Wenn du eine Heilerausrüstung hast, kannst du eine Anwendung davon verbrauchen und als Verwenden-Aktion eine Kreatur im Abstand von bis zu 1,5 Metern von dir versorgen. Diese Kreatur kann einen ihrer Trefferpunktewürfel verbrauchen, mit dem du dann würfelst. Die Kreatur erhält Trefferpunkte in Höhe des Würfelergebnisses plus deines Übungsbonus zurück."
+      },
+      {
+        "name_en": "Healing Rerolls",
+        "name_de": "Wiederholen von Heilungswürfen",
+        "text_en": "Whenever you roll a die to determine the number of Hit Points you restore with a spell or with this feat's Battle Medic benefit, you can reroll the die if it rolls a 1, and you must use the new roll.",
+        "text_de": "Wann immer du würfelst, um die Anzahl von Trefferpunkten zu bestimmen, die du mit einem Zauber oder dem Kampfheiler-Vorzug dieses Talents wiederherstellst, kannst du bei einem Ergebnis von 1 erneut würfeln. In diesem Fall musst du das neue Ergebnis verwenden."
+      }
+    ]
+  },
+  {
+    "id": "lucky",
+    "name_en": "Lucky",
+    "name_de": "Glückspilz",
+    "category": "origin",
+    "prerequisite_en": null,
+    "prerequisite_de": null,
+    "repeatable": false,
+    "ability_score_increase": null,
+    "benefits": [
+      {
+        "name_en": "Luck Points",
+        "name_de": "Glückspunkte",
+        "text_en": "You have a number of Luck Points equal to your Proficiency Bonus and can spend the points on the benefits below. You regain your expended Luck Points when you finish a Long Rest.",
+        "text_de": "Du hast eine Anzahl von Glückspunkten in Höhe deines Übungsbonus, die du für die Vorzüge unten verbrauchen kannst. Du erhältst alle verbrauchten Glückspunkte nach einer langen Rast zurück."
+      },
+      {
+        "name_en": "Advantage",
+        "name_de": "Vorteil",
+        "text_en": "When you roll a d20 for a D20 Test, you can spend 1 Luck Point to give yourself Advantage on the roll.",
+        "text_de": "Wenn du eine W20-Prüfung ausführst, kannst du 1 Glückspunkt verbrauchen, damit der Prüfungswurf im Vorteil ist."
+      },
+      {
+        "name_en": "Disadvantage",
+        "name_de": "Nachteil",
+        "text_en": "When a creature rolls a d20 for an attack roll against you, you can spend 1 Luck Point to impose Disadvantage on that roll.",
+        "text_de": "Wenn eine Kreatur einen Angriffswurf mit einem W20 gegen dich ausführt, kannst du 1 Glückspunkt verbrauchen, damit der Angriffswurf im Nachteil ist."
+      }
+    ]
+  },
+  {
+    "id": "magic-initiate",
+    "name_en": "Magic Initiate",
+    "name_de": "Eingeweihter der Magie",
+    "category": "origin",
+    "prerequisite_en": null,
+    "prerequisite_de": null,
+    "repeatable": true,
+    "ability_score_increase": null,
+    "benefits": [
+      {
+        "name_en": "Two Cantrips",
+        "name_de": "Zwei Zaubertricks",
+        "text_en": "You learn two cantrips of your choice from the Cleric, Druid, or Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).",
+        "text_de": "Du beherrschst zwei Zaubertricks deiner Wahl aus der Zauberliste des Druiden, des Klerikers oder des Magiers. Dein Attribut zum Wirken der Zauber dieses Talents ist Intelligenz, Weisheit oder Charisma (wähle aus, wenn du dieses Talent auswählst)."
+      },
+      {
+        "name_en": "Level 1 Spell",
+        "name_de": "Zauber des 1. Grades",
+        "text_en": "Choose a level 1 spell from the same list you selected for this feat's cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.",
+        "text_de": "Wähle einen Zauber des 1. Grades von der Liste aus, die du für die Zaubertricks dieses Talents ausgewählt hast. Du hast diesen Zauber stets vorbereitet. Du kannst ihn einmal wirken, ohne einen Zauberplatz zu verbrauchen. Diese Fähigkeit erhältst du nach einer langen Rast zurück. Du kannst den Zauber auch mit einem beliebigen verfügbaren Zauberplatz wirken."
+      },
+      {
+        "name_en": "Spell Change",
+        "name_de": "Zauberwechsel",
+        "text_en": "Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.",
+        "text_de": "Wann immer du eine neue Stufe erhältst, kannst du einen der Zauber, die du für dieses Talent ausgewählt hast, durch einen anderen Zauber des gleichen Grades von der ausgewählten Zauberliste ersetzen."
+      },
+      {
+        "name_en": "Repeatable",
+        "name_de": "Kann wiederholt werden",
+        "text_en": "You can take this feat more than once, but you must choose a different spell list each time.",
+        "text_de": "Du kannst dieses Talent mehr als einmal verwenden, aber du musst jedes Mal eine andere Zauberliste auswählen."
+      }
+    ]
+  },
+  {
+    "id": "musician",
+    "name_en": "Musician",
+    "name_de": "Musiker",
+    "category": "origin",
+    "prerequisite_en": null,
+    "prerequisite_de": null,
+    "repeatable": false,
+    "ability_score_increase": null,
+    "benefits": [
+      {
+        "name_en": "Instrument Training",
+        "name_de": "Instrumentenvertrautheit",
+        "text_en": "You gain proficiency with three Musical Instruments of your choice.",
+        "text_de": "Du bist mit dem Spielen von drei Musikinstrumenten deiner Wahl geübt."
+      },
+      {
+        "name_en": "Encouraging Song",
+        "name_de": "Ermutigendes Lied",
+        "text_en": "As you finish a Short or Long Rest, you can play a song on a Musical Instrument with which you have proficiency and give Heroic Inspiration to allies who hear the song. The number of allies you can affect in this way equals your Proficiency Bonus.",
+        "text_de": "Wenn du eine kurze oder lange Rast beendest, kannst du auf einem Musikinstrument, mit dem du Übung hast, ein Lied spielen, das allen Verbündeten, die es hören können, Heldische Inspiration gibt. Die Anzahl von Verbündeten, die du auf diese Art beeinflussen kannst, entspricht deinem Übungsbonus."
+      }
+    ]
+  },
+  {
+    "id": "savage-attacker",
+    "name_en": "Savage Attacker",
+    "name_de": "Wilder Angreifer",
+    "category": "origin",
+    "prerequisite_en": null,
+    "prerequisite_de": null,
+    "repeatable": false,
+    "ability_score_increase": null,
+    "benefits": [
+      {
+        "name_en": "Savage Attacker",
+        "name_de": "Wilder Angreifer",
+        "text_en": "You've trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target.",
+        "text_de": "Du bist darin ausgebildet, besonders schadensintensive Schläge auszuführen. Einmal pro Zug kannst du, wenn du ein Ziel mit einer Waffe triffst, zweimal mit den Schadenswürfeln der Waffe würfeln und dir eines der Ergebnisse aussuchen."
+      }
+    ]
+  },
+  {
+    "id": "skilled",
+    "name_en": "Skilled",
+    "name_de": "Begabt",
+    "category": "origin",
+    "prerequisite_en": null,
+    "prerequisite_de": null,
+    "repeatable": true,
+    "ability_score_increase": null,
+    "benefits": [
+      {
+        "name_en": "Skilled",
+        "name_de": "Begabt",
+        "text_en": "You gain proficiency in any combination of three skills or tools of your choice.",
+        "text_de": "Du bist in drei Fertigkeiten oder Werkzeugen deiner Wahl in beliebiger Kombination geübt."
+      }
+    ]
+  },
+  {
+    "id": "tavern-brawler",
+    "name_en": "Tavern Brawler",
+    "name_de": "Kneipenschläger",
+    "category": "origin",
+    "prerequisite_en": null,
+    "prerequisite_de": null,
+    "repeatable": false,
+    "ability_score_increase": null,
+    "benefits": [
+      {
+        "name_en": "Enhanced Unarmed Strike",
+        "name_de": "Verstärkter waffenloser Angriff",
+        "text_en": "When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to 1d4 plus your Strength modifier instead of the normal damage of an Unarmed Strike.",
+        "text_de": "Wenn du mit deinem waffenlosen Angriff triffst und Schaden bewirkst, kannst du statt des normalen Schadens des waffenlosen Angriffs Wuchtschaden in Höhe von 1W4 plus deinem Stärkemodifikator bewirken."
+      },
+      {
+        "name_en": "Damage Rerolls",
+        "name_de": "Wiederholen von Schadenswürfen",
+        "text_en": "Whenever you roll a damage die for your Unarmed Strike, you can reroll the die if it rolls a 1, and you must use the new roll.",
+        "text_de": "Wann immer du für deinen waffenlosen Angriff mit einem Schadenswürfel würfelst, kannst du bei einem Ergebnis von 1 erneut würfeln. In diesem Fall musst du das neue Ergebnis verwenden."
+      },
+      {
+        "name_en": "Improvised Weaponry",
+        "name_de": "Improvisierte Waffen",
+        "text_en": "You have proficiency with improvised weapons.",
+        "text_de": "Du bist im Umgang mit improvisierten Waffen geübt."
+      },
+      {
+        "name_en": "Push",
+        "name_de": "Stoßen",
+        "text_en": "When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can deal damage to the target and also push it 5 feet away from you. You can use this benefit only once per turn.",
+        "text_de": "Wenn du in deinem Zug als Teil der Angriffsaktion eine Kreatur mit einem waffenlosen Angriff triffst, kannst du dem Ziel Schaden zufügen und es außerdem 1,5 Meter weit von dir wegstoßen. Du kannst diesen Vorzug nur einmal pro Zug anwenden."
+      }
+    ]
+  },
+  {
+    "id": "tough",
+    "name_en": "Tough",
+    "name_de": "Zäh",
+    "category": "origin",
+    "prerequisite_en": null,
+    "prerequisite_de": null,
+    "repeatable": false,
+    "ability_score_increase": null,
+    "benefits": [
+      {
+        "name_en": "Tough",
+        "name_de": "Zäh",
+        "text_en": "Your Hit Point maximum increases by an amount equal to twice your character level when you gain this feat. Whenever you gain a character level thereafter, your Hit Point maximum increases by an additional 2 Hit Points.",
+        "text_de": "Dein Trefferpunktemaximum wird um einen Betrag in doppelter Höhe deiner Charakterstufe erhöht, wenn du dieses Talent erhältst. Wann immer du danach eine Charakterstufe erhältst, wird dein Trefferpunktemaximum um weitere 2 Trefferpunkte erhöht."
+      }
+    ]
+  },
+  {
+    "id": "ability-score-improvement",
+    "name_en": "Ability Score Improvement",
+    "name_de": "Attributswerterhöhung",
+    "category": "general",
+    "prerequisite_en": "Level 4+",
+    "prerequisite_de": "min. 4. Stufe",
+    "repeatable": true,
+    "ability_score_increase": {
+      "abilities": [
+        "any"
+      ],
+      "amount": 2,
+      "max": 20,
+      "alternative": {
+        "abilities": [
+          "any",
+          "any"
+        ],
+        "amount": 1,
+        "max": 20
+      }
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Improvement",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase one ability score of your choice by 2, or increase two ability scores of your choice by 1. This feat can't increase an ability score above 20.",
+        "text_de": "Erhöhe einen Attributswert deiner Wahl um 2 Punkte oder zwei Attributswerte deiner Wahl um je 1 Punkt. Kein Attribut kann dadurch einen Wert von 20 überschreiten."
+      }
+    ]
+  },
+  {
+    "id": "actor",
+    "name_en": "Actor",
+    "name_de": "Schauspieler",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Charisma 13+",
+    "prerequisite_de": "min. 4. Stufe, min. Charisma 13",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "charisma"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Charisma score by 1, to a maximum of 20.",
+        "text_de": "Dein Charismawert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Impersonation",
+        "name_de": "Nachahmen",
+        "text_en": "While you're disguised as a real or fictional person, you have Advantage on Charisma (Deception or Performance) checks to convince others that you are that person.",
+        "text_de": "Wenn du dich als eine andere (reale oder fiktive) Person ausgibst, bist du bei Charismawürfen (Täuschen oder Auftreten), die du ausführst, um andere davon zu überzeugen, dass du wirklich diese Person bist, im Vorteil."
+      },
+      {
+        "name_en": "Mimicry",
+        "name_de": "Stimmen nachahmen",
+        "text_en": "You can mimic the sounds of other creatures, including speech. A creature that hears the mimicry must succeed on a Wisdom (Insight) check to determine the effect is faked (DC 8 plus your Charisma modifier and Proficiency Bonus).",
+        "text_de": "Du kannst die Geräusche anderer Kreaturen nachahmen, auch Sprache. Eine Kreatur, die deine Nachahmung hört, muss einen Weisheitswurf (Motiv erkennen) bestehen, um die Nachahmung als solche zu erkennen (SG 8 plus dein Charismamodifikator plus dein Übungsbonus)."
+      }
+    ]
+  },
+  {
+    "id": "athlete",
+    "name_en": "Athlete",
+    "name_de": "Athlet",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Strength or Dexterity 13+",
+    "prerequisite_de": "min. 4. Stufe, min. Stärke oder Geschicklichkeit 13",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "strength",
+        "dexterity"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+        "text_de": "Dein Stärke- oder dein Geschicklichkeitswert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Climb Speed",
+        "name_de": "Kletterbewegungsrate",
+        "text_en": "You gain a Climb Speed equal to your Speed.",
+        "text_de": "Du erhältst eine Kletterbewegungsrate in Höhe deiner Bewegungsrate."
+      },
+      {
+        "name_en": "Hop Up",
+        "name_de": "Aufspringen",
+        "text_en": "When you have the Prone condition, you can right yourself with only 5 feet of movement.",
+        "text_de": "Wenn du umgestoßen wurdest, kannst du mit nur 1,5 Metern Bewegung aufstehen."
+      },
+      {
+        "name_en": "Jumping",
+        "name_de": "Springen",
+        "text_en": "You can make a running Long or High Jump after moving only 5 feet.",
+        "text_de": "Du kannst einen Weit- oder Hochsprung ausführen, nachdem du dich nur 1,5 Meter weit bewegt hast."
+      }
+    ]
+  },
+  {
+    "id": "charger",
+    "name_en": "Charger",
+    "name_de": "Stürmer",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Strength or Dexterity 13+",
+    "prerequisite_de": "min. 4. Stufe, min. Stärke oder Geschicklichkeit 13",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "strength",
+        "dexterity"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+        "text_de": "Dein Stärke- oder dein Geschicklichkeitswert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Improved Dash",
+        "name_de": "Verbesserter Spurt",
+        "text_en": "When you take the Dash action, your Speed increases by 10 feet for that action.",
+        "text_de": "Wenn du die Spurt-Aktion ausführst, ist deine Bewegungsrate bei dieser Aktion um drei Meter erhöht."
+      },
+      {
+        "name_en": "Charge Attack",
+        "name_de": "Sturmangriff",
+        "text_en": "If you move at least 10 feet in a straight line toward a target immediately before hitting it with a melee attack roll as part of the Attack action, choose one of the following effects: gain a 1d8 bonus to the attack's damage roll, or push the target up to 10 feet away if it is no more than one size larger than you. You can use this benefit only once on each of your turns.",
+        "text_de": "Wenn du dich als Teil der Angriffsaktion mindestens drei Meter weit in gerader Linie auf ein Ziel zubewegst, bevor du es mit einem Nahkampfangriffswurf triffst, wähle einen der folgenden Effekte aus: Erhalte entweder einen Bonus von 1W8 auf den Schadenswurf des Angriffs oder stoße das Ziel bis zu drei Meter weit von dir weg, sofern es höchstens um eine Kategorie größer ist als du. Du kannst diesen Vorzug nur einmal in jedem deiner Züge anwenden."
+      }
+    ]
+  },
+  {
+    "id": "chef",
+    "name_en": "Chef",
+    "name_de": "Koch",
+    "category": "general",
+    "prerequisite_en": "Level 4+",
+    "prerequisite_de": "min. 4. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "constitution",
+        "wisdom"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Constitution or Wisdom score by 1, to a maximum of 20.",
+        "text_de": "Dein Konstitutions- oder dein Weisheitswert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Cook's Utensils",
+        "name_de": "Kochutensilien",
+        "text_en": "You gain proficiency with Cook's Utensils if you don't already have it.",
+        "text_de": "Du bist im Umgang mit Kochutensilien geübt, wenn du es noch nicht sein solltest."
+      },
+      {
+        "name_en": "Replenishing Meal",
+        "name_de": "Auffüllende Mahlzeit",
+        "text_en": "As part of a Short Rest, you can cook special food if you have ingredients and Cook's Utensils on hand. You can prepare enough of this food for a number of creatures equal to 4 plus your Proficiency Bonus. At the end of the Short Rest, any creature who eats the food and spends one or more Hit Dice to regain Hit Points regains an extra 1d8 Hit Points.",
+        "text_de": "Im Rahmen einer kurzen Rast kannst du spezielle Speisen zubereiten, sofern du die Zutaten und Kochutensilien zur Hand hast. Du kannst Mahlzeiten für eine Anzahl von Kreaturen in Höhe von 4 plus deinem Übungsbonus zubereiten. Wenn eine Kreatur nach der kurzen Rast die Mahlzeit isst und mindestens einen Trefferwürfel verbraucht, erhält sie 1W8 zusätzliche Trefferpunkte zurück."
+      },
+      {
+        "name_en": "Bolstering Treats",
+        "name_de": "Stärkende Leckereien",
+        "text_en": "With 1 hour of work or when you finish a Long Rest, you can cook a number of treats equal to your Proficiency Bonus if you have ingredients and Cook's Utensils on hand. These special treats last 8 hours after being made. A creature can use a Bonus Action to eat one of those treats to gain a number of Temporary Hit Points equal to your Proficiency Bonus.",
+        "text_de": "Mit einer Stunde Arbeit oder nach einer langen Rast kannst du eine Anzahl von Leckereien in Höhe deines Übungsbonus zubereiten, sofern du die Zutaten und Kochutensilien zur Hand hast. Diese Leckereien sind nach der Herstellung acht Stunden lang genießbar. Eine Kreatur, die mit einer Bonusaktion eine der Leckereien isst, erhält eine Anzahl von temporären Trefferpunkten in Höhe deines Übungsbonus."
+      }
+    ]
+  },
+  {
+    "id": "crossbow-expert",
+    "name_en": "Crossbow Expert",
+    "name_de": "Armbrustexperte",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Dexterity 13+",
+    "prerequisite_de": "min. 4. Stufe, min. Geschicklichkeit 13",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "dexterity"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Dexterity score by 1, to a maximum of 20.",
+        "text_de": "Dein Geschicklichkeitswert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Ignore Loading",
+        "name_de": "Laden ignorieren",
+        "text_en": "You ignore the Loading property of the Hand Crossbow, Heavy Crossbow, and Light Crossbow (all called crossbows elsewhere in this feat). If you're holding one of them, you can load a piece of ammunition into it even if you lack a free hand.",
+        "text_de": "Du ignorierst die Eigenschaft Laden bei Handarmbrüsten, schweren Armbrüsten und leichten Armbrüsten (in diesem Talent zusammenfassend als Armbrüste bezeichnet). Wenn du eine Armbrust hältst, kannst du auch dann Geschosse nachladen, wenn du keine freie Hand hast."
+      },
+      {
+        "name_en": "Firing in Melee",
+        "name_de": "Feuern im Nahkampf",
+        "text_en": "Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with crossbows.",
+        "text_de": "Wenn du dich im Abstand von bis zu 1,5 Metern von einem Gegner aufhältst, sind deine Angriffswürfe mit Armbrüsten dennoch nicht im Nachteil."
+      },
+      {
+        "name_en": "Dual Wielding",
+        "name_de": "Zwei-Waffen-Kampf",
+        "text_en": "When you make the extra attack of the Light property, you can add your ability modifier to the damage of the extra attack if that attack is with a crossbow that has the Light property and you aren't already adding that modifier to the damage.",
+        "text_de": "Wenn du den zusätzlichen Angriff mit der Eigenschaft Leicht ausführst, kannst du seinem Schaden deinen Attributsmodifikator hinzufügen, sofern der Angriff mit einer Armbrust ausgeführt wird, welche die Eigenschaft Leicht hat, und du dem Schaden diesen Modifikator nicht schon hinzugefügt hast."
+      }
+    ]
+  },
+  {
+    "id": "crusher",
+    "name_en": "Crusher",
+    "name_de": "Zermalmer",
+    "category": "general",
+    "prerequisite_en": "Level 4+",
+    "prerequisite_de": "min. 4. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "strength",
+        "constitution"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Strength or Constitution score by 1, to a maximum of 20.",
+        "text_de": "Dein Stärke- oder dein Konstitutionswert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Push",
+        "name_de": "Stoßen",
+        "text_en": "Once per turn, when you hit a creature with an attack that deals Bludgeoning damage, you can move it 5 feet to an unoccupied space if the target is no more than one size larger than you.",
+        "text_de": "Wenn du eine Kreatur mit einem Angriff triffst, der Wuchtschaden bewirkt, kannst du sie 1,5 Meter in einen freien Bereich stoßen, sofern sie höchstens um eine Kategorie größer ist als du."
+      },
+      {
+        "name_en": "Enhanced Critical",
+        "name_de": "Verstärkter kritischer Treffer",
+        "text_en": "When you score a Critical Hit that deals Bludgeoning damage to a creature, attack rolls against that creature have Advantage until the start of your next turn.",
+        "text_de": "Wenn du einen kritischen Treffer erzielst, der einer Kreatur Wuchtschaden zufügt, sind Angriffswürfe gegen diese Kreatur bis zum Beginn deines nächsten Zugs im Vorteil."
+      }
+    ]
+  },
+  {
+    "id": "defensive-duelist",
+    "name_en": "Defensive Duelist",
+    "name_de": "Defensiver Duellant",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Dexterity 13+",
+    "prerequisite_de": "min. 4. Stufe, min. Geschicklichkeit 13",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "dexterity"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Dexterity score by 1, to a maximum of 20.",
+        "text_de": "Dein Geschicklichkeitswert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Parry",
+        "name_de": "Parieren",
+        "text_en": "If you're holding a Finesse weapon and another creature hits you with a melee attack, you can take a Reaction to add your Proficiency Bonus to your Armor Class, potentially causing the attack to miss you. You gain this bonus to your AC against melee attacks until the start of your next turn.",
+        "text_de": "Wenn du eine Finesse-Waffe hältst und eine andere Kreatur dich mit einem Nahkampfangriff trifft, kannst du eine Reaktion ausführen, um deiner Rüstungsklasse deinen Übungsbonus hinzuzufügen, sodass der Angriff auf dich möglicherweise scheitert. Dieser Bonus auf deine RK bei Nahkampfangriffen bleibt bis zum Beginn deines nächsten Zugs erhalten."
+      }
+    ]
+  },
+  {
+    "id": "dual-wielder",
+    "name_en": "Dual Wielder",
+    "name_de": "Zwei-Waffen-Kämpfer",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Strength or Dexterity 13+",
+    "prerequisite_de": "min. 4. Stufe, min. Stärke oder Geschicklichkeit 13",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "strength",
+        "dexterity"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+        "text_de": "Dein Stärke- oder dein Geschicklichkeitswert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Enhanced Dual Wielding",
+        "name_de": "Verstärkter Zwei-Waffen-Kampf",
+        "text_en": "When you take the Attack action on your turn and attack with a weapon that has the Light property, you can make one extra attack as a Bonus Action later on the same turn with a different weapon, which must be a Melee weapon that lacks the Two-Handed property. You don't add your ability modifier to the extra attack's damage unless that modifier is negative.",
+        "text_de": "Wenn du in deinem Zug die Angriffsaktion ausführst und mit einer Waffe angreifst, welche die Eigenschaft Leicht hat, kannst du später im selben Zug als Bonusaktion einen zusätzlichen Angriff mit einer anderen Waffe ausführen. Es muss sich um eine Nahkampfwaffe handeln, die nicht die Eigenschaft Zweihändig hat. Du kannst dem Schaden des zusätzlichen Angriffs nicht deinen Attributsmodifikator hinzufügen, sofern dieser Modifikator nicht negativ ist."
+      },
+      {
+        "name_en": "Quick Draw",
+        "name_de": "Schnelles Ziehen",
+        "text_en": "You can draw or stow two weapons that lack the Two-Handed property when you would normally be able to draw or stow only one.",
+        "text_de": "Du kannst zwei Waffen ziehen oder wegstecken, die nicht die Eigenschaft Zweihändig haben, wenn du normalerweise nur eine Waffe ziehen oder wegstecken könntest."
+      }
+    ]
+  },
+  {
+    "id": "durable",
+    "name_en": "Durable",
+    "name_de": "Widerstandsfähig",
+    "category": "general",
+    "prerequisite_en": "Level 4+",
+    "prerequisite_de": "min. 4. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "constitution"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Constitution score by 1, to a maximum of 20.",
+        "text_de": "Dein Konstitutionswert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Defy Death",
+        "name_de": "Dem Tode trotzen",
+        "text_en": "You have Advantage on Death Saving Throws.",
+        "text_de": "Du bist bei Todesrettungswürfen im Vorteil."
+      },
+      {
+        "name_en": "Speedy Recovery",
+        "name_de": "Schnelle Erholung",
+        "text_en": "As a Bonus Action, you can expend one of your Hit Point Dice, roll the die, and regain a number of Hit Points equal to the roll.",
+        "text_de": "Als Bonusaktion kannst du einen deiner Trefferpunktewürfel verbrauchen, mit ihm würfeln und eine Anzahl von Trefferpunkten in Höhe des Ergebnisses zurückerhalten."
+      }
+    ]
+  },
+  {
+    "id": "elemental-adept",
+    "name_en": "Elemental Adept",
+    "name_de": "Elementar-Adept",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Spellcasting or Pact Magic Feature",
+    "prerequisite_de": "min. 4. Stufe, Merkmal Zauberwirken oder Merkmal Paktmagie",
+    "repeatable": true,
+    "ability_score_increase": {
+      "abilities": [
+        "intelligence",
+        "wisdom",
+        "charisma"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.",
+        "text_de": "Dein Intelligenz-, dein Weisheits- oder dein Charismawert wird um 1 Punkt erhöht (auf maximal 20)."
+      },
+      {
+        "name_en": "Energy Mastery",
+        "name_de": "Energiebeherrschung",
+        "text_en": "Choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. Spells you cast ignore Resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.",
+        "text_de": "Wähle eine der folgenden Schadensarten aus: Blitz, Feuer, Kälte, Säure oder Schall. Zauber, die du wirkst, ignorieren Resistenz gegen Schaden der ausgewählten Art. Außerdem kannst du, wenn du den Schaden eines gewirkten Zaubers auswürfelst, der Schaden dieser Art bewirkt, jede gewürfelte 1 als 2 werten."
+      },
+      {
+        "name_en": "Repeatable",
+        "name_de": "Kann wiederholt werden",
+        "text_en": "You can take this feat more than once, but you must choose a different damage type each time for Energy Mastery.",
+        "text_de": "Du kannst dieses Talent mehr als einmal verwenden, aber du musst jedes Mal eine andere Schadensart für Energiebeherrschung auswählen."
+      }
+    ]
+  },
+  {
+    "id": "fey-touched",
+    "name_en": "Fey-Touched",
+    "name_de": "Feenberührt",
+    "category": "general",
+    "prerequisite_en": "Level 4+",
+    "prerequisite_de": "min. 4. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "intelligence",
+        "wisdom",
+        "charisma"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.",
+        "text_de": "Dein Intelligenz-, dein Weisheits- oder dein Charismawert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Fey Magic",
+        "name_de": "Feenmagie",
+        "text_en": "Choose one level 1 spell from the Divination or Enchantment school of magic. You always have that spell and the Misty Step spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.",
+        "text_de": "Wähle einen Zauber des 1. Grades aus der Schule der Erkenntnis- oder der Schule der Verzauberungsmagie aus. Du hast diesen Zauber sowie den Zauber Nebelschritt stets vorbereitet. Du musst keinen Zauberplatz verbrauchen, um diese Zauber zu wirken. Wenn du einen der Zauber auf diese Art wirkst, kannst du ihn erst nach einer langen Rast erneut auf diese Art wirken. Du kannst diese Zauber auch mit einem beliebigen verfügbaren Zauberplatz des entsprechenden Grades wirken. Das Attribut zum Wirken dieser Zauber ist das durch dieses Talent erhöhte."
+      }
+    ]
+  },
+  {
+    "id": "grappler",
+    "name_en": "Grappler",
+    "name_de": "Ringer",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Strength or Dexterity 13+",
+    "prerequisite_de": "min. 4. Stufe, min. Stärke oder Geschicklichkeit 13",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "strength",
+        "dexterity"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+        "text_de": "Dein Stärke- oder dein Geschicklichkeitswert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Punch and Grab",
+        "name_de": "Zuschlagen und packen",
+        "text_en": "When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can use both the Damage and the Grapple option. You can use this benefit only once per turn.",
+        "text_de": "Wenn du eine Kreatur als Teil der Angriffsaktion in deinem Zug mit einem waffenlosen Angriff triffst, kannst du sowohl den Schaden bewirken als auch die Packen-Option verwenden. Du kannst diesen Vorzug nur einmal pro Zug anwenden."
+      },
+      {
+        "name_en": "Attack Advantage",
+        "name_de": "Angriffsvorteil",
+        "text_en": "You have Advantage on attack rolls against a creature Grappled by you.",
+        "text_de": "Du bist bei Angriffswürfen gegen eine Kreatur, die du gepackt hältst, im Vorteil."
+      },
+      {
+        "name_en": "Fast Wrestler",
+        "name_de": "Flinker Ringer",
+        "text_en": "Your Speed isn't halved when you move a creature Grappled by you if the creature is your size or smaller.",
+        "text_de": "Du musst keine zusätzliche Bewegungsrate verbrauchen, wenn du eine Kreatur bewegst, die du gepackt hältst, sofern die Kreatur höchstens so groß ist wie du."
+      }
+    ]
+  },
+  {
+    "id": "great-weapon-master",
+    "name_en": "Great Weapon Master",
+    "name_de": "Meister der großen Waffen",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Strength 13+",
+    "prerequisite_de": "min. 4. Stufe, min. Stärke 13",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "strength"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Strength score by 1, to a maximum of 20.",
+        "text_de": "Dein Stärkewert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Heavy Weapon Mastery",
+        "name_de": "Meisterung schwerer Waffen",
+        "text_en": "When you hit a creature with a weapon that has the Heavy property as part of the Attack action on your turn, you can cause the weapon to deal extra damage to the target. The extra damage equals your Proficiency Bonus.",
+        "text_de": "Wenn du eine Kreatur als Teil der Angriffsaktion in deinem Zug mit einer Waffe triffst, welche die Eigenschaft Schwer hat, kannst du dem Ziel mit dieser Waffe zusätzlichen Schaden zufügen. Der zusätzliche Schaden entspricht deinem Übungsbonus."
+      },
+      {
+        "name_en": "Hew",
+        "name_de": "Fällen",
+        "text_en": "Immediately after you score a Critical Hit with a Melee weapon or reduce a creature to 0 Hit Points with one, you can make one attack with the same weapon as a Bonus Action.",
+        "text_de": "Sofort, nachdem du mit einer Nahkampfwaffe einen kritischen Treffer erzielt oder die Trefferpunkte einer Kreatur auf 0 verringert hast, kannst du als Bonusaktion einen Angriff mit dieser Waffe ausführen."
+      }
+    ]
+  },
+  {
+    "id": "heavily-armored",
+    "name_en": "Heavily Armored",
+    "name_de": "Schwer gerüstet",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Medium Armor Training",
+    "prerequisite_de": "min. 4. Stufe, Vertrautheit mit mittelschwerer Rüstung",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "constitution",
+        "strength"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Constitution or Strength score by 1, to a maximum of 20.",
+        "text_de": "Dein Konstitutions- oder dein Stärkewert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Armor Training",
+        "name_de": "Rüstungsvertrautheit",
+        "text_en": "You gain training with Heavy armor.",
+        "text_de": "Du erhältst Vertrautheit mit schwerer Rüstung."
+      }
+    ]
+  },
+  {
+    "id": "heavy-armor-master",
+    "name_en": "Heavy Armor Master",
+    "name_de": "Meister der schweren Rüstungen",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Heavy Armor Training",
+    "prerequisite_de": "min. 4. Stufe, Vertrautheit mit schwerer Rüstung",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "constitution",
+        "strength"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Constitution or Strength score by 1, to a maximum of 20.",
+        "text_de": "Dein Konstitutions- oder dein Stärkewert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Damage Reduction",
+        "name_de": "Schadensverringerung",
+        "text_en": "When you're hit by an attack while you're wearing Heavy armor, any Bludgeoning, Piercing, and Slashing damage dealt to you by that attack is reduced by an amount equal to your Proficiency Bonus.",
+        "text_de": "Wenn du von einem Angriff getroffen wirst, während du schwere Rüstung trägst, wird jeder Stich-, Hieb- und Wuchtschaden durch diesen Angriff um einen Betrag in Höhe deines Übungsbonus verringert."
+      }
+    ]
+  },
+  {
+    "id": "inspiring-leader",
+    "name_en": "Inspiring Leader",
+    "name_de": "Inspirierender Anführer",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Wisdom or Charisma 13+",
+    "prerequisite_de": "min. 4. Stufe, min. Weisheit oder Charisma 13",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "wisdom",
+        "charisma"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Wisdom or Charisma score by 1, to a maximum of 20.",
+        "text_de": "Dein Weisheits- oder dein Charismawert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Bolstering Performance",
+        "name_de": "Stärkendes Auftreten",
+        "text_en": "When you finish a Short or Long Rest, you can give an inspiring performance: a speech, song, or dance. When you do so, choose up to six allies (which can include yourself) within 30 feet of yourself who witness the performance. The chosen creatures each gain Temporary Hit Points equal to your character level plus the modifier of the ability you increased with this feat.",
+        "text_de": "Nach einer kurzen oder langen Rast kannst du einen inspirierenden Auftritt in Form einer Ansprache, eines Liedes oder Tanzes darbieten. Wähle in diesem Fall bis zu sechs Verbündete (du selbst kannst dazugehören) im Abstand von bis zu neun Metern von dir aus, die den Auftritt miterleben. Die ausgewählten Kreaturen erhalten jeweils temporäre Trefferpunkte in Höhe deiner Charakterstufe plus deines Modifikators des Attributs, das du mit diesem Talent erhöht hast."
+      }
+    ]
+  },
+  {
+    "id": "keen-mind",
+    "name_en": "Keen Mind",
+    "name_de": "Scharfer Verstand",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Intelligence 13+",
+    "prerequisite_de": "min. 4. Stufe, min. Intelligenz 13",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "intelligence"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Intelligence score by 1, to a maximum of 20.",
+        "text_de": "Dein Intelligenzwert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Lore Knowledge",
+        "name_de": "Überlieferungswissen",
+        "text_en": "Choose one of the following skills: Arcana, History, Investigation, Nature, or Religion. If you lack proficiency in the chosen skill, you gain proficiency in it, and if you already have proficiency in it, you gain Expertise in it.",
+        "text_de": "Wähle eine der folgenden Fertigkeiten aus: Arkane Kunde, Geschichte, Nachforschungen, Naturkunde oder Religion. Wenn du in der ausgewählten Fertigkeit nicht geübt bist, so bist du es nun. Wenn du bereits darin geübt bist, erhältst du Expertise darin."
+      },
+      {
+        "name_en": "Quick Study",
+        "name_de": "Schnelles Studium",
+        "text_en": "You can take the Study action as a Bonus Action.",
+        "text_de": "Du kannst die Studieren-Aktion als Bonusaktion ausführen."
+      }
+    ]
+  },
+  {
+    "id": "lightly-armored",
+    "name_en": "Lightly Armored",
+    "name_de": "Leicht gerüstet",
+    "category": "general",
+    "prerequisite_en": "Level 4+",
+    "prerequisite_de": "min. 4. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "strength",
+        "dexterity"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+        "text_de": "Dein Stärke- oder dein Geschicklichkeitswert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Armor Training",
+        "name_de": "Rüstungsvertrautheit",
+        "text_en": "You gain training with Light armor and Shields.",
+        "text_de": "Du erhältst Vertrautheit mit leichter Rüstung sowie mit Schilden."
+      }
+    ]
+  },
+  {
+    "id": "mage-slayer",
+    "name_en": "Mage Slayer",
+    "name_de": "Magiertöter",
+    "category": "general",
+    "prerequisite_en": "Level 4+",
+    "prerequisite_de": "min. 4. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "strength",
+        "dexterity"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+        "text_de": "Dein Stärke- oder dein Geschicklichkeitswert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Concentration Breaker",
+        "name_de": "Konzentrationsbrecher",
+        "text_en": "When you damage a creature that is concentrating, it has Disadvantage on the saving throw it makes to maintain Concentration.",
+        "text_de": "Wenn du einer Kreatur Schaden zufügst, die sich konzentriert, so ist sie beim Rettungswurf, den sie zum Aufrechterhalten der Konzentration ausführt, im Nachteil."
+      },
+      {
+        "name_en": "Guarded Mind",
+        "name_de": "Bewachter Wille",
+        "text_en": "If you fail an Intelligence, a Wisdom, or a Charisma saving throw, you can cause yourself to succeed instead. Once you use this benefit, you can't use it again until you finish a Short or Long Rest.",
+        "text_de": "Wenn du bei einem Intelligenz-, Weisheits- oder Charismarettungswurf scheiterst, kannst du bewirken, dass er stattdessen gelingt. Du kannst diesen Vorzug erst nach einer kurzen oder langen Rast erneut verwenden."
+      }
+    ]
+  },
+  {
+    "id": "martial-weapon-training",
+    "name_en": "Martial Weapon Training",
+    "name_de": "Kriegswaffenvertrautheit",
+    "category": "general",
+    "prerequisite_en": "Level 4+",
+    "prerequisite_de": "min. 4. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "strength",
+        "dexterity"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+        "text_de": "Dein Stärke- oder dein Geschicklichkeitswert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Weapon Proficiency",
+        "name_de": "Übung mit Waffen",
+        "text_en": "You gain proficiency with Martial weapons.",
+        "text_de": "Du erhältst Übung im Umgang mit Kriegswaffen."
+      }
+    ]
+  },
+  {
+    "id": "medium-armor-master",
+    "name_en": "Medium Armor Master",
+    "name_de": "Meister der mittelschweren Rüstungen",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Medium Armor Training",
+    "prerequisite_de": "min. 4. Stufe, Vertrautheit mit mittelschwerer Rüstung",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "strength",
+        "dexterity"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+        "text_de": "Dein Stärke- oder dein Geschicklichkeitswert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Dexterous Wearer",
+        "name_de": "Geschickter Träger",
+        "text_en": "While you're wearing Medium armor, you can add 3, rather than 2, to your AC if you have a Dexterity score of 16 or higher.",
+        "text_de": "Wenn du eine mittelschwere Rüstung trägst, kannst du deiner RK 3 statt 2 hinzufügen, sofern du einen Geschicklichkeitswert von mindestens 16 hast."
+      }
+    ]
+  },
+  {
+    "id": "moderately-armored",
+    "name_en": "Moderately Armored",
+    "name_de": "Mittelschwer gerüstet",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Light Armor Training",
+    "prerequisite_de": "min. 4. Stufe, Vertrautheit mit leichter Rüstung",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "strength",
+        "dexterity"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+        "text_de": "Dein Stärke- oder dein Geschicklichkeitswert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Armor Training",
+        "name_de": "Rüstungsvertrautheit",
+        "text_en": "You gain training with Medium armor.",
+        "text_de": "Du erhältst Vertrautheit mit mittelschwerer Rüstung."
+      }
+    ]
+  },
+  {
+    "id": "mounted-combatant",
+    "name_en": "Mounted Combatant",
+    "name_de": "Berittener Kämpfer",
+    "category": "general",
+    "prerequisite_en": "Level 4+",
+    "prerequisite_de": "min. 4. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "strength",
+        "dexterity",
+        "wisdom"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Strength, Dexterity, or Wisdom score by 1, to a maximum of 20.",
+        "text_de": "Dein Stärke-, dein Geschicklichkeits- oder dein Weisheitswert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Mounted Strike",
+        "name_de": "Berittener Schlag",
+        "text_en": "While mounted, you have Advantage on attack rolls against any unmounted creature within 5 feet of your mount that is at least one size smaller than the mount.",
+        "text_de": "Solange du beritten bist, bist du bei Angriffswürfen gegen unberittene Kreaturen im Abstand von bis zu 1,5 Metern von deinem Reittier im Vorteil, sofern die Kreaturen um mindestens eine Kategorie kleiner als dein Reittier sind."
+      },
+      {
+        "name_en": "Leap Aside",
+        "name_de": "Beiseite springen",
+        "text_en": "If your mount is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw and only half damage if it fails. For your mount to gain this benefit, you must be riding it, and neither of you can have the Incapacitated condition.",
+        "text_de": "Wenn dein Reittier von einem Effekt profitiert, der ihm einen Geschicklichkeitsrettungswurf ermöglicht, um nur den halben Schaden zu erleiden, so erleidet es stattdessen bei einem Erfolg gar keinen und bei einem Misserfolg nur den halben Schaden. Damit dein Reittier diesen Vorzug erhält, musst du es reiten, und keiner von euch beiden darf kampfunfähig sein."
+      },
+      {
+        "name_en": "Veer",
+        "name_de": "Umlenken",
+        "text_en": "While mounted, you can force an attack that hits your mount to hit you instead if you don't have the Incapacitated condition.",
+        "text_de": "Wenn du beritten bist, kannst du einen Angriff auf dein Reittier auf dich umlenken, sofern du nicht kampfunfähig bist."
+      }
+    ]
+  },
+  {
+    "id": "observant",
+    "name_en": "Observant",
+    "name_de": "Aufmerksam",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Intelligence or Wisdom 13+",
+    "prerequisite_de": "min. 4. Stufe, min. Intelligenz oder Weisheit 13",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "intelligence",
+        "wisdom"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Intelligence or Wisdom score by 1, to a maximum of 20.",
+        "text_de": "Dein Intelligenz- oder dein Weisheitswert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Keen Observer",
+        "name_de": "Scharfer Beobachter",
+        "text_en": "Choose one of the following skills: Insight, Investigation, or Perception. If you lack proficiency with the chosen skill, you gain proficiency in it, and if you already have proficiency in it, you gain Expertise in it.",
+        "text_de": "Wähle eine der folgenden Fertigkeiten aus: Motiv erkennen, Nachforschungen oder Wahrnehmung. Wenn du in der ausgewählten Fertigkeit nicht geübt bist, so bist du es nun. Wenn du bereits darin geübt bist, erhältst du Expertise darin."
+      },
+      {
+        "name_en": "Quick Search",
+        "name_de": "Schnelles Suchen",
+        "text_en": "You can take the Search action as a Bonus Action.",
+        "text_de": "Du kannst die Suchen-Aktion als Bonusaktion ausführen."
+      }
+    ]
+  },
+  {
+    "id": "piercer",
+    "name_en": "Piercer",
+    "name_de": "Messerstecher",
+    "category": "general",
+    "prerequisite_en": "Level 4+",
+    "prerequisite_de": "min. 4. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "strength",
+        "dexterity"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Strength or Dexterity by 1, to a maximum of 20.",
+        "text_de": "Dein Stärke- oder dein Geschicklichkeitswert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Puncture",
+        "name_de": "Durchbohren",
+        "text_en": "Once per turn, when you hit a creature with an attack that deals Piercing damage, you can reroll one of the attack's damage dice, and you must use the new roll.",
+        "text_de": "Wenn du eine Kreatur mit einem Angriff triffst, der Stichschaden verursacht, kannst du einmal pro Zug einen der Schadenswürfel erneut würfeln. In diesem Fall musst du das neue Ergebnis verwenden."
+      },
+      {
+        "name_en": "Enhanced Critical",
+        "name_de": "Verstärkter kritischer Treffer",
+        "text_en": "When you score a Critical Hit that deals Piercing damage to a creature, you can roll one additional damage die when determining the extra Piercing damage the target takes.",
+        "text_de": "Wenn du einen kritischen Treffer erzielst, der Stichschaden bewirkt, kannst du mit einem zusätzlichen Schadenswürfel würfeln."
+      }
+    ]
+  },
+  {
+    "id": "poisoner",
+    "name_en": "Poisoner",
+    "name_de": "Giftmischer",
+    "category": "general",
+    "prerequisite_en": "Level 4+",
+    "prerequisite_de": "min. 4. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "dexterity",
+        "intelligence"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Dexterity or Intelligence score by 1, to a maximum of 20.",
+        "text_de": "Dein Geschicklichkeits- oder dein Intelligenzwert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Potent Poison",
+        "name_de": "Verstärktes Gift",
+        "text_en": "When you make a damage roll that deals Poison damage, it ignores Resistance to Poison damage.",
+        "text_de": "Wenn du einen Schadenswurf ausführst, der Giftschaden bewirkt, wird Resistenz gegen Giftschaden ignoriert."
+      },
+      {
+        "name_en": "Brew Poison",
+        "name_de": "Gift mischen",
+        "text_en": "You gain proficiency with the Poisoner's Kit. With 1 hour of work using such a kit and expending 50 GP worth of materials, you can create a number of poison doses equal to your Proficiency Bonus. As a Bonus Action, you can apply a poison dose to a weapon or piece of ammunition. Once applied, the poison retains its potency for 1 minute or until you hit with the poisoned item, whichever is shorter. When a creature takes damage from the poisoned item, that creature must succeed on a Constitution saving throw (DC 8 plus the modifier of the ability increased by this feat and your Proficiency Bonus) or take 2d8 Poison damage and have the Poisoned condition until the end of your next turn.",
+        "text_de": "Du bist im Umgang mit der Giftmischerausrüstung geübt. Mit einer Stunde Arbeit mit dieser Ausrüstung sowie Verbrauchen von Material im Wert von 50 GM kannst du eine Anzahl von Giftdosen in Höhe deines Übungsbonus herstellen. Als Bonusaktion kannst du eine Giftdosis an einer Waffe oder einem Geschoss anbringen. Wird das Gift angewendet, so behält es seine Wirksamkeit eine Minute oder so lang bei, bis du mit dem vergifteten Gegenstand Schaden bewirkst. Wenn eine Kreatur durch den vergifteten Gegenstand Schaden erleidet, muss sie einen Konstitutionsrettungswurf (SG 8 plus dein Modifikator des Attributs, das durch dieses Talent erhöht wurde, plus dein Übungsbonus) bestehen, oder sie erleidet 2W8 Giftschaden und ist bis zum Ende deines nächsten Zugs vergiftet."
+      }
+    ]
+  },
+  {
+    "id": "polearm-master",
+    "name_en": "Polearm Master",
+    "name_de": "Stangenwaffenmeister",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Strength or Dexterity 13+",
+    "prerequisite_de": "min. 4. Stufe, min. Stärke oder Geschicklichkeit 13",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "dexterity",
+        "strength"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Dexterity or Strength score by 1, to a maximum of 20.",
+        "text_de": "Dein Geschicklichkeits- oder dein Stärkewert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Pole Strike",
+        "name_de": "Stangenschlag",
+        "text_en": "Immediately after you take the Attack action and attack with a Quarterstaff, a Spear, or a weapon that has the Heavy and Reach properties, you can use a Bonus Action to make a melee attack with the opposite end of the weapon. The weapon deals Bludgeoning damage, and the weapon's damage die for this attack is a d4.",
+        "text_de": "Sofort, nachdem du die Angriffsaktion ausgeführt und mit einem Kampfstab, einem Speer oder einer Waffe mit den Eigenschaften Schwer und Weitreichend angegriffen hast, kannst du eine Bonusaktion verwenden, um einen Nahkampfangriff mit dem anderen Ende der Waffe auszuführen. Die Waffe bewirkt Wuchtschaden, und ihr Schadenswürfel für diesen Angriff ist ein W4."
+      },
+      {
+        "name_en": "Reactive Strike",
+        "name_de": "Reaktiver Schlag",
+        "text_en": "While you're holding a Quarterstaff, a Spear, or a weapon that has the Heavy and Reach properties, you can take a Reaction to make one melee attack against a creature that enters the reach you have with that weapon.",
+        "text_de": "Wenn du einen Kampfstab, einen Speer oder eine Waffe mit den Eigenschaften Schwer und Weitreichend hältst, kannst du mit einer Reaktion einen Nahkampfangriff gegen eine Kreatur ausführen, die sich in die Reichweite dieser Waffe begibt."
+      }
+    ]
+  },
+  {
+    "id": "resilient",
+    "name_en": "Resilient",
+    "name_de": "Belastbar",
+    "category": "general",
+    "prerequisite_en": "Level 4+",
+    "prerequisite_de": "min. 4. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "any"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Choose one ability in which you lack saving throw proficiency. Increase the chosen ability score by 1, to a maximum of 20.",
+        "text_de": "Wähle ein Attribut aus, in dessen Rettungswürfen du nicht geübt bist. Erhöhe den ausgewählten Attributswert um 1 (auf höchstens 20)."
+      },
+      {
+        "name_en": "Saving Throw Proficiency",
+        "name_de": "Übung in Rettungswürfen",
+        "text_en": "You gain saving throw proficiency with the chosen ability.",
+        "text_de": "Du bist in Rettungswürfen mit dem ausgewählten Attribut geübt."
+      }
+    ]
+  },
+  {
+    "id": "ritual-caster",
+    "name_en": "Ritual Caster",
+    "name_de": "Ritualwirker",
+    "category": "general",
+    "prerequisite_en": "Level 4+; Intelligence, Wisdom, or Charisma 13+",
+    "prerequisite_de": "min. 4. Stufe, min. Intelligenz, Weisheit oder Charisma 13",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "intelligence",
+        "wisdom",
+        "charisma"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.",
+        "text_de": "Dein Intelligenz-, dein Weisheits- oder dein Charismawert wird um 1 Punkt erhöht (auf maximal 20)."
+      },
+      {
+        "name_en": "Ritual Spells",
+        "name_de": "Ritualzauber",
+        "text_en": "Choose a number of level 1 spells equal to your Proficiency Bonus that have the Ritual tag. You always have those spells prepared, and you can cast them with any spell slots you have. The spells' spellcasting ability is the ability increased by this feat. Whenever your Proficiency Bonus increases thereafter, you can add an additional level 1 spell with the Ritual tag to the spells always prepared with this feature.",
+        "text_de": "Wähle eine Anzahl von Zaubern des 1. Grades in Höhe deines Übungsbonus aus, die als Rituale gekennzeichnet sind. Diese Zauber hast du stets vorbereitet und kannst sie mit beliebigen Zauberplätzen wirken, die du hast. Das Attribut zum Wirken dieser Zauber ist das durch dieses Talent erhöhte. Wann immer sich danach dein Übungsbonus erhöht, kannst du einen zusätzlichen Zauber des 1. Grades, der als Ritual gekennzeichnet ist, den durch dieses Merkmal stets vorbereiteten Zaubern hinzufügen."
+      },
+      {
+        "name_en": "Quick Ritual",
+        "name_de": "Schnelles Ritual",
+        "text_en": "With this benefit, you can cast a Ritual spell that you have prepared using its regular casting time rather than the extended time for a Ritual. Doing so doesn't require a spell slot. Once you cast the spell in this way, you can't use this benefit again until you finish a Long Rest.",
+        "text_de": "Mit diesem Vorzug kannst du einen Ritualzauber, den du vorbereitet hast, mit seinem normalen Zeitaufwand anstatt des verlängerten Ritualzeitaufwands wirken. Dafür benötigst du keinen Zauberplatz. Wirkst du den Zauber auf diese Art, so kannst du diesen Vorzug erst nach einer langen Rast erneut anwenden."
+      }
+    ]
+  },
+  {
+    "id": "sentinel",
+    "name_en": "Sentinel",
+    "name_de": "Wächter",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Strength or Dexterity 13+",
+    "prerequisite_de": "min. 4. Stufe, min. Stärke oder Geschicklichkeit 13",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "strength",
+        "dexterity"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+        "text_de": "Dein Stärke- oder dein Geschicklichkeitswert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Guardian",
+        "name_de": "Wächter",
+        "text_en": "Immediately after a creature within 5 feet of you takes the Disengage action or hits a target other than you with an attack, you can make an Opportunity Attack against that creature.",
+        "text_de": "Sofort, nachdem eine Kreatur im Abstand von bis zu 1,5 Metern von dir die Rückzug-Aktion ausgeführt oder ein Ziel außer dir mit einem Angriff getroffen hat, kannst du einen Gelegenheitsangriff gegen diese Kreatur ausführen."
+      },
+      {
+        "name_en": "Halt",
+        "name_de": "Anhalten",
+        "text_en": "When you hit a creature with an Opportunity Attack, the creature's Speed becomes 0 for the rest of the current turn.",
+        "text_de": "Wenn du eine Kreatur mit einem Gelegenheitsangriff triffst, ist die Bewegungsrate dieser Kreatur für den Rest des aktuellen Zugs auf 0 verringert."
+      }
+    ]
+  },
+  {
+    "id": "shadow-touched",
+    "name_en": "Shadow-Touched",
+    "name_de": "Schattenberührt",
+    "category": "general",
+    "prerequisite_en": "Level 4+",
+    "prerequisite_de": "min. 4. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "intelligence",
+        "wisdom",
+        "charisma"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.",
+        "text_de": "Dein Intelligenz-, dein Weisheits- oder dein Charismawert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Shadow Magic",
+        "name_de": "Schattenmagie",
+        "text_en": "Choose one level 1 spell from the Illusion or Necromancy school of magic. You always have that spell and the Invisibility spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.",
+        "text_de": "Wähle einen Zauber des 1. Grades aus der Schule der Illusionsmagie oder der Schule der Nekromantie aus. Diesen Zauber sowie den Zauber Unsichtbarkeit hast du stets vorbereitet. Du musst keinen Zauberplatz verbrauchen, um diese Zauber zu wirken. Wenn du einen der Zauber auf diese Art wirkst, kannst du ihn erst nach einer langen Rast erneut auf diese Art wirken. Du kannst diese Zauber auch mit einem beliebigen verfügbaren Zauberplatz des entsprechenden Grades wirken. Das Attribut zum Wirken dieser Zauber ist das durch dieses Talent erhöhte."
+      }
+    ]
+  },
+  {
+    "id": "sharpshooter",
+    "name_en": "Sharpshooter",
+    "name_de": "Scharfschütze",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Dexterity 13+",
+    "prerequisite_de": "min. 4. Stufe, min. Geschicklichkeit 13",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "dexterity"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Dexterity score by 1, to a maximum of 20.",
+        "text_de": "Dein Geschicklichkeitswert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Bypass Cover",
+        "name_de": "Deckung umgehen",
+        "text_en": "Your ranged attacks with weapons ignore Half Cover and Three-Quarters Cover.",
+        "text_de": "Deine Fernkampfangriffe mit Waffen ignorieren Teildeckung sowie Dreivierteldeckung."
+      },
+      {
+        "name_en": "Firing in Melee",
+        "name_de": "Feuern im Nahkampf",
+        "text_en": "Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with Ranged weapons.",
+        "text_de": "Wenn du dich im Abstand von bis zu 1,5 Metern von einem Gegner aufhältst, sind deine Angriffswürfe mit Fernkampfwaffen dennoch nicht im Nachteil."
+      },
+      {
+        "name_en": "Long Shots",
+        "name_de": "Fernschüsse",
+        "text_en": "Attacking at long range doesn't impose Disadvantage on your attack rolls with Ranged weapons.",
+        "text_de": "Bei Angriffen auf Maximalreichweite sind deine Angriffswürfe mit Fernkampfwaffen nicht im Nachteil."
+      }
+    ]
+  },
+  {
+    "id": "shield-master",
+    "name_en": "Shield Master",
+    "name_de": "Schildmeister",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Shield Training",
+    "prerequisite_de": "min. 4. Stufe, Vertrautheit mit Schilden",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "strength"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Strength score by 1, to a maximum of 20.",
+        "text_de": "Dein Stärkewert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Shield Bash",
+        "name_de": "Schildstoß",
+        "text_en": "If you attack a creature within 5 feet of you as part of the Attack action and hit with a Melee weapon, you can immediately bash the target with your Shield if it's equipped, forcing the target to make a Strength saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, you either push the target 5 feet from you or cause it to have the Prone condition (your choice). You can use this benefit only once on each of your turns.",
+        "text_de": "Wenn du eine Kreatur im Abstand von bis zu 1,5 Metern von dir als Teil der Angriffsaktion angreifst und mit einer Nahkampfwaffe triffst, kannst du dem Ziel sofort einen Schildstoß versetzen, sofern du einen Schild führst, und das Ziel zu einem Stärkerettungswurf (SG 8 plus dein Stärkemodifikator plus dein Übungsbonus) zwingen. Scheitert der Wurf, so stößt du das Ziel (nach deiner Wahl) entweder 1,5 Meter weit von dir weg oder du stößt es um. Du kannst diesen Vorzug nur einmal in jedem deiner Züge anwenden."
+      },
+      {
+        "name_en": "Interpose Shield",
+        "name_de": "Mit Schild decken",
+        "text_en": "If you're subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can take a Reaction to take no damage if you succeed on the saving throw and are holding a Shield.",
+        "text_de": "Bist du einem Effekt ausgesetzt, der dir einen Geschicklichkeitsrettungswurf erlaubt, um den Schaden zu halbieren, so kannst du eine Reaktion ausführen, um bei einem Erfolg gar keinen und bei einem Misserfolg den halben Schaden zu erleiden."
+      }
+    ]
+  },
+  {
+    "id": "skill-expert",
+    "name_en": "Skill Expert",
+    "name_de": "Fertigkeitsexperte",
+    "category": "general",
+    "prerequisite_en": "Level 4+",
+    "prerequisite_de": "min. 4. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "any"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase one ability score of your choice by 1, to a maximum of 20.",
+        "text_de": "Ein Attributswert deiner Wahl wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Skill Proficiency",
+        "name_de": "Fertigkeit, in der du geübt bist",
+        "text_en": "You gain proficiency in one skill of your choice.",
+        "text_de": "Du bist in einer Fertigkeit deiner Wahl geübt."
+      },
+      {
+        "name_en": "Expertise",
+        "name_de": "Expertise",
+        "text_en": "Choose one skill in which you have proficiency but lack Expertise. You gain Expertise with that skill.",
+        "text_de": "Wähle eine Fertigkeit aus, in der du geübt bist, aber keine Expertise hast. Du erhältst Expertise in dieser Fertigkeit."
+      }
+    ]
+  },
+  {
+    "id": "skulker",
+    "name_en": "Skulker",
+    "name_de": "Schleicher",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Dexterity 13+",
+    "prerequisite_de": "min. 4. Stufe, min. Geschicklichkeit 13",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "dexterity"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Dexterity score by 1, to a maximum of 20.",
+        "text_de": "Dein Geschicklichkeitswert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Blindsight",
+        "name_de": "Blindsicht",
+        "text_en": "You have Blindsight with a range of 10 feet.",
+        "text_de": "Du erlangst Blindsicht mit einer Reichweite von drei Metern."
+      },
+      {
+        "name_en": "Fog of War",
+        "name_de": "Nebel des Krieges",
+        "text_en": "You exploit the distractions of battle, gaining Advantage on any Dexterity (Stealth) check you make as part of the Hide action during combat.",
+        "text_de": "Du nutzt das Chaos der Schlacht aus, sodass all deine Geschicklichkeitswürfe (Heimlichkeit), die du im Kampf als Teil der Verstecken-Aktion ausführst, im Vorteil sind."
+      },
+      {
+        "name_en": "Sniper",
+        "name_de": "Heckenschütze",
+        "text_en": "If you make an attack roll while hidden and the roll misses, making the attack roll doesn't reveal your location.",
+        "text_de": "Wenn du einen Angriffswurf ausführst, während du verborgen bist, und der Wurf scheitert, so gibt er deinen Ort nicht preis."
+      }
+    ]
+  },
+  {
+    "id": "slasher",
+    "name_en": "Slasher",
+    "name_de": "Hauer",
+    "category": "general",
+    "prerequisite_en": "Level 4+",
+    "prerequisite_de": "min. 4. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "strength",
+        "dexterity"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+        "text_de": "Dein Stärke- oder dein Geschicklichkeitswert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Hamstring",
+        "name_de": "Schenkelschlag",
+        "text_en": "Once per turn when you hit a creature with an attack that deals Slashing damage, you can reduce the Speed of that creature by 10 feet until the start of your next turn.",
+        "text_de": "Einmal pro Zug kannst du, wenn du eine Kreatur mit einem Angriff triffst, der Hiebschaden bewirkt, die Bewegungsrate der Kreatur bis zum Beginn deines nächsten Zugs um drei Meter verringern."
+      },
+      {
+        "name_en": "Enhanced Critical",
+        "name_de": "Verstärkter kritischer Treffer",
+        "text_en": "When you score a Critical Hit that deals Slashing damage to a creature, it has Disadvantage on attack rolls until the start of your next turn.",
+        "text_de": "Wenn du einen kritischen Treffer erzielst, der einer Kreatur Hiebschaden zufügt, so ist diese Kreatur bis zum Beginn deines nächsten Zugs bei Angriffswürfen im Nachteil."
+      }
+    ]
+  },
+  {
+    "id": "speedy",
+    "name_en": "Speedy",
+    "name_de": "Flink",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Dexterity or Constitution 13+",
+    "prerequisite_de": "min. 4. Stufe, min. Geschicklichkeit oder Konstitution 13",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "dexterity",
+        "constitution"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Dexterity or Constitution score by 1, to a maximum of 20.",
+        "text_de": "Dein Geschicklichkeits- oder dein Konstitutionswert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Speed Increase",
+        "name_de": "Erhöhte Bewegungsrate",
+        "text_en": "Your Speed increases by 10 feet.",
+        "text_de": "Deine Bewegungsrate ist um drei Meter erhöht."
+      },
+      {
+        "name_en": "Dash over Difficult Terrain",
+        "name_de": "Spurt über schwieriges Gelände",
+        "text_en": "When you take the Dash action on your turn, Difficult Terrain doesn't cost you extra movement for the rest of that turn.",
+        "text_de": "Wenn du in deinem Zug die Spurt-Aktion ausführst, kostet schwieriges Gelände dich für den Rest dieses Zugs keine zusätzliche Bewegung."
+      },
+      {
+        "name_en": "Agile Movement",
+        "name_de": "Flinke Bewegung",
+        "text_en": "Opportunity Attacks have Disadvantage against you.",
+        "text_de": "Gelegenheitsangriffe auf dich sind im Nachteil."
+      }
+    ]
+  },
+  {
+    "id": "spell-sniper",
+    "name_en": "Spell Sniper",
+    "name_de": "Zielgenauer Zauberschütze",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Spellcasting or Pact Magic Feature",
+    "prerequisite_de": "min. 4. Stufe, Merkmal Zauberwirken oder Merkmal Paktmagie",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "intelligence",
+        "wisdom",
+        "charisma"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.",
+        "text_de": "Dein Intelligenz-, dein Weisheits- oder dein Charismawert wird um 1 Punkt erhöht (auf maximal 20)."
+      },
+      {
+        "name_en": "Bypass Cover",
+        "name_de": "Deckung umgehen",
+        "text_en": "Your attack rolls for spells ignore Half Cover and Three-Quarters Cover.",
+        "text_de": "Deine Zauberangriffswürfe ignorieren Teildeckung sowie Dreivierteldeckung."
+      },
+      {
+        "name_en": "Casting in Melee",
+        "name_de": "Zaubern im Nahkampf",
+        "text_en": "Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with spells.",
+        "text_de": "Wenn du dich im Abstand von bis zu 1,5 Metern von einem Gegner aufhältst, sind deine Angriffswürfe mit Zaubern dennoch nicht im Nachteil."
+      },
+      {
+        "name_en": "Increased Range",
+        "name_de": "Erhöhte Reichweite",
+        "text_en": "When you cast a spell that has a range of at least 10 feet and requires you to make an attack roll, you can increase the spell's range by 60 feet.",
+        "text_de": "Wenn du einen Zauber wirkst, der eine Reichweite von mindestens drei Metern hat und erfordert, dass du einen Angriffswurf ausführst, kannst du die Reichweite des Zaubers um 18 Meter erhöhen."
+      }
+    ]
+  },
+  {
+    "id": "telekinetic",
+    "name_en": "Telekinetic",
+    "name_de": "Telekinetiker",
+    "category": "general",
+    "prerequisite_en": "Level 4+",
+    "prerequisite_de": "min. 4. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "intelligence",
+        "wisdom",
+        "charisma"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.",
+        "text_de": "Dein Intelligenz-, dein Weisheits- oder dein Charismawert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Minor Telekinesis",
+        "name_de": "Schwache Telekinese",
+        "text_en": "You learn the Mage Hand spell. You can cast it without Verbal or Somatic components, you can make the spectral hand Invisible, and its range increases by 30 feet when you cast it. The spell's spellcasting ability is the ability increased by this feat.",
+        "text_de": "Du erlernst den Zauber Magierhand. Du kannst ihn ohne Verbal- oder Gestenkomponenten wirken und die geisterhafte Hand unsichtbar sein lassen, und die Reichweite des Zaubers sowie der Abstand zum Ziel sind jeweils um neun Meter erhöht. Das Attribut zum Wirken dieses Zaubers ist das durch dieses Talent erhöhte."
+      },
+      {
+        "name_en": "Telekinetic Shove",
+        "name_de": "Telekinetischer Stoß",
+        "text_en": "As a Bonus Action, you can telekinetically shove one creature you can see within 30 feet of yourself. When you do so, the target must succeed on a Strength saving throw (DC 8 plus the ability modifier of the score increased by this feat and your Proficiency Bonus) or be moved 5 feet toward or away from you.",
+        "text_de": "Als Bonusaktion kannst du einer Kreatur im Abstand von bis zu neun Metern von dir, die du sehen kannst, einen telekinetischen Stoß versetzen. Das Ziel muss einen Stärkerettungswurf (SG 8 plus Attributsmodifikator des durch dieses Talent erhöhten Werts plus dein Übungsbonus) bestehen, oder es wird 1,5 Meter auf dich zu- oder von dir wegbewegt."
+      }
+    ]
+  },
+  {
+    "id": "telepathic",
+    "name_en": "Telepathic",
+    "name_de": "Telepath",
+    "category": "general",
+    "prerequisite_en": "Level 4+",
+    "prerequisite_de": "min. 4. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "intelligence",
+        "wisdom",
+        "charisma"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.",
+        "text_de": "Dein Intelligenz-, dein Weisheits- oder dein Charismawert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Telepathic Utterance",
+        "name_de": "Telepathische Äußerung",
+        "text_en": "You can speak telepathically to any creature you can see within 60 feet of yourself. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your communication doesn't give the creature the ability to respond to you telepathically.",
+        "text_de": "Du kannst mit einer beliebigen Kreatur im Abstand von bis zu 18 Metern von dir, die du sehen kannst, telepathisch sprechen. Deine telepathischen Äußerungen erfolgen in einer Sprache, die du kennst, und die Kreatur versteht dich nur, wenn sie diese Sprache kennt. Die Kreatur kann dir jedoch nicht auf telepathische Weise antworten."
+      },
+      {
+        "name_en": "Detect Thoughts",
+        "name_de": "Gedanken wahrnehmen",
+        "text_en": "You always have the Detect Thoughts spell prepared. You can cast it without a spell slot or spell components, and you must finish a Long Rest before you can cast it in this way again. You can also cast it using spell slots you have of the appropriate level. Your spellcasting ability for the spell is the ability increased by this feat.",
+        "text_de": "Du hast den Zauber Gedanken wahrnehmen stets vorbereitet. Du kannst ihn ohne Zauberplatz und ohne Zauberkomponenten wirken, kannst ihn aber erst nach einer langen Rast erneut auf diese Weise wirken. Du kannst ihn auch mit verfügbaren Zauberplätzen des entsprechenden Grades wirken. Das Attribut zum Wirken dieses Zaubers ist das durch dieses Talent erhöhte."
+      }
+    ]
+  },
+  {
+    "id": "war-caster",
+    "name_en": "War Caster",
+    "name_de": "Kampferprobter Zauberwirker",
+    "category": "general",
+    "prerequisite_en": "Level 4+, Spellcasting or Pact Magic Feature",
+    "prerequisite_de": "min. 4. Stufe, Merkmal Zauberwirken oder Merkmal Paktmagie",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "intelligence",
+        "wisdom",
+        "charisma"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.",
+        "text_de": "Dein Intelligenz-, dein Weisheits- oder dein Charismawert wird um 1 Punkt erhöht (auf maximal 20)."
+      },
+      {
+        "name_en": "Concentration",
+        "name_de": "Konzentration",
+        "text_en": "You have Advantage on Constitution saving throws that you make to maintain Concentration.",
+        "text_de": "Du bist bei Konstitutionsrettungswürfen zum Aufrechterhalten der Konzentration im Vorteil."
+      },
+      {
+        "name_en": "Reactive Spell",
+        "name_de": "Reaktiver Zauber",
+        "text_en": "When a creature provokes an Opportunity Attack from you by leaving your reach, you can take a Reaction to cast a spell at the creature rather than making an Opportunity Attack. The spell must have a casting time of one action and must target only that creature.",
+        "text_de": "Wenn eine Kreatur deine Reichweite verlässt und dich zu einem Gelegenheitsangriff provoziert, kannst du eine Reaktion ausführen, um einen Zauber auf die Kreatur zu wirken, anstatt einen Gelegenheitsangriff auszuführen. Der Zauber muss den Zeitaufwand von einer Aktion haben und kann nur auf diese Kreatur zielen."
+      },
+      {
+        "name_en": "Somatic Components",
+        "name_de": "Gestenkomponenten",
+        "text_en": "You can perform the Somatic components of spells even when you have weapons or a Shield in one or both hands.",
+        "text_de": "Du kannst die Gestenkomponenten eines Zaubers auch dann ausführen, wenn du in mindestens einer Hand Waffen oder einen Schild trägst."
+      }
+    ]
+  },
+  {
+    "id": "weapon-master",
+    "name_en": "Weapon Master",
+    "name_de": "Waffenmeister",
+    "category": "general",
+    "prerequisite_en": "Level 4+",
+    "prerequisite_de": "min. 4. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "strength",
+        "dexterity"
+      ],
+      "amount": 1,
+      "max": 20
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+        "text_de": "Dein Stärke- oder dein Geschicklichkeitswert wird um 1 Punkt erhöht (auf höchstens 20)."
+      },
+      {
+        "name_en": "Mastery Property",
+        "name_de": "Meisterschaftseigenschaft",
+        "text_en": "Your training with weapons allows you to use the mastery property of one kind of Simple or Martial weapon of your choice, provided you have proficiency with it. Whenever you finish a Long Rest, you can change the kind of weapon to another eligible kind.",
+        "text_de": "Deine Vertrautheit mit Waffen gestattet dir, die Meisterschaftseigenschaft einer Art von einfacher Waffe oder Kriegswaffe deiner Wahl zu verwenden, sofern du Übung im Umgang mit dieser Waffe hast. Wann immer du eine lange Rast beendest, kannst du die Art der Waffe durch eine andere ersetzen, welche die Bedingungen erfüllt."
+      }
+    ]
+  },
+  {
+    "id": "archery",
+    "name_en": "Archery",
+    "name_de": "Bogenschießen",
+    "category": "fighting_style",
+    "prerequisite_en": "Fighting Style Feature",
+    "prerequisite_de": "Kampfstil-Merkmal",
+    "repeatable": false,
+    "ability_score_increase": null,
+    "benefits": [
+      {
+        "name_en": "Archery",
+        "name_de": "Bogenschießen",
+        "text_en": "You gain a +2 bonus to attack rolls you make with Ranged weapons.",
+        "text_de": "Du erhältst einen Bonus von +2 auf alle Angriffswürfe mit Fernkampfwaffen."
+      }
+    ]
+  },
+  {
+    "id": "blind-fighting",
+    "name_en": "Blind Fighting",
+    "name_de": "Blinder Kampf",
+    "category": "fighting_style",
+    "prerequisite_en": "Fighting Style Feature",
+    "prerequisite_de": "Kampfstil-Merkmal",
+    "repeatable": false,
+    "ability_score_increase": null,
+    "benefits": [
+      {
+        "name_en": "Blind Fighting",
+        "name_de": "Blinder Kampf",
+        "text_en": "You have Blindsight with a range of 10 feet.",
+        "text_de": "Du erlangst Blindsicht mit einer Reichweite von drei Metern."
+      }
+    ]
+  },
+  {
+    "id": "defense",
+    "name_en": "Defense",
+    "name_de": "Verteidigung",
+    "category": "fighting_style",
+    "prerequisite_en": "Fighting Style Feature",
+    "prerequisite_de": "Kampfstil-Merkmal",
+    "repeatable": false,
+    "ability_score_increase": null,
+    "benefits": [
+      {
+        "name_en": "Defense",
+        "name_de": "Verteidigung",
+        "text_en": "While you're wearing Light, Medium, or Heavy armor, you gain a +1 bonus to Armor Class.",
+        "text_de": "Wenn du leichte, mittelschwere oder schwere Rüstung trägst, erhältst du einen Bonus von +1 auf die Rüstungsklasse."
+      }
+    ]
+  },
+  {
+    "id": "dueling",
+    "name_en": "Dueling",
+    "name_de": "Duellieren",
+    "category": "fighting_style",
+    "prerequisite_en": "Fighting Style Feature",
+    "prerequisite_de": "Kampfstil-Merkmal",
+    "repeatable": false,
+    "ability_score_increase": null,
+    "benefits": [
+      {
+        "name_en": "Dueling",
+        "name_de": "Duellieren",
+        "text_en": "When you're holding a Melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.",
+        "text_de": "Hältst du eine Nahkampfwaffe in einer Hand und keine weiteren Waffen, so erhältst du einen Bonus von +2 auf Schadenswürfe mit dieser Waffe."
+      }
+    ]
+  },
+  {
+    "id": "great-weapon-fighting",
+    "name_en": "Great Weapon Fighting",
+    "name_de": "Kampf mit großen Waffen",
+    "category": "fighting_style",
+    "prerequisite_en": "Fighting Style Feature",
+    "prerequisite_de": "Kampfstil-Merkmal",
+    "repeatable": false,
+    "ability_score_increase": null,
+    "benefits": [
+      {
+        "name_en": "Great Weapon Fighting",
+        "name_de": "Kampf mit großen Waffen",
+        "text_en": "When you roll damage for an attack you make with a Melee weapon that you are holding with two hands, you can treat any 1 or 2 on a damage die as a 3. The weapon must have the Two-Handed or Versatile property to gain this benefit.",
+        "text_de": "Wenn du den Schaden eines Angriffs mit einer Nahkampfwaffe auswürfelst, die du mit beiden Händen hältst, kannst du alle Ergebnisse des Schadenswürfels von 1 oder 2 als 3 werten. Die Waffe muss die Eigenschaft Zweihändig oder Vielseitig besitzen, damit du diesen Vorzug erhältst."
+      }
+    ]
+  },
+  {
+    "id": "interception",
+    "name_en": "Interception",
+    "name_de": "Abfangen",
+    "category": "fighting_style",
+    "prerequisite_en": "Fighting Style Feature",
+    "prerequisite_de": "Kampfstil-Merkmal",
+    "repeatable": false,
+    "ability_score_increase": null,
+    "benefits": [
+      {
+        "name_en": "Interception",
+        "name_de": "Abfangen",
+        "text_en": "When a creature you can see hits another creature within 5 feet of you with an attack roll, you can take a Reaction to reduce the damage dealt to the target by 1d10 plus your Proficiency Bonus. You must be holding a Shield or a Simple or Martial weapon to use this Reaction.",
+        "text_de": "Wenn eine Kreatur, die du sehen kannst, eine andere Kreatur im Abstand von bis zu 1,5 Metern von dir mit einem Angriffswurf trifft, kannst du eine Reaktion ausführen, um den Schaden, den das Ziel erleidet, um 1W10 plus deinen Übungsbonus zu verringern. Du musst einen Schild, eine einfache Waffe oder eine Kriegswaffe tragen, um diese Reaktion ausführen zu können."
+      }
+    ]
+  },
+  {
+    "id": "protection",
+    "name_en": "Protection",
+    "name_de": "Leibwache",
+    "category": "fighting_style",
+    "prerequisite_en": "Fighting Style Feature",
+    "prerequisite_de": "Kampfstil-Merkmal",
+    "repeatable": false,
+    "ability_score_increase": null,
+    "benefits": [
+      {
+        "name_en": "Protection",
+        "name_de": "Leibwache",
+        "text_en": "When a creature you can see attacks a target other than you that is within 5 feet of you, you can take a Reaction to interpose your Shield if you're holding one. You impose Disadvantage on the triggering attack roll and all other attack rolls against the target until the start of your next turn if you remain within 5 feet of the target.",
+        "text_de": "Wenn eine Kreatur, die du sehen kannst, ein Ziel außer dir im Abstand von bis zu 1,5 Metern von dir angreift, kannst du eine Reaktion ausführen, um das Ziel mit deinem Schild zu schützen, sofern du einen hältst. Damit sind auslösender Angriffswurf sowie alle weiteren Angriffswürfe gegen das Ziel bis zum Beginn deines nächsten Zugs im Nachteil, sofern du dich nicht weiter als 1,5 Meter vom Ziel entfernst."
+      }
+    ]
+  },
+  {
+    "id": "thrown-weapon-fighting",
+    "name_en": "Thrown Weapon Fighting",
+    "name_de": "Wurfwaffenkampf",
+    "category": "fighting_style",
+    "prerequisite_en": "Fighting Style Feature",
+    "prerequisite_de": "Kampfstil-Merkmal",
+    "repeatable": false,
+    "ability_score_increase": null,
+    "benefits": [
+      {
+        "name_en": "Thrown Weapon Fighting",
+        "name_de": "Wurfwaffenkampf",
+        "text_en": "When you hit with a ranged attack roll using a weapon that has the Thrown property, you gain a +2 bonus to the damage roll.",
+        "text_de": "Wenn du bei einem Fernkampfangriff mit einer Waffe triffst, welche die Wurfwaffe-Eigenschaft hat, erhältst du einen Schadensbonus von +2 auf den Schadenswurf."
+      }
+    ]
+  },
+  {
+    "id": "two-weapon-fighting",
+    "name_en": "Two-Weapon Fighting",
+    "name_de": "Zwei-Waffen-Kampf",
+    "category": "fighting_style",
+    "prerequisite_en": "Fighting Style Feature",
+    "prerequisite_de": "Kampfstil-Merkmal",
+    "repeatable": false,
+    "ability_score_increase": null,
+    "benefits": [
+      {
+        "name_en": "Two-Weapon Fighting",
+        "name_de": "Zwei-Waffen-Kampf",
+        "text_en": "When you make an extra attack as a result of using a weapon that has the Light property, you can add your ability modifier to the damage of that attack if you aren't already adding it to the damage.",
+        "text_de": "Wenn du als Ergebnis der Eigenschaft Leicht einer Waffe einen zusätzlichen Angriff ausführst, kannst du dem Angriffsschaden deinen Attributsmodifikator hinzufügen, sofern du dies nicht ohnehin schon tust."
+      }
+    ]
+  },
+  {
+    "id": "unarmed-fighting",
+    "name_en": "Unarmed Fighting",
+    "name_de": "Unbewaffneter Kampf",
+    "category": "fighting_style",
+    "prerequisite_en": "Fighting Style Feature",
+    "prerequisite_de": "Kampfstil-Merkmal",
+    "repeatable": false,
+    "ability_score_increase": null,
+    "benefits": [
+      {
+        "name_en": "Unarmed Fighting",
+        "name_de": "Unbewaffneter Kampf",
+        "text_en": "When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to 1d6 plus your Strength modifier instead of the normal damage of an Unarmed Strike. If you aren't holding any weapons or a Shield when you make the attack roll, the d6 becomes a d8. At the start of each of your turns, you can deal 1d4 Bludgeoning damage to one creature Grappled by you.",
+        "text_de": "Wenn du mit deinem waffenlosen Angriff triffst und Schaden bewirkst, kannst du statt des normalen Schadens des waffenlosen Angriffs Wuchtschaden in Höhe von 1W6 plus deinem Stärkemodifikator bewirken. Wenn du beim Angriffswurf weder Waffen noch Schild hältst, verwende einen W8 statt des W6. Zu Beginn jedes deiner Züge kannst du einer Kreatur, die du gepackt hältst, 1W4 Wuchtschaden zufügen."
+      }
+    ]
+  },
+  {
+    "id": "boon-of-combat-prowess",
+    "name_en": "Boon of Combat Prowess",
+    "name_de": "Gabe der Kampffertigkeit",
+    "category": "epic_boon",
+    "prerequisite_en": "Level 19+",
+    "prerequisite_de": "min. 19. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "any"
+      ],
+      "amount": 1,
+      "max": 30
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase one ability score of your choice by 1, to a maximum of 30.",
+        "text_de": "Ein Attributswert deiner Wahl wird um 1 Punkt erhöht (auf höchstens 30)."
+      },
+      {
+        "name_en": "Peerless Aim",
+        "name_de": "Unübertroffenes Zielen",
+        "text_en": "When you miss with an attack roll, you can hit instead. Once you use this benefit, you can't use it again until the start of your next turn.",
+        "text_de": "Wenn du bei einem Angriffswurf nicht triffst, kannst du den Wurf in einen Treffer verwandeln. Wenn du diesen Vorzug angewendet hast, ist dies erst nach Beginn deines nächsten Zugs erneut möglich."
+      }
+    ]
+  },
+  {
+    "id": "boon-of-dimensional-travel",
+    "name_en": "Boon of Dimensional Travel",
+    "name_de": "Gabe des Dimensionsreisens",
+    "category": "epic_boon",
+    "prerequisite_en": "Level 19+",
+    "prerequisite_de": "min. 19. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "any"
+      ],
+      "amount": 1,
+      "max": 30
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase one ability score of your choice by 1, to a maximum of 30.",
+        "text_de": "Ein Attributswert deiner Wahl wird um 1 Punkt erhöht (auf höchstens 30)."
+      },
+      {
+        "name_en": "Blink Steps",
+        "name_de": "Flimmerschritte",
+        "text_en": "Immediately after you take the Attack action or the Magic action, you can teleport up to 30 feet to an unoccupied space you can see.",
+        "text_de": "Sofort, nachdem du die Angriffsaktion oder die magische Aktion ausgeführt hast, kannst du dich bis zu neun Meter weit in einen freien Bereich teleportieren, den du sehen kannst."
+      }
+    ]
+  },
+  {
+    "id": "boon-of-energy-resistance",
+    "name_en": "Boon of Energy Resistance",
+    "name_de": "Gabe der Energieresistenz",
+    "category": "epic_boon",
+    "prerequisite_en": "Level 19+",
+    "prerequisite_de": "min. 19. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "any"
+      ],
+      "amount": 1,
+      "max": 30
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase one ability score of your choice by 1, to a maximum of 30.",
+        "text_de": "Ein Attributswert deiner Wahl wird um 1 Punkt erhöht (auf höchstens 30)."
+      },
+      {
+        "name_en": "Energy Resistances",
+        "name_de": "Energieresistenzen",
+        "text_en": "You gain Resistance to two of the following damage types of your choice: Acid, Cold, Fire, Lightning, Necrotic, Poison, Psychic, Radiant, or Thunder. Whenever you finish a Long Rest, you can change your choices.",
+        "text_de": "Du erhältst Resistenz gegen zwei der folgenden Schadensarten deiner Wahl: Blitz, Feuer, Gift, Gleißend, Kälte, Nekrotisch, Psychisch, Säure oder Schall. Wann immer du eine lange Rast beendest, kannst du deine Entscheidungen ändern."
+      },
+      {
+        "name_en": "Energy Redirection",
+        "name_de": "Energieumleitung",
+        "text_en": "When you take damage of one of the types chosen for the Energy Resistances benefit, you can take a Reaction to direct damage of the same type toward another creature you can see within 60 feet of yourself that isn't behind Total Cover. If you do so, that creature must succeed on a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus) or take damage equal to 2d12 plus your Constitution modifier.",
+        "text_de": "Wenn du Schaden von einer der beiden für den Vorzug Energieresistenzen ausgewählten Arten erleidest, kannst du eine Reaktion ausführen, um Schaden dieser Art zu einer anderen Kreatur im Abstand von bis zu 18 Metern von dir umzuleiten, die du sehen kannst und die nicht über vollständige Deckung verfügt. In diesem Fall muss die Kreatur einen Geschicklichkeitsrettungswurf (SG 8 plus dein Konstitutionsmodifikator plus dein Übungsbonus) bestehen, oder sie erleidet Schaden in Höhe von 2W12 plus deinem Konstitutionsmodifikator."
+      }
+    ]
+  },
+  {
+    "id": "boon-of-fate",
+    "name_en": "Boon of Fate",
+    "name_de": "Gabe des Schicksals",
+    "category": "epic_boon",
+    "prerequisite_en": "Level 19+",
+    "prerequisite_de": "min. 19. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "any"
+      ],
+      "amount": 1,
+      "max": 30
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase one ability score of your choice by 1, to a maximum of 30.",
+        "text_de": "Ein Attributswert deiner Wahl wird um 1 Punkt erhöht (auf höchstens 30)."
+      },
+      {
+        "name_en": "Improve Fate",
+        "name_de": "Schicksal verbessern",
+        "text_en": "When you or another creature within 60 feet of you succeeds on or fails a D20 Test, you can roll 2d4 and apply the total rolled as a bonus or penalty to the d20 roll. Once you use this benefit, you can't use it again until you roll Initiative or finish a Short or Long Rest.",
+        "text_de": "Wenn du oder eine andere Kreatur im Abstand von bis zu 18 Metern von dir eine W20-Prüfung ablegt, kannst du mit 2W4 würfeln und der W20-Prüfung das Gesamtergebnis als Bonus oder Malus hinzufügen. Du kannst diesen Vorzug erst nach einem Initiativewurf oder einer kurzen oder langen Rast erneut verwenden."
+      }
+    ]
+  },
+  {
+    "id": "boon-of-fortitude",
+    "name_en": "Boon of Fortitude",
+    "name_de": "Gabe der Standhaftigkeit",
+    "category": "epic_boon",
+    "prerequisite_en": "Level 19+",
+    "prerequisite_de": "min. 19. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "any"
+      ],
+      "amount": 1,
+      "max": 30
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase one ability score of your choice by 1, to a maximum of 30.",
+        "text_de": "Ein Attributswert deiner Wahl wird um 1 Punkt erhöht (auf höchstens 30)."
+      },
+      {
+        "name_en": "Fortified Health",
+        "name_de": "Gestärkte Gesundheit",
+        "text_en": "Your Hit Point maximum increases by 40. In addition, whenever you regain Hit Points, you can regain additional Hit Points equal to your Constitution modifier. Once you've regained these additional Hit Points, you can't do so again until the start of your next turn.",
+        "text_de": "Dein Trefferpunktemaximum wird um 40 erhöht. Wann immer du außerdem Trefferpunkte zurückerhältst, kannst du zusätzlich Trefferpunkte in Höhe deines Konstitutionsmodifikators zurückerhalten. Wenn du auf diese Art zusätzlich Trefferpunkte erhalten hast, ist dies erst nach Beginn deines nächsten Zugs erneut möglich."
+      }
+    ]
+  },
+  {
+    "id": "boon-of-irresistible-offense",
+    "name_en": "Boon of Irresistible Offense",
+    "name_de": "Gabe des Unwiderstehlichen Angriffs",
+    "category": "epic_boon",
+    "prerequisite_en": "Level 19+",
+    "prerequisite_de": "min. 19. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "strength",
+        "dexterity"
+      ],
+      "amount": 1,
+      "max": 30
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Strength or Dexterity score by 1, to a maximum of 30.",
+        "text_de": "Dein Stärke- oder dein Geschicklichkeitswert wird um 1 Punkt erhöht (auf höchstens 30)."
+      },
+      {
+        "name_en": "Overcome Defenses",
+        "name_de": "Verteidigung überwinden",
+        "text_en": "The Bludgeoning, Piercing, and Slashing damage you deal always ignores Resistance.",
+        "text_de": "Jeder Hieb-, Stich- und Wuchtschaden, den du bewirkst, ignoriert entsprechende Resistenzen."
+      },
+      {
+        "name_en": "Overwhelming Strike",
+        "name_de": "Überwältigender Schlag",
+        "text_en": "When you roll a 20 on the d20 for an attack roll, you can deal extra damage to the target equal to the ability score increased by this feat. The extra damage's type is the same as the attack's type.",
+        "text_de": "Wenn du bei einem Angriffswurf mit dem W20 eine 20 würfelst, kannst du dem Ziel zusätzlichen Schaden in Höhe des durch dieses Talent erhöhten Attributswerts zufügen. Der zusätzliche Schaden ist von der gleichen Art wie der Schaden des Angriffs."
+      }
+    ]
+  },
+  {
+    "id": "boon-of-recovery",
+    "name_en": "Boon of Recovery",
+    "name_de": "Gabe der Erholung",
+    "category": "epic_boon",
+    "prerequisite_en": "Level 19+",
+    "prerequisite_de": "min. 19. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "any"
+      ],
+      "amount": 1,
+      "max": 30
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase one ability score of your choice by 1, to a maximum of 30.",
+        "text_de": "Ein Attributswert deiner Wahl wird um 1 Punkt erhöht (auf höchstens 30)."
+      },
+      {
+        "name_en": "Last Stand",
+        "name_de": "Letztes Gefecht",
+        "text_en": "When you would be reduced to 0 Hit Points, you can drop to 1 Hit Point instead and regain a number of Hit Points equal to half your Hit Point maximum. Once you use this benefit, you can't use it again until you finish a Long Rest.",
+        "text_de": "Wenn deine Trefferpunkte auf 0 sinken würden, behältst du stattdessen 1 Trefferpunkt und erhältst eine Anzahl von Trefferpunkten in Höhe der Hälfte deines Trefferpunktemaximums zurück. Du kannst diesen Vorzug erst nach einer langen Rast erneut verwenden."
+      },
+      {
+        "name_en": "Recover Vitality",
+        "name_de": "Lebenskraft zurückerhalten",
+        "text_en": "You have a pool of ten d10s. As a Bonus Action, you can expend dice from the pool, roll those dice, and regain a number of Hit Points equal to the roll's total. You regain all the expended dice when you finish a Long Rest.",
+        "text_de": "Du hast einen Vorrat von zehn W10. Als Bonusaktion kannst du Würfel aus dem Vorrat verbrauchen, indem du mit ihnen würfelst und eine Anzahl von Trefferpunkten in Höhe des Gesamtergebnisses des Würfelwurfs zurückerhältst. Du erhältst alle verbrauchten Würfel nach einer langen Rast zurück."
+      }
+    ]
+  },
+  {
+    "id": "boon-of-skill",
+    "name_en": "Boon of Skill",
+    "name_de": "Gabe der Begabung",
+    "category": "epic_boon",
+    "prerequisite_en": "Level 19+",
+    "prerequisite_de": "min. 19. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "any"
+      ],
+      "amount": 1,
+      "max": 30
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase one ability score of your choice by 1, to a maximum of 30.",
+        "text_de": "Ein Attributswert deiner Wahl wird um 1 Punkt erhöht (auf höchstens 30)."
+      },
+      {
+        "name_en": "All-Around Adept",
+        "name_de": "Vielseitiger Adept",
+        "text_en": "You gain proficiency in all skills.",
+        "text_de": "Du bist in allen Fertigkeiten geübt."
+      },
+      {
+        "name_en": "Expertise",
+        "name_de": "Expertise",
+        "text_en": "Choose one skill in which you lack Expertise. You gain Expertise in that skill.",
+        "text_de": "Wähle eine Fertigkeit aus, in der du keine Expertise hast. Du erhältst Expertise in dieser Fertigkeit."
+      }
+    ]
+  },
+  {
+    "id": "boon-of-speed",
+    "name_en": "Boon of Speed",
+    "name_de": "Gabe der Geschwindigkeit",
+    "category": "epic_boon",
+    "prerequisite_en": "Level 19+",
+    "prerequisite_de": "min. 19. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "any"
+      ],
+      "amount": 1,
+      "max": 30
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase one ability score of your choice by 1, to a maximum of 30.",
+        "text_de": "Ein Attributswert deiner Wahl wird um 1 Punkt erhöht (auf höchstens 30)."
+      },
+      {
+        "name_en": "Escape Artist",
+        "name_de": "Entfesselungskünstler",
+        "text_en": "As a Bonus Action, you can take the Disengage action, which also ends the Grappled condition on you.",
+        "text_de": "Als Bonusaktion kannst du die Rückzug-Aktion ausführen und damit auch den Zustand Gepackt bei dir selbst beenden."
+      },
+      {
+        "name_en": "Quickness",
+        "name_de": "Schnelligkeit",
+        "text_en": "Your Speed increases by 30 feet.",
+        "text_de": "Deine Bewegungsrate ist um neun Meter erhöht."
+      }
+    ]
+  },
+  {
+    "id": "boon-of-spell-recall",
+    "name_en": "Boon of Spell Recall",
+    "name_de": "Gabe der Zaubererinnerung",
+    "category": "epic_boon",
+    "prerequisite_en": "Level 19+, Spellcasting Feature",
+    "prerequisite_de": "min. 19. Stufe, Merkmal Zauberwirken",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "intelligence",
+        "wisdom",
+        "charisma"
+      ],
+      "amount": 1,
+      "max": 30
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 30.",
+        "text_de": "Dein Intelligenz-, dein Weisheits- oder dein Charismawert wird um 1 Punkt erhöht (auf maximal 30)."
+      },
+      {
+        "name_en": "Free Casting",
+        "name_de": "Freies Zauberwirken",
+        "text_en": "Whenever you cast a spell with a level 1-4 spell slot, roll 1d4. If the number you roll is the same as the slot's level, the slot isn't expended.",
+        "text_de": "Wann immer du einen Zauber mit einem Zauberplatz des 1. bis 4. Grades wirkst, würfle mit 1W4. Wenn das Würfelergebnis dem Grad des Zauberplatzes entspricht, so wird dieser nicht verbraucht."
+      }
+    ]
+  },
+  {
+    "id": "boon-of-the-night-spirit",
+    "name_en": "Boon of the Night Spirit",
+    "name_de": "Gabe des Nachtgeists",
+    "category": "epic_boon",
+    "prerequisite_en": "Level 19+",
+    "prerequisite_de": "min. 19. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "any"
+      ],
+      "amount": 1,
+      "max": 30
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase one ability score of your choice by 1, to a maximum of 30.",
+        "text_de": "Ein Attributswert deiner Wahl wird um 1 Punkt erhöht (auf höchstens 30)."
+      },
+      {
+        "name_en": "Merge with Shadows",
+        "name_de": "Schattentarnung",
+        "text_en": "While within Dim Light or Darkness, you can give yourself the Invisible condition as a Bonus Action. The condition ends on you immediately after you take an action, a Bonus Action, or a Reaction.",
+        "text_de": "In dämmrigem Licht oder Dunkelheit kannst du dich als Bonusaktion unsichtbar machen. Der Zustand endet sofort, nachdem du eine Aktion, eine Bonusaktion oder eine Reaktion ausgeführt hast."
+      },
+      {
+        "name_en": "Shadowy Form",
+        "name_de": "Schattige Gestalt",
+        "text_en": "While within Dim Light or Darkness, you have Resistance to all damage except Psychic and Radiant.",
+        "text_de": "In dämmrigem Licht oder Dunkelheit bist du gegen alle Schadensarten außer Gleißend und Psychisch resistent."
+      }
+    ]
+  },
+  {
+    "id": "boon-of-truesight",
+    "name_en": "Boon of Truesight",
+    "name_de": "Gabe des Wahren Blicks",
+    "category": "epic_boon",
+    "prerequisite_en": "Level 19+",
+    "prerequisite_de": "min. 19. Stufe",
+    "repeatable": false,
+    "ability_score_increase": {
+      "abilities": [
+        "any"
+      ],
+      "amount": 1,
+      "max": 30
+    },
+    "benefits": [
+      {
+        "name_en": "Ability Score Increase",
+        "name_de": "Attributswerterhöhung",
+        "text_en": "Increase one ability score of your choice by 1, to a maximum of 30.",
+        "text_de": "Ein Attributswert deiner Wahl wird um 1 Punkt erhöht (auf höchstens 30)."
+      },
+      {
+        "name_en": "Truesight",
+        "name_de": "Wahrer Blick",
+        "text_en": "You have Truesight with a range of 60 feet.",
+        "text_de": "Du hast Wahrer Blick mit einer Reichweite von 18 Metern."
+      }
+    ]
+  }
+]

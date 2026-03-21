@@ -1,0 +1,1452 @@
+{
+  "weapons": [
+    {
+      "id": "club",
+      "name_en": "Club",
+      "name_de": "Knüppel",
+      "category": "simple_melee",
+      "damage": "1d4",
+      "damage_type": "bludgeoning",
+      "properties": [
+        "light"
+      ],
+      "versatile_damage": null,
+      "ammunition": null,
+      "range": null,
+      "mastery": "slow",
+      "weight": "2 lb.",
+      "cost": "1 SP"
+    },
+    {
+      "id": "dagger",
+      "name_en": "Dagger",
+      "name_de": "Dolch",
+      "category": "simple_melee",
+      "damage": "1d4",
+      "damage_type": "piercing",
+      "properties": [
+        "finesse",
+        "light",
+        "thrown"
+      ],
+      "versatile_damage": null,
+      "ammunition": null,
+      "range": "20/60",
+      "mastery": "nick",
+      "weight": "1 lb.",
+      "cost": "2 GP"
+    },
+    {
+      "id": "greatclub",
+      "name_en": "Greatclub",
+      "name_de": "Zweihandknüppel",
+      "category": "simple_melee",
+      "damage": "1d8",
+      "damage_type": "bludgeoning",
+      "properties": [
+        "two-handed"
+      ],
+      "versatile_damage": null,
+      "ammunition": null,
+      "range": null,
+      "mastery": "push",
+      "weight": "10 lb.",
+      "cost": "2 SP"
+    },
+    {
+      "id": "handaxe",
+      "name_en": "Handaxe",
+      "name_de": "Beil",
+      "category": "simple_melee",
+      "damage": "1d6",
+      "damage_type": "slashing",
+      "properties": [
+        "light",
+        "thrown"
+      ],
+      "versatile_damage": null,
+      "ammunition": null,
+      "range": "20/60",
+      "mastery": "vex",
+      "weight": "2 lb.",
+      "cost": "5 GP"
+    },
+    {
+      "id": "javelin",
+      "name_en": "Javelin",
+      "name_de": "Wurfspeer",
+      "category": "simple_melee",
+      "damage": "1d6",
+      "damage_type": "piercing",
+      "properties": [
+        "thrown"
+      ],
+      "versatile_damage": null,
+      "ammunition": null,
+      "range": "30/120",
+      "mastery": "slow",
+      "weight": "2 lb.",
+      "cost": "5 SP"
+    },
+    {
+      "id": "light-hammer",
+      "name_en": "Light Hammer",
+      "name_de": "Leichter Hammer",
+      "category": "simple_melee",
+      "damage": "1d4",
+      "damage_type": "bludgeoning",
+      "properties": [
+        "light",
+        "thrown"
+      ],
+      "versatile_damage": null,
+      "ammunition": null,
+      "range": "20/60",
+      "mastery": "nick",
+      "weight": "2 lb.",
+      "cost": "2 GP"
+    },
+    {
+      "id": "mace",
+      "name_en": "Mace",
+      "name_de": "Streitkolben",
+      "category": "simple_melee",
+      "damage": "1d6",
+      "damage_type": "bludgeoning",
+      "properties": [],
+      "versatile_damage": null,
+      "ammunition": null,
+      "range": null,
+      "mastery": "sap",
+      "weight": "4 lb.",
+      "cost": "5 GP"
+    },
+    {
+      "id": "quarterstaff",
+      "name_en": "Quarterstaff",
+      "name_de": "Kampfstab",
+      "category": "simple_melee",
+      "damage": "1d6",
+      "damage_type": "bludgeoning",
+      "properties": [
+        "versatile"
+      ],
+      "versatile_damage": "1d8",
+      "ammunition": null,
+      "range": null,
+      "mastery": "topple",
+      "weight": "4 lb.",
+      "cost": "2 SP"
+    },
+    {
+      "id": "sickle",
+      "name_en": "Sickle",
+      "name_de": "Sichel",
+      "category": "simple_melee",
+      "damage": "1d4",
+      "damage_type": "slashing",
+      "properties": [
+        "light"
+      ],
+      "versatile_damage": null,
+      "ammunition": null,
+      "range": null,
+      "mastery": "nick",
+      "weight": "2 lb.",
+      "cost": "1 GP"
+    },
+    {
+      "id": "spear",
+      "name_en": "Spear",
+      "name_de": "Speer",
+      "category": "simple_melee",
+      "damage": "1d6",
+      "damage_type": "piercing",
+      "properties": [
+        "thrown",
+        "versatile"
+      ],
+      "versatile_damage": "1d8",
+      "ammunition": null,
+      "range": "20/60",
+      "mastery": "sap",
+      "weight": "3 lb.",
+      "cost": "1 GP"
+    },
+    {
+      "id": "dart",
+      "name_en": "Dart",
+      "name_de": "Wurfpfeil",
+      "category": "simple_ranged",
+      "damage": "1d4",
+      "damage_type": "piercing",
+      "properties": [
+        "finesse",
+        "thrown"
+      ],
+      "versatile_damage": null,
+      "ammunition": null,
+      "range": "20/60",
+      "mastery": "vex",
+      "weight": "1/4 lb.",
+      "cost": "5 CP"
+    },
+    {
+      "id": "light-crossbow",
+      "name_en": "Light Crossbow",
+      "name_de": "Leichte Armbrust",
+      "category": "simple_ranged",
+      "damage": "1d8",
+      "damage_type": "piercing",
+      "properties": [
+        "ammunition",
+        "loading",
+        "two-handed"
+      ],
+      "versatile_damage": null,
+      "ammunition": "bolt",
+      "range": "80/320",
+      "mastery": "slow",
+      "weight": "5 lb.",
+      "cost": "25 GP"
+    },
+    {
+      "id": "shortbow",
+      "name_en": "Shortbow",
+      "name_de": "Kurzbogen",
+      "category": "simple_ranged",
+      "damage": "1d6",
+      "damage_type": "piercing",
+      "properties": [
+        "ammunition",
+        "two-handed"
+      ],
+      "versatile_damage": null,
+      "ammunition": "arrow",
+      "range": "80/320",
+      "mastery": "vex",
+      "weight": "2 lb.",
+      "cost": "25 GP"
+    },
+    {
+      "id": "sling",
+      "name_en": "Sling",
+      "name_de": "Schleuder",
+      "category": "simple_ranged",
+      "damage": "1d4",
+      "damage_type": "bludgeoning",
+      "properties": [
+        "ammunition"
+      ],
+      "versatile_damage": null,
+      "ammunition": "bullet",
+      "range": "30/120",
+      "mastery": "slow",
+      "weight": "—",
+      "cost": "1 SP"
+    },
+    {
+      "id": "battleaxe",
+      "name_en": "Battleaxe",
+      "name_de": "Streitaxt",
+      "category": "martial_melee",
+      "damage": "1d8",
+      "damage_type": "slashing",
+      "properties": [
+        "versatile"
+      ],
+      "versatile_damage": "1d10",
+      "ammunition": null,
+      "range": null,
+      "mastery": "topple",
+      "weight": "4 lb.",
+      "cost": "10 GP"
+    },
+    {
+      "id": "flail",
+      "name_en": "Flail",
+      "name_de": "Flegel",
+      "category": "martial_melee",
+      "damage": "1d8",
+      "damage_type": "bludgeoning",
+      "properties": [],
+      "versatile_damage": null,
+      "ammunition": null,
+      "range": null,
+      "mastery": "sap",
+      "weight": "2 lb.",
+      "cost": "10 GP"
+    },
+    {
+      "id": "glaive",
+      "name_en": "Glaive",
+      "name_de": "Glefe",
+      "category": "martial_melee",
+      "damage": "1d10",
+      "damage_type": "slashing",
+      "properties": [
+        "heavy",
+        "reach",
+        "two-handed"
+      ],
+      "versatile_damage": null,
+      "ammunition": null,
+      "range": null,
+      "mastery": "graze",
+      "weight": "6 lb.",
+      "cost": "20 GP"
+    },
+    {
+      "id": "greataxe",
+      "name_en": "Greataxe",
+      "name_de": "Zweihandaxt",
+      "category": "martial_melee",
+      "damage": "1d12",
+      "damage_type": "slashing",
+      "properties": [
+        "heavy",
+        "two-handed"
+      ],
+      "versatile_damage": null,
+      "ammunition": null,
+      "range": null,
+      "mastery": "cleave",
+      "weight": "7 lb.",
+      "cost": "30 GP"
+    },
+    {
+      "id": "greatsword",
+      "name_en": "Greatsword",
+      "name_de": "Zweihandschwert",
+      "category": "martial_melee",
+      "damage": "2d6",
+      "damage_type": "slashing",
+      "properties": [
+        "heavy",
+        "two-handed"
+      ],
+      "versatile_damage": null,
+      "ammunition": null,
+      "range": null,
+      "mastery": "graze",
+      "weight": "6 lb.",
+      "cost": "50 GP"
+    },
+    {
+      "id": "halberd",
+      "name_en": "Halberd",
+      "name_de": "Hellebarde",
+      "category": "martial_melee",
+      "damage": "1d10",
+      "damage_type": "slashing",
+      "properties": [
+        "heavy",
+        "reach",
+        "two-handed"
+      ],
+      "versatile_damage": null,
+      "ammunition": null,
+      "range": null,
+      "mastery": "cleave",
+      "weight": "6 lb.",
+      "cost": "20 GP"
+    },
+    {
+      "id": "lance",
+      "name_en": "Lance",
+      "name_de": "Lanze",
+      "category": "martial_melee",
+      "damage": "1d10",
+      "damage_type": "piercing",
+      "properties": [
+        "heavy",
+        "reach",
+        "two-handed"
+      ],
+      "versatile_damage": null,
+      "ammunition": null,
+      "range": null,
+      "mastery": "topple",
+      "two_handed_note": "unless mounted",
+      "weight": "6 lb.",
+      "cost": "10 GP"
+    },
+    {
+      "id": "longsword",
+      "name_en": "Longsword",
+      "name_de": "Langschwert",
+      "category": "martial_melee",
+      "damage": "1d8",
+      "damage_type": "slashing",
+      "properties": [
+        "versatile"
+      ],
+      "versatile_damage": "1d10",
+      "ammunition": null,
+      "range": null,
+      "mastery": "sap",
+      "weight": "3 lb.",
+      "cost": "15 GP"
+    },
+    {
+      "id": "maul",
+      "name_en": "Maul",
+      "name_de": "Zweihandhammer",
+      "category": "martial_melee",
+      "damage": "2d6",
+      "damage_type": "bludgeoning",
+      "properties": [
+        "heavy",
+        "two-handed"
+      ],
+      "versatile_damage": null,
+      "ammunition": null,
+      "range": null,
+      "mastery": "topple",
+      "weight": "10 lb.",
+      "cost": "10 GP"
+    },
+    {
+      "id": "morningstar",
+      "name_en": "Morningstar",
+      "name_de": "Morgenstern",
+      "category": "martial_melee",
+      "damage": "1d8",
+      "damage_type": "piercing",
+      "properties": [],
+      "versatile_damage": null,
+      "ammunition": null,
+      "range": null,
+      "mastery": "sap",
+      "weight": "4 lb.",
+      "cost": "15 GP"
+    },
+    {
+      "id": "pike",
+      "name_en": "Pike",
+      "name_de": "Pike",
+      "category": "martial_melee",
+      "damage": "1d10",
+      "damage_type": "piercing",
+      "properties": [
+        "heavy",
+        "reach",
+        "two-handed"
+      ],
+      "versatile_damage": null,
+      "ammunition": null,
+      "range": null,
+      "mastery": "push",
+      "weight": "18 lb.",
+      "cost": "5 GP"
+    },
+    {
+      "id": "rapier",
+      "name_en": "Rapier",
+      "name_de": "Rapier",
+      "category": "martial_melee",
+      "damage": "1d8",
+      "damage_type": "piercing",
+      "properties": [
+        "finesse"
+      ],
+      "versatile_damage": null,
+      "ammunition": null,
+      "range": null,
+      "mastery": "vex",
+      "weight": "2 lb.",
+      "cost": "25 GP"
+    },
+    {
+      "id": "scimitar",
+      "name_en": "Scimitar",
+      "name_de": "Krummsäbel",
+      "category": "martial_melee",
+      "damage": "1d6",
+      "damage_type": "slashing",
+      "properties": [
+        "finesse",
+        "light"
+      ],
+      "versatile_damage": null,
+      "ammunition": null,
+      "range": null,
+      "mastery": "nick",
+      "weight": "3 lb.",
+      "cost": "25 GP"
+    },
+    {
+      "id": "shortsword",
+      "name_en": "Shortsword",
+      "name_de": "Kurzschwert",
+      "category": "martial_melee",
+      "damage": "1d6",
+      "damage_type": "piercing",
+      "properties": [
+        "finesse",
+        "light"
+      ],
+      "versatile_damage": null,
+      "ammunition": null,
+      "range": null,
+      "mastery": "vex",
+      "weight": "2 lb.",
+      "cost": "10 GP"
+    },
+    {
+      "id": "trident",
+      "name_en": "Trident",
+      "name_de": "Dreizack",
+      "category": "martial_melee",
+      "damage": "1d8",
+      "damage_type": "piercing",
+      "properties": [
+        "thrown",
+        "versatile"
+      ],
+      "versatile_damage": "1d10",
+      "ammunition": null,
+      "range": "20/60",
+      "mastery": "topple",
+      "weight": "4 lb.",
+      "cost": "5 GP"
+    },
+    {
+      "id": "warhammer",
+      "name_en": "Warhammer",
+      "name_de": "Kriegshammer",
+      "category": "martial_melee",
+      "damage": "1d8",
+      "damage_type": "bludgeoning",
+      "properties": [
+        "versatile"
+      ],
+      "versatile_damage": "1d10",
+      "ammunition": null,
+      "range": null,
+      "mastery": "push",
+      "weight": "5 lb.",
+      "cost": "15 GP"
+    },
+    {
+      "id": "war-pick",
+      "name_en": "War Pick",
+      "name_de": "Kriegspicke",
+      "category": "martial_melee",
+      "damage": "1d8",
+      "damage_type": "piercing",
+      "properties": [
+        "versatile"
+      ],
+      "versatile_damage": "1d10",
+      "ammunition": null,
+      "range": null,
+      "mastery": "sap",
+      "weight": "2 lb.",
+      "cost": "5 GP"
+    },
+    {
+      "id": "whip",
+      "name_en": "Whip",
+      "name_de": "Peitsche",
+      "category": "martial_melee",
+      "damage": "1d4",
+      "damage_type": "slashing",
+      "properties": [
+        "finesse",
+        "reach"
+      ],
+      "versatile_damage": null,
+      "ammunition": null,
+      "range": null,
+      "mastery": "slow",
+      "weight": "3 lb.",
+      "cost": "2 GP"
+    },
+    {
+      "id": "blowgun",
+      "name_en": "Blowgun",
+      "name_de": "Blasrohr",
+      "category": "martial_ranged",
+      "damage": "1",
+      "damage_type": "piercing",
+      "properties": [
+        "ammunition",
+        "loading"
+      ],
+      "versatile_damage": null,
+      "ammunition": "needle",
+      "range": "25/100",
+      "mastery": "vex",
+      "weight": "1 lb.",
+      "cost": "10 GP"
+    },
+    {
+      "id": "hand-crossbow",
+      "name_en": "Hand Crossbow",
+      "name_de": "Handarmbrust",
+      "category": "martial_ranged",
+      "damage": "1d6",
+      "damage_type": "piercing",
+      "properties": [
+        "ammunition",
+        "light",
+        "loading"
+      ],
+      "versatile_damage": null,
+      "ammunition": "bolt",
+      "range": "30/120",
+      "mastery": "vex",
+      "weight": "3 lb.",
+      "cost": "75 GP"
+    },
+    {
+      "id": "heavy-crossbow",
+      "name_en": "Heavy Crossbow",
+      "name_de": "Schwere Armbrust",
+      "category": "martial_ranged",
+      "damage": "1d10",
+      "damage_type": "piercing",
+      "properties": [
+        "ammunition",
+        "heavy",
+        "loading",
+        "two-handed"
+      ],
+      "versatile_damage": null,
+      "ammunition": "bolt",
+      "range": "100/400",
+      "mastery": "push",
+      "weight": "18 lb.",
+      "cost": "50 GP"
+    },
+    {
+      "id": "longbow",
+      "name_en": "Longbow",
+      "name_de": "Langbogen",
+      "category": "martial_ranged",
+      "damage": "1d8",
+      "damage_type": "piercing",
+      "properties": [
+        "ammunition",
+        "heavy",
+        "two-handed"
+      ],
+      "versatile_damage": null,
+      "ammunition": "arrow",
+      "range": "150/600",
+      "mastery": "slow",
+      "weight": "2 lb.",
+      "cost": "50 GP"
+    },
+    {
+      "id": "musket",
+      "name_en": "Musket",
+      "name_de": "Muskete",
+      "category": "martial_ranged",
+      "damage": "1d12",
+      "damage_type": "piercing",
+      "properties": [
+        "ammunition",
+        "loading",
+        "two-handed"
+      ],
+      "versatile_damage": null,
+      "ammunition": "bullet",
+      "range": "40/120",
+      "mastery": "slow",
+      "weight": "10 lb.",
+      "cost": "500 GP"
+    },
+    {
+      "id": "pistol",
+      "name_en": "Pistol",
+      "name_de": "Pistole",
+      "category": "martial_ranged",
+      "damage": "1d10",
+      "damage_type": "piercing",
+      "properties": [
+        "ammunition",
+        "loading"
+      ],
+      "versatile_damage": null,
+      "ammunition": "bullet",
+      "range": "30/90",
+      "mastery": "vex",
+      "weight": "3 lb.",
+      "cost": "250 GP"
+    }
+  ],
+  "weapon_properties": [
+    {
+      "id": "ammunition",
+      "name_en": "Ammunition",
+      "name_de": "Geschosse",
+      "text_en": "You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost.",
+      "text_de": "Du kannst Waffen mit der Eigenschaft Geschosse nur für Fernkampfangriffe verwenden, wenn du über entsprechende Geschosse verfügst. Die Art der erforderlichen Geschosse ist jeweils bei der Reichweite der Waffe angegeben. Jeder Angriff verbraucht ein Geschoss. Es ist Teil des Angriffs, die Waffe mit Geschossen zu laden (bei Einhandwaffen muss dazu eine Hand frei sein). Nach einem Kampf kannst du eine Minute damit verbringen, die Hälfte der Geschosse (abgerundet) zu bergen, die du im Kampf verbraucht hast. Der Rest geht verloren."
+    },
+    {
+      "id": "finesse",
+      "name_en": "Finesse",
+      "name_de": "Finesse",
+      "text_en": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.",
+      "text_de": "Wenn du mit Finesse-Waffen angreifst, hast du bei Angriffs- und Schadenswürfen die Wahl zwischen deinem Stärke- und deinem Geschicklichkeitsmodifikator. Du musst allerdings bei beiden Würfen denselben Modifikator verwenden."
+    },
+    {
+      "id": "heavy",
+      "name_en": "Heavy",
+      "name_de": "Schwer",
+      "text_en": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13.",
+      "text_de": "Du bist bei Angriffswürfen mit schweren Waffen im Nachteil, wenn du bei Nahkampfwaffen einen Stärkewert von weniger als 13 und bei Fernkampfwaffen einen Geschicklichkeitswert von weniger als 13 hast."
+    },
+    {
+      "id": "light",
+      "name_en": "Light",
+      "name_de": "Leicht",
+      "text_en": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative.",
+      "text_de": "Wenn du in deinem Zug die Angriffsaktion ausführst und mit einer leichten Waffe angreifst, kannst du später im selben Zug als Bonusaktion einen zusätzlichen Angriff ausführen. Dieser zusätzliche Angriff muss mit einer anderen leichten Waffe ausgeführt werden, und du kannst dem Schaden des zusätzlichen Angriffs nicht deinen Attributsmodifikator hinzufügen, sofern dieser Modifikator nicht negativ ist. Beispiel: Du kannst mit einem Kurzschwert in der einen Hand und einem Dolch in der anderen angreifen, indem du die Angriffsaktion und eine Bonusaktion ausführst. Du fügst dem Schadenswurf der Bonusaktion jedoch nicht deinen Stärke- oder Geschicklichkeitsmodifikator hinzu, sofern dieser Modifikator nicht negativ ist."
+    },
+    {
+      "id": "loading",
+      "name_en": "Loading",
+      "name_de": "Laden",
+      "text_en": "You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make.",
+      "text_de": "Du kannst mit einer Aktion, Bonusaktion oder Reaktion immer nur ein Geschoss aus einer Waffe mit der Eigenschaft Laden abfeuern, egal, wie viele Angriffe dir zur Verfügung stehen."
+    },
+    {
+      "id": "range",
+      "name_en": "Range",
+      "name_de": "Reichweite",
+      "text_en": "A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range.",
+      "text_de": "Die Reichweite von Fernkampfwaffen ist nach den Eigenschaften Geschosse oder Wurfwaffe aufgeführt. Sie umfasst zwei Werte: Der erste ist die Grundreichweite der Waffe in Metern, der zweite die Maximalreichweite. Wenn du ein Ziel außerhalb der Grundreichweite angreifst, bist du beim Angriffswurf im Nachteil. Du kannst keine Ziele außerhalb der Maximalreichweite angreifen."
+    },
+    {
+      "id": "reach",
+      "name_en": "Reach",
+      "name_de": "Weitreichend",
+      "text_en": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it.",
+      "text_de": "Bei Waffen mit der Eigenschaft Weitreichend ist die normale Angriffsreichweite um 1,5 Meter erhöht. Dies gilt auch bei Gelegenheitsangriffen."
+    },
+    {
+      "id": "thrown",
+      "name_en": "Thrown",
+      "name_de": "Wurfwaffe",
+      "text_en": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon.",
+      "text_de": "Waffen mit der Eigenschaft Wurfwaffe können geworfen werden, um Fernkampfangriffe auszuführen, und sie können als Teil des Angriffs gezogen werden. Wenn es sich um eine Nahkampfwaffe handelt, die du wirfst, verwendest du bei Angriffs- und Schadenswürfen den gleichen Attributsmodifikator wie bei Nahkampfangriffen mit der Waffe."
+    },
+    {
+      "id": "two-handed",
+      "name_en": "Two-Handed",
+      "name_de": "Zweihändig",
+      "text_en": "A Two-Handed weapon requires two hands when you attack with it.",
+      "text_de": "Waffen mit der Eigenschaft Zweihändig müssen mit zwei Händen geführt werden."
+    },
+    {
+      "id": "versatile",
+      "name_en": "Versatile",
+      "name_de": "Vielseitig",
+      "text_en": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack.",
+      "text_de": "Waffen mit der Eigenschaft Vielseitig können mit einer Hand oder mit zwei Händen geführt werden. Mit der Eigenschaft wird ein Schadenswert in Klammern genannt. Diesen Schaden bewirkt die Waffe, wenn sie mit zwei Händen geführt wird, um einen Nahkampfangriff auszuführen."
+    },
+    {
+      "id": "improvised-weapons",
+      "name_en": "Improvised Weapons",
+      "name_de": "Improvisierte Waffen",
+      "text_en": "If you use an object—such as a table leg, frying pan, or bottle—as a makeshift weapon, see \"Improvised Weapons\" in the rules glossary. Also see those rules if you wield a weapon in an unusual way, such as using a Ranged weapon to make a melee attack.",
+      "text_de": "Wenn du einen Gegenstand – ein Tischbein, eine Bratpfanne, eine Flasche – als provisorische Waffe verwendest, lies den Abschnitt „Improvisierte Waffen\" im Regelglossar. Sieh dir diese Regeln auch an, wenn du eine Waffe auf ungewöhnliche Art verwendest, beispielsweise einen Nahkampfangriff mit einer Fernkampfwaffe ausführst."
+    }
+  ],
+  "mastery_properties": [
+    {
+      "id": "cleave",
+      "name_en": "Cleave",
+      "name_de": "Spalten",
+      "text_en": "If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+      "text_de": "Wenn du eine Kreatur mit einem Nahkampfangriffswurf triffst, den du mit dieser Waffe ausführst, kannst du mit der Waffe einen weiteren Nahkampfangriff auf eine zweite Kreatur im Abstand von bis zu 1,5 Metern von der ersten ausführen, sofern die zweite sich ebenfalls in Reichweite befindet. Bei einem Treffer erleidet die Kreatur den Waffenschaden. Du fügst dem Schaden jedoch nicht deinen Attributsmodifikator hinzu, sofern dieser Modifikator nicht negativ ist. Du kannst diesen zusätzlichen Angriff nur einmal pro Zug ausführen."
+    },
+    {
+      "id": "graze",
+      "name_en": "Graze",
+      "name_de": "Streifen",
+      "text_en": "If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+      "text_de": "Wenn dein Angriffswurf mit dieser Waffe eine Kreatur verfehlt, kannst du der Kreatur Schaden in Höhe des Attributsmodifikators zufügen, den du für den Angriffswurf verwendet hast. Die Schadensart entspricht der Waffe. Der Schaden kann nur durch Erhöhen des Attributsmodifikators erhöht werden."
+    },
+    {
+      "id": "nick",
+      "name_en": "Nick",
+      "name_de": "Einkerben",
+      "text_en": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.",
+      "text_de": "Wenn du den zusätzlichen Angriff der Eigenschaft Leicht ausführst, kannst du dies als Teil der Angriffsaktion statt als Bonusaktion tun. Du kannst diesen zusätzlichen Angriff nur einmal pro Zug ausführen."
+    },
+    {
+      "id": "push",
+      "name_en": "Push",
+      "name_de": "Stoßen",
+      "text_en": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+      "text_de": "Wenn du eine Kreatur mit dieser Waffe triffst, kannst du sie bis zu drei Meter weit in gerader Linie von dir wegstoßen, sofern sie von höchstens großer Größe ist."
+    },
+    {
+      "id": "sap",
+      "name_en": "Sap",
+      "name_de": "Auslaugen",
+      "text_en": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+      "text_de": "Wenn du eine Kreatur mit dieser Waffe triffst, ist diese Kreatur bei ihrem nächsten Angriffswurf vor Beginn deines nächsten Zugs im Nachteil."
+    },
+    {
+      "id": "slow",
+      "name_en": "Slow",
+      "name_de": "Verlangsamen",
+      "text_en": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+      "text_de": "Wenn du eine Kreatur mit dieser Waffe triffst und ihr Schaden zufügst, kannst du ihre Bewegungsrate bis zum Beginn deines nächsten Zugs um drei Meter verringern. Wird die Kreatur mehrfach von Waffen mit dieser Eigenschaft getroffen, so wird ihre Bewegungsrate dennoch nur um drei Meter verringert."
+    },
+    {
+      "id": "topple",
+      "name_en": "Topple",
+      "name_de": "Umstoßen",
+      "text_en": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+      "text_de": "Wenn du eine Kreatur mit dieser Waffe triffst, kannst du sie zu einem Konstitutionsrettungswurf (SG 8 plus Attributsmodifikator für den Angriffswurf plus dein Übungsbonus) zwingen. Scheitert der Wurf, so wird die Kreatur umgestoßen."
+    },
+    {
+      "id": "vex",
+      "name_en": "Vex",
+      "name_de": "Plagen",
+      "text_en": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+      "text_de": "Wenn du eine Kreatur mit dieser Waffe triffst und ihr Schaden zufügst, bist du beim nächsten Angriffswurf gegen diese Kreatur vor Ende deines nächsten Zugs im Vorteil."
+    }
+  ],
+  "armor": [
+    {
+      "id": "padded-armor",
+      "name_en": "Padded Armor",
+      "name_de": "Gepolsterte Rüstung",
+      "category": "light",
+      "ac_formula": "11 + Dex modifier",
+      "strength_requirement": null,
+      "stealth_disadvantage": true,
+      "weight": "8 lb.",
+      "cost": "5 GP",
+      "don_time_en": "1 minute",
+      "don_time_de": "1 Minute",
+      "doff_time_en": "1 minute",
+      "doff_time_de": "1 Minute"
+    },
+    {
+      "id": "leather-armor",
+      "name_en": "Leather Armor",
+      "name_de": "Lederrüstung",
+      "category": "light",
+      "ac_formula": "11 + Dex modifier",
+      "strength_requirement": null,
+      "stealth_disadvantage": false,
+      "weight": "10 lb.",
+      "cost": "10 GP",
+      "don_time_en": "1 minute",
+      "don_time_de": "1 Minute",
+      "doff_time_en": "1 minute",
+      "doff_time_de": "1 Minute"
+    },
+    {
+      "id": "studded-leather-armor",
+      "name_en": "Studded Leather Armor",
+      "name_de": "Beschlagene Lederrüstung",
+      "category": "light",
+      "ac_formula": "12 + Dex modifier",
+      "strength_requirement": null,
+      "stealth_disadvantage": false,
+      "weight": "13 lb.",
+      "cost": "45 GP",
+      "don_time_en": "1 minute",
+      "don_time_de": "1 Minute",
+      "doff_time_en": "1 minute",
+      "doff_time_de": "1 Minute"
+    },
+    {
+      "id": "hide-armor",
+      "name_en": "Hide Armor",
+      "name_de": "Fellrüstung",
+      "category": "medium",
+      "ac_formula": "12 + Dex modifier (max 2)",
+      "strength_requirement": null,
+      "stealth_disadvantage": false,
+      "weight": "12 lb.",
+      "cost": "10 GP",
+      "don_time_en": "5 minutes",
+      "don_time_de": "5 Minuten",
+      "doff_time_en": "1 minute",
+      "doff_time_de": "1 Minute"
+    },
+    {
+      "id": "chain-shirt",
+      "name_en": "Chain Shirt",
+      "name_de": "Kettenhemd",
+      "category": "medium",
+      "ac_formula": "13 + Dex modifier (max 2)",
+      "strength_requirement": null,
+      "stealth_disadvantage": false,
+      "weight": "20 lb.",
+      "cost": "50 GP",
+      "don_time_en": "5 minutes",
+      "don_time_de": "5 Minuten",
+      "doff_time_en": "1 minute",
+      "doff_time_de": "1 Minute"
+    },
+    {
+      "id": "scale-mail",
+      "name_en": "Scale Mail",
+      "name_de": "Schuppenpanzer",
+      "category": "medium",
+      "ac_formula": "14 + Dex modifier (max 2)",
+      "strength_requirement": null,
+      "stealth_disadvantage": true,
+      "weight": "45 lb.",
+      "cost": "50 GP",
+      "don_time_en": "5 minutes",
+      "don_time_de": "5 Minuten",
+      "doff_time_en": "1 minute",
+      "doff_time_de": "1 Minute"
+    },
+    {
+      "id": "breastplate",
+      "name_en": "Breastplate",
+      "name_de": "Brustplatte",
+      "category": "medium",
+      "ac_formula": "14 + Dex modifier (max 2)",
+      "strength_requirement": null,
+      "stealth_disadvantage": false,
+      "weight": "20 lb.",
+      "cost": "400 GP",
+      "don_time_en": "5 minutes",
+      "don_time_de": "5 Minuten",
+      "doff_time_en": "1 minute",
+      "doff_time_de": "1 Minute"
+    },
+    {
+      "id": "half-plate-armor",
+      "name_en": "Half Plate Armor",
+      "name_de": "Plattenpanzer",
+      "category": "medium",
+      "ac_formula": "15 + Dex modifier (max 2)",
+      "strength_requirement": null,
+      "stealth_disadvantage": true,
+      "weight": "40 lb.",
+      "cost": "750 GP",
+      "don_time_en": "5 minutes",
+      "don_time_de": "5 Minuten",
+      "doff_time_en": "1 minute",
+      "doff_time_de": "1 Minute"
+    },
+    {
+      "id": "ring-mail",
+      "name_en": "Ring Mail",
+      "name_de": "Ringpanzer",
+      "category": "heavy",
+      "ac_formula": "14",
+      "strength_requirement": null,
+      "stealth_disadvantage": true,
+      "weight": "40 lb.",
+      "cost": "30 GP",
+      "don_time_en": "10 minutes",
+      "don_time_de": "10 Minuten",
+      "doff_time_en": "5 minutes",
+      "doff_time_de": "5 Minuten"
+    },
+    {
+      "id": "chain-mail",
+      "name_en": "Chain Mail",
+      "name_de": "Kettenpanzer",
+      "category": "heavy",
+      "ac_formula": "16",
+      "strength_requirement": 13,
+      "stealth_disadvantage": true,
+      "weight": "55 lb.",
+      "cost": "75 GP",
+      "don_time_en": "10 minutes",
+      "don_time_de": "10 Minuten",
+      "doff_time_en": "5 minutes",
+      "doff_time_de": "5 Minuten"
+    },
+    {
+      "id": "splint-armor",
+      "name_en": "Splint Armor",
+      "name_de": "Schienenpanzer",
+      "category": "heavy",
+      "ac_formula": "17",
+      "strength_requirement": 15,
+      "stealth_disadvantage": true,
+      "weight": "60 lb.",
+      "cost": "200 GP",
+      "don_time_en": "10 minutes",
+      "don_time_de": "10 Minuten",
+      "doff_time_en": "5 minutes",
+      "doff_time_de": "5 Minuten"
+    },
+    {
+      "id": "plate-armor",
+      "name_en": "Plate Armor",
+      "name_de": "Ritterrüstung",
+      "category": "heavy",
+      "ac_formula": "18",
+      "strength_requirement": 15,
+      "stealth_disadvantage": true,
+      "weight": "65 lb.",
+      "cost": "1,500 GP",
+      "don_time_en": "10 minutes",
+      "don_time_de": "10 Minuten",
+      "doff_time_en": "5 minutes",
+      "doff_time_de": "5 Minuten"
+    },
+    {
+      "id": "shield",
+      "name_en": "Shield",
+      "name_de": "Schild",
+      "category": "shield",
+      "ac_formula": "+2",
+      "strength_requirement": null,
+      "stealth_disadvantage": false,
+      "weight": "6 lb.",
+      "cost": "10 GP",
+      "don_time_en": "Utilize action",
+      "don_time_de": "Verwenden-Aktion",
+      "doff_time_en": "Utilize action",
+      "doff_time_de": "Verwenden-Aktion"
+    }
+  ],
+  "tools": [
+    {
+      "id": "alchemists-supplies",
+      "name_en": "Alchemist's Supplies",
+      "name_de": "Alchemistenausrüstung",
+      "category": "artisan",
+      "ability": "intelligence",
+      "weight": "8 lb.",
+      "cost": "50 GP",
+      "utilize_en": "Identify a substance (DC 15), or start a fire (DC 15)",
+      "utilize_de": "Eine Substanz identifizieren (SG 15) oder ein Feuer entfachen (SG 15)",
+      "craft_en": "Acid, Alchemist's Fire, Component Pouch, Oil, Paper, Perfume",
+      "craft_de": "Alchemistenfeuer, Materialkomponentenbeutel, Öl, Papier, Parfüm, Säure",
+      "variants": null
+    },
+    {
+      "id": "brewers-supplies",
+      "name_en": "Brewer's Supplies",
+      "name_de": "Brauerzubehör",
+      "category": "artisan",
+      "ability": "intelligence",
+      "weight": "9 lb.",
+      "cost": "20 GP",
+      "utilize_en": "Detect poisoned drink (DC 15), or identify alcohol (DC 10)",
+      "utilize_de": "Ein vergiftetes Getränk erkennen (SG 15) oder Alkohol identifizieren (SG 10)",
+      "craft_en": "Antitoxin",
+      "craft_de": "Gegengift",
+      "variants": null
+    },
+    {
+      "id": "calligraphers-supplies",
+      "name_en": "Calligrapher's Supplies",
+      "name_de": "Kalligrafenwerkzeug",
+      "category": "artisan",
+      "ability": "dexterity",
+      "weight": "5 lb.",
+      "cost": "10 GP",
+      "utilize_en": "Write text with impressive flourishes that guard against forgery (DC 15)",
+      "utilize_de": "Ästhetischen und fälschungssicheren Text notieren (SG 15)",
+      "craft_en": "Ink, Spell Scroll",
+      "craft_de": "Tinte, Zauberschriftrolle",
+      "variants": null
+    },
+    {
+      "id": "carpenters-tools",
+      "name_en": "Carpenter's Tools",
+      "name_de": "Schreinerwerkzeug",
+      "category": "artisan",
+      "ability": "strength",
+      "weight": "6 lb.",
+      "cost": "8 GP",
+      "utilize_en": "Seal or pry open a door or container (DC 20)",
+      "utilize_de": "Eine Tür oder einen Behälter versiegeln oder aufbrechen (SG 20)",
+      "craft_en": "Club, Greatclub, Quarterstaff, Barrel, Chest, Ladder, Pole, Portable Ram, Torch",
+      "craft_de": "Kampfstab, Knüppel, Zweihandknüppel, Fackel, Fass, Leiter, Stange, tragbarer Rammbock, Truhe",
+      "variants": null
+    },
+    {
+      "id": "cartographers-tools",
+      "name_en": "Cartographer's Tools",
+      "name_de": "Kartografenwerkzeug",
+      "category": "artisan",
+      "ability": "wisdom",
+      "weight": "6 lb.",
+      "cost": "15 GP",
+      "utilize_en": "Draft a map of a small area (DC 15)",
+      "utilize_de": "Die Karte eines kleinen Gebiets zeichnen (SG 15)",
+      "craft_en": "Map",
+      "craft_de": "Karte",
+      "variants": null
+    },
+    {
+      "id": "cobblers-tools",
+      "name_en": "Cobbler's Tools",
+      "name_de": "Schusterwerkzeug",
+      "category": "artisan",
+      "ability": "dexterity",
+      "weight": "5 lb.",
+      "cost": "5 GP",
+      "utilize_en": "Modify footwear to give Advantage on the wearer's next Dexterity (Acrobatics) check (DC 10)",
+      "utilize_de": "Schuhe bearbeiten, sodass der nächste Geschicklichkeitswurf (Akrobatik) des Trägers im Vorteil ist (SG 10)",
+      "craft_en": "Climber's Kit",
+      "craft_de": "Kletterausrüstung",
+      "variants": null
+    },
+    {
+      "id": "cooks-utensils",
+      "name_en": "Cook's Utensils",
+      "name_de": "Kochutensilien",
+      "category": "artisan",
+      "ability": "wisdom",
+      "weight": "8 lb.",
+      "cost": "1 GP",
+      "utilize_en": "Improve food's flavor (DC 10), or detect spoiled or poisoned food (DC 15)",
+      "utilize_de": "Geschmack von Nahrung verbessern (SG 10), verdorbene oder vergiftete Nahrung erkennen (SG 15)",
+      "craft_en": "Rations",
+      "craft_de": "Rationen",
+      "variants": null
+    },
+    {
+      "id": "glassblowers-tools",
+      "name_en": "Glassblower's Tools",
+      "name_de": "Glasbläserwerkzeug",
+      "category": "artisan",
+      "ability": "intelligence",
+      "weight": "5 lb.",
+      "cost": "30 GP",
+      "utilize_en": "Discern what a glass object held in the past 24 hours (DC 15)",
+      "utilize_de": "Bestimmen, was ein Glasbehälter in den letzten 24 Stunden enthalten hat (SG 15)",
+      "craft_en": "Glass Bottle, Magnifying Glass, Spyglass, Vial",
+      "craft_de": "Fernrohr, Glasflasche, Lupe, Phiole",
+      "variants": null
+    },
+    {
+      "id": "jewelers-tools",
+      "name_en": "Jeweler's Tools",
+      "name_de": "Juwelierwerkzeug",
+      "category": "artisan",
+      "ability": "intelligence",
+      "weight": "2 lb.",
+      "cost": "25 GP",
+      "utilize_en": "Discern a gem's value (DC 15)",
+      "utilize_de": "Den Wert eines Edelsteins bestimmen (SG 15)",
+      "craft_en": "Arcane Focus, Holy Symbol",
+      "craft_de": "Arkaner Fokus, Heiliges Symbol",
+      "variants": null
+    },
+    {
+      "id": "leatherworkers-tools",
+      "name_en": "Leatherworker's Tools",
+      "name_de": "Ledererwerkzeug",
+      "category": "artisan",
+      "ability": "dexterity",
+      "weight": "5 lb.",
+      "cost": "5 GP",
+      "utilize_en": "Add a design to a leather item (DC 10)",
+      "utilize_de": "Einem Ledergegenstand Verzierungen hinzufügen (SG 10)",
+      "craft_en": "Sling, Whip, Hide Armor, Leather Armor, Studded Leather Armor, Backpack, Crossbow Bolt Case, Map or Scroll Case, Parchment, Pouch, Quiver, Waterskin",
+      "craft_de": "Peitsche, Schleuder, Fellrüstung, beschlagene Lederrüstung, Lederrüstung, Armbrustbolzen-Behälter, Behälter für Karten oder Schriftrollen, Beutel, Köcher, Pergament, Rucksack, Trinkschlauch",
+      "variants": null
+    },
+    {
+      "id": "masons-tools",
+      "name_en": "Mason's Tools",
+      "name_de": "Maurerwerkzeug",
+      "category": "artisan",
+      "ability": "strength",
+      "weight": "8 lb.",
+      "cost": "10 GP",
+      "utilize_en": "Chisel a symbol or hole in stone (DC 10)",
+      "utilize_de": "Einen Stein mit einem Symbol oder einem Loch versehen (SG 10)",
+      "craft_en": "Block and Tackle",
+      "craft_de": "Flaschenzug",
+      "variants": null
+    },
+    {
+      "id": "painters-supplies",
+      "name_en": "Painter's Supplies",
+      "name_de": "Malutensilien",
+      "category": "artisan",
+      "ability": "wisdom",
+      "weight": "5 lb.",
+      "cost": "10 GP",
+      "utilize_en": "Paint a recognizable image of something you've seen (DC 10)",
+      "utilize_de": "Ein erkennbares Bild von etwas anfertigen, was du gesehen hast (SG 10)",
+      "craft_en": "Druidic Focus, Holy Symbol",
+      "craft_de": "Druidischer Fokus, Heiliges Symbol",
+      "variants": null
+    },
+    {
+      "id": "potters-tools",
+      "name_en": "Potter's Tools",
+      "name_de": "Töpferwerkzeug",
+      "category": "artisan",
+      "ability": "intelligence",
+      "weight": "3 lb.",
+      "cost": "10 GP",
+      "utilize_en": "Discern what a ceramic object held in the past 24 hours (DC 15)",
+      "utilize_de": "Bestimmen, was ein Keramikbehälter in den letzten 24 Stunden enthalten hat (SG 15)",
+      "craft_en": "Jug, Lamp",
+      "craft_de": "Krug, Lampe",
+      "variants": null
+    },
+    {
+      "id": "smiths-tools",
+      "name_en": "Smith's Tools",
+      "name_de": "Schmiedewerkzeug",
+      "category": "artisan",
+      "ability": "strength",
+      "weight": "8 lb.",
+      "cost": "20 GP",
+      "utilize_en": "Pry open a door or container (DC 20)",
+      "utilize_de": "Eine Tür oder einen Behälter aufbrechen (SG 20)",
+      "craft_en": "Any Melee weapon (except Club, Greatclub, Quarterstaff, and Whip), Medium armor (except Hide), Heavy armor, Ball Bearings, Bucket, Caltrops, Chain, Crowbar, Firearm Bullets, Grappling Hook, Iron Pot, Iron Spikes, Sling Bullets",
+      "craft_de": "Jede Nahkampfwaffe (außer Kampfstab, Knüppel, Peitsche und Zweihandknüppel), mittelschwere Rüstung (außer Fellrüstung), schwere Rüstung, Brechstange, Eimer, Eisenstachel, Eisentopf, Enterhaken, Feuerwaffenmunition, Kette, Krähenfüße, Metallkügelchen, Schleudermunition",
+      "variants": null
+    },
+    {
+      "id": "tinkers-tools",
+      "name_en": "Tinker's Tools",
+      "name_de": "Tüftlerwerkzeug",
+      "category": "artisan",
+      "ability": "dexterity",
+      "weight": "10 lb.",
+      "cost": "50 GP",
+      "utilize_en": "Assemble a Tiny item composed of scrap, which falls apart in 1 minute (DC 20)",
+      "utilize_de": "Einen winzigen Gegenstand aus Abfällen herstellen, der nach einer Minute zerfällt (SG 20)",
+      "craft_en": "Musket, Pistol, Bell, Bullseye Lantern, Flask, Hooded Lantern, Hunting Trap, Lock, Manacles, Mirror, Shovel, Signal Whistle, Tinderbox",
+      "craft_de": "Muskete, Pistole, Glocke, abdeckbare Laterne, Blendlaterne, Flasche, Handschellen, Jagdfalle, Schaufel, Schloss, Signalpfeife, Spiegel, Zunderkästchen",
+      "variants": null
+    },
+    {
+      "id": "weavers-tools",
+      "name_en": "Weaver's Tools",
+      "name_de": "Weberwerkzeug",
+      "category": "artisan",
+      "ability": "dexterity",
+      "weight": "5 lb.",
+      "cost": "1 GP",
+      "utilize_en": "Mend a tear in clothing (DC 10), or sew a Tiny design (DC 10)",
+      "utilize_de": "Einen Riss in Kleidung flicken (SG 10) oder eine winzige Näharbeit anfertigen (SG 10)",
+      "craft_en": "Padded Armor, Basket, Bedroll, Blanket, Fine Clothes, Net, Robe, Rope, Sack, String, Tent, Traveler's Clothes",
+      "craft_de": "Gepolsterte Rüstung, feine Kleidung, Decke, Netz, Korb, Reisekleidung, Robe, Sack, Seil, Schlafsack, Schnur, Zelt",
+      "variants": null
+    },
+    {
+      "id": "woodcarvers-tools",
+      "name_en": "Woodcarver's Tools",
+      "name_de": "Holzschnitzerwerkzeug",
+      "category": "artisan",
+      "ability": "dexterity",
+      "weight": "5 lb.",
+      "cost": "1 GP",
+      "utilize_en": "Carve a pattern in wood (DC 10)",
+      "utilize_de": "Muster in Holz schnitzen (SG 10)",
+      "craft_en": "Club, Greatclub, Quarterstaff, Ranged weapons (except Pistol, Musket, and Sling), Arcane Focus, Arrows, Bolts, Druidic Focus, Ink Pen, Needles",
+      "craft_de": "Kampfstab, Knüppel, Zweihandknüppel, Fernkampfwaffen (außer Muskete, Pistole und Schleuder), Arkaner Fokus, Blasrohrpfeile, Bolzen, Druidischer Fokus, Pfeile, Tintenfüller",
+      "variants": null
+    },
+    {
+      "id": "disguise-kit",
+      "name_en": "Disguise Kit",
+      "name_de": "Verkleidungsausrüstung",
+      "category": "other",
+      "ability": "charisma",
+      "weight": "3 lb.",
+      "cost": "25 GP",
+      "utilize_en": "Apply makeup (DC 10)",
+      "utilize_de": "Schminke auftragen (SG 10)",
+      "craft_en": "Costume",
+      "craft_de": "Kostüm",
+      "variants": null
+    },
+    {
+      "id": "forgery-kit",
+      "name_en": "Forgery Kit",
+      "name_de": "Fälscherausrüstung",
+      "category": "other",
+      "ability": "dexterity",
+      "weight": "5 lb.",
+      "cost": "15 GP",
+      "utilize_en": "Mimic 10 or fewer words of someone else's handwriting (DC 15), or duplicate a wax seal (DC 20)",
+      "utilize_de": "Höchstens zehn Wörter in der Handschrift eines anderen verfassen (SG 15) oder ein Wachssiegel duplizieren (SG 20)",
+      "craft_en": null,
+      "craft_de": null,
+      "variants": null
+    },
+    {
+      "id": "gaming-set",
+      "name_en": "Gaming Set",
+      "name_de": "Spielset",
+      "category": "other",
+      "ability": "wisdom",
+      "weight": "—",
+      "cost": "Varies",
+      "utilize_en": "Discern whether someone is cheating (DC 10), or win the game (DC 20)",
+      "utilize_de": "Bestimmen, ob jemand mogelt (SG 10), oder das Spiel gewinnen (SG 20)",
+      "craft_en": null,
+      "craft_de": null,
+      "variants": [
+        {
+          "name_en": "Dice",
+          "name_de": "Würfel",
+          "cost": "1 SP",
+          "weight": "—"
+        },
+        {
+          "name_en": "Dragonchess",
+          "name_de": "Drachenschach",
+          "cost": "1 GP",
+          "weight": "—"
+        },
+        {
+          "name_en": "Playing Cards",
+          "name_de": "Spielkarten",
+          "cost": "5 SP",
+          "weight": "—"
+        },
+        {
+          "name_en": "Three-Dragon Ante",
+          "name_de": "Drei-Drachen-Ante",
+          "cost": "1 GP",
+          "weight": "—"
+        }
+      ]
+    },
+    {
+      "id": "herbalism-kit",
+      "name_en": "Herbalism Kit",
+      "name_de": "Kräuterkundeausrüstung",
+      "category": "other",
+      "ability": "intelligence",
+      "weight": "3 lb.",
+      "cost": "5 GP",
+      "utilize_en": "Identify a plant (DC 10)",
+      "utilize_de": "Eine Pflanze identifizieren (SG 10)",
+      "craft_en": "Antitoxin, Candle, Healer's Kit, Potion of Healing",
+      "craft_de": "Gegengift, Heilerausrüstung, Heiltrank, Kerze",
+      "variants": null
+    },
+    {
+      "id": "musical-instrument",
+      "name_en": "Musical Instrument",
+      "name_de": "Musikinstrument",
+      "category": "other",
+      "ability": "charisma",
+      "weight": "Varies",
+      "cost": "Varies",
+      "utilize_en": "Play a known tune (DC 10), or improvise a song (DC 15)",
+      "utilize_de": "Eine bekannte Melodie spielen (SG 10) oder eine Melodie improvisieren (SG 15)",
+      "craft_en": null,
+      "craft_de": null,
+      "variants": [
+        {
+          "name_en": "Bagpipes",
+          "name_de": "Dudelsack",
+          "cost": "30 GP",
+          "weight": "6 lb."
+        },
+        {
+          "name_en": "Drum",
+          "name_de": "Trommel",
+          "cost": "6 GP",
+          "weight": "3 lb."
+        },
+        {
+          "name_en": "Dulcimer",
+          "name_de": "Hackbrett",
+          "cost": "25 GP",
+          "weight": "10 lb."
+        },
+        {
+          "name_en": "Flute",
+          "name_de": "Flöte",
+          "cost": "2 GP",
+          "weight": "1 lb."
+        },
+        {
+          "name_en": "Horn",
+          "name_de": "Horn",
+          "cost": "3 GP",
+          "weight": "2 lb."
+        },
+        {
+          "name_en": "Lute",
+          "name_de": "Laute",
+          "cost": "35 GP",
+          "weight": "2 lb."
+        },
+        {
+          "name_en": "Lyre",
+          "name_de": "Leier",
+          "cost": "30 GP",
+          "weight": "2 lb."
+        },
+        {
+          "name_en": "Pan Flute",
+          "name_de": "Panflöte",
+          "cost": "12 GP",
+          "weight": "2 lb."
+        },
+        {
+          "name_en": "Shawm",
+          "name_de": "Schalmei",
+          "cost": "2 GP",
+          "weight": "1 lb."
+        },
+        {
+          "name_en": "Viol",
+          "name_de": "Gambe",
+          "cost": "30 GP",
+          "weight": "1 lb."
+        }
+      ]
+    },
+    {
+      "id": "navigators-tools",
+      "name_en": "Navigator's Tools",
+      "name_de": "Navigationswerkzeug",
+      "category": "other",
+      "ability": "wisdom",
+      "weight": "2 lb.",
+      "cost": "25 GP",
+      "utilize_en": "Plot a course (DC 10), or determine position by stargazing (DC 15)",
+      "utilize_de": "Einen Kurs festlegen (SG 10) oder die Position durch Sternbeobachtung bestimmen (SG 15)",
+      "craft_en": null,
+      "craft_de": null,
+      "variants": null
+    },
+    {
+      "id": "poisoners-kit",
+      "name_en": "Poisoner's Kit",
+      "name_de": "Giftmischerausrüstung",
+      "category": "other",
+      "ability": "intelligence",
+      "weight": "2 lb.",
+      "cost": "50 GP",
+      "utilize_en": "Detect a poisoned object (DC 10)",
+      "utilize_de": "Einen vergifteten Gegenstand erkennen (SG 10)",
+      "craft_en": "Basic Poison",
+      "craft_de": "Einfaches Gift",
+      "variants": null
+    },
+    {
+      "id": "thieves-tools",
+      "name_en": "Thieves' Tools",
+      "name_de": "Diebeswerkzeug",
+      "category": "other",
+      "ability": "dexterity",
+      "weight": "1 lb.",
+      "cost": "25 GP",
+      "utilize_en": "Pick a lock (DC 15), or disarm a trap (DC 15)",
+      "utilize_de": "Ein Schloss knacken (SG 15) oder eine Falle entschärfen (SG 15)",
+      "craft_en": null,
+      "craft_de": null,
+      "variants": null
+    }
+  ]
+}
