@@ -1,0 +1,428 @@
+[
+  {
+    "id": "acolyte",
+    "name_en": "Acolyte",
+    "name_de": "Akolyth",
+    "flavor_en": "You devoted yourself to service in a temple, either nestled in a town or secluded in a sacred grove. There you performed rites in honor of a god or pantheon. You served under a priest and studied religion. Thanks to your priest's instruction and your own devotion, you also learned how to channel a modicum of divine power in service to your place of worship and the people who prayed there.",
+    "flavor_de": "Du hast dich dem Dienst in einem Tempel verschrieben, der sich in einer Stadt oder verborgen in einem heiligen Hain befinden kann. Dort hast du Riten zu Ehren eines Gottes oder eines Pantheons ausgeführt. Du hast unter einem Priester gedient und Religion studiert. Dank der Unterweisung des Priesters und deines eigenen Einsatzes hast du außerdem gelernt, im Dienst an deinem Ort der Anbetung und an den Gläubigen dort ein gewisses Maß an göttlichen Energien zu kanalisieren.",
+    "ability_scores": ["intelligence", "wisdom", "charisma"],
+    "feat_en": "Magic Initiate (Cleric)",
+    "feat_de": "Eingeweihter der Magie (Kleriker)",
+    "feat_id": "magic-initiate-cleric",
+    "skill_proficiencies_en": ["Insight", "Religion"],
+    "skill_proficiencies_de": ["Motiv erkennen", "Religion"],
+    "skill_proficiency_ids": ["insight", "religion"],
+    "tool_proficiency": {
+      "tool_en": "Calligrapher's Supplies",
+      "tool_de": "Kalligrafenwerkzeug",
+      "tool_id": "calligraphers-supplies",
+      "choice": false
+    },
+    "equipment": {
+      "option_a_en": "Calligrapher's Supplies, Book (prayers), Holy Symbol, Parchment (10 sheets), Robe, 8 GP",
+      "option_a_de": "Kalligrafenwerkzeug, Buch (Gebete), Heiliges Symbol, Pergament (10 Blätter), Robe, 8 GM",
+      "option_b_en": "50 GP",
+      "option_b_de": "50 GM"
+    }
+  },
+  {
+    "id": "artisan",
+    "name_en": "Artisan",
+    "name_de": "Handwerker",
+    "flavor_en": "You began mopping floors and scrubbing counters in an artisan's workshop for a few coppers per day as soon as you were strong enough to carry a bucket. When you were old enough to apprentice, you learned to create basic crafts of your own, as well as how to sweet-talk the occasional demanding customer. Your trade has also given you a keen eye for detail.",
+    "flavor_de": "Du hast in einem Handwerksbetrieb für ein paar Kupferstücke am Tag Böden gewischt und Tische geschrubbt, sowie du groß genug warst, um einen Eimer zu tragen. In deiner Lehre hast du gelernt, grundlegende handwerkliche Arbeiten auszuführen und schwierige Kunden zu besänftigen. Außerdem hast du ein gutes Auge fürs Detail entwickelt.",
+    "ability_scores": ["strength", "dexterity", "intelligence"],
+    "feat_en": "Crafter",
+    "feat_de": "Handwerker",
+    "feat_id": "crafter",
+    "skill_proficiencies_en": ["Investigation", "Persuasion"],
+    "skill_proficiencies_de": ["Nachforschungen", "Überzeugen"],
+    "skill_proficiency_ids": ["investigation", "persuasion"],
+    "tool_proficiency": {
+      "tool_en": "Choose one kind of Artisan's Tools",
+      "tool_de": "Wähle eine Art von Handwerkszeug aus",
+      "tool_id": null,
+      "choice": true,
+      "choice_category_en": "Artisan's Tools",
+      "choice_category_de": "Handwerkszeug"
+    },
+    "equipment": {
+      "option_a_en": "Artisan's Tools (same as above), 2 Pouches, Traveler's Clothes, 32 GP",
+      "option_a_de": "Handwerkszeug (wie oben), zwei Beutel, Reisekleidung, 32 GM",
+      "option_b_en": "50 GP",
+      "option_b_de": "50 GM"
+    }
+  },
+  {
+    "id": "charlatan",
+    "name_en": "Charlatan",
+    "name_de": "Scharlatan",
+    "flavor_en": "Once you were old enough to order an ale, you soon had a favorite stool in every tavern within ten miles of where you were born. As you traveled the circuit from public house to watering hole, you learned to prey on unfortunates who were in the market for a comforting lie or two — perhaps a sham potion or forged ancestry records.",
+    "flavor_de": "Sowie du alt genug warst, um ein Bier zu bestellen, hattest du im Nu in jeder Taverne in Reichweite deinen Lieblingsplatz. Während deiner Tavernentouren hast du gelernt, jene Pechvögel auszunehmen, die auf der Suche nach einer schönen Lüge waren – vielleicht hast du ihnen mit gefälschten Zaubertränken oder Stammbäumen das Geld aus der Tasche gezogen.",
+    "ability_scores": ["dexterity", "constitution", "charisma"],
+    "feat_en": "Skilled",
+    "feat_de": "Begabt",
+    "feat_id": "skilled",
+    "skill_proficiencies_en": ["Deception", "Sleight of Hand"],
+    "skill_proficiencies_de": ["Täuschen", "Fingerfertigkeit"],
+    "skill_proficiency_ids": ["deception", "sleight-of-hand"],
+    "tool_proficiency": {
+      "tool_en": "Forgery Kit",
+      "tool_de": "Fälscherausrüstung",
+      "tool_id": "forgery-kit",
+      "choice": false
+    },
+    "equipment": {
+      "option_a_en": "Forgery Kit, Costume, Fine Clothes, 15 GP",
+      "option_a_de": "Fälscherausrüstung, Kostüm, feine Kleidung, 15 GM",
+      "option_b_en": "50 GP",
+      "option_b_de": "50 GM"
+    }
+  },
+  {
+    "id": "criminal",
+    "name_en": "Criminal",
+    "name_de": "Krimineller",
+    "flavor_en": "You eked out a living in dark alleyways, cutting purses or burgling shops. Perhaps you were part of a small gang of like-minded wrongdoers who looked out for each other. Or maybe you were a lone wolf, fending for yourself against the local thieves' guild and more fearsome lawbreakers.",
+    "flavor_de": "Du hast dich in dunklen Gassen durchgeschlagen und mit Taschendiebstählen und Einbrüchen über Wasser gehalten. Vielleicht hast du einer kleinen Bande von gleichgesinnten Halunken angehört, die aufeinander aufpassten. Oder vielleicht warst du ein Einzelgänger und hast dich gegen die örtliche Diebesgilde oder noch fürchterlichere Gesetzesbrecher behauptet.",
+    "ability_scores": ["dexterity", "constitution", "intelligence"],
+    "feat_en": "Alert",
+    "feat_de": "Wachsam",
+    "feat_id": "alert",
+    "skill_proficiencies_en": ["Sleight of Hand", "Stealth"],
+    "skill_proficiencies_de": ["Fingerfertigkeit", "Heimlichkeit"],
+    "skill_proficiency_ids": ["sleight-of-hand", "stealth"],
+    "tool_proficiency": {
+      "tool_en": "Thieves' Tools",
+      "tool_de": "Diebeswerkzeug",
+      "tool_id": "thieves-tools",
+      "choice": false
+    },
+    "equipment": {
+      "option_a_en": "2 Daggers, Thieves' Tools, Crowbar, 2 Pouches, Traveler's Clothes, 16 GP",
+      "option_a_de": "zwei Dolche, Diebeswerkzeug, Brechstange, zwei Beutel, Reisekleidung, 16 GM",
+      "option_b_en": "50 GP",
+      "option_b_de": "50 GM"
+    }
+  },
+  {
+    "id": "entertainer",
+    "name_en": "Entertainer",
+    "name_de": "Unterhaltungskünstler",
+    "flavor_en": "You spent much of your youth following roving fairs and carnivals, performing odd jobs for musicians and acrobats in exchange for lessons. You may have learned how to walk a tightrope, how to play a lute in a distinct style, or how to recite poetry with impeccable diction. To this day, you thrive on applause and long for the stage.",
+    "flavor_de": "Du hast einen Großteil deiner Jugend auf Jahrmärkten und in Zirkussen verbracht, warst als Gelegenheitsarbeiter für Musiker und Akrobaten tätig und hast dafür Unterricht erhalten. Vielleicht hast du Seiltanz gelernt, oder wie man in bestimmter Weise Laute spielt oder in tadelloser Diktion Gedichte vorträgt. Bis heute liebst du den Applaus und stehst gerne auf der Bühne.",
+    "ability_scores": ["strength", "dexterity", "charisma"],
+    "feat_en": "Musician",
+    "feat_de": "Musiker",
+    "feat_id": "musician",
+    "skill_proficiencies_en": ["Acrobatics", "Performance"],
+    "skill_proficiencies_de": ["Akrobatik", "Auftreten"],
+    "skill_proficiency_ids": ["acrobatics", "performance"],
+    "tool_proficiency": {
+      "tool_en": "Choose one kind of Musical Instrument",
+      "tool_de": "Wähle eine Art von Musikinstrument aus",
+      "tool_id": null,
+      "choice": true,
+      "choice_category_en": "Musical Instrument",
+      "choice_category_de": "Musikinstrument"
+    },
+    "equipment": {
+      "option_a_en": "Musical Instrument (same as above), 2 Costumes, Mirror, Perfume, Traveler's Clothes, 11 GP",
+      "option_a_de": "Musikinstrument (wie oben), zwei Kostüme, Spiegel, Parfüm, Reisekleidung, 11 GM",
+      "option_b_en": "50 GP",
+      "option_b_de": "50 GM"
+    }
+  },
+  {
+    "id": "farmer",
+    "name_en": "Farmer",
+    "name_de": "Bauer",
+    "flavor_en": "You grew up close to the land. Years tending animals and cultivating the earth rewarded you with patience and good health. You have a keen appreciation for nature's bounty alongside a healthy respect for nature's wrath.",
+    "flavor_de": "Du bist auf dem Land aufgewachsen. Jahrelang hast du Tiere versorgt und den Boden kultiviert, und dafür bist du mit Geduld und guter Gesundheit belohnt worden. Du schätzt die Gaben der Natur und hast zugleich gesunden Respekt vor ihrem Zorn.",
+    "ability_scores": ["strength", "constitution", "wisdom"],
+    "feat_en": "Tough",
+    "feat_de": "Zäh",
+    "feat_id": "tough",
+    "skill_proficiencies_en": ["Animal Handling", "Nature"],
+    "skill_proficiencies_de": ["Mit Tieren umgehen", "Naturkunde"],
+    "skill_proficiency_ids": ["animal-handling", "nature"],
+    "tool_proficiency": {
+      "tool_en": "Carpenter's Tools",
+      "tool_de": "Schreinerwerkzeug",
+      "tool_id": "carpenters-tools",
+      "choice": false
+    },
+    "equipment": {
+      "option_a_en": "Sickle, Carpenter's Tools, Healer's Kit, Iron Pot, Shovel, Traveler's Clothes, 30 GP",
+      "option_a_de": "Sichel, Schreinerwerkzeug, Heilerausrüstung, Eisentopf, Schaufel, Reisekleidung, 30 GM",
+      "option_b_en": "50 GP",
+      "option_b_de": "50 GM"
+    }
+  },
+  {
+    "id": "guard",
+    "name_en": "Guard",
+    "name_de": "Wache",
+    "flavor_en": "Your feet ache when you remember the countless hours you spent at your post in the tower. You were trained to keep one eye looking outside the wall, watching for marauders sweeping from the nearby forest, and your other eye looking inside the wall, searching for cutpurses and troublemakers.",
+    "flavor_de": "Deine Füße schmerzen, wenn du nur an die zahllosen Stunden denkst, die du auf deinem Posten im Wachturm verbracht hast. Du hast gelernt, mit dem einem Auge nach Plünderern außerhalb der Mauern Ausschau zu halten, die womöglich aus dem nahen Wald hervorbrechen, und mit dem anderen nach Beutelschneidern und Tunichtguten innerhalb der Festung zu suchen.",
+    "ability_scores": ["strength", "intelligence", "wisdom"],
+    "feat_en": "Alert",
+    "feat_de": "Wachsam",
+    "feat_id": "alert",
+    "skill_proficiencies_en": ["Athletics", "Perception"],
+    "skill_proficiencies_de": ["Athletik", "Wahrnehmung"],
+    "skill_proficiency_ids": ["athletics", "perception"],
+    "tool_proficiency": {
+      "tool_en": "Choose one kind of Gaming Set",
+      "tool_de": "Wähle eine Art von Spielset aus",
+      "tool_id": null,
+      "choice": true,
+      "choice_category_en": "Gaming Set",
+      "choice_category_de": "Spielset"
+    },
+    "equipment": {
+      "option_a_en": "Spear, Light Crossbow, 20 Bolts, Gaming Set (same as above), Hooded Lantern, Manacles, Quiver, Traveler's Clothes, 12 GP",
+      "option_a_de": "Speer, leichte Armbrust, 20 Bolzen, Spielset (wie oben), abdeckbare Laterne, Handschellen, Köcher, Reisekleidung, 12 GM",
+      "option_b_en": "50 GP",
+      "option_b_de": "50 GM"
+    }
+  },
+  {
+    "id": "guide",
+    "name_en": "Guide",
+    "name_de": "Wegfinder",
+    "flavor_en": "You came of age outdoors, far from settled lands. Your home was anywhere you chose to spread your bedroll. There are wonders in the wilderness — strange monsters, pristine forests and streams, overgrown ruins of great halls once trod by giants — and you learned to fend for yourself as you explored them. From time to time, you guided friendly nature priests who instructed you in the fundamentals of channeling the magic of the wild.",
+    "flavor_de": "Du bist in der freien Natur aufgewachsen, weit weg von besiedelten Gebieten. Dein Zuhause war stets dort, wo du deinen Schlafsack ausgerollt hast. Es gibt viele Wunder in der Wildnis: merkwürdige Monster, unberührte Wälder und Flüsse, überwucherte Ruinen und gigantischer Hallen, in denen einst die Riesen wandelten. Bei deinen Erkundungen hast du gelernt, auf dich aufzupassen. Bisweilen hast du freundlichen Naturpriestern den Weg gewiesen, die dir im Gegenzug beigebracht haben, wie man die Magie der Wildnis kanalisiert.",
+    "ability_scores": ["dexterity", "constitution", "wisdom"],
+    "feat_en": "Magic Initiate (Druid)",
+    "feat_de": "Eingeweihter der Magie (Druide)",
+    "feat_id": "magic-initiate-druid",
+    "skill_proficiencies_en": ["Stealth", "Survival"],
+    "skill_proficiencies_de": ["Heimlichkeit", "Überlebenskunst"],
+    "skill_proficiency_ids": ["stealth", "survival"],
+    "tool_proficiency": {
+      "tool_en": "Cartographer's Tools",
+      "tool_de": "Kartografenwerkzeug",
+      "tool_id": "cartographers-tools",
+      "choice": false
+    },
+    "equipment": {
+      "option_a_en": "Shortbow, 20 Arrows, Cartographer's Tools, Bedroll, Quiver, Tent, Traveler's Clothes, 3 GP",
+      "option_a_de": "Kurzbogen, 20 Pfeile, Kartografenwerkzeug, Schlafsack, Köcher, Zelt, Reisekleidung, 3 GM",
+      "option_b_en": "50 GP",
+      "option_b_de": "50 GM"
+    }
+  },
+  {
+    "id": "hermit",
+    "name_en": "Hermit",
+    "name_de": "Einsiedler",
+    "flavor_en": "You spent your early years secluded in a hut or monastery located well beyond the outskirts of the nearest settlement. In those days, your only companions were the creatures of the forest and those who would occasionally visit to bring news of the outside world and supplies. The solitude allowed you to spend many hours pondering the mysteries of creation.",
+    "flavor_de": "Du hast deine jungen Jahre abgeschieden in einer Hütte oder einem Kloster fern aller Ansiedlungen verbracht. Deine einzige Gesellschaft bestand aus den Kreaturen des Waldes und gelegentlichen Besuchern, die Vorräte und Nachrichten brachten. In deiner Abgeschiedenheit hast du zahllose Stunden damit verbracht, über die Mysterien der Schöpfung nachzusinnen.",
+    "ability_scores": ["constitution", "wisdom", "charisma"],
+    "feat_en": "Healer",
+    "feat_de": "Heiler",
+    "feat_id": "healer",
+    "skill_proficiencies_en": ["Medicine", "Religion"],
+    "skill_proficiencies_de": ["Heilkunde", "Religion"],
+    "skill_proficiency_ids": ["medicine", "religion"],
+    "tool_proficiency": {
+      "tool_en": "Herbalism Kit",
+      "tool_de": "Kräuterkundeausrüstung",
+      "tool_id": "herbalism-kit",
+      "choice": false
+    },
+    "equipment": {
+      "option_a_en": "Quarterstaff, Herbalism Kit, Bedroll, Book (philosophy), Lamp, Oil (3 flasks), Traveler's Clothes, 16 GP",
+      "option_a_de": "Kampfstab, Kräuterkundeausrüstung, Schlafsack, Buch (Philosophie), Lampe, Öl (drei Flaschen), Reisekleidung, 16 GM",
+      "option_b_en": "50 GP",
+      "option_b_de": "50 GM"
+    }
+  },
+  {
+    "id": "merchant",
+    "name_en": "Merchant",
+    "name_de": "Händler",
+    "flavor_en": "You were apprenticed to a trader, caravan master, or shopkeeper, learning the fundamentals of commerce. You traveled broadly, and you earned a living by buying and selling the raw materials artisans need to practice their craft or finished works from such crafters. You might have transported goods from one place to another (by ship, wagon, or caravan) or bought them from traveling traders and sold them in your own shop.",
+    "flavor_de": "Du warst bei einem Händler, einem Karawanenmeister oder Ladenbesitzer in der Lehre und hast die Grundlagen des Handels erlernt. Du bist viel gereist und hast dir deinen Lebensunterhalt mit dem An- und Verkauf von Rohstoffen für Handwerker sowie von deren fertigen Werken verdient. Vielleicht hast du Waren transportiert (per Schiff, Wagen oder Karawane) oder bei fahrenden Händlern erworben und in deinem eigenen Laden verkauft.",
+    "ability_scores": ["constitution", "intelligence", "charisma"],
+    "feat_en": "Lucky",
+    "feat_de": "Glückspilz",
+    "feat_id": "lucky",
+    "skill_proficiencies_en": ["Animal Handling", "Persuasion"],
+    "skill_proficiencies_de": ["Mit Tieren umgehen", "Überzeugen"],
+    "skill_proficiency_ids": ["animal-handling", "persuasion"],
+    "tool_proficiency": {
+      "tool_en": "Navigator's Tools",
+      "tool_de": "Navigationswerkzeug",
+      "tool_id": "navigators-tools",
+      "choice": false
+    },
+    "equipment": {
+      "option_a_en": "Navigator's Tools, 2 Pouches, Traveler's Clothes, 22 GP",
+      "option_a_de": "Navigationswerkzeug, zwei Beutel, Reisekleidung, 22 GM",
+      "option_b_en": "50 GP",
+      "option_b_de": "50 GM"
+    }
+  },
+  {
+    "id": "noble",
+    "name_en": "Noble",
+    "name_de": "Adeliger",
+    "flavor_en": "You were raised in a castle, surrounded by wealth, power, and privilege. Your family of minor aristocrats ensured that you received a first-class education, some of which you appreciated and some of which you resented. Your time in the castle, especially the many hours you spent observing your family at court, also taught you a great deal about leadership.",
+    "flavor_de": "Du bist in einer Burg aufgewachsen, umgeben von Reichtum, Macht und Privilegien. Deine Familie ist von niederem Adel und hat dir erstklassige Bildung angedeihen lassen, die du zum Teil genossen und zum Teil verabscheut hast. Deine Zeit in der Burg – vor allem die vielen Stunden, die du deine Familie am Hof beobachtet hast – hat dich vieles über das Herrschen gelehrt.",
+    "ability_scores": ["strength", "intelligence", "charisma"],
+    "feat_en": "Skilled",
+    "feat_de": "Begabt",
+    "feat_id": "skilled",
+    "skill_proficiencies_en": ["History", "Persuasion"],
+    "skill_proficiencies_de": ["Geschichte", "Überzeugen"],
+    "skill_proficiency_ids": ["history", "persuasion"],
+    "tool_proficiency": {
+      "tool_en": "Choose one kind of Gaming Set",
+      "tool_de": "Wähle eine Art von Spielset aus",
+      "tool_id": null,
+      "choice": true,
+      "choice_category_en": "Gaming Set",
+      "choice_category_de": "Spielset"
+    },
+    "equipment": {
+      "option_a_en": "Gaming Set (same as above), Fine Clothes, Perfume, 29 GP",
+      "option_a_de": "Spielset (wie oben), feine Kleidung, Parfüm, 29 GM",
+      "option_b_en": "50 GP",
+      "option_b_de": "50 GM"
+    }
+  },
+  {
+    "id": "sage",
+    "name_en": "Sage",
+    "name_de": "Weiser",
+    "flavor_en": "You spent your formative years traveling between manors and monasteries, performing various odd jobs and services in exchange for access to their libraries. You whiled away many a long evening studying books and scrolls, learning the lore of the multiverse — even the rudiments of magic — and your mind yearns for more.",
+    "flavor_de": "Du hast deine jungen Jahre damit verbracht, zu Herrenhäusern und Klöstern zu reisen und dir mit verschiedenen Gelegenheitsarbeiten und Dienstleistungen Zugang zu den Bibliotheken zu erarbeiten. Lange Abende hast du mit dem Studium von Büchern und Schriftrollen verbracht und dir Wissen über das Multiversum und die Grundlagen der Magie angeeignet. Und dein Geist verlangt nach mehr.",
+    "ability_scores": ["constitution", "intelligence", "wisdom"],
+    "feat_en": "Magic Initiate (Wizard)",
+    "feat_de": "Eingeweihter der Magie (Magier)",
+    "feat_id": "magic-initiate-wizard",
+    "skill_proficiencies_en": ["Arcana", "History"],
+    "skill_proficiencies_de": ["Arkane Kunde", "Geschichte"],
+    "skill_proficiency_ids": ["arcana", "history"],
+    "tool_proficiency": {
+      "tool_en": "Calligrapher's Supplies",
+      "tool_de": "Kalligrafenwerkzeug",
+      "tool_id": "calligraphers-supplies",
+      "choice": false
+    },
+    "equipment": {
+      "option_a_en": "Quarterstaff, Calligrapher's Supplies, Book (history), Parchment (8 sheets), Robe, 8 GP",
+      "option_a_de": "Kampfstab, Kalligrafenwerkzeug, Buch (Geschichte), Pergament (8 Blätter), Robe, 8 GM",
+      "option_b_en": "50 GP",
+      "option_b_de": "50 GM"
+    }
+  },
+  {
+    "id": "sailor",
+    "name_en": "Sailor",
+    "name_de": "Seemann",
+    "flavor_en": "You lived as a seafarer, wind at your back and decks swaying beneath your feet. You've perched on barstools in more ports of call than you can remember, faced mighty storms, and swapped stories with folk who live beneath the waves.",
+    "flavor_de": "Du hast als Seefahrer gelebt, den Wind im Rücken und das Deck schwankend unter deinen Füßen. In zahllosen Häfen hast du an Tavernentheken gehockt. Du hast mächtige Stürme überstanden und Geschichten mit Leuten ausgetauscht, die unter den Wellen wohnen.",
+    "ability_scores": ["strength", "dexterity", "wisdom"],
+    "feat_en": "Tavern Brawler",
+    "feat_de": "Kneipenschläger",
+    "feat_id": "tavern-brawler",
+    "skill_proficiencies_en": ["Acrobatics", "Perception"],
+    "skill_proficiencies_de": ["Akrobatik", "Wahrnehmung"],
+    "skill_proficiency_ids": ["acrobatics", "perception"],
+    "tool_proficiency": {
+      "tool_en": "Navigator's Tools",
+      "tool_de": "Navigationswerkzeug",
+      "tool_id": "navigators-tools",
+      "choice": false
+    },
+    "equipment": {
+      "option_a_en": "Dagger, Navigator's Tools, Rope, Traveler's Clothes, 20 GP",
+      "option_a_de": "Dolch, Navigationswerkzeug, Seil, Reisekleidung, 20 GM",
+      "option_b_en": "50 GP",
+      "option_b_de": "50 GM"
+    }
+  },
+  {
+    "id": "scribe",
+    "name_en": "Scribe",
+    "name_de": "Schreiber",
+    "flavor_en": "You spent formative years in a scriptorium, a monastery dedicated to the preservation of knowledge, or a government agency, where you learned to write with a clear hand and produce finely written texts. Perhaps you scribed government documents or copied tomes of literature. You might have some skill as a writer of poetry, narrative, or scholarly research. Above all, you have a careful attention to detail, helping you avoid introducing mistakes to the documents you copy and create.",
+    "flavor_de": "Du hast deine prägenden Jahre in einem Skriptorium verbracht, einem Kloster zur Bewahrung von Wissen oder einer staatlichen Behörde, wo du gelernt hast, in klarer Schrift fügliche Texte zu verfassen. Vielleicht hast du Regierungsdokumente geschrieben oder viele Wälzer an Literatur kopiert. Möglicherweise hast du Erfahrung als Autor von Gedichten, Prosa oder wissenschaftlichen Arbeiten. Du achtest auf Details, damit du keine Fehler in die Dokumente einschleppst, die du erstellst oder kopierst.",
+    "ability_scores": ["dexterity", "intelligence", "wisdom"],
+    "feat_en": "Skilled",
+    "feat_de": "Begabt",
+    "feat_id": "skilled",
+    "skill_proficiencies_en": ["Investigation", "Perception"],
+    "skill_proficiencies_de": ["Nachforschungen", "Wahrnehmung"],
+    "skill_proficiency_ids": ["investigation", "perception"],
+    "tool_proficiency": {
+      "tool_en": "Calligrapher's Supplies",
+      "tool_de": "Kalligrafenwerkzeug",
+      "tool_id": "calligraphers-supplies",
+      "choice": false
+    },
+    "equipment": {
+      "option_a_en": "Calligrapher's Supplies, Fine Clothes, Lamp, Oil (3 flasks), Parchment (12 sheets), 23 GP",
+      "option_a_de": "Kalligrafenwerkzeug, feine Kleidung, Lampe, Öl (drei Flaschen), Pergament (12 Blätter), 23 GM",
+      "option_b_en": "50 GP",
+      "option_b_de": "50 GM"
+    }
+  },
+  {
+    "id": "soldier",
+    "name_en": "Soldier",
+    "name_de": "Soldat",
+    "flavor_en": "You began training for war as soon as you reached adulthood and carry precious few memories of life before you took up arms. Battle is in your blood. Sometimes you catch yourself reflexively performing the basic fighting exercises you learned first. Eventually, you put that training to use on the battlefield, protecting the realm by waging war.",
+    "flavor_de": "Du hast deine Ausbildung für den Krieg begonnen, sowie du erwachsen warst. Erinnerungen an dein Leben vor den Waffen sind rar. Der Kampf liegt dir im Blut. Manchmal ertappst du dich dabei, wie du reflexhaft die Kampfübungen deiner Grundausbildung wiederholst. Schließlich hast du deine Ausbildung auf dem Schlachtfeld genutzt und das Reich beschützt, indem du Krieg geführt hast.",
+    "ability_scores": ["strength", "dexterity", "constitution"],
+    "feat_en": "Savage Attacker",
+    "feat_de": "Wilder Angreifer",
+    "feat_id": "savage-attacker",
+    "skill_proficiencies_en": ["Athletics", "Intimidation"],
+    "skill_proficiencies_de": ["Athletik", "Einschüchtern"],
+    "skill_proficiency_ids": ["athletics", "intimidation"],
+    "tool_proficiency": {
+      "tool_en": "Choose one kind of Gaming Set",
+      "tool_de": "Wähle eine Art von Spielset aus",
+      "tool_id": null,
+      "choice": true,
+      "choice_category_en": "Gaming Set",
+      "choice_category_de": "Spielset"
+    },
+    "equipment": {
+      "option_a_en": "Spear, Shortbow, 20 Arrows, Gaming Set (same as above), Healer's Kit, Quiver, Traveler's Clothes, 14 GP",
+      "option_a_de": "Speer, Kurzbogen, 20 Pfeile, Spielset (wie oben), Heilerausrüstung, Köcher, Reisekleidung, 14 GM",
+      "option_b_en": "50 GP",
+      "option_b_de": "50 GM"
+    }
+  },
+  {
+    "id": "wayfarer",
+    "name_en": "Wayfarer",
+    "name_de": "Reisender",
+    "flavor_en": "You grew up on the streets surrounded by similarly ill-fated castoffs, a few of them friends and a few of them rivals. You slept where you could and did odd jobs for food. At times, when the hunger became unbearable, you resorted to theft. Still, you never lost your pride and never abandoned hope. Fate is not yet finished with you.",
+    "flavor_de": "Du bist auf der Straße in Gesellschaft ähnlich glückloser Außenseiter aufgewachsen, manche von ihnen Freunde, manche von ihnen Rivalen. Du hast geschlafen, wo es sich angeboten hat, und so manche merkwürdige Arbeit getan, um etwas zu Essen zu kriegen. Wenn der Hunger unerträglich wurde, blieb dir nur Diebstahl. Dennoch hast du weder deinen Stolz noch die Hoffnung verloren. Das Schicksal ist noch nicht fertig mit dir.",
+    "ability_scores": ["dexterity", "wisdom", "charisma"],
+    "feat_en": "Lucky",
+    "feat_de": "Glückspilz",
+    "feat_id": "lucky",
+    "skill_proficiencies_en": ["Insight", "Stealth"],
+    "skill_proficiencies_de": ["Motiv erkennen", "Heimlichkeit"],
+    "skill_proficiency_ids": ["insight", "stealth"],
+    "tool_proficiency": {
+      "tool_en": "Thieves' Tools",
+      "tool_de": "Diebeswerkzeug",
+      "tool_id": "thieves-tools",
+      "choice": false
+    },
+    "equipment": {
+      "option_a_en": "2 Daggers, Thieves' Tools, Gaming Set (any), Bedroll, 2 Pouches, Traveler's Clothes, 16 GP",
+      "option_a_de": "zwei Dolche, Diebeswerkzeug, Spielset (beliebig), Schlafsack, zwei Beutel, Reisekleidung, 16 GM",
+      "option_b_en": "50 GP",
+      "option_b_de": "50 GM"
+    }
+  }
+]
