@@ -1,0 +1,2621 @@
+{
+  "class": {
+    "id": "warlock",
+    "name_en": "Warlock",
+    "name_de": "Hexenmeister",
+    "hit_die": "d8",
+    "primary_abilities": [
+      "charisma"
+    ],
+    "saving_throw_proficiencies": [
+      "wisdom",
+      "charisma"
+    ],
+    "proficiencies": {
+      "skills": {
+        "choose": 2,
+        "from": [
+          "arcana",
+          "deception",
+          "history",
+          "intimidation",
+          "investigation",
+          "nature",
+          "religion"
+        ]
+      },
+      "weapons": [
+        "simple"
+      ],
+      "armor": [
+        "light"
+      ]
+    },
+    "starting_equipment": {
+      "choose": 1,
+      "options": [
+        {
+          "id": "option_a",
+          "items": [
+            "leather_armor",
+            "sickle",
+            "dagger_x2",
+            "arcane_focus_orb",
+            "book_occult_lore",
+            "scholars_pack",
+            "15gp"
+          ]
+        },
+        {
+          "id": "option_b",
+          "items": [
+            "100gp"
+          ]
+        }
+      ]
+    },
+    "multiclass_rules": {
+      "grants": [
+        "hit_die_d8",
+        "proficiency_light_armor"
+      ]
+    },
+    "subclass_level": 3
+  },
+  "class_progression": {
+    "class_id": "warlock",
+    "levels": [
+      {
+        "level": 1,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "warlock-pact-magic",
+          "warlock-eldritch-invocations"
+        ],
+        "resources": {
+          "cantrips_known": 2,
+          "prepared_spells": 2,
+          "prepared_spell_max_level": 1,
+          "pact_slot_count": 1,
+          "pact_slot_level": 1,
+          "invocation_count": 1
+        }
+      },
+      {
+        "level": 2,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "warlock-magical-cunning"
+        ],
+        "resources": {
+          "cantrips_known": 2,
+          "prepared_spells": 3,
+          "prepared_spell_max_level": 1,
+          "pact_slot_count": 2,
+          "pact_slot_level": 1,
+          "invocation_count": 3
+        }
+      },
+      {
+        "level": 3,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "warlock-subclass"
+        ],
+        "subclass_feature_level": true,
+        "resources": {
+          "cantrips_known": 2,
+          "prepared_spells": 4,
+          "prepared_spell_max_level": 2,
+          "pact_slot_count": 2,
+          "pact_slot_level": 2,
+          "invocation_count": 3
+        }
+      },
+      {
+        "level": 4,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "warlock-asi-4"
+        ],
+        "resources": {
+          "cantrips_known": 3,
+          "prepared_spells": 5,
+          "prepared_spell_max_level": 2,
+          "pact_slot_count": 2,
+          "pact_slot_level": 2,
+          "invocation_count": 3
+        }
+      },
+      {
+        "level": 5,
+        "proficiency_bonus": 3,
+        "feature_ids": [],
+        "resources": {
+          "cantrips_known": 3,
+          "prepared_spells": 6,
+          "prepared_spell_max_level": 3,
+          "pact_slot_count": 2,
+          "pact_slot_level": 3,
+          "invocation_count": 5
+        }
+      },
+      {
+        "level": 6,
+        "proficiency_bonus": 3,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "cantrips_known": 3,
+          "prepared_spells": 7,
+          "prepared_spell_max_level": 3,
+          "pact_slot_count": 2,
+          "pact_slot_level": 3,
+          "invocation_count": 5
+        }
+      },
+      {
+        "level": 7,
+        "proficiency_bonus": 3,
+        "feature_ids": [],
+        "resources": {
+          "cantrips_known": 3,
+          "prepared_spells": 8,
+          "prepared_spell_max_level": 4,
+          "pact_slot_count": 2,
+          "pact_slot_level": 4,
+          "invocation_count": 6
+        }
+      },
+      {
+        "level": 8,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "warlock-asi-8"
+        ],
+        "resources": {
+          "cantrips_known": 3,
+          "prepared_spells": 9,
+          "prepared_spell_max_level": 4,
+          "pact_slot_count": 2,
+          "pact_slot_level": 4,
+          "invocation_count": 6
+        }
+      },
+      {
+        "level": 9,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "warlock-contact-patron"
+        ],
+        "resources": {
+          "cantrips_known": 3,
+          "prepared_spells": 10,
+          "prepared_spell_max_level": 5,
+          "pact_slot_count": 2,
+          "pact_slot_level": 5,
+          "invocation_count": 7
+        }
+      },
+      {
+        "level": 10,
+        "proficiency_bonus": 4,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "cantrips_known": 4,
+          "prepared_spells": 10,
+          "prepared_spell_max_level": 5,
+          "pact_slot_count": 2,
+          "pact_slot_level": 5,
+          "invocation_count": 7
+        }
+      },
+      {
+        "level": 11,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "warlock-mystic-arcanum-6"
+        ],
+        "resources": {
+          "cantrips_known": 4,
+          "prepared_spells": 11,
+          "prepared_spell_max_level": 5,
+          "pact_slot_count": 3,
+          "pact_slot_level": 5,
+          "invocation_count": 7
+        }
+      },
+      {
+        "level": 12,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "warlock-asi-12"
+        ],
+        "resources": {
+          "cantrips_known": 4,
+          "prepared_spells": 11,
+          "prepared_spell_max_level": 5,
+          "pact_slot_count": 3,
+          "pact_slot_level": 5,
+          "invocation_count": 8
+        }
+      },
+      {
+        "level": 13,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "warlock-mystic-arcanum-7"
+        ],
+        "resources": {
+          "cantrips_known": 4,
+          "prepared_spells": 12,
+          "prepared_spell_max_level": 5,
+          "pact_slot_count": 3,
+          "pact_slot_level": 5,
+          "invocation_count": 8
+        }
+      },
+      {
+        "level": 14,
+        "proficiency_bonus": 5,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "cantrips_known": 4,
+          "prepared_spells": 12,
+          "prepared_spell_max_level": 5,
+          "pact_slot_count": 3,
+          "pact_slot_level": 5,
+          "invocation_count": 8
+        }
+      },
+      {
+        "level": 15,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "warlock-mystic-arcanum-8"
+        ],
+        "resources": {
+          "cantrips_known": 4,
+          "prepared_spells": 13,
+          "prepared_spell_max_level": 5,
+          "pact_slot_count": 3,
+          "pact_slot_level": 5,
+          "invocation_count": 9
+        }
+      },
+      {
+        "level": 16,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "warlock-asi-16"
+        ],
+        "resources": {
+          "cantrips_known": 4,
+          "prepared_spells": 13,
+          "prepared_spell_max_level": 5,
+          "pact_slot_count": 3,
+          "pact_slot_level": 5,
+          "invocation_count": 9
+        }
+      },
+      {
+        "level": 17,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "warlock-mystic-arcanum-9"
+        ],
+        "resources": {
+          "cantrips_known": 4,
+          "prepared_spells": 14,
+          "prepared_spell_max_level": 5,
+          "pact_slot_count": 4,
+          "pact_slot_level": 5,
+          "invocation_count": 9
+        }
+      },
+      {
+        "level": 18,
+        "proficiency_bonus": 6,
+        "feature_ids": [],
+        "resources": {
+          "cantrips_known": 4,
+          "prepared_spells": 14,
+          "prepared_spell_max_level": 5,
+          "pact_slot_count": 4,
+          "pact_slot_level": 5,
+          "invocation_count": 10
+        }
+      },
+      {
+        "level": 19,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "warlock-epic-boon"
+        ],
+        "resources": {
+          "cantrips_known": 4,
+          "prepared_spells": 15,
+          "prepared_spell_max_level": 5,
+          "pact_slot_count": 4,
+          "pact_slot_level": 5,
+          "invocation_count": 10
+        }
+      },
+      {
+        "level": 20,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "warlock-eldritch-master"
+        ],
+        "resources": {
+          "cantrips_known": 4,
+          "prepared_spells": 15,
+          "prepared_spell_max_level": 5,
+          "pact_slot_count": 4,
+          "pact_slot_level": 5,
+          "invocation_count": 10
+        }
+      }
+    ]
+  },
+  "subclasses": [
+    {
+      "id": "warlock-archfey",
+      "class_id": "warlock",
+      "name_en": "Archfey Patron",
+      "name_de": "Erzfee-Schutzherr",
+      "feature_levels": [
+        3,
+        6,
+        10,
+        14
+      ]
+    },
+    {
+      "id": "warlock-celestial",
+      "class_id": "warlock",
+      "name_en": "Celestial Patron",
+      "name_de": "Celestischer Schutzherr",
+      "feature_levels": [
+        3,
+        6,
+        10,
+        14
+      ]
+    },
+    {
+      "id": "warlock-fiend",
+      "class_id": "warlock",
+      "name_en": "Fiend Patron",
+      "name_de": "Unhold-Schutzherr",
+      "feature_levels": [
+        3,
+        6,
+        10,
+        14
+      ]
+    },
+    {
+      "id": "warlock-great-old-one",
+      "class_id": "warlock",
+      "name_en": "Great Old One Patron",
+      "name_de": "Großer-Alter-Schutzherr",
+      "feature_levels": [
+        3,
+        6,
+        10,
+        14
+      ]
+    }
+  ],
+  "features": [
+    {
+      "id": "warlock-pact-magic",
+      "owner_type": "class",
+      "owner_id": "warlock",
+      "level": 1,
+      "name_en": "Pact Magic",
+      "name_de": "Paktmagie",
+      "player_choice": true,
+      "choice_prompt_en": "Choose your prepared spells and cantrips from the Warlock spell list.",
+      "choice_prompt_de": "Wähle deine vorbereiteten Zauber und Zaubertricks aus der Zauberliste des Hexenmeisters.",
+      "text_en": "Through occult ceremony, you have formed a pact with a mysterious entity to gain magical powers.\n\nCantrips. You know two Warlock cantrips of your choice. Eldritch Blast and Prestidigitation are recommended. Whenever you gain a Warlock level, you can replace one cantrip with another Warlock cantrip. At levels 4 and 10, you learn another cantrip.\n\nSpell Slots. The Warlock Features table shows your Pact Magic spell slots and their level. All slots are the same level. You regain all expended Pact Magic slots when you finish a Short or Long Rest.\n\nPrepared Spells of Level 1+. Choose two level 1 Warlock spells to start. Charm Person and Hex are recommended. The number increases with Warlock level. You can only prepare spells up to the current Slot Level shown on the table. Whenever you gain a Warlock level, you can replace one prepared spell with another of an eligible level.\n\nSpellcasting Ability. Charisma.\n\nSpellcasting Focus. You can use an Arcane Focus.",
+      "text_de": "In einer okkulten Zeremonie hast du einen Pakt mit einer mysteriösen Wesenheit geschlossen.\n\nZaubertricks: Du kennst zwei Hexenmeisterzaubertricks deiner Wahl. Schauriger Strahl und Taschenspielerei werden empfohlen. Wann immer du eine Hexenmeisterstufe erhältst, kannst du einen Zaubertrick ersetzen. Auf der 4. und 10. Stufe erlernst du einen weiteren.\n\nZauberplätze: Alle Paktmagie-Zauberplätze haben den gleichen Grad. Du erhältst alle verbrauchten Paktmagie-Zauberplätze nach einer kurzen oder langen Rast zurück.\n\nVorbereitete Zauber ab dem 1. Grad: Wähle zu Beginn zwei Hexenmeisterzauber des 1. Grades. Person bezaubern und Verwünschen werden empfohlen. Die Anzahl steigt mit deiner Stufe. Du kannst nur Zauber bis zum aktuellen Zauberplatz-Grad vorbereiten. Wann immer du eine Hexenmeisterstufe erhältst, kannst du einen vorbereiteten Zauber durch einen anderen passenden Zauber ersetzen.\n\nAttribut zum Zauberwirken: Charisma.\n\nZauberfokus: Du kannst einen arkanen Fokus verwenden.",
+      "grants": [
+        {
+          "type": "spellcasting",
+          "casting_model": "pact_magic",
+          "spellcasting_ability": "charisma",
+          "spellcasting_focus": "arcane_focus",
+          "slot_count_from_resource": "pact_slot_count",
+          "slot_level_from_resource": "pact_slot_level",
+          "recharge": [
+            "short_rest",
+            "long_rest"
+          ],
+          "cantrips": {
+            "count_from_resource": "cantrips_known",
+            "source": "warlock_spell_list",
+            "replaceable_on": "level_up",
+            "replace_count": 1
+          },
+          "prepared_spells": {
+            "count_from_resource": "prepared_spells",
+            "source": "warlock_spell_list",
+            "max_level_from_resource": "prepared_spell_max_level",
+            "replaceable_on": "level_up",
+            "count_per_swap": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "warlock-eldritch-invocations",
+      "owner_type": "class",
+      "owner_id": "warlock",
+      "level": 1,
+      "name_en": "Eldritch Invocations",
+      "name_de": "Schauerliche Anrufungen",
+      "player_choice": true,
+      "choice_prompt_en": "Choose one Eldritch Invocation from the available options, such as Pact of the Tome. You gain more invocations as you gain Warlock levels.",
+      "choice_prompt_de": "Wähle eine Schauerliche Anrufung aus den verfügbaren Optionen, beispielsweise Pakt des Buches. Du erhältst weitere Anrufungen, wenn du Hexenmeisterstufen erhältst.",
+      "text_en": "You have unearthed Eldritch Invocations, pieces of forbidden knowledge that imbue you with an abiding magical ability or other lessons. You gain one invocation of your choice. Invocations are described in the Eldritch Invocation Options section.\n\nPrerequisites. If an invocation has a prerequisite, you must meet it to learn that invocation.\n\nReplacing and Gaining Invocations. Whenever you gain a Warlock level, you can replace one of your invocations with another one for which you qualify. You can't replace an invocation if it's a prerequisite for another invocation you have. You gain more invocations as shown in the Invocations column of the Warlock Features table.\n\nYou can't pick the same invocation more than once unless its description says otherwise.",
+      "text_de": "Du bist auf Schauerliche Anrufungen gestoßen, auf verbotenes Wissen, das dich mit dauerhafter magischer Kraft ausstattet. Du erhältst eine Anrufung deiner Wahl.\n\nVoraussetzungen: Wenn eine Anrufung eine Voraussetzung hat, musst du diese erfüllen.\n\nAnrufungen erlangen und ersetzen: Wann immer du eine Hexenmeisterstufe erhältst, kannst du eine deiner Anrufungen durch eine andere ersetzen, für die du qualifiziert bist. Du kannst eine Anrufung nicht ersetzen, wenn sie Voraussetzung für eine andere Anrufung ist, über die du verfügst.\n\nDu kannst eine Anrufung nicht mehrfach auswählen, sofern in ihrer Beschreibung nicht anders angegeben.",
+      "grants": [
+        {
+          "type": "invocation_selection",
+          "count_from_resource": "invocation_count",
+          "source": "warlock_invocations",
+          "change_on": "level_up",
+          "change_count": 1,
+          "prerequisite_enforcement": true
+        }
+      ]
+    },
+    {
+      "id": "warlock-magical-cunning",
+      "owner_type": "class",
+      "owner_id": "warlock",
+      "level": 2,
+      "name_en": "Magical Cunning",
+      "name_de": "Magische Raffinesse",
+      "player_choice": false,
+      "text_en": "You can perform an esoteric rite for 1 minute. At the end of it, you regain expended Pact Magic spell slots but no more than a number equal to half your maximum (round up). Once you use this feature, you can't do so again until you finish a Long Rest.",
+      "text_de": "Du kannst eine Minute lang einen esoterischen Ritus ausführen. Danach erhältst du verbrauchte Paktmagie-Zauberplätze zurück, jedoch höchstens eine Anzahl in Höhe der Hälfte deines Maximums (aufgerundet). Du kannst dieses Merkmal erst nach einer langen Rast erneut verwenden.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "ritual",
+          "ritual_duration_minutes": 1,
+          "recharge": "long_rest",
+          "effect": {
+            "type": "recover_pact_magic_slots",
+            "max_recovered": {
+              "equals": "half_pact_slot_maximum_round_up"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "warlock-subclass",
+      "owner_type": "class",
+      "owner_id": "warlock",
+      "level": 3,
+      "name_en": "Warlock Subclass",
+      "name_de": "Hexenmeister-Unterklasse",
+      "player_choice": true,
+      "choice_prompt_en": "Choose a Warlock subclass: Archfey Patron, Celestial Patron, Fiend Patron, or Great Old One Patron.",
+      "choice_prompt_de": "Wähle eine Hexenmeister-Unterklasse: Celestischer Schutzherr, Erzfee-Schutzherr, Großer-Alter-Schutzherr oder Unhold-Schutzherr.",
+      "text_en": "You gain a Warlock subclass of your choice. The Archfey Patron, Celestial Patron, Fiend Patron, and Great Old One Patron subclasses are detailed after this class's description.",
+      "text_de": "Du erhältst eine Hexenmeister-Unterklasse deiner Wahl. Die Unterklassen Celestischer Schutzherr, Erzfee-Schutzherr, Großer-Alter-Schutzherr und Unhold-Schutzherr werden nach der Beschreibung dieser Klasse erläutert.",
+      "grants": [
+        {
+          "type": "subclass_choice",
+          "class_id": "warlock"
+        }
+      ]
+    },
+    {
+      "id": "warlock-asi-4",
+      "owner_type": "class",
+      "owner_id": "warlock",
+      "level": 4,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Warlock levels 8, 12, and 16.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl. Du erhältst dieses Merkmal auf der 8., 12. und 16. Hexenmeisterstufe erneut.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "warlock-asi-8",
+      "owner_type": "class",
+      "owner_id": "warlock",
+      "level": 8,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "warlock-contact-patron",
+      "owner_type": "class",
+      "owner_id": "warlock",
+      "level": 9,
+      "name_en": "Contact Patron",
+      "name_de": "Schutzherrn kontaktieren",
+      "player_choice": false,
+      "text_en": "You can now communicate directly with your patron. You always have the Contact Other Plane spell prepared. With this feature, you can cast the spell without expending a spell slot to contact your patron, and you automatically succeed on the spell's saving throw.\n\nOnce you cast the spell with this feature, you can't do so in this way again until you finish a Long Rest.",
+      "text_de": "Du kannst nun direkt mit deinem Schutzherrn kommunizieren und hast den Zauber Kontakt zu anderen Ebenen stets vorbereitet. Mit diesem Merkmal kannst du den Zauber wirken, ohne einen Zauberplatz zu verbrauchen, und bestehst den Rettungswurf des Zaubers automatisch.\n\nDu kannst den Zauber erst nach einer langen Rast erneut auf diese Art wirken.",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "contact-other-plane",
+          "class_level_threshold": 9
+        },
+        {
+          "type": "spell_cost_override",
+          "spell_id": "contact-other-plane",
+          "cost": "no_spell_slot",
+          "uses": 1,
+          "recharge": "long_rest"
+        },
+        {
+          "type": "automatic_save_success",
+          "spell_id": "contact-other-plane",
+          "condition": "cast_via_contact_patron"
+        }
+      ]
+    },
+    {
+      "id": "warlock-mystic-arcanum-6",
+      "owner_type": "class",
+      "owner_id": "warlock",
+      "level": 11,
+      "name_en": "Mystic Arcanum (Level 6 Spell)",
+      "name_de": "Mystisches Arkanum (Zauber des 6. Grades)",
+      "player_choice": true,
+      "choice_prompt_en": "Choose one level 6 Warlock spell as your arcanum. You can replace it with another level 6 Warlock spell whenever you gain a Warlock level.",
+      "choice_prompt_de": "Wähle einen Hexenmeisterzauber des 6. Grades als dein Arkanum. Du kannst ihn bei jedem Stufenaufstieg durch einen anderen Hexenmeisterzauber des 6. Grades ersetzen.",
+      "text_en": "Your patron grants you a magical secret called an arcanum. Choose one level 6 Warlock spell as this arcanum. You can cast your arcanum spell once without expending a spell slot, and you must finish a Long Rest before you can cast it in this way again. You regain all uses of your Mystic Arcanum when you finish a Long Rest. Whenever you gain a Warlock level, you can replace this arcanum spell with another Warlock spell of the same level.",
+      "text_de": "Dein Schutzherr gewährt dir ein magisches Geheimnis, das Arkanum genannt wird. Wähle einen Hexenmeisterzauber des 6. Grades als dieses Arkanum. Du kannst diesen Arkanum-Zauber einmal wirken, ohne einen Zauberplatz zu verbrauchen, ihn dann aber erst nach einer langen Rast erneut auf diese Art wirken. Wann immer du eine Hexenmeisterstufe erhältst, kannst du diesen Arkanum-Zauber durch einen anderen Hexenmeisterzauber des gleichen Grades ersetzen.",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "choose": 1,
+          "spell_level": 6,
+          "from_source": "warlock_spell_list",
+          "class_level_threshold": 11,
+          "replaceable_on": "level_up",
+          "replace_count": 1
+        },
+        {
+          "type": "spell_cost_override",
+          "spell_source": "mystic_arcanum_6_choice",
+          "cost": "no_spell_slot",
+          "uses": 1,
+          "recharge": "long_rest"
+        }
+      ]
+    },
+    {
+      "id": "warlock-mystic-arcanum-7",
+      "owner_type": "class",
+      "owner_id": "warlock",
+      "level": 13,
+      "name_en": "Mystic Arcanum (Level 7 Spell)",
+      "name_de": "Mystisches Arkanum (Zauber des 7. Grades)",
+      "player_choice": true,
+      "choice_prompt_en": "Choose one level 7 Warlock spell as your arcanum.",
+      "choice_prompt_de": "Wähle einen Hexenmeisterzauber des 7. Grades als dein Arkanum.",
+      "text_en": "Your patron grants you another arcanum. Choose one level 7 Warlock spell. You can cast it once without expending a spell slot, recharging on a Long Rest. Replaceable on level-up.",
+      "text_de": "Dein Schutzherr gewährt dir ein weiteres Arkanum. Wähle einen Hexenmeisterzauber des 7. Grades. Du kannst ihn einmal ohne Zauberplatz wirken, Aufladung nach langer Rast. Ersetzbar bei Stufenaufstieg.",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "choose": 1,
+          "spell_level": 7,
+          "from_source": "warlock_spell_list",
+          "class_level_threshold": 13,
+          "replaceable_on": "level_up",
+          "replace_count": 1
+        },
+        {
+          "type": "spell_cost_override",
+          "spell_source": "mystic_arcanum_7_choice",
+          "cost": "no_spell_slot",
+          "uses": 1,
+          "recharge": "long_rest"
+        }
+      ]
+    },
+    {
+      "id": "warlock-mystic-arcanum-8",
+      "owner_type": "class",
+      "owner_id": "warlock",
+      "level": 15,
+      "name_en": "Mystic Arcanum (Level 8 Spell)",
+      "name_de": "Mystisches Arkanum (Zauber des 8. Grades)",
+      "player_choice": true,
+      "choice_prompt_en": "Choose one level 8 Warlock spell as your arcanum.",
+      "choice_prompt_de": "Wähle einen Hexenmeisterzauber des 8. Grades als dein Arkanum.",
+      "text_en": "Your patron grants you another arcanum. Choose one level 8 Warlock spell. You can cast it once without expending a spell slot, recharging on a Long Rest. Replaceable on level-up.",
+      "text_de": "Dein Schutzherr gewährt dir ein weiteres Arkanum. Wähle einen Hexenmeisterzauber des 8. Grades. Du kannst ihn einmal ohne Zauberplatz wirken, Aufladung nach langer Rast. Ersetzbar bei Stufenaufstieg.",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "choose": 1,
+          "spell_level": 8,
+          "from_source": "warlock_spell_list",
+          "class_level_threshold": 15,
+          "replaceable_on": "level_up",
+          "replace_count": 1
+        },
+        {
+          "type": "spell_cost_override",
+          "spell_source": "mystic_arcanum_8_choice",
+          "cost": "no_spell_slot",
+          "uses": 1,
+          "recharge": "long_rest"
+        }
+      ]
+    },
+    {
+      "id": "warlock-mystic-arcanum-9",
+      "owner_type": "class",
+      "owner_id": "warlock",
+      "level": 17,
+      "name_en": "Mystic Arcanum (Level 9 Spell)",
+      "name_de": "Mystisches Arkanum (Zauber des 9. Grades)",
+      "player_choice": true,
+      "choice_prompt_en": "Choose one level 9 Warlock spell as your arcanum.",
+      "choice_prompt_de": "Wähle einen Hexenmeisterzauber des 9. Grades als dein Arkanum.",
+      "text_en": "Your patron grants you another arcanum. Choose one level 9 Warlock spell. You can cast it once without expending a spell slot, recharging on a Long Rest. Replaceable on level-up.",
+      "text_de": "Dein Schutzherr gewährt dir ein weiteres Arkanum. Wähle einen Hexenmeisterzauber des 9. Grades. Du kannst ihn einmal ohne Zauberplatz wirken, Aufladung nach langer Rast. Ersetzbar bei Stufenaufstieg.",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "choose": 1,
+          "spell_level": 9,
+          "from_source": "warlock_spell_list",
+          "class_level_threshold": 17,
+          "replaceable_on": "level_up",
+          "replace_count": 1
+        },
+        {
+          "type": "spell_cost_override",
+          "spell_source": "mystic_arcanum_9_choice",
+          "cost": "no_spell_slot",
+          "uses": 1,
+          "recharge": "long_rest"
+        }
+      ]
+    },
+    {
+      "id": "warlock-asi-12",
+      "owner_type": "class",
+      "owner_id": "warlock",
+      "level": 12,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "warlock-asi-16",
+      "owner_type": "class",
+      "owner_id": "warlock",
+      "level": 16,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "warlock-epic-boon",
+      "owner_type": "class",
+      "owner_id": "warlock",
+      "level": 19,
+      "name_en": "Epic Boon",
+      "name_de": "Epische Gabe",
+      "player_choice": true,
+      "choice_prompt_en": "Gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Fate is recommended.",
+      "choice_prompt_de": "Erhalte ein Epische-Gabe-Talent oder ein anderes Talent deiner Wahl. Gabe des Schicksals wird empfohlen.",
+      "text_en": "You gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Fate is recommended.",
+      "text_de": "Du erhältst ein Epische-Gabe-Talent oder ein anderes Talent deiner Wahl. Gabe des Schicksals wird empfohlen.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "feat_category": "epic_boon",
+          "recommended": "boon_of_fate"
+        }
+      ]
+    },
+    {
+      "id": "warlock-eldritch-master",
+      "owner_type": "class",
+      "owner_id": "warlock",
+      "level": 20,
+      "name_en": "Eldritch Master",
+      "name_de": "Mystischer Meister",
+      "player_choice": false,
+      "text_en": "When you use your Magical Cunning feature, you regain all your expended Pact Magic spell slots.",
+      "text_de": "Wenn du Magische Raffinesse einsetzt, erhältst du alle verbrauchten Paktmagie-Zauberplätze zurück.",
+      "grants": [
+        {
+          "type": "feature_modifier",
+          "feature_id": "warlock-magical-cunning",
+          "modifies_grant": "recover_pact_magic_slots",
+          "modification": {
+            "max_recovered": "all"
+          }
+        }
+      ]
+    }
+  ],
+  "subclass_features": [
+    {
+      "id": "archfey-spells",
+      "owner_type": "subclass",
+      "owner_id": "warlock-archfey",
+      "level": 3,
+      "name_en": "Archfey Spells",
+      "name_de": "Erzfeenzauber",
+      "player_choice": false,
+      "text_en": "The magic of your patron ensures you always have certain spells ready.\n\nLevel 3: Calm Emotions, Faerie Fire, Misty Step, Phantasmal Force, Sleep. Level 5: Blink, Plant Growth. Level 7: Dominate Beast, Greater Invisibility. Level 9: Dominate Person, Seeming.",
+      "text_de": "Die Magie deines Schutzherrn sorgt dafür, dass du bestimmte Zauber stets verfügbar hast.\n\nStufe 3: Feenfeuer, Gefühle besänftigen, Macht der Vorstellungskraft, Nebelschritt, Schlaf. Stufe 5: Flimmern, Pflanzenwachstum. Stufe 7: Mächtige Unsichtbarkeit, Tier beherrschen. Stufe 9: Äußerlichkeiten, Person beherrschen.",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "calm-emotions",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "faerie-fire",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "misty-step",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "phantasmal-force",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "sleep",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "blink",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "plant-growth",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "dominate-beast",
+          "class_level_threshold": 7
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "greater-invisibility",
+          "class_level_threshold": 7
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "dominate-person",
+          "class_level_threshold": 9
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "seeming",
+          "class_level_threshold": 9
+        }
+      ]
+    },
+    {
+      "id": "archfey-steps-of-the-fey",
+      "owner_type": "subclass",
+      "owner_id": "warlock-archfey",
+      "level": 3,
+      "name_en": "Steps of the Fey",
+      "name_de": "Schritte der Feenwesen",
+      "player_choice": true,
+      "choice_prompt_en": "Whenever you cast Misty Step via Steps of the Fey, choose one additional effect: Refreshing Step or Taunting Step.",
+      "choice_prompt_de": "Wann immer du Nebelschritt via Schritte der Feenwesen wirkst, wähle einen zusätzlichen Effekt: Erfrischender Schritt oder Schmähender Schritt.",
+      "text_en": "Your patron grants you the ability to move between the boundaries of the planes. You can cast Misty Step without expending a spell slot a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.\n\nIn addition, whenever you cast that spell, you can choose one of the following additional effects.\n\nRefreshing Step. Immediately after you teleport, you or one creature you can see within 10 feet gains 1d10 Temporary Hit Points.\n\nTaunting Step. Creatures within 5 feet of the space you left must succeed on a Wisdom saving throw against your spell save DC or have Disadvantage on attack rolls against creatures other than you until the start of your next turn.",
+      "text_de": "Dein Schutzherr gewährt dir die Fähigkeit, dich zwischen den Ebenengrenzen zu bewegen. Die Anzahl der möglichen Anwendungen von Nebelschritt ohne Zauberplatz entspricht deinem Charismamodifikator (mindestens einmal). Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück.\n\nAußerdem kannst du, wann immer du den Zauber wirkst, einen der folgenden zusätzlichen Effekte auswählen.\n\nErfrischender Schritt: Sofort nach der Teleportation erhältst du oder eine Kreatur im Abstand von bis zu drei Metern 1W10 temporäre Trefferpunkte.\n\nSchmähender Schritt: Kreaturen im Abstand von bis zu 1,5 Metern vom Bereich, den du verlassen hast, müssen einen Weisheitsrettungswurf bestehen oder sind bis zum Beginn deines nächsten Zugs bei Angriffswürfen gegen Kreaturen außer dir im Nachteil.",
+      "grants": [
+        {
+          "type": "spell_cost_override",
+          "spell_id": "misty-step",
+          "cost": "no_spell_slot",
+          "uses": {
+            "equals": "charisma_modifier",
+            "minimum": 1
+          },
+          "recharge": "long_rest"
+        },
+        {
+          "type": "choice",
+          "trigger": "cast_misty_step_via_steps_of_the_fey",
+          "optional": true,
+          "choose": 1,
+          "id": "steps_of_fey_options",
+          "options": [
+            {
+              "id": "steps-refreshing",
+              "name_en": "Refreshing Step",
+              "name_de": "Erfrischender Schritt",
+              "text_en": "Immediately after you teleport, you or one creature you can see within 10 feet gains 1d10 Temporary Hit Points.",
+              "text_de": "Sofort nach der Teleportation erhältst du oder eine Kreatur im Abstand von bis zu drei Metern 1W10 temporäre Trefferpunkte.",
+              "grants": [
+                {
+                  "type": "triggered_effect",
+                  "trigger": "after_misty_step_teleport",
+                  "effect": {
+                    "type": "grant_temporary_hit_points",
+                    "target": "self_or_creature_within_10ft_you_can_see",
+                    "value": {
+                      "dice": "1d10"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "steps-taunting",
+              "name_en": "Taunting Step",
+              "name_de": "Schmähender Schritt",
+              "text_en": "Creatures within 5 feet of the space you left must succeed on a Wisdom saving throw against your spell save DC or have Disadvantage on attack rolls against creatures other than you until the start of your next turn.",
+              "text_de": "Kreaturen im Abstand von bis zu 1,5 Metern vom Bereich, den du verlassen hast, müssen einen Weisheitsrettungswurf bestehen oder sind bis zum Beginn deines nächsten Zugs bei Angriffswürfen gegen Kreaturen außer dir im Nachteil.",
+              "grants": [
+                {
+                  "type": "triggered_effect",
+                  "trigger": "after_misty_step_depart",
+                  "area": {
+                    "type": "sphere",
+                    "radius_feet": 5,
+                    "centered_on": "departed_space"
+                  },
+                  "saving_throw": {
+                    "ability": "wisdom",
+                    "dc": "spell_save_dc"
+                  },
+                  "on_failure": {
+                    "type": "disadvantage_on_attacks",
+                    "against": "creatures_other_than_self",
+                    "duration": "until_start_of_your_next_turn"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "archfey-misty-escape",
+      "owner_type": "subclass",
+      "owner_id": "warlock-archfey",
+      "level": 6,
+      "name_en": "Misty Escape",
+      "name_de": "Neblige Flucht",
+      "player_choice": false,
+      "text_en": "You can cast Misty Step as a Reaction in response to taking damage.\n\nIn addition, the following effects are now among your Steps of the Fey options.\n\nDisappearing Step. You have the Invisible condition until the start of your next turn or until immediately after you make an attack roll, deal damage, or cast a spell.\n\nDreadful Step. Creatures within 5 feet of the space you left or the space you appear in (your choice) must succeed on a Wisdom saving throw against your spell save DC or take 2d10 Psychic damage.",
+      "text_de": "Du kannst Nebelschritt als Reaktion wirken, wenn du Schaden erleidest.\n\nAußerdem gehören nun folgende Effekte zu deinen Optionen von Schritte der Feenwesen.\n\nSchritt des Verschwindens: Du bist bis zum Beginn deines nächsten Zugs oder bis sofort nach Ausführen eines Angriffswurfs, nach Bewirken von Schaden oder nach Wirken eines Zaubers unsichtbar.\n\nGrässlicher Schritt: Kreaturen im Abstand von bis zu 1,5 Metern vom Bereich, den du verlassen hast oder in dem du erscheinst (nach deiner Wahl), müssen einen Weisheitsrettungswurf bestehen oder erleiden 2W10 psychischen Schaden.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "take_damage",
+          "action_type": "reaction",
+          "effect": {
+            "type": "cast_spell",
+            "spell_id": "misty-step"
+          }
+        },
+        {
+          "type": "feature_modifier",
+          "feature_id": "archfey-steps-of-the-fey",
+          "modifies_grant": "steps_of_fey_options",
+          "modification": {
+            "adds_options": [
+              {
+                "id": "steps-disappearing",
+                "name_en": "Disappearing Step",
+                "name_de": "Schritt des Verschwindens",
+                "text_en": "You have the Invisible condition until the start of your next turn or until immediately after you make an attack roll, deal damage, or cast a spell.",
+                "text_de": "Du bist bis zum Beginn deines nächsten Zugs oder bis sofort nach Ausführen eines Angriffswurfs, nach Bewirken von Schaden oder nach Wirken eines Zaubers unsichtbar.",
+                "grants": [
+                  {
+                    "type": "apply_conditions",
+                    "conditions": [
+                      "invisible"
+                    ],
+                    "target": "self",
+                    "duration": "until_start_of_next_turn",
+                    "end_conditions": [
+                      "make_attack_roll",
+                      "deal_damage",
+                      "cast_spell"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "steps-dreadful",
+                "name_en": "Dreadful Step",
+                "name_de": "Grässlicher Schritt",
+                "text_en": "Creatures within 5 feet of the space you left or the space you appear in (your choice) must succeed on a Wisdom saving throw against your spell save DC or take 2d10 Psychic damage.",
+                "text_de": "Kreaturen im Abstand von bis zu 1,5 Metern vom Bereich, den du verlassen hast oder in dem du erscheinst (nach deiner Wahl), müssen einen Weisheitsrettungswurf bestehen oder erleiden 2W10 psychischen Schaden.",
+                "grants": [
+                  {
+                    "type": "triggered_effect",
+                    "trigger": "after_misty_step_depart_or_arrive",
+                    "area": {
+                      "type": "sphere",
+                      "radius_feet": 5,
+                      "centered_on_choice": [
+                        "departed_space",
+                        "arrived_space"
+                      ]
+                    },
+                    "saving_throw": {
+                      "ability": "wisdom",
+                      "dc": "spell_save_dc"
+                    },
+                    "on_failure": {
+                      "type": "damage",
+                      "damage_type": "psychic",
+                      "value": {
+                        "dice": "2d10"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "archfey-beguiling-defenses",
+      "owner_type": "subclass",
+      "owner_id": "warlock-archfey",
+      "level": 10,
+      "name_en": "Beguiling Defenses",
+      "name_de": "Betörende Abwehr",
+      "player_choice": false,
+      "text_en": "Your patron teaches you how to guard your mind and body. You are immune to the Charmed condition.\n\nIn addition, immediately after a creature you can see hits you with an attack roll, you can take a Reaction to reduce the damage you take by half (round down), and you can force the attacker to make a Wisdom saving throw against your spell save DC. On a failed save, the attacker takes Psychic damage equal to the damage you take. Once you use this Reaction, you can't use it again until you finish a Long Rest unless you expend a Pact Magic spell slot (no action required) to restore your use of it.",
+      "text_de": "Dein Schutzherr lehrt dich, wie du Körper und Geist schützt. Du bist gegen den Zustand Bezaubert immun.\n\nAußerdem kannst du sofort, nachdem eine Kreatur dich mit einem Angriffswurf getroffen hat, eine Reaktion ausführen, um den Schaden um die Hälfte zu verringern (abgerundet), und den Angreifer zu einem Weisheitsrettungswurf zwingen. Scheitert der Wurf, erleidet der Angreifer psychischen Schaden in Höhe des Schadens, den du erleidest. Du kannst diese Reaktion erst nach einer langen Rast erneut verwenden, es sei denn, du verbrauchst einen Paktmagie-Zauberplatz (keine Aktion erforderlich).",
+      "grants": [
+        {
+          "type": "condition_immunity",
+          "conditions": [
+            "charmed"
+          ]
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "hit_by_attack_roll",
+          "action_type": "reaction",
+          "uses": 1,
+          "recharge": "long_rest",
+          "refresh_option": {
+            "type": "feature_refresh",
+            "feature_id": "archfey-beguiling-defenses",
+            "cost": {
+              "resource": "pact_spell_slot",
+              "amount": 1
+            }
+          },
+          "effect": {
+            "type": "damage_reduction",
+            "value": "half_round_down"
+          },
+          "secondary_effect": {
+            "type": "saving_throw",
+            "ability": "wisdom",
+            "dc": "spell_save_dc",
+            "target": "attacker",
+            "on_failure": {
+              "type": "damage",
+              "damage_type": "psychic",
+              "value": "damage_taken_after_reduction"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "archfey-bewitching-magic",
+      "owner_type": "subclass",
+      "owner_id": "warlock-archfey",
+      "level": 14,
+      "name_en": "Bewitching Magic",
+      "name_de": "Verhexende Magie",
+      "player_choice": false,
+      "text_en": "Your patron grants you the ability to weave your magic with teleportation. Immediately after you cast an Enchantment or Illusion spell using an action and a spell slot, you can cast Misty Step as part of the same action and without expending a spell slot.",
+      "text_de": "Dein Schutzherr gewährt dir die Fähigkeit, deine Magie mit Teleportation zu verbinden. Sofort nach dem Wirken eines Verzauberungs- oder Illusionszaubers mit Aktion und Zauberplatz kannst du Nebelschritt als Teil der gleichen Aktion wirken, ohne dafür einen Zauberplatz zu verbrauchen.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "cast_enchantment_or_illusion_with_action_and_slot",
+          "optional": true,
+          "effect": {
+            "type": "cast_spell",
+            "spell_id": "misty-step",
+            "cost": "no_spell_slot",
+            "as_part_of_same_action": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "celestial-spells",
+      "owner_type": "subclass",
+      "owner_id": "warlock-celestial",
+      "level": 3,
+      "name_en": "Celestial Spells",
+      "name_de": "Celestische Zauber",
+      "player_choice": false,
+      "text_en": "The magic of your patron ensures you always have certain spells ready.\n\nLevel 3: Aid, Cure Wounds, Guiding Bolt, Lesser Restoration, Light, Sacred Flame. Level 5: Daylight, Revivify. Level 7: Guardian of Faith, Wall of Fire. Level 9: Greater Restoration, Summon Celestial.",
+      "text_de": "Die Magie deines Schutzherrn sorgt dafür, dass du bestimmte Zauber stets verfügbar hast.\n\nStufe 3: Beistand, Heilige Flamme, Lenkendes Geschoss, Licht, Schwache Genesung, Wunden heilen. Stufe 5: Tageslicht, Wiederbeleben. Stufe 7: Feuerwand, Hüter des Glaubens. Stufe 9: Celestisches Wesen herbeirufen, Vollständige Genesung.",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "aid",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "cure-wounds",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "guiding-bolt",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "lesser-restoration",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "light",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "sacred-flame",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "daylight",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "revivify",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "guardian-of-faith",
+          "class_level_threshold": 7
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "wall-of-fire",
+          "class_level_threshold": 7
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "greater-restoration",
+          "class_level_threshold": 9
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "summon-celestial",
+          "class_level_threshold": 9
+        }
+      ]
+    },
+    {
+      "id": "celestial-healing-light",
+      "owner_type": "subclass",
+      "owner_id": "warlock-celestial",
+      "level": 3,
+      "name_en": "Healing Light",
+      "name_de": "Heilendes Licht",
+      "player_choice": false,
+      "text_en": "You gain the ability to channel celestial energy to heal wounds. You have a pool of d6s to fuel this healing. The number of dice in the pool equals 1 plus your Warlock level.\n\nAs a Bonus Action, you can heal yourself or one creature you can see within 60 feet of yourself, expending dice from the pool. The maximum number of dice you can expend at once equals your Charisma modifier (minimum of one die). Roll the dice you expend, and restore a number of Hit Points equal to the roll's total. Your pool regains all expended dice when you finish a Long Rest.",
+      "text_de": "Du erhältst die Fähigkeit, celestische Energie zu kanalisieren, um Wunden zu heilen. Du hast einen Vorrat von W6 für diesen Zweck. Die Anzahl von Würfeln im Vorrat entspricht 1 plus deiner Hexenmeisterstufe.\n\nAls Bonusaktion kannst du dich selbst oder eine Kreatur im Abstand von bis zu 18 Metern durch Verbrauchen der Würfel heilen. Die maximale Anzahl von Würfeln entspricht deinem Charismamodifikator (mindestens ein Würfel). Würfle und stelle Trefferpunkte in Höhe des Gesamtergebnisses wieder her. Du erhältst alle Würfel nach einer langen Rast zurück.",
+      "grants": [
+        {
+          "type": "dice_pool",
+          "pool_id": "healing_light_dice",
+          "count_from_resource": "healing_light_dice_count",
+          "die": "d6",
+          "action_type": "bonus_action",
+          "range_feet": 60,
+          "max_dice_per_use": {
+            "equals": "charisma_modifier",
+            "minimum": 1
+          },
+          "effect": {
+            "type": "heal_target",
+            "value": "roll_expended_dice"
+          },
+          "recharge": "long_rest"
+        }
+      ]
+    },
+    {
+      "id": "celestial-radiant-soul",
+      "owner_type": "subclass",
+      "owner_id": "warlock-celestial",
+      "level": 6,
+      "name_en": "Radiant Soul",
+      "name_de": "Gleißende Seele",
+      "player_choice": false,
+      "text_en": "Your link to your patron allows you to serve as a conduit for radiant energy. You have Resistance to Radiant damage. Once per turn, when a spell you cast deals Radiant or Fire damage, you can add your Charisma modifier to that spell's damage against one of the spell's targets.",
+      "text_de": "Deine Verbindung mit deinem Schutzherrn gestattet dir, gleißende Energie zu übermitteln. Du bist gegen gleißenden Schaden resistent. Einmal pro Zug kannst du, wenn einer deiner Zauber gleißenden Schaden oder Feuerschaden bewirkt, dem Schaden des Zaubers gegen eines der Ziele deinen Charismamodifikator hinzufügen.",
+      "grants": [
+        {
+          "type": "damage_resistance",
+          "damage_types": [
+            "radiant"
+          ]
+        },
+        {
+          "type": "damage_bonus",
+          "value": "charisma_modifier",
+          "condition": "spell_deals_radiant_or_fire_damage",
+          "applies_to": "one_target_of_spell",
+          "once_per_turn": true
+        }
+      ]
+    },
+    {
+      "id": "celestial-celestial-resilience",
+      "owner_type": "subclass",
+      "owner_id": "warlock-celestial",
+      "level": 10,
+      "name_en": "Celestial Resilience",
+      "name_de": "Celestische Widerstandskraft",
+      "player_choice": false,
+      "text_en": "You gain Temporary Hit Points whenever you use your Magical Cunning feature or finish a Short or Long Rest. These Temporary Hit Points equal your Warlock level plus your Charisma modifier. Additionally, choose up to five creatures you can see when you gain the points. Those creatures each gain Temporary Hit Points equal to half your Warlock level plus your Charisma modifier.",
+      "text_de": "Du erhältst temporäre Trefferpunkte, wann immer du Magische Raffinesse einsetzt oder eine kurze oder lange Rast beendest. Diese entsprechen deiner Hexenmeisterstufe plus deinem Charismamodifikator. Außerdem kannst du bis zu fünf Kreaturen auswählen, die du sehen kannst. Diese erhalten jeweils temporäre Trefferpunkte in Höhe der Hälfte deiner Hexenmeisterstufe plus deines Charismamodifikators.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": [
+            "use_magical_cunning",
+            "short_rest_end",
+            "long_rest_end"
+          ],
+          "effect": {
+            "type": "grant_temporary_hit_points",
+            "target": "self",
+            "value": {
+              "base": "warlock_level",
+              "flat_modifier": "charisma_modifier"
+            }
+          }
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": [
+            "use_magical_cunning",
+            "short_rest_end",
+            "long_rest_end"
+          ],
+          "optional": true,
+          "effect": {
+            "type": "grant_temporary_hit_points",
+            "target": "up_to_5_creatures_you_can_see",
+            "value": {
+              "base": "half_warlock_level",
+              "flat_modifier": "charisma_modifier"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "celestial-searing-vengeance",
+      "owner_type": "subclass",
+      "owner_id": "warlock-celestial",
+      "level": 14,
+      "name_en": "Searing Vengeance",
+      "name_de": "Sengende Rache",
+      "player_choice": false,
+      "text_en": "When you or an ally within 60 feet of you is about to make a Death Saving Throw, you can unleash radiant energy to save the creature. The creature regains Hit Points equal to half its Hit Point maximum and can end the Prone condition on itself. Each creature of your choice within 30 feet of the creature takes Radiant damage equal to 2d8 plus your Charisma modifier, and each has the Blinded condition until the end of the current turn.\n\nOnce you use this feature, you can't use it again until you finish a Long Rest.",
+      "text_de": "Wenn du oder ein Verbündeter im Abstand von bis zu 18 Metern im Begriff ist, einen Todesrettungswurf auszuführen, kannst du gleißende Energie entfesseln. Die Kreatur erhält Trefferpunkte in Höhe der Hälfte ihres Trefferpunktemaximums zurück und kann den Zustand Liegend beenden. Jedes Ziel deiner Wahl im Abstand von bis zu neun Metern erleidet gleißenden Schaden in Höhe von 2W8 plus deinem Charismamodifikator und ist bis zum Ende des aktuellen Zugs blind.\n\nDu kannst dieses Merkmal erst nach einer langen Rast erneut verwenden.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "self_or_ally_within_60ft_about_to_make_death_saving_throw",
+          "uses": 1,
+          "recharge": "long_rest",
+          "effect": {
+            "type": "heal_target",
+            "target": "triggering_creature",
+            "value": "half_target_hp_maximum"
+          },
+          "additional_effects": [
+            {
+              "type": "remove_condition",
+              "condition": "prone",
+              "target": "triggering_creature",
+              "optional": true
+            },
+            {
+              "type": "damage_and_condition",
+              "targets": "creatures_of_choice_within_30ft_of_triggering_creature",
+              "damage": {
+                "type": "radiant",
+                "value": {
+                  "dice": "2d8",
+                  "flat_modifier": "charisma_modifier"
+                }
+              },
+              "condition": "blinded",
+              "duration": "until_end_of_current_turn"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fiend-spells",
+      "owner_type": "subclass",
+      "owner_id": "warlock-fiend",
+      "level": 3,
+      "name_en": "Fiend Spells",
+      "name_de": "Unhold-Zauber",
+      "player_choice": false,
+      "text_en": "The magic of your patron ensures you always have certain spells ready.\n\nLevel 3: Burning Hands, Command, Scorching Ray, Suggestion. Level 5: Fireball, Stinking Cloud. Level 7: Fire Shield, Wall of Fire. Level 9: Geas, Insect Plague.",
+      "text_de": "Die Magie deines Schutzherrn sorgt dafür, dass du bestimmte Zauber stets verfügbar hast.\n\nStufe 3: Befehl, Brennende Hände, Einflüsterung, Sengender Strahl. Stufe 5: Feuerball, Stinkende Wolke. Stufe 7: Feuerschild, Feuerwand. Stufe 9: Geas, Insektenplage.",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "burning-hands",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "command",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "scorching-ray",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "suggestion",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "fireball",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "stinking-cloud",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "fire-shield",
+          "class_level_threshold": 7
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "wall-of-fire",
+          "class_level_threshold": 7
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "geas",
+          "class_level_threshold": 9
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "insect-plague",
+          "class_level_threshold": 9
+        }
+      ]
+    },
+    {
+      "id": "fiend-dark-ones-blessing",
+      "owner_type": "subclass",
+      "owner_id": "warlock-fiend",
+      "level": 3,
+      "name_en": "Dark One's Blessing",
+      "name_de": "Segen des Dunklen Meisters",
+      "player_choice": false,
+      "text_en": "When you reduce an enemy to 0 Hit Points, you gain Temporary Hit Points equal to your Charisma modifier plus your Warlock level (minimum of 1). You also gain this benefit if someone else reduces an enemy within 10 feet of you to 0 Hit Points.",
+      "text_de": "Wenn du die Trefferpunkte eines Gegners auf 0 verringerst, erhältst du temporäre Trefferpunkte in Höhe deines Charismamodifikators plus deiner Hexenmeisterstufe (mindestens 1). Du erhältst diesen Vorzug ebenfalls, wenn jemand anders die Trefferpunkte eines Gegners im Abstand von bis zu drei Metern auf 0 verringert.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "self_reduces_enemy_to_0_hp",
+          "effect": {
+            "type": "grant_temporary_hit_points",
+            "target": "self",
+            "value": {
+              "base": "charisma_modifier",
+              "plus_class_level": "warlock_level",
+              "minimum": 1
+            }
+          }
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "other_reduces_enemy_to_0_hp",
+          "trigger_range_feet": 10,
+          "effect": {
+            "type": "grant_temporary_hit_points",
+            "target": "self",
+            "value": {
+              "base": "charisma_modifier",
+              "plus_class_level": "warlock_level",
+              "minimum": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "fiend-dark-ones-own-luck",
+      "owner_type": "subclass",
+      "owner_id": "warlock-fiend",
+      "level": 6,
+      "name_en": "Dark One's Own Luck",
+      "name_de": "Schicksal des Dunklen Meisters",
+      "player_choice": false,
+      "text_en": "You can call on your fiendish patron to alter fate in your favor. When you make an ability check or a saving throw, you can use this feature to add 1d10 to your roll. You can do so after seeing the roll but before any of the roll's effects occur.\n\nYou can use this feature a number of times equal to your Charisma modifier (minimum of once), but no more than once per roll. You regain all expended uses when you finish a Long Rest.",
+      "text_de": "Du kannst deinen Unhold-Schutzherrn bitten, das Schicksal zu deinen Gunsten zu ändern. Wenn du einen Attributs- oder Rettungswurf ausführst, kannst du dieses Merkmal anwenden, um dem Wurf 1W10 hinzuzufügen. Dies kannst du tun, nachdem der Wurf ausgeführt wurde, aber bevor die Effekte auftreten.\n\nDie Anzahl der möglichen Anwendungen entspricht deinem Charismamodifikator (mindestens einmal), aber höchstens einmal pro Würfelwurf. Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "none",
+          "trigger": "make_ability_check_or_saving_throw",
+          "trigger_timing": "after_roll_before_effects",
+          "optional": true,
+          "uses": {
+            "equals": "charisma_modifier",
+            "minimum": 1
+          },
+          "max_uses_per_roll": 1,
+          "recharge": "long_rest",
+          "effect": {
+            "type": "add_to_roll",
+            "value": {
+              "roll": {
+                "die": "d10",
+                "count": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "fiend-fiendish-resilience",
+      "owner_type": "subclass",
+      "owner_id": "warlock-fiend",
+      "level": 10,
+      "name_en": "Fiendish Resilience",
+      "name_de": "Widerstandskraft des Unholds",
+      "player_choice": true,
+      "choice_prompt_en": "Choose one damage type other than Force whenever you finish a Short or Long Rest. You gain Resistance to that type until you choose a different one.",
+      "choice_prompt_de": "Wähle eine Schadensart außer Energie, wann immer du eine kurze oder lange Rast beendest. Du bist bis zur nächsten Wahl gegen diese Schadensart resistent.",
+      "text_en": "Choose one damage type, other than Force, whenever you finish a Short or Long Rest. You have Resistance to that damage type until you choose a different one with this feature.",
+      "text_de": "Wähle eine Schadensart außer Energie, wann immer du eine kurze oder lange Rast beendest. Du bist gegen diese Schadensart resistent, bis du mit diesem Merkmal eine andere auswählst.",
+      "grants": [
+        {
+          "type": "damage_resistance",
+          "damage_type_from_choice": {
+            "choice_resource": "fiendish_resilience_type",
+            "chosen_on": [
+              "short_rest_end",
+              "long_rest_end"
+            ],
+            "excludes": [
+              "force"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fiend-hurl-through-hell",
+      "owner_type": "subclass",
+      "owner_id": "warlock-fiend",
+      "level": 14,
+      "name_en": "Hurl Through Hell",
+      "name_de": "Schlund des Wahnsinns",
+      "player_choice": false,
+      "text_en": "Once per turn when you hit a creature with an attack roll, you can try to instantly transport the target through the Lower Planes. The target must succeed on a Charisma saving throw against your spell save DC, or the target disappears and hurtles through a nightmare landscape. The target takes 8d10 Psychic damage if it isn't a Fiend, and it has the Incapacitated condition until the end of your next turn, when it returns to the space it previously occupied or the nearest unoccupied space.\n\nOnce you use this feature, you can't use it again until you finish a Long Rest unless you expend a Pact Magic spell slot (no action required) to restore your use of it.",
+      "text_de": "Einmal pro Zug kannst du, wenn du eine Kreatur mit einem Angriffswurf triffst, versuchen, das Ziel in die Unteren Ebenen zu schleudern. Das Ziel muss einen Charismarettungswurf bestehen, oder es verschwindet: Es erleidet 8W10 psychischen Schaden (sofern es kein Unhold ist) und ist bis zum Ende deines nächsten Zugs kampfunfähig. Dann kehrt es in seinen ursprünglichen Bereich zurück.\n\nDu kannst dieses Merkmal erst nach einer langen Rast erneut verwenden, es sei denn, du verbrauchst einen Paktmagie-Zauberplatz (keine Aktion erforderlich).",
+      "grants": [
+        {
+          "type": "on_hit_effect",
+          "attack_type": "any",
+          "once_per_turn": true,
+          "optional": true,
+          "uses": 1,
+          "recharge": "long_rest",
+          "refresh_option": {
+            "type": "feature_refresh",
+            "feature_id": "fiend-hurl-through-hell",
+            "cost": {
+              "resource": "pact_spell_slot",
+              "amount": 1
+            }
+          },
+          "saving_throw": {
+            "ability": "charisma",
+            "dc": "spell_save_dc"
+          },
+          "on_failure": {
+            "type": "extraplanar_banishment",
+            "damage": {
+              "damage_type": "psychic",
+              "value": {
+                "dice": "8d10"
+              },
+              "condition": "target_is_not_a_fiend"
+            },
+            "condition": "incapacitated",
+            "duration": "until_end_of_your_next_turn",
+            "return_to": "original_space_or_nearest_unoccupied"
+          }
+        }
+      ]
+    },
+    {
+      "id": "great-old-one-spells",
+      "owner_type": "subclass",
+      "owner_id": "warlock-great-old-one",
+      "level": 3,
+      "name_en": "Great Old One Spells",
+      "name_de": "Großer-Alter-Zauber",
+      "player_choice": false,
+      "text_en": "The magic of your patron ensures you always have certain spells ready.\n\nLevel 3: Detect Thoughts, Dissonant Whispers, Phantasmal Force, Tasha's Hideous Laughter. Level 5: Clairvoyance, Hunger of Hadar. Level 7: Confusion, Summon Aberration. Level 9: Modify Memory, Telekinesis.",
+      "text_de": "Die Magie deines Schutzherrn sorgt dafür, dass du bestimmte Zauber stets verfügbar hast.\n\nStufe 3: Dissonantes Flüstern, Gedanken wahrnehmen, Macht der Vorstellungskraft, Tashas Fürchterlicher Lachanfall. Stufe 5: Hellsehen, Hunger von Hadar. Stufe 7: Aberration herbeirufen, Verwirrung. Stufe 9: Erinnerung verändern, Telekinese.",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "detect-thoughts",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "dissonant-whispers",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "phantasmal-force",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "tashas-hideous-laughter",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "clairvoyance",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "hunger-of-hadar",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "confusion",
+          "class_level_threshold": 7
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "summon-aberration",
+          "class_level_threshold": 7
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "modify-memory",
+          "class_level_threshold": 9
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "telekinesis",
+          "class_level_threshold": 9
+        }
+      ]
+    },
+    {
+      "id": "great-old-one-awakened-mind",
+      "owner_type": "subclass",
+      "owner_id": "warlock-great-old-one",
+      "level": 3,
+      "name_en": "Awakened Mind",
+      "name_de": "Erwachter Geist",
+      "player_choice": false,
+      "text_en": "You can form a telepathic connection between your mind and the mind of another. As a Bonus Action, choose one creature you can see within 30 feet of yourself. You and the chosen creature can communicate telepathically while within a number of miles equal to your Charisma modifier (minimum of 1 mile). You must use a mutually known language.\n\nThe telepathic connection lasts for a number of minutes equal to your Warlock level. It ends early if you use this feature to connect with a different creature.",
+      "text_de": "Du kannst eine telepathische Verbindung zwischen deinem und einem anderen Geist herstellen. Als Bonusaktion wählst du eine Kreatur im Abstand von bis zu neun Metern. Ihr könnt telepathisch kommunizieren, solange ihr euch im Umkreis einer Anzahl von Meilen in Höhe deines Charismamodifikators (mindestens 1 Meile) befindet. Ihr müsst mental eine gemeinsame Sprache verwenden.\n\nDie Verbindung hält eine Anzahl von Minuten in Höhe deiner Hexenmeisterstufe an. Sie endet vorzeitig, wenn du dieses Merkmal verwendest, um dich mit einer anderen Kreatur zu verbinden.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "range_feet": 30,
+          "condition": "target_you_can_see",
+          "effect": {
+            "type": "telepathic_bond",
+            "duration": {
+              "minutes_from_resource": "warlock_level"
+            },
+            "range": {
+              "miles_from_ability": "charisma_modifier",
+              "minimum_miles": 1
+            },
+            "requirement": "mutually_known_language",
+            "end_conditions": [
+              "use_feature_on_different_creature"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "great-old-one-psychic-spells",
+      "owner_type": "subclass",
+      "owner_id": "warlock-great-old-one",
+      "level": 3,
+      "name_en": "Psychic Spells",
+      "name_de": "Psychische Zauber",
+      "player_choice": false,
+      "text_en": "When you cast a Warlock spell that deals damage, you can change its damage type to Psychic. In addition, when you cast a Warlock spell that is an Enchantment or Illusion, you can do so without Verbal or Somatic components.",
+      "text_de": "Wenn du einen Hexenmeisterzauber wirkst, der Schaden bewirkt, kannst du seine Schadensart in Psychisch ändern. Wenn du außerdem einen Hexenmeisterzauber wirkst, der ein Verzauberungs- oder ein Illusionszauber ist, kannst du dies ohne Verbal- oder Gestenkomponenten tun.",
+      "grants": [
+        {
+          "type": "spell_effect_transformation",
+          "applies_to": "warlock_spells_that_deal_damage",
+          "optional": true,
+          "modification": "change_damage_type_to_psychic"
+        },
+        {
+          "type": "spell_component_override",
+          "applies_to": "warlock_enchantment_and_illusion_spells",
+          "components": {
+            "verbal": false,
+            "somatic": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "great-old-one-clairvoyant-combatant",
+      "owner_type": "subclass",
+      "owner_id": "warlock-great-old-one",
+      "level": 6,
+      "name_en": "Clairvoyant Combatant",
+      "name_de": "Hellsichtiger Kämpfer",
+      "player_choice": false,
+      "text_en": "When you form a telepathic bond with a creature using your Awakened Mind, you can force that creature to make a Wisdom saving throw against your spell save DC. On a failed save, the creature has Disadvantage on attack rolls against you, and you have Advantage on attack rolls against that creature for the duration of the bond.\n\nOnce you use this feature, you can't use it again until you finish a Short or Long Rest unless you expend a Pact Magic spell slot (no action required) to restore your use of it.",
+      "text_de": "Wenn du mit Erwachter Geist eine telepathische Bindung schmiedest, kannst du diese Kreatur zu einem Weisheitsrettungswurf zwingen. Scheitert der Wurf, ist die Kreatur bei Angriffswürfen gegen dich im Nachteil, und du bist bei Angriffswürfen gegen diese Kreatur im Vorteil – für die Dauer der Bindung.\n\nDu kannst dieses Merkmal erst nach einer kurzen oder langen Rast erneut verwenden, es sei denn, du verbrauchst einen Paktmagie-Zauberplatz (keine Aktion erforderlich).",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "form_awakened_mind_bond",
+          "optional": true,
+          "uses": 1,
+          "recharge": [
+            "short_rest",
+            "long_rest"
+          ],
+          "refresh_option": {
+            "type": "feature_refresh",
+            "feature_id": "great-old-one-clairvoyant-combatant",
+            "cost": {
+              "resource": "pact_spell_slot",
+              "amount": 1
+            }
+          },
+          "saving_throw": {
+            "ability": "wisdom",
+            "dc": "spell_save_dc"
+          },
+          "on_failure": {
+            "type": "mutual_attack_roll_modifier",
+            "target_has": "disadvantage_on_attacks_against_self",
+            "self_has": "advantage_on_attacks_against_target",
+            "duration": "duration_of_telepathic_bond"
+          }
+        }
+      ]
+    },
+    {
+      "id": "great-old-one-eldritch-hex",
+      "owner_type": "subclass",
+      "owner_id": "warlock-great-old-one",
+      "level": 10,
+      "name_en": "Eldritch Hex",
+      "name_de": "Schauerliches Verwünschen",
+      "player_choice": false,
+      "text_en": "Your alien patron grants you a powerful curse. You always have the Hex spell prepared. When you cast Hex and choose an ability, the target also has Disadvantage on saving throws of the chosen ability for the duration of the spell.",
+      "text_de": "Dein fremdweltlicher Schutzherr gewährt dir einen mächtigen Fluch. Du hast den Zauber Verwünschen stets vorbereitet. Wenn du Verwünschen wirkst und ein Attribut auswählst, ist das Ziel für die Wirkungsdauer außerdem bei Rettungswürfen des ausgewählten Attributs im Nachteil.",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "hex",
+          "class_level_threshold": 10
+        },
+        {
+          "type": "spell_effect_transformation",
+          "applies_to": [
+            "hex"
+          ],
+          "modification": "add_saving_throw_disadvantage_for_chosen_ability",
+          "note": "When Hex is cast, in addition to the normal ability check disadvantage, the target also has disadvantage on saving throws of the chosen ability."
+        }
+      ]
+    },
+    {
+      "id": "great-old-one-thought-shield",
+      "owner_type": "subclass",
+      "owner_id": "warlock-great-old-one",
+      "level": 10,
+      "name_en": "Thought Shield",
+      "name_de": "Gedankenschild",
+      "player_choice": false,
+      "text_en": "Your thoughts can't be read by telepathy or other means unless you allow it. You also have Resistance to Psychic damage, and whenever a creature deals Psychic damage to you, that creature takes the same amount of damage that you take.",
+      "text_de": "Deine Gedanken können nicht telepathisch oder mit anderen Mitteln erkannt werden, sofern du es nicht gestattest. Außerdem bist du gegen psychischen Schaden resistent, und wann immer eine Kreatur dir psychischen Schaden zufügt, erleidet sie die gleiche Schadensmenge.",
+      "grants": [
+        {
+          "type": "passive",
+          "effect": "thoughts_unreadable_unless_permitted"
+        },
+        {
+          "type": "damage_resistance",
+          "damage_types": [
+            "psychic"
+          ]
+        },
+        {
+          "type": "damage_reflection",
+          "damage_type": "psychic",
+          "reflected_to": "attacker",
+          "amount": "damage_taken"
+        }
+      ]
+    },
+    {
+      "id": "great-old-one-create-thrall",
+      "owner_type": "subclass",
+      "owner_id": "warlock-great-old-one",
+      "level": 14,
+      "name_en": "Create Thrall",
+      "name_de": "Diener erschaffen",
+      "player_choice": false,
+      "text_en": "When you cast Summon Aberration, you can modify the spell so that it doesn't require Concentration. If you do so, the spell's duration becomes 1 minute, and the summoned aberration has Temporary Hit Points equal to your Warlock level plus your Charisma modifier.\n\nIn addition, whenever the aberration hits a creature under the effect of your Hex spell for the first time on a turn, it deals extra Psychic damage equal to the bonus damage of that spell.",
+      "text_de": "Wenn du Aberration beschwören wirkst, kannst du den Zauber so modifizieren, dass er keine Konzentration erfordert. In diesem Fall beträgt die Wirkungsdauer eine Minute, und die beschworene Aberration hat temporäre Trefferpunkte in Höhe deiner Hexenmeisterstufe plus deines Charismamodifikators.\n\nAußerdem fügt die Aberration, wann immer sie erstmals in einem Zug eine Kreatur trifft, die unter dem Effekt deines Verwünschens steht, diesem Ziel zusätzlichen psychischen Schaden in Höhe des Bonusschadens des Zaubers zu.",
+      "grants": [
+        {
+          "type": "spell_effect_transformation",
+          "applies_to": [
+            "summon-aberration"
+          ],
+          "optional": true,
+          "modification": "remove_concentration",
+          "override_duration": "1_minute",
+          "additional_effect": {
+            "type": "grant_temporary_hit_points",
+            "target": "summoned_creature",
+            "value": {
+              "base": "warlock_level",
+              "flat_modifier": "charisma_modifier"
+            }
+          }
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "summoned_aberration_first_hit_on_turn_against_hex_target",
+          "effect": {
+            "type": "damage",
+            "damage_type": "psychic",
+            "value": {
+              "equals": "hex_bonus_damage"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": "invocation-pact-of-the-blade",
+      "type": "eldritch_invocation",
+      "name_en": "Pact of the Blade",
+      "name_de": "Pakt der Klinge",
+      "prerequisites": {},
+      "text_en": "As a Bonus Action, you can conjure a pact weapon in your hand—a Simple or Martial Melee weapon of your choice with which you bond—or create a bond with a magic weapon you touch; you can't bond with a magic weapon if someone else is attuned to it or another Warlock is bonded with it. Until the bond ends, you have proficiency with the weapon, and you can use it as a Spellcasting Focus.\n\nWhenever you attack with the bonded weapon, you can use your Charisma modifier for the attack and damage rolls instead of Strength or Dexterity; and you can cause the weapon to deal Necrotic, Psychic, or Radiant damage or its normal damage type.\n\nYour bond ends if you use this feature's Bonus Action again, if the weapon is more than 5 feet away for 1 minute or more, or if you die. A conjured weapon disappears when the bond ends.",
+      "text_de": "Als Bonusaktion kannst du eine Paktwaffe beschwören – eine einfache Nahkampfwaffe oder Nahkampf-Kriegswaffe deiner Wahl –, oder eine Bindung mit einer magischen Waffe herstellen, indem du sie berührst. Bis die Bindung endet, hast du Übung im Umgang mit der Waffe und kannst sie als Zauberfokus verwenden.\n\nWann immer du einen Angriff mit der gebundenen Waffe ausführst, kannst du bei Angriffs- und Schadenswürfen deinen Charismamodifikator statt Stärke oder Geschicklichkeit verwenden, und du kannst mit der Waffe gleißenden, nekrotischen oder psychischen Schaden bewirken.\n\nDeine Bindung endet, wenn du die Bonusaktion erneut einsetzt, die Waffe länger als eine Minute mehr als 1,5 Meter entfernt ist oder wenn du stirbst.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "effect": {
+            "type": "conjure_or_bond_weapon",
+            "weapon_categories": [
+              "simple_melee",
+              "martial_melee"
+            ],
+            "can_bond_magic_weapon": true,
+            "bond_restrictions": [
+              "not_attuned_by_other",
+              "not_bonded_by_other_warlock"
+            ]
+          }
+        },
+        {
+          "type": "weapon_proficiency",
+          "weapons": [
+            "pact_weapon"
+          ],
+          "condition": "bond_active"
+        },
+        {
+          "type": "spellcasting_focus_expansion",
+          "focus_types": [
+            "pact_weapon"
+          ],
+          "for_class": "warlock",
+          "condition": "bond_active"
+        },
+        {
+          "type": "attack_ability_override",
+          "attack_type": "pact_weapon",
+          "ability": "charisma",
+          "condition": "bond_active"
+        },
+        {
+          "type": "damage_type_choice_on_hit",
+          "attack_type": "pact_weapon",
+          "options": [
+            "normal",
+            "necrotic",
+            "psychic",
+            "radiant"
+          ],
+          "choose_on": "each_hit",
+          "condition": "bond_active"
+        }
+      ]
+    },
+    {
+      "id": "invocation-pact-of-the-chain",
+      "type": "eldritch_invocation",
+      "name_en": "Pact of the Chain",
+      "name_de": "Pakt der Kette",
+      "prerequisites": {},
+      "text_en": "You learn the Find Familiar spell and can cast it as a Magic action without expending a spell slot.\n\nWhen you cast the spell, you choose one of the normal forms for your familiar or one of the following special forms: Imp, Pseudodragon, Quasit, Skeleton, Slaad Tadpole, Sphinx of Wonder, Sprite, or Venomous Snake.\n\nAdditionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its Reaction.",
+      "text_de": "Du erlernst den Zauber Vertrauten finden und kannst ihn als magische Aktion wirken, ohne einen Zauberplatz zu verbrauchen.\n\nDu wählst für deinen Vertrauten eine der normalen Gestalten oder eine der folgenden besonderen Gestalten: Feengeist, Giftschlange, Pseudodrache, Quasit, Skelett, Slaad-Larve, Sphinx des Wunders oder Teufelchen.\n\nAußerdem kannst du, wenn du die Angriffsaktion ausführst, auf einen Angriff verzichten und stattdessen deinen Vertrauten mit seiner Reaktion einen eigenen Angriff ausführen lassen.",
+      "grants": [
+        {
+          "type": "spell_cost_override",
+          "spell_id": "find-familiar",
+          "action_type": "magic_action",
+          "cost": "no_spell_slot"
+        },
+        {
+          "type": "spell_effect_transformation",
+          "applies_to": [
+            "find-familiar"
+          ],
+          "modification": "expand_familiar_forms",
+          "additional_forms": [
+            "imp",
+            "pseudodragon",
+            "quasit",
+            "skeleton",
+            "slaad-tadpole",
+            "sphinx-of-wonder",
+            "sprite",
+            "venomous-snake"
+          ]
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "take_attack_action",
+          "optional": true,
+          "effect": {
+            "type": "sacrifice_attack_for_familiar_attack"
+          }
+        }
+      ]
+    },
+    {
+      "id": "invocation-pact-of-the-tome",
+      "type": "eldritch_invocation",
+      "name_en": "Pact of the Tome",
+      "name_de": "Pakt des Buches",
+      "prerequisites": {},
+      "text_en": "At the end of a Short or Long Rest, you conjure a Book of Shadows in your hand. When the book appears, choose three cantrips and two level 1 spells with the Ritual tag from any class's spell list (not already prepared). While the book is on your person, you have the chosen spells prepared, and they function as Warlock spells for you. You can also use the book as a Spellcasting Focus. The book disappears if you conjure another or if you die.",
+      "text_de": "Am Ende einer kurzen oder langen Rast beschwörst du ein Buch der Schatten. Wenn das Buch erscheint, wählst du drei Zaubertricks und zwei Zauber des 1. Grades mit dem Ritual-Tag aus den Zauberlisten aller Klassen (noch nicht vorbereitet). Solange du das Buch bei dir hast, sind die ausgewählten Zauber vorbereitet und zählen als Hexenmeisterzauber. Du kannst das Buch außerdem als Zauberfokus verwenden. Das Buch verschwindet, wenn du ein weiteres beschwörst oder wenn du stirbst.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": [
+            "short_rest_end",
+            "long_rest_end"
+          ],
+          "effect": {
+            "type": "conjure_book_of_shadows",
+            "grants_on_conjure": [
+              {
+                "type": "always_prepared_spell",
+                "choose": 3,
+                "from_source": "any_class_spell_list",
+                "eligibility": "cantrips_not_already_prepared",
+                "spells_count_as": "warlock_spells",
+                "condition": "book_on_person"
+              },
+              {
+                "type": "ritual_casting",
+                "choose": 2,
+                "from_source": "any_class_spell_list",
+                "eligibility": "level_1_ritual_spells_not_already_prepared",
+                "spells_count_as": "warlock_spells",
+                "condition": "book_on_person"
+              }
+            ]
+          }
+        },
+        {
+          "type": "spellcasting_focus_expansion",
+          "focus_types": [
+            "book_of_shadows"
+          ],
+          "for_class": "warlock",
+          "condition": "book_on_person"
+        }
+      ]
+    },
+    {
+      "id": "invocation-agonizing-blast",
+      "type": "eldritch_invocation",
+      "name_en": "Agonizing Blast",
+      "name_de": "Qualvoller Strahl",
+      "prerequisites": {
+        "level": 2,
+        "class_id": "warlock",
+        "requires": "damaging_warlock_cantrip"
+      },
+      "repeatable": true,
+      "choose_different_each_time": true,
+      "text_en": "Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell's damage rolls.\n\nRepeatable. Choose a different eligible cantrip each time.",
+      "text_de": "Wähle einen der dir bekannten Hexenmeisterzaubertricks, die Schaden bewirken. Du kannst den Schadenswürfen des Zaubers deinen Charismamodifikator hinzufügen.\n\nKann wiederholt werden: Wähle bei Wiederholung einen anderen passenden Zaubertrick.",
+      "grants": [
+        {
+          "type": "damage_bonus",
+          "value": "charisma_modifier",
+          "condition": "chosen_damaging_cantrip_damage_roll"
+        }
+      ]
+    },
+    {
+      "id": "invocation-armor-of-shadows",
+      "type": "eldritch_invocation",
+      "name_en": "Armor of Shadows",
+      "name_de": "Schattenrüstung",
+      "prerequisites": {},
+      "text_en": "You can cast Mage Armor on yourself without expending a spell slot.",
+      "text_de": "Du kannst Magierrüstung auf dich selbst wirken, ohne einen Zauberplatz zu verbrauchen.",
+      "grants": [
+        {
+          "type": "spell_cost_override",
+          "spell_id": "mage-armor",
+          "cost": "no_spell_slot",
+          "condition": "self_target_only"
+        }
+      ]
+    },
+    {
+      "id": "invocation-ascendant-step",
+      "type": "eldritch_invocation",
+      "name_en": "Ascendant Step",
+      "name_de": "Aufsteigender Schritt",
+      "prerequisites": {
+        "level": 5,
+        "class_id": "warlock"
+      },
+      "text_en": "You can cast Levitate on yourself without expending a spell slot.",
+      "text_de": "Du kannst Schweben auf dich selbst wirken, ohne einen Zauberplatz zu verbrauchen.",
+      "grants": [
+        {
+          "type": "spell_cost_override",
+          "spell_id": "levitate",
+          "cost": "no_spell_slot",
+          "condition": "self_target_only"
+        }
+      ]
+    },
+    {
+      "id": "invocation-devils-sight",
+      "type": "eldritch_invocation",
+      "name_en": "Devil's Sight",
+      "name_de": "Teufels Sicht",
+      "prerequisites": {
+        "level": 2,
+        "class_id": "warlock"
+      },
+      "text_en": "You can see normally in Dim Light and Darkness—both magical and nonmagical—within 120 feet of yourself.",
+      "text_de": "Du hast bei dämmrigem Licht und bei Dunkelheit – sowohl magischer als auch nichtmagischer – normale Sicht mit einer Reichweite von 36 Metern.",
+      "grants": [
+        {
+          "type": "special_sight",
+          "sight_id": "devils_sight",
+          "range_feet": 120,
+          "effect": "normal_vision_in_darkness",
+          "penetrates_magical_darkness": true,
+          "note": "Grants normal (not darkvision) sight in all darkness including magical. Mechanically superior to darkvision which is blocked by magical darkness."
+        }
+      ]
+    },
+    {
+      "id": "invocation-devouring-blade",
+      "type": "eldritch_invocation",
+      "name_en": "Devouring Blade",
+      "name_de": "Verschlingende Klinge",
+      "prerequisites": {
+        "level": 12,
+        "class_id": "warlock",
+        "chosen_options": [
+          {
+            "choice_id": "warlock_invocations",
+            "option_id": "invocation-thirsting-blade"
+          }
+        ]
+      },
+      "text_en": "The Extra Attack of your Thirsting Blade invocation confers two extra attacks rather than one.",
+      "text_de": "Der zusätzliche Angriff deiner Anrufung Dürstende Klinge bewirkt jetzt zwei zusätzliche Angriffe statt einem.",
+      "grants": [
+        {
+          "type": "feature_modifier",
+          "feature_id": "invocation-thirsting-blade",
+          "modifies_grant": "extra_attack",
+          "modification": {
+            "total_attacks": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "invocation-eldritch-mind",
+      "type": "eldritch_invocation",
+      "name_en": "Eldritch Mind",
+      "name_de": "Schauerlicher Verstand",
+      "prerequisites": {},
+      "text_en": "You have Advantage on Constitution saving throws that you make to maintain Concentration.",
+      "text_de": "Du bist bei Konstitutionsrettungswürfen zum Aufrechterhalten der Konzentration im Vorteil.",
+      "grants": [
+        {
+          "type": "advantage",
+          "on": [
+            "constitution_saving_throws"
+          ],
+          "condition": "to_maintain_concentration"
+        }
+      ]
+    },
+    {
+      "id": "invocation-eldritch-smite",
+      "type": "eldritch_invocation",
+      "name_en": "Eldritch Smite",
+      "name_de": "Schauerliches Niederstrecken",
+      "prerequisites": {
+        "level": 5,
+        "class_id": "warlock",
+        "chosen_options": [
+          {
+            "choice_id": "warlock_invocations",
+            "option_id": "invocation-pact-of-the-blade"
+          }
+        ]
+      },
+      "text_en": "Once per turn when you hit a creature with your pact weapon, you can expend a Pact Magic spell slot to deal an extra 1d8 Force damage to the target, plus another 1d8 per level of the spell slot, and you can give the target the Prone condition if it is Huge or smaller.",
+      "text_de": "Einmal pro Zug kannst du, wenn du eine Kreatur mit deiner Paktwaffe triffst, einen Paktmagie-Zauberplatz verbrauchen, um dem Ziel zusätzlich 1W8 Energieschaden sowie 1W8 pro Zauberplatzgrad zuzufügen. Wenn das Ziel von höchstens riesiger Größe ist, kannst du es außerdem umstoßen.",
+      "grants": [
+        {
+          "type": "on_hit_effect",
+          "attack_type": "pact_weapon",
+          "once_per_turn": true,
+          "optional": true,
+          "cost": {
+            "resource": "pact_spell_slot",
+            "amount": 1
+          },
+          "effect": {
+            "type": "damage",
+            "damage_type": "force",
+            "value": {
+              "base_dice": "1d8",
+              "additional_dice_per_slot_level": "1d8"
+            }
+          },
+          "additional_effect": {
+            "type": "apply_condition",
+            "condition": "prone",
+            "target_size_max": "huge"
+          }
+        }
+      ]
+    },
+    {
+      "id": "invocation-eldritch-spear",
+      "type": "eldritch_invocation",
+      "name_en": "Eldritch Spear",
+      "name_de": "Unheimlicher Speer",
+      "prerequisites": {
+        "level": 2,
+        "class_id": "warlock",
+        "requires": "damaging_warlock_cantrip_range_10ft_or_more"
+      },
+      "repeatable": true,
+      "choose_different_each_time": true,
+      "text_en": "Choose one of your known Warlock cantrips that deals damage and has a range of 10+ feet. When you cast that spell, its range increases by a number of feet equal to 30 times your Warlock level.\n\nRepeatable. Choose a different eligible cantrip each time.",
+      "text_de": "Wähle einen der dir bekannten Hexenmeisterzaubertricks, die Schaden bewirken und eine Reichweite von mindestens drei Metern haben. Wenn du diesen Zauber wirkst, ist seine Reichweite um das Dreißigfache deiner Hexenmeisterstufe in Fuß erhöht.\n\nKann wiederholt werden: Wähle bei Wiederholung einen anderen passenden Zaubertrick.",
+      "grants": [
+        {
+          "type": "spell_range_override",
+          "applies_to": "chosen_cantrip",
+          "condition": "range_10ft_or_greater",
+          "increase_feet": {
+            "multiplier": 30,
+            "of": "warlock_level"
+          }
+        }
+      ]
+    },
+    {
+      "id": "invocation-fiendish-vigor",
+      "type": "eldritch_invocation",
+      "name_en": "Fiendish Vigor",
+      "name_de": "Unholde Vitalität",
+      "prerequisites": {
+        "level": 2,
+        "class_id": "warlock"
+      },
+      "text_en": "You can cast False Life on yourself without expending a spell slot. When you cast the spell with this feature, you don't roll the die for the Temporary Hit Points; you automatically get the highest number on the die.",
+      "text_de": "Du kannst Falsches Leben auf dich selbst wirken, ohne einen Zauberplatz zu verbrauchen. Wenn du den Zauber mit diesem Merkmal wirkst, würfelst du nicht, sondern erhältst automatisch das höchste Würfelergebnis.",
+      "grants": [
+        {
+          "type": "spell_cost_override",
+          "spell_id": "false-life",
+          "cost": "no_spell_slot",
+          "condition": "self_target_only"
+        },
+        {
+          "type": "spell_effect_transformation",
+          "applies_to": [
+            "false-life"
+          ],
+          "condition": "cast_via_fiendish_vigor",
+          "modification": "maximize_temporary_hit_points"
+        }
+      ]
+    },
+    {
+      "id": "invocation-gaze-of-two-minds",
+      "type": "eldritch_invocation",
+      "name_en": "Gaze of Two Minds",
+      "name_de": "Gedankenblick",
+      "prerequisites": {
+        "level": 5,
+        "class_id": "warlock"
+      },
+      "text_en": "You can use a Bonus Action to touch a willing creature and perceive through its senses until the end of your next turn. As long as the creature is on the same plane, you can take a Bonus Action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. While perceiving through the other creature's senses, you benefit from any special senses it possesses, and you can cast spells as if you were in your space or the other creature's space if the two of you are within 60 feet of each other.",
+      "text_de": "Du kannst eine Bonusaktion verwenden, um eine bereitwillige Kreatur zu berühren und bis zum Ende deines nächsten Zugs ihre Sinne zu nutzen. Solange sich diese Kreatur auf derselben Existenzebene befindet, kannst du in den nächsten Zügen eine Bonusaktion ausführen, um die Verbindung aufrechtzuerhalten. Während du die Sinne der anderen Kreatur nutzt, stehen dir auch all ihre Spezialsinne zur Verfügung, und sofern der Abstand zwischen euch höchstens 18 Meter beträgt, kannst du Zauber von deinem Bereich oder von dem der Kreatur aus wirken.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "trigger_condition": "touch_willing_creature",
+          "effect": {
+            "type": "sense_sharing",
+            "duration": "until_end_of_next_turn",
+            "extendable_via_bonus_action": true,
+            "condition": "same_plane_of_existence",
+            "benefits": [
+              "all_special_senses_of_target"
+            ],
+            "spell_origin_from": [
+              "own_space",
+              "target_space"
+            ],
+            "spell_origin_condition": "within_60ft_of_each_other"
+          }
+        }
+      ]
+    },
+    {
+      "id": "invocation-gift-of-the-depths",
+      "type": "eldritch_invocation",
+      "name_en": "Gift of the Depths",
+      "name_de": "Gabe der Tiefen",
+      "prerequisites": {
+        "level": 5,
+        "class_id": "warlock"
+      },
+      "text_en": "You can breathe underwater, and you gain a Swim Speed equal to your Speed. You can also cast Water Breathing once without expending a spell slot, regaining the ability when you finish a Long Rest.",
+      "text_de": "Du kannst unter Wasser atmen und erhältst eine Schwimmbewegungsrate in Höhe deiner Bewegungsrate. Außerdem kannst du den Zauber Wasser atmen einmal wirken, ohne einen Zauberplatz zu verbrauchen. Du erhältst die Fähigkeit nach einer langen Rast zurück.",
+      "grants": [
+        {
+          "type": "passive",
+          "effect": "breathe_underwater"
+        },
+        {
+          "type": "speed_grant",
+          "speed_type": "swim",
+          "value": "equal_to_speed"
+        },
+        {
+          "type": "spell_cost_override",
+          "spell_id": "water-breathing",
+          "cost": "no_spell_slot",
+          "uses": 1,
+          "recharge": "long_rest"
+        }
+      ]
+    },
+    {
+      "id": "invocation-gift-of-the-protectors",
+      "type": "eldritch_invocation",
+      "name_en": "Gift of the Protectors",
+      "name_de": "Gabe der Beschützer",
+      "prerequisites": {
+        "level": 9,
+        "class_id": "warlock",
+        "chosen_options": [
+          {
+            "choice_id": "warlock_invocations",
+            "option_id": "invocation-pact-of-the-tome"
+          }
+        ]
+      },
+      "text_en": "A new page appears in your Book of Shadows. A creature can take an action to write its name on that page, which can contain names equal to your Charisma modifier (minimum of one). When any creature whose name is on the page is reduced to 0 Hit Points but not killed outright, the creature magically drops to 1 Hit Point instead. Once this magic is triggered, no creature can benefit from it until you finish a Long Rest. As a Magic action, you can erase a name on the page by touching it.",
+      "text_de": "In deinem Buch der Schatten erscheint eine neue Seite. Eine Kreatur kann eine Aktion ausführen, um ihren Namen auf diese Seite zu schreiben. Die maximale Anzahl von Namen entspricht deinem Charismamodifikator (mindestens ein Name). Wenn die Trefferpunkte einer Kreatur auf der Seite auf 0 sinken, ohne dass sie sofort stirbt, erhält sie auf magische Art einen Trefferpunkt zurück. Diese Magie kann erst nach einer langen Rast erneut ausgelöst werden. Als magische Aktion kannst du einen Namen entfernen.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "named_creature_reduced_to_0_hp_but_not_killed",
+          "effect": {
+            "type": "set_hp",
+            "value": 1,
+            "target": "triggering_named_creature"
+          },
+          "max_names": {
+            "equals": "charisma_modifier",
+            "minimum": 1
+          },
+          "recharge": "long_rest"
+        },
+        {
+          "type": "active_ability",
+          "action_type": "magic_action",
+          "effect": {
+            "type": "remove_name_from_page"
+          }
+        }
+      ]
+    },
+    {
+      "id": "invocation-investment-of-the-chain-master",
+      "type": "eldritch_invocation",
+      "name_en": "Investment of the Chain Master",
+      "name_de": "Gabe des Kettenmeisters",
+      "prerequisites": {
+        "level": 5,
+        "class_id": "warlock",
+        "chosen_options": [
+          {
+            "choice_id": "warlock_invocations",
+            "option_id": "invocation-pact-of-the-chain"
+          }
+        ]
+      },
+      "text_en": "When you cast Find Familiar, you infuse the summoned familiar with eldritch power, granting it: a Fly or Swim Speed of 40 feet (your choice); the ability to Attack as a Bonus Action on your command; the ability to deal Necrotic or Radiant damage instead of B/P/S damage; use of your spell save DC for saving throws it forces; and your Reaction to grant it Resistance against damage it takes.",
+      "text_de": "Wenn du Vertrauten finden wirkst, verleihst du dem Vertrauten schauerliche Kraft: eine Flug- oder Schwimmbewegungsrate von zwölf Metern (nach Wahl); Schnellen Angriff als Bonusaktion auf Befehl; Konvertierung von Hieb/Stich/Wuchtschaden in gleißenden oder nekrotischen; deinen Zauberrettungswurf-SG für erzwungene Rettungswürfe; und deine Reaktion, um ihm Resistenz gegen erlittenen Schaden zu gewähren.",
+      "grants": [
+        {
+          "type": "spell_effect_transformation",
+          "applies_to": [
+            "find-familiar"
+          ],
+          "condition": "cast_via_pact_of_the_chain",
+          "modification": "invest_familiar_with_eldritch_power",
+          "familiar_grants": [
+            {
+              "type": "speed_grant",
+              "speed_type_choice": [
+                "fly",
+                "swim"
+              ],
+              "value_feet": 40
+            },
+            {
+              "type": "bonus_action_grant",
+              "actions": [
+                "attack"
+              ],
+              "condition": "commanded_by_warlock"
+            },
+            {
+              "type": "damage_type_choice_on_hit",
+              "attack_type": "bludgeoning_piercing_slashing",
+              "options": [
+                "normal",
+                "necrotic",
+                "radiant"
+              ],
+              "choose_on": "each_hit"
+            },
+            {
+              "type": "passive",
+              "effect": "use_warlock_spell_save_dc_for_forced_saves"
+            },
+            {
+              "type": "triggered_effect",
+              "trigger": "familiar_takes_damage",
+              "action_type": "reaction",
+              "condition": "warlock_uses_reaction",
+              "effect": {
+                "type": "damage_resistance",
+                "damage_types": [
+                  "triggering_type"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "invocation-lessons-of-the-first-ones",
+      "type": "eldritch_invocation",
+      "name_en": "Lessons of the First Ones",
+      "name_de": "Lektionen der Ältesten",
+      "prerequisites": {
+        "level": 2,
+        "class_id": "warlock"
+      },
+      "repeatable": true,
+      "choose_different_each_time": true,
+      "text_en": "You have received knowledge from an elder entity, allowing you to gain one Origin feat of your choice.\n\nRepeatable. Choose a different Origin feat each time.",
+      "text_de": "Du hast Wissen von einer Ältesten-Wesenheit erhalten, das dir ein Herkunftstalent deiner Wahl gewährt.\n\nKann wiederholt werden: Wähle bei Wiederholung ein anderes Herkunftstalent.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "feat_category": "origin"
+        }
+      ]
+    },
+    {
+      "id": "invocation-lifedrinker",
+      "type": "eldritch_invocation",
+      "name_en": "Lifedrinker",
+      "name_de": "Lebenstrinker",
+      "prerequisites": {
+        "level": 9,
+        "class_id": "warlock",
+        "chosen_options": [
+          {
+            "choice_id": "warlock_invocations",
+            "option_id": "invocation-pact-of-the-blade"
+          }
+        ]
+      },
+      "text_en": "Once per turn when you hit a creature with your pact weapon, you can deal an extra 1d6 Necrotic, Psychic, or Radiant damage (your choice) to the creature, and you can expend one of your Hit Point Dice to roll it and regain Hit Points equal to the roll plus your Constitution modifier (minimum of 1).",
+      "text_de": "Einmal pro Zug kannst du, wenn du eine Kreatur mit deiner Paktwaffe triffst, ihr zusätzlich 1W6 gleißenden, nekrotischen oder psychischen Schaden zufügen, und du kannst einen Trefferpunktewürfel verbrauchen, um Trefferpunkte in Höhe des Ergebnisses plus deines Konstitutionsmodifikators zurückzuerhalten (mindestens 1).",
+      "grants": [
+        {
+          "type": "on_hit_effect",
+          "attack_type": "pact_weapon",
+          "once_per_turn": true,
+          "optional": true,
+          "effect": {
+            "type": "damage",
+            "damage_type_choice": [
+              "necrotic",
+              "psychic",
+              "radiant"
+            ],
+            "value": {
+              "dice": "1d6"
+            }
+          }
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "use_lifedrinker_on_hit",
+          "optional": true,
+          "effect": {
+            "type": "expend_hit_die_to_heal",
+            "value": {
+              "roll": "hit_die",
+              "flat_modifier": "constitution_modifier",
+              "minimum": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "invocation-mask-of-many-faces",
+      "type": "eldritch_invocation",
+      "name_en": "Mask of Many Faces",
+      "name_de": "Maske der Vielen Gesichter",
+      "prerequisites": {
+        "level": 2,
+        "class_id": "warlock"
+      },
+      "text_en": "You can cast Disguise Self without expending a spell slot.",
+      "text_de": "Du kannst Selbstverkleidung wirken, ohne einen Zauberplatz zu verbrauchen.",
+      "grants": [
+        {
+          "type": "spell_cost_override",
+          "spell_id": "disguise-self",
+          "cost": "no_spell_slot"
+        }
+      ]
+    },
+    {
+      "id": "invocation-master-of-myriad-forms",
+      "type": "eldritch_invocation",
+      "name_en": "Master of Myriad Forms",
+      "name_de": "Meister der Myriaden Formen",
+      "prerequisites": {
+        "level": 5,
+        "class_id": "warlock"
+      },
+      "text_en": "You can cast Alter Self without expending a spell slot.",
+      "text_de": "Du kannst Gestalt verändern wirken, ohne einen Zauberplatz zu verbrauchen.",
+      "grants": [
+        {
+          "type": "spell_cost_override",
+          "spell_id": "alter-self",
+          "cost": "no_spell_slot"
+        }
+      ]
+    },
+    {
+      "id": "invocation-misty-visions",
+      "type": "eldritch_invocation",
+      "name_en": "Misty Visions",
+      "name_de": "Neblige Visionen",
+      "prerequisites": {
+        "level": 2,
+        "class_id": "warlock"
+      },
+      "text_en": "You can cast Silent Image without expending a spell slot.",
+      "text_de": "Du kannst Lautloses Trugbild wirken, ohne einen Zauberplatz zu verbrauchen.",
+      "grants": [
+        {
+          "type": "spell_cost_override",
+          "spell_id": "silent-image",
+          "cost": "no_spell_slot"
+        }
+      ]
+    },
+    {
+      "id": "invocation-one-with-shadows",
+      "type": "eldritch_invocation",
+      "name_en": "One with Shadows",
+      "name_de": "Mit den Schatten verschmelzen",
+      "prerequisites": {
+        "level": 5,
+        "class_id": "warlock"
+      },
+      "text_en": "While you're in an area of Dim Light or Darkness, you can cast Invisibility on yourself without expending a spell slot.",
+      "text_de": "In dämmrigem Licht oder Dunkelheit kannst du Unsichtbarkeit auf dich selbst wirken, ohne einen Zauberplatz zu verbrauchen.",
+      "grants": [
+        {
+          "type": "spell_cost_override",
+          "spell_id": "invisibility",
+          "cost": "no_spell_slot",
+          "condition": "in_dim_light_or_darkness",
+          "target": "self_only"
+        }
+      ]
+    },
+    {
+      "id": "invocation-otherworldly-leap",
+      "type": "eldritch_invocation",
+      "name_en": "Otherworldly Leap",
+      "name_de": "Außerweltlicher Sprung",
+      "prerequisites": {
+        "level": 2,
+        "class_id": "warlock"
+      },
+      "text_en": "You can cast Jump on yourself without expending a spell slot.",
+      "text_de": "Du kannst Springen auf dich selbst wirken, ohne einen Zauberplatz zu verbrauchen.",
+      "grants": [
+        {
+          "type": "spell_cost_override",
+          "spell_id": "jump",
+          "cost": "no_spell_slot",
+          "condition": "self_target_only"
+        }
+      ]
+    },
+    {
+      "id": "invocation-repelling-blast",
+      "type": "eldritch_invocation",
+      "name_en": "Repelling Blast",
+      "name_de": "Zurückdrängender Strahl",
+      "prerequisites": {
+        "level": 2,
+        "class_id": "warlock",
+        "requires": "damaging_warlock_cantrip_attack_roll"
+      },
+      "repeatable": true,
+      "choose_different_each_time": true,
+      "text_en": "Choose one of your known Warlock cantrips that requires an attack roll. When you hit a Large or smaller creature with that cantrip, you can push the creature up to 10 feet straight away from you.\n\nRepeatable. Choose a different eligible cantrip each time.",
+      "text_de": "Wähle einen bekannten Hexenmeisterzaubertrick, der einen Angriffswurf erfordert. Wenn du eine Kreatur von höchstens großer Größe triffst, kannst du sie um bis zu drei Meter von dir wegstoßen.\n\nKann wiederholt werden: Wähle bei Wiederholung einen anderen Zaubertrick.",
+      "grants": [
+        {
+          "type": "on_hit_effect",
+          "attack_type": "chosen_cantrip",
+          "optional": true,
+          "target_size_max": "large",
+          "effect": {
+            "type": "push",
+            "distance_feet": 10,
+            "direction": "straight_away"
+          }
+        }
+      ]
+    },
+    {
+      "id": "invocation-thirsting-blade",
+      "type": "eldritch_invocation",
+      "name_en": "Thirsting Blade",
+      "name_de": "Dürstende Klinge",
+      "prerequisites": {
+        "level": 5,
+        "class_id": "warlock",
+        "chosen_options": [
+          {
+            "choice_id": "warlock_invocations",
+            "option_id": "invocation-pact-of-the-blade"
+          }
+        ]
+      },
+      "text_en": "You gain the Extra Attack feature for your pact weapon only. With that feature, you can attack twice with the weapon instead of once when you take the Attack action on your turn.",
+      "text_de": "Du erhältst das Merkmal Zusätzlicher Angriff, das nur für deine Paktwaffe gilt. Du kannst mit dieser Waffe zweimal statt einmal angreifen.",
+      "grants": [
+        {
+          "type": "extra_attack",
+          "total_attacks": 2,
+          "condition": "pact_weapon_only"
+        }
+      ]
+    },
+    {
+      "id": "invocation-visions-of-distant-realms",
+      "type": "eldritch_invocation",
+      "name_en": "Visions of Distant Realms",
+      "name_de": "Visionen von fernen Gefilden",
+      "prerequisites": {
+        "level": 9,
+        "class_id": "warlock"
+      },
+      "text_en": "You can cast Arcane Eye without expending a spell slot.",
+      "text_de": "Du kannst Arkanes Auge wirken, ohne einen Zauberplatz zu verbrauchen.",
+      "grants": [
+        {
+          "type": "spell_cost_override",
+          "spell_id": "arcane-eye",
+          "cost": "no_spell_slot"
+        }
+      ]
+    },
+    {
+      "id": "invocation-whispers-of-the-grave",
+      "type": "eldritch_invocation",
+      "name_en": "Whispers of the Grave",
+      "name_de": "Grabesflüstern",
+      "prerequisites": {
+        "level": 7,
+        "class_id": "warlock"
+      },
+      "text_en": "You can cast Speak with Dead without expending a spell slot.",
+      "text_de": "Du kannst Mit Toten sprechen wirken, ohne einen Zauberplatz zu verbrauchen.",
+      "grants": [
+        {
+          "type": "spell_cost_override",
+          "spell_id": "speak-with-dead",
+          "cost": "no_spell_slot"
+        }
+      ]
+    },
+    {
+      "id": "invocation-witch-sight",
+      "type": "eldritch_invocation",
+      "name_en": "Witch Sight",
+      "name_de": "Hexensicht",
+      "prerequisites": {
+        "level": 15,
+        "class_id": "warlock"
+      },
+      "text_en": "You have Truesight with a range of 30 feet.",
+      "text_de": "Du hast Wahrer Blick mit einer Reichweite von neun Metern.",
+      "grants": [
+        {
+          "type": "truesight",
+          "range_feet": 30
+        }
+      ]
+    }
+  ]
+}

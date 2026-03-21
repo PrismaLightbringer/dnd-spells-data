@@ -1,0 +1,2056 @@
+{
+  "class": {
+    "id": "ranger",
+    "name_en": "Ranger",
+    "name_de": "Waldläufer",
+    "hit_die": "d10",
+    "primary_abilities": [
+      "dexterity",
+      "wisdom"
+    ],
+    "saving_throw_proficiencies": [
+      "strength",
+      "dexterity"
+    ],
+    "proficiencies": {
+      "skills": {
+        "choose": 3,
+        "from": [
+          "animal_handling",
+          "athletics",
+          "insight",
+          "investigation",
+          "nature",
+          "perception",
+          "stealth",
+          "survival"
+        ]
+      },
+      "weapons": [
+        "simple",
+        "martial"
+      ],
+      "armor": [
+        "light",
+        "medium",
+        "shields"
+      ]
+    },
+    "starting_equipment": {
+      "choose": 1,
+      "options": [
+        {
+          "id": "option_a",
+          "items": [
+            "studded_leather_armor",
+            "scimitar",
+            "shortsword",
+            "longbow",
+            "arrows_x20",
+            "quiver",
+            "druidic_focus_mistletoe",
+            "explorers_pack",
+            "7gp"
+          ]
+        },
+        {
+          "id": "option_b",
+          "items": [
+            "150gp"
+          ]
+        }
+      ]
+    },
+    "multiclass_rules": {
+      "grants": [
+        "hit_die_d10",
+        "proficiency_martial_weapons",
+        "skill_proficiency_choice_1_from_ranger_list",
+        "proficiency_light_armor",
+        "proficiency_medium_armor",
+        "proficiency_shields"
+      ]
+    },
+    "subclass_level": 3
+  },
+  "class_progression": {
+    "class_id": "ranger",
+    "spell_slot_table": "half_caster",
+    "levels": [
+      {
+        "level": 1,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "ranger-spellcasting",
+          "ranger-favored-enemy",
+          "ranger-weapon-mastery"
+        ],
+        "resources": {
+          "prepared_spells": 2,
+          "favored_enemy_uses": 2,
+          "weapon_mastery_count": 2
+        }
+      },
+      {
+        "level": 2,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "ranger-deft-explorer",
+          "ranger-fighting-style"
+        ],
+        "resources": {
+          "prepared_spells": 3,
+          "favored_enemy_uses": 2,
+          "weapon_mastery_count": 2
+        }
+      },
+      {
+        "level": 3,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "ranger-subclass"
+        ],
+        "subclass_feature_level": true,
+        "resources": {
+          "prepared_spells": 4,
+          "favored_enemy_uses": 2,
+          "weapon_mastery_count": 2
+        }
+      },
+      {
+        "level": 4,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "ranger-asi-4"
+        ],
+        "resources": {
+          "prepared_spells": 5,
+          "favored_enemy_uses": 2,
+          "weapon_mastery_count": 2
+        }
+      },
+      {
+        "level": 5,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "ranger-extra-attack"
+        ],
+        "resources": {
+          "prepared_spells": 6,
+          "favored_enemy_uses": 3,
+          "weapon_mastery_count": 2
+        }
+      },
+      {
+        "level": 6,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "ranger-roving"
+        ],
+        "resources": {
+          "prepared_spells": 6,
+          "favored_enemy_uses": 3,
+          "weapon_mastery_count": 2
+        }
+      },
+      {
+        "level": 7,
+        "proficiency_bonus": 3,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "prepared_spells": 7,
+          "favored_enemy_uses": 3,
+          "weapon_mastery_count": 2
+        }
+      },
+      {
+        "level": 8,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "ranger-asi-8"
+        ],
+        "resources": {
+          "prepared_spells": 7,
+          "favored_enemy_uses": 3,
+          "weapon_mastery_count": 2
+        }
+      },
+      {
+        "level": 9,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "ranger-expertise-9"
+        ],
+        "resources": {
+          "prepared_spells": 9,
+          "favored_enemy_uses": 4,
+          "weapon_mastery_count": 2
+        }
+      },
+      {
+        "level": 10,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "ranger-tireless"
+        ],
+        "resources": {
+          "prepared_spells": 9,
+          "favored_enemy_uses": 4,
+          "weapon_mastery_count": 2
+        }
+      },
+      {
+        "level": 11,
+        "proficiency_bonus": 4,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "prepared_spells": 10,
+          "favored_enemy_uses": 4,
+          "weapon_mastery_count": 2
+        }
+      },
+      {
+        "level": 12,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "ranger-asi-12"
+        ],
+        "resources": {
+          "prepared_spells": 10,
+          "favored_enemy_uses": 4,
+          "weapon_mastery_count": 2
+        }
+      },
+      {
+        "level": 13,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "ranger-relentless-hunter"
+        ],
+        "resources": {
+          "prepared_spells": 11,
+          "favored_enemy_uses": 5,
+          "weapon_mastery_count": 2
+        }
+      },
+      {
+        "level": 14,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "ranger-natures-veil"
+        ],
+        "resources": {
+          "prepared_spells": 11,
+          "favored_enemy_uses": 5,
+          "weapon_mastery_count": 2
+        }
+      },
+      {
+        "level": 15,
+        "proficiency_bonus": 5,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "prepared_spells": 12,
+          "favored_enemy_uses": 5,
+          "weapon_mastery_count": 2
+        }
+      },
+      {
+        "level": 16,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "ranger-asi-16"
+        ],
+        "resources": {
+          "prepared_spells": 12,
+          "favored_enemy_uses": 5,
+          "weapon_mastery_count": 2
+        }
+      },
+      {
+        "level": 17,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "ranger-precise-hunter"
+        ],
+        "resources": {
+          "prepared_spells": 14,
+          "favored_enemy_uses": 6,
+          "weapon_mastery_count": 2
+        }
+      },
+      {
+        "level": 18,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "ranger-feral-senses"
+        ],
+        "resources": {
+          "prepared_spells": 14,
+          "favored_enemy_uses": 6,
+          "weapon_mastery_count": 2
+        }
+      },
+      {
+        "level": 19,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "ranger-epic-boon"
+        ],
+        "resources": {
+          "prepared_spells": 15,
+          "favored_enemy_uses": 6,
+          "weapon_mastery_count": 2
+        }
+      },
+      {
+        "level": 20,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "ranger-foe-slayer"
+        ],
+        "resources": {
+          "prepared_spells": 15,
+          "favored_enemy_uses": 6,
+          "weapon_mastery_count": 2
+        }
+      }
+    ]
+  },
+  "subclasses": [
+    {
+      "id": "ranger-beast-master",
+      "class_id": "ranger",
+      "name_en": "Beast Master",
+      "name_de": "Herr der Tiere",
+      "feature_levels": [
+        3,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "id": "ranger-fey-wanderer",
+      "class_id": "ranger",
+      "name_en": "Fey Wanderer",
+      "name_de": "Feenwanderer",
+      "feature_levels": [
+        3,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "id": "ranger-gloom-stalker",
+      "class_id": "ranger",
+      "name_en": "Gloom Stalker",
+      "name_de": "Düsterpirscher",
+      "feature_levels": [
+        3,
+        7,
+        11,
+        15
+      ]
+    },
+    {
+      "id": "ranger-hunter",
+      "class_id": "ranger",
+      "name_en": "Hunter",
+      "name_de": "Jäger",
+      "feature_levels": [
+        3,
+        7,
+        11,
+        15
+      ]
+    }
+  ],
+  "features": [
+    {
+      "id": "ranger-spellcasting",
+      "owner_type": "class",
+      "owner_id": "ranger",
+      "level": 1,
+      "name_en": "Spellcasting",
+      "name_de": "Zauberwirken",
+      "player_choice": true,
+      "choice_prompt_en": "Choose your prepared spells from the Ranger spell list.",
+      "choice_prompt_de": "Wähle deine vorbereiteten Zauber aus der Zauberliste des Waldläufers.",
+      "text_en": "You have learned to channel the magical essence of nature to cast spells. See chapter 7 for the rules on spellcasting.\n\nSpell Slots. The Ranger Features table shows how many spell slots you have. You regain all expended slots when you finish a Long Rest.\n\nPrepared Spells of Level 1+. To start, choose two level 1 Ranger spells. Cure Wounds and Ensnaring Strike are recommended. The number of spells on your list increases as you gain Ranger levels. Whenever that number increases, choose additional Ranger spells until your list matches the table. The chosen spells must be of a level for which you have spell slots. If another Ranger feature gives you spells that you always have prepared, those spells don't count against the number you can prepare, but they otherwise count as Ranger spells for you.\n\nChanging Your Prepared Spells. Whenever you finish a Long Rest, you can replace one spell on your list with another Ranger spell for which you have spell slots.\n\nSpellcasting Ability. Wisdom is your spellcasting ability for your Ranger spells.\n\nSpellcasting Focus. You can use a Druidic Focus as a Spellcasting Focus for your Ranger spells.",
+      "text_de": "Du hast gelernt, die magische Essenz der Natur zu kanalisieren, um Zauber zu wirken. Die Regeln zum Zauberwirken findest du in Kapitel 7.\n\nZauberplätze: Du erhältst alle verbrauchten Zauberplätze nach einer langen Rast zurück.\n\nVorbereitete Zauber ab dem 1. Grad: Wähle zu Beginn zwei Waldläuferzauber des 1. Grades. Fesselnder Schlag und Wunden heilen werden empfohlen. Die Anzahl der Zauber auf deiner Liste erhöht sich mit deiner Waldläuferstufe. Wenn ein anderes Waldläufermerkmal dir Zauber gibt, die du stets vorbereitet hast, zählen diese nicht gegen dein Limit, gelten aber ansonsten als Waldläuferzauber.\n\nDeine vorbereiteten Zauber ändern: Wann immer du eine lange Rast beendest, kannst du einen Zauber auf deiner Liste durch einen anderen Waldläuferzauber ersetzen, für den du Zauberplätze hast.\n\nAttribut zum Zauberwirken: Weisheit.\n\nZauberfokus: Du kannst einen Druidischen Fokus als Zauberfokus verwenden.",
+      "grants": [
+        {
+          "type": "spellcasting",
+          "casting_model": "prepared",
+          "spellcasting_ability": "wisdom",
+          "spellcasting_focus": "druidic_focus",
+          "prepared_spells": {
+            "count_from_resource": "prepared_spells",
+            "source": "ranger_spell_list",
+            "replaceable_on": "long_rest",
+            "count_per_swap": 1
+          },
+          "recharge": "long_rest"
+        }
+      ]
+    },
+    {
+      "id": "ranger-favored-enemy",
+      "owner_type": "class",
+      "owner_id": "ranger",
+      "level": 1,
+      "name_en": "Favored Enemy",
+      "name_de": "Erzfeind",
+      "player_choice": false,
+      "text_en": "You always have the Hunter's Mark spell prepared. You can cast it twice without expending a spell slot, and you regain all expended uses of this ability when you finish a Long Rest.\n\nThe number of times you can cast the spell without a spell slot increases when you reach certain Ranger levels, as shown in the Favored Enemy column of the Ranger Features table.",
+      "text_de": "Du hast den Zauber Zeichen des Jägers stets vorbereitet. Du kannst ihn zweimal wirken, ohne einen Zauberplatz zu verbrauchen. Du erhältst alle verbrauchten Anwendungen dieses Merkmals nach einer langen Rast zurück.\n\nDie Anzahl möglicher Anwendungen ohne Zauberplatz erhöht sich, wenn du bestimmte Waldläuferstufen erreichst, wie in der Spalte „Erzfeind“ der Tabelle „Waldläufermerkmale“ dargestellt.",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "hunters-mark",
+          "class_level_threshold": 1
+        },
+        {
+          "type": "spell_cost_override",
+          "spell_id": "hunters-mark",
+          "cost": "no_spell_slot",
+          "uses_from_resource": "favored_enemy_uses",
+          "recharge": "long_rest"
+        }
+      ]
+    },
+    {
+      "id": "ranger-weapon-mastery",
+      "owner_type": "class",
+      "owner_id": "ranger",
+      "level": 1,
+      "name_en": "Weapon Mastery",
+      "name_de": "Waffenmeisterung",
+      "player_choice": true,
+      "choice_prompt_en": "Choose two kinds of weapons you have proficiency with to use their mastery properties. You can change your choices whenever you finish a Long Rest.",
+      "choice_prompt_de": "Wähle zwei Waffenarten, mit denen du geübt bist, um deren Meisterschaftseigenschaften zu verwenden. Du kannst deine Entscheidungen nach jeder langen Rast ändern.",
+      "text_en": "Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longbows and Shortswords. Whenever you finish a Long Rest, you can change the kinds of weapons you chose.",
+      "text_de": "Deine Vertrautheit mit Waffen erlaubt dir, die Meisterschaftseigenschaften zweier Waffenarten deiner Wahl zu verwenden, sofern du Übung im Umgang mit diesen hast. Wann immer du eine lange Rast beendest, kannst du die Art der ausgewählten Waffen ändern.",
+      "grants": [
+        {
+          "type": "weapon_mastery",
+          "count_from_resource": "weapon_mastery_count",
+          "weapon_categories": [
+            "simple",
+            "martial"
+          ],
+          "prerequisite": "must_have_proficiency_with_chosen_weapon",
+          "change_on": "long_rest",
+          "change_count": 2
+        }
+      ]
+    },
+    {
+      "id": "ranger-deft-explorer",
+      "owner_type": "class",
+      "owner_id": "ranger",
+      "level": 2,
+      "name_en": "Deft Explorer",
+      "name_de": "Geschickte Erkundung",
+      "player_choice": true,
+      "choice_prompt_en": "Choose one skill proficiency you have to gain Expertise in, and choose two languages.",
+      "choice_prompt_de": "Wähle eine Fertigkeit, in der du geübt bist, um Expertise zu erhalten, und wähle zwei Sprachen.",
+      "text_en": "Thanks to your travels, you gain the following benefits.\n\nExpertise. Choose one of your skill proficiencies with which you lack Expertise. You gain Expertise in that skill.\n\nLanguages. You know two languages of your choice from the language tables in chapter 2.",
+      "text_de": "Dank deiner Reisen erhältst du folgende Vorzüge.\n\nExpertise: Wähle eine deiner Fertigkeiten aus, in denen du geübt bist, aber keine Expertise hast. Du erhältst Expertise in dieser Fertigkeit.\n\nSprachen: Du kennst zwei Sprachen deiner Wahl aus den Sprachentabellen in Kapitel 2.",
+      "grants": [
+        {
+          "type": "expertise",
+          "choose": 1,
+          "from": "existing_skill_proficiencies"
+        },
+        {
+          "type": "language",
+          "choose": 2,
+          "from": "any"
+        }
+      ]
+    },
+    {
+      "id": "ranger-fighting-style",
+      "owner_type": "class",
+      "owner_id": "ranger",
+      "level": 2,
+      "name_en": "Fighting Style",
+      "name_de": "Kampfstil",
+      "player_choice": true,
+      "choice_prompt_en": "Choose a Fighting Style feat or the Druidic Warrior option.",
+      "choice_prompt_de": "Wähle ein Kampfstil-Talent oder die Option Druidischer Krieger.",
+      "text_en": "You gain a Fighting Style feat of your choice (see chapter 5). Instead of choosing one of those feats, you can choose the option below.\n\nDruidic Warrior. You learn two Druid cantrips of your choice. Guidance and Starry Wisp are recommended. The chosen cantrips count as Ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a Ranger level, you can replace one of these cantrips with another Druid cantrip.",
+      "text_de": "Du erhältst ein Kampfstil-Talent deiner Wahl (siehe Kapitel 5). Anstatt eins dieser Talente auszuwählen, kannst du dich auch für die Option unten entscheiden.\n\nDruidischer Krieger: Du erlernst zwei Druidenzaubertricks deiner Wahl. Göttliche Führung und Sternenfunke werden empfohlen. Die ausgewählten Zaubertricks zählen für dich als Waldläuferzauber, und dein Attribut zum Wirken dieser Zauber ist Weisheit. Wann immer du eine Waldläuferstufe erhältst, kannst du einen dieser Zaubertricks durch einen anderen Waldläuferzaubertrick ersetzen.",
+      "grants": [
+        {
+          "type": "choice",
+          "choose": 1,
+          "options": [
+            {
+              "id": "fighting-style-feat",
+              "name_en": "Fighting Style Feat",
+              "name_de": "Kampfstil-Talent",
+              "text_en": "Choose a Fighting Style feat from chapter 5.",
+              "text_de": "Wähle ein Kampfstil-Talent aus Kapitel 5.",
+              "grants": [
+                {
+                  "type": "feat_choice",
+                  "feat_category": "fighting_style"
+                }
+              ]
+            },
+            {
+              "id": "druidic-warrior",
+              "name_en": "Druidic Warrior",
+              "name_de": "Druidischer Krieger",
+              "text_en": "You learn two Druid cantrips of your choice. Guidance and Starry Wisp are recommended. The chosen cantrips count as Ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a Ranger level, you can replace one of these cantrips with another Druid cantrip.",
+              "text_de": "Du erlernst zwei Druidenzaubertricks deiner Wahl. Göttliche Führung und Sternenfunke werden empfohlen. Die ausgewählten Zaubertricks zählen für dich als Waldläuferzauber, und dein Attribut zum Wirken dieser Zauber ist Weisheit. Wann immer du eine Waldläuferstufe erhältst, kannst du einen dieser Zaubertricks durch einen anderen Druidenzaubertrick ersetzen.",
+              "grants": [
+                {
+                  "type": "spellcasting",
+                  "cantrips": {
+                    "bonus_count": 2,
+                    "source": "druid_spell_list",
+                    "spells_count_as": "ranger_spells",
+                    "spellcasting_ability": "wisdom",
+                    "replaceable_on": "level_up",
+                    "replace_count": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ranger-subclass",
+      "owner_type": "class",
+      "owner_id": "ranger",
+      "level": 3,
+      "name_en": "Ranger Subclass",
+      "name_de": "Waldläufer-Unterklasse",
+      "player_choice": true,
+      "choice_prompt_en": "Choose a Ranger subclass: Beast Master, Fey Wanderer, Gloom Stalker, or Hunter.",
+      "choice_prompt_de": "Wähle eine Waldläufer-Unterklasse: Düsterpirscher, Feenwanderer, Herr der Tiere oder Jäger.",
+      "text_en": "You gain a Ranger subclass of your choice. The Beast Master, Fey Wanderer, Gloom Stalker, and Hunter subclasses are detailed after this class's description. A subclass is a specialization that grants you features at certain Ranger levels. For the rest of your career, you gain each of your subclass's features that are of your Ranger level or lower.",
+      "text_de": "Du erhältst eine Waldläufer-Unterklasse deiner Wahl. Die Unterklassen Düsterpirscher, Feenwanderer, Herr der Tiere und Jäger werden nach der Beschreibung dieser Klasse erläutert. Unterklassen sind Spezialisierungen, die dir auf bestimmten Waldläuferstufen Merkmale gewähren. Du erhältst für den Rest deiner Laufbahn alle Merkmale deiner Unterklasse, die zu deiner aktuellen Waldläuferstufe oder den niedrigeren Stufen gehören.",
+      "grants": [
+        {
+          "type": "subclass_choice",
+          "class_id": "ranger"
+        }
+      ]
+    },
+    {
+      "id": "ranger-asi-4",
+      "owner_type": "class",
+      "owner_id": "ranger",
+      "level": 4,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Ranger levels 8, 12, and 16.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung (siehe Kapitel 5) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Du erhältst dieses Merkmal auf der 8., 12. und 16. Waldläuferstufe erneut.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "ranger-extra-attack",
+      "owner_type": "class",
+      "owner_id": "ranger",
+      "level": 5,
+      "name_en": "Extra Attack",
+      "name_de": "Zusätzlicher Angriff",
+      "player_choice": false,
+      "text_en": "You can attack twice instead of once whenever you take the Attack action on your turn.",
+      "text_de": "Du kannst jetzt zweimal angreifen, wenn du in deinem Zug eine Angriffsaktion ausführst.",
+      "grants": [
+        {
+          "type": "extra_attack",
+          "total_attacks": 2
+        }
+      ]
+    },
+    {
+      "id": "ranger-roving",
+      "owner_type": "class",
+      "owner_id": "ranger",
+      "level": 6,
+      "name_en": "Roving",
+      "name_de": "Vagabund",
+      "player_choice": false,
+      "text_en": "Your Speed increases by 10 feet while you aren't wearing Heavy armor. You also have a Climb Speed and a Swim Speed equal to your Speed.",
+      "text_de": "Deine Bewegungsrate erhöht sich um drei Meter, sofern du keine schwere Rüstung trägst. Außerdem hast du eine Kletterbewegungsrate und eine Schwimmbewegungsrate in Höhe deiner Bewegungsrate.",
+      "grants": [
+        {
+          "type": "speed_bonus",
+          "value_feet": 10,
+          "condition": "not_wearing_heavy_armor"
+        },
+        {
+          "type": "speed_grant",
+          "speed_type": "climb",
+          "value": "equal_to_speed"
+        },
+        {
+          "type": "speed_grant",
+          "speed_type": "swim",
+          "value": "equal_to_speed"
+        }
+      ]
+    },
+    {
+      "id": "ranger-asi-8",
+      "owner_type": "class",
+      "owner_id": "ranger",
+      "level": 8,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung (siehe Kapitel 5) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "ranger-expertise-9",
+      "owner_type": "class",
+      "owner_id": "ranger",
+      "level": 9,
+      "name_en": "Expertise",
+      "name_de": "Expertise",
+      "player_choice": true,
+      "choice_prompt_en": "Choose two skill proficiencies you have to gain Expertise in.",
+      "choice_prompt_de": "Wähle zwei Fertigkeiten, in denen du geübt bist, um Expertise zu erhalten.",
+      "text_en": "Choose two of your skill proficiencies with which you lack Expertise. You gain Expertise in those skills.",
+      "text_de": "Wähle zwei deiner Fertigkeiten aus, in denen du geübt bist, aber keine Expertise hast. Du erhältst Expertise in diesen Fertigkeiten.",
+      "grants": [
+        {
+          "type": "expertise",
+          "choose": 2,
+          "from": "existing_skill_proficiencies"
+        }
+      ]
+    },
+    {
+      "id": "ranger-tireless",
+      "owner_type": "class",
+      "owner_id": "ranger",
+      "level": 10,
+      "name_en": "Tireless",
+      "name_de": "Unermüdlichkeit",
+      "player_choice": false,
+      "text_en": "Primal forces now help fuel you on your journeys, granting you the following benefits.\n\nTemporary Hit Points. As a Magic action, you can give yourself a number of Temporary Hit Points equal to 1d8 plus your Wisdom modifier (minimum of 1). You can use this action a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.\n\nDecrease Exhaustion. Whenever you finish a Short Rest, your Exhaustion level, if any, decreases by 1.",
+      "text_de": "Nun helfen dir Urkräfte bei deinen Reisen und gewähren dir folgende Vorzüge.\n\nTemporäre Trefferpunkte: Als magische Aktion kannst du dir eine Anzahl von temporären Trefferpunkten in Höhe von 1W8 plus deinem Weisheitsmodifikator verleihen (mindestens 1). Die Anzahl der möglichen Anwendungen entspricht deinem Weisheitsmodifikator (mindestens einmal). Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück.\n\nErschöpfung verringern: Wann immer du eine kurze Rast beendest, wird deine Erschöpfungsstufe (sofern vorhanden) um 1 verringert.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "magic_action",
+          "uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          },
+          "recharge": "long_rest",
+          "effect": {
+            "type": "grant_temporary_hit_points",
+            "target": "self",
+            "value": {
+              "dice": "1d8",
+              "flat_modifier": "wisdom_modifier",
+              "minimum": 1
+            }
+          }
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "short_rest_end",
+          "effect": {
+            "type": "reduce_exhaustion",
+            "amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "ranger-asi-12",
+      "owner_type": "class",
+      "owner_id": "ranger",
+      "level": 12,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung (siehe Kapitel 5) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "ranger-relentless-hunter",
+      "owner_type": "class",
+      "owner_id": "ranger",
+      "level": 13,
+      "name_en": "Relentless Hunter",
+      "name_de": "Unermüdlicher Jäger",
+      "player_choice": false,
+      "text_en": "Taking damage can't break your Concentration on Hunter's Mark.",
+      "text_de": "Deine Konzentration auf den Zauber Zeichen des Jägers wird nicht unterbrochen, wenn du Schaden erleidest.",
+      "grants": [
+        {
+          "type": "concentration_immunity",
+          "spell_id": "hunters-mark",
+          "trigger": "take_damage"
+        }
+      ]
+    },
+    {
+      "id": "ranger-natures-veil",
+      "owner_type": "class",
+      "owner_id": "ranger",
+      "level": 14,
+      "name_en": "Nature's Veil",
+      "name_de": "Naturschleier",
+      "player_choice": false,
+      "text_en": "You invoke spirits of nature to magically hide yourself. As a Bonus Action, you can give yourself the Invisible condition until the end of your next turn.\n\nYou can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.",
+      "text_de": "Du beschwörst Geister der Natur, um dich auf magische Art zu verstecken. Als Bonusaktion kannst du dir bis zum Ende deines nächsten Zugs den Zustand Unsichtbar verleihen.\n\nDie Anzahl der möglichen Anwendungen dieses Merkmals entspricht deinem Weisheitsmodifikator (mindestens einmal). Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          },
+          "recharge": "long_rest",
+          "effect": {
+            "type": "apply_conditions",
+            "conditions": [
+              "invisible"
+            ],
+            "target": "self",
+            "duration": "until_end_of_your_next_turn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ranger-asi-16",
+      "owner_type": "class",
+      "owner_id": "ranger",
+      "level": 16,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung (siehe Kapitel 5) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "ranger-precise-hunter",
+      "owner_type": "class",
+      "owner_id": "ranger",
+      "level": 17,
+      "name_en": "Precise Hunter",
+      "name_de": "Präziser Jäger",
+      "player_choice": false,
+      "text_en": "You have Advantage on attack rolls against the creature currently marked by your Hunter's Mark.",
+      "text_de": "Du bist bei Angriffswürfen gegen die Kreatur, die aktuell von deinem Zauber Zeichen des Jägers markiert ist, im Vorteil.",
+      "grants": [
+        {
+          "type": "advantage",
+          "on": [
+            "attack_rolls"
+          ],
+          "condition": "target_is_hunters_mark_target"
+        }
+      ]
+    },
+    {
+      "id": "ranger-feral-senses",
+      "owner_type": "class",
+      "owner_id": "ranger",
+      "level": 18,
+      "name_en": "Feral Senses",
+      "name_de": "Wildes Gespür",
+      "player_choice": false,
+      "text_en": "Your connection to the forces of nature grants you Blindsight with a range of 30 feet.",
+      "text_de": "Deine Verbindung mit den Kräften der Natur gewährt dir Blindsicht mit einer Reichweite von neun Metern.",
+      "grants": [
+        {
+          "type": "blindsight",
+          "range_feet": 30
+        }
+      ]
+    },
+    {
+      "id": "ranger-epic-boon",
+      "owner_type": "class",
+      "owner_id": "ranger",
+      "level": 19,
+      "name_en": "Epic Boon",
+      "name_de": "Epische Gabe",
+      "player_choice": true,
+      "choice_prompt_en": "Gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Dimensional Travel is recommended.",
+      "choice_prompt_de": "Erhalte ein Epische-Gabe-Talent oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Gabe des Dimensionsreisens wird empfohlen.",
+      "text_en": "You gain an Epic Boon feat (see chapter 5) or another feat of your choice for which you qualify. Boon of Dimensional Travel is recommended.",
+      "text_de": "Du erhältst ein Epische-Gabe-Talent (siehe Kapitel 5) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Gabe des Dimensionsreisens wird empfohlen.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "feat_category": "epic_boon",
+          "recommended": "boon_of_dimensional_travel"
+        }
+      ]
+    },
+    {
+      "id": "ranger-foe-slayer",
+      "owner_type": "class",
+      "owner_id": "ranger",
+      "level": 20,
+      "name_en": "Foe Slayer",
+      "name_de": "Feindestöter",
+      "player_choice": false,
+      "text_en": "The damage die of your Hunter's Mark is a d10 rather than a d6.",
+      "text_de": "Der Schadenswürfel deines Zaubers Zeichen des Jägers ist jetzt ein W10 statt eines W6.",
+      "grants": [
+        {
+          "type": "spell_effect_transformation",
+          "applies_to": [
+            "hunters-mark"
+          ],
+          "modification": "upgrade_damage_die",
+          "new_damage_die": "d10"
+        }
+      ]
+    }
+  ],
+  "subclass_features": [
+    {
+      "id": "beast-master-primal-companion",
+      "owner_type": "subclass",
+      "owner_id": "ranger-beast-master",
+      "level": 3,
+      "name_en": "Primal Companion",
+      "name_de": "Urbegleiter",
+      "player_choice": true,
+      "choice_prompt_en": "Choose your Primal Companion's stat block: Beast of the Land, Beast of the Sea, or Beast of the Sky. Also choose the kind of animal it resembles.",
+      "choice_prompt_de": "Wähle den Wertekasten deines Urbegleiters: Urtier des Himmels, Urtier des Landes oder Urtier des Meeres. Wähle außerdem eine Tierart, die zum Wertekasten passt.",
+      "text_en": "You magically summon a primal beast, which draws strength from your bond with nature. Choose its stat block: Beast of the Land, Beast of the Sea, or Beast of the Sky. You also determine the kind of animal it is, choosing a kind appropriate for the stat block.\n\nThe beast is Friendly to you and your allies and obeys your commands. It vanishes if you die.\n\nThe Beast in Combat. In combat, the beast acts during your turn. It can move and use its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it to take an action in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the beast to take the Beast's Strike action. If you have the Incapacitated condition, the beast acts on its own.\n\nRestoring or Replacing the Beast. If the beast has died within the last hour, you can take a Magic action to touch it and expend a spell slot. The beast returns to life after 1 minute with all its Hit Points restored. Whenever you finish a Long Rest, you can summon a different primal beast.",
+      "text_de": "Du rufst auf magische Art ein Urtier herbei, das Kraft aus deiner Bindung an die Natur schöpft. Wähle seinen Wertekasten: Urtier des Himmels, Urtier des Landes oder Urtier des Meeres. Wähle außerdem eine Tierart, die zum Wertekasten passt.\n\nDas Urtier ist dir und deinen Verbündeten freundlich gesinnt und gehorcht deinen Befehlen. Wenn du stirbst, verschwindet es.\n\nDas Urtier im Kampf: Im Kampf handelt das Urtier während deines Zugs. Es kann sich nach seinem Willen bewegen und seine Reaktion verwenden. Als Aktion kann es nur ausweichen, es sei denn, du führst eine Bonusaktion aus, um ihm eine Aktion aus seinem Wertekasten oder eine andere Aktion zu befehlen. Du kannst auch auf einen deiner Angriffe verzichten, wenn du deine Angriffsaktion ausführst, und stattdessen dem Urtier befehlen, seine Bestienschlag-Aktion auszuführen. Wenn du kampfunfähig bist, handelt das Urtier nach seinem Willen.\n\nDas Urtier heilen oder ersetzen: Wenn das Urtier innerhalb der letzten Stunde gestorben ist, kannst du es als magische Aktion berühren und einen Zauberplatz verbrauchen. Nach einer Minute wird das Urtier mit all seinen Trefferpunkten wieder lebendig. Wann immer du eine lange Rast beendest, kannst du ein anderes Urtier beschwören.",
+      "grants": [
+        {
+          "type": "choice",
+          "choose": 1,
+          "change_on": "long_rest",
+          "change_count": 1,
+          "options": [
+            {
+              "id": "primal-companion-land",
+              "name_en": "Beast of the Land",
+              "name_de": "Urtier des Landes",
+              "text_en": "Summon a Beast of the Land as your Primal Companion.",
+              "text_de": "Beschwöre ein Urtier des Landes als deinen Urbegleiter.",
+              "grants": [
+                {
+                  "type": "companion",
+                  "entity_id": "beast-of-the-land",
+                  "scaling": "ranger_level"
+                }
+              ]
+            },
+            {
+              "id": "primal-companion-sea",
+              "name_en": "Beast of the Sea",
+              "name_de": "Urtier des Meeres",
+              "text_en": "Summon a Beast of the Sea as your Primal Companion.",
+              "text_de": "Beschwöre ein Urtier des Meeres als deinen Urbegleiter.",
+              "grants": [
+                {
+                  "type": "companion",
+                  "entity_id": "beast-of-the-sea",
+                  "scaling": "ranger_level"
+                }
+              ]
+            },
+            {
+              "id": "primal-companion-sky",
+              "name_en": "Beast of the Sky",
+              "name_de": "Urtier des Himmels",
+              "text_en": "Summon a Beast of the Sky as your Primal Companion.",
+              "text_de": "Beschwöre ein Urtier des Himmels als deinen Urbegleiter.",
+              "grants": [
+                {
+                  "type": "companion",
+                  "entity_id": "beast-of-the-sky",
+                  "scaling": "ranger_level"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "active_ability",
+          "action_type": "magic_action",
+          "trigger": "beast_died_within_last_hour",
+          "cost": {
+            "resource": "spell_slot",
+            "amount": 1
+          },
+          "effect": {
+            "type": "revive_companion",
+            "target": "primal_companion",
+            "delay_minutes": 1,
+            "restore_hp": "all"
+          }
+        },
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "effect": {
+            "type": "command_companion",
+            "companion": "primal_companion",
+            "available_actions": [
+              "stat_block_action",
+              "any_action"
+            ]
+          }
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "take_attack_action",
+          "optional": true,
+          "effect": {
+            "type": "sacrifice_attack_for_companion_action",
+            "companion_action": "beasts_strike"
+          }
+        }
+      ]
+    },
+    {
+      "id": "beast-master-exceptional-training",
+      "owner_type": "subclass",
+      "owner_id": "ranger-beast-master",
+      "level": 7,
+      "name_en": "Exceptional Training",
+      "name_de": "Außergewöhnliches Training",
+      "player_choice": false,
+      "text_en": "When you take a Bonus Action to command your Primal Companion beast to take an action, you can also command it to take the Dash, Disengage, Dodge, or Help action using its Bonus Action.\n\nIn addition, whenever it hits with an attack roll and deals damage, it can deal your choice of Force damage or its normal damage type.",
+      "text_de": "Wenn du eine Bonusaktion ausführst, um deinem Urbegleiter zu befehlen, eine Aktion auszuführen, kannst du ihm auch befehlen, mithilfe seiner Bonusaktion die Ausweichen-, die Helfen-, die Rückzug- oder die Spurt-Aktion auszuführen.\n\nWann immer das Urtier außerdem mit einem Angriffswurf trifft und Schaden bewirkt, kann es nach deiner Wahl entweder Energieschaden oder seine normale Schadensart bewirken.",
+      "grants": [
+        {
+          "type": "feature_modifier",
+          "feature_id": "beast-master-primal-companion",
+          "modifies_grant": "command_companion",
+          "modification": {
+            "companion_bonus_action_options": [
+              "dash",
+              "disengage",
+              "dodge",
+              "help"
+            ]
+          }
+        },
+        {
+          "type": "damage_type_choice_on_hit",
+          "attack_type": "primal_companion_attack",
+          "options": [
+            "normal",
+            "force"
+          ],
+          "choose_on": "each_hit"
+        }
+      ]
+    },
+    {
+      "id": "beast-master-bestial-fury",
+      "owner_type": "subclass",
+      "owner_id": "ranger-beast-master",
+      "level": 11,
+      "name_en": "Bestial Fury",
+      "name_de": "Tierische Wut",
+      "player_choice": false,
+      "text_en": "When you command your Primal Companion beast to take the Beast's Strike action, the beast can use it twice.\n\nIn addition, the first time each turn it hits a creature under the effect of your Hunter's Mark spell, the beast deals extra Force damage equal to the bonus damage of that spell.",
+      "text_de": "Wenn du deinem Urbegleiter befiehlst, die Bestienschlag-Aktion auszuführen, kann er sie zweimal ausführen.\n\nAußerdem bewirkt er, wenn er erstmals in jedem Zug eine Kreatur unter dem Effekt deines Zaubers Zeichen des Jägers trifft, zusätzlichen Energieschaden in Höhe des Bonusschadens dieses Zaubers.",
+      "grants": [
+        {
+          "type": "feature_modifier",
+          "feature_id": "beast-master-primal-companion",
+          "modifies_grant": "command_companion",
+          "modification": {
+            "beasts_strike_uses_per_command": 2
+          }
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "primal_companion_first_hit_on_turn_against_hunters_mark_target",
+          "effect": {
+            "type": "damage",
+            "damage_type": "force",
+            "value": {
+              "equals": "hunters_mark_bonus_damage"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "beast-master-share-spells",
+      "owner_type": "subclass",
+      "owner_id": "ranger-beast-master",
+      "level": 15,
+      "name_en": "Share Spells",
+      "name_de": "Zauber teilen",
+      "player_choice": false,
+      "text_en": "When you cast a spell targeting yourself, you can also affect your Primal Companion beast with the spell if the beast is within 30 feet of you.",
+      "text_de": "Wenn du einen Zauber auf dich selbst wirkst, kannst du ihn auch auf deinen Urbegleiter wirken, sofern dieser sich im Abstand von bis zu neun Metern von dir befindet.",
+      "grants": [
+        {
+          "type": "spell_origin_override",
+          "origin": "self_targeting_spell_also_affects_companion",
+          "condition": "primal_companion_within_30ft",
+          "optional": true,
+          "note": "PRESSURE POINT: spell origin/targeting override — see Known Future Pressure Points in SCHEMA.md"
+        }
+      ]
+    },
+    {
+      "id": "fey-wanderer-dreadful-strikes",
+      "owner_type": "subclass",
+      "owner_id": "ranger-fey-wanderer",
+      "level": 3,
+      "name_en": "Dreadful Strikes",
+      "name_de": "Grässliche Schläge",
+      "player_choice": false,
+      "text_en": "You can augment your weapon strikes with mind-scarring magic drawn from the murky hollows of the Feywild. When you hit a creature with a weapon, you can deal an extra 1d4 Psychic damage to the target, which can take this extra damage only once per turn. The extra damage increases to 1d6 when you reach Ranger level 11.",
+      "text_de": "Du kannst die Schläge deiner Waffe mit einer den Verstand marternden Magie anreichern, die du aus den feuchten Senken der Feenwildnis beziehst. Wenn du eine Kreatur mit einer Waffe triffst, kannst du ihr 1W4 psychischen Schaden zusätzlich zufügen. Eine Kreatur kann diesen zusätzlichen Schaden nur einmal pro Zug erleiden. Der zusätzliche Schaden wird auf 1W6 erhöht, wenn du die Waldläuferstufe 11 erreichst.",
+      "grants": [
+        {
+          "type": "on_hit_effect",
+          "attack_type": "weapon",
+          "optional": true,
+          "once_per_turn_per_target": true,
+          "effect": {
+            "type": "damage",
+            "damage_type": "psychic",
+            "value": {
+              "dice_from_resource": "dreadful_strikes_die"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "fey-wanderer-spells",
+      "owner_type": "subclass",
+      "owner_id": "ranger-fey-wanderer",
+      "level": 3,
+      "name_en": "Fey Wanderer Spells",
+      "name_de": "Zauber des Feenwanderers",
+      "player_choice": false,
+      "text_en": "When you reach a Ranger level specified in the Fey Wanderer Spells table, you thereafter always have the listed spells prepared.\n\nLevel 3: Charm Person. Level 5: Misty Step. Level 9: Summon Fey. Level 13: Dimension Door. Level 17: Mislead.",
+      "text_de": "Wenn du eine Waldläuferstufe erreichst, die in der Tabelle „Zauber des Feenwanderers“ aufgeführt ist, hast du die aufgeführten Zauber fortan stets vorbereitet.\n\nStufe 3: Person bezaubern. Stufe 5: Nebelschritt. Stufe 9: Feenwesen herbeirufen. Stufe 13: Dimensionstür. Stufe 17: Ablenkung.",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "charm-person",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "misty-step",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "summon-fey",
+          "class_level_threshold": 9
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "dimension-door",
+          "class_level_threshold": 13
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "mislead",
+          "class_level_threshold": 17
+        }
+      ]
+    },
+    {
+      "id": "fey-wanderer-otherworldly-glamour",
+      "owner_type": "subclass",
+      "owner_id": "ranger-fey-wanderer",
+      "level": 3,
+      "name_en": "Otherworldly Glamour",
+      "name_de": "Außerweltlicher Glanz",
+      "player_choice": true,
+      "choice_prompt_en": "Choose one skill to gain proficiency in: Deception, Performance, or Persuasion.",
+      "choice_prompt_de": "Wähle eine Fertigkeit, in der du Übung erhältst: Auftreten, Täuschen oder Überzeugen.",
+      "text_en": "Whenever you make a Charisma check, you gain a bonus to the check equal to your Wisdom modifier (minimum of +1).\n\nYou also gain proficiency in one of these skills of your choice: Deception, Performance, or Persuasion.",
+      "text_de": "Wann immer du einen Charismawurf ausführst, erhältst du einen Bonus in Höhe deines Weisheitsmodifikators (mindestens +1).\n\nAußerdem erhältst du Übung in einer dieser Fertigkeiten nach deiner Wahl: Auftreten, Täuschen oder Überzeugen.",
+      "grants": [
+        {
+          "type": "ability_check_bonus",
+          "skills": "all_charisma_checks",
+          "ability": "charisma",
+          "value": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          }
+        },
+        {
+          "type": "skill_proficiency",
+          "choose": 1,
+          "from": [
+            "deception",
+            "performance",
+            "persuasion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fey-wanderer-feywild-gift",
+      "owner_type": "subclass",
+      "owner_id": "ranger-fey-wanderer",
+      "level": 3,
+      "name_en": "Feywild Gift",
+      "name_de": "Feenwildnis-Gabe",
+      "player_choice": true,
+      "choice_prompt_en": "Choose or roll for your Feywild Gift from the Feywild Gifts table.",
+      "choice_prompt_de": "Wähle oder würfle eine Feenwildnis-Gabe aus der Tabelle der Feenwildnis-Gaben.",
+      "text_en": "You possess a fey blessing. Choose it from the Feywild Gifts table or determine it randomly.\n\n1 — Illusory butterflies flutter around you while you take a Short or Long Rest.\n2 — Flowers bloom from your hair each dawn.\n3 — You faintly smell of cinnamon, lavender, nutmeg, or another comforting herb or spice.\n4 — Your shadow dances while no one is looking directly at it.\n5 — Horns or antlers sprout from your head.\n6 — Your skin and hair change color each dawn.",
+      "text_de": "Du verfügst über den Segen eines Feenwesens. Wähle ihn aus der Liste der Feenwildnis-Gaben aus oder bestimme ihn zufällig.\n\n1 — Während du eine kurze oder lange Rast einlegst, umschwirren dich Illusionen von Schmetterlingen.\n2 — In jedem Morgengrauen erblühen Blumen in deinem Haar.\n3 — Du verströmst einen leichten Duft nach Zimt, Lavendel, Muskat oder einem anderen wohltuenden Kraut oder Gewürz.\n4 — Dein Schatten tanzt, wenn er von niemandem direkt angeblickt wird.\n5 — Aus deinem Kopf wachsen Hörner oder ein Geweih.\n6 — Deine Haut und dein Haar ändern in jedem Morgengrauen die Farbe.",
+      "grants": [
+        {
+          "type": "passive",
+          "effect": "feywild_gift_cosmetic",
+          "options": [
+            {
+              "id": 1,
+              "description_en": "Illusory butterflies flutter around you while you take a Short or Long Rest.",
+              "description_de": "Während du eine kurze oder lange Rast einlegst, umschwirren dich Illusionen von Schmetterlingen."
+            },
+            {
+              "id": 2,
+              "description_en": "Flowers bloom from your hair each dawn.",
+              "description_de": "In jedem Morgengrauen erblühen Blumen in deinem Haar."
+            },
+            {
+              "id": 3,
+              "description_en": "You faintly smell of cinnamon, lavender, nutmeg, or another comforting herb or spice.",
+              "description_de": "Du verströmst einen leichten Duft nach Zimt, Lavendel, Muskat oder einem anderen wohltuenden Kraut oder Gewürz."
+            },
+            {
+              "id": 4,
+              "description_en": "Your shadow dances while no one is looking directly at it.",
+              "description_de": "Dein Schatten tanzt, wenn er von niemandem direkt angeblickt wird."
+            },
+            {
+              "id": 5,
+              "description_en": "Horns or antlers sprout from your head.",
+              "description_de": "Aus deinem Kopf wachsen Hörner oder ein Geweih."
+            },
+            {
+              "id": 6,
+              "description_en": "Your skin and hair change color each dawn.",
+              "description_de": "Deine Haut und dein Haar ändern in jedem Morgengrauen die Farbe."
+            }
+          ],
+          "selection": "choose_or_roll_d6"
+        }
+      ]
+    },
+    {
+      "id": "fey-wanderer-beguiling-twist",
+      "owner_type": "subclass",
+      "owner_id": "ranger-fey-wanderer",
+      "level": 7,
+      "name_en": "Beguiling Twist",
+      "name_de": "Betörende Verdrehung",
+      "player_choice": true,
+      "choice_prompt_en": "When you redirect the Charmed or Frightened condition, choose whether the new target is Charmed or Frightened.",
+      "choice_prompt_de": "Wenn du den Zustand Bezaubert oder Verängstigt umlenkst, wähle ob das neue Ziel bezaubert oder verängstigt ist.",
+      "text_en": "The magic of the Feywild guards your mind. You have Advantage on saving throws to avoid or end the Charmed or Frightened condition.\n\nIn addition, whenever you or a creature you can see within 120 feet of you succeeds on a saving throw to avoid or end the Charmed or Frightened condition, you can take a Reaction to force a different creature you can see within 120 feet of yourself to make a Wisdom save against your spell save DC. On a failed save, the target is Charmed or Frightened (your choice) for 1 minute. The target repeats the save at the end of each of its turns, ending the effect on itself on a success.",
+      "text_de": "Die Magie der Feenwildnis bewacht deinen Geist. Du bist bei Rettungswürfen zum Vermeiden oder Beenden der Zustände Bezaubert und Verängstigt im Vorteil.\n\nAußerdem kannst du, wenn dir oder einer Kreatur im Abstand von bis zu 36 Metern von dir ein Rettungswurf zum Vermeiden oder Beenden der Zustände Bezaubert oder Verängstigt gelingt, deine Reaktion ausführen, um eine andere Kreatur im Abstand von bis zu 36 Metern von dir zu einem Weisheitsrettungswurf gegen deinen Zauberrettungswurf-SG zu zwingen. Scheitert der Wurf, ist das Ziel eine Minute lang bezaubert oder verängstigt (nach deiner Wahl). Das Ziel wiederholt den Rettungswurf am Ende jedes seiner Züge.",
+      "grants": [
+        {
+          "type": "advantage",
+          "on": [
+            "saving_throws"
+          ],
+          "condition": "to_avoid_or_end_charmed_or_frightened"
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "self_or_ally_within_120ft_succeeds_on_save_vs_charmed_or_frightened",
+          "action_type": "reaction",
+          "effect": {
+            "type": "saving_throw",
+            "ability": "wisdom",
+            "dc": "spell_save_dc",
+            "target": "different_creature_within_120ft_you_can_see",
+            "on_failure": {
+              "type": "apply_condition",
+              "condition_choice": [
+                "charmed",
+                "frightened"
+              ],
+              "duration": "1_minute",
+              "save_to_end": {
+                "timing": "end_of_targets_turn"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "fey-wanderer-fey-reinforcements",
+      "owner_type": "subclass",
+      "owner_id": "ranger-fey-wanderer",
+      "level": 11,
+      "name_en": "Fey Reinforcements",
+      "name_de": "Feenverstärkung",
+      "player_choice": false,
+      "text_en": "You can cast Summon Fey without a Material component. You can also cast it once without a spell slot, and you regain the ability to cast it in this way when you finish a Long Rest.\n\nWhenever you start casting the spell, you can modify it so that it doesn't require Concentration. If you do so, the spell's duration becomes 1 minute for that casting.",
+      "text_de": "Du kannst Feenwesen herbeirufen ohne Materialkomponente wirken. Du kannst den Zauber auch einmal wirken, ohne einen Zauberplatz zu verbrauchen. Diese Fähigkeit erhältst du nach einer langen Rast zurück.\n\nWann immer du beginnst, diesen Zauber zu wirken, kannst du ihn so verändern, dass er keine Konzentration erfordert. In diesem Fall beträgt die Wirkungsdauer des Zaubers eine Minute.",
+      "grants": [
+        {
+          "type": "spell_component_override",
+          "spell_id": "summon-fey",
+          "components": {
+            "material": false
+          }
+        },
+        {
+          "type": "spell_cost_override",
+          "spell_id": "summon-fey",
+          "cost": "no_spell_slot",
+          "uses": 1,
+          "recharge": "long_rest"
+        },
+        {
+          "type": "spell_effect_transformation",
+          "applies_to": [
+            "summon-fey"
+          ],
+          "optional": true,
+          "modification": "remove_concentration",
+          "override_duration": "1_minute",
+          "note": "Player chooses whether to remove concentration each time they cast the spell."
+        }
+      ]
+    },
+    {
+      "id": "fey-wanderer-misty-wanderer",
+      "owner_type": "subclass",
+      "owner_id": "ranger-fey-wanderer",
+      "level": 15,
+      "name_en": "Misty Wanderer",
+      "name_de": "Nebelwanderer",
+      "player_choice": false,
+      "text_en": "You can cast Misty Step without expending a spell slot. You can do so a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.\n\nIn addition, whenever you cast Misty Step, you can bring along one willing creature you can see within 5 feet of yourself. That creature teleports to an unoccupied space of your choice within 5 feet of your destination space.",
+      "text_de": "Du kannst Nebelschritt wirken, ohne einen Zauberplatz zu verbrauchen. Die Anzahl der möglichen Anwendungen entspricht deinem Weisheitsmodifikator (mindestens einmal). Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück.\n\nAußerdem kannst du, wann immer du Nebelschritt wirkst, eine bereitwillige Kreatur im Abstand von bis zu 1,5 Metern von dir, die du sehen kannst, mitnehmen. Die Kreatur erscheint in einem freien Bereich deiner Wahl im Abstand von bis zu 1,5 Metern deines Zielortes.",
+      "grants": [
+        {
+          "type": "spell_cost_override",
+          "spell_id": "misty-step",
+          "cost": "no_spell_slot",
+          "uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          },
+          "recharge": "long_rest"
+        },
+        {
+          "type": "spell_effect_transformation",
+          "applies_to": [
+            "misty-step"
+          ],
+          "modification": "add_passenger",
+          "passenger": {
+            "max_count": 1,
+            "condition": "willing",
+            "within_feet_of_self": 5,
+            "destination": "within_5ft_of_your_destination"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gloom-stalker-dread-ambusher",
+      "owner_type": "subclass",
+      "owner_id": "ranger-gloom-stalker",
+      "level": 3,
+      "name_en": "Dread Ambusher",
+      "name_de": "Fürchterlicher Lauerjäger",
+      "player_choice": false,
+      "text_en": "You have mastered the art of creating fearsome ambushes, granting you the following benefits.\n\nAmbusher's Leap. At the start of your first turn of each combat, your Speed increases by 10 feet until the end of that turn.\n\nDreadful Strike. When you attack a creature and hit it with a weapon, you can deal an extra 2d6 Psychic damage. You can use this benefit only once per turn, you can use it a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.\n\nInitiative Bonus. When you roll Initiative, you can add your Wisdom modifier to the roll.",
+      "text_de": "Du hast die Kunst gemeistert, schreckenerregende Überfälle auszuführen. Dies gewährt dir folgende Vorzüge.\n\nSprung des Lauerjägers: Zu Beginn deines ersten Zugs in jedem Kampf wird deine Bewegungsrate bis zum Ende des Zugs um drei Meter erhöht.\n\nGrässliche Schläge: Wenn du eine Kreatur mit einer Waffe triffst, kannst du zusätzlich 2W6 psychischen Schaden bewirken. Du kannst diesen Vorzug nur einmal pro Zug anwenden. Die Anzahl der möglichen Anwendungen entspricht deinem Weisheitsmodifikator (mindestens einmal). Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück.\n\nInitiative-Bonus: Wenn du die Initiative auswürfelst, kannst du dem Ergebnis deinen Weisheitsmodifikator hinzufügen.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "start_of_first_turn_in_combat",
+          "effect": {
+            "type": "speed_bonus",
+            "value_feet": 10,
+            "duration": "until_end_of_turn"
+          }
+        },
+        {
+          "type": "on_hit_effect",
+          "attack_type": "weapon",
+          "optional": true,
+          "once_per_turn": true,
+          "uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          },
+          "recharge": "long_rest",
+          "effect": {
+            "type": "damage",
+            "damage_type": "psychic",
+            "value": {
+              "dice": "2d6"
+            }
+          },
+          "id": "dreadful-strike"
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "on_initiative",
+          "optional": true,
+          "effect": {
+            "type": "add_to_roll",
+            "value": "wisdom_modifier"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gloom-stalker-spells",
+      "owner_type": "subclass",
+      "owner_id": "ranger-gloom-stalker",
+      "level": 3,
+      "name_en": "Gloom Stalker Spells",
+      "name_de": "Zauber des Düsterpirschers",
+      "player_choice": false,
+      "text_en": "When you reach a Ranger level specified in the Gloom Stalker Spells table, you thereafter always have the listed spells prepared.\n\nLevel 3: Disguise Self. Level 5: Rope Trick. Level 9: Fear. Level 13: Greater Invisibility. Level 17: Seeming.",
+      "text_de": "Wenn du eine Waldläuferstufe erreichst, die in der Tabelle „Zauber des Düsterpirschers“ aufgeführt ist, hast du die aufgeführten Zauber fortan stets vorbereitet.\n\nStufe 3: Selbstverkleidung. Stufe 5: Seiltrick. Stufe 9: Furcht. Stufe 13: Mächtige Unsichtbarkeit. Stufe 17: Äußerlichkeiten.",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "disguise-self",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "rope-trick",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "fear",
+          "class_level_threshold": 9
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "greater-invisibility",
+          "class_level_threshold": 13
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "seeming",
+          "class_level_threshold": 17
+        }
+      ]
+    },
+    {
+      "id": "gloom-stalker-umbral-sight",
+      "owner_type": "subclass",
+      "owner_id": "ranger-gloom-stalker",
+      "level": 3,
+      "name_en": "Umbral Sight",
+      "name_de": "Schattensicht",
+      "player_choice": false,
+      "text_en": "You gain Darkvision with a range of 60 feet. If you already have Darkvision when you gain this feature, its range increases by 60 feet.\n\nYou are also adept at evading creatures that rely on Darkvision. While entirely in Darkness, you have the Invisible condition to any creature that relies on Darkvision to see you in that Darkness.",
+      "text_de": "Du erhältst Dunkelsicht mit einer Reichweite von 18 Metern. Wenn du bereits über Dunkelsicht verfügst, wird deren Reichweite durch dieses Merkmal um 18 Meter erhöht.\n\nAußerdem bist du geschickt darin, Kreaturen mit Dunkelsicht auszuweichen. Bei Dunkelheit bist du für alle Kreaturen unsichtbar, die Dunkelsicht einsetzen, um dich zu sehen.",
+      "grants": [
+        {
+          "type": "darkvision",
+          "range_feet": 60,
+          "stacking": "additive_if_existing"
+        },
+        {
+          "type": "apply_conditions",
+          "conditions": [
+            "invisible"
+          ],
+          "target": "self",
+          "condition": "while_in_darkness_and_observer_uses_darkvision_only"
+        }
+      ]
+    },
+    {
+      "id": "gloom-stalker-iron-mind",
+      "owner_type": "subclass",
+      "owner_id": "ranger-gloom-stalker",
+      "level": 7,
+      "name_en": "Iron Mind",
+      "name_de": "Stählerner Verstand",
+      "player_choice": true,
+      "choice_prompt_en": "If you already have proficiency in Wisdom saving throws, choose to gain proficiency in Intelligence or Charisma saving throws instead.",
+      "choice_prompt_de": "Wenn du bereits Übung in Weisheitsrettungswürfen hast, wähle stattdessen Intelligenz- oder Charismarettungswürfe.",
+      "text_en": "You have honed your ability to resist mind-altering powers. You gain proficiency in Wisdom saving throws. If you already have this proficiency, you instead gain proficiency in Intelligence or Charisma saving throws (your choice).",
+      "text_de": "Du hast deine Fähigkeit verfeinert, bewusstseinsverändernden Kräften zu widerstehen. Du erhältst Übung in Weisheitsrettungswürfen. Wenn du bereits über diese Übung verfügst, erhältst du stattdessen Übung in Intelligenz- oder Charismarettungswürfen (nach deiner Wahl).",
+      "grants": [
+        {
+          "type": "saving_throw_proficiency",
+          "saving_throw": "wisdom",
+          "fallback_choice": {
+            "condition": "already_proficient_in_wisdom_saves",
+            "choose": 1,
+            "from": [
+              "intelligence",
+              "charisma"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "gloom-stalker-stalkers-flurry",
+      "owner_type": "subclass",
+      "owner_id": "ranger-gloom-stalker",
+      "level": 11,
+      "name_en": "Stalker's Flurry",
+      "name_de": "Schlaghagel des Pirschers",
+      "player_choice": true,
+      "choice_prompt_en": "When you use Dreadful Strike, choose one additional effect: Sudden Strike or Mass Fear.",
+      "choice_prompt_de": "Wenn du Grässliche Schläge einsetzt, wähle einen zusätzlichen Effekt: Massenfurcht oder Plötzlicher Schlag.",
+      "text_en": "The Psychic damage of your Dreadful Strike becomes 2d8. In addition, when you use the Dreadful Strike effect of your Dread Ambusher feature, you can cause one of the following additional effects.\n\nSudden Strike. You can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within the weapon's range.\n\nMass Fear. The target and each creature within 10 feet of it must make a Wisdom saving throw against your spell save DC. On a failed save, a creature has the Frightened condition until the start of your next turn.",
+      "text_de": "Der psychische Schaden deiner Grässlichen Schläge erhöht sich auf 2W8. Außerdem kannst du, wenn du den Effekt Grässliche Schläge deines Merkmals Fürchterlicher Lauerjäger verwendest, einen der folgenden zusätzlichen Effekte bewirken.\n\nPlötzlicher Schlag: Du kannst mit einer Waffe einen weiteren Angriff auf eine andere Kreatur im Abstand von bis zu 1,5 Metern vom ursprünglichen Ziel sowie innerhalb der Waffenreichweite ausführen.\n\nMassenfurcht: Das Ziel und alle Kreaturen im Abstand von bis zu drei Metern vom Ziel müssen einen Weisheitsrettungswurf gegen deinen Zauberrettungswurf-SG ausführen. Scheitert der Wurf, ist die entsprechende Kreatur bis zum Beginn deines nächsten Zugs verängstigt.",
+      "grants": [
+        {
+          "type": "feature_modifier",
+          "feature_id": "gloom-stalker-dread-ambusher",
+          "modifies_grant": "dreadful-strike",
+          "modification": {
+            "extra_damage": {
+              "dice": "2d8"
+            }
+          }
+        },
+        {
+          "type": "choice",
+          "trigger": "use_dreadful_strike",
+          "choose": 1,
+          "options": [
+            {
+              "id": "stalkers-flurry-sudden-strike",
+              "name_en": "Sudden Strike",
+              "name_de": "Plötzlicher Schlag",
+              "text_en": "You can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within the weapon's range.",
+              "text_de": "Du kannst mit einer Waffe einen weiteren Angriff auf eine andere Kreatur im Abstand von bis zu 1,5 Metern vom ursprünglichen Ziel sowie innerhalb der Waffenreichweite ausführen.",
+              "grants": [
+                {
+                  "type": "triggered_effect",
+                  "trigger": "use_dreadful_strike",
+                  "effect": {
+                    "type": "bonus_attack",
+                    "weapon": "same_weapon",
+                    "target": "different_creature_within_5ft_of_original_target_and_in_range"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "stalkers-flurry-mass-fear",
+              "name_en": "Mass Fear",
+              "name_de": "Massenfurcht",
+              "text_en": "The target and each creature within 10 feet of it must make a Wisdom saving throw against your spell save DC. On a failed save, a creature has the Frightened condition until the start of your next turn.",
+              "text_de": "Das Ziel und alle Kreaturen im Abstand von bis zu drei Metern vom Ziel müssen einen Weisheitsrettungswurf gegen deinen Zauberrettungswurf-SG ausführen. Scheitert der Wurf, ist die entsprechende Kreatur bis zum Beginn deines nächsten Zugs verängstigt.",
+              "grants": [
+                {
+                  "type": "triggered_effect",
+                  "trigger": "use_dreadful_strike",
+                  "area": {
+                    "type": "sphere",
+                    "radius_feet": 10,
+                    "centered_on": "original_target"
+                  },
+                  "saving_throw": {
+                    "ability": "wisdom",
+                    "dc": "spell_save_dc"
+                  },
+                  "on_failure": {
+                    "type": "apply_condition",
+                    "condition": "frightened",
+                    "duration": "until_start_of_your_next_turn"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gloom-stalker-shadowy-dodge",
+      "owner_type": "subclass",
+      "owner_id": "ranger-gloom-stalker",
+      "level": 15,
+      "name_en": "Shadowy Dodge",
+      "name_de": "Schattenhaftes Ausweichen",
+      "player_choice": false,
+      "text_en": "When a creature makes an attack roll against you, you can take a Reaction to impose Disadvantage on that roll. Whether the attack hits or misses, you can then teleport up to 30 feet to an unoccupied space you can see.",
+      "text_de": "Wenn eine Kreatur einen Angriffswurf gegen dich ausführt, kannst du eine Reaktion ausführen, damit der Wurf im Nachteil ist. Unabhängig vom Erfolg des Wurfs kannst du danach bis zu neun Meter weit in einen freien Bereich teleportieren, den du sehen kannst.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "creature_makes_attack_roll_against_you",
+          "action_type": "reaction",
+          "effect": {
+            "type": "impose_disadvantage",
+            "on": "triggering_attack_roll"
+          }
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "after_shadowy_dodge_reaction",
+          "effect": {
+            "type": "teleport",
+            "range_feet": 30,
+            "destination": "unoccupied_space_you_can_see"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hunter-hunters-lore",
+      "owner_type": "subclass",
+      "owner_id": "ranger-hunter",
+      "level": 3,
+      "name_en": "Hunter's Lore",
+      "name_de": "Jägerkunde",
+      "player_choice": false,
+      "text_en": "You can call on the forces of nature to reveal certain strengths and weaknesses of your prey. While a creature is marked by your Hunter's Mark, you know whether that creature has any Immunities, Resistances, or Vulnerabilities, and if the creature has any, you know what they are.",
+      "text_de": "Du kannst die Kräfte der Natur beschwören, um bestimmte Stärken und Schwächen deiner Beute zu enthüllen. Wenn eine Kreatur mit deinem Zeichen des Jägers markiert ist, erkennst du, ob diese Kreatur Immunitäten, Resistenzen oder Anfälligkeiten hat, und wenn ja, welche.",
+      "grants": [
+        {
+          "type": "passive",
+          "effect": "reveal_immunities_resistances_vulnerabilities",
+          "condition": "target_marked_by_hunters_mark"
+        }
+      ]
+    },
+    {
+      "id": "hunter-hunters-prey",
+      "owner_type": "subclass",
+      "owner_id": "ranger-hunter",
+      "level": 3,
+      "name_en": "Hunter's Prey",
+      "name_de": "Beute des Jägers",
+      "player_choice": true,
+      "choice_prompt_en": "Choose one option: Colossus Slayer or Horde Breaker. You can swap your choice whenever you finish a Short or Long Rest.",
+      "choice_prompt_de": "Wähle eine Option: Hordenbrecher oder Kolossschlächter. Du kannst deine Entscheidung nach jeder kurzen oder langen Rast austauschen.",
+      "text_en": "You gain one of the following feature options of your choice. Whenever you finish a Short or Long Rest, you can replace the chosen option with the other one.\n\nColossus Slayer. Your tenacity can wear down even the most resilient foes. When you hit a creature with a weapon, the weapon deals an extra 1d8 damage to the target if it's missing any of its Hit Points. You can deal this extra damage only once per turn.\n\nHorde Breaker. Once on each of your turns when you make an attack with a weapon, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target, that is within the weapon's range, and that you haven't attacked this turn.",
+      "text_de": "Du erhältst eine der folgenden Merkmal-Optionen nach deiner Wahl. Wann immer du eine kurze oder lange Rast beendest, kannst du die ausgewählte Option durch eine andere ersetzen.\n\nKolossschlächter: Wenn du eine Kreatur mit einer Waffe triffst, bewirkt diese zusätzlich 1W8 Schaden, sofern das Ziel nicht mehr all seine Trefferpunkte hat. Du kannst diesen zusätzlichen Schaden nur einmal pro Zug bewirken.\n\nHordenbrecher: Einmal in jedem deiner Züge kannst du, wenn du einen Waffenangriff ausführst, einen weiteren Angriff auf eine andere Kreatur im Abstand von bis zu 1,5 Metern vom ursprünglichen Ziel sowie innerhalb der Waffenreichweite ausführen, sofern du die andere Kreatur in diesem Zug noch nicht angegriffen hast.",
+      "grants": [
+        {
+          "type": "choice",
+          "choose": 1,
+          "change_on": [
+            "short_rest",
+            "long_rest"
+          ],
+          "options": [
+            {
+              "id": "hunters-prey-colossus-slayer",
+              "name_en": "Colossus Slayer",
+              "name_de": "Kolossschlächter",
+              "text_en": "When you hit a creature with a weapon, the weapon deals an extra 1d8 damage to the target if it's missing any of its Hit Points. You can deal this extra damage only once per turn.",
+              "text_de": "Wenn du eine Kreatur mit einer Waffe triffst, bewirkt diese zusätzlich 1W8 Schaden, sofern das Ziel nicht mehr all seine Trefferpunkte hat. Du kannst diesen zusätzlichen Schaden nur einmal pro Zug bewirken.",
+              "grants": [
+                {
+                  "type": "on_hit_effect",
+                  "attack_type": "weapon",
+                  "condition": "target_missing_hit_points",
+                  "once_per_turn": true,
+                  "effect": {
+                    "type": "damage",
+                    "damage_type": "weapon_type",
+                    "value": {
+                      "dice": "1d8"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "hunters-prey-horde-breaker",
+              "name_en": "Horde Breaker",
+              "name_de": "Hordenbrecher",
+              "text_en": "Once on each of your turns when you make an attack with a weapon, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target, that is within the weapon's range, and that you haven't attacked this turn.",
+              "text_de": "Einmal in jedem deiner Züge kannst du, wenn du einen Waffenangriff ausführst, einen weiteren Angriff auf eine andere Kreatur im Abstand von bis zu 1,5 Metern vom ursprünglichen Ziel sowie innerhalb der Waffenreichweite ausführen, sofern du die andere Kreatur in diesem Zug noch nicht angegriffen hast.",
+              "grants": [
+                {
+                  "type": "triggered_effect",
+                  "trigger": "make_weapon_attack",
+                  "once_per_turn": true,
+                  "optional": true,
+                  "effect": {
+                    "type": "bonus_attack",
+                    "weapon": "same_weapon",
+                    "target": "different_creature_within_5ft_of_original_target_not_yet_attacked_this_turn"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hunter-defensive-tactics",
+      "owner_type": "subclass",
+      "owner_id": "ranger-hunter",
+      "level": 7,
+      "name_en": "Defensive Tactics",
+      "name_de": "Defensive Taktiken",
+      "player_choice": true,
+      "choice_prompt_en": "Choose one option: Escape the Horde or Multiattack Defense. You can swap your choice whenever you finish a Short or Long Rest.",
+      "choice_prompt_de": "Wähle eine Option: Der Horde entkommen oder Verteidigung gegen Mehrfachangriffe. Du kannst deine Entscheidung nach jeder kurzen oder langen Rast austauschen.",
+      "text_en": "You gain one of the following feature options of your choice. Whenever you finish a Short or Long Rest, you can replace the chosen option with the other one.\n\nEscape the Horde. Opportunity Attacks have Disadvantage against you.\n\nMultiattack Defense. When a creature hits you with an attack roll, that creature has Disadvantage on all other attack rolls against you this turn.",
+      "text_de": "Du erhältst eine der folgenden Merkmal-Optionen nach deiner Wahl. Wann immer du eine kurze oder lange Rast beendest, kannst du die ausgewählte Option durch eine andere ersetzen.\n\nDer Horde entkommen: Gelegenheitsangriffe auf dich sind im Nachteil.\n\nVerteidigung gegen Mehrfachangriffe: Wenn eine Kreatur dich mit einem Angriffswurf trifft, ist sie in diesem Zug bei allen anderen Angriffswürfen gegen dich im Nachteil.",
+      "grants": [
+        {
+          "type": "choice",
+          "choose": 1,
+          "change_on": [
+            "short_rest",
+            "long_rest"
+          ],
+          "options": [
+            {
+              "id": "defensive-tactics-escape-the-horde",
+              "name_en": "Escape the Horde",
+              "name_de": "Der Horde entkommen",
+              "text_en": "Opportunity Attacks have Disadvantage against you.",
+              "text_de": "Gelegenheitsangriffe auf dich sind im Nachteil.",
+              "grants": [
+                {
+                  "type": "disadvantage_on_enemies",
+                  "on": "opportunity_attacks",
+                  "against": "self"
+                }
+              ]
+            },
+            {
+              "id": "defensive-tactics-multiattack-defense",
+              "name_en": "Multiattack Defense",
+              "name_de": "Verteidigung gegen Mehrfachangriffe",
+              "text_en": "When a creature hits you with an attack roll, that creature has Disadvantage on all other attack rolls against you this turn.",
+              "text_de": "Wenn eine Kreatur dich mit einem Angriffswurf trifft, ist sie in diesem Zug bei allen anderen Angriffswürfen gegen dich im Nachteil.",
+              "grants": [
+                {
+                  "type": "triggered_effect",
+                  "trigger": "hit_by_attack_roll",
+                  "effect": {
+                    "type": "impose_disadvantage",
+                    "on": "all_other_attack_rolls_against_self_this_turn",
+                    "target": "attacking_creature"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hunter-superior-hunters-prey",
+      "owner_type": "subclass",
+      "owner_id": "ranger-hunter",
+      "level": 11,
+      "name_en": "Superior Hunter's Prey",
+      "name_de": "Beute des überlegenen Jägers",
+      "player_choice": false,
+      "text_en": "Once per turn when you deal damage to a creature marked by your Hunter's Mark, you can also deal that spell's extra damage to a different creature that you can see within 30 feet of the first creature.",
+      "text_de": "Einmal pro Zug kannst du, wenn du einer mit deinem Zeichen des Jägers markierten Kreatur Schaden zufügst, den zusätzlichen Schaden des Zaubers noch einer weiteren Kreatur im Abstand von bis zu neun Metern vom ersten Ziel zufügen, die du sehen kannst.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "deal_damage_to_hunters_mark_target",
+          "once_per_turn": true,
+          "optional": true,
+          "effect": {
+            "type": "copy_spell_bonus_damage",
+            "spell_id": "hunters-mark",
+            "secondary_target": "different_creature_within_30ft_you_can_see"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hunter-superior-hunters-defense",
+      "owner_type": "subclass",
+      "owner_id": "ranger-hunter",
+      "level": 15,
+      "name_en": "Superior Hunter's Defense",
+      "name_de": "Verteidigung des überlegenen Jägers",
+      "player_choice": false,
+      "text_en": "When you take damage, you can take a Reaction to give yourself Resistance to that damage and any other damage of the same type until the end of the current turn.",
+      "text_de": "Wenn du Schaden erleidest, kannst du eine Reaktion ausführen, um dir bis zum Ende des aktuellen Zugs Resistenz gegen diesen Schaden und jeden anderen Schaden der gleichen Art zu verleihen.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "take_damage",
+          "action_type": "reaction",
+          "effect": {
+            "type": "damage_resistance",
+            "damage_types": [
+              "triggering_type"
+            ],
+            "duration": "until_end_of_current_turn"
+          }
+        }
+      ]
+    }
+  ],
+  "subclass_progressions": [
+    {
+      "subclass_id": "ranger-fey-wanderer",
+      "levels": [
+        {
+          "level": 3,
+          "resources": {
+            "dreadful_strikes_die": "d4"
+          }
+        },
+        {
+          "level": 11,
+          "resources": {
+            "dreadful_strikes_die": "d6"
+          }
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": "beast-of-the-land",
+      "name_en": "Beast of the Land",
+      "name_de": "Urtier des Landes",
+      "type": "companion_stat_block",
+      "size": "medium",
+      "creature_type": "beast",
+      "alignment": "neutral",
+      "ac": {
+        "base": 13,
+        "modifiers": [
+          "wisdom"
+        ]
+      },
+      "hp": {
+        "base": 5,
+        "per_ranger_level": 5,
+        "hit_dice": {
+          "count_from_resource": "ranger_level",
+          "die": "d8"
+        }
+      },
+      "speed": {
+        "walk_feet": 40,
+        "climb_feet": 40
+      },
+      "ability_scores": {
+        "strength": 14,
+        "dexterity": 14,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 14,
+        "charisma": 11
+      },
+      "saving_throws": "all_equal_to_ability_modifiers",
+      "senses": {
+        "darkvision_feet": 60,
+        "passive_perception": 12
+      },
+      "languages": "understands_ranger_languages",
+      "proficiency_bonus": "equals_ranger_proficiency_bonus",
+      "traits": [
+        {
+          "id": "primal-bond",
+          "name_en": "Primal Bond",
+          "name_de": "Urbindung",
+          "text_en": "Add your Proficiency Bonus to any ability check or saving throw the beast makes.",
+          "text_de": "Füge allen Attributs- und Rettungswürfen des Tieres deinen Übungsbonus hinzu.",
+          "grants": [
+            {
+              "type": "proficiency_bonus_to_all_checks_and_saves",
+              "target": "self"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "beasts-strike",
+          "name_en": "Beast's Strike",
+          "name_de": "Bestienschlag",
+          "text_en": "Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + 2 plus your Wisdom modifier Bludgeoning, Piercing, or Slashing damage (your choice when you summon the beast). If the beast moved at least 20 feet straight toward the target before the hit, the target takes an extra 1d6 damage of the same type, and the target has the Prone condition if it is a Large or smaller creature.",
+          "text_de": "Nahkampfangriffswurf Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite 1,5 Meter. Treffer: Hieb-, Stich- oder Wuchtschaden (nach deiner Wahl beim Herbeirufen) in Höhe von 1W8+2 plus deines Weisheitsmodifikators. Wenn das Tier sich vor dem Treffer mindestens sechs Meter weit in gerader Linie auf das Ziel zu bewegt hat, erleidet das Ziel zusätzlich 1W6 Schaden desselben Typs, und wenn es sich um eine Kreatur von höchstens großer Größe handelt, wird es umgestoßen.",
+          "attack_roll_bonus": "spell_attack_modifier",
+          "reach_feet": 5,
+          "damage": {
+            "base": {
+              "dice": "1d8",
+              "flat": 2,
+              "flat_modifier": "wisdom_modifier"
+            },
+            "damage_type_choice": [
+              "bludgeoning",
+              "piercing",
+              "slashing"
+            ],
+            "choose_on": "summon"
+          },
+          "conditional_effect": {
+            "condition": "moved_20ft_straight_toward_target",
+            "extra_damage": {
+              "dice": "1d6",
+              "type": "same_as_base"
+            },
+            "on_hit_effect": {
+              "type": "apply_condition",
+              "condition": "prone",
+              "target_size_max": "large"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "beast-of-the-sky",
+      "name_en": "Beast of the Sky",
+      "name_de": "Urtier des Himmels",
+      "type": "companion_stat_block",
+      "size": "small",
+      "creature_type": "beast",
+      "alignment": "neutral",
+      "ac": {
+        "base": 13,
+        "modifiers": [
+          "wisdom"
+        ]
+      },
+      "hp": {
+        "base": 4,
+        "per_ranger_level": 4,
+        "hit_dice": {
+          "count_from_resource": "ranger_level",
+          "die": "d6"
+        }
+      },
+      "speed": {
+        "walk_feet": 10,
+        "fly_feet": 60
+      },
+      "ability_scores": {
+        "strength": 6,
+        "dexterity": 16,
+        "constitution": 13,
+        "intelligence": 8,
+        "wisdom": 14,
+        "charisma": 11
+      },
+      "saving_throws": "all_equal_to_ability_modifiers",
+      "senses": {
+        "darkvision_feet": 60,
+        "passive_perception": 12
+      },
+      "languages": "understands_ranger_languages",
+      "proficiency_bonus": "equals_ranger_proficiency_bonus",
+      "traits": [
+        {
+          "id": "flyby",
+          "name_en": "Flyby",
+          "name_de": "Vorbeifliegen",
+          "text_en": "The beast doesn't provoke Opportunity Attacks when it flies out of an enemy's reach.",
+          "text_de": "Das Tier provoziert keine Gelegenheitsangriffe, wenn es die Reichweite eines Gegners verlässt.",
+          "grants": [
+            {
+              "type": "restriction_override",
+              "restriction_id": "provoke_opportunity_attacks",
+              "condition": "flying_out_of_reach"
+            }
+          ]
+        },
+        {
+          "id": "primal-bond",
+          "name_en": "Primal Bond",
+          "name_de": "Urbindung",
+          "text_en": "Add your Proficiency Bonus to any ability check or saving throw the beast makes.",
+          "text_de": "Füge allen Attributs- und Rettungswürfen des Tieres deinen Übungsbonus hinzu.",
+          "grants": [
+            {
+              "type": "proficiency_bonus_to_all_checks_and_saves",
+              "target": "self"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "beasts-strike",
+          "name_en": "Beast's Strike",
+          "name_de": "Bestienschlag",
+          "text_en": "Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d4 + 3 plus your Wisdom modifier Slashing damage.",
+          "text_de": "Nahkampfangriffswurf Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite 1,5 Meter. Treffer: 1W4+3 plus dein Weisheitsmodifikator Hiebschaden.",
+          "attack_roll_bonus": "spell_attack_modifier",
+          "reach_feet": 5,
+          "damage": {
+            "base": {
+              "dice": "1d4",
+              "flat": 3,
+              "flat_modifier": "wisdom_modifier"
+            },
+            "damage_type": "slashing"
+          }
+        }
+      ]
+    },
+    {
+      "id": "beast-of-the-sea",
+      "name_en": "Beast of the Sea",
+      "name_de": "Urtier des Meeres",
+      "type": "companion_stat_block",
+      "size": "medium",
+      "creature_type": "beast",
+      "alignment": "neutral",
+      "ac": {
+        "base": 13,
+        "modifiers": [
+          "wisdom"
+        ]
+      },
+      "hp": {
+        "base": 5,
+        "per_ranger_level": 5,
+        "hit_dice": {
+          "count_from_resource": "ranger_level",
+          "die": "d8"
+        }
+      },
+      "speed": {
+        "walk_feet": 5,
+        "swim_feet": 60
+      },
+      "ability_scores": {
+        "strength": 14,
+        "dexterity": 14,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 14,
+        "charisma": 11
+      },
+      "saving_throws": "all_equal_to_ability_modifiers",
+      "senses": {
+        "darkvision_feet": 90,
+        "passive_perception": 12
+      },
+      "languages": "understands_ranger_languages",
+      "proficiency_bonus": "equals_ranger_proficiency_bonus",
+      "traits": [
+        {
+          "id": "amphibious",
+          "name_en": "Amphibious",
+          "name_de": "Amphibisch",
+          "text_en": "The beast can breathe air and water.",
+          "text_de": "Das Tier kann Luft und Wasser atmen.",
+          "grants": [
+            {
+              "type": "passive",
+              "effect": "breathe_air_and_water"
+            }
+          ]
+        },
+        {
+          "id": "primal-bond",
+          "name_en": "Primal Bond",
+          "name_de": "Urbindung",
+          "text_en": "Add your Proficiency Bonus to any ability check or saving throw the beast makes.",
+          "text_de": "Füge allen Attributs- und Rettungswürfen des Tieres deinen Übungsbonus hinzu.",
+          "grants": [
+            {
+              "type": "proficiency_bonus_to_all_checks_and_saves",
+              "target": "self"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "beasts-strike",
+          "name_en": "Beast's Strike",
+          "name_de": "Bestienschlag",
+          "text_en": "Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d6 + 2 plus your Wisdom modifier Bludgeoning or Piercing damage (your choice when you summon the beast), and the target has the Grappled condition (escape DC equals your spell save DC).",
+          "text_de": "Nahkampfangriffswurf Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite 1,5 Meter. Treffer: 1W6+2 plus dein Weisheitsmodifikator Stich- oder Wuchtschaden (nach deiner Wahl beim Herbeirufen), und das Ziel wird gepackt (Rettungswurf-SC entspricht deinem Zauberrettungswurf-SC).",
+          "attack_roll_bonus": "spell_attack_modifier",
+          "reach_feet": 5,
+          "damage": {
+            "base": {
+              "dice": "1d6",
+              "flat": 2,
+              "flat_modifier": "wisdom_modifier"
+            },
+            "damage_type_choice": [
+              "bludgeoning",
+              "piercing"
+            ],
+            "choose_on": "summon"
+          },
+          "on_hit_effect": {
+            "type": "apply_condition",
+            "condition": "grappled",
+            "escape_dc": "spell_save_dc"
+          }
+        }
+      ]
+    }
+  ]
+}

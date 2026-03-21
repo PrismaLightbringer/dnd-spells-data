@@ -1,0 +1,1975 @@
+{
+  "class": {
+    "id": "monk",
+    "name_en": "Monk",
+    "name_de": "Mönch",
+    "hit_die": "d8",
+    "primary_abilities": [
+      "dexterity",
+      "wisdom"
+    ],
+    "saving_throw_proficiencies": [
+      "strength",
+      "dexterity"
+    ],
+    "proficiencies": {
+      "skills": {
+        "choose": 2,
+        "from": [
+          "acrobatics",
+          "athletics",
+          "history",
+          "insight",
+          "religion",
+          "stealth"
+        ]
+      },
+      "weapons": [
+        "simple",
+        "martial_light"
+      ],
+      "tools": {
+        "choose": 1,
+        "from": [
+          "artisans_tools",
+          "musical_instrument"
+        ]
+      },
+      "armor": []
+    },
+    "starting_equipment": {
+      "choose": 1,
+      "options": [
+        {
+          "id": "option_a",
+          "items": [
+            "spear",
+            "dagger_x5",
+            "artisans_tools_or_musical_instrument",
+            "explorers_pack",
+            "11gp"
+          ]
+        },
+        {
+          "id": "option_b",
+          "items": [
+            "50gp"
+          ]
+        }
+      ]
+    },
+    "multiclass_rules": {
+      "grants": [
+        "hit_die_d8"
+      ]
+    },
+    "subclass_level": 3
+  },
+  "class_progression": {
+    "class_id": "monk",
+    "levels": [
+      {
+        "level": 1,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "monk-martial-arts",
+          "monk-unarmored-defense"
+        ],
+        "resources": {
+          "monk_level": 1,
+          "martial_arts_die": "d6",
+          "focus_points": 0,
+          "unarmored_movement_bonus_feet": 0
+        }
+      },
+      {
+        "level": 2,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "monk-monks-focus",
+          "monk-unarmored-movement",
+          "monk-uncanny-metabolism"
+        ],
+        "resources": {
+          "monk_level": 2,
+          "martial_arts_die": "d6",
+          "focus_points": 2,
+          "unarmored_movement_bonus_feet": 10
+        }
+      },
+      {
+        "level": 3,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "monk-deflect-attacks",
+          "monk-subclass"
+        ],
+        "subclass_feature_level": true,
+        "resources": {
+          "monk_level": 3,
+          "martial_arts_die": "d6",
+          "focus_points": 3,
+          "unarmored_movement_bonus_feet": 10
+        }
+      },
+      {
+        "level": 4,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "monk-asi-4",
+          "monk-slow-fall"
+        ],
+        "resources": {
+          "monk_level": 4,
+          "martial_arts_die": "d6",
+          "focus_points": 4,
+          "unarmored_movement_bonus_feet": 10
+        }
+      },
+      {
+        "level": 5,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "monk-extra-attack",
+          "monk-stunning-strike"
+        ],
+        "resources": {
+          "monk_level": 5,
+          "martial_arts_die": "d8",
+          "focus_points": 5,
+          "unarmored_movement_bonus_feet": 10
+        }
+      },
+      {
+        "level": 6,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "monk-empowered-strikes"
+        ],
+        "subclass_feature_level": true,
+        "resources": {
+          "monk_level": 6,
+          "martial_arts_die": "d8",
+          "focus_points": 6,
+          "unarmored_movement_bonus_feet": 15
+        }
+      },
+      {
+        "level": 7,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "monk-evasion"
+        ],
+        "resources": {
+          "monk_level": 7,
+          "martial_arts_die": "d8",
+          "focus_points": 7,
+          "unarmored_movement_bonus_feet": 15
+        }
+      },
+      {
+        "level": 8,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "monk-asi-8"
+        ],
+        "resources": {
+          "monk_level": 8,
+          "martial_arts_die": "d8",
+          "focus_points": 8,
+          "unarmored_movement_bonus_feet": 15
+        }
+      },
+      {
+        "level": 9,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "monk-acrobatic-movement"
+        ],
+        "resources": {
+          "monk_level": 9,
+          "martial_arts_die": "d8",
+          "focus_points": 9,
+          "unarmored_movement_bonus_feet": 15
+        }
+      },
+      {
+        "level": 10,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "monk-heightened-focus",
+          "monk-self-restoration"
+        ],
+        "resources": {
+          "monk_level": 10,
+          "martial_arts_die": "d8",
+          "focus_points": 10,
+          "unarmored_movement_bonus_feet": 20
+        }
+      },
+      {
+        "level": 11,
+        "proficiency_bonus": 4,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "monk_level": 11,
+          "martial_arts_die": "d10",
+          "focus_points": 11,
+          "unarmored_movement_bonus_feet": 20
+        }
+      },
+      {
+        "level": 12,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "monk-asi-12"
+        ],
+        "resources": {
+          "monk_level": 12,
+          "martial_arts_die": "d10",
+          "focus_points": 12,
+          "unarmored_movement_bonus_feet": 20
+        }
+      },
+      {
+        "level": 13,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "monk-deflect-energy"
+        ],
+        "resources": {
+          "monk_level": 13,
+          "martial_arts_die": "d10",
+          "focus_points": 13,
+          "unarmored_movement_bonus_feet": 20
+        }
+      },
+      {
+        "level": 14,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "monk-disciplined-survivor"
+        ],
+        "resources": {
+          "monk_level": 14,
+          "martial_arts_die": "d10",
+          "focus_points": 14,
+          "unarmored_movement_bonus_feet": 25
+        }
+      },
+      {
+        "level": 15,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "monk-perfect-focus"
+        ],
+        "resources": {
+          "monk_level": 15,
+          "martial_arts_die": "d10",
+          "focus_points": 15,
+          "unarmored_movement_bonus_feet": 25
+        }
+      },
+      {
+        "level": 16,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "monk-asi-16"
+        ],
+        "resources": {
+          "monk_level": 16,
+          "martial_arts_die": "d10",
+          "focus_points": 16,
+          "unarmored_movement_bonus_feet": 25
+        }
+      },
+      {
+        "level": 17,
+        "proficiency_bonus": 6,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "monk_level": 17,
+          "martial_arts_die": "d12",
+          "focus_points": 17,
+          "unarmored_movement_bonus_feet": 25
+        }
+      },
+      {
+        "level": 18,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "monk-superior-defense"
+        ],
+        "resources": {
+          "monk_level": 18,
+          "martial_arts_die": "d12",
+          "focus_points": 18,
+          "unarmored_movement_bonus_feet": 30
+        }
+      },
+      {
+        "level": 19,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "monk-epic-boon"
+        ],
+        "resources": {
+          "monk_level": 19,
+          "martial_arts_die": "d12",
+          "focus_points": 19,
+          "unarmored_movement_bonus_feet": 30
+        }
+      },
+      {
+        "level": 20,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "monk-body-and-mind"
+        ],
+        "resources": {
+          "monk_level": 20,
+          "martial_arts_die": "d12",
+          "focus_points": 20,
+          "unarmored_movement_bonus_feet": 30
+        }
+      }
+    ]
+  },
+  "subclasses": [
+    {
+      "id": "monk-warrior-of-mercy",
+      "class_id": "monk",
+      "name_en": "Warrior of Mercy",
+      "name_de": "Krieger der Gnade",
+      "feature_levels": [
+        3,
+        6,
+        11,
+        17
+      ]
+    },
+    {
+      "id": "monk-warrior-of-shadow",
+      "class_id": "monk",
+      "name_en": "Warrior of Shadow",
+      "name_de": "Krieger der Schatten",
+      "feature_levels": [
+        3,
+        6,
+        11,
+        17
+      ]
+    },
+    {
+      "id": "monk-warrior-of-the-elements",
+      "class_id": "monk",
+      "name_en": "Warrior of the Elements",
+      "name_de": "Krieger der Elemente",
+      "feature_levels": [
+        3,
+        6,
+        11,
+        17
+      ]
+    },
+    {
+      "id": "monk-warrior-of-the-open-hand",
+      "class_id": "monk",
+      "name_en": "Warrior of the Open Hand",
+      "name_de": "Krieger der Offenen Hand",
+      "feature_levels": [
+        3,
+        6,
+        11,
+        17
+      ]
+    }
+  ],
+  "features": [
+    {
+      "id": "monk-martial-arts",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 1,
+      "name_en": "Martial Arts",
+      "name_de": "Kampfkünste",
+      "player_choice": false,
+      "text_en": "Your practice of martial arts gives you mastery of combat styles that use your Unarmed Strike and Monk weapons, which are Simple Melee weapons and Martial Melee weapons that have the Light property.\n\nYou gain the following benefits while you are unarmed or wielding only Monk weapons and you aren't wearing armor or wielding a Shield.\n\nBonus Unarmed Strike. You can make an Unarmed Strike as a Bonus Action.\n\nMartial Arts Die. You can roll 1d6 in place of the normal damage of your Unarmed Strike or Monk weapons. This die changes as you gain Monk levels, as shown in the Martial Arts column of the Monk Features table.\n\nDexterous Attacks. You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes and Monk weapons. In addition, when you use the Grapple or Shove option of your Unarmed Strike, you can use your Dexterity modifier instead of your Strength modifier to determine the save DC.",
+      "text_de": "Deine Vertrautheit mit Kampfkünsten lässt dich folgende Kampfstile mit waffenlosen Angriffen sowie mit Mönchswaffen beherrschen: einfache Nahkampfwaffen und Nahkampf-Kriegswaffen mit der Eigenschaft Leicht.\n\nDu erhältst folgende Vorzüge, wenn du unbewaffnet bist oder nur Mönchswaffen verwendest und weder Rüstung noch Schild trägst.\n\nWaffenloser Bonusangriff: Du kannst als Bonusaktion einen waffenlosen Angriff ausführen.\n\nKampfkünste-Würfel: Bei waffenlosen Angriffen oder im Kampf mit Mönchswaffen kannst du mit dem Kampfkünste-Würfel statt dem normalen Schadenswürfel würfeln.\n\nGeschickte Angriffe: Du kannst deinen Geschicklichkeitsmodifikator statt des Stärkemodifikators für Angriffs- und Schadenswürfe verwenden. Du kannst auch beim Packen oder Stoßen deinen Geschicklichkeitsmodifikator für den Rettungswurf-SG verwenden.",
+      "grants": [
+        {
+          "type": "martial_arts",
+          "condition": "unarmed_or_monk_weapons_only_and_no_armor_or_shield",
+          "monk_weapons": [
+            "simple_melee",
+            "martial_melee_light"
+          ]
+        },
+        {
+          "type": "bonus_action_grant",
+          "actions": [
+            "unarmed_strike"
+          ],
+          "condition": "unarmed_or_monk_weapons_only_and_no_armor_or_shield"
+        },
+        {
+          "type": "damage_die_override",
+          "applies_to": [
+            "unarmed_strike",
+            "monk_weapons"
+          ],
+          "die_from_resource": "martial_arts_die",
+          "condition": "unarmed_or_monk_weapons_only_and_no_armor_or_shield"
+        },
+        {
+          "type": "ability_check_override",
+          "override_ability": "dexterity",
+          "applies_to": [
+            "unarmed_strike_attack_rolls",
+            "unarmed_strike_damage_rolls",
+            "monk_weapon_attack_rolls",
+            "monk_weapon_damage_rolls"
+          ],
+          "note": "Optional — player may still use Strength."
+        },
+        {
+          "type": "ability_check_override",
+          "override_ability": "dexterity",
+          "applies_to": [
+            "grapple_save_dc",
+            "shove_save_dc"
+          ],
+          "attack_type": "unarmed_strike"
+        }
+      ]
+    },
+    {
+      "id": "monk-unarmored-defense",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 1,
+      "name_en": "Unarmored Defense",
+      "name_de": "Ungerüstete Verteidigung",
+      "player_choice": false,
+      "text_en": "While you aren't wearing armor or wielding a Shield, your base Armor Class equals 10 plus your Dexterity and Wisdom modifiers.",
+      "text_de": "Solange du weder Rüstung noch Schild trägst, entspricht deine Basis-Rüstungsklasse 10 plus deinem Geschicklichkeitsmodifikator plus deinem Weisheitsmodifikator.",
+      "grants": [
+        {
+          "type": "ac_formula",
+          "condition": "not_wearing_armor_or_shield",
+          "formula": {
+            "base": 10,
+            "modifiers": [
+              "dexterity",
+              "wisdom"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "monk-monks-focus",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 2,
+      "name_en": "Monk's Focus",
+      "name_de": "Mönchsfokus",
+      "player_choice": false,
+      "text_en": "Your focus and martial training allow you to harness a well of extraordinary energy within yourself, represented by Focus Points. Your Monk level determines the number of points you have. You can expend these points to fuel certain Monk features. You regain all expended Focus Points when you finish a Short or Long Rest.\n\nSaving throw DC for features that use Focus Points equals 8 plus your Wisdom modifier and Proficiency Bonus.\n\nFlurry of Blows. You can expend 1 Focus Point to make two Unarmed Strikes as a Bonus Action.\n\nPatient Defense. You can take the Disengage action as a Bonus Action. Alternatively, you can expend 1 Focus Point to take both the Disengage and the Dodge actions as a Bonus Action.\n\nStep of the Wind. You can take the Dash action as a Bonus Action. Alternatively, you can expend 1 Focus Point to take both the Disengage and Dash actions as a Bonus Action, and your jump distance is doubled for the turn.",
+      "text_de": "Dein Fokus und deine Kampfkunst erlauben dir, eine Quelle außergewöhnlicher Energie zu nutzen, die durch Fokuspunkte repräsentiert wird. Deine Mönchsstufe bestimmt die Anzahl deiner Punkte. Du erhältst verbrauchte Fokuspunkte nach einer kurzen oder langen Rast zurück.\n\nRettungswurf-SG: 8 plus Weisheitsmodifikator plus Übungsbonus.\n\nGeduldige Verteidigung: Du kannst die Rückzug-Aktion als Bonusaktion ausführen. Alternativ kannst du 1 Fokuspunkt verbrauchen, um sowohl die Rückzug- als auch die Ausweichaktion auszuführen.\n\nSchlaghagel: Du kannst 1 Fokuspunkt verbrauchen, um zwei waffenlose Angriffe als Bonusaktion auszuführen.\n\nWindschritt: Du kannst die Spurt-Aktion als Bonusaktion ausführen. Alternativ kannst du 1 Fokuspunkt verbrauchen, um sowohl Rückzug als auch Spurt auszuführen, und deine Sprungdistanz ist verdoppelt.",
+      "grants": [
+        {
+          "type": "uses_resource",
+          "resource": "focus_points",
+          "recharge": [
+            "short_rest",
+            "long_rest"
+          ]
+        },
+        {
+          "type": "saving_throw_dc",
+          "dc_id": "monk_focus_dc",
+          "formula": {
+            "base": 8,
+            "modifiers": [
+              "wisdom_modifier",
+              "proficiency_bonus"
+            ]
+          }
+        },
+        {
+          "type": "active_ability",
+          "ability_id": "flurry_of_blows",
+          "action_type": "bonus_action",
+          "cost": {
+            "resource": "focus_points",
+            "amount": 1
+          },
+          "effect": {
+            "type": "extra_attacks",
+            "attack_type": "unarmed_strike",
+            "attack_count": 2
+          }
+        },
+        {
+          "type": "active_ability",
+          "ability_id": "patient_defense",
+          "action_type": "bonus_action",
+          "options": [
+            {
+              "id": "patient-defense-free",
+              "cost": null,
+              "effect": {
+                "type": "action_grant",
+                "actions": [
+                  "disengage"
+                ]
+              }
+            },
+            {
+              "id": "patient-defense-focus",
+              "cost": {
+                "resource": "focus_points",
+                "amount": 1
+              },
+              "effect": {
+                "type": "action_grant",
+                "actions": [
+                  "disengage",
+                  "dodge"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "active_ability",
+          "ability_id": "step_of_the_wind",
+          "action_type": "bonus_action",
+          "options": [
+            {
+              "id": "step-of-wind-free",
+              "cost": null,
+              "effect": {
+                "type": "action_grant",
+                "actions": [
+                  "dash"
+                ]
+              }
+            },
+            {
+              "id": "step-of-wind-focus",
+              "cost": {
+                "resource": "focus_points",
+                "amount": 1
+              },
+              "effect": {
+                "type": "action_grant",
+                "actions": [
+                  "disengage",
+                  "dash"
+                ],
+                "additional": {
+                  "type": "jump_distance_doubled",
+                  "duration": "current_turn"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "monk-unarmored-movement",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 2,
+      "name_en": "Unarmored Movement",
+      "name_de": "Ungerüstete Bewegung",
+      "player_choice": false,
+      "text_en": "Your speed increases by 10 feet while you aren't wearing armor or wielding a Shield. This bonus increases when you reach certain Monk levels, as shown on the Monk Features table.",
+      "text_de": "Deine Bewegungsrate erhöht sich um drei Meter, sofern du weder Rüstung noch Schild trägst. Dieser Bonus erhöht sich auf bestimmten Mönchsstufen.",
+      "grants": [
+        {
+          "type": "speed_bonus",
+          "value_from_resource": "unarmored_movement_bonus_feet",
+          "condition": "not_wearing_armor_or_shield"
+        }
+      ]
+    },
+    {
+      "id": "monk-uncanny-metabolism",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 2,
+      "name_en": "Uncanny Metabolism",
+      "name_de": "Unglaublicher Stoffwechsel",
+      "player_choice": false,
+      "text_en": "When you roll Initiative, you can regain all expended Focus Points. When you do so, roll your Martial Arts die, and regain a number of Hit Points equal to your Monk level plus the number rolled.\n\nOnce you use this feature, you can't use it again until you finish a Long Rest.",
+      "text_de": "Wenn du die Initiative auswürfelst, kannst du alle verbrauchten Fokuspunkte zurückerhalten. Würfle dazu mit deinem Kampfkünste-Würfel. Du erhältst eine Anzahl von Trefferpunkten in Höhe deiner Mönchsstufe plus des Ergebnisses zurück.\n\nDu kannst dieses Merkmal erst nach einer langen Rast erneut verwenden.",
+      "grants": [
+        {
+          "type": "triggered_resource_restore",
+          "resource": "focus_points",
+          "trigger": "on_initiative",
+          "amount": "all",
+          "optional": true,
+          "recharge": "long_rest"
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "on_uncanny_metabolism_use",
+          "effect": {
+            "type": "heal_self",
+            "value": {
+              "flat_from_resource": "monk_level",
+              "plus_die_roll": {
+                "die_from_resource": "martial_arts_die",
+                "count": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "monk-deflect-attacks",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 3,
+      "name_en": "Deflect Attacks",
+      "name_de": "Angriffe umleiten",
+      "player_choice": false,
+      "text_en": "When an attack roll hits you and its damage includes Bludgeoning, Piercing, or Slashing damage, you can take a Reaction to reduce the attack's total damage against you. The reduction equals 1d10 plus your Dexterity modifier and Monk level.\n\nIf you reduce the damage to 0, you can expend 1 Focus Point to redirect some of the attack's force. Choose a creature within 5 feet of yourself if the attack was melee, or within 60 feet if ranged (not behind Total Cover). That creature must succeed on a Dexterity saving throw or take damage equal to two rolls of your Martial Arts die plus your Dexterity modifier. The damage is the same type as the attack.",
+      "text_de": "Wenn ein Angriffswurf dich trifft und dir Hieb-, Stich- oder Wuchtschaden zufügt, kannst du eine Reaktion ausführen, um den Gesamtschaden zu verringern. Die Verringerung entspricht 1W10 plus Geschicklichkeitsmodifikator plus Mönchsstufe.\n\nWird der Schaden auf 0 verringert, kannst du 1 Fokuspunkt verbrauchen, um die Energie umzuleiten. Wähle eine Kreatur im Abstand von bis zu 1,5 Metern (Nahkampf) oder 18 Metern ohne vollständige Deckung (Fernkampf). Diese Kreatur muss einen Geschicklichkeitsrettungswurf bestehen, oder erleidet Schaden in Höhe von zwei Würfen mit dem Kampfkünste-Würfel plus Geschicklichkeitsmodifikator.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "hit_by_attack_with_bludgeoning_piercing_or_slashing_damage",
+          "action_type": "reaction",
+          "effect": {
+            "type": "damage_reduction",
+            "value": {
+              "dice": {
+                "count": 1,
+                "die": "d10"
+              },
+              "flat_from_resource": "monk_level",
+              "modifier": "dexterity_modifier"
+            }
+          }
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "deflect_attacks_reduces_damage_to_0",
+          "optional": true,
+          "cost": {
+            "resource": "focus_points",
+            "amount": 1
+          },
+          "saving_throw": {
+            "ability": "dexterity",
+            "dc": "monk_focus_dc"
+          },
+          "target": {
+            "if_melee_attack": {
+              "range_feet": 5
+            },
+            "if_ranged_attack": {
+              "range_feet": 60,
+              "not_behind_total_cover": true
+            }
+          },
+          "on_failure": {
+            "type": "deal_damage",
+            "dice": {
+              "count": 2,
+              "die_from_resource": "martial_arts_die"
+            },
+            "modifier": "dexterity_modifier",
+            "damage_type": "same_as_triggering_attack"
+          }
+        }
+      ]
+    },
+    {
+      "id": "monk-subclass",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 3,
+      "name_en": "Monk Subclass",
+      "name_de": "Mönch-Unterklasse",
+      "player_choice": true,
+      "choice_prompt_en": "Choose a Monk subclass: Warrior of Mercy, Warrior of Shadow, Warrior of the Elements, or Warrior of the Open Hand.",
+      "choice_prompt_de": "Wähle eine Mönch-Unterklasse: Krieger der Elemente, Krieger der Gnade, Krieger der Offenen Hand oder Krieger der Schatten.",
+      "text_en": "You gain a Monk subclass of your choice. The Warrior of Mercy, Warrior of Shadow, Warrior of the Elements, and Warrior of the Open Hand subclasses are detailed after this class's description. A subclass is a specialization that grants you features at certain Monk levels. For the rest of your career, you gain each of your subclass's features that are of your Monk level or lower.",
+      "text_de": "Du erhältst eine Mönch-Unterklasse deiner Wahl. Die Unterklassen Krieger der Elemente, Krieger der Gnade, Krieger der Offenen Hand und Krieger der Schatten werden nach der Beschreibung dieser Klasse erläutert.",
+      "grants": [
+        {
+          "type": "subclass_choice",
+          "class_id": "monk"
+        }
+      ]
+    },
+    {
+      "id": "monk-asi-4",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 4,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Monk levels 8, 12, and 16.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl. Du erhältst dieses Merkmal auf der 8., 12. und 16. Mönchsstufe erneut.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "monk-slow-fall",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 4,
+      "name_en": "Slow Fall",
+      "name_de": "Sturz abfedern",
+      "player_choice": false,
+      "text_en": "You can take a Reaction when you fall to reduce any damage you take from the fall by an amount equal to five times your Monk level.",
+      "text_de": "Wenn du stürzt, kannst du eine Reaktion ausführen, um den Sturzschaden um einen Betrag in Höhe des Fünffachen deiner Mönchsstufe zu verringern.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "fall",
+          "action_type": "reaction",
+          "effect": {
+            "type": "damage_reduction",
+            "applies_to": "fall_damage",
+            "value": {
+              "multiplier": 5,
+              "of_resource": "monk_level"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "monk-extra-attack",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 5,
+      "name_en": "Extra Attack",
+      "name_de": "Zusätzlicher Angriff",
+      "player_choice": false,
+      "text_en": "You can attack twice instead of once whenever you take the Attack action on your turn.",
+      "text_de": "Du kannst jetzt zweimal angreifen, wenn du in deinem Zug eine Angriffsaktion ausführst.",
+      "grants": [
+        {
+          "type": "extra_attack",
+          "total_attacks": 2
+        }
+      ]
+    },
+    {
+      "id": "monk-stunning-strike",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 5,
+      "name_en": "Stunning Strike",
+      "name_de": "Betäubender Schlag",
+      "player_choice": false,
+      "text_en": "Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike, you can expend 1 Focus Point to attempt a stunning strike. The target must make a Constitution saving throw. On a failed save, the target has the Stunned condition until the start of your next turn. On a successful save, the target's Speed is halved until the start of your next turn, and the next attack roll made against the target before then has Advantage.",
+      "text_de": "Einmal pro Zug kannst du, wenn du eine Kreatur mit einer Mönchswaffe oder einem waffenlosen Angriff triffst, 1 Fokuspunkt verbrauchen, um einen Betäubenden Schlag zu versuchen. Das Ziel muss einen Konstitutionsrettungswurf ausführen. Scheitert der Wurf, ist das Ziel bis zum Beginn deines nächsten Zugs betäubt. Bei einem Erfolg ist die Bewegungsrate des Ziels halbiert, und der nächste Angriffswurf gegen das Ziel ist im Vorteil.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "hit_with_monk_weapon_or_unarmed_strike",
+          "once_per_turn": true,
+          "optional": true,
+          "cost": {
+            "resource": "focus_points",
+            "amount": 1
+          },
+          "saving_throw": {
+            "ability": "constitution",
+            "dc": "monk_focus_dc"
+          },
+          "on_failure": {
+            "type": "apply_condition",
+            "condition": "stunned",
+            "duration": "until_start_of_your_next_turn"
+          },
+          "on_success": {
+            "speed_halved_until": "start_of_your_next_turn",
+            "next_attack_against_target_has_advantage": true,
+            "window": "until_start_of_your_next_turn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "monk-empowered-strikes",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 6,
+      "name_en": "Empowered Strikes",
+      "name_de": "Mächtige Schläge",
+      "player_choice": false,
+      "text_en": "Whenever you deal damage with your Unarmed Strike, it can deal your choice of Force damage or its normal damage type.",
+      "text_de": "Wann immer du mit deinem waffenlosen Angriff Schaden bewirkst, kannst du damit auch Energieschaden oder die normale Schadensart (nach deiner Wahl) bewirken.",
+      "grants": [
+        {
+          "type": "damage_type_choice",
+          "applies_to": "unarmed_strike",
+          "options": [
+            "force",
+            "normal_damage_type"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "monk-evasion",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 7,
+      "name_en": "Evasion",
+      "name_de": "Entrinnen",
+      "player_choice": false,
+      "text_en": "When you're subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can't use this feature if you have the Incapacitated condition.",
+      "text_de": "Bist du einem Effekt ausgesetzt, der dir einen Geschicklichkeitsrettungswurf erlaubt, um den Schaden zu halbieren, so erleidest du bei einem Erfolg gar keinen und bei einem Misserfolg den halben Schaden. Du erhältst diesen Vorzug nicht, wenn du kampfunfähig bist.",
+      "grants": [
+        {
+          "type": "evasion",
+          "applies_to": "dexterity_saving_throw_half_damage_effects",
+          "on_success": "no_damage",
+          "on_failure": "half_damage",
+          "condition": "not_incapacitated"
+        }
+      ]
+    },
+    {
+      "id": "monk-acrobatic-movement",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 9,
+      "name_en": "Acrobatic Movement",
+      "name_de": "Akrobatische Bewegung",
+      "player_choice": false,
+      "text_en": "While you aren't wearing armor or wielding a Shield, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the movement.",
+      "text_de": "Sofern du weder Rüstung noch Schild trägst, erhältst du die Fähigkeit, dich in deinem Zug an vertikalen Oberflächen oder auf Flüssigkeiten zu bewegen, ohne zu stürzen.",
+      "grants": [
+        {
+          "type": "movement_special",
+          "condition": "not_wearing_armor_or_shield",
+          "restriction": "no_falling_during_movement_on_your_turn",
+          "mode": "walk_on_vertical_surfaces"
+        },
+        {
+          "type": "movement_special",
+          "condition": "not_wearing_armor_or_shield",
+          "restriction": "no_falling_during_movement_on_your_turn",
+          "mode": "walk_on_liquids"
+        }
+      ]
+    },
+    {
+      "id": "monk-heightened-focus",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 10,
+      "name_en": "Heightened Focus",
+      "name_de": "Erhöhter Fokus",
+      "player_choice": false,
+      "text_en": "Your Flurry of Blows, Patient Defense, and Step of the Wind gain the following benefits.\n\nFlurry of Blows. You can expend 1 Focus Point to use Flurry of Blows and make three Unarmed Strikes with it instead of two.\n\nPatient Defense. When you expend a Focus Point to use Patient Defense, you gain a number of Temporary Hit Points equal to two rolls of your Martial Arts die.\n\nStep of the Wind. When you expend a Focus Point to use Step of the Wind, you can choose a willing creature within 5 feet of yourself that is Large or smaller. You move the creature with you until the end of your turn. The creature's movement doesn't provoke Opportunity Attacks.",
+      "text_de": "Geduldige Verteidigung, Schlaghagel und Windschritt erhalten folgende Vorzüge.\n\nSchlaghagel: Du kannst 1 Fokuspunkt verbrauchen, um drei waffenlose Angriffe statt zwei auszuführen.\n\nGeduldige Verteidigung: Wenn du einen Fokuspunkt für Geduldige Verteidigung verbrauchst, erhältst du temporäre Trefferpunkte in Höhe von zwei Würfen mit deinem Kampfkünste-Würfel.\n\nWindschritt: Wenn du einen Fokuspunkt für Windschritt verbrauchst, kannst du eine bereitwillige Kreatur im Abstand von bis zu 1,5 Metern, die höchstens groß ist, mit dir mitbewegen. Ihre Bewegung provoziert keine Gelegenheitsangriffe.",
+      "grants": [
+        {
+          "type": "feature_modifier",
+          "feature_id": "monk-monks-focus",
+          "modifies_grant": "ability_id:flurry_of_blows",
+          "modification": {
+            "option_id": "flurry_of_blows_focus",
+            "attack_count": 3
+          }
+        },
+        {
+          "type": "feature_modifier",
+          "feature_id": "monk-monks-focus",
+          "modifies_grant": "ability_id:patient_defense",
+          "modification": {
+            "option_id": "patient-defense-focus",
+            "adds_effect": {
+              "type": "temporary_hit_points",
+              "dice": {
+                "count": 2,
+                "die_from_resource": "martial_arts_die"
+              }
+            }
+          }
+        },
+        {
+          "type": "feature_modifier",
+          "feature_id": "monk-monks-focus",
+          "modifies_grant": "ability_id:step_of_the_wind",
+          "modification": {
+            "option_id": "step-of-wind-focus",
+            "adds_effect": {
+              "type": "move_willing_creature_with_you",
+              "target_max_size": "large",
+              "target_range_feet": 5,
+              "duration": "until_end_of_your_turn",
+              "no_opportunity_attacks": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "monk-self-restoration",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 10,
+      "name_en": "Self-Restoration",
+      "name_de": "Selbstwiederherstellung",
+      "player_choice": false,
+      "text_en": "Through sheer force of will, you can remove one of the following conditions from yourself at the end of each of your turns: Charmed, Frightened, or Poisoned.\n\nIn addition, forgoing food and drink doesn't give you levels of Exhaustion.",
+      "text_de": "Durch schiere Willenskraft kannst du am Ende jedes deiner Züge einen der folgenden Zustände von dir selbst entfernen: Bezaubert, Verängstigt oder Vergiftet.\n\nAußerdem erhältst du keine Erschöpfungsstufen, wenn du keine Nahrung und keine Flüssigkeit zu dir nimmst.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "end_of_your_turn",
+          "effect": {
+            "type": "remove_condition",
+            "choose": 1,
+            "conditions": [
+              "charmed",
+              "frightened",
+              "poisoned"
+            ],
+            "target": "self"
+          }
+        },
+        {
+          "type": "passive",
+          "effect": "no_exhaustion_from_forgoing_food_or_drink"
+        }
+      ]
+    },
+    {
+      "id": "monk-asi-8",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 8,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "monk-asi-12",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 12,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "monk-deflect-energy",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 13,
+      "name_en": "Deflect Energy",
+      "name_de": "Energie umleiten",
+      "player_choice": false,
+      "text_en": "You can now use your Deflect Attacks feature against attacks that deal any damage type, not just Bludgeoning, Piercing, or Slashing.",
+      "text_de": "Du kannst jetzt dein Merkmal Angriffe umleiten auch gegen Angriffe einsetzen, die eine beliebige andere Schadensart bewirken.",
+      "grants": [
+        {
+          "type": "feature_modifier",
+          "feature_id": "monk-deflect-attacks",
+          "modification": {
+            "remove_restriction": "damage_type_restriction_bludgeoning_piercing_slashing"
+          }
+        }
+      ]
+    },
+    {
+      "id": "monk-disciplined-survivor",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 14,
+      "name_en": "Disciplined Survivor",
+      "name_de": "Der disziplinierte Überlebende",
+      "player_choice": false,
+      "text_en": "Your physical and mental discipline grant you proficiency in all saving throws.\n\nAdditionally, whenever you make a saving throw and fail, you can expend 1 Focus Point to reroll it, and you must use the new roll.",
+      "text_de": "Deine körperliche und mentale Disziplin gibt dir Übung in allen Rettungswürfen.\n\nAußerdem kannst du, wann immer du bei einem Rettungswurf scheiterst, 1 Fokuspunkt verbrauchen, um erneut zu würfeln. Du musst das neue Ergebnis verwenden.",
+      "grants": [
+        {
+          "type": "saving_throw_proficiency",
+          "abilities": "all"
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "fail_saving_throw",
+          "optional": true,
+          "cost": {
+            "resource": "focus_points",
+            "amount": 1
+          },
+          "effect": {
+            "type": "reroll_saving_throw",
+            "must_use_new_roll": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "monk-perfect-focus",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 15,
+      "name_en": "Perfect Focus",
+      "name_de": "Perfekter Fokus",
+      "player_choice": false,
+      "text_en": "When you roll Initiative and don't use Uncanny Metabolism, you regain expended Focus Points until you have 4 if you have 3 or fewer.",
+      "text_de": "Wenn du die Initiative auswürfelst und nicht Unglaublicher Stoffwechsel verwendest, erhältst du verbrauchte Fokuspunkte zurück, bis du 4 davon hast, sofern du höchstens 3 Punkte hast.",
+      "grants": [
+        {
+          "type": "triggered_resource_restore",
+          "resource": "focus_points",
+          "trigger": "on_initiative",
+          "condition": "uncanny_metabolism_not_used_this_initiative",
+          "minimum": 4,
+          "current_threshold": 3,
+          "note": "Restores focus points up to 4 only if current total is 3 or fewer. Does not apply if Uncanny Metabolism was used on the same initiative roll."
+        }
+      ]
+    },
+    {
+      "id": "monk-asi-16",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 16,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "monk-superior-defense",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 18,
+      "name_en": "Superior Defense",
+      "name_de": "Überlegene Verteidigung",
+      "player_choice": false,
+      "text_en": "At the start of your turn, you can expend 3 Focus Points to bolster yourself against harm for 1 minute or until you have the Incapacitated condition. During that time, you have Resistance to all damage except Force damage.",
+      "text_de": "Zu Beginn deines Zugs kannst du 3 Fokuspunkte verbrauchen, um dich eine Minute lang oder bis du kampfunfähig wirst vor Schaden zu schützen. In dieser Zeit bist du gegen alle Schadensarten außer Energieschaden resistent.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "none",
+          "trigger": "start_of_your_turn",
+          "optional": true,
+          "cost": {
+            "resource": "focus_points",
+            "amount": 3
+          },
+          "effect": {
+            "type": "state",
+            "state_id": "superior_defense",
+            "duration": "1_minute",
+            "end_conditions": [
+              "incapacitated"
+            ]
+          }
+        },
+        {
+          "type": "damage_resistance",
+          "damage_types": "all",
+          "exceptions": [
+            "force"
+          ],
+          "while_state": "superior_defense"
+        }
+      ]
+    },
+    {
+      "id": "monk-epic-boon",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 19,
+      "name_en": "Epic Boon",
+      "name_de": "Epische Gabe",
+      "player_choice": true,
+      "choice_prompt_en": "Gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Irresistible Offense is recommended.",
+      "choice_prompt_de": "Erhalte ein Epische-Gabe-Talent oder ein anderes Talent deiner Wahl. Gabe des Unwiderstehlichen Angriffs wird empfohlen.",
+      "text_en": "You gain an Epic Boon feat (see chapter 5) or another feat of your choice for which you qualify. Boon of Irresistible Offense is recommended.",
+      "text_de": "Du erhältst ein Epische-Gabe-Talent oder ein anderes Talent deiner Wahl. Gabe des Unwiderstehlichen Angriffs wird empfohlen.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "feat_category": "epic_boon",
+          "recommended": "boon_of_irresistible_offense"
+        }
+      ]
+    },
+    {
+      "id": "monk-body-and-mind",
+      "owner_type": "class",
+      "owner_id": "monk",
+      "level": 20,
+      "name_en": "Body and Mind",
+      "name_de": "Körper und Geist",
+      "player_choice": false,
+      "text_en": "You have developed your body and mind to new heights. Your Dexterity and Wisdom scores increase by 4, to a maximum of 25.",
+      "text_de": "Du hast deinen Körper und deinen Geist auf neue Höhen weiterentwickelt. Deine Werte für Geschicklichkeit und Weisheit werden um 4 erhöht (auf höchstens 25).",
+      "grants": [
+        {
+          "type": "ability_score_increase",
+          "abilities": [
+            "dexterity",
+            "wisdom"
+          ],
+          "amount": 4,
+          "maximum": 25
+        }
+      ]
+    }
+  ],
+  "subclass_features": [
+    {
+      "id": "mercy-hand-of-harm",
+      "owner_type": "subclass",
+      "owner_id": "monk-warrior-of-mercy",
+      "level": 3,
+      "name_en": "Hand of Harm",
+      "name_de": "Verletzende Hand",
+      "player_choice": false,
+      "text_en": "Once per turn when you hit a creature with an Unarmed Strike and deal damage, you can expend 1 Focus Point to deal extra Necrotic damage equal to one roll of your Martial Arts die plus your Wisdom modifier.",
+      "text_de": "Einmal pro Zug kannst du, wenn du eine Kreatur mit einem waffenlosen Angriff triffst und Schaden zufügst, 1 Fokuspunkt verbrauchen, um zusätzlichen nekrotischen Schaden in Höhe eines Wurfs des Kampfkünste-Würfels plus Weisheitsmodifikator zuzufügen.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "hit_with_unarmed_strike",
+          "once_per_turn": true,
+          "optional": true,
+          "cost": {
+            "resource": "focus_points",
+            "amount": 1
+          },
+          "effect": {
+            "type": "extra_damage",
+            "dice": {
+              "count": 1,
+              "die_from_resource": "martial_arts_die"
+            },
+            "modifier": "wisdom_modifier",
+            "damage_type": "necrotic"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mercy-hand-of-healing",
+      "owner_type": "subclass",
+      "owner_id": "monk-warrior-of-mercy",
+      "level": 3,
+      "name_en": "Hand of Healing",
+      "name_de": "Heilende Hand",
+      "player_choice": false,
+      "text_en": "As a Magic action, you can expend 1 Focus Point to touch a creature and restore a number of Hit Points equal to a roll of your Martial Arts die plus your Wisdom modifier.\n\nWhen you use your Flurry of Blows, you can replace one of the Unarmed Strikes with a use of this feature without expending a Focus Point for the healing.",
+      "text_de": "Als magische Aktion kannst du 1 Fokuspunkt verbrauchen und eine Kreatur berühren, um Trefferpunkte in Höhe eines Wurfs des Kampfkünste-Würfels plus Weisheitsmodifikator wiederherzustellen.\n\nDu kannst einen der waffenlosen Angriffe von Schlaghagel mit einer Anwendung dieses Merkmals ersetzen, ohne einen Fokuspunkt für die Heilung zu verbrauchen.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "magic_action",
+          "cost": {
+            "resource": "focus_points",
+            "amount": 1
+          },
+          "effect": {
+            "type": "heal",
+            "target": "touched_creature",
+            "dice": {
+              "count": 1,
+              "die_from_resource": "martial_arts_die"
+            },
+            "modifier": "wisdom_modifier"
+          }
+        },
+        {
+          "type": "feature_modifier",
+          "feature_id": "monk-monks-focus",
+          "modifies_grant": "ability_id:flurry_of_blows",
+          "modification": {
+            "allow_replace_one_attack_with": "mercy-hand-of-healing",
+            "replacement_cost": "no_focus_point_for_healing"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mercy-implements-of-mercy",
+      "owner_type": "subclass",
+      "owner_id": "monk-warrior-of-mercy",
+      "level": 3,
+      "name_en": "Implements of Mercy",
+      "name_de": "Angewandte Barmherzigkeit",
+      "player_choice": false,
+      "text_en": "You gain proficiency in the Insight and Medicine skills and proficiency with the Herbalism Kit.",
+      "text_de": "Du erhältst Übung in den Fertigkeiten Heilkunde und Motiv erkennen sowie im Umgang mit Kräuterkundeausrüstung.",
+      "grants": [
+        {
+          "type": "skill_proficiency",
+          "skills": [
+            "insight",
+            "medicine"
+          ]
+        },
+        {
+          "type": "tool_proficiency",
+          "tools": [
+            "herbalism_kit"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mercy-physicians-touch",
+      "owner_type": "subclass",
+      "owner_id": "monk-warrior-of-mercy",
+      "level": 6,
+      "name_en": "Physician's Touch",
+      "name_de": "Medizinische Berührung",
+      "player_choice": false,
+      "text_en": "Your Hand of Harm and Hand of Healing improve.\n\nHand of Harm. When you use Hand of Harm on a creature, you can also give that creature the Poisoned condition until the end of your next turn.\n\nHand of Healing. When you use Hand of Healing, you can also end one of the following conditions on the creature you heal: Blinded, Deafened, Paralyzed, Poisoned, or Stunned.",
+      "text_de": "Deine Merkmale Verletzende Hand und Heilende Hand verbessern sich.\n\nVerletzende Hand: Du kannst der Kreatur außerdem bis zum Ende deines nächsten Zugs den Zustand Vergiftet zufügen.\n\nHeilende Hand: Du kannst außerdem einen der folgenden Zustände bei der geheilten Kreatur beenden: Betäubt, Blind, Gelähmt, Taub oder Vergiftet.",
+      "grants": [
+        {
+          "type": "feature_modifier",
+          "feature_id": "mercy-hand-of-harm",
+          "modification": {
+            "adds_effect": {
+              "type": "apply_condition",
+              "condition": "poisoned",
+              "duration": "until_end_of_your_next_turn",
+              "target": "creature_hit"
+            }
+          }
+        },
+        {
+          "type": "feature_modifier",
+          "feature_id": "mercy-hand-of-healing",
+          "modification": {
+            "adds_effect": {
+              "type": "remove_condition",
+              "choose": 1,
+              "conditions": [
+                "blinded",
+                "deafened",
+                "paralyzed",
+                "poisoned",
+                "stunned"
+              ],
+              "target": "healed_creature"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "mercy-flurry-of-healing-and-harm",
+      "owner_type": "subclass",
+      "owner_id": "monk-warrior-of-mercy",
+      "level": 11,
+      "name_en": "Flurry of Healing and Harm",
+      "name_de": "Schläge von Heilung und Leid",
+      "player_choice": false,
+      "text_en": "When you use Flurry of Blows, you can replace each of the Unarmed Strikes with a use of Hand of Healing without expending Focus Points for the healing.\n\nIn addition, when you make an Unarmed Strike with Flurry of Blows and deal damage, you can use Hand of Harm with that strike without expending a Focus Point for Hand of Harm. You can still use Hand of Harm only once per turn.\n\nYou can use these benefits a total number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.",
+      "text_de": "Wenn du Schlaghagel einsetzt, kannst du jeden der waffenlosen Angriffe mit einem Einsatz deiner Heilenden Hand ersetzen, ohne Fokuspunkte für die Heilung zu verbrauchen.\n\nAußerdem kannst du, wenn du einen waffenlosen Angriff mit Schlaghagel ausführst und Schaden bewirkst, dabei Verletzende Hand einsetzen, ohne einen Fokuspunkt zu verbrauchen. Verletzende Hand bleibt auf einmal pro Zug beschränkt.\n\nDu kannst diese Vorzüge zusammen so oft nutzen, wie dein Weisheitsmodifikator angibt (mindestens einmal). Du erhältst alle Anwendungen nach einer langen Rast zurück.",
+      "grants": [
+        {
+          "type": "feature_modifier",
+          "feature_id": "monk-monks-focus",
+          "modifies_grant": "ability_id:flurry_of_blows",
+          "modification": {
+            "allow_replace_each_attack_with": "mercy-hand-of-healing",
+            "replacement_cost": "no_focus_point_for_healing"
+          }
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "unarmed_strike_with_flurry_of_blows_deals_damage",
+          "optional": true,
+          "effect": {
+            "type": "use_feature",
+            "feature_id": "mercy-hand-of-harm",
+            "cost_override": "no_focus_point",
+            "once_per_turn": true
+          }
+        },
+        {
+          "type": "uses_resource",
+          "resource": "flurry_healing_harm_uses",
+          "recharge": "long_rest",
+          "note": "Pool size equals Wisdom modifier (minimum 1). Shared across all free Hand of Healing replacements and free Hand of Harm uses granted by this feature."
+        }
+      ]
+    },
+    {
+      "id": "mercy-hand-of-ultimate-mercy",
+      "owner_type": "subclass",
+      "owner_id": "monk-warrior-of-mercy",
+      "level": 17,
+      "name_en": "Hand of Ultimate Mercy",
+      "name_de": "Hand der hohen Barmherzigkeit",
+      "player_choice": false,
+      "text_en": "As a Magic action, you can touch the corpse of a creature that died within the past 24 hours and expend 5 Focus Points. The creature then returns to life with a number of Hit Points equal to 4d10 plus your Wisdom modifier. If the creature died with any of the following conditions, the creature revives with the conditions removed: Blinded, Deafened, Paralyzed, Poisoned, and Stunned.\n\nOnce you use this feature, you can't use it again until you finish a Long Rest.",
+      "text_de": "Als magische Aktion kannst du den Leichnam einer Kreatur berühren, die innerhalb der letzten 24 Stunden gestorben ist, und 5 Fokuspunkte verbrauchen. Die Kreatur erwacht mit Trefferpunkten in Höhe von 4W10 plus Weisheitsmodifikator zu neuem Leben. Wenn die Kreatur mit einem der folgenden Zustände gestorben ist, ist dieser nun entfernt: Betäubt, Blind, Gelähmt, Taub und Vergiftet.\n\nDu kannst dieses Merkmal erst nach einer langen Rast erneut verwenden.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "magic_action",
+          "uses": 1,
+          "recharge": "long_rest",
+          "cost": {
+            "resource": "focus_points",
+            "amount": 5
+          },
+          "target_restriction": "corpse_died_within_24_hours",
+          "effect": {
+            "type": "revive",
+            "hp_restored": {
+              "dice": {
+                "count": 4,
+                "die": "d10"
+              },
+              "modifier": "wisdom_modifier"
+            },
+            "removes_conditions_if_died_with": [
+              "blinded",
+              "deafened",
+              "paralyzed",
+              "poisoned",
+              "stunned"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "shadow-shadow-arts",
+      "owner_type": "subclass",
+      "owner_id": "monk-warrior-of-shadow",
+      "level": 3,
+      "name_en": "Shadow Arts",
+      "name_de": "Schattenkünste",
+      "player_choice": false,
+      "text_en": "You have learned to draw on the power of the Shadowfell, gaining the following benefits.\n\nDarkness. You can expend 1 Focus Point to cast the Darkness spell without spell components. You can see within the spell's area when you cast it with this feature. While the spell persists, you can move its area of Darkness to a space within 60 feet of yourself at the start of each of your turns.\n\nDarkvision. You gain Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.\n\nShadowy Figments. You know the Minor Illusion spell. Wisdom is your spellcasting ability for it.",
+      "text_de": "Du hast gelernt, die Macht des Schattenfells zu nutzen.\n\nDunkelheit: Du kannst 1 Fokuspunkt verbrauchen, um den Zauber Dunkelheit ohne Zauberkomponenten zu wirken. Du kannst im Bereich des Zaubers sehen. Solange der Zauber wirkt, kannst du seinen Bereich zu Beginn jedes deiner Züge um bis zu 18 Meter bewegen.\n\nDunkelsicht: Du erhältst Dunkelsicht mit einer Reichweite von 18 Metern. Wenn du bereits Dunkelsicht hast, wird sie um 18 Meter erhöht.\n\nSchattenhafte Gebilde: Du kennst den Zauber Einfache Illusion. Dein Attribut zum Wirken des Zaubers ist Weisheit.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "none",
+          "cost": {
+            "resource": "focus_points",
+            "amount": 1
+          },
+          "effect": {
+            "type": "cast_spell",
+            "spell_id": "darkness",
+            "no_components": true,
+            "special_rules": [
+              "caster_can_see_within_darkness_area",
+              "can_move_darkness_area_up_to_60ft_at_start_of_each_turn"
+            ]
+          }
+        },
+        {
+          "type": "darkvision",
+          "range_feet": 60,
+          "stacking": "additive_if_existing"
+        },
+        {
+          "type": "spell_grant",
+          "spell_id": "minor-illusion",
+          "spellcasting_ability": "wisdom"
+        }
+      ]
+    },
+    {
+      "id": "shadow-shadow-step",
+      "owner_type": "subclass",
+      "owner_id": "monk-warrior-of-shadow",
+      "level": 6,
+      "name_en": "Shadow Step",
+      "name_de": "Schattenschritt",
+      "player_choice": false,
+      "text_en": "While entirely within Dim Light or Darkness, you can use a Bonus Action to teleport up to 60 feet to an unoccupied space you can see that is also in Dim Light or Darkness. You then have Advantage on the next melee attack you make before the end of the current turn.",
+      "text_de": "In dämmrigem Licht oder Dunkelheit kannst du eine Bonusaktion verwenden, um dich bis zu 18 Meter weit in einen freien Bereich zu teleportieren, der ebenfalls in dämmrigem Licht oder Dunkelheit liegt. Dann bist du bei deinem nächsten Nahkampfangriff vor Ende deines aktuellen Zugs im Vorteil.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "ability_id": "shadow_step",
+          "action_type": "bonus_action",
+          "condition": "self_entirely_in_dim_light_or_darkness",
+          "effect": {
+            "type": "teleport",
+            "range_feet": 60,
+            "destination_restriction": "unoccupied_space_in_dim_light_or_darkness"
+          },
+          "after_effect": {
+            "type": "advantage",
+            "on": "next_melee_attack",
+            "window": "until_end_of_current_turn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shadow-improved-shadow-step",
+      "owner_type": "subclass",
+      "owner_id": "monk-warrior-of-shadow",
+      "level": 11,
+      "name_en": "Improved Shadow Step",
+      "name_de": "Verbesserter Schattenschritt",
+      "player_choice": false,
+      "text_en": "When you use your Shadow Step, you can expend 1 Focus Point to remove the requirement that you must start and end in Dim Light or Darkness for that use of the feature. As part of this Bonus Action, you can make an Unarmed Strike immediately after you teleport.",
+      "text_de": "Wenn du Schattenschritt nutzt, kannst du 1 Fokuspunkt verbrauchen, um die Bedingung aufzuheben, dass Start und Ziel in dämmrigem Licht oder Dunkelheit liegen müssen. Als Teil dieser Bonusaktion kannst du sofort nach der Teleportation einen waffenlosen Angriff ausführen.",
+      "grants": [
+        {
+          "type": "feature_modifier",
+          "feature_id": "shadow-shadow-step",
+          "modification": {
+            "optional_upgrade": {
+              "cost": {
+                "resource": "focus_points",
+                "amount": 1
+              },
+              "removes_condition": "self_entirely_in_dim_light_or_darkness",
+              "removes_destination_restriction": "destination_in_dim_light_or_darkness",
+              "adds_effect": {
+                "type": "unarmed_strike",
+                "timing": "immediately_after_teleport"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "shadow-cloak-of-shadows",
+      "owner_type": "subclass",
+      "owner_id": "monk-warrior-of-shadow",
+      "level": 17,
+      "name_en": "Cloak of Shadows",
+      "name_de": "Schattenmantel",
+      "player_choice": false,
+      "text_en": "As a Magic action while entirely within Dim Light or Darkness, you can expend 3 Focus Points to shroud yourself with shadows for 1 minute, until you have the Incapacitated condition, or until you end your turn in Bright Light. While shrouded, you gain the following benefits.\n\nInvisibility. You have the Invisible condition.\n\nPartially Incorporeal. You can move through occupied spaces as if they were Difficult Terrain. If you end your turn in such a space, you are shunted to the last unoccupied space you were in.\n\nShadow Flurry. You can use your Flurry of Blows without expending any Focus Points.",
+      "text_de": "Als magische Aktion in dämmrigem Licht oder Dunkelheit kannst du 3 Fokuspunkte verbrauchen, um dich eine Minute lang in Schatten zu hüllen. Dies endet auch, wenn du kampfunfähig wirst oder deinen Zug in hellem Licht beendest. Solange du in Schatten gehüllt bist, erhältst du folgende Vorzüge.\n\nUnsichtbarkeit: Du bist unsichtbar.\n\nTeilweise körperlos: Du kannst dich durch besetzte Bereiche wie durch schwieriges Gelände bewegen. Wenn du deinen Zug dort beendest, wirst du in den letzten freien Bereich geschoben.\n\nSchatten-Schlaghagel: Du kannst Schlaghagel einsetzen, ohne Fokuspunkte zu verbrauchen.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "magic_action",
+          "condition": "self_entirely_in_dim_light_or_darkness",
+          "cost": {
+            "resource": "focus_points",
+            "amount": 3
+          },
+          "effect": {
+            "type": "state",
+            "state_id": "cloak_of_shadows",
+            "duration": "1_minute",
+            "end_conditions": [
+              "incapacitated",
+              "end_turn_in_bright_light"
+            ]
+          }
+        },
+        {
+          "type": "state",
+          "state_id": "invisible",
+          "while_state": "cloak_of_shadows"
+        },
+        {
+          "type": "movement_special",
+          "shunt_on_end_turn_in_occupied_space": true,
+          "while_state": "cloak_of_shadows",
+          "mode": "move_through_occupied_spaces_as_difficult_terrain"
+        },
+        {
+          "type": "feature_cost_override",
+          "feature_id": "monk-monks-focus",
+          "ability_id": "flurry_of_blows",
+          "cost_override": "no_focus_point",
+          "while_state": "cloak_of_shadows"
+        }
+      ]
+    },
+    {
+      "id": "elements-elemental-attunement",
+      "owner_type": "subclass",
+      "owner_id": "monk-warrior-of-the-elements",
+      "level": 3,
+      "name_en": "Elemental Attunement",
+      "name_de": "Elementare Einstimmung",
+      "player_choice": false,
+      "text_en": "At the start of your turn, you can expend 1 Focus Point to imbue yourself with elemental energy. The energy lasts for 10 minutes or until you have the Incapacitated condition. You gain the following benefits while this feature is active.\n\nReach. When you make an Unarmed Strike, your reach is 10 feet greater than normal.\n\nElemental Strikes. Whenever you hit with your Unarmed Strike, you can cause it to deal your choice of Acid, Cold, Fire, Lightning, or Thunder damage. When you deal one of these types, you can also force the target to make a Strength saving throw. On a failed save, you can move the target up to 10 feet toward or away from you.",
+      "text_de": "Zu Beginn deines Zugs kannst du 1 Fokuspunkt verbrauchen, um dich mit elementarer Energie zu versehen. Die Energie bleibt zehn Minuten lang oder bis du kampfunfähig wirst bestehen. Du erhältst folgende Vorzüge:\n\nWeitreichend: Deine Reichweite bei waffenlosen Angriffen ist um drei Meter erhöht.\n\nElementare Schläge: Du kannst Blitz-, Feuer-, Kälte-, Säure- oder Schallschaden bewirken. Du kannst das Ziel außerdem zu einem Stärkerettungswurf zwingen. Scheitert der Wurf, kannst du es um bis zu drei Meter bewegen.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "none",
+          "trigger": "start_of_your_turn",
+          "optional": true,
+          "cost": {
+            "resource": "focus_points",
+            "amount": 1
+          },
+          "effect": {
+            "type": "state",
+            "state_id": "elemental_attunement",
+            "duration": "10_minutes",
+            "end_conditions": [
+              "incapacitated"
+            ]
+          }
+        },
+        {
+          "type": "reach_bonus",
+          "value_feet": 10,
+          "applies_to": "unarmed_strike",
+          "while_state": "elemental_attunement"
+        },
+        {
+          "type": "damage_type_choice",
+          "applies_to": "unarmed_strike",
+          "options": [
+            "acid",
+            "cold",
+            "fire",
+            "lightning",
+            "thunder"
+          ],
+          "while_state": "elemental_attunement"
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "hit_with_unarmed_strike_dealing_elemental_damage",
+          "optional": true,
+          "while_state": "elemental_attunement",
+          "saving_throw": {
+            "ability": "strength",
+            "dc": "monk_focus_dc"
+          },
+          "on_failure": {
+            "type": "forced_movement",
+            "distance_feet": 10,
+            "direction_choice": [
+              "toward_self",
+              "away_from_self"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "elements-manipulate-elements",
+      "owner_type": "subclass",
+      "owner_id": "monk-warrior-of-the-elements",
+      "level": 3,
+      "name_en": "Manipulate Elements",
+      "name_de": "Elemente manipulieren",
+      "player_choice": false,
+      "text_en": "You know the Elementalism spell. Wisdom is your spellcasting ability for it.",
+      "text_de": "Du kennst den Zauber Elementalismus. Dein Attribut zum Wirken des Zaubers ist Weisheit.",
+      "grants": [
+        {
+          "type": "spell_grant",
+          "spell_id": "elementalism",
+          "spellcasting_ability": "wisdom"
+        }
+      ]
+    },
+    {
+      "id": "elements-elemental-burst",
+      "owner_type": "subclass",
+      "owner_id": "monk-warrior-of-the-elements",
+      "level": 6,
+      "name_en": "Elemental Burst",
+      "name_de": "Elementare Explosion",
+      "player_choice": true,
+      "choice_prompt_en": "When you use Elemental Burst, choose a damage type: Acid, Cold, Fire, Lightning, or Thunder.",
+      "choice_prompt_de": "Wenn du Elementare Explosion einsetzt, wähle eine Schadensart: Blitz, Feuer, Kälte, Säure oder Schall.",
+      "text_en": "As a Magic action, you can expend 2 Focus Points to cause elemental energy to burst in a 20-foot-radius Sphere centered on a point within 120 feet of yourself. Choose a damage type: Acid, Cold, Fire, Lightning, or Thunder.\n\nEach creature in the Sphere must make a Dexterity saving throw. On a failed save, a creature takes damage equal to three rolls of your Martial Arts die. On a successful save, a creature takes half as much damage.",
+      "text_de": "Als magische Aktion kannst du 2 Fokuspunkte verbrauchen, um in einer Kugel mit einem Radius von sechs Metern um einen Punkt im Abstand von bis zu 36 Metern elementare Energie explodieren zu lassen. Wähle eine Schadensart.\n\nJede Kreatur muss einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, erleidet die Kreatur Schaden in Höhe von drei Würfen mit dem Kampfkünste-Würfel. Bei einem Erfolg erleidet sie den halben Schaden.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "magic_action",
+          "cost": {
+            "resource": "focus_points",
+            "amount": 2
+          },
+          "area": {
+            "type": "sphere",
+            "radius_feet": 20,
+            "origin_range_feet": 120
+          },
+          "damage_type_choice": [
+            "acid",
+            "cold",
+            "fire",
+            "lightning",
+            "thunder"
+          ],
+          "saving_throw": {
+            "ability": "dexterity",
+            "dc": "monk_focus_dc"
+          },
+          "on_failure": {
+            "type": "deal_damage",
+            "dice": {
+              "count": 3,
+              "die_from_resource": "martial_arts_die"
+            },
+            "damage_type": "chosen_elemental_type"
+          },
+          "on_success": {
+            "type": "deal_damage",
+            "dice": {
+              "count": 3,
+              "die_from_resource": "martial_arts_die"
+            },
+            "damage_type": "chosen_elemental_type",
+            "multiplier": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "elements-stride-of-the-elements",
+      "owner_type": "subclass",
+      "owner_id": "monk-warrior-of-the-elements",
+      "level": 11,
+      "name_en": "Stride of the Elements",
+      "name_de": "Lauf der Elemente",
+      "player_choice": false,
+      "text_en": "While your Elemental Attunement is active, you also have a Fly Speed and a Swim Speed equal to your Speed.",
+      "text_de": "Solange Elementare Einstimmung aktiv ist, hast du eine Flug- und eine Schwimmbewegungsrate in Höhe deiner Bewegungsrate.",
+      "grants": [
+        {
+          "type": "speed_grant",
+          "speed_type": "fly",
+          "value": "equal_to_speed",
+          "while_state": "elemental_attunement"
+        },
+        {
+          "type": "speed_grant",
+          "speed_type": "swim",
+          "value": "equal_to_speed",
+          "while_state": "elemental_attunement"
+        }
+      ]
+    },
+    {
+      "id": "elements-elemental-epitome",
+      "owner_type": "subclass",
+      "owner_id": "monk-warrior-of-the-elements",
+      "level": 17,
+      "name_en": "Elemental Epitome",
+      "name_de": "Elementarer Schritt",
+      "player_choice": true,
+      "choice_prompt_en": "At the start of each of your turns while Elemental Attunement is active, choose your damage Resistance type: Acid, Cold, Fire, Lightning, or Thunder.",
+      "choice_prompt_de": "Zu Beginn jedes deiner Züge, solange Elementare Einstimmung aktiv ist, wähle deine Resistenz: Blitz, Feuer, Kälte, Säure oder Schall.",
+      "text_en": "While your Elemental Attunement is active, you also gain the following benefits.\n\nDamage Resistance. You gain Resistance to one of the following damage types of your choice: Acid, Cold, Fire, Lightning, or Thunder. At the start of each of your turns, you can change this choice.\n\nDestructive Stride. When you use your Step of the Wind, your Speed increases by 20 feet until the end of the turn. For that duration, any creature of your choice takes damage equal to one roll of your Martial Arts die when you enter a space within 5 feet of it. The damage type is your choice of Acid, Cold, Fire, Lightning, or Thunder. A creature can take this damage only once per turn.\n\nEmpowered Strikes. Once on each of your turns, you can deal extra damage to a target equal to one roll of your Martial Arts die when you hit it with an Unarmed Strike. The extra damage is the same type dealt by that strike.",
+      "text_de": "Solange Elementare Einstimmung aktiv ist, erhältst du folgende Vorzüge.\n\nSchadensresistenz: Du erhältst Resistenz gegen eine der folgenden Schadensarten: Blitz, Feuer, Kälte, Säure oder Schall. Zu Beginn jedes deiner Züge kannst du die Entscheidung ändern.\n\nZerstörerischer Schritt: Wenn du Windschritt einsetzt, ist deine Bewegungsrate bis zum Ende des Zugs um sechs Meter erhöht. Eine Kreatur deiner Wahl erleidet Schaden in Höhe eines Wurfs mit dem Kampfkünste-Würfel, wenn du einen Bereich im Abstand von bis zu 1,5 Metern betrittst. Eine Kreatur kann diesen Schaden nur einmal pro Zug erleiden.\n\nMächtige Schläge: Einmal pro Zug kannst du einem Ziel zusätzlichen Schaden in Höhe eines Wurfs mit dem Kampfkünste-Würfel zufügen, wenn du es mit einem waffenlosen Angriff triffst.",
+      "grants": [
+        {
+          "type": "damage_resistance",
+          "damage_type_choice": [
+            "acid",
+            "cold",
+            "fire",
+            "lightning",
+            "thunder"
+          ],
+          "change_on": "start_of_your_turn",
+          "while_state": "elemental_attunement"
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "use_step_of_the_wind",
+          "while_state": "elemental_attunement",
+          "effect": {
+            "type": "speed_bonus",
+            "value_feet": 20,
+            "duration": "until_end_of_turn"
+          }
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "use_step_of_the_wind",
+          "while_state": "elemental_attunement",
+          "effect": {
+            "type": "on_enter_space_within_5ft_of_creature",
+            "damage": {
+              "dice": {
+                "count": 1,
+                "die_from_resource": "martial_arts_die"
+              },
+              "damage_type_choice": [
+                "acid",
+                "cold",
+                "fire",
+                "lightning",
+                "thunder"
+              ]
+            },
+            "targets": "creature_of_choice",
+            "once_per_creature_per_turn": true,
+            "duration": "until_end_of_turn"
+          }
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "hit_with_unarmed_strike",
+          "once_per_turn": true,
+          "while_state": "elemental_attunement",
+          "effect": {
+            "type": "extra_damage",
+            "dice": {
+              "count": 1,
+              "die_from_resource": "martial_arts_die"
+            },
+            "damage_type": "same_as_strike",
+            "ability_id": "elemental-epitome-empowered-strikes"
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-hand-open-hand-technique",
+      "owner_type": "subclass",
+      "owner_id": "monk-warrior-of-the-open-hand",
+      "level": 3,
+      "name_en": "Open Hand Technique",
+      "name_de": "Technik der Offenen Hand",
+      "player_choice": true,
+      "choice_prompt_en": "Whenever you hit with a Flurry of Blows attack, choose one effect to impose: Addle, Push, or Topple.",
+      "choice_prompt_de": "Wann immer du mit einem Schlaghagel-Angriff triffst, wähle einen Effekt: Stoßen, Umstoßen oder Verdattern.",
+      "text_en": "Whenever you hit a creature with an attack granted by your Flurry of Blows, you can impose one of the following effects on that target.\n\nAddle. The target can't make Opportunity Attacks until the start of its next turn.\n\nPush. The target must succeed on a Strength saving throw or be pushed up to 15 feet away from you.\n\nTopple. The target must succeed on a Dexterity saving throw or have the Prone condition.",
+      "text_de": "Jedes Mal, wenn du eine Kreatur mit einem durch Schlaghagel gewährten Angriff triffst, kannst du einen der folgenden Effekte auf das Ziel wirken.\n\nVerdattern: Das Ziel kann bis zum Beginn seines nächsten Zugs keine Gelegenheitsangriffe ausführen.\n\nStoßen: Das Ziel muss einen Stärkerettungswurf bestehen, oder es wird bis zu 4,5 Meter weit weggestoßen.\n\nUmstoßen: Das Ziel muss einen Geschicklichkeitsrettungswurf bestehen, oder es wird umgestoßen.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "hit_with_flurry_of_blows_attack",
+          "optional": true,
+          "effect": {
+            "type": "choice",
+            "choose": 1,
+            "options": [
+              {
+                "id": "open-hand-addle",
+                "name_en": "Addle",
+                "name_de": "Verdattern",
+                "grants": [
+                  {
+                    "type": "restriction",
+                    "restriction_id": "no_opportunity_attacks",
+                    "target": "enemy_hit",
+                    "duration": "until_start_of_targets_next_turn"
+                  }
+                ]
+              },
+              {
+                "id": "open-hand-push",
+                "name_en": "Push",
+                "name_de": "Stoßen",
+                "grants": [
+                  {
+                    "type": "saving_throw",
+                    "ability": "strength",
+                    "dc": "monk_focus_dc",
+                    "on_failure": {
+                      "type": "push",
+                      "distance_feet": 15,
+                      "direction": "away_from_self"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "open-hand-topple",
+                "name_en": "Topple",
+                "name_de": "Umstoßen",
+                "grants": [
+                  {
+                    "type": "saving_throw",
+                    "ability": "dexterity",
+                    "dc": "monk_focus_dc",
+                    "on_failure": {
+                      "type": "apply_condition",
+                      "condition": "prone"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-hand-wholeness-of-body",
+      "owner_type": "subclass",
+      "owner_id": "monk-warrior-of-the-open-hand",
+      "level": 6,
+      "name_en": "Wholeness of Body",
+      "name_de": "Unversehrtheit des Körpers",
+      "player_choice": false,
+      "text_en": "You gain the ability to heal yourself. As a Bonus Action, you can roll your Martial Arts die. You regain a number of Hit Points equal to the number rolled plus your Wisdom modifier (minimum of 1 Hit Point regained).\n\nYou can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.",
+      "text_de": "Du erhältst die Fähigkeit, dich selbst zu heilen. Als Bonusaktion kannst du mit deinem Kampfkünste-Würfel würfeln. Du erhältst Trefferpunkte in Höhe des Ergebnisses plus deines Weisheitsmodifikators zurück (mindestens 1).\n\nDu kannst dieses Merkmal so oft nutzen, wie dein Weisheitsmodifikator angibt (mindestens einmal). Du erhältst alle Anwendungen nach einer langen Rast zurück.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "uses_from_stat": {
+            "stat": "wisdom_modifier",
+            "minimum": 1
+          },
+          "recharge": "long_rest",
+          "effect": {
+            "type": "heal_self",
+            "dice": {
+              "count": 1,
+              "die_from_resource": "martial_arts_die"
+            },
+            "modifier": "wisdom_modifier",
+            "minimum_hp_restored": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-hand-fleet-step",
+      "owner_type": "subclass",
+      "owner_id": "monk-warrior-of-the-open-hand",
+      "level": 11,
+      "name_en": "Fleet Step",
+      "name_de": "Flinker Schritt",
+      "player_choice": false,
+      "text_en": "When you take a Bonus Action other than Step of the Wind, you can also use Step of the Wind immediately after that Bonus Action.",
+      "text_de": "Wenn du eine andere Bonusaktion als Windschritt ausführst, kannst du Windschritt sofort danach ebenfalls ausführen.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "take_bonus_action_other_than_step_of_the_wind",
+          "optional": true,
+          "effect": {
+            "type": "use_feature",
+            "feature_id": "monk-monks-focus",
+            "ability_id": "step_of_the_wind",
+            "timing": "immediately_after_triggering_bonus_action"
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-hand-quivering-palm",
+      "owner_type": "subclass",
+      "owner_id": "monk-warrior-of-the-open-hand",
+      "level": 17,
+      "name_en": "Quivering Palm",
+      "name_de": "Vibrierende Handfläche",
+      "player_choice": false,
+      "text_en": "When you hit a creature with an Unarmed Strike, you can expend 4 Focus Points to start imperceptible vibrations in the target, which last for a number of days equal to your Monk level. The vibrations are harmless unless you take an action to end them. Alternatively, when you take the Attack action, you can forgo one of the attacks to end the vibrations. To end them, you and the target must be on the same plane of existence.\n\nWhen the vibrations end, the target must make a Constitution saving throw. On a failed save, the target takes 10d12 Force damage. On a successful save, the target takes half as much damage.\n\nYou can have only one creature under the effect of this feature at a time. You can also harmlessly end the vibrations (no action required).",
+      "text_de": "Wenn du eine Kreatur mit einem waffenlosen Angriff triffst, kannst du vier Fokuspunkte verbrauchen, um nicht spürbare Vibrationen zu erzeugen. Sie dauern eine Anzahl von Tagen an, die deiner Mönchsstufe entspricht.\n\nWenn du die Vibrationen beendest, muss das Ziel einen Konstitutionsrettungswurf ausführen. Scheitert der Wurf, erleidet das Ziel 10W12 Energieschaden, anderenfalls die Hälfte.\n\nDu kannst dieses Merkmal immer nur auf jeweils eine Kreatur wirken. Du kannst die Vibrationen harmlos beenden (keine Aktion erforderlich).",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "hit_with_unarmed_strike",
+          "optional": true,
+          "cost": {
+            "resource": "focus_points",
+            "amount": 4
+          },
+          "max_active_targets": 1,
+          "effect": {
+            "type": "state_application",
+            "state_id": "quivering_palm_vibrations",
+            "target": "creature_hit",
+            "duration_days_from_resource": "monk_level",
+            "same_plane_required_to_end": true
+          }
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "quivering_palm_vibrations_ended",
+          "saving_throw": {
+            "ability": "constitution",
+            "dc": "monk_focus_dc"
+          },
+          "on_failure": {
+            "type": "deal_damage",
+            "dice": {
+              "count": 10,
+              "die": "d12"
+            },
+            "damage_type": "force"
+          },
+          "on_success": {
+            "type": "deal_damage",
+            "dice": {
+              "count": 10,
+              "die": "d12"
+            },
+            "damage_type": "force",
+            "multiplier": 0.5
+          },
+          "end_trigger_options": [
+            "action_to_end",
+            "forgo_one_attack_in_attack_action",
+            "harmless_end_no_action"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1904 @@
+{
+  "class": {
+    "id": "barbarian",
+    "name_en": "Barbarian",
+    "name_de": "Barbar",
+    "hit_die": "d12",
+    "primary_abilities": [
+      "strength"
+    ],
+    "saving_throw_proficiencies": [
+      "strength",
+      "constitution"
+    ],
+    "proficiencies": {
+      "skills": {
+        "choose": 2,
+        "from": [
+          "animal_handling",
+          "athletics",
+          "intimidation",
+          "nature",
+          "perception",
+          "survival"
+        ]
+      },
+      "weapons": [
+        "simple",
+        "martial"
+      ],
+      "armor": [
+        "light",
+        "medium",
+        "shields"
+      ]
+    },
+    "starting_equipment": {
+      "choose": 1,
+      "options": [
+        {
+          "id": "option_a",
+          "items": [
+            "greataxe",
+            "handaxe_x4",
+            "explorers_pack",
+            "15gp"
+          ]
+        },
+        {
+          "id": "option_b",
+          "items": [
+            "75gp"
+          ]
+        }
+      ]
+    },
+    "multiclass_rules": {
+      "grants": [
+        "hit_die_d12",
+        "proficiency_martial_weapons",
+        "proficiency_shields"
+      ]
+    },
+    "subclass_level": 3
+  },
+  "class_progression": {
+    "class_id": "barbarian",
+    "levels": [
+      {
+        "level": 1,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "barbarian-rage",
+          "barbarian-unarmored-defense",
+          "barbarian-weapon-mastery"
+        ],
+        "resources": {
+          "rage_uses": 2,
+          "rage_damage": 2,
+          "weapon_mastery_count": 2
+        }
+      },
+      {
+        "level": 2,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "barbarian-danger-sense",
+          "barbarian-reckless-attack"
+        ],
+        "resources": {
+          "rage_uses": 2,
+          "rage_damage": 2,
+          "weapon_mastery_count": 2
+        }
+      },
+      {
+        "level": 3,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "barbarian-subclass",
+          "barbarian-primal-knowledge"
+        ],
+        "subclass_feature_level": true,
+        "resources": {
+          "rage_uses": 3,
+          "rage_damage": 2,
+          "weapon_mastery_count": 2
+        }
+      },
+      {
+        "level": 4,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "barbarian-asi-4"
+        ],
+        "resources": {
+          "rage_uses": 3,
+          "rage_damage": 2,
+          "weapon_mastery_count": 3
+        }
+      },
+      {
+        "level": 5,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "barbarian-extra-attack",
+          "barbarian-fast-movement"
+        ],
+        "resources": {
+          "rage_uses": 3,
+          "rage_damage": 2,
+          "weapon_mastery_count": 3
+        }
+      },
+      {
+        "level": 6,
+        "proficiency_bonus": 3,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "rage_uses": 4,
+          "rage_damage": 2,
+          "weapon_mastery_count": 3
+        }
+      },
+      {
+        "level": 7,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "barbarian-feral-instinct",
+          "barbarian-instinctive-pounce"
+        ],
+        "resources": {
+          "rage_uses": 4,
+          "rage_damage": 2,
+          "weapon_mastery_count": 3
+        }
+      },
+      {
+        "level": 8,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "barbarian-asi-8"
+        ],
+        "resources": {
+          "rage_uses": 4,
+          "rage_damage": 2,
+          "weapon_mastery_count": 3
+        }
+      },
+      {
+        "level": 9,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "barbarian-brutal-strike"
+        ],
+        "resources": {
+          "rage_uses": 4,
+          "rage_damage": 3,
+          "weapon_mastery_count": 3
+        }
+      },
+      {
+        "level": 10,
+        "proficiency_bonus": 4,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "rage_uses": 4,
+          "rage_damage": 3,
+          "weapon_mastery_count": 4
+        }
+      },
+      {
+        "level": 11,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "barbarian-relentless-rage"
+        ],
+        "resources": {
+          "rage_uses": 4,
+          "rage_damage": 3,
+          "weapon_mastery_count": 4
+        }
+      },
+      {
+        "level": 12,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "barbarian-asi-12"
+        ],
+        "resources": {
+          "rage_uses": 5,
+          "rage_damage": 3,
+          "weapon_mastery_count": 4
+        }
+      },
+      {
+        "level": 13,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "barbarian-improved-brutal-strike-13"
+        ],
+        "resources": {
+          "rage_uses": 5,
+          "rage_damage": 3,
+          "weapon_mastery_count": 4
+        }
+      },
+      {
+        "level": 14,
+        "proficiency_bonus": 5,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "rage_uses": 5,
+          "rage_damage": 3,
+          "weapon_mastery_count": 4
+        }
+      },
+      {
+        "level": 15,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "barbarian-persistent-rage"
+        ],
+        "resources": {
+          "rage_uses": 5,
+          "rage_damage": 3,
+          "weapon_mastery_count": 4
+        }
+      },
+      {
+        "level": 16,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "barbarian-asi-16"
+        ],
+        "resources": {
+          "rage_uses": 5,
+          "rage_damage": 4,
+          "weapon_mastery_count": 4
+        }
+      },
+      {
+        "level": 17,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "barbarian-improved-brutal-strike-17"
+        ],
+        "resources": {
+          "rage_uses": 6,
+          "rage_damage": 4,
+          "weapon_mastery_count": 4
+        }
+      },
+      {
+        "level": 18,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "barbarian-indomitable-might"
+        ],
+        "resources": {
+          "rage_uses": 6,
+          "rage_damage": 4,
+          "weapon_mastery_count": 4
+        }
+      },
+      {
+        "level": 19,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "barbarian-epic-boon"
+        ],
+        "resources": {
+          "rage_uses": 6,
+          "rage_damage": 4,
+          "weapon_mastery_count": 4
+        }
+      },
+      {
+        "level": 20,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "barbarian-primal-champion"
+        ],
+        "resources": {
+          "rage_uses": 6,
+          "rage_damage": 4,
+          "weapon_mastery_count": 4
+        }
+      }
+    ]
+  },
+  "subclasses": [
+    {
+      "id": "barbarian-berserker",
+      "class_id": "barbarian",
+      "name_en": "Path of the Berserker",
+      "name_de": "Pfad des Berserkers",
+      "feature_levels": [
+        3,
+        6,
+        10,
+        14
+      ]
+    },
+    {
+      "id": "barbarian-wild-heart",
+      "class_id": "barbarian",
+      "name_en": "Path of the Wild Heart",
+      "name_de": "Pfad des Wilden Herzens",
+      "feature_levels": [
+        3,
+        6,
+        10,
+        14
+      ]
+    },
+    {
+      "id": "barbarian-world-tree",
+      "class_id": "barbarian",
+      "name_en": "Path of the World Tree",
+      "name_de": "Pfad des Weltenbaums",
+      "feature_levels": [
+        3,
+        6,
+        10,
+        14
+      ]
+    },
+    {
+      "id": "barbarian-zealot",
+      "class_id": "barbarian",
+      "name_en": "Path of the Zealot",
+      "name_de": "Pfad des Eiferers",
+      "feature_levels": [
+        3,
+        6,
+        10,
+        14
+      ]
+    }
+  ],
+  "features": [
+    {
+      "id": "barbarian-rage",
+      "owner_type": "class",
+      "owner_id": "barbarian",
+      "level": 1,
+      "name_en": "Rage",
+      "name_de": "Kampfrausch",
+      "player_choice": false,
+      "text_en": "You can imbue yourself with a primal power called Rage, a force that grants you extraordinary might and resilience. You can enter it as a Bonus Action if you aren't wearing Heavy armor.\n\nYou can enter your Rage the number of times shown for your Barbarian level in the Rages column of the Barbarian Features table. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.\n\nWhile active, your Rage follows the rules below.\n\nDamage Resistance. You have Resistance to Bludgeoning, Piercing, and Slashing damage.\n\nRage Damage. When you make an attack using Strength—with either a weapon or an Unarmed Strike—and deal damage to the target, you gain a bonus to the damage that increases as you gain levels as a Barbarian, as shown in the Rage Damage column of the Barbarian Features table.\n\nStrength Advantage. You have Advantage on Strength checks and Strength saving throws.\n\nNo Concentration or Spells. You can't maintain Concentration, and you can't cast spells.\n\nDuration. The Rage lasts until the end of your next turn, and it ends early if you don Heavy armor or have the Incapacitated condition. If your Rage is still active on your next turn, you can extend the Rage for another round by doing one of the following: make an attack roll against an enemy; force an enemy to make a saving throw; take a Bonus Action to extend your Rage. Each time the Rage is extended, it lasts until the end of your next turn. You can maintain a Rage for up to 10 minutes.",
+      "text_de": "Du kannst dich mit einer Urmacht namens Kampfrausch versehen, die dir außergewöhnliche Macht und Zähigkeit gewährt. Du kannst dich als Bonusaktion in Kampfrausch versetzen, sofern du keine schwere Rüstung trägst.\n\nWie oft du dies tun kannst, ist in der Spalte „Kampfrausch\" der Tabelle „Barbarenmerkmale\" nach Barbarenstufe aufgeführt. Wenn du eine kurze Rast beendest, erhältst du eine verbrauchte Anwendung zurück. Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück.\n\nSolange dein Kampfrausch aktiv ist, gelten für ihn folgende Regeln.\n\nSchadensresistenz: Du bist gegen Hieb-, Stich- und Wuchtschaden resistent.\n\nKampfrausch-Schaden: Wenn du einen Angriff ausführst, der Stärke erfordert – entweder mit einer Waffe oder als waffenlosen Angriff – und dem Ziel Schaden zufügst, erhältst du einen Bonus auf den Schaden, der sich erhöht, wenn du Barbarenstufen hinzugewinnst.\n\nStärkevorteil: Du bist bei Stärkewürfen und Stärkerettungswürfen im Vorteil.\n\nKeine Konzentration und keine Zauber: Du kannst keine Konzentration aufrechterhalten und keine Zauber wirken.\n\nWirkungsdauer: Der Kampfrausch währt bis zum Ende deines nächsten Zugs und endet vorzeitig, wenn du schwere Rüstung anlegst oder kampfunfähig wirst. Wenn dein Kampfrausch in deinem nächsten Zug noch aktiv ist, kannst du ihn um eine weitere Runde verlängern, indem du eine der folgenden Handlungen ausführst: Führe einen Angriffswurf gegen einen Gegner aus; zwinge einen Gegner, einen Rettungswurf auszuführen; führe eine Bonusaktion aus, um deinen Kampfrausch zu verlängern. Wann immer der Kampfrausch verlängert wird, währt er bis zum Ende deines nächsten Zugs. Du kannst einen Kampfrausch bis zu zehn Minuten lang aufrechterhalten.",
+      "grants": [
+        {
+          "type": "state",
+          "state_id": "rage",
+          "activation": "bonus_action",
+          "activation_restriction": "not_wearing_heavy_armor"
+        },
+        {
+          "type": "uses_resource",
+          "resource": "rage_uses",
+          "recharge": [
+            {
+              "amount": 1,
+              "recharge": "short_rest"
+            },
+            {
+              "amount": "all",
+              "recharge": "long_rest"
+            }
+          ]
+        },
+        {
+          "type": "damage_resistance",
+          "damage_types": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "while_state": "rage"
+        },
+        {
+          "type": "damage_bonus",
+          "value_from_resource": "rage_damage",
+          "condition": "strength_attack",
+          "while_state": "rage"
+        },
+        {
+          "type": "advantage",
+          "on": [
+            "strength_checks",
+            "strength_saving_throws"
+          ],
+          "while_state": "rage"
+        },
+        {
+          "type": "restriction",
+          "restriction_id": "no_concentration",
+          "while_state": "rage"
+        },
+        {
+          "type": "restriction",
+          "restriction_id": "no_spellcasting",
+          "while_state": "rage"
+        }
+      ]
+    },
+    {
+      "id": "barbarian-unarmored-defense",
+      "owner_type": "class",
+      "owner_id": "barbarian",
+      "level": 1,
+      "name_en": "Unarmored Defense",
+      "name_de": "Ungerüstete Verteidigung",
+      "player_choice": false,
+      "text_en": "While you aren't wearing any armor, your base Armor Class equals 10 plus your Dexterity and Constitution modifiers. You can use a Shield and still gain this benefit.",
+      "text_de": "Wenn du keine Rüstung trägst, beträgt deine Basis-Rüstungsklasse 10 plus dein Geschicklichkeitsmodifikator plus dein Konstitutionsmodifikator. Von diesem Vorzug profitierst du auch, wenn du einen Schild verwendest.",
+      "grants": [
+        {
+          "type": "ac_formula",
+          "condition": "not_wearing_armor",
+          "formula": {
+            "base": 10,
+            "modifiers": [
+              "dexterity",
+              "constitution"
+            ]
+          },
+          "shield_allowed": true
+        }
+      ]
+    },
+    {
+      "id": "barbarian-weapon-mastery",
+      "owner_type": "class",
+      "owner_id": "barbarian",
+      "level": 1,
+      "name_en": "Weapon Mastery",
+      "name_de": "Waffenmeisterung",
+      "player_choice": true,
+      "choice_prompt_en": "Choose two kinds of Simple or Martial melee weapons whose mastery properties you can use. You may change one choice whenever you finish a Long Rest.",
+      "choice_prompt_de": "Wähle zwei Arten von einfachen Nahkampfwaffen oder Nahkampf-Kriegswaffen, deren Meisterschaftseigenschaften du verwenden kannst. Du kannst eine Wahl wann immer du eine lange Rast beendest ändern.",
+      "text_en": "Your training with weapons allows you to use the mastery properties of two kinds of Simple or Martial melee weapons of your choice, such as Greataxes and Handaxes. Whenever you finish a Long Rest, you can practice weapon drills and change one of those weapon choices.\n\nWhen you reach certain Barbarian levels, you gain the ability to use the mastery properties of more kinds of weapons, as shown in the Weapon Mastery column of the Barbarian Features table.",
+      "text_de": "Deine Vertrautheit mit Waffen gestattet dir, die Meisterschaftseigenschaften zweier Arten von einfachen Nahkampfwaffen oder Nahkampf-Kriegswaffen deiner Wahl wie Zweihandäxten und Beilen zu verwenden. Wann immer du eine lange Rast beendest, kannst du Waffenübungen ausführen und eine dieser Waffenentscheidungen ändern.\n\nWenn du bestimmte Barbarenstufen erreichst, erhältst du die Fähigkeit, die Meisterschaftseigenschaften von mehr Waffenarten zu verwenden.",
+      "grants": [
+        {
+          "type": "weapon_mastery",
+          "count_from_resource": "weapon_mastery_count",
+          "weapon_categories": [
+            "simple_melee",
+            "martial_melee"
+          ],
+          "change_on": "long_rest",
+          "change_count": 1
+        }
+      ]
+    },
+    {
+      "id": "barbarian-danger-sense",
+      "owner_type": "class",
+      "owner_id": "barbarian",
+      "level": 2,
+      "name_en": "Danger Sense",
+      "name_de": "Gefahrengespür",
+      "player_choice": false,
+      "text_en": "You gain an uncanny sense of when things aren't as they should be, giving you an edge when you dodge perils. You have Advantage on Dexterity saving throws unless you have the Incapacitated condition.",
+      "text_de": "Du bekommst einen untrüglichen Sinn dafür, ob die Dinge so sind, wie sie sein sollten, sodass du Gefahren besser ausweichen kannst. Du bist bei Geschicklichkeitsrettungswürfen im Vorteil, sofern du nicht kampfunfähig bist.",
+      "grants": [
+        {
+          "type": "advantage",
+          "on": [
+            "dexterity_saving_throws"
+          ],
+          "condition": "not_incapacitated"
+        }
+      ]
+    },
+    {
+      "id": "barbarian-reckless-attack",
+      "owner_type": "class",
+      "owner_id": "barbarian",
+      "level": 2,
+      "name_en": "Reckless Attack",
+      "name_de": "Rücksichtsloser Angriff",
+      "player_choice": false,
+      "text_en": "You can throw aside all concern for defense to attack with increased ferocity. When you make your first attack roll on your turn, you can decide to attack recklessly. Doing so gives you Advantage on attack rolls using Strength until the start of your next turn, but attack rolls against you have Advantage during that time.",
+      "text_de": "Du kannst deine Verteidigung völlig außer Acht lassen und mit noch mehr Wildheit angreifen. Bei deinem ersten Angriffswurf in deinem Zug kannst du beschließen, einen Rücksichtslosen Angriff auszuführen. Damit sind deine Angriffswürfe, die Stärke erfordern, bis zum Beginn deines nächsten Zugs im Vorteil, doch Angriffswürfe gegen dich sind in dieser Zeit ebenfalls im Vorteil.",
+      "grants": [
+        {
+          "type": "optional_attack_mode",
+          "mode_id": "reckless_attack",
+          "trigger": "first_attack_roll_on_turn",
+          "grants_advantage_on": "strength_attack_rolls",
+          "grants_advantage_against_self": true,
+          "duration": "until_start_of_next_turn"
+        }
+      ]
+    },
+    {
+      "id": "barbarian-subclass",
+      "owner_type": "class",
+      "owner_id": "barbarian",
+      "level": 3,
+      "name_en": "Barbarian Subclass",
+      "name_de": "Barbaren-Unterklasse",
+      "player_choice": true,
+      "choice_prompt_en": "Choose a Barbarian subclass: Path of the Berserker, Path of the Wild Heart, Path of the World Tree, or Path of the Zealot.",
+      "choice_prompt_de": "Wähle eine Barbaren-Unterklasse: Pfad des Berserkers, Pfad des Wilden Herzens, Pfad des Weltenbaums oder Pfad des Eiferers.",
+      "text_en": "You gain a Barbarian subclass of your choice. The Path of the Berserker, Path of the Wild Heart, Path of the World Tree, and Path of the Zealot subclasses are detailed after this class's description. A subclass is a specialization that grants you features at certain Barbarian levels. For the rest of your career, you gain each of your subclass's features that are of your Barbarian level or lower.",
+      "text_de": "Du erhältst eine Barbaren-Unterklasse deiner Wahl. Die Unterklassen Pfad des Berserkers, Pfad des Weltenbaums, Pfad des Wilden Herzens und Pfad des Eiferers werden nach der Beschreibung dieser Klasse erläutert. Unterklassen sind Spezialisierungen, die dir auf bestimmten Barbarenstufen Merkmale gewähren. Du erhältst für den Rest deiner Laufbahn alle Merkmale deiner Unterklasse, die zu deiner aktuellen Barbarenstufe oder den niedrigeren Stufen gehören.",
+      "grants": [
+        {
+          "type": "subclass_choice",
+          "class_id": "barbarian"
+        }
+      ]
+    },
+    {
+      "id": "barbarian-primal-knowledge",
+      "owner_type": "class",
+      "owner_id": "barbarian",
+      "level": 3,
+      "name_en": "Primal Knowledge",
+      "name_de": "Urwissen",
+      "player_choice": true,
+      "choice_prompt_en": "Choose one additional skill from the Barbarian skill list (Animal Handling, Athletics, Intimidation, Nature, Perception, or Survival).",
+      "choice_prompt_de": "Wähle eine weitere Fertigkeit aus der Barbaren-Fertigkeitsliste (Athletik, Einschüchtern, Mit Tieren umgehen, Naturkunde, Überlebenskunst oder Wahrnehmung).",
+      "text_en": "You gain proficiency in another skill of your choice from the skill list available to Barbarians at level 1.\n\nIn addition, while your Rage is active, you can channel primal power when you attempt certain tasks; whenever you make an ability check using one of the following skills, you can make it as a Strength check even if it normally uses a different ability: Acrobatics, Intimidation, Perception, Stealth, or Survival. When you use this ability, your Strength represents primal power coursing through you, honing your agility, bearing, and senses.",
+      "text_de": "Du erhältst Übung in einer weiteren Fertigkeit deiner Wahl aus der Liste von Fertigkeiten, die für Barbaren auf der 1. Stufe verfügbar sind.\n\nAußerdem kannst du während deines Kampfrauschs Urmacht kanalisieren, wenn du bestimmte Aufgaben auszuführen versuchst. Wann immer du einen Attributswurf unter Verwendung einer der folgenden Fertigkeiten ausführst, kannst du ihn auch dann als Stärkewurf ausführen, wenn er sonst ein anderes Attribut erfordert: Akrobatik, Einschüchtern, Heimlichkeit, Überlebenskunst, Wahrnehmung.",
+      "grants": [
+        {
+          "type": "skill_proficiency",
+          "choose": 1,
+          "from": [
+            "animal_handling",
+            "athletics",
+            "intimidation",
+            "nature",
+            "perception",
+            "survival"
+          ]
+        },
+        {
+          "type": "ability_check_override",
+          "override_ability": "strength",
+          "skills": [
+            "acrobatics",
+            "intimidation",
+            "perception",
+            "stealth",
+            "survival"
+          ],
+          "while_state": "rage"
+        }
+      ]
+    },
+    {
+      "id": "barbarian-asi-4",
+      "owner_type": "class",
+      "owner_id": "barbarian",
+      "level": 4,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Barbarian levels 8, 12, and 16.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung (siehe Kapitel 5) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Du erhältst dieses Merkmal auf der 8., 12. und 16. Barbarenstufe erneut.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "barbarian-extra-attack",
+      "owner_type": "class",
+      "owner_id": "barbarian",
+      "level": 5,
+      "name_en": "Extra Attack",
+      "name_de": "Zusätzlicher Angriff",
+      "player_choice": false,
+      "text_en": "You can attack twice instead of once whenever you take the Attack action on your turn.",
+      "text_de": "Du kannst jetzt zweimal angreifen, wenn du in deinem Zug eine Angriffsaktion ausführst.",
+      "grants": [
+        {
+          "type": "extra_attack",
+          "total_attacks": 2
+        }
+      ]
+    },
+    {
+      "id": "barbarian-fast-movement",
+      "owner_type": "class",
+      "owner_id": "barbarian",
+      "level": 5,
+      "name_en": "Fast Movement",
+      "name_de": "Schnelle Bewegung",
+      "player_choice": false,
+      "text_en": "Your speed increases by 10 feet while you aren't wearing Heavy armor.",
+      "text_de": "Deine Bewegungsrate erhöht sich um drei Meter, sofern du keine schwere Rüstung trägst.",
+      "grants": [
+        {
+          "type": "speed_bonus",
+          "value_feet": 10,
+          "condition": "not_wearing_heavy_armor"
+        }
+      ]
+    },
+    {
+      "id": "barbarian-feral-instinct",
+      "owner_type": "class",
+      "owner_id": "barbarian",
+      "level": 7,
+      "name_en": "Feral Instinct",
+      "name_de": "Wilder Instinkt",
+      "player_choice": false,
+      "text_en": "Your instincts are so honed that you have Advantage on Initiative rolls.",
+      "text_de": "Deine Instinkte sind derart geschärft, dass du bei Initiativewürfen im Vorteil bist.",
+      "grants": [
+        {
+          "type": "advantage",
+          "on": [
+            "initiative"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "barbarian-instinctive-pounce",
+      "owner_type": "class",
+      "owner_id": "barbarian",
+      "level": 7,
+      "name_en": "Instinctive Pounce",
+      "name_de": "Instinktiver Sprung",
+      "player_choice": false,
+      "text_en": "As part of the Bonus Action you take to enter your Rage, you can move up to half your Speed.",
+      "text_de": "Als Teil der Bonusaktion, mit der du dich in Kampfrausch versetzt, kannst du bis zur Hälfte deiner Bewegungsrate zurücklegen.",
+      "grants": [
+        {
+          "type": "movement_on_state_entry",
+          "state_id": "rage",
+          "distance": "half_speed"
+        }
+      ]
+    },
+    {
+      "id": "barbarian-brutal-strike",
+      "owner_type": "class",
+      "owner_id": "barbarian",
+      "level": 9,
+      "name_en": "Brutal Strike",
+      "name_de": "Brutaler Hieb",
+      "player_choice": true,
+      "choice_prompt_en": "When you use Brutal Strike, choose one of the available Brutal Strike effects.",
+      "choice_prompt_de": "Wenn du Brutaler Hieb einsetzt, wähle einen der verfügbaren Effekte.",
+      "text_en": "If you use Reckless Attack, you can forgo any Advantage on one Strength-based attack roll of your choice on your turn. The chosen attack roll mustn't have Disadvantage. If the chosen attack roll hits, the target takes an extra 1d10 damage of the same type dealt by the weapon or Unarmed Strike, and you can cause one Brutal Strike effect of your choice.\n\nForceful Blow. The target is pushed 15 feet straight away from you. You can then move up to half your Speed straight toward the target without provoking Opportunity Attacks.\n\nHamstring Blow. The target's Speed is reduced by 15 feet until the start of your next turn. A target can be affected by only one Hamstring Blow at a time—the most recent one.",
+      "text_de": "Wenn du Rücksichtsloser Angriff einsetzt, kannst du in deinem Zug bei einem stärkebasierten Angriffswurf deiner Wahl auf den Vorteil verzichten. Der ausgewählte Angriffswurf darf nicht im Nachteil sein. Wenn der ausgewählte Angriffswurf trifft, erleidet das Ziel zusätzlich 1W10 Schaden des Typs, den auch die Waffe oder der waffenlose Angriff bewirkt, und du kannst einen Effekt des Brutalen Hiebs deiner Wahl bewirken.\n\nKraftvoller Hieb: Das Ziel wird in gerader Linie 4,5 Meter weit von dir weggestoßen. Du kannst dich dann um bis zur Hälfte deiner Bewegungsrate in gerader Linie auf das Ziel zubewegen, ohne Gelegenheitsangriffe zu provozieren.\n\nSchenkelhieb: Die Bewegungsrate des Ziels ist bis zum Beginn deines nächsten Zugs um 4,5 Meter verringert. Es kann immer nur ein Schenkelhieb wirken – jeweils der letzte.",
+      "grants": [
+        {
+          "type": "choice",
+          "prerequisite_feature": "barbarian-reckless-attack",
+          "trigger": "forgo_advantage_on_strength_attack",
+          "extra_damage": {
+            "dice": "1d10",
+            "type": "weapon_type"
+          },
+          "choose": 1,
+          "options": [
+            {
+              "id": "brutal-strike-forceful-blow",
+              "name_en": "Forceful Blow",
+              "name_de": "Kraftvoller Hieb",
+              "text_en": "The target is pushed 15 feet straight away from you. You can then move up to half your Speed straight toward the target without provoking Opportunity Attacks.",
+              "text_de": "Das Ziel wird in gerader Linie 4,5 Meter weit von dir weggestoßen. Du kannst dich dann um bis zur Hälfte deiner Bewegungsrate in gerader Linie auf das Ziel zubewegen, ohne Gelegenheitsangriffe zu provozieren.",
+              "grants": [
+                {
+                  "type": "push",
+                  "distance_feet": 15,
+                  "direction": "straight_away"
+                },
+                {
+                  "type": "free_movement",
+                  "distance": "half_speed",
+                  "direction": "toward_target",
+                  "no_opportunity_attacks": true
+                }
+              ]
+            },
+            {
+              "id": "brutal-strike-hamstring-blow",
+              "name_en": "Hamstring Blow",
+              "name_de": "Schenkelhieb",
+              "text_en": "The target's Speed is reduced by 15 feet until the start of your next turn. A target can be affected by only one Hamstring Blow at a time—the most recent one.",
+              "text_de": "Die Bewegungsrate des Ziels ist bis zum Beginn deines nächsten Zugs um 4,5 Meter verringert. Es kann immer nur ein Schenkelhieb wirken – jeweils der letzte.",
+              "grants": [
+                {
+                  "type": "speed_reduction",
+                  "target": "enemy",
+                  "value_feet": 15,
+                  "duration": "until_start_of_your_next_turn",
+                  "stacking": "replace_previous"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "barbarian-asi-8",
+      "owner_type": "class",
+      "owner_id": "barbarian",
+      "level": 8,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung (siehe Kapitel 5) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "barbarian-relentless-rage",
+      "owner_type": "class",
+      "owner_id": "barbarian",
+      "level": 11,
+      "name_en": "Relentless Rage",
+      "name_de": "Unerbittlicher Kampfrausch",
+      "player_choice": false,
+      "text_en": "Your Rage can keep you fighting despite grievous wounds. If you drop to 0 Hit Points while your Rage is active and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, your Hit Points instead change to a number equal to twice your Barbarian level.\n\nEach time you use this feature after the first, the DC increases by 5. When you finish a Short or Long Rest, the DC resets to 10.",
+      "text_de": "Dein Kampfrausch versetzt dich in die Lage, trotz schwerer Verletzungen weiterzukämpfen. Wenn deine Trefferpunkte auf 0 sinken, während du im Kampfrausch bist, stirbst du nicht sofort, sondern führst einen SG-10-Konstitutionsrettungswurf aus. Bei einem Erfolg erhältst du Trefferpunkte in doppelter Höhe deiner Barbarenstufe.\n\nJedes Mal, wenn du dieses Merkmal nutzt, erhöht sich der SG um 5. Nach einer kurzen oder langen Rast sinkt der SG wieder auf 10.",
+      "grants": [
+        {
+          "type": "triggered_saving_throw",
+          "trigger": "drop_to_0_hp",
+          "while_state": "rage",
+          "ability": "constitution",
+          "dc_base": 10,
+          "dc_escalation_per_use": 5,
+          "dc_reset_on": [
+            "short_rest",
+            "long_rest"
+          ],
+          "linked_effect": "relentless-rage-recovery"
+        },
+        {
+          "type": "set_hp",
+          "effect_id": "relentless-rage-recovery",
+          "trigger": "relentless_rage_save_success",
+          "value": {
+            "multiplier": 2,
+            "of": "barbarian_level"
+          }
+        }
+      ]
+    },
+    {
+      "id": "barbarian-asi-12",
+      "owner_type": "class",
+      "owner_id": "barbarian",
+      "level": 12,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung (siehe Kapitel 5) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "barbarian-improved-brutal-strike-13",
+      "owner_type": "class",
+      "owner_id": "barbarian",
+      "level": 13,
+      "name_en": "Improved Brutal Strike",
+      "name_de": "Verbesserter Brutaler Hieb",
+      "player_choice": false,
+      "text_en": "You have honed new ways to attack furiously. The following effects are now among your Brutal Strike options.\n\nStaggering Blow. The target has Disadvantage on the next saving throw it makes, and it can't make Opportunity Attacks until the start of your next turn.\n\nSundering Blow. Before the start of your next turn, the next attack roll made by another creature against the target gains a +5 bonus to the roll. An attack can gain only one Sundering Blow bonus.",
+      "text_de": "Du hast neue wilde Angriffsmethoden verfeinert. Nun stehen folgende Effekte zur Auswahl.\n\nWankendmachender Hieb: Das Ziel ist bei seinem nächsten Rettungswurf im Nachteil und kann bis zum Beginn deines nächsten Zugs keine Gelegenheitsangriffe ausführen.\n\nEntzweiender Hieb: Vor Beginn deines nächsten Zugs erhält der nächste Angriffswurf, den eine andere Kreatur gegen das Ziel ausführt, einen Bonus von +5. Es kann immer nur ein Bonus des Entzweienden Hiebs auf einen Angriff wirken.",
+      "grants": [
+        {
+          "type": "choice_upgrade",
+          "choice_feature_id": "barbarian-brutal-strike",
+          "adds_options": [
+            {
+              "id": "brutal-strike-staggering-blow",
+              "name_en": "Staggering Blow",
+              "name_de": "Wankendmachender Hieb",
+              "text_en": "The target has Disadvantage on the next saving throw it makes, and it can't make Opportunity Attacks until the start of your next turn.",
+              "text_de": "Das Ziel ist bei seinem nächsten Rettungswurf im Nachteil und kann bis zum Beginn deines nächsten Zugs keine Gelegenheitsangriffe ausführen.",
+              "grants": [
+                {
+                  "type": "disadvantage_on_next_saving_throw",
+                  "target": "enemy"
+                },
+                {
+                  "type": "restriction",
+                  "restriction_id": "no_opportunity_attacks",
+                  "target": "enemy",
+                  "duration": "until_start_of_your_next_turn"
+                }
+              ]
+            },
+            {
+              "id": "brutal-strike-sundering-blow",
+              "name_en": "Sundering Blow",
+              "name_de": "Entzweiender Hieb",
+              "text_en": "Before the start of your next turn, the next attack roll made by another creature against the target gains a +5 bonus to the roll. An attack can gain only one Sundering Blow bonus.",
+              "text_de": "Vor Beginn deines nächsten Zugs erhält der nächste Angriffswurf, den eine andere Kreatur gegen das Ziel ausführt, einen Bonus von +5. Es kann immer nur ein Bonus des Entzweienden Hiebs auf einen Angriff wirken.",
+              "grants": [
+                {
+                  "type": "attack_roll_bonus_to_allies",
+                  "target": "enemy_hit_by_brutal_strike",
+                  "bonus": 5,
+                  "applies_to": "next_attack_by_another_creature",
+                  "duration": "until_start_of_your_next_turn",
+                  "stacking": "no_stack"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "barbarian-persistent-rage",
+      "owner_type": "class",
+      "owner_id": "barbarian",
+      "level": 15,
+      "name_en": "Persistent Rage",
+      "name_de": "Anhaltender Kampfrausch",
+      "player_choice": false,
+      "text_en": "When you roll Initiative, you can regain all expended uses of Rage. After you regain uses of Rage in this way, you can't do so again until you finish a Long Rest.\n\nIn addition, your Rage is so fierce that it now lasts for 10 minutes without you needing to do anything to extend it from round to round. Your Rage ends early if you have the Unconscious condition (not just the Incapacitated condition) or don Heavy armor.",
+      "text_de": "Wenn du die Initiative auswürfelst, kannst du alle verbrauchten Anwendungen von Kampfrausch zurückerhalten. Gelingt dies, so ist es erst nach einer langen Rast erneut möglich.\n\nAußerdem ist dein Kampfrausch so wild, dass er nun zehn Minuten lang erhalten bleibt, ohne dass du ihn zwischen den Runden verlängern musst. Dein Kampfrausch endet vorzeitig, wenn du bewusstlos wirst oder schwere Rüstung anlegst.",
+      "grants": [
+        {
+          "type": "triggered_resource_restore",
+          "resource": "rage_uses",
+          "trigger": "on_initiative",
+          "amount": "all",
+          "recharge": "long_rest"
+        },
+        {
+          "type": "state_modifier",
+          "state_id": "rage",
+          "modification": "self_sustaining",
+          "new_end_conditions": [
+            "unconscious",
+            "don_heavy_armor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "barbarian-asi-16",
+      "owner_type": "class",
+      "owner_id": "barbarian",
+      "level": 16,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung (siehe Kapitel 5) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "barbarian-improved-brutal-strike-17",
+      "owner_type": "class",
+      "owner_id": "barbarian",
+      "level": 17,
+      "name_en": "Improved Brutal Strike",
+      "name_de": "Verbesserter Brutaler Hieb",
+      "player_choice": false,
+      "text_en": "The extra damage of your Brutal Strike increases to 2d10. In addition, you can use two different Brutal Strike effects whenever you use your Brutal Strike feature.",
+      "text_de": "Der zusätzliche Schaden deines Brutalen Hiebs wird auf 2W10 erhöht. Außerdem kannst du zwei verschiedene Effekte von Brutaler Hieb verwenden, wann immer du dieses Merkmal einsetzt.",
+      "grants": [
+        {
+          "type": "choice_upgrade",
+          "choice_feature_id": "barbarian-brutal-strike",
+          "modifications": {
+            "extra_damage": {
+              "dice": "2d10",
+              "type": "weapon_type"
+            },
+            "choose": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "barbarian-indomitable-might",
+      "owner_type": "class",
+      "owner_id": "barbarian",
+      "level": 18,
+      "name_en": "Indomitable Might",
+      "name_de": "Unbändige Stärke",
+      "player_choice": false,
+      "text_en": "If your total for a Strength check or Strength saving throw is less than your Strength score, you can use that score in place of the total.",
+      "text_de": "Wenn das Gesamtergebnis deines Stärkewurfs oder Stärkerettungswurfs unter deinem Stärkewert liegt, kannst du diesen statt des Gesamtergebnisses verwenden.",
+      "grants": [
+        {
+          "type": "minimum_roll_override",
+          "applies_to": [
+            "strength_checks",
+            "strength_saving_throws"
+          ],
+          "minimum": "strength_score"
+        }
+      ]
+    },
+    {
+      "id": "barbarian-epic-boon",
+      "owner_type": "class",
+      "owner_id": "barbarian",
+      "level": 19,
+      "name_en": "Epic Boon",
+      "name_de": "Epische Gabe",
+      "player_choice": true,
+      "choice_prompt_en": "Gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Irresistible Offense is recommended.",
+      "choice_prompt_de": "Erhalte ein Epische-Gabe-Talent oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Gabe des Unwiderstehlichen Angriffs wird empfohlen.",
+      "text_en": "You gain an Epic Boon feat (see chapter 5) or another feat of your choice for which you qualify. Boon of Irresistible Offense is recommended.",
+      "text_de": "Du erhältst ein Epische-Gabe-Talent (siehe Kapitel 5) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Gabe des Unwiderstehlichen Angriffs wird empfohlen.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "feat_category": "epic_boon",
+          "recommended": "boon_of_irresistible_offense"
+        }
+      ]
+    },
+    {
+      "id": "barbarian-primal-champion",
+      "owner_type": "class",
+      "owner_id": "barbarian",
+      "level": 20,
+      "name_en": "Primal Champion",
+      "name_de": "Meister der Wildnis",
+      "player_choice": false,
+      "text_en": "You embody primal power. Your Strength and Constitution scores increase by 4, to a maximum of 25.",
+      "text_de": "Du verkörperst Urmacht. Deine Werte für Stärke und Konstitution werden um 4 erhöht (auf höchstens 25).",
+      "grants": [
+        {
+          "type": "ability_score_increase",
+          "abilities": [
+            "strength",
+            "constitution"
+          ],
+          "amount": 4,
+          "maximum": 25
+        }
+      ]
+    }
+  ],
+  "subclass_features": [
+    {
+      "id": "berserker-frenzy",
+      "owner_type": "subclass",
+      "owner_id": "barbarian-berserker",
+      "level": 3,
+      "name_en": "Frenzy",
+      "name_de": "Raserei",
+      "player_choice": false,
+      "text_en": "If you use Reckless Attack while your Rage is active, you deal extra damage to the first target you hit on your turn with a Strength-based attack. To determine the extra damage, roll a number of d6s equal to your Rage Damage bonus, and add them together. The damage has the same type as the weapon or Unarmed Strike used for the attack.",
+      "text_de": "Wenn du im Kampfrausch deinen Rücksichtslosen Angriff einsetzt, fügst du dem ersten Ziel, das du in deinem Zug mit einem stärkebasierten Angriff triffst, zusätzlichen Schaden zu. Ermittle den zusätzlichen Schaden, indem du mit einer Anzahl von W6 in Höhe deines Kampfrausch-Schadensbonus würfelst und ihre Summe hinzufügst. Der Schaden ist vom selben Typ wie jener der Waffe oder des waffenlosen Angriffs, die für den Angriff verwendet wurden.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "reckless_attack_while_raging",
+          "applies_to": "first_hit_on_turn",
+          "condition": "strength_based_attack",
+          "extra_damage": {
+            "dice": {
+              "count_from_resource": "rage_damage",
+              "die": "d6"
+            },
+            "type": "weapon_type"
+          }
+        }
+      ]
+    },
+    {
+      "id": "berserker-mindless-rage",
+      "owner_type": "subclass",
+      "owner_id": "barbarian-berserker",
+      "level": 6,
+      "name_en": "Mindless Rage",
+      "name_de": "Geistloser Kampfrausch",
+      "player_choice": false,
+      "text_en": "You have Immunity to the Charmed and Frightened conditions while your Rage is active. If you're Charmed or Frightened when you enter your Rage, the condition ends on you.",
+      "text_de": "Während du im Kampfrausch bist, bist du gegen die Zustände Bezaubert und Verängstigt immun. Wenn du zu Beginn des Kampfrauschs bezaubert oder verängstigt bist, endet der Zustand.",
+      "grants": [
+        {
+          "type": "condition_immunity",
+          "conditions": [
+            "charmed",
+            "frightened"
+          ],
+          "while_state": "rage"
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "on_rage_entry",
+          "effect": {
+            "type": "remove_conditions",
+            "conditions": [
+              "charmed",
+              "frightened"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "berserker-retaliation",
+      "owner_type": "subclass",
+      "owner_id": "barbarian-berserker",
+      "level": 10,
+      "name_en": "Retaliation",
+      "name_de": "Vergeltung",
+      "player_choice": false,
+      "text_en": "When you take damage from a creature that is within 5 feet of you, you can take a Reaction to make one melee attack against that creature, using a weapon or an Unarmed Strike.",
+      "text_de": "Wenn du Schaden durch eine Kreatur erleidest, die sich im Abstand von bis zu 1,5 Metern von dir befindet, kannst du als Reaktion einen Nahkampfangriff gegen diese Kreatur ausführen und dazu eine Waffe oder einen waffenlosen Angriff verwenden.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "take_damage_from_creature_within_5ft",
+          "action_type": "reaction",
+          "effect": {
+            "type": "melee_attack",
+            "weapon_or_unarmed": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "berserker-intimidating-presence",
+      "owner_type": "subclass",
+      "owner_id": "barbarian-berserker",
+      "level": 14,
+      "name_en": "Intimidating Presence",
+      "name_de": "Einschüchternde Präsenz",
+      "player_choice": false,
+      "text_en": "As a Bonus Action, you can strike terror into others with your menacing presence and primal power. When you do so, each creature of your choice in a 30-foot Emanation originating from you must make a Wisdom saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, a creature has the Frightened condition for 1 minute. At the end of each of the Frightened creature's turns, the creature repeats the save, ending the effect on itself on a success.\n\nOnce you use this feature, you can't use it again until you finish a Long Rest unless you expend a use of your Rage (no action required) to restore your use of it.",
+      "text_de": "Als Bonusaktion kannst du andere mit deiner bedrohlichen Präsenz und deiner Urmacht in Panik versetzen. In diesem Fall muss jede Kreatur deiner Wahl in einer Ausströmung von neun Metern, die von dir ausgeht, einen Weisheitsrettungswurf (SG 8 + dein Stärkemodifikator + dein Übungsbonus) ausführen. Scheitert der Wurf, so ist die Kreatur eine Minute lang verängstigt. Die verängstigte Kreatur wiederholt den Rettungswurf am Ende jedes ihrer Züge. Bei einem Erfolg endet der Effekt.\n\nWenn du dieses Merkmal verwendet hast, kannst du dies erst nach einer langen Rast erneut tun, sofern du nicht eine Anwendung deines Kampfrauschs zum Wiederherstellen verbrauchst (keine Aktion erforderlich).",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "recharge": "long_rest",
+          "refresh_option": {
+            "type": "feature_refresh",
+            "feature_id": "berserker-intimidating-presence",
+            "cost": {
+              "resource": "rage_uses",
+              "amount": 1
+            }
+          },
+          "area": {
+            "type": "emanation",
+            "radius_feet": 30
+          },
+          "targets": "creatures_of_choice",
+          "saving_throw": {
+            "ability": "wisdom",
+            "dc": {
+              "base": 8,
+              "modifiers": [
+                "strength_modifier",
+                "proficiency_bonus"
+              ]
+            }
+          },
+          "on_failure": {
+            "type": "apply_condition",
+            "condition": "frightened",
+            "duration": "1_minute",
+            "save_to_end": {
+              "timing": "end_of_targets_turn"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "wild-heart-rage-of-the-wilds",
+      "owner_type": "subclass",
+      "owner_id": "barbarian-wild-heart",
+      "level": 3,
+      "name_en": "Rage of the Wilds",
+      "name_de": "Kampfrausch der Wildnis",
+      "player_choice": true,
+      "choice_prompt_en": "Whenever you activate your Rage, choose one of the following options: Bear, Eagle, or Wolf.",
+      "choice_prompt_de": "Wann immer du dich in Kampfrausch versetzt, wähle eine der folgenden Optionen: Adler, Bär oder Wolf.",
+      "text_en": "Your Rage taps into the primal power of animals. Whenever you activate your Rage, you gain one of the following options of your choice.\n\nBear. While your Rage is active, you have Resistance to every damage type except Force, Necrotic, Psychic, and Radiant.\n\nEagle. When you activate your Rage, you can take the Disengage and Dash actions as part of that Bonus Action. While your Rage is active, you can take a Bonus Action to take both of those actions.\n\nWolf. While your Rage is active, your allies have Advantage on attack rolls against any enemy of yours within 5 feet of you.",
+      "text_de": "Dein Kampfrausch nutzt die Urmacht der Tiere. Wann immer du dich in Kampfrausch versetzt, erhältst du eine der folgenden Optionen nach deiner Wahl.\n\nAdler: Wenn du dich in Kampfrausch versetzt, kannst du im Rahmen dieser Bonusaktion die Rückzug- und die Spurt-Aktion ausführen. Im Kampfrausch kannst du mit einer Bonusaktion beide Aktionen ausführen.\n\nBär: Im Kampfrausch bist du gegen alle Schadensarten außer Energie, Gleißend, Nekrotisch und Psychisch resistent.\n\nWolf: Solange du im Kampfrausch bist, sind deine Verbündeten bei Angriffswürfen gegen alle deine Gegner im Abstand von bis zu 1,5 Metern von dir im Vorteil.",
+      "grants": [
+        {
+          "type": "choice",
+          "trigger": "on_rage_entry",
+          "replace_on": "rage",
+          "choose": 1,
+          "options": [
+            {
+              "id": "rage-of-wilds-bear",
+              "name_en": "Bear",
+              "name_de": "Bär",
+              "text_en": "While your Rage is active, you have Resistance to every damage type except Force, Necrotic, Psychic, and Radiant.",
+              "text_de": "Im Kampfrausch bist du gegen alle Schadensarten außer Energie, Gleißend, Nekrotisch und Psychisch resistent.",
+              "grants": [
+                {
+                  "type": "damage_resistance",
+                  "damage_types": "all",
+                  "exceptions": [
+                    "force",
+                    "necrotic",
+                    "psychic",
+                    "radiant"
+                  ],
+                  "while_state": "rage"
+                }
+              ]
+            },
+            {
+              "id": "rage-of-wilds-eagle",
+              "name_en": "Eagle",
+              "name_de": "Adler",
+              "text_en": "When you activate your Rage, you can take the Disengage and Dash actions as part of that Bonus Action. While your Rage is active, you can take a Bonus Action to take both of those actions.",
+              "text_de": "Wenn du dich in Kampfrausch versetzt, kannst du im Rahmen dieser Bonusaktion die Rückzug- und die Spurt-Aktion ausführen. Im Kampfrausch kannst du mit einer Bonusaktion beide Aktionen ausführen.",
+              "grants": [
+                {
+                  "type": "free_actions_on_state_entry",
+                  "state_id": "rage",
+                  "actions": [
+                    "disengage",
+                    "dash"
+                  ]
+                },
+                {
+                  "type": "bonus_action_grant",
+                  "actions": [
+                    "disengage",
+                    "dash"
+                  ],
+                  "while_state": "rage"
+                }
+              ]
+            },
+            {
+              "id": "rage-of-wilds-wolf",
+              "name_en": "Wolf",
+              "name_de": "Wolf",
+              "text_en": "While your Rage is active, your allies have Advantage on attack rolls against any enemy of yours within 5 feet of you.",
+              "text_de": "Solange du im Kampfrausch bist, sind deine Verbündeten bei Angriffswürfen gegen alle deine Gegner im Abstand von bis zu 1,5 Metern von dir im Vorteil.",
+              "grants": [
+                {
+                  "type": "ally_advantage",
+                  "on": "attack_rolls",
+                  "against": "enemies_within_5ft_of_you",
+                  "while_state": "rage"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wild-heart-animal-speaker",
+      "owner_type": "subclass",
+      "owner_id": "barbarian-wild-heart",
+      "level": 3,
+      "name_en": "Animal Speaker",
+      "name_de": "Tierflüsterer",
+      "player_choice": false,
+      "text_en": "You can cast the Beast Sense and Speak with Animals spells, but only as Rituals. Wisdom is your spellcasting ability for them.",
+      "text_de": "Du kannst die Zauber Tiersinn und Mit Tieren sprechen wirken, jedoch nur als Rituale. Dein Attribut zum Wirken dieser Zauber ist Weisheit.",
+      "grants": [
+        {
+          "type": "spell_grant",
+          "spell_id": "beast-sense",
+          "casting_restriction": "ritual_only",
+          "spellcasting_ability": "wisdom"
+        },
+        {
+          "type": "spell_grant",
+          "spell_id": "speak-with-animals",
+          "casting_restriction": "ritual_only",
+          "spellcasting_ability": "wisdom"
+        }
+      ]
+    },
+    {
+      "id": "wild-heart-aspect-of-the-wilds",
+      "owner_type": "subclass",
+      "owner_id": "barbarian-wild-heart",
+      "level": 6,
+      "name_en": "Aspect of the Wilds",
+      "name_de": "Aspekt der Wildnis",
+      "player_choice": true,
+      "choice_prompt_en": "Choose one option: Owl, Panther, or Salmon. You can change your choice whenever you finish a Long Rest.",
+      "choice_prompt_de": "Wähle eine Option: Eule, Lachs oder Panther. Du kannst deine Entscheidung wann immer du eine lange Rast beendest ändern.",
+      "text_en": "You gain one of the following options of your choice. Whenever you finish a Long Rest, you can change your choice.\n\nOwl. You have Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.\n\nPanther. You have a Climb Speed equal to your Speed.\n\nSalmon. You have a Swim Speed equal to your Speed.",
+      "text_de": "Du erhältst eine der folgenden Optionen nach deiner Wahl. Wann immer du eine lange Rast beendest, kannst du deine Entscheidung ändern.\n\nEule: Du hast Dunkelsicht mit einer Reichweite von 18 Metern. Wenn du bereits über Dunkelsicht verfügst, wird deren Reichweite um 18 Meter erhöht.\n\nLachs: Du hast eine Schwimmbewegungsrate in Höhe deiner Bewegungsrate.\n\nPanther: Du hast eine Kletterbewegungsrate in Höhe deiner Bewegungsrate.",
+      "grants": [
+        {
+          "type": "choice",
+          "choose": 1,
+          "change_on": "long_rest",
+          "options": [
+            {
+              "id": "aspect-owl",
+              "name_en": "Owl",
+              "name_de": "Eule",
+              "text_en": "You have Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.",
+              "text_de": "Du hast Dunkelsicht mit einer Reichweite von 18 Metern. Wenn du bereits über Dunkelsicht verfügst, wird deren Reichweite um 18 Meter erhöht.",
+              "grants": [
+                {
+                  "type": "darkvision",
+                  "range_feet": 60,
+                  "stacking": "additive_if_existing"
+                }
+              ]
+            },
+            {
+              "id": "aspect-panther",
+              "name_en": "Panther",
+              "name_de": "Panther",
+              "text_en": "You have a Climb Speed equal to your Speed.",
+              "text_de": "Du hast eine Kletterbewegungsrate in Höhe deiner Bewegungsrate.",
+              "grants": [
+                {
+                  "type": "speed_grant",
+                  "speed_type": "climb",
+                  "value": "equal_to_speed"
+                }
+              ]
+            },
+            {
+              "id": "aspect-salmon",
+              "name_en": "Salmon",
+              "name_de": "Lachs",
+              "text_en": "You have a Swim Speed equal to your Speed.",
+              "text_de": "Du hast eine Schwimmbewegungsrate in Höhe deiner Bewegungsrate.",
+              "grants": [
+                {
+                  "type": "speed_grant",
+                  "speed_type": "swim",
+                  "value": "equal_to_speed"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wild-heart-nature-speaker",
+      "owner_type": "subclass",
+      "owner_id": "barbarian-wild-heart",
+      "level": 10,
+      "name_en": "Nature Speaker",
+      "name_de": "Naturflüsterer",
+      "player_choice": false,
+      "text_en": "You can cast the Commune with Nature spell, but only as a Ritual. Wisdom is your spellcasting ability for it.",
+      "text_de": "Du kannst den Zauber Einswerden mit der Natur wirken, jedoch nur als Ritual. Dein Attribut zum Wirken des Zaubers ist Weisheit.",
+      "grants": [
+        {
+          "type": "spell_grant",
+          "spell_id": "commune-with-nature",
+          "casting_restriction": "ritual_only",
+          "spellcasting_ability": "wisdom"
+        }
+      ]
+    },
+    {
+      "id": "wild-heart-power-of-the-wilds",
+      "owner_type": "subclass",
+      "owner_id": "barbarian-wild-heart",
+      "level": 14,
+      "name_en": "Power of the Wilds",
+      "name_de": "Macht der Wildnis",
+      "player_choice": true,
+      "choice_prompt_en": "Whenever you activate your Rage, choose one of the following options: Falcon, Lion, or Ram.",
+      "choice_prompt_de": "Wann immer du dich in Kampfrausch versetzt, wähle eine der folgenden Optionen: Falke, Löwe oder Rammen.",
+      "text_en": "Whenever you activate your Rage, you gain one of the following options of your choice.\n\nFalcon. While your Rage is active, you have a Fly Speed equal to your Speed if you aren't wearing any armor.\n\nLion. While your Rage is active, any of your enemies within 5 feet of you have Disadvantage on attack rolls against targets other than you or another Barbarian who has this option active.\n\nRam. While your Rage is active, you can cause a Large or smaller creature to have the Prone condition when you hit it with a melee attack.",
+      "text_de": "Wann immer du dich in Kampfrausch versetzt, erhältst du eine der folgenden Optionen nach deiner Wahl.\n\nFalke: Im Kampfrausch hast du eine Flugbewegungsrate in Höhe deiner Bewegungsrate, sofern du keine Rüstung trägst.\n\nLöwe: Wenn du im Kampfrausch bist, sind all deine Gegner im Abstand von bis zu 1,5 Metern von dir bei Angriffswürfen gegen Ziele außer dir und anderen Barbaren, bei denen diese Option aktiv ist, im Nachteil.\n\nRammen: Im Kampfrausch kannst du eine Kreatur von höchstens großer Größe umstoßen, wenn du sie mit einem Nahkampfangriff triffst.",
+      "grants": [
+        {
+          "type": "choice",
+          "trigger": "on_rage_entry",
+          "replace_on": "rage",
+          "choose": 1,
+          "options": [
+            {
+              "id": "power-of-wilds-falcon",
+              "name_en": "Falcon",
+              "name_de": "Falke",
+              "text_en": "While your Rage is active, you have a Fly Speed equal to your Speed if you aren't wearing any armor.",
+              "text_de": "Im Kampfrausch hast du eine Flugbewegungsrate in Höhe deiner Bewegungsrate, sofern du keine Rüstung trägst.",
+              "grants": [
+                {
+                  "type": "speed_grant",
+                  "speed_type": "fly",
+                  "value": "equal_to_speed",
+                  "condition": "not_wearing_armor",
+                  "while_state": "rage"
+                }
+              ]
+            },
+            {
+              "id": "power-of-wilds-lion",
+              "name_en": "Lion",
+              "name_de": "Löwe",
+              "text_en": "While your Rage is active, any of your enemies within 5 feet of you have Disadvantage on attack rolls against targets other than you or another Barbarian who has this option active.",
+              "text_de": "Wenn du im Kampfrausch bist, sind all deine Gegner im Abstand von bis zu 1,5 Metern von dir bei Angriffswürfen gegen Ziele außer dir und anderen Barbaren, bei denen diese Option aktiv ist, im Nachteil.",
+              "grants": [
+                {
+                  "type": "disadvantage_on_enemies",
+                  "on": "attack_rolls",
+                  "against": "targets_other_than_self_or_active_lion_barbarians",
+                  "range_feet": 5,
+                  "while_state": "rage"
+                }
+              ]
+            },
+            {
+              "id": "power-of-wilds-ram",
+              "name_en": "Ram",
+              "name_de": "Rammen",
+              "text_en": "While your Rage is active, you can cause a Large or smaller creature to have the Prone condition when you hit it with a melee attack.",
+              "text_de": "Im Kampfrausch kannst du eine Kreatur von höchstens großer Größe umstoßen, wenn du sie mit einem Nahkampfangriff triffst.",
+              "grants": [
+                {
+                  "type": "on_hit_effect",
+                  "attack_type": "melee",
+                  "effect": {
+                    "type": "apply_condition",
+                    "condition": "prone"
+                  },
+                  "target_size_max": "large",
+                  "while_state": "rage"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "world-tree-vitality-of-the-tree",
+      "owner_type": "subclass",
+      "owner_id": "barbarian-world-tree",
+      "level": 3,
+      "name_en": "Vitality of the Tree",
+      "name_de": "Lebenskraft des Baums",
+      "player_choice": false,
+      "text_en": "Your Rage taps into the life force of the World Tree. You gain the following benefits.\n\nVitality Surge. When you activate your Rage, you gain a number of Temporary Hit Points equal to your Barbarian level.\n\nLife-Giving Force. At the start of each of your turns while your Rage is active, you can choose another creature within 10 feet of yourself to gain Temporary Hit Points. To determine the number of Temporary Hit Points, roll a number of d6s equal to your Rage Damage bonus, and add them together. If any of these Temporary Hit Points remain when your Rage ends, they vanish.",
+      "text_de": "Dein Kampfrausch nutzt die Lebensenergie des Weltenbaums. Du erhältst folgende Vorzüge.\n\nSchub der Lebenskraft: Wenn du dich in Kampfrausch versetzt, erhältst du eine Anzahl von temporären Trefferpunkten in Höhe deiner Barbarenstufe.\n\nLebensspendende Kraft: Im Kampfrausch kannst du zu Beginn jedes deiner Züge eine andere Kreatur im Abstand von bis zu drei Metern von dir auswählen, um temporäre Trefferpunkte zu erhalten. Ermittle die Anzahl der temporären Trefferpunkte, indem du mit einer Anzahl von W6 in Höhe deines Kampfrausch-Schadensbonus würfelst und ihre Summe hinzufügst. Wenn nach deinem Kampfrausch von diesen temporären Trefferpunkten noch welche übrig sind, verschwinden sie.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "on_rage_entry",
+          "effect": {
+            "type": "temporary_hit_points",
+            "value": "barbarian_level"
+          }
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "start_of_your_turn",
+          "while_state": "rage",
+          "optional": true,
+          "effect": {
+            "type": "grant_temporary_hit_points",
+            "target": "other_creature_within_10ft",
+            "dice": {
+              "count_from_resource": "rage_damage",
+              "die": "d6"
+            },
+            "expiry": "on_rage_end"
+          }
+        }
+      ]
+    },
+    {
+      "id": "world-tree-branches-of-the-tree",
+      "owner_type": "subclass",
+      "owner_id": "barbarian-world-tree",
+      "level": 6,
+      "name_en": "Branches of the Tree",
+      "name_de": "Äste des Baums",
+      "player_choice": false,
+      "text_en": "Whenever a creature you can see starts its turn within 30 feet of you while your Rage is active, you can take a Reaction to summon spectral branches of the World Tree around it. The target must succeed on a Strength saving throw (DC 8 plus your Strength modifier and Proficiency Bonus) or be teleported to an unoccupied space you can see within 5 feet of yourself or in the nearest unoccupied space you can see. After the target teleports, you can reduce its Speed to 0 until the end of the current turn.",
+      "text_de": "Wann immer eine Kreatur, die du sehen kannst, ihren Zug im Abstand von bis zu neun Metern von dir beginnt, während du im Kampfrausch bist, kannst du eine Reaktion ausführen, um geisterhafte Äste des Weltenbaums um die Kreatur herum zu beschwören. Das Ziel muss einen Stärkerettungswurf (SG 8 + dein Stärkemodifikator + dein Übungsbonus) bestehen, oder es wird in einen freien Bereich im Abstand von bis zu 1,5 Metern von dir (oder den nächstliegenden freien Bereich) teleportiert, den du sehen kannst. Nachdem das Ziel teleportiert wurde, kannst du seine Bewegungsrate bis zum Ende des aktuellen Zugs auf 0 verringern.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "creature_starts_turn_within_30ft",
+          "condition": "you_can_see_creature",
+          "while_state": "rage",
+          "action_type": "reaction",
+          "saving_throw": {
+            "ability": "strength",
+            "dc": {
+              "base": 8,
+              "modifiers": [
+                "strength_modifier",
+                "proficiency_bonus"
+              ]
+            }
+          },
+          "on_failure": {
+            "type": "teleport_target",
+            "destination": "unoccupied_space_within_5ft_of_you",
+            "fallback": "nearest_unoccupied_space_you_can_see"
+          },
+          "after_effect": {
+            "type": "optional_speed_reduction",
+            "value": 0,
+            "duration": "until_end_of_current_turn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "world-tree-battering-roots",
+      "owner_type": "subclass",
+      "owner_id": "barbarian-world-tree",
+      "level": 10,
+      "name_en": "Battering Roots",
+      "name_de": "Schlagende Wurzeln",
+      "player_choice": false,
+      "text_en": "During your turn, your reach is 10 feet greater with any melee weapon that has the Heavy or Versatile property, as tendrils of the World Tree extend from you. When you hit with such a weapon on your turn, you can activate the Push or Topple mastery property in addition to a different mastery property you're using with that weapon.",
+      "text_de": "Während deines Zugs ist deine Reichweite mit allen Nahkampfwaffen, welche die Eigenschaften Schwer oder Vielseitig haben, um drei Meter erhöht, da Wurzeln des Weltenbaums von dir ausgehen. Wenn du in deinem Zug mit einer solchen Waffe triffst, kannst du zusätzlich zu einer anderen Meisterschaftseigenschaft, die du mit dieser Waffe verwendest, die Meisterschaftseigenschaften Stoßen oder Umstoßen aktivieren.",
+      "grants": [
+        {
+          "type": "reach_bonus",
+          "value_feet": 10,
+          "weapon_properties": [
+            "heavy",
+            "versatile"
+          ],
+          "during": "your_turn"
+        },
+        {
+          "type": "bonus_mastery_property",
+          "weapon_properties": [
+            "heavy",
+            "versatile"
+          ],
+          "bonus_properties": [
+            "push",
+            "topple"
+          ],
+          "choose": 1,
+          "condition": "on_hit_during_your_turn",
+          "in_addition_to_active_mastery": true
+        }
+      ]
+    },
+    {
+      "id": "world-tree-travel-along-the-tree",
+      "owner_type": "subclass",
+      "owner_id": "barbarian-world-tree",
+      "level": 14,
+      "name_en": "Travel Along the Tree",
+      "name_de": "Am Baum entlangreisen",
+      "player_choice": false,
+      "text_en": "When you activate your Rage and as a Bonus Action while your Rage is active, you can teleport up to 60 feet to an unoccupied space you can see.\n\nIn addition, once per Rage, you can increase the range of that teleport to 150 feet. When you do so, you can also bring up to six willing creatures who are within 10 feet of you. Each creature teleports to an unoccupied space of your choice within 10 feet of your destination space.",
+      "text_de": "Wenn du dich in Kampfrausch versetzt und als Bonusaktion, während du im Kampfrausch bist, kannst du dich bis zu 18 Meter weit in einen freien Bereich teleportieren, den du sehen kannst.\n\nAußerdem kannst du die Reichweite dieser Teleportation einmal pro Kampfrausch auf 45 Meter erhöhen. In diesem Fall kannst du bis zu sechs bereitwillige Kreaturen im Abstand von bis zu drei Metern von dir mitnehmen. Jede Kreatur erscheint in einen freien Bereich deiner Wahl im Abstand von bis zu drei Metern von deinem Zielort.",
+      "grants": [
+        {
+          "type": "teleport",
+          "range_feet": 60,
+          "trigger": [
+            "on_rage_entry",
+            "bonus_action"
+          ],
+          "condition_for_bonus_action": "while_state_rage"
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "travel_along_tree_teleport",
+          "uses_per_state": {
+            "state_id": "rage",
+            "count": 1
+          },
+          "effect": {
+            "type": "teleport_upgrade",
+            "range_feet": 150,
+            "can_bring_creatures": {
+              "max_count": 6,
+              "condition": "willing",
+              "within_feet_of_self": 10,
+              "destination": "within_10ft_of_your_destination"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "zealot-divine-fury",
+      "owner_type": "subclass",
+      "owner_id": "barbarian-zealot",
+      "level": 3,
+      "name_en": "Divine Fury",
+      "name_de": "Göttliche Wut",
+      "player_choice": true,
+      "choice_prompt_en": "Each time you deal the Divine Fury damage, choose whether it is Necrotic or Radiant.",
+      "choice_prompt_de": "Wähle jedes Mal, wenn du den Schaden von Göttliche Wut verursachst, ob er nekrotisch oder gleißend ist.",
+      "text_en": "You can channel divine power into your strikes. On each of your turns while your Rage is active, the first creature you hit with a weapon or an Unarmed Strike takes extra damage equal to 1d6 plus half your Barbarian level (round down). The extra damage is Necrotic or Radiant; you choose the type each time you deal the damage.",
+      "text_de": "Du kannst göttliche Macht in deine Schläge kanalisieren. In jedem deiner Züge im Kampfrausch erleidet die erste Kreatur, die du mit einer Waffe oder einem waffenlosen Angriff triffst, zusätzlichen Schaden in Höhe von 1W6 plus der Hälfte deiner Barbarenstufe (abgerundet). Der zusätzliche Schaden ist nekrotisch oder gleißend. Du wählst die Art jedes Mal aus, wenn du den Schaden bewirkst.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "first_hit_on_turn",
+          "while_state": "rage",
+          "extra_damage": {
+            "dice": "1d6",
+            "flat_from_resource": "divine_fury_flat_bonus",
+            "type_choice": [
+              "necrotic",
+              "radiant"
+            ],
+            "choose_each_time": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "zealot-warrior-of-the-gods",
+      "owner_type": "subclass",
+      "owner_id": "barbarian-zealot",
+      "level": 3,
+      "name_en": "Warrior of the Gods",
+      "name_de": "Krieger der Götter",
+      "player_choice": false,
+      "text_en": "A divine entity helps ensure you continue the fight. You have a pool of four d12s that you can spend to heal yourself. As a Bonus Action, you can expend dice from the pool, roll them, and regain a number of Hit Points equal to the roll's total.\n\nYour pool regains all expended dice when you finish a Long Rest.\n\nThe pool's maximum number of dice increases by one when you reach Barbarian levels 6 (5 dice), 12 (6 dice), and 17 (7 dice).",
+      "text_de": "Ein göttliches Wesen hilft dir, den Kampf fortzusetzen. Du hast einen Vorrat von 4W12, den du verbrauchen kannst, um dich zu heilen. Als Bonusaktion kannst du Würfel aus dem Vorrat verbrauchen, indem du mit ihnen würfelst und eine Anzahl von Trefferpunkten in Höhe des Gesamtergebnisses des Würfelwurfs zurückerhältst.\n\nDu erhältst alle verbrauchten Würfel nach einer langen Rast zurück.\n\nDie maximale Anzahl von Würfeln im Vorrat wird um je einen Würfel erhöht, wenn du die 6. (5 Würfel), die 12. (6 Würfel) und die 17. (7 Würfel) Barbarenstufe erreichst.",
+      "grants": [
+        {
+          "type": "dice_pool",
+          "pool_id": "warrior_of_gods_dice",
+          "action_type": "bonus_action",
+          "effect": {
+            "type": "heal_self",
+            "value": "roll_expended_dice"
+          },
+          "count_from_resource": "warrior_of_gods_dice",
+          "recharge": "long_rest"
+        }
+      ]
+    },
+    {
+      "id": "zealot-fanatical-focus",
+      "owner_type": "subclass",
+      "owner_id": "barbarian-zealot",
+      "level": 6,
+      "name_en": "Fanatical Focus",
+      "name_de": "Fanatischer Fokus",
+      "player_choice": false,
+      "text_en": "Once per active Rage, if you fail a saving throw, you can reroll it with a bonus equal to your Rage Damage bonus, and you must use the new roll.",
+      "text_de": "Einmal pro Kampfrausch kannst du, wenn dein Rettungswurf scheitert, mit einem Bonus in Höhe deines Kampfrausch-Schadensbonus erneut würfeln. In diesem Fall musst du das neue Ergebnis verwenden.",
+      "grants": [
+        {
+          "type": "reroll",
+          "trigger": "fail_saving_throw",
+          "bonus_from_resource": "rage_damage",
+          "must_use_new_roll": true,
+          "recharge": {
+            "recharge": "per_state",
+            "state_id": "rage"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zealot-zealous-presence",
+      "owner_type": "subclass",
+      "owner_id": "barbarian-zealot",
+      "level": 10,
+      "name_en": "Zealous Presence",
+      "name_de": "Hingebungsvolle Präsenz",
+      "player_choice": false,
+      "text_en": "As a Bonus Action, you unleash a battle cry infused with divine energy. Up to ten other creatures of your choice within 60 feet of you gain Advantage on attack rolls and saving throws until the start of your next turn.\n\nOnce you use this feature, you can't use it again until you finish a Long Rest unless you expend a use of your Rage (no action required) to restore your use of it.",
+      "text_de": "Als Bonusaktion entfesselst du einen Schlachtruf, der mit göttlicher Energie versehen ist. Bis zum Beginn deines nächsten Zugs sind bis zu zehn andere Kreaturen deiner Wahl im Abstand von bis zu 18 Metern von dir bei ihren Angriffs- und Rettungswürfen im Vorteil.\n\nWenn du dieses Merkmal verwendet hast, kannst du dies erst nach einer langen Rast erneut tun, sofern du nicht eine Anwendung deines Kampfrauschs zum Wiederherstellen verbrauchst (keine Aktion erforderlich).",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "recharge": "long_rest",
+          "refresh_option": {
+            "type": "feature_refresh",
+            "feature_id": "zealot-zealous-presence",
+            "cost": {
+              "resource": "rage_uses",
+              "amount": 1
+            }
+          },
+          "targets": {
+            "type": "creatures_of_choice",
+            "max_count": 10,
+            "range_feet": 60,
+            "excludes_self": true
+          },
+          "effect": {
+            "type": "advantage",
+            "on": [
+              "attack_rolls",
+              "saving_throws"
+            ],
+            "duration": "until_start_of_your_next_turn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zealot-rage-of-the-gods",
+      "owner_type": "subclass",
+      "owner_id": "barbarian-zealot",
+      "level": 14,
+      "name_en": "Rage of the Gods",
+      "name_de": "Kampfrausch der Götter",
+      "player_choice": false,
+      "text_en": "When you activate your Rage, you can assume the form of a divine warrior. This form lasts for 1 minute or until you drop to 0 Hit Points. Once you use this feature, you can't do so again until you finish a Long Rest.\n\nWhile in this form, you gain the benefits below.\n\nFlight. You have a Fly Speed equal to your Speed and can hover.\n\nResistance. You have Resistance to Necrotic, Psychic, and Radiant damage.\n\nRevivification. When a creature within 30 feet of you would drop to 0 Hit Points, you can take a Reaction to expend a use of your Rage to instead change the target's Hit Points to a number equal to your Barbarian level.",
+      "text_de": "Wenn du dich in Kampfrausch versetzt, kannst du die Gestalt eines heiligen Kriegers annehmen. Diese Gestalt bleibt eine Minute lang bestehen oder bis deine Trefferpunkte auf 0 sinken. Du kannst dieses Merkmal erst nach einer langen Rast erneut verwenden.\n\nIn dieser Gestalt erhältst du folgende Vorzüge.\n\nFlug: Du hast eine Flugbewegungsrate in Höhe deiner Bewegungsrate und kannst schweben.\n\nResistenz: Du bist gegen gleißenden, nekrotischen und psychischen Schaden resistent.\n\nWiederbelebung: Wenn die Trefferpunkte einer Kreatur im Abstand von bis zu neun Metern von dir auf 0 sinken würden, kannst du eine Reaktion ausführen, um einen Einsatz deines Kampfrauschs zu verbrauchen und die Trefferpunkte des Ziels stattdessen auf eine Anzahl in Höhe deiner Barbarenstufe zu ändern.",
+      "grants": [
+        {
+          "type": "state",
+          "state_id": "rage_of_gods_form",
+          "trigger": "on_rage_entry",
+          "optional": true,
+          "duration": "1_minute",
+          "end_conditions": [
+            "drop_to_0_hp"
+          ],
+          "recharge": "long_rest"
+        },
+        {
+          "type": "speed_grant",
+          "speed_type": "fly",
+          "value": "equal_to_speed",
+          "can_hover": true,
+          "while_state": "rage_of_gods_form"
+        },
+        {
+          "type": "damage_resistance",
+          "damage_types": [
+            "necrotic",
+            "psychic",
+            "radiant"
+          ],
+          "while_state": "rage_of_gods_form"
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "creature_within_30ft_would_drop_to_0_hp",
+          "action_type": "reaction",
+          "cost": {
+            "resource": "rage_uses",
+            "amount": 1
+          },
+          "while_state": "rage_of_gods_form",
+          "effect": {
+            "type": "set_hp",
+            "target": "triggering_creature",
+            "value": "barbarian_level"
+          }
+        }
+      ]
+    }
+  ],
+  "subclass_progressions": [
+    {
+      "subclass_id": "barbarian-zealot",
+      "levels": [
+        {
+          "level": 3,
+          "resources": {
+            "warrior_of_gods_dice": {
+              "count": 4,
+              "die": "d12"
+            },
+            "divine_fury_flat_bonus": 1
+          }
+        },
+        {
+          "level": 4,
+          "resources": {
+            "warrior_of_gods_dice": {
+              "count": 4,
+              "die": "d12"
+            },
+            "divine_fury_flat_bonus": 2
+          }
+        },
+        {
+          "level": 5,
+          "resources": {
+            "warrior_of_gods_dice": {
+              "count": 4,
+              "die": "d12"
+            },
+            "divine_fury_flat_bonus": 2
+          }
+        },
+        {
+          "level": 6,
+          "resources": {
+            "warrior_of_gods_dice": {
+              "count": 5,
+              "die": "d12"
+            },
+            "divine_fury_flat_bonus": 3
+          }
+        },
+        {
+          "level": 7,
+          "resources": {
+            "warrior_of_gods_dice": {
+              "count": 5,
+              "die": "d12"
+            },
+            "divine_fury_flat_bonus": 3
+          }
+        },
+        {
+          "level": 8,
+          "resources": {
+            "warrior_of_gods_dice": {
+              "count": 5,
+              "die": "d12"
+            },
+            "divine_fury_flat_bonus": 4
+          }
+        },
+        {
+          "level": 9,
+          "resources": {
+            "warrior_of_gods_dice": {
+              "count": 5,
+              "die": "d12"
+            },
+            "divine_fury_flat_bonus": 4
+          }
+        },
+        {
+          "level": 10,
+          "resources": {
+            "warrior_of_gods_dice": {
+              "count": 5,
+              "die": "d12"
+            },
+            "divine_fury_flat_bonus": 5
+          }
+        },
+        {
+          "level": 11,
+          "resources": {
+            "warrior_of_gods_dice": {
+              "count": 5,
+              "die": "d12"
+            },
+            "divine_fury_flat_bonus": 5
+          }
+        },
+        {
+          "level": 12,
+          "resources": {
+            "warrior_of_gods_dice": {
+              "count": 6,
+              "die": "d12"
+            },
+            "divine_fury_flat_bonus": 6
+          }
+        },
+        {
+          "level": 13,
+          "resources": {
+            "warrior_of_gods_dice": {
+              "count": 6,
+              "die": "d12"
+            },
+            "divine_fury_flat_bonus": 6
+          }
+        },
+        {
+          "level": 14,
+          "resources": {
+            "warrior_of_gods_dice": {
+              "count": 6,
+              "die": "d12"
+            },
+            "divine_fury_flat_bonus": 7
+          }
+        },
+        {
+          "level": 15,
+          "resources": {
+            "warrior_of_gods_dice": {
+              "count": 6,
+              "die": "d12"
+            },
+            "divine_fury_flat_bonus": 7
+          }
+        },
+        {
+          "level": 16,
+          "resources": {
+            "warrior_of_gods_dice": {
+              "count": 6,
+              "die": "d12"
+            },
+            "divine_fury_flat_bonus": 8
+          }
+        },
+        {
+          "level": 17,
+          "resources": {
+            "warrior_of_gods_dice": {
+              "count": 7,
+              "die": "d12"
+            },
+            "divine_fury_flat_bonus": 8
+          }
+        },
+        {
+          "level": 18,
+          "resources": {
+            "warrior_of_gods_dice": {
+              "count": 7,
+              "die": "d12"
+            },
+            "divine_fury_flat_bonus": 9
+          }
+        },
+        {
+          "level": 19,
+          "resources": {
+            "warrior_of_gods_dice": {
+              "count": 7,
+              "die": "d12"
+            },
+            "divine_fury_flat_bonus": 9
+          }
+        },
+        {
+          "level": 20,
+          "resources": {
+            "warrior_of_gods_dice": {
+              "count": 7,
+              "die": "d12"
+            },
+            "divine_fury_flat_bonus": 10
+          }
+        }
+      ]
+    }
+  ]
+}

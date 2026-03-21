@@ -1,0 +1,1873 @@
+{
+  "class": {
+    "id": "paladin",
+    "name_en": "Paladin",
+    "name_de": "Paladin",
+    "hit_die": "d10",
+    "primary_abilities": [
+      "strength",
+      "charisma"
+    ],
+    "saving_throw_proficiencies": [
+      "wisdom",
+      "charisma"
+    ],
+    "proficiencies": {
+      "skills": {
+        "choose": 2,
+        "from": [
+          "athletics",
+          "insight",
+          "intimidation",
+          "medicine",
+          "persuasion",
+          "religion"
+        ]
+      },
+      "weapons": [
+        "simple",
+        "martial"
+      ],
+      "armor": [
+        "light",
+        "medium",
+        "heavy",
+        "shields"
+      ]
+    },
+    "starting_equipment": {
+      "choose": 1,
+      "options": [
+        {
+          "id": "option_a",
+          "items": [
+            "chain_mail",
+            "shield",
+            "longsword",
+            "javelin_x6",
+            "holy_symbol",
+            "priests_pack",
+            "9gp"
+          ]
+        },
+        {
+          "id": "option_b",
+          "items": [
+            "150gp"
+          ]
+        }
+      ]
+    },
+    "multiclass_rules": {
+      "grants": [
+        "hit_die_d10",
+        "proficiency_martial_weapons",
+        "proficiency_light_armor",
+        "proficiency_medium_armor",
+        "proficiency_shields"
+      ]
+    },
+    "subclass_level": 3
+  },
+  "class_progression": {
+    "class_id": "paladin",
+    "spell_slot_table": "half_caster",
+    "levels": [
+      {
+        "level": 1,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "paladin-lay-on-hands",
+          "paladin-spellcasting",
+          "paladin-weapon-mastery"
+        ],
+        "resources": {
+          "lay_on_hands_pool": 5,
+          "prepared_spells": 2,
+          "weapon_mastery_count": 2,
+          "channel_divinity_uses": 0
+        }
+      },
+      {
+        "level": 2,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "paladin-fighting-style",
+          "paladin-paladins-smite"
+        ],
+        "resources": {
+          "lay_on_hands_pool": 10,
+          "prepared_spells": 3,
+          "weapon_mastery_count": 2,
+          "channel_divinity_uses": 0
+        }
+      },
+      {
+        "level": 3,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "paladin-channel-divinity",
+          "paladin-divine-sense",
+          "paladin-subclass"
+        ],
+        "subclass_feature_level": true,
+        "resources": {
+          "lay_on_hands_pool": 15,
+          "prepared_spells": 4,
+          "weapon_mastery_count": 2,
+          "channel_divinity_uses": 2
+        }
+      },
+      {
+        "level": 4,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "paladin-asi-4"
+        ],
+        "resources": {
+          "lay_on_hands_pool": 20,
+          "prepared_spells": 5,
+          "weapon_mastery_count": 2,
+          "channel_divinity_uses": 2
+        }
+      },
+      {
+        "level": 5,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "paladin-extra-attack",
+          "paladin-faithful-steed"
+        ],
+        "resources": {
+          "lay_on_hands_pool": 25,
+          "prepared_spells": 6,
+          "weapon_mastery_count": 2,
+          "channel_divinity_uses": 2
+        }
+      },
+      {
+        "level": 6,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "paladin-aura-of-protection"
+        ],
+        "resources": {
+          "lay_on_hands_pool": 30,
+          "prepared_spells": 6,
+          "weapon_mastery_count": 2,
+          "channel_divinity_uses": 2
+        }
+      },
+      {
+        "level": 7,
+        "proficiency_bonus": 3,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "lay_on_hands_pool": 35,
+          "prepared_spells": 7,
+          "weapon_mastery_count": 2,
+          "channel_divinity_uses": 2
+        }
+      },
+      {
+        "level": 8,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "paladin-asi-8"
+        ],
+        "resources": {
+          "lay_on_hands_pool": 40,
+          "prepared_spells": 7,
+          "weapon_mastery_count": 2,
+          "channel_divinity_uses": 2
+        }
+      },
+      {
+        "level": 9,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "paladin-abjure-foes"
+        ],
+        "resources": {
+          "lay_on_hands_pool": 45,
+          "prepared_spells": 9,
+          "weapon_mastery_count": 2,
+          "channel_divinity_uses": 2
+        }
+      },
+      {
+        "level": 10,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "paladin-aura-of-courage"
+        ],
+        "resources": {
+          "lay_on_hands_pool": 50,
+          "prepared_spells": 9,
+          "weapon_mastery_count": 2,
+          "channel_divinity_uses": 2
+        }
+      },
+      {
+        "level": 11,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "paladin-radiant-strikes"
+        ],
+        "resources": {
+          "lay_on_hands_pool": 55,
+          "prepared_spells": 10,
+          "weapon_mastery_count": 2,
+          "channel_divinity_uses": 3
+        }
+      },
+      {
+        "level": 12,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "paladin-asi-12"
+        ],
+        "resources": {
+          "lay_on_hands_pool": 60,
+          "prepared_spells": 10,
+          "weapon_mastery_count": 2,
+          "channel_divinity_uses": 3
+        }
+      },
+      {
+        "level": 13,
+        "proficiency_bonus": 5,
+        "feature_ids": [],
+        "resources": {
+          "lay_on_hands_pool": 65,
+          "prepared_spells": 11,
+          "weapon_mastery_count": 2,
+          "channel_divinity_uses": 3
+        }
+      },
+      {
+        "level": 14,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "paladin-restoring-touch"
+        ],
+        "resources": {
+          "lay_on_hands_pool": 70,
+          "prepared_spells": 11,
+          "weapon_mastery_count": 2,
+          "channel_divinity_uses": 3
+        }
+      },
+      {
+        "level": 15,
+        "proficiency_bonus": 5,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "lay_on_hands_pool": 75,
+          "prepared_spells": 12,
+          "weapon_mastery_count": 2,
+          "channel_divinity_uses": 3
+        }
+      },
+      {
+        "level": 16,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "paladin-asi-16"
+        ],
+        "resources": {
+          "lay_on_hands_pool": 80,
+          "prepared_spells": 12,
+          "weapon_mastery_count": 2,
+          "channel_divinity_uses": 3
+        }
+      },
+      {
+        "level": 17,
+        "proficiency_bonus": 6,
+        "feature_ids": [],
+        "resources": {
+          "lay_on_hands_pool": 85,
+          "prepared_spells": 14,
+          "weapon_mastery_count": 2,
+          "channel_divinity_uses": 3
+        }
+      },
+      {
+        "level": 18,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "paladin-aura-expansion"
+        ],
+        "resources": {
+          "lay_on_hands_pool": 90,
+          "prepared_spells": 14,
+          "weapon_mastery_count": 2,
+          "channel_divinity_uses": 3
+        }
+      },
+      {
+        "level": 19,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "paladin-epic-boon"
+        ],
+        "resources": {
+          "lay_on_hands_pool": 95,
+          "prepared_spells": 15,
+          "weapon_mastery_count": 2,
+          "channel_divinity_uses": 3
+        }
+      },
+      {
+        "level": 20,
+        "proficiency_bonus": 6,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "lay_on_hands_pool": 100,
+          "prepared_spells": 15,
+          "weapon_mastery_count": 2,
+          "channel_divinity_uses": 3
+        }
+      }
+    ]
+  },
+  "subclasses": [
+    {
+      "id": "paladin-oath-of-devotion",
+      "class_id": "paladin",
+      "name_en": "Oath of Devotion",
+      "name_de": "Schwur der Hingabe",
+      "feature_levels": [
+        3,
+        7,
+        15,
+        20
+      ]
+    },
+    {
+      "id": "paladin-oath-of-glory",
+      "class_id": "paladin",
+      "name_en": "Oath of Glory",
+      "name_de": "Schwur des Ruhmes",
+      "feature_levels": [
+        3,
+        7,
+        15,
+        20
+      ]
+    },
+    {
+      "id": "paladin-oath-of-the-ancients",
+      "class_id": "paladin",
+      "name_en": "Oath of the Ancients",
+      "name_de": "Schwur der Alten",
+      "feature_levels": [
+        3,
+        7,
+        15,
+        20
+      ]
+    },
+    {
+      "id": "paladin-oath-of-vengeance",
+      "class_id": "paladin",
+      "name_en": "Oath of Vengeance",
+      "name_de": "Schwur der Rache",
+      "feature_levels": [
+        3,
+        7,
+        15,
+        20
+      ]
+    }
+  ],
+  "features": [
+    {
+      "id": "paladin-lay-on-hands",
+      "owner_type": "class",
+      "owner_id": "paladin",
+      "level": 1,
+      "name_en": "Lay On Hands",
+      "name_de": "Handauflegen",
+      "player_choice": false,
+      "text_en": "Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you finish a Long Rest. With that pool, you can restore a total number of Hit Points equal to five times your Paladin level.\n\nAs a Bonus Action, you can touch a creature (which could be yourself) and draw power from the pool to restore a number of Hit Points to that creature, up to the maximum amount remaining in the pool.\n\nYou can also expend 5 Hit Points from the pool to remove the Poisoned condition from the creature; those points don't also restore Hit Points to the creature.",
+      "text_de": "Deine gesegnete Berührung kann Wunden heilen. Du hast einen Vorrat an Heilkraft, der nach einer langen Rast aufgefüllt wird. Mit diesem Vorrat kannst du das Fünffache deiner Paladinstufe an Trefferpunkten wiederherstellen.\n\nAls Bonusaktion kannst du eine Kreatur (auch dich selbst) berühren und Kraft aus deinem Vorrat ziehen, um bei der Kreatur höchstens so viele Trefferpunkte wiederherzustellen, wie noch im Vorrat vorhanden sind.\n\nDu kannst auch 5 Trefferpunkte aus dem Vorrat verbrauchen, um den Zustand Vergiftet von der Kreatur zu entfernen. Diese Punkte werden nicht als Trefferpunkte der Kreatur wiederhergestellt.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "recharge": "long_rest",
+          "effect": {
+            "type": "heal_from_pool",
+            "pool_resource": "lay_on_hands_pool",
+            "target": "creature_touched_including_self",
+            "optional_additional_effect": {
+              "type": "remove_condition",
+              "conditions": [
+                "poisoned"
+              ],
+              "cost_from_pool": {
+                "resource": "lay_on_hands_pool",
+                "amount": 5
+              },
+              "note": "5 HP per condition removed do not also restore HP. Can be used instead of or alongside HP restoration in the same bonus action."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "paladin-spellcasting",
+      "owner_type": "class",
+      "owner_id": "paladin",
+      "level": 1,
+      "name_en": "Spellcasting",
+      "name_de": "Zauberwirken",
+      "player_choice": true,
+      "choice_prompt_en": "Choose your prepared spells from the Paladin spell list. Heroism and Searing Smite are recommended. You can replace one prepared spell whenever you finish a Long Rest.",
+      "choice_prompt_de": "Wähle deine vorbereiteten Zauber aus der Paladinzauberliste. Heldenmut und Sengendes Niederstrecken werden empfohlen. Du kannst einen vorbereiteten Zauber nach jeder langen Rast ersetzen.",
+      "text_en": "You have learned to cast spells through prayer and meditation. Charisma is your spellcasting ability. You can use a Holy Symbol as a Spellcasting Focus.\n\nSpell Slots. Shown in the Paladin Features table. Regained on Long Rest.\n\nPrepared Spells. Choose two level 1 Paladin spells to start. The count increases with Paladin level. You can replace one prepared spell whenever you finish a Long Rest.",
+      "text_de": "Du hast gelernt, durch Gebete und Meditation Zauber zu wirken. Dein Attribut zum Wirken der Paladinzauber ist Charisma. Du kannst ein heiliges Symbol als Zauberfokus verwenden.\n\nZauberplätze: Sieh Tabelle. Aufladung nach langer Rast.\n\nVorbereitete Zauber: Wähle zu Beginn zwei Paladinzauber des 1. Grades. Die Anzahl steigt mit der Paladinstufe. Du kannst einen vorbereiteten Zauber nach jeder langen Rast ersetzen.",
+      "grants": [
+        {
+          "type": "spellcasting",
+          "casting_model": "prepared",
+          "spellcasting_ability": "charisma",
+          "spellcasting_focus": "holy_symbol",
+          "spell_slot_table": "half_caster",
+          "recharge": "long_rest",
+          "prepared_spells": {
+            "count_from_resource": "prepared_spells",
+            "source": "paladin_spell_list",
+            "replaceable_on": "long_rest",
+            "count_per_swap": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "paladin-weapon-mastery",
+      "owner_type": "class",
+      "owner_id": "paladin",
+      "level": 1,
+      "name_en": "Weapon Mastery",
+      "name_de": "Waffenmeisterung",
+      "player_choice": true,
+      "choice_prompt_en": "Choose two kinds of weapons you have proficiency with whose mastery properties you can use. You can change both choices whenever you finish a Long Rest.",
+      "choice_prompt_de": "Wähle zwei Waffenarten, in denen du geübt bist, deren Meisterschaftseigenschaften du verwenden kannst. Du kannst beide Waffenarten wann immer du eine lange Rast beendest ändern.",
+      "text_en": "Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longswords and Javelins. Whenever you finish a Long Rest, you can change the kinds of weapons you chose.",
+      "text_de": "Deine Vertrautheit mit Waffen erlaubt dir, die Meisterschaftseigenschaften zweier Waffenarten deiner Wahl zu verwenden, sofern du Übung im Umgang mit diesen hast. Wann immer du eine lange Rast beendest, kannst du die ausgewählten Waffenarten ändern.",
+      "grants": [
+        {
+          "type": "weapon_mastery",
+          "count_from_resource": "weapon_mastery_count",
+          "weapon_categories": [
+            "simple",
+            "martial"
+          ],
+          "requires_proficiency": true,
+          "change_on": "long_rest",
+          "change_count": 2
+        }
+      ]
+    },
+    {
+      "id": "paladin-fighting-style",
+      "owner_type": "class",
+      "owner_id": "paladin",
+      "level": 2,
+      "name_en": "Fighting Style",
+      "name_de": "Kampfstil",
+      "player_choice": true,
+      "choice_prompt_en": "Choose a Fighting Style feat, or choose the Blessed Warrior option (learn two Cleric cantrips).",
+      "choice_prompt_de": "Wähle ein Kampfstil-Talent oder wähle die Option Gesegneter Krieger (erlerne zwei Klerikerzaubertricks).",
+      "text_en": "You gain a Fighting Style feat of your choice. Instead of choosing one of those feats, you can choose the option below.\n\nBlessed Warrior. You learn two Cleric cantrips of your choice. Guidance and Sacred Flame are recommended. The chosen cantrips count as Paladin spells for you, and Charisma is your spellcasting ability for them. Whenever you gain a Paladin level, you can replace one of these cantrips with another Cleric cantrip.",
+      "text_de": "Du erhältst ein Kampfstil-Talent deiner Wahl. Anstatt eins dieser Talente auszuwählen, kannst du dich auch für die Option unten entscheiden.\n\nGesegneter Krieger: Du erlernst zwei Klerikerzaubertricks deiner Wahl. Göttliche Führung und Heilige Flamme werden empfohlen. Die ausgewählten Zaubertricks zählen für dich als Paladinzauber, und dein Attribut zum Wirken dieser Zauber ist Charisma. Wann immer du eine Paladinstufe erhältst, kannst du einen dieser Zaubertricks ersetzen.",
+      "grants": [
+        {
+          "type": "choice",
+          "choose": 1,
+          "options": [
+            {
+              "id": "fighting-style-feat",
+              "name_en": "Fighting Style Feat",
+              "name_de": "Kampfstil-Talent",
+              "text_en": "Choose a Fighting Style feat.",
+              "text_de": "Wähle ein Kampfstil-Talent.",
+              "grants": [
+                {
+                  "type": "feat_choice",
+                  "feat_category": "fighting_style"
+                }
+              ]
+            },
+            {
+              "id": "blessed-warrior",
+              "name_en": "Blessed Warrior",
+              "name_de": "Gesegneter Krieger",
+              "text_en": "You learn two Cleric cantrips of your choice. Guidance and Sacred Flame are recommended. They count as Paladin spells with Charisma as the spellcasting ability. You can replace one whenever you gain a Paladin level.",
+              "text_de": "Du erlernst zwei Klerikerzaubertricks deiner Wahl. Göttliche Führung und Heilige Flamme werden empfohlen. Diese zählen als Paladinzauber mit Charisma als Zauberwirkungsattribut. Wann immer du eine Paladinstufe erhältst, kannst du einen ersetzen.",
+              "grants": [
+                {
+                  "type": "spellcasting",
+                  "casting_model": "known",
+                  "spellcasting_ability": "charisma",
+                  "cantrips": {
+                    "count": 2,
+                    "source": "cleric_spell_list",
+                    "eligibility": "cantrips_only",
+                    "replaceable_on": "level_up",
+                    "replace_count": 1,
+                    "spells_count_as": "paladin_spells"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paladin-paladins-smite",
+      "owner_type": "class",
+      "owner_id": "paladin",
+      "level": 2,
+      "name_en": "Paladin's Smite",
+      "name_de": "Paladin-Niederstrecken",
+      "player_choice": false,
+      "text_en": "You always have the Divine Smite spell prepared. In addition, you can cast it without expending a spell slot, but you must finish a Long Rest before you can cast it in this way again.",
+      "text_de": "Du hast den Zauber Göttliches Niederstrecken stets vorbereitet. Du kannst diesen Zauber wirken, ohne einen Zauberplatz zu verbrauchen, kannst ihn aber erst nach einer langen Rast erneut auf diese Art wirken.",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "divine-smite",
+          "class_level_threshold": 2
+        },
+        {
+          "type": "spell_cost_override",
+          "spell_id": "divine-smite",
+          "cost": "no_spell_slot",
+          "uses": 1,
+          "recharge": "long_rest"
+        }
+      ]
+    },
+    {
+      "id": "paladin-channel-divinity",
+      "owner_type": "class",
+      "owner_id": "paladin",
+      "level": 3,
+      "name_en": "Channel Divinity",
+      "name_de": "Göttliche Macht fokussieren",
+      "player_choice": false,
+      "text_en": "You can channel divine energy directly from the Outer Planes to fuel magical effects. You start with one such effect: Divine Sense, described below. Other Paladin features give additional Channel Divinity options. Each time you use this class's Channel Divinity, you choose which effect to create.\n\nYou can use Channel Divinity twice. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. You gain an additional use at Paladin level 11.\n\nIf a Channel Divinity effect requires a saving throw, the DC equals this class's spell save DC.",
+      "text_de": "Du kannst göttliche Energie direkt von den Äußeren Ebenen kanalisieren, um magische Effekte zu wirken. Du beginnst mit einem Effekt: Göttliches Gespür (unten beschrieben). Andere Paladinmerkmale verleihen dir zusätzliche Effektoptionen.\n\nDu kannst Göttliche Macht fokussieren zweimal anwenden. Du erhältst eine verbrauchte Anwendung nach einer kurzen Rast zurück und alle nach einer langen Rast. Du erhältst auf der 11. Stufe eine zusätzliche Anwendung.",
+      "grants": [
+        {
+          "type": "uses_resource",
+          "resource": "channel_divinity_uses",
+          "recharge": [
+            {
+              "amount": 1,
+              "recharge": "short_rest"
+            },
+            {
+              "amount": "all",
+              "recharge": "long_rest"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paladin-divine-sense",
+      "owner_type": "class",
+      "owner_id": "paladin",
+      "level": 3,
+      "name_en": "Divine Sense",
+      "name_de": "Göttliches Gespür",
+      "player_choice": false,
+      "text_en": "As a Bonus Action, you can open your awareness to detect Celestials, Fiends, and Undead. For the next 10 minutes or until you have the Incapacitated condition, you know the location of any creature of those types within 60 feet of yourself, and you know its creature type. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the Hallow spell.",
+      "text_de": "Als Bonusaktion kannst du dein Bewusstsein öffnen, um celestische Wesen, Unholde und Untote zu erkennen. In den nächsten zehn Minuten – oder bis du kampfunfähig wirst – kennst du den Ort von jeder Kreatur dieser Typen im Abstand von bis zu 18 Metern von dir, und du erkennst den jeweiligen Kreaturentyp. Innerhalb der gleichen Reichweite erkennst du auch Orte und Gegenstände, die geweiht oder entweiht wurden.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "uses_resource": "channel_divinity_uses",
+          "effect": {
+            "type": "detect_creature_types",
+            "creature_types": [
+              "celestial",
+              "fiend",
+              "undead"
+            ],
+            "range_feet": 60,
+            "duration": "10_minutes",
+            "end_conditions": [
+              "incapacitated"
+            ],
+            "also_detects": "consecrated_or_desecrated_places_and_objects"
+          }
+        }
+      ]
+    },
+    {
+      "id": "paladin-subclass",
+      "owner_type": "class",
+      "owner_id": "paladin",
+      "level": 3,
+      "name_en": "Paladin Subclass",
+      "name_de": "Paladin-Unterklasse",
+      "player_choice": true,
+      "choice_prompt_en": "Choose a Paladin subclass: Oath of Devotion, Oath of Glory, Oath of the Ancients, or Oath of Vengeance.",
+      "choice_prompt_de": "Wähle eine Paladin-Unterklasse: Schwur der Alten, Schwur der Hingabe, Schwur der Rache oder Schwur des Ruhmes.",
+      "text_en": "You gain a Paladin subclass of your choice. The Oath of Devotion, Oath of Glory, Oath of the Ancients, and Oath of Vengeance subclasses are detailed after this class's description.",
+      "text_de": "Du erhältst eine Paladin-Unterklasse deiner Wahl. Die Unterklassen Schwur der Alten, Schwur der Hingabe, Schwur der Rache und Schwur des Ruhmes werden nach der Beschreibung dieser Klasse erläutert.",
+      "grants": [
+        {
+          "type": "subclass_choice",
+          "class_id": "paladin"
+        }
+      ]
+    },
+    {
+      "id": "paladin-asi-4",
+      "owner_type": "class",
+      "owner_id": "paladin",
+      "level": 4,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Paladin levels 8, 12, and 16.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl. Du erhältst dieses Merkmal auf der 8., 12. und 16. Paladinstufe erneut.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "paladin-extra-attack",
+      "owner_type": "class",
+      "owner_id": "paladin",
+      "level": 5,
+      "name_en": "Extra Attack",
+      "name_de": "Zusätzlicher Angriff",
+      "player_choice": false,
+      "text_en": "You can attack twice instead of once whenever you take the Attack action on your turn.",
+      "text_de": "Du kannst jetzt zweimal angreifen, wenn du in deinem Zug eine Angriffsaktion ausführst.",
+      "grants": [
+        {
+          "type": "extra_attack",
+          "total_attacks": 2
+        }
+      ]
+    },
+    {
+      "id": "paladin-faithful-steed",
+      "owner_type": "class",
+      "owner_id": "paladin",
+      "level": 5,
+      "name_en": "Faithful Steed",
+      "name_de": "Treues Reittier",
+      "player_choice": false,
+      "text_en": "You can call on the aid of an otherworldly steed. You always have the Find Steed spell prepared. You can also cast the spell once without expending a spell slot, and you regain the ability to do so when you finish a Long Rest.",
+      "text_de": "Du kannst ein außerweltliches Reittier herbeirufen. Du hast den Zauber Reittier finden stets vorbereitet. Du kannst den Zauber auch einmal wirken, ohne einen Zauberplatz zu verbrauchen. Diese Fähigkeit erhältst du nach einer langen Rast zurück.",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "find-steed",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "spell_cost_override",
+          "spell_id": "find-steed",
+          "cost": "no_spell_slot",
+          "uses": 1,
+          "recharge": "long_rest"
+        }
+      ]
+    },
+    {
+      "id": "paladin-aura-of-protection",
+      "owner_type": "class",
+      "owner_id": "paladin",
+      "level": 6,
+      "name_en": "Aura of Protection",
+      "name_de": "Aura des Schutzes",
+      "player_choice": false,
+      "text_en": "You radiate a protective, unseeable aura in a 10-foot Emanation that originates from you. The aura is inactive while you have the Incapacitated condition.\n\nYou and your allies in the aura gain a bonus to saving throws equal to your Charisma modifier (minimum bonus of +1).\n\nIf another Paladin is present, a creature can benefit from only one Aura of Protection at a time; the creature chooses which aura while in them.",
+      "text_de": "Du hast eine nicht sichtbare beschützende Aura mit einer Ausströmung von drei Metern. Die Aura ist inaktiv, solange du kampfunfähig bist.\n\nDu und deine Verbündeten in der Aura erhalten einen Bonus in Höhe deines Charismamodifikators (mindestens +1) auf Rettungswürfe.\n\nWenn ein anderer Paladin anwesend ist, kann eine Kreatur nur von jeweils einer Aura des Schutzes profitieren.",
+      "grants": [
+        {
+          "type": "aura",
+          "aura_id": "aura_of_protection",
+          "radius_feet": 10,
+          "targets": [
+            "self",
+            "allies"
+          ],
+          "inactive_condition": "incapacitated"
+        },
+        {
+          "type": "saving_throw_bonus",
+          "saving_throw": "all",
+          "value": {
+            "equals": "charisma_modifier",
+            "minimum": 1
+          },
+          "targets": [
+            "self",
+            "allies"
+          ],
+          "while_aura": "aura_of_protection",
+          "stacking": "one_aura_of_protection_per_creature"
+        }
+      ]
+    },
+    {
+      "id": "paladin-asi-8",
+      "owner_type": "class",
+      "owner_id": "paladin",
+      "level": 8,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "paladin-abjure-foes",
+      "owner_type": "class",
+      "owner_id": "paladin",
+      "level": 9,
+      "name_en": "Abjure Foes",
+      "name_de": "Gegner verdammen",
+      "player_choice": false,
+      "text_en": "As a Magic action, you can expend one use of this class's Channel Divinity to overwhelm foes with awe. As you present your Holy Symbol or weapon, you can target a number of creatures equal to your Charisma modifier (minimum of one creature) that you can see within 60 feet of yourself. Each target must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute or until it takes any damage. While Frightened in this way, a target can do only one of the following on its turns: move, take an action, or take a Bonus Action.",
+      "text_de": "Als magische Aktion kannst du eine Anwendung von Göttliche Macht fokussieren verbrauchen, um Gegnern Ehrfurcht einzuflößen. Du kannst auf eine Anzahl von Kreaturen in Höhe deines Charismamodifikators (mindestens eine) im Abstand von bis zu 18 Metern zielen, die du sehen kannst. Jedes Ziel muss einen Weisheitsrettungswurf bestehen, oder es ist eine Minute lang – oder bis es Schaden erleidet – verängstigt. Solange es so verängstigt ist, kann es in seinen Zügen nur eine der folgenden Handlungen ausführen: sich bewegen, eine Aktion ausführen oder eine Bonusaktion ausführen.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "magic_action",
+          "uses_resource": "channel_divinity_uses",
+          "range_feet": 60,
+          "targets": {
+            "type": "creatures_of_choice_you_can_see",
+            "max_count": {
+              "equals": "charisma_modifier",
+              "minimum": 1
+            }
+          },
+          "saving_throw": {
+            "ability": "wisdom",
+            "dc": "spell_save_dc"
+          },
+          "on_failure": {
+            "type": "apply_conditions",
+            "conditions": [
+              "frightened"
+            ],
+            "duration": "1_minute",
+            "end_conditions": [
+              "takes_any_damage"
+            ],
+            "restriction_while_frightened": "one_of_move_action_or_bonus_action_per_turn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "paladin-aura-of-courage",
+      "owner_type": "class",
+      "owner_id": "paladin",
+      "level": 10,
+      "name_en": "Aura of Courage",
+      "name_de": "Aura der Tapferkeit",
+      "player_choice": false,
+      "text_en": "You and your allies have Immunity to the Frightened condition while in your Aura of Protection. If a Frightened ally enters the aura, that condition has no effect on that ally while there.",
+      "text_de": "Du und deine Verbündeten seid in deiner Aura des Schutzes gegen den Zustand Verängstigt immun. Wenn ein verängstigter Verbündeter die Aura betritt, hat der Zustand keine Wirkung auf ihn, solange er sich innerhalb der Aura aufhält.",
+      "grants": [
+        {
+          "type": "condition_immunity",
+          "conditions": [
+            "frightened"
+          ],
+          "targets": [
+            "self",
+            "allies"
+          ],
+          "while_aura": "aura_of_protection"
+        }
+      ]
+    },
+    {
+      "id": "paladin-radiant-strikes",
+      "owner_type": "class",
+      "owner_id": "paladin",
+      "level": 11,
+      "name_en": "Radiant Strikes",
+      "name_de": "Gleißende Schläge",
+      "player_choice": false,
+      "text_en": "Your strikes now carry supernatural power. When you hit a target with an attack roll using a Melee weapon or an Unarmed Strike, the target takes an extra 1d8 Radiant damage.",
+      "text_de": "Deine Schläge haben jetzt übernatürliche Macht. Wenn du ein Ziel mit einer Nahkampfwaffe oder einem waffenlosen Angriff triffst, erleidet es zusätzlich 1W8 gleißenden Schaden.",
+      "grants": [
+        {
+          "type": "on_hit_effect",
+          "attack_type": [
+            "melee_weapon",
+            "unarmed"
+          ],
+          "effect": {
+            "type": "damage",
+            "damage_type": "radiant",
+            "value": {
+              "dice": "1d8"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "paladin-asi-12",
+      "owner_type": "class",
+      "owner_id": "paladin",
+      "level": 12,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "paladin-restoring-touch",
+      "owner_type": "class",
+      "owner_id": "paladin",
+      "level": 14,
+      "name_en": "Restoring Touch",
+      "name_de": "Erquickende Berührung",
+      "player_choice": false,
+      "text_en": "When you use Lay On Hands on a creature, you can also remove one or more of the following conditions from the creature: Blinded, Charmed, Deafened, Frightened, Paralyzed, or Stunned. You must expend 5 Hit Points from the healing pool of Lay On Hands for each of these conditions you remove; those points don't also restore Hit Points to the creature.",
+      "text_de": "Wenn du Handauflegen auf eine Kreatur wirkst, kannst du zusätzlich mindestens einen der folgenden Zustände von der Kreatur entfernen: Betäubt, Bezaubert, Blind, Gelähmt, Taub oder Verängstigt. Du musst für jeden dieser Zustände, den du entfernen willst, 5 Trefferpunkte aus dem Vorrat an Heilkraft verbrauchen. Diese Punkte werden nicht als Trefferpunkte der Kreatur wiederhergestellt.",
+      "grants": [
+        {
+          "type": "feature_modifier",
+          "feature_id": "paladin-lay-on-hands",
+          "modifies_grant": "remove_condition",
+          "modification": {
+            "adds_conditions": [
+              "blinded",
+              "charmed",
+              "deafened",
+              "frightened",
+              "paralyzed",
+              "stunned"
+            ],
+            "cost_per_condition_from_pool": {
+              "resource": "lay_on_hands_pool",
+              "amount": 5
+            },
+            "note": "5 HP per condition removed; those points do not also restore HP"
+          }
+        }
+      ]
+    },
+    {
+      "id": "paladin-asi-16",
+      "owner_type": "class",
+      "owner_id": "paladin",
+      "level": 16,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "paladin-aura-expansion",
+      "owner_type": "class",
+      "owner_id": "paladin",
+      "level": 18,
+      "name_en": "Aura Expansion",
+      "name_de": "Aura-Ausdehnung",
+      "player_choice": false,
+      "text_en": "Your Aura of Protection is now a 30-foot Emanation.",
+      "text_de": "Deine Aura des Schutzes hat nun eine Ausströmung von neun Metern.",
+      "grants": [
+        {
+          "type": "aura_modifier",
+          "aura_id": "aura_of_protection",
+          "radius_feet": 30
+        }
+      ]
+    },
+    {
+      "id": "paladin-epic-boon",
+      "owner_type": "class",
+      "owner_id": "paladin",
+      "level": 19,
+      "name_en": "Epic Boon",
+      "name_de": "Epische Gabe",
+      "player_choice": true,
+      "choice_prompt_en": "Gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Truesight is recommended.",
+      "choice_prompt_de": "Erhalte ein Epische-Gabe-Talent oder ein anderes Talent deiner Wahl. Gabe des Wahren Blicks wird empfohlen.",
+      "text_en": "You gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Truesight is recommended.",
+      "text_de": "Du erhältst ein Epische-Gabe-Talent oder ein anderes Talent deiner Wahl. Gabe des Wahren Blicks wird empfohlen.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "feat_category": "epic_boon",
+          "recommended": "boon_of_truesight"
+        }
+      ]
+    }
+  ],
+  "subclass_features": [
+    {
+      "id": "devotion-oath-spells",
+      "owner_type": "subclass",
+      "owner_id": "paladin-oath-of-devotion",
+      "level": 3,
+      "name_en": "Oath of Devotion Spells",
+      "name_de": "Schwurzauber der Hingabe",
+      "player_choice": false,
+      "text_en": "The magic of your oath ensures you always have certain spells ready.\n\nLevel 3: Protection from Evil and Good, Shield of Faith. Level 5: Aid, Zone of Truth. Level 9: Beacon of Hope, Dispel Magic. Level 13: Freedom of Movement, Guardian of Faith. Level 17: Commune, Flame Strike.",
+      "text_de": "Die Magie deines Schwurs sorgt dafür, dass du bestimmte Zauber stets vorbereitet hast.\n\nStufe 3: Schild des Glaubens, Schutz vor Gut und Böse. Stufe 5: Beistand, Zone der Wahrheit. Stufe 9: Leuchtfeuer der Hoffnung, Magie bannen. Stufe 13: Bewegungsfreiheit, Hüter des Glaubens. Stufe 17: Flammenschlag, Heiliges Gespräch.",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "protection-from-evil-and-good",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "shield-of-faith",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "aid",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "zone-of-truth",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "beacon-of-hope",
+          "class_level_threshold": 9
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "dispel-magic",
+          "class_level_threshold": 9
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "freedom-of-movement",
+          "class_level_threshold": 13
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "guardian-of-faith",
+          "class_level_threshold": 13
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "commune",
+          "class_level_threshold": 17
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "flame-strike",
+          "class_level_threshold": 17
+        }
+      ]
+    },
+    {
+      "id": "devotion-sacred-weapon",
+      "owner_type": "subclass",
+      "owner_id": "paladin-oath-of-devotion",
+      "level": 3,
+      "name_en": "Sacred Weapon",
+      "name_de": "Heilige Waffe",
+      "player_choice": false,
+      "text_en": "When you take the Attack action, you can expend one use of your Channel Divinity to imbue one Melee weapon that you are holding with positive energy. For 10 minutes or until you use this feature again, you add your Charisma modifier to attack rolls you make with that weapon (minimum bonus of +1), and each time you hit with it, you cause it to deal its normal damage type or Radiant damage.\n\nThe weapon also emits Bright Light in a 20-foot radius and Dim Light 20 feet beyond that.\n\nYou can end this effect early (no action required). This effect also ends if you aren't carrying the weapon.",
+      "text_de": "Wenn du die Angriffsaktion ausführst, kannst du eine Anwendung von Göttliche Macht fokussieren verbrauchen, um eine gehaltene Nahkampfwaffe mit positiver Energie zu versehen. Zehn Minuten lang – oder bis du dieses Merkmal erneut einsetzt – fügst du deinen Charismamodifikator (mindestens +1) deinen Angriffswürfen mit dieser Waffe hinzu, und bei jedem Treffer kannst du die normale Schadensart oder gleißenden Schaden wählen.\n\nDie Waffe spendet in einem Radius von sechs Metern helles Licht und in einem weiteren Radius von sechs Metern dämmriges Licht.\n\nDu kannst diesen Effekt vorzeitig beenden (keine Aktion erforderlich). Der Effekt endet auch, wenn du die Waffe nicht trägst.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "free",
+          "trigger": "take_attack_action",
+          "uses_resource": "channel_divinity_uses",
+          "effect": {
+            "type": "state",
+            "state_id": "sacred_weapon",
+            "target": "held_melee_weapon",
+            "duration": "10_minutes",
+            "end_conditions": [
+              "use_feature_again",
+              "not_carrying_weapon"
+            ]
+          }
+        },
+        {
+          "type": "attack_roll_bonus",
+          "value": {
+            "equals": "charisma_modifier",
+            "minimum": 1
+          },
+          "attack_type": "sacred_weapon",
+          "while_state": "sacred_weapon"
+        },
+        {
+          "type": "damage_type_choice_on_hit",
+          "attack_type": "sacred_weapon",
+          "options": [
+            "normal",
+            "radiant"
+          ],
+          "choose_on": "each_hit",
+          "while_state": "sacred_weapon"
+        },
+        {
+          "type": "passive",
+          "effect": "emit_bright_light_20ft_dim_light_20ft_beyond",
+          "while_state": "sacred_weapon"
+        }
+      ]
+    },
+    {
+      "id": "devotion-aura-of-devotion",
+      "owner_type": "subclass",
+      "owner_id": "paladin-oath-of-devotion",
+      "level": 7,
+      "name_en": "Aura of Devotion",
+      "name_de": "Aura der Hingabe",
+      "player_choice": false,
+      "text_en": "You and your allies have Immunity to the Charmed condition while in your Aura of Protection. If a Charmed ally enters the aura, that condition has no effect on that ally while there.",
+      "text_de": "Du und deine Verbündeten seid in deiner Aura des Schutzes gegen den Zustand Bezaubert immun. Wenn ein bezauberter Verbündeter die Aura betritt, hat der Zustand keine Wirkung auf ihn, solange er sich innerhalb der Aura aufhält.",
+      "grants": [
+        {
+          "type": "condition_immunity",
+          "conditions": [
+            "charmed"
+          ],
+          "targets": [
+            "self",
+            "allies"
+          ],
+          "while_aura": "aura_of_protection"
+        }
+      ]
+    },
+    {
+      "id": "devotion-smite-of-protection",
+      "owner_type": "subclass",
+      "owner_id": "paladin-oath-of-devotion",
+      "level": 15,
+      "name_en": "Smite of Protection",
+      "name_de": "Schützendes Niederstrecken",
+      "player_choice": false,
+      "text_en": "Your magical smite now radiates protective energy. Whenever you cast Divine Smite, you and your allies have Half Cover while in your Aura of Protection. The aura has this benefit until the start of your next turn.",
+      "text_de": "Dein magisches Niederstrecken strahlt nun schützende Energie aus. Wann immer du Göttliches Niederstrecken wirkst, habt du und deine Verbündeten Teildeckung, solange sie sich in deiner Aura des Schutzes aufhalten. Die Aura behält diesen Vorzug bis zum Beginn deines nächsten Zugs bei.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "cast_divine_smite",
+          "effect": {
+            "type": "grant_half_cover",
+            "targets": [
+              "self",
+              "allies"
+            ],
+            "while_aura": "aura_of_protection",
+            "duration": "until_start_of_your_next_turn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "devotion-holy-nimbus",
+      "owner_type": "subclass",
+      "owner_id": "paladin-oath-of-devotion",
+      "level": 20,
+      "name_en": "Holy Nimbus",
+      "name_de": "Heiliger Nimbus",
+      "player_choice": false,
+      "text_en": "As a Bonus Action, you can imbue your Aura of Protection with holy power for 10 minutes or until you end the effect (no action required). Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use by expending a level 5 spell slot (no action required).\n\nHoly Ward. You have Advantage on any saving throw you are forced to make by a Fiend or an Undead.\n\nRadiant Damage. Whenever an enemy starts its turn in the aura, that creature takes Radiant damage equal to your Charisma modifier plus your Proficiency Bonus.\n\nSunlight. The aura is filled with Bright Light that is sunlight.",
+      "text_de": "Als Bonusaktion kannst du deine Aura des Schutzes mit heiliger Macht versehen, welche zehn Minuten lang – oder bis du sie beendest (keine Aktion erforderlich) – die unten beschriebenen Vorzüge gewährt. Du kannst dieses Merkmal erst nach einer langen Rast erneut verwenden. Alternativ kannst du die Anwendung wiederherstellen, indem du einen Zauberplatz des 5. Grades verbrauchst (keine Aktion erforderlich).\n\nHeiliger Schutz: Du bist bei allen Rettungswürfen im Vorteil, zu denen Unholde oder Untote dich zwingen.\n\nGleißender Schaden: Wann immer ein Gegner seinen Zug in der Aura beginnt, erleidet er gleißenden Schaden in Höhe deines Charismamodifikators plus deines Übungsbonus.\n\nSonnenlicht: Die Aura ist von hellem Licht erfüllt, bei dem es sich um Sonnenlicht handelt.",
+      "grants": [
+        {
+          "type": "state",
+          "state_id": "holy_nimbus",
+          "activation": "bonus_action",
+          "duration": "10_minutes",
+          "recharge": "long_rest",
+          "refresh_option": {
+            "type": "feature_refresh",
+            "feature_id": "devotion-holy-nimbus",
+            "cost": {
+              "resource": "spell_slot",
+              "minimum_level": 5
+            }
+          }
+        },
+        {
+          "type": "advantage",
+          "on": [
+            "saving_throws_forced_by_fiends_or_undead"
+          ],
+          "while_state": "holy_nimbus"
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "enemy_starts_turn_in_aura",
+          "while_state": "holy_nimbus",
+          "while_aura": "aura_of_protection",
+          "effect": {
+            "type": "damage",
+            "damage_type": "radiant",
+            "value": {
+              "base": "charisma_modifier",
+              "flat_modifier": "proficiency_bonus"
+            }
+          }
+        },
+        {
+          "type": "passive",
+          "effect": "aura_filled_with_sunlight_bright_light",
+          "while_state": "holy_nimbus"
+        }
+      ]
+    },
+    {
+      "id": "glory-oath-spells",
+      "owner_type": "subclass",
+      "owner_id": "paladin-oath-of-glory",
+      "level": 3,
+      "name_en": "Oath of Glory Spells",
+      "name_de": "Schwurzauber des Ruhmes",
+      "player_choice": false,
+      "text_en": "The magic of your oath ensures you always have certain spells ready.\n\nLevel 3: Guiding Bolt, Heroism. Level 5: Enhance Ability, Magic Weapon. Level 9: Haste, Protection from Energy. Level 13: Compulsion, Freedom of Movement. Level 17: Legend Lore, Yolande's Regal Presence.",
+      "text_de": "Die Magie deines Schwurs sorgt dafür, dass du bestimmte Zauber stets vorbereitet hast.\n\nStufe 3: Heldenmut, Lenkendes Geschoss. Stufe 5: Attribut verbessern, Magische Waffe. Stufe 9: Hast, Schutz vor Energie. Stufe 13: Bewegungsfreiheit, Zwang. Stufe 17: Sagenkunde, Yolandes Majestätische Präsenz.",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "guiding-bolt",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "heroism",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "enhance-ability",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "magic-weapon",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "haste",
+          "class_level_threshold": 9
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "protection-from-energy",
+          "class_level_threshold": 9
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "compulsion",
+          "class_level_threshold": 13
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "freedom-of-movement",
+          "class_level_threshold": 13
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "legend-lore",
+          "class_level_threshold": 17
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "yolandes-regal-presence",
+          "class_level_threshold": 17
+        }
+      ]
+    },
+    {
+      "id": "glory-inspiring-smite",
+      "owner_type": "subclass",
+      "owner_id": "paladin-oath-of-glory",
+      "level": 3,
+      "name_en": "Inspiring Smite",
+      "name_de": "Inspirierendes Niederstrecken",
+      "player_choice": false,
+      "text_en": "Immediately after you cast Divine Smite, you can expend one use of your Channel Divinity and distribute Temporary Hit Points to creatures of your choice within 30 feet of yourself, which can include you. The total number of Temporary Hit Points equals 2d8 plus your Paladin level, divided among the chosen creatures however you like.",
+      "text_de": "Sofort, nachdem du Göttliches Niederstrecken gewirkt hast, kannst du eine Anwendung von Göttliche Macht fokussieren verbrauchen und temporäre Trefferpunkte an Kreaturen deiner Wahl im Abstand von bis zu neun Metern von dir verteilen, auch an dich selbst. Die Anzahl der verfügbaren temporären Trefferpunkte beträgt 2W8 plus deine Paladinstufe. Teile die temporären Trefferpunkte nach deinem Ermessen auf.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "cast_divine_smite",
+          "optional": true,
+          "cost": {
+            "resource": "channel_divinity_uses",
+            "amount": 1
+          },
+          "effect": {
+            "type": "distribute_temporary_hit_points",
+            "targets": {
+              "type": "creatures_of_choice",
+              "range_feet": 30,
+              "includes_self": true
+            },
+            "total_value": {
+              "dice": "2d8",
+              "plus_class_level": "paladin_level"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "glory-peerless-athlete",
+      "owner_type": "subclass",
+      "owner_id": "paladin-oath-of-glory",
+      "level": 3,
+      "name_en": "Peerless Athlete",
+      "name_de": "Beispielloser Athlet",
+      "player_choice": false,
+      "text_en": "As a Bonus Action, you can expend one use of your Channel Divinity to augment your athleticism. For 1 hour, you have Advantage on Strength (Athletics) and Dexterity (Acrobatics) checks, and the distance of your Long and High Jumps increases by 10 feet (this extra distance costs movement as normal).",
+      "text_de": "Als Bonusaktion kannst du eine Anwendung von Göttliche Macht fokussieren verbrauchen, um deine Sportlichkeit zu steigern. Du bist eine Stunde lang bei Stärkewürfen (Athletik) und Geschicklichkeitswürfen (Akrobatik) im Vorteil, und die Distanz deiner Hoch- und Weitsprünge ist um drei Meter erhöht.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "uses_resource": "channel_divinity_uses",
+          "effect": {
+            "type": "state",
+            "state_id": "peerless_athlete",
+            "duration": "1_hour"
+          }
+        },
+        {
+          "type": "advantage",
+          "on": [
+            "strength_athletics_checks",
+            "dexterity_acrobatics_checks"
+          ],
+          "while_state": "peerless_athlete"
+        },
+        {
+          "type": "passive",
+          "effect": "jump_distance_increased_10ft",
+          "while_state": "peerless_athlete"
+        }
+      ]
+    },
+    {
+      "id": "glory-aura-of-alacrity",
+      "owner_type": "subclass",
+      "owner_id": "paladin-oath-of-glory",
+      "level": 7,
+      "name_en": "Aura of Alacrity",
+      "name_de": "Aura des Eifers",
+      "player_choice": false,
+      "text_en": "Your Speed increases by 10 feet.\n\nIn addition, whenever an ally enters your Aura of Protection for the first time on a turn or starts their turn there, the ally's Speed increases by 10 feet until the end of their next turn.",
+      "text_de": "Deine Bewegungsrate ist um drei Meter erhöht.\n\nAußerdem ist auch die Bewegungsrate deiner Verbündeten bis zum Ende ihres nächsten Zugs um drei Meter erhöht, wann immer sie deine Aura des Schutzes in einem Zug erstmals betreten oder ihren Zug darin beginnen.",
+      "grants": [
+        {
+          "type": "speed_bonus",
+          "value_feet": 10
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": [
+            "ally_enters_aura_first_time_on_turn",
+            "ally_starts_turn_in_aura"
+          ],
+          "while_aura": "aura_of_protection",
+          "effect": {
+            "type": "speed_bonus",
+            "value_feet": 10,
+            "target": "triggering_ally",
+            "duration": "until_end_of_their_next_turn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "glory-glorious-defense",
+      "owner_type": "subclass",
+      "owner_id": "paladin-oath-of-glory",
+      "level": 15,
+      "name_en": "Glorious Defense",
+      "name_de": "Glorreiche Verteidigung",
+      "player_choice": false,
+      "text_en": "When you or another creature you can see within 10 feet of you is hit by an attack roll, you can take a Reaction to grant a bonus to the target's AC against that attack, potentially causing it to miss. The bonus equals your Charisma modifier (minimum of +1). If the attack misses, you can make one attack with a weapon against the attacker as part of this Reaction if the attacker is within your weapon's range.\n\nYou can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.",
+      "text_de": "Wenn du oder eine andere Kreatur im Abstand von bis zu drei Metern von dir, die du sehen kannst, von einem Angriffswurf getroffen wird, kannst du eine Reaktion ausführen, um der RK des Ziels einen Bonus zu gewähren, sodass der Angriff möglicherweise scheitert. Dieser Bonus entspricht deinem Charismamodifikator (mindestens +1). Scheitert der Angriff, kannst du als Teil dieser Reaktion einen Waffenangriff gegen den Angreifer ausführen, sofern er sich in Reichweite befindet.\n\nDie Anzahl der möglichen Anwendungen entspricht deinem Charismamodifikator (mindestens einmal). Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "self_or_ally_within_10ft_hit_by_attack",
+          "action_type": "reaction",
+          "uses": {
+            "equals": "charisma_modifier",
+            "minimum": 1
+          },
+          "recharge": "long_rest",
+          "effect": {
+            "type": "ac_bonus_against_attack",
+            "value": {
+              "equals": "charisma_modifier",
+              "minimum": 1
+            }
+          },
+          "on_attack_miss": {
+            "type": "make_weapon_attack",
+            "target": "attacker",
+            "condition": "attacker_within_weapon_range",
+            "as_part_of_reaction": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "glory-living-legend",
+      "owner_type": "subclass",
+      "owner_id": "paladin-oath-of-glory",
+      "level": 20,
+      "name_en": "Living Legend",
+      "name_de": "Lebende Legende",
+      "player_choice": false,
+      "text_en": "As a Bonus Action, you gain the benefits below for 10 minutes. Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use by expending a level 5 spell slot (no action required).\n\nCharismatic. You are blessed with an otherworldly presence and have Advantage on all Charisma checks.\n\nSaving Throw Reroll. If you fail a saving throw, you can take a Reaction to reroll it. You must use this new roll.\n\nUnerring Strike. Once on each of your turns when you make an attack roll with a weapon and miss, you can cause that attack to hit instead.",
+      "text_de": "Als Bonusaktion erhältst du zehn Minuten lang die unten beschriebenen Vorzüge. Du kannst dieses Merkmal erst nach einer langen Rast erneut verwenden. Alternativ kannst du die Anwendung wiederherstellen, indem du einen Zauberplatz des 5. Grades verbrauchst (keine Aktion erforderlich).\n\nCharismatisch: Du bist mit außerweltlicher Präsenz gesegnet und bei allen Charismawürfen im Vorteil.\n\nWiederholen von Rettungswürfen: Scheiterst du bei einem Rettungswurf, so kannst du eine Reaktion ausführen, um erneut zu würfeln. Du musst das neue Ergebnis verwenden.\n\nUnfehlbarer Schlag: Du kannst einmal in jedem deiner Züge einen gescheiterten Waffenangriff in einen Treffer verwandeln.",
+      "grants": [
+        {
+          "type": "state",
+          "state_id": "living_legend",
+          "activation": "bonus_action",
+          "duration": "10_minutes",
+          "recharge": "long_rest",
+          "refresh_option": {
+            "type": "feature_refresh",
+            "feature_id": "glory-living-legend",
+            "cost": {
+              "resource": "spell_slot",
+              "minimum_level": 5
+            }
+          }
+        },
+        {
+          "type": "advantage",
+          "on": [
+            "charisma_checks"
+          ],
+          "while_state": "living_legend"
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "fail_saving_throw",
+          "action_type": "reaction",
+          "while_state": "living_legend",
+          "effect": {
+            "type": "reroll",
+            "must_use_new_roll": true
+          }
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "miss_weapon_attack_roll",
+          "once_per_turn": true,
+          "optional": true,
+          "while_state": "living_legend",
+          "effect": {
+            "type": "convert_miss_to_hit"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ancients-oath-spells",
+      "owner_type": "subclass",
+      "owner_id": "paladin-oath-of-the-ancients",
+      "level": 3,
+      "name_en": "Oath of the Ancients Spells",
+      "name_de": "Schwurzauber der Alten",
+      "player_choice": false,
+      "text_en": "The magic of your oath ensures you always have certain spells ready.\n\nLevel 3: Ensnaring Strike, Speak with Animals. Level 5: Misty Step, Moonbeam. Level 9: Plant Growth, Protection from Energy. Level 13: Ice Storm, Stoneskin. Level 17: Commune with Nature, Tree Stride.",
+      "text_de": "Die Magie deines Schwurs sorgt dafür, dass du bestimmte Zauber stets vorbereitet hast.\n\nStufe 3: Fesselnder Schlag, Mit Tieren sprechen. Stufe 5: Mondstrahl, Nebelschritt. Stufe 9: Pflanzenwachstum, Schutz vor Energie. Stufe 13: Eissturm, Steinhaut. Stufe 17: Baumwandeln, Einswerden mit der Natur.",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "ensnaring-strike",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "speak-with-animals",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "misty-step",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "moonbeam",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "plant-growth",
+          "class_level_threshold": 9
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "protection-from-energy",
+          "class_level_threshold": 9
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "ice-storm",
+          "class_level_threshold": 13
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "stoneskin",
+          "class_level_threshold": 13
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "commune-with-nature",
+          "class_level_threshold": 17
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "tree-stride",
+          "class_level_threshold": 17
+        }
+      ]
+    },
+    {
+      "id": "ancients-natures-wrath",
+      "owner_type": "subclass",
+      "owner_id": "paladin-oath-of-the-ancients",
+      "level": 3,
+      "name_en": "Nature's Wrath",
+      "name_de": "Zorn der Natur",
+      "player_choice": false,
+      "text_en": "As a Magic action, you can expend one use of your Channel Divinity to conjure spectral vines around nearby creatures. Each creature of your choice that you can see within 15 feet of yourself must succeed on a Strength saving throw or have the Restrained condition for 1 minute. A Restrained creature repeats the save at the end of each of its turns, ending the effect on itself on a success.",
+      "text_de": "Als magische Aktion kannst du eine Anwendung von Göttliche Macht fokussieren verbrauchen, um geisterhafte Ranken um Kreaturen in der Nähe zu beschwören. Jede Kreatur deiner Wahl im Abstand von bis zu 4,5 Metern von dir, die du sehen kannst, muss einen Stärkerettungswurf bestehen, oder sie ist eine Minute lang festgesetzt. Ein festgesetztes Ziel wiederholt den Rettungswurf am Ende jedes seiner Züge.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "magic_action",
+          "uses_resource": "channel_divinity_uses",
+          "range_feet": 15,
+          "targets": "creatures_of_choice_you_can_see",
+          "saving_throw": {
+            "ability": "strength",
+            "dc": "spell_save_dc"
+          },
+          "on_failure": {
+            "type": "apply_conditions",
+            "conditions": [
+              "restrained"
+            ],
+            "duration": "1_minute",
+            "save_to_end": {
+              "timing": "end_of_targets_turn"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ancients-aura-of-warding",
+      "owner_type": "subclass",
+      "owner_id": "paladin-oath-of-the-ancients",
+      "level": 7,
+      "name_en": "Aura of Warding",
+      "name_de": "Aura der Abwehr",
+      "player_choice": false,
+      "text_en": "Ancient magic lies so heavily upon you that it forms an eldritch ward; you and your allies have Resistance to Necrotic, Psychic, and Radiant damage while in your Aura of Protection.",
+      "text_de": "Uralte Magie umfließt dich so stark, dass sie einen mystischen Schutz bildet. Du und deine Verbündeten seid in deiner Aura des Schutzes gegen nekrotischen, psychischen und gleißenden Schaden resistent.",
+      "grants": [
+        {
+          "type": "damage_resistance",
+          "damage_types": [
+            "necrotic",
+            "psychic",
+            "radiant"
+          ],
+          "targets": [
+            "self",
+            "allies"
+          ],
+          "while_aura": "aura_of_protection"
+        }
+      ]
+    },
+    {
+      "id": "ancients-undying-sentinel",
+      "owner_type": "subclass",
+      "owner_id": "paladin-oath-of-the-ancients",
+      "level": 15,
+      "name_en": "Undying Sentinel",
+      "name_de": "Unsterblicher Wächter",
+      "player_choice": false,
+      "text_en": "When you are reduced to 0 Hit Points and not killed outright, you can drop to 1 Hit Point instead, and you regain a number of Hit Points equal to three times your Paladin level. Once you use this feature, you can't do so again until you finish a Long Rest.\n\nAdditionally, you can't be aged magically, and you cease visibly aging.",
+      "text_de": "Wenn deine Trefferpunkte auf 0 sinken, du aber nicht sofort getötet wirst, behältst du stattdessen 1 Trefferpunkt und erhältst eine Anzahl von Trefferpunkten in Höhe des Dreifachen deiner Paladinstufe zurück. Du kannst dieses Merkmal erst nach einer langen Rast erneut verwenden.\n\nAußerdem kannst du nicht auf magische Art zum Altern gebracht werden und alterst nicht mehr sichtbar.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "reduced_to_0_hp_not_killed_outright",
+          "uses": 1,
+          "recharge": "long_rest",
+          "effect": {
+            "type": "set_hp",
+            "value": 1
+          },
+          "secondary_effect": {
+            "type": "heal_target",
+            "target": "self",
+            "value": {
+              "multiplier": 3,
+              "of": "paladin_level"
+            }
+          }
+        },
+        {
+          "type": "passive",
+          "effect": "cannot_be_magically_aged_and_ceases_visibly_aging"
+        }
+      ]
+    },
+    {
+      "id": "ancients-elder-champion",
+      "owner_type": "subclass",
+      "owner_id": "paladin-oath-of-the-ancients",
+      "level": 20,
+      "name_en": "Elder Champion",
+      "name_de": "Champion der Uralten",
+      "player_choice": false,
+      "text_en": "As a Bonus Action, you can imbue your Aura of Protection with primal power for 1 minute or until you end the effect (no action required). Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use by expending a level 5 spell slot (no action required).\n\nDiminish Defiance. Enemies in the aura have Disadvantage on saving throws against your spells and Channel Divinity options.\n\nRegeneration. At the start of each of your turns, you regain 10 Hit Points.\n\nSwift Spells. Whenever you cast a spell that has a casting time of an action, you can cast it using a Bonus Action instead.",
+      "text_de": "Als Bonusaktion kannst du deine Aura des Schutzes mit Urmacht versehen, die eine Minute lang – oder bis du sie beendest (keine Aktion erforderlich) – die unten beschriebenen Vorzüge gewährt. Du kannst dieses Merkmal erst nach einer langen Rast erneut verwenden. Alternativ kannst du die Anwendung wiederherstellen, indem du einen Zauberplatz des 5. Grades verbrauchst (keine Aktion erforderlich).\n\nWiderstand verringern: Gegner in der Aura sind bei Rettungswürfen gegen deine Zauber und Göttliche-Macht-fokussieren-Optionen im Nachteil.\n\nRegeneration: Zu Beginn jedes deiner Züge erhältst du 10 Trefferpunkte zurück.\n\nFlinke Zauber: Wann immer du einen Zauber mit Zeitaufwand von einer Aktion wirkst, kannst du ihn stattdessen als Bonusaktion wirken.",
+      "grants": [
+        {
+          "type": "state",
+          "state_id": "elder_champion",
+          "activation": "bonus_action",
+          "duration": "1_minute",
+          "recharge": "long_rest",
+          "refresh_option": {
+            "type": "feature_refresh",
+            "feature_id": "ancients-elder-champion",
+            "cost": {
+              "resource": "spell_slot",
+              "minimum_level": 5
+            }
+          }
+        },
+        {
+          "type": "disadvantage_on_enemies",
+          "on": [
+            "saving_throws_against_your_spells",
+            "saving_throws_against_your_channel_divinity"
+          ],
+          "while_aura": "aura_of_protection",
+          "while_state": "elder_champion"
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "start_of_your_turn",
+          "while_state": "elder_champion",
+          "effect": {
+            "type": "heal_target",
+            "target": "self",
+            "value": {
+              "flat": 10
+            }
+          }
+        },
+        {
+          "type": "spell_effect_transformation",
+          "applies_to": "spells_with_action_casting_time",
+          "modification": "action_to_bonus_action",
+          "while_state": "elder_champion"
+        }
+      ]
+    },
+    {
+      "id": "vengeance-oath-spells",
+      "owner_type": "subclass",
+      "owner_id": "paladin-oath-of-vengeance",
+      "level": 3,
+      "name_en": "Oath of Vengeance Spells",
+      "name_de": "Schwurzauber der Rache",
+      "player_choice": false,
+      "text_en": "The magic of your oath ensures you always have certain spells ready.\n\nLevel 3: Bane, Hunter's Mark. Level 5: Hold Person, Misty Step. Level 9: Haste, Protection from Energy. Level 13: Banishment, Dimension Door. Level 17: Hold Monster, Scrying.",
+      "text_de": "Die Magie deines Schwurs sorgt dafür, dass du bestimmte Zauber stets vorbereitet hast.\n\nStufe 3: Verderben, Zeichen des Jägers. Stufe 5: Nebelschritt, Person festhalten. Stufe 9: Hast, Schutz vor Energie. Stufe 13: Dimensionstür, Verbannung. Stufe 17: Ausspähung, Monster festhalten.",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "bane",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "hunters-mark",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "hold-person",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "misty-step",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "haste",
+          "class_level_threshold": 9
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "protection-from-energy",
+          "class_level_threshold": 9
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "banishment",
+          "class_level_threshold": 13
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "dimension-door",
+          "class_level_threshold": 13
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "hold-monster",
+          "class_level_threshold": 17
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "scrying",
+          "class_level_threshold": 17
+        }
+      ]
+    },
+    {
+      "id": "vengeance-vow-of-enmity",
+      "owner_type": "subclass",
+      "owner_id": "paladin-oath-of-vengeance",
+      "level": 3,
+      "name_en": "Vow of Enmity",
+      "name_de": "Eid der Feindschaft",
+      "player_choice": false,
+      "text_en": "When you take the Attack action, you can expend one use of your Channel Divinity to utter a vow of enmity against a creature you can see within 30 feet of yourself. You have Advantage on attack rolls against the creature for 1 minute or until you use this feature again.\n\nIf the creature drops to 0 Hit Points before the vow ends, you can transfer the vow to a different creature within 30 feet of yourself (no action required).",
+      "text_de": "Wenn du die Angriffsaktion ausführst, kannst du eine Anwendung von Göttliche Macht fokussieren verbrauchen, um gegen eine Kreatur im Abstand von bis zu neun Metern von dir, die du sehen kannst, einen Eid der Feindschaft auszusprechen. Du bist eine Minute lang – oder bis du dieses Merkmal erneut einsetzt – bei Angriffswürfen gegen die Kreatur im Vorteil.\n\nWenn die Trefferpunkte der Kreatur auf 0 sinken, bevor der Eid endet, kannst du den Eid auf eine andere Kreatur im Abstand von bis zu neun Metern übertragen (keine Aktion erforderlich).",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "free",
+          "trigger": "take_attack_action",
+          "uses_resource": "channel_divinity_uses",
+          "range_feet": 30,
+          "condition": "target_you_can_see",
+          "effect": {
+            "type": "state",
+            "state_id": "vow_of_enmity",
+            "target": "chosen_creature",
+            "duration": "1_minute",
+            "end_conditions": [
+              "use_feature_again"
+            ]
+          }
+        },
+        {
+          "type": "advantage",
+          "on": [
+            "attack_rolls_against_vow_target"
+          ],
+          "while_state": "vow_of_enmity"
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "vow_target_drops_to_0_hp_before_vow_ends",
+          "optional": true,
+          "effect": {
+            "type": "transfer_state",
+            "state_id": "vow_of_enmity",
+            "new_target": "different_creature_within_30ft"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vengeance-relentless-avenger",
+      "owner_type": "subclass",
+      "owner_id": "paladin-oath-of-vengeance",
+      "level": 7,
+      "name_en": "Relentless Avenger",
+      "name_de": "Unermüdlicher Rächer",
+      "player_choice": false,
+      "text_en": "Your supernatural focus helps you close off a foe's retreat. When you hit a creature with an Opportunity Attack, you can reduce the creature's Speed to 0 until the end of the current turn. You can then move up to half your Speed as part of the same Reaction. This movement doesn't provoke Opportunity Attacks.",
+      "text_de": "Dein übernatürlicher Fokus hilft dir, den Rückzug eines Gegners zu verhindern. Wenn du eine Kreatur mit einem Gelegenheitsangriff triffst, kannst du ihre Bewegungsrate bis zum Ende des aktuellen Zugs auf 0 verringern. Dann kannst du als Teil der gleichen Reaktion bis zur Hälfte deiner Bewegungsrate zurücklegen. Diese Bewegung provoziert keine Gelegenheitsangriffe.",
+      "grants": [
+        {
+          "type": "on_hit_effect",
+          "attack_type": "opportunity_attack",
+          "optional": true,
+          "effect": {
+            "type": "speed_reduction",
+            "target": "hit_creature",
+            "value_feet": "to_zero",
+            "duration": "until_end_of_current_turn"
+          },
+          "secondary_effect": {
+            "type": "free_movement",
+            "distance": "half_speed",
+            "no_opportunity_attacks": true,
+            "as_part_of_reaction": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "vengeance-soul-of-vengeance",
+      "owner_type": "subclass",
+      "owner_id": "paladin-oath-of-vengeance",
+      "level": 15,
+      "name_en": "Soul of Vengeance",
+      "name_de": "Seele der Rache",
+      "player_choice": false,
+      "text_en": "Immediately after a creature under the effect of your Vow of Enmity hits or misses with an attack roll, you can take a Reaction to make a melee attack against that creature if it's within range.",
+      "text_de": "Sofort, nachdem eine Kreatur unter dem Effekt deines Eides der Feindschaft einen Angriffswurf ausgeführt hat, kannst du unabhängig von dessen Erfolg eine Reaktion verwenden, um einen Nahkampfangriff gegen diese Kreatur auszuführen, sofern sie sich in Reichweite befindet.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "vow_of_enmity_target_makes_attack_roll",
+          "action_type": "reaction",
+          "condition": "target_within_melee_range",
+          "effect": {
+            "type": "make_melee_attack",
+            "target": "triggering_creature"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vengeance-avenging-angel",
+      "owner_type": "subclass",
+      "owner_id": "paladin-oath-of-vengeance",
+      "level": 20,
+      "name_en": "Avenging Angel",
+      "name_de": "Racheengel",
+      "player_choice": false,
+      "text_en": "As a Bonus Action, you gain the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use by expending a level 5 spell slot (no action required).\n\nFlight. You sprout spectral wings on your back, have a Fly Speed of 60 feet, and can hover.\n\nFrightful Aura. Whenever an enemy starts its turn in your Aura of Protection, that creature must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute or until it takes any damage. Attack rolls against the Frightened creature have Advantage.",
+      "text_de": "Als Bonusaktion erhältst du zehn Minuten lang – oder bis du sie beendest (keine Aktion erforderlich) – die unten beschriebenen Vorzüge. Du kannst dieses Merkmal erst nach einer langen Rast erneut verwenden. Alternativ kannst du die Anwendung wiederherstellen, indem du einen Zauberplatz des 5. Grades verbrauchst (keine Aktion erforderlich).\n\nFlug: Geisterhafte Flügel wachsen dir aus dem Rücken. Du hast eine Flugbewegungsrate von 18 Metern und kannst schweben.\n\nFurchterregende Aura: Wann immer ein Gegner seinen Zug in deiner Aura des Schutzes beginnt, muss er einen Weisheitsrettungswurf bestehen, anderenfalls ist er eine Minute lang – oder bis er Schaden erleidet – verängstigt. Angriffswürfe gegen die verängstigte Kreatur sind im Vorteil.",
+      "grants": [
+        {
+          "type": "state",
+          "state_id": "avenging_angel",
+          "activation": "bonus_action",
+          "duration": "10_minutes",
+          "recharge": "long_rest",
+          "refresh_option": {
+            "type": "feature_refresh",
+            "feature_id": "vengeance-avenging-angel",
+            "cost": {
+              "resource": "spell_slot",
+              "minimum_level": 5
+            }
+          }
+        },
+        {
+          "type": "speed_grant",
+          "speed_type": "fly",
+          "value_feet": 60,
+          "can_hover": true,
+          "while_state": "avenging_angel"
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "enemy_starts_turn_in_aura",
+          "while_state": "avenging_angel",
+          "while_aura": "aura_of_protection",
+          "saving_throw": {
+            "ability": "wisdom",
+            "dc": "spell_save_dc"
+          },
+          "on_failure": {
+            "type": "apply_conditions",
+            "conditions": [
+              "frightened"
+            ],
+            "duration": "1_minute",
+            "end_conditions": [
+              "takes_any_damage"
+            ]
+          }
+        },
+        {
+          "type": "advantage",
+          "on": [
+            "all_attack_rolls_against_target"
+          ],
+          "applies_to": "all_attackers",
+          "condition": "target_is_frightened_by_avenging_angel",
+          "while_state": "avenging_angel"
+        }
+      ]
+    }
+  ]
+}

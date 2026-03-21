@@ -1,0 +1,1886 @@
+{
+  "class": {
+    "id": "rogue",
+    "name_en": "Rogue",
+    "name_de": "Schurke",
+    "hit_die": "d8",
+    "primary_abilities": [
+      "dexterity"
+    ],
+    "saving_throw_proficiencies": [
+      "dexterity",
+      "intelligence"
+    ],
+    "proficiencies": {
+      "skills": {
+        "choose": 4,
+        "from": [
+          "acrobatics",
+          "athletics",
+          "deception",
+          "insight",
+          "intimidation",
+          "investigation",
+          "perception",
+          "persuasion",
+          "sleight_of_hand",
+          "stealth"
+        ]
+      },
+      "weapons": [
+        "simple",
+        "martial_finesse_or_light"
+      ],
+      "tools": [
+        "thieves_tools"
+      ],
+      "armor": [
+        "light"
+      ]
+    },
+    "starting_equipment": {
+      "choose": 1,
+      "options": [
+        {
+          "id": "option_a",
+          "items": [
+            "leather_armor",
+            "dagger_x2",
+            "shortsword",
+            "shortbow",
+            "arrows_x20",
+            "quiver",
+            "thieves_tools",
+            "burglars_pack",
+            "8gp"
+          ]
+        },
+        {
+          "id": "option_b",
+          "items": [
+            "100gp"
+          ]
+        }
+      ]
+    },
+    "multiclass_rules": {
+      "grants": [
+        "hit_die_d8",
+        "skill_proficiency_choose_1_from_rogue_list",
+        "proficiency_thieves_tools",
+        "armor_training_light"
+      ]
+    },
+    "subclass_level": 3
+  },
+  "class_progression": {
+    "class_id": "rogue",
+    "levels": [
+      {
+        "level": 1,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "rogue-expertise-1",
+          "rogue-sneak-attack",
+          "rogue-thieves-cant",
+          "rogue-weapon-mastery"
+        ],
+        "resources": {
+          "sneak_attack_dice": 1,
+          "weapon_mastery_count": 2,
+          "rogue_level": 1
+        }
+      },
+      {
+        "level": 2,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "rogue-cunning-action"
+        ],
+        "resources": {
+          "sneak_attack_dice": 1,
+          "weapon_mastery_count": 2,
+          "rogue_level": 2
+        }
+      },
+      {
+        "level": 3,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "rogue-subclass",
+          "rogue-steady-aim"
+        ],
+        "subclass_feature_level": true,
+        "resources": {
+          "sneak_attack_dice": 2,
+          "weapon_mastery_count": 2,
+          "rogue_level": 3
+        }
+      },
+      {
+        "level": 4,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "rogue-asi-4"
+        ],
+        "resources": {
+          "sneak_attack_dice": 2,
+          "weapon_mastery_count": 2,
+          "rogue_level": 4
+        }
+      },
+      {
+        "level": 5,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "rogue-cunning-strike",
+          "rogue-uncanny-dodge"
+        ],
+        "resources": {
+          "sneak_attack_dice": 3,
+          "weapon_mastery_count": 2,
+          "rogue_level": 5
+        }
+      },
+      {
+        "level": 6,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "rogue-expertise-6"
+        ],
+        "resources": {
+          "sneak_attack_dice": 3,
+          "weapon_mastery_count": 2,
+          "rogue_level": 6
+        }
+      },
+      {
+        "level": 7,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "rogue-evasion",
+          "rogue-reliable-talent"
+        ],
+        "resources": {
+          "sneak_attack_dice": 4,
+          "weapon_mastery_count": 2,
+          "rogue_level": 7
+        }
+      },
+      {
+        "level": 8,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "rogue-asi-8"
+        ],
+        "resources": {
+          "sneak_attack_dice": 4,
+          "weapon_mastery_count": 2,
+          "rogue_level": 8
+        }
+      },
+      {
+        "level": 9,
+        "proficiency_bonus": 4,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "sneak_attack_dice": 5,
+          "weapon_mastery_count": 2,
+          "rogue_level": 9
+        }
+      },
+      {
+        "level": 10,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "rogue-asi-10"
+        ],
+        "resources": {
+          "sneak_attack_dice": 5,
+          "weapon_mastery_count": 2,
+          "rogue_level": 10
+        }
+      },
+      {
+        "level": 11,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "rogue-improved-cunning-strike"
+        ],
+        "resources": {
+          "sneak_attack_dice": 6,
+          "weapon_mastery_count": 2,
+          "rogue_level": 11
+        }
+      },
+      {
+        "level": 12,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "rogue-asi-12"
+        ],
+        "resources": {
+          "sneak_attack_dice": 6,
+          "weapon_mastery_count": 2,
+          "rogue_level": 12
+        }
+      },
+      {
+        "level": 13,
+        "proficiency_bonus": 5,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "sneak_attack_dice": 7,
+          "weapon_mastery_count": 2,
+          "rogue_level": 13
+        }
+      },
+      {
+        "level": 14,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "rogue-devious-strikes"
+        ],
+        "resources": {
+          "sneak_attack_dice": 7,
+          "weapon_mastery_count": 2,
+          "rogue_level": 14
+        }
+      },
+      {
+        "level": 15,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "rogue-slippery-mind"
+        ],
+        "resources": {
+          "sneak_attack_dice": 8,
+          "weapon_mastery_count": 2,
+          "rogue_level": 15
+        }
+      },
+      {
+        "level": 16,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "rogue-asi-16"
+        ],
+        "resources": {
+          "sneak_attack_dice": 8,
+          "weapon_mastery_count": 2,
+          "rogue_level": 16
+        }
+      },
+      {
+        "level": 17,
+        "proficiency_bonus": 6,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "sneak_attack_dice": 9,
+          "weapon_mastery_count": 2,
+          "rogue_level": 17
+        }
+      },
+      {
+        "level": 18,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "rogue-elusive"
+        ],
+        "resources": {
+          "sneak_attack_dice": 9,
+          "weapon_mastery_count": 2,
+          "rogue_level": 18
+        }
+      },
+      {
+        "level": 19,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "rogue-epic-boon"
+        ],
+        "resources": {
+          "sneak_attack_dice": 10,
+          "weapon_mastery_count": 2,
+          "rogue_level": 19
+        }
+      },
+      {
+        "level": 20,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "rogue-stroke-of-luck"
+        ],
+        "resources": {
+          "sneak_attack_dice": 10,
+          "weapon_mastery_count": 2,
+          "rogue_level": 20
+        }
+      }
+    ]
+  },
+  "subclasses": [
+    {
+      "id": "rogue-arcane-trickster",
+      "class_id": "rogue",
+      "name_en": "Arcane Trickster",
+      "name_de": "Arkaner Betrüger",
+      "feature_levels": [
+        3,
+        9,
+        13,
+        17
+      ]
+    },
+    {
+      "id": "rogue-assassin",
+      "class_id": "rogue",
+      "name_en": "Assassin",
+      "name_de": "Assassine",
+      "feature_levels": [
+        3,
+        9,
+        13,
+        17
+      ]
+    },
+    {
+      "id": "rogue-soulknife",
+      "class_id": "rogue",
+      "name_en": "Soulknife",
+      "name_de": "Seelenmesser",
+      "feature_levels": [
+        3,
+        9,
+        13,
+        17
+      ]
+    },
+    {
+      "id": "rogue-thief",
+      "class_id": "rogue",
+      "name_en": "Thief",
+      "name_de": "Dieb",
+      "feature_levels": [
+        3,
+        9,
+        13,
+        17
+      ]
+    }
+  ],
+  "features": [
+    {
+      "id": "rogue-expertise-1",
+      "owner_type": "class",
+      "owner_id": "rogue",
+      "level": 1,
+      "name_en": "Expertise",
+      "name_de": "Expertise",
+      "player_choice": true,
+      "choice_prompt_en": "Choose two skill proficiencies you have. You gain Expertise in them. Sleight of Hand and Stealth are recommended.",
+      "choice_prompt_de": "Wähle zwei Fertigkeiten, in denen du geübt bist. Du erhältst darin Expertise. Fingerfertigkeit und Heimlichkeit werden empfohlen.",
+      "text_en": "You gain Expertise in two of your skill proficiencies of your choice. Sleight of Hand and Stealth are recommended if you have proficiency in them.\n\nAt Rogue level 6, you gain Expertise in two more of your skill proficiencies of your choice.",
+      "text_de": "Du erhältst Expertise in zwei Fertigkeiten deiner Wahl, in denen du geübt bist. Fingerfertigkeit und Heimlichkeit werden empfohlen, wenn du in ihnen geübt bist.\n\nAuf der 6. Schurkenstufe erhältst du Expertise in zwei weiteren Fertigkeiten deiner Wahl, in denen du geübt bist.",
+      "grants": [
+        {
+          "type": "expertise",
+          "choose": 2,
+          "from": "current_skill_proficiencies"
+        }
+      ]
+    },
+    {
+      "id": "rogue-sneak-attack",
+      "owner_type": "class",
+      "owner_id": "rogue",
+      "level": 1,
+      "name_en": "Sneak Attack",
+      "name_de": "Hinterhältiger Angriff",
+      "player_choice": false,
+      "text_en": "You know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack roll if you have Advantage on the roll and the attack uses a Finesse or a Ranged weapon. The extra damage's type is the same as the weapon's type.\n\nYou don't need Advantage on the attack roll if at least one of your allies is within 5 feet of the target, the ally doesn't have the Incapacitated condition, and you don't have Disadvantage on the attack roll.\n\nThe extra damage increases as you gain Rogue levels, as shown in the Sneak Attack column of the Rogue Features table.",
+      "text_de": "Du weißt, wie man die Ablenkung eines Gegners ausnutzt und subtil zuschlägt. Einmal pro Zug kannst du einer Kreatur, die du mit einem Angriffswurf triffst, 1W6 zusätzlichen Schaden zufügen, sofern du beim Wurf im Vorteil bist und eine Finesse- oder Fernkampfwaffe einsetzt. Der zusätzliche Schaden ist von der gleichen Art wie der Schaden der Waffe.\n\nEs ist kein Vorteil beim Angriffswurf erforderlich, wenn mindestens einer deiner Verbündeten sich im Abstand von bis zu 1,5 Metern vom Ziel befindet, sofern der Verbündete nicht kampfunfähig ist und du beim Angriffswurf nicht im Nachteil bist.\n\nDer zusätzliche Schaden wird erhöht, wenn du weitere Schurkenstufen erhältst.",
+      "grants": [
+        {
+          "type": "sneak_attack",
+          "dice": {
+            "count_from_resource": "sneak_attack_dice",
+            "die": "d6"
+          },
+          "damage_type": "weapon_type",
+          "once_per_turn": true,
+          "weapon_restriction": [
+            "finesse",
+            "ranged"
+          ],
+          "condition": {
+            "primary": "advantage_on_attack_roll",
+            "alternative": {
+              "ally_within_5ft_of_target": true,
+              "ally_not_incapacitated": true,
+              "self_not_at_disadvantage": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "rogue-thieves-cant",
+      "owner_type": "class",
+      "owner_id": "rogue",
+      "level": 1,
+      "name_en": "Thieves' Cant",
+      "name_de": "Diebessprache",
+      "player_choice": true,
+      "choice_prompt_en": "Choose one additional language from the language tables in chapter 2.",
+      "choice_prompt_de": "Wähle eine weitere Sprache aus den Sprachentabellen in Kapitel 2.",
+      "text_en": "You picked up various languages in the communities where you plied your roguish talents. You know Thieves' Cant and one other language of your choice, which you choose from the language tables in chapter 2.",
+      "text_de": "Du hast verschiedene Sprachen in den Gemeinschaften gelernt, in denen du dir deine Schurkentalente zugelegt hast. Du beherrschst die Diebessprache und eine andere Sprache deiner Wahl, die du aus den Sprachentabellen in Kapitel 2 auswählen kannst.",
+      "grants": [
+        {
+          "type": "language",
+          "language": "thieves_cant"
+        },
+        {
+          "type": "language_choice",
+          "choose": 1,
+          "from": "language_tables"
+        }
+      ]
+    },
+    {
+      "id": "rogue-weapon-mastery",
+      "owner_type": "class",
+      "owner_id": "rogue",
+      "level": 1,
+      "name_en": "Weapon Mastery",
+      "name_de": "Waffenmeisterung",
+      "player_choice": true,
+      "choice_prompt_en": "Choose two kinds of weapons with which you have proficiency. You can use their mastery properties. You may change your choices whenever you finish a Long Rest.",
+      "choice_prompt_de": "Wähle zwei Waffenarten, mit denen du Übung hast. Du kannst deren Meisterschaftseigenschaften verwenden. Du kannst deine Wahl wann immer du eine lange Rast beendest ändern.",
+      "text_en": "Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Daggers and Shortbows.\n\nWhenever you finish a Long Rest, you can change the kinds of weapons you chose.",
+      "text_de": "Deine Vertrautheit mit Waffen erlaubt dir, die Meisterschaftseigenschaften zweier Waffenarten deiner Wahl zu verwenden, sofern du Übung im Umgang mit diesen hast, beispielsweise Dolche und Kurzbögen.\n\nWann immer du eine lange Rast beendest, kannst du die Art der ausgewählten Waffen ändern.",
+      "grants": [
+        {
+          "type": "weapon_mastery",
+          "count_from_resource": "weapon_mastery_count",
+          "weapon_categories": [
+            "simple",
+            "martial_finesse_or_light"
+          ],
+          "prerequisite": "must_have_proficiency_in_chosen_weapon",
+          "change_on": "long_rest",
+          "change_count": "all"
+        }
+      ]
+    },
+    {
+      "id": "rogue-cunning-action",
+      "owner_type": "class",
+      "owner_id": "rogue",
+      "level": 2,
+      "name_en": "Cunning Action",
+      "name_de": "Raffinierte Aktion",
+      "player_choice": false,
+      "text_en": "Your quick thinking and agility allow you to move and act quickly. On your turn, you can take one of the following actions as a Bonus Action: Dash, Disengage, or Hide.",
+      "text_de": "Dank deiner Auffassungsgabe und deiner Beweglichkeit kannst du dich besonders schnell bewegen und rasch handeln. In deinem Zug kannst du eine der folgenden Aktionen als Bonusaktion ausführen: Rückzug, Spurt oder Verstecken.",
+      "grants": [
+        {
+          "type": "bonus_action_grant",
+          "actions": [
+            "dash",
+            "disengage",
+            "hide"
+          ],
+          "choose": 1
+        }
+      ]
+    },
+    {
+      "id": "rogue-subclass",
+      "owner_type": "class",
+      "owner_id": "rogue",
+      "level": 3,
+      "name_en": "Rogue Subclass",
+      "name_de": "Schurken-Unterklasse",
+      "player_choice": true,
+      "choice_prompt_en": "Choose a Rogue subclass: Arcane Trickster, Assassin, Soulknife, or Thief.",
+      "choice_prompt_de": "Wähle eine Schurken-Unterklasse: Arkaner Betrüger, Assassine, Dieb oder Seelenmesser.",
+      "text_en": "You gain a Rogue subclass of your choice. The Arcane Trickster, Assassin, Soulknife, and Thief subclasses are detailed after this class's description. A subclass is a specialization that grants you features at certain Rogue levels. For the rest of your career, you gain each of your subclass's features that are of your Rogue level or lower.",
+      "text_de": "Du erhältst eine Schurken-Unterklasse deiner Wahl. Die Unterklassen Arkaner Betrüger, Assassine, Dieb und Seelenmesser werden nach der Beschreibung dieser Klasse erläutert. Unterklassen sind Spezialisierungen, die dir auf bestimmten Schurkenstufen Merkmale gewähren. Du erhältst für den Rest deiner Laufbahn alle Merkmale deiner Unterklasse, die zu deiner aktuellen Schurkenstufe oder den niedrigeren Stufen gehören.",
+      "grants": [
+        {
+          "type": "subclass_choice",
+          "class_id": "rogue"
+        }
+      ]
+    },
+    {
+      "id": "rogue-steady-aim",
+      "owner_type": "class",
+      "owner_id": "rogue",
+      "level": 3,
+      "name_en": "Steady Aim",
+      "name_de": "Zielsicher",
+      "player_choice": false,
+      "text_en": "As a Bonus Action, you give yourself Advantage on your next attack roll on the current turn. You can use this feature only if you haven't moved during this turn, and after you use it, your Speed is 0 until the end of the current turn.",
+      "text_de": "Als Bonusaktion bewirkst du, dass dein nächster Angriffswurf im aktuellen Zug im Vorteil ist. Du kannst dieses Merkmal nur anwenden, wenn du dich in diesem Zug noch nicht bewegt hast. Nach der Bonusaktion beträgt deine Bewegungsrate bis zum Ende des Zugs 0.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "condition": "have_not_moved_this_turn",
+          "effect": {
+            "type": "advantage",
+            "on": "next_attack_roll_this_turn"
+          },
+          "side_effect": {
+            "type": "speed_set",
+            "value": 0,
+            "duration": "until_end_of_current_turn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rogue-asi-4",
+      "owner_type": "class",
+      "owner_id": "rogue",
+      "level": 4,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Rogue levels 8, 10, 12, and 16.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung (siehe Kapitel 5) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Du erhältst dieses Merkmal auf der 8., 10., 12. und 16. Schurkenstufe erneut.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "rogue-cunning-strike",
+      "owner_type": "class",
+      "owner_id": "rogue",
+      "level": 5,
+      "name_en": "Cunning Strike",
+      "name_de": "Raffinierter Schlag",
+      "player_choice": true,
+      "choice_prompt_en": "When you deal Sneak Attack damage, you may choose one Cunning Strike effect to apply, paying its die cost from your Sneak Attack dice before rolling.",
+      "choice_prompt_de": "Wenn du Schaden mit Hinterhältiger Angriff bewirkst, kannst du einen Effekt von Raffinierter Schlag anwenden und dafür die entsprechenden Würfel von deinen Hinterhältigen-Angriff-Würfeln abziehen.",
+      "text_en": "You've developed cunning ways to use your Sneak Attack. When you deal Sneak Attack damage, you can add one of the following Cunning Strike effects. Each effect has a die cost, which is the number of Sneak Attack damage dice you must forgo to add the effect. You remove the die before rolling, and the effect occurs immediately after the attack's damage is dealt.\n\nIf a Cunning Strike effect requires a saving throw, the DC equals 8 plus your Dexterity modifier and Proficiency Bonus.\n\nPoison (Cost: 1d6). You add a toxin to your strike, forcing the target to make a Constitution saving throw. On a failed save, the target has the Poisoned condition for 1 minute. At the end of each of its turns, the Poisoned target repeats the save, ending the effect on itself on a success. To use this effect, you must have a Poisoner's Kit on your person.\n\nTrip (Cost: 1d6). If the target is Large or smaller, it must succeed on a Dexterity saving throw or have the Prone condition.\n\nWithdraw (Cost: 1d6). Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks.",
+      "text_de": "Du hast raffinierte Methoden entwickelt, deinen Hinterhältigen Angriff einzusetzen. Wenn du mit diesem Schaden bewirkst, kannst du einen der folgenden Effekte von Raffinierter Schlag hinzufügen. Jeder Effekt hat Würfelkosten in Form der Schadenswürfel für Hinterhältiger Angriff, auf die du verzichten musst. Du musst diese Würfel vor dem Wurf entfernen, und der Effekt tritt auf, sobald der Schaden des Angriffs bewirkt wurde.\n\nWenn ein Effekt einen Rettungswurf erfordert, entspricht der SG 8 plus deinem Geschicklichkeitsmodifikator plus deinem Übungsbonus.\n\nFällen (Kosten: 1W6): Wenn das Ziel von höchstens großer Größe ist, muss es einen Geschicklichkeitsrettungswurf bestehen, oder es wird umgestoßen.\n\nGift (Kosten: 1W6): Das Ziel muss einen Konstitutionsrettungswurf bestehen, oder es ist eine Minute lang vergiftet. Das vergiftete Ziel wiederholt den Rettungswurf am Ende jedes seiner Züge. Bei einem Erfolg endet der Effekt. Du musst eine Giftmischerausrüstung bei dir haben.\n\nZurückziehen (Kosten: 1W6): Sofort nach dem Angriff nutzt du bis zur Hälfte deiner Bewegungsrate, ohne Gelegenheitsangriffe zu provozieren.",
+      "grants": [
+        {
+          "type": "choice",
+          "trigger": "on_sneak_attack_damage",
+          "choose": 1,
+          "optional": true,
+          "saving_throw_dc": {
+            "base": 8,
+            "modifiers": [
+              "dexterity_modifier",
+              "proficiency_bonus"
+            ]
+          },
+          "options": [
+            {
+              "id": "cunning-strike-poison",
+              "name_en": "Poison",
+              "name_de": "Gift",
+              "cost": {
+                "resource": "sneak_attack_dice",
+                "amount": 1
+              },
+              "prerequisite": "poisoners_kit_on_person",
+              "text_en": "You add a toxin to your strike, forcing the target to make a Constitution saving throw. On a failed save, the target has the Poisoned condition for 1 minute. At the end of each of its turns, the Poisoned target repeats the save, ending the effect on itself on a success.",
+              "text_de": "Du fügst deinem Schlag ein Toxin hinzu. Das Ziel muss einen Konstitutionsrettungswurf bestehen oder ist eine Minute lang vergiftet. Das vergiftete Ziel wiederholt den Rettungswurf am Ende jedes seiner Züge.",
+              "grants": [
+                {
+                  "type": "saving_throw",
+                  "ability": "constitution",
+                  "on_failure": {
+                    "type": "apply_condition",
+                    "condition": "poisoned",
+                    "duration": "1_minute",
+                    "save_to_end": {
+                      "timing": "end_of_targets_turn"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cunning-strike-trip",
+              "name_en": "Trip",
+              "name_de": "Fällen",
+              "cost": {
+                "resource": "sneak_attack_dice",
+                "amount": 1
+              },
+              "text_en": "If the target is Large or smaller, it must succeed on a Dexterity saving throw or have the Prone condition.",
+              "text_de": "Wenn das Ziel von höchstens großer Größe ist, muss es einen Geschicklichkeitsrettungswurf bestehen, oder es wird umgestoßen.",
+              "grants": [
+                {
+                  "type": "saving_throw",
+                  "ability": "dexterity",
+                  "target_size_max": "large",
+                  "on_failure": {
+                    "type": "apply_condition",
+                    "condition": "prone"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cunning-strike-withdraw",
+              "name_en": "Withdraw",
+              "name_de": "Zurückziehen",
+              "cost": {
+                "resource": "sneak_attack_dice",
+                "amount": 1
+              },
+              "text_en": "Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks.",
+              "text_de": "Sofort nach dem Angriff nutzt du bis zur Hälfte deiner Bewegungsrate, ohne Gelegenheitsangriffe zu provozieren.",
+              "grants": [
+                {
+                  "type": "free_movement",
+                  "distance": "half_speed",
+                  "no_opportunity_attacks": true,
+                  "timing": "immediately_after_attack"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rogue-uncanny-dodge",
+      "owner_type": "class",
+      "owner_id": "rogue",
+      "level": 5,
+      "name_en": "Uncanny Dodge",
+      "name_de": "Unglaubliches Ausweichen",
+      "player_choice": false,
+      "text_en": "When an attacker that you can see hits you with an attack roll, you can take a Reaction to halve the attack's damage against you (round down).",
+      "text_de": "Trifft dich ein Angreifer, den du sehen kannst, mit einem Angriffswurf, so kannst du eine Reaktion ausführen, um den Schaden des Angriffs zu halbieren (abgerundet).",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "hit_by_attack_roll",
+          "condition": "you_can_see_attacker",
+          "action_type": "reaction",
+          "effect": {
+            "type": "damage_reduction",
+            "value": "half",
+            "rounding": "down"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rogue-expertise-6",
+      "owner_type": "class",
+      "owner_id": "rogue",
+      "level": 6,
+      "name_en": "Expertise",
+      "name_de": "Expertise",
+      "player_choice": true,
+      "choice_prompt_en": "Choose two more skill proficiencies you have. You gain Expertise in them.",
+      "choice_prompt_de": "Wähle zwei weitere Fertigkeiten, in denen du geübt bist. Du erhältst darin Expertise.",
+      "text_en": "You gain Expertise in two more of your skill proficiencies of your choice.",
+      "text_de": "Du erhältst Expertise in zwei weiteren Fertigkeiten deiner Wahl, in denen du geübt bist.",
+      "grants": [
+        {
+          "type": "expertise",
+          "choose": 2,
+          "from": "current_skill_proficiencies"
+        }
+      ]
+    },
+    {
+      "id": "rogue-evasion",
+      "owner_type": "class",
+      "owner_id": "rogue",
+      "level": 7,
+      "name_en": "Evasion",
+      "name_de": "Entrinnen",
+      "player_choice": false,
+      "text_en": "You can nimbly dodge out of the way of certain dangers. When you're subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can't use this feature if you have the Incapacitated condition.",
+      "text_de": "Du kannst bestimmten Gefahren geschickt ausweichen. Bist du einem Effekt ausgesetzt, der dir einen Geschicklichkeitsrettungswurf erlaubt, um den Schaden zu halbieren, so erleidest du stattdessen bei einem Erfolg gar keinen und bei einem Misserfolg den halben Schaden. Du kannst dieses Merkmal nicht einsetzen, wenn du kampfunfähig bist.",
+      "grants": [
+        {
+          "type": "evasion",
+          "applies_to": "dexterity_saving_throw_half_damage_effects",
+          "on_success": "no_damage",
+          "on_failure": "half_damage",
+          "condition": "not_incapacitated"
+        }
+      ]
+    },
+    {
+      "id": "rogue-reliable-talent",
+      "owner_type": "class",
+      "owner_id": "rogue",
+      "level": 7,
+      "name_en": "Reliable Talent",
+      "name_de": "Verlässliches Talent",
+      "player_choice": false,
+      "text_en": "Whenever you make an ability check that uses one of your skill or tool proficiencies, you can treat a d20 roll of 9 or lower as a 10.",
+      "text_de": "Wann immer du einen Attributswurf ausführst, der eine deiner Übungen in Fertigkeiten oder im Umgang mit Werkzeugen nutzt, kannst du ein W20-Ergebnis von 9 oder darunter als 10 werten.",
+      "grants": [
+        {
+          "type": "minimum_roll_override",
+          "applies_to": "ability_checks_using_skill_or_tool_proficiency",
+          "minimum": 10,
+          "condition": "roll_is_9_or_lower"
+        }
+      ]
+    },
+    {
+      "id": "rogue-asi-8",
+      "owner_type": "class",
+      "owner_id": "rogue",
+      "level": 8,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung (siehe Kapitel 5) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "rogue-asi-10",
+      "owner_type": "class",
+      "owner_id": "rogue",
+      "level": 10,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung (siehe Kapitel 5) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "rogue-improved-cunning-strike",
+      "owner_type": "class",
+      "owner_id": "rogue",
+      "level": 11,
+      "name_en": "Improved Cunning Strike",
+      "name_de": "Verbesserter Raffinierter Schlag",
+      "player_choice": false,
+      "text_en": "You can use up to two Cunning Strike effects when you deal Sneak Attack damage, paying the die cost for each effect.",
+      "text_de": "Wenn du mit Raffinierter Schlag Schaden bewirkst, kannst du bis zu zwei der folgenden Effekte von Raffinierter Schlag hinzufügen, sofern du die jeweiligen Würfelkosten bezahlst.",
+      "grants": [
+        {
+          "type": "choice_upgrade",
+          "choice_feature_id": "rogue-cunning-strike",
+          "modifications": {
+            "choose": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "rogue-asi-12",
+      "owner_type": "class",
+      "owner_id": "rogue",
+      "level": 12,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung (siehe Kapitel 5) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "rogue-devious-strikes",
+      "owner_type": "class",
+      "owner_id": "rogue",
+      "level": 14,
+      "name_en": "Devious Strikes",
+      "name_de": "Hinterhältige Schläge",
+      "player_choice": false,
+      "text_en": "You've practiced new ways to use your Sneak Attack deviously. The following effects are now among your Cunning Strike options.\n\nDaze (Cost: 2d6). The target must succeed on a Constitution saving throw, or on its next turn, it can do only one of the following: move or take an action or a Bonus Action.\n\nKnock Out (Cost: 6d6). The target must succeed on a Constitution saving throw, or it has the Unconscious condition for 1 minute or until it takes any damage. The Unconscious target repeats the save at the end of each of its turns, ending the effect on itself on a success.\n\nObscure (Cost: 3d6). The target must succeed on a Dexterity saving throw, or it has the Blinded condition until the end of its next turn.",
+      "text_de": "Du hast dich in neuen Methoden geübt, deinen Hinterhältigen Angriff auf besonders verschlagene Art auszuführen. Nun stehen folgende Effekte von Raffinierter Schlag zur Auswahl:\n\nIrritieren (Kosten: 2W6): Das Ziel muss einen Konstitutionsrettungswurf bestehen, oder es kann in seinem nächsten Zug nur eines tun: sich bewegen, eine Aktion oder eine Bonusaktion ausführen.\n\nLahmlegen (Kosten: 6W6): Das Ziel muss einen Konstitutionsrettungswurf bestehen, anderenfalls ist es eine Minute lang oder bis es Schaden erleidet bewusstlos. Das bewusstlose Ziel wiederholt den Rettungswurf am Ende jedes seiner Züge.\n\nVerdunkeln (Kosten: 3W6): Das Ziel muss einen Geschicklichkeitsrettungswurf bestehen, oder es ist bis zum Ende seines nächsten Zugs blind.",
+      "grants": [
+        {
+          "type": "choice_upgrade",
+          "choice_feature_id": "rogue-cunning-strike",
+          "adds_options": [
+            {
+              "id": "cunning-strike-daze",
+              "name_en": "Daze",
+              "name_de": "Irritieren",
+              "cost": {
+                "resource": "sneak_attack_dice",
+                "amount": 2
+              },
+              "text_en": "The target must succeed on a Constitution saving throw, or on its next turn, it can do only one of the following: move or take an action or a Bonus Action.",
+              "text_de": "Das Ziel muss einen Konstitutionsrettungswurf bestehen, oder es kann in seinem nächsten Zug nur eines tun: sich bewegen, eine Aktion oder eine Bonusaktion ausführen.",
+              "grants": [
+                {
+                  "type": "saving_throw",
+                  "ability": "constitution",
+                  "on_failure": {
+                    "type": "apply_condition",
+                    "condition": "dazed",
+                    "duration": "until_end_of_targets_next_turn",
+                    "effect": "limited_to_one_of_move_action_or_bonus_action"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cunning-strike-knock-out",
+              "name_en": "Knock Out",
+              "name_de": "Lahmlegen",
+              "cost": {
+                "resource": "sneak_attack_dice",
+                "amount": 6
+              },
+              "text_en": "The target must succeed on a Constitution saving throw, or it has the Unconscious condition for 1 minute or until it takes any damage. The Unconscious target repeats the save at the end of each of its turns, ending the effect on itself on a success.",
+              "text_de": "Das Ziel muss einen Konstitutionsrettungswurf bestehen, anderenfalls ist es eine Minute lang oder bis es Schaden erleidet bewusstlos. Das bewusstlose Ziel wiederholt den Rettungswurf am Ende jedes seiner Züge.",
+              "grants": [
+                {
+                  "type": "saving_throw",
+                  "ability": "constitution",
+                  "on_failure": {
+                    "type": "apply_condition",
+                    "condition": "unconscious",
+                    "duration": "1_minute",
+                    "end_conditions": [
+                      "takes_any_damage"
+                    ],
+                    "save_to_end": {
+                      "timing": "end_of_targets_turn"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cunning-strike-obscure",
+              "name_en": "Obscure",
+              "name_de": "Verdunkeln",
+              "cost": {
+                "resource": "sneak_attack_dice",
+                "amount": 3
+              },
+              "text_en": "The target must succeed on a Dexterity saving throw, or it has the Blinded condition until the end of its next turn.",
+              "text_de": "Das Ziel muss einen Geschicklichkeitsrettungswurf bestehen, oder es ist bis zum Ende seines nächsten Zugs blind.",
+              "grants": [
+                {
+                  "type": "saving_throw",
+                  "ability": "dexterity",
+                  "on_failure": {
+                    "type": "apply_condition",
+                    "condition": "blinded",
+                    "duration": "until_end_of_targets_next_turn"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rogue-slippery-mind",
+      "owner_type": "class",
+      "owner_id": "rogue",
+      "level": 15,
+      "name_en": "Slippery Mind",
+      "name_de": "Entschlüpfender Geist",
+      "player_choice": false,
+      "text_en": "Your cunning mind is exceptionally difficult to control. You gain proficiency in Wisdom and Charisma saving throws.",
+      "text_de": "Dein raffinierter Verstand ist außergewöhnlich schwierig zu kontrollieren. Du erhältst Übung in Weisheits- und Charismarettungswürfen.",
+      "grants": [
+        {
+          "type": "saving_throw_proficiency",
+          "abilities": [
+            "wisdom",
+            "charisma"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rogue-asi-16",
+      "owner_type": "class",
+      "owner_id": "rogue",
+      "level": 16,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung (siehe Kapitel 5) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "rogue-elusive",
+      "owner_type": "class",
+      "owner_id": "rogue",
+      "level": 18,
+      "name_en": "Elusive",
+      "name_de": "Schwer zu fassen",
+      "player_choice": false,
+      "text_en": "You're so evasive that attackers rarely gain the upper hand against you. No attack roll can have Advantage against you unless you have the Incapacitated condition.",
+      "text_de": "Du kannst derart gut ausweichen, dass Angreifer kaum noch die Oberhand gegen dich gewinnen. Kein Angriffswurf gegen dich kann im Vorteil sein, solange du nicht kampfunfähig bist.",
+      "grants": [
+        {
+          "type": "prevent_advantage_against_self",
+          "condition": "not_incapacitated"
+        }
+      ]
+    },
+    {
+      "id": "rogue-epic-boon",
+      "owner_type": "class",
+      "owner_id": "rogue",
+      "level": 19,
+      "name_en": "Epic Boon",
+      "name_de": "Epische Gabe",
+      "player_choice": true,
+      "choice_prompt_en": "Gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of the Night Spirit is recommended.",
+      "choice_prompt_de": "Erhalte ein Epische-Gabe-Talent oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Gabe des Nachtgeists wird empfohlen.",
+      "text_en": "You gain an Epic Boon feat (see chapter 5) or another feat of your choice for which you qualify. Boon of the Night Spirit is recommended.",
+      "text_de": "Du erhältst ein Epische-Gabe-Talent (siehe Kapitel 5) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Gabe des Nachtgeists wird empfohlen.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "feat_category": "epic_boon",
+          "recommended": "boon_of_the_night_spirit"
+        }
+      ]
+    },
+    {
+      "id": "rogue-stroke-of-luck",
+      "owner_type": "class",
+      "owner_id": "rogue",
+      "level": 20,
+      "name_en": "Stroke of Luck",
+      "name_de": "Glückstreffer",
+      "player_choice": false,
+      "text_en": "You have a marvelous knack for succeeding when you need to. If you fail a D20 Test, you can turn the roll into a 20.\n\nOnce you use this feature, you can't use it again until you finish a Short or Long Rest.",
+      "text_de": "Du bist beneidenswert gut darin, Erfolg zu haben, wenn es darauf ankommt. Wenn du bei einer W20-Prüfung scheiterst, kannst du das Ergebnis in eine 20 verwandeln.\n\nDu kannst dieses Merkmal erst nach einer kurzen oder langen Rast erneut verwenden.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "none",
+          "trigger": "fail_d20_test",
+          "uses": 1,
+          "recharge": [
+            "short_rest",
+            "long_rest"
+          ],
+          "effect": {
+            "type": "set_roll",
+            "value": 20
+          }
+        }
+      ]
+    }
+  ],
+  "subclass_features": [
+    {
+      "id": "arcane-trickster-spellcasting",
+      "owner_type": "subclass",
+      "owner_id": "rogue-arcane-trickster",
+      "level": 3,
+      "name_en": "Spellcasting",
+      "name_de": "Zauberwirken",
+      "player_choice": true,
+      "choice_prompt_en": "Choose two Wizard cantrips (beyond the required Mage Hand) and three level 1 Wizard spells to prepare.",
+      "choice_prompt_de": "Wähle zwei Magierzaubertricks (zusätzlich zur vorgeschriebenen Magierhand) und drei Magierzauber des 1. Grades zur Vorbereitung.",
+      "text_en": "You have learned to cast spells. See chapter 7 for the rules on spellcasting.\n\nCantrips. You know three cantrips: Mage Hand and two other cantrips of your choice from the Wizard spell list. Mind Sliver and Minor Illusion are recommended. Whenever you gain a Rogue level, you can replace one of your cantrips, except Mage Hand, with another Wizard cantrip of your choice. When you reach Rogue level 10, you learn another Wizard cantrip of your choice.\n\nSpell Slots. The Arcane Trickster Spellcasting table shows how many spell slots you have. You regain all expended spell slots when you finish a Long Rest.\n\nPrepared Spells of Level 1+. Choose three level 1 Wizard spells to start. Charm Person, Disguise Self, and Fog Cloud are recommended. The number increases as shown in the Arcane Trickster Spellcasting table. Whenever that number increases, choose additional Wizard spells until your list matches the table.\n\nChanging Your Prepared Spells. Whenever you gain a Rogue level, you can replace one spell on your list with another Wizard spell for which you have spell slots.\n\nSpellcasting Ability. Intelligence is your spellcasting ability.\n\nSpellcasting Focus. You can use an Arcane Focus as a Spellcasting Focus for your Wizard spells.",
+      "text_de": "Du hast gelernt, Zauber zu wirken. Die Regeln zum Zauberwirken findest du in Kapitel 7.\n\nZaubertricks: Du kennst drei Zaubertricks: Magierhand und zwei weitere Zaubertricks deiner Wahl von der Zauberliste des Magiers. Einfache Illusion und Gedankensplitter werden empfohlen. Wann immer du eine Schurkenstufe erhältst, kannst du einen deiner Zaubertricks außer Magierhand ersetzen. Wenn du die 10. Schurkenstufe erreichst, erlernst du einen weiteren Magierzaubertrick.\n\nZauberplätze: Du erhältst alle verbrauchten Zauberplätze nach einer langen Rast zurück.\n\nVorbereitete Zauber ab dem 1. Grad: Wähle zu Beginn drei Magierzauber des 1. Grades. Nebelwolke, Person bezaubern und Selbstverkleidung werden empfohlen. Die Anzahl steigt mit deiner Schurkenstufe. Wann immer du eine Schurkenstufe erhältst, kannst du einen Zauber auf deiner Liste ersetzen.\n\nAttribut zum Zauberwirken: Intelligenz.\n\nZauberfokus: Du kannst einen arkanen Fokus als Zauberfokus verwenden.",
+      "grants": [
+        {
+          "type": "spellcasting",
+          "casting_model": "prepared",
+          "spellcasting_ability": "intelligence",
+          "spellcasting_focus": [
+            "arcane_focus"
+          ],
+          "recharge": "long_rest",
+          "cantrips": {
+            "count_from_resource": "cantrips_known",
+            "source": "wizard_spell_list",
+            "required": [
+              "mage-hand"
+            ],
+            "replaceable_on": "rogue_level_up",
+            "replace_count": 1,
+            "replace_restriction": "cannot_replace_mage_hand"
+          },
+          "prepared_spells": {
+            "count_from_resource": "prepared_spells",
+            "source": "wizard_spell_list",
+            "replaceable_on": "rogue_level_up",
+            "replace_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "arcane-trickster-mage-hand-legerdemain",
+      "owner_type": "subclass",
+      "owner_id": "rogue-arcane-trickster",
+      "level": 3,
+      "name_en": "Mage Hand Legerdemain",
+      "name_de": "Magierhand-Kniff",
+      "player_choice": false,
+      "text_en": "When you cast Mage Hand, you can cast it as a Bonus Action, and you can make the spectral hand Invisible. You can control the hand as a Bonus Action, and through it, you can make Dexterity (Sleight of Hand) checks.",
+      "text_de": "Wenn du den Zauber Magierhand wirkst, kannst du dies als Bonusaktion tun, und die Geisterhand kann unsichtbar sein. Du kannst die Hand als Bonusaktion kontrollieren und mit ihr Geschicklichkeitswürfe (Fingerfertigkeit) ausführen.",
+      "grants": [
+        {
+          "type": "spell_cost_override",
+          "spell_id": "mage-hand",
+          "action_type": "bonus_action"
+        },
+        {
+          "type": "spell_effect_transformation",
+          "applies_to": [
+            "mage-hand"
+          ],
+          "modifications": [
+            {
+              "effect": "hand_can_be_invisible"
+            },
+            {
+              "effect": "control_as_bonus_action"
+            },
+            {
+              "effect": "can_make_sleight_of_hand_checks"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arcane-trickster-magical-ambush",
+      "owner_type": "subclass",
+      "owner_id": "rogue-arcane-trickster",
+      "level": 9,
+      "name_en": "Magical Ambush",
+      "name_de": "Magischer Hinterhalt",
+      "player_choice": false,
+      "text_en": "If you have the Invisible condition when you cast a spell on a creature, it has Disadvantage on any saving throw it makes against the spell on the same turn.",
+      "text_de": "Wenn du unsichtbar bist, während du einen Zauber auf eine Kreatur wirkst, ist die Kreatur im selben Zug bei allen Rettungswürfen gegen den Zauber im Nachteil.",
+      "grants": [
+        {
+          "type": "spell_effect_transformation",
+          "condition": "self_has_invisible_condition",
+          "applies_to": "all_spells",
+          "modifications": [
+            {
+              "effect": "target_has_disadvantage_on_saving_throws_against_spell",
+              "duration": "same_turn"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arcane-trickster-versatile-trickster",
+      "owner_type": "subclass",
+      "owner_id": "rogue-arcane-trickster",
+      "level": 13,
+      "name_en": "Versatile Trickster",
+      "name_de": "Vielseitiger Trickser",
+      "player_choice": false,
+      "text_en": "You gain the ability to distract targets with your Mage Hand. When you use the Trip option of your Cunning Strike on a creature, you can also use that option on another creature within 5 feet of the spectral hand.",
+      "text_de": "Du hast die Fähigkeit, Ziele mit deiner Magierhand abzulenken. Wenn du die Fällen-Option von Raffinierter Schlag bei einer Kreatur anwendest, kannst du diese Option auch bei einer weiteren Kreatur im Abstand von bis zu 1,5 Metern von der Geisterhand anwenden.",
+      "grants": [
+        {
+          "type": "feature_modifier",
+          "feature_id": "rogue-cunning-strike",
+          "modifies_option": "cunning-strike-trip",
+          "modification": {
+            "effect": "also_applies_to_second_creature_within_5ft_of_mage_hand"
+          }
+        }
+      ]
+    },
+    {
+      "id": "arcane-trickster-spell-thief",
+      "owner_type": "subclass",
+      "owner_id": "rogue-arcane-trickster",
+      "level": 17,
+      "name_en": "Spell Thief",
+      "name_de": "Zauberdieb",
+      "player_choice": false,
+      "text_en": "You gain the ability to magically steal the knowledge of how to cast a spell from another spellcaster.\n\nImmediately after a creature casts a spell that targets you or includes you in its area of effect, you can take a Reaction to force the creature to make an Intelligence saving throw. The DC equals your spell save DC. On a failed save, you negate the spell's effect against you, and you steal the knowledge of the spell if it is at least level 1 and of a level you can cast (it doesn't need to be a Wizard spell). For the next 8 hours, you have the spell prepared. The creature can't cast it until the 8 hours have passed.\n\nOnce you steal a spell with this feature, you can't use this feature again until you finish a Long Rest.",
+      "text_de": "Du erhältst die Fähigkeit, einem anderen Zauberwirker magisch das Wissen darüber zu stehlen, wie man einen Zauber wirkt.\n\nSofort, nachdem eine Kreatur einen Zauber gewirkt hat, der auf dich zielt oder in dessen Wirkungsbereich du dich befindest, kannst du eine Reaktion ausführen, um die Kreatur zu einem Intelligenzrettungswurf zu zwingen. Der SG entspricht deinem Zauberrettungswurf-SG. Scheitert der Wurf, so negierst du den Effekt des Zaubers auf dich und stiehlst das Wissen über den Zauber, sofern dessen Grad mindestens 1 beträgt und von dir gewirkt werden kann. In den nächsten acht Stunden hast du den Zauber vorbereitet. Die Kreatur kann ihn erst wieder wirken, wenn die acht Stunden vergangen sind.\n\nWenn du einen Zauber mit diesem Merkmal gestohlen hast, kannst du das Merkmal erst nach einer langen Rast erneut verwenden.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "creature_casts_spell_targeting_self_or_including_self_in_aoe",
+          "action_type": "reaction",
+          "uses": 1,
+          "recharge": "long_rest",
+          "saving_throw": {
+            "ability": "intelligence",
+            "dc": "spell_save_dc"
+          },
+          "on_failure": {
+            "negate_spell_effect_against_self": true,
+            "temporary_spell_access": {
+              "condition": "spell_level_1_or_higher_and_castable_by_self",
+              "duration_hours": 8,
+              "source_creature_restriction": "cannot_cast_stolen_spell_for_8_hours"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "assassin-assassinate",
+      "owner_type": "subclass",
+      "owner_id": "rogue-assassin",
+      "level": 3,
+      "name_en": "Assassinate",
+      "name_de": "Attentat",
+      "player_choice": false,
+      "text_en": "You're adept at ambushing a target, granting you the following benefits.\n\nInitiative. You have Advantage on Initiative rolls.\n\nSurprising Strikes. During the first round of each combat, you have Advantage on attack rolls against any creature that hasn't taken a turn. If your Sneak Attack hits any target during that round, the target takes extra damage of the weapon's type equal to your Rogue level.",
+      "text_de": "Du bist versiert darin, Ziele zu überfallen, was dir folgende Vorzüge gewährt.\n\nInitiative: Du bist bei Initiativewürfen im Vorteil.\n\nÜberraschungsschläge: In jeder ersten Kampfrunde bist du bei Angriffswürfen gegen jede Kreatur im Vorteil, die noch nicht am Zug war. Wenn dein Hinterhältiger Angriff in dieser Runde irgendein Ziel trifft, erleidet das Ziel zusätzlichen Schaden in Höhe deiner Schurkenstufe.",
+      "grants": [
+        {
+          "type": "advantage",
+          "on": [
+            "initiative"
+          ]
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "first_round_of_combat",
+          "effect": {
+            "type": "advantage",
+            "on": "attack_rolls",
+            "against": "creatures_that_have_not_taken_a_turn"
+          }
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "sneak_attack_hits_during_first_round_of_combat",
+          "effect": {
+            "type": "extra_damage",
+            "value": "rogue_level",
+            "damage_type": "weapon_type"
+          }
+        }
+      ]
+    },
+    {
+      "id": "assassin-assassins-tools",
+      "owner_type": "subclass",
+      "owner_id": "rogue-assassin",
+      "level": 3,
+      "name_en": "Assassin's Tools",
+      "name_de": "Assassinenwerkzeug",
+      "player_choice": false,
+      "text_en": "You gain a Disguise Kit and a Poisoner's Kit, and you have proficiency with them.",
+      "text_de": "Du erhältst eine Verkleidungsausrüstung und eine Giftmischerausrüstung, und du hast Übung im Umgang mit beidem.",
+      "grants": [
+        {
+          "type": "tool_proficiency",
+          "tools": [
+            "disguise_kit",
+            "poisoners_kit"
+          ]
+        },
+        {
+          "type": "equipment_grant",
+          "items": [
+            "disguise_kit",
+            "poisoners_kit"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assassin-infiltration-expertise",
+      "owner_type": "subclass",
+      "owner_id": "rogue-assassin",
+      "level": 9,
+      "name_en": "Infiltration Expertise",
+      "name_de": "Infiltrationsexperte",
+      "player_choice": false,
+      "text_en": "You are expert at the following techniques that aid your infiltrations.\n\nMasterful Mimicry. You can unerringly mimic another person's speech, handwriting, or both if you have spent at least 1 hour studying them.\n\nRoving Aim. Your Speed isn't reduced to 0 by using Steady Aim.",
+      "text_de": "Du bist Spezialist in folgenden Techniken, die nützlich für deine Infiltrationen sind.\n\nMeisterlich Stimmen nachahmen: Du kannst Sprechweise oder Handschrift einer Person oder beides täuschend echt nachahmen, wenn du sie mindestens eine Stunde lang studiert hast.\n\nVagabundenziel: Deine Bewegungsrate wird nicht auf 0 verringert, wenn du Zielsicher einsetzt.",
+      "grants": [
+        {
+          "type": "passive",
+          "effect": "masterful_mimicry",
+          "condition": "studied_target_for_1_hour"
+        },
+        {
+          "type": "feature_modifier",
+          "feature_id": "rogue-steady-aim",
+          "modification": {
+            "remove_side_effect": "speed_set_to_0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "assassin-envenom-weapons",
+      "owner_type": "subclass",
+      "owner_id": "rogue-assassin",
+      "level": 13,
+      "name_en": "Envenom Weapons",
+      "name_de": "Waffen vergiften",
+      "player_choice": false,
+      "text_en": "When you use the Poison option of your Cunning Strike, the target also takes 2d6 Poison damage whenever it fails the saving throw. This damage ignores Resistance to Poison damage.",
+      "text_de": "Wenn du die Gift-Option von Raffinierter Schlag verwendest, erleidet das Ziel zusätzlich 2W6 Giftschaden, wann immer sein Rettungswurf scheitert. Dieser Schaden ignoriert Resistenz gegen Giftschaden.",
+      "grants": [
+        {
+          "type": "feature_modifier",
+          "feature_id": "rogue-cunning-strike",
+          "modifies_option": "cunning-strike-poison",
+          "modification": {
+            "adds_on_failure_effect": {
+              "type": "extra_damage",
+              "dice": "2d6",
+              "damage_type": "poison",
+              "ignores_resistance": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "assassin-death-strike",
+      "owner_type": "subclass",
+      "owner_id": "rogue-assassin",
+      "level": 17,
+      "name_en": "Death Strike",
+      "name_de": "Todesstoss",
+      "player_choice": false,
+      "text_en": "When you hit with your Sneak Attack on the first round of a combat, the target must succeed on a Constitution saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus), or the attack's damage is doubled against the target.",
+      "text_de": "Wenn du in der ersten Runde eines Kampfs mit Hinterhältiger Angriff triffst, muss das Ziel einen Konstitutionsrettungswurf (SG 8 plus dein Geschicklichkeitsmodifikator plus dein Übungsbonus) bestehen, oder der Schaden des Angriffs gegen das Ziel ist verdoppelt.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "sneak_attack_hits_during_first_round_of_combat",
+          "saving_throw": {
+            "ability": "constitution",
+            "dc": {
+              "base": 8,
+              "modifiers": [
+                "dexterity_modifier",
+                "proficiency_bonus"
+              ]
+            }
+          },
+          "on_failure": {
+            "type": "double_attack_damage"
+          }
+        }
+      ]
+    },
+    {
+      "id": "soulknife-psionic-power",
+      "owner_type": "subclass",
+      "owner_id": "rogue-soulknife",
+      "level": 3,
+      "name_en": "Psionic Power",
+      "name_de": "Psionische Kraft",
+      "player_choice": false,
+      "text_en": "You harbor a wellspring of psionic energy within yourself, represented by your Psionic Energy Dice. The Soulknife Energy Dice table shows the number of these dice and their size at certain Rogue levels.\n\nYou regain one expended Psionic Energy Die when you finish a Short Rest, and you regain all of them when you finish a Long Rest.\n\nPsi-Bolstered Knack. If you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy Die and add the number rolled to the check, potentially turning failure into success. The die is expended only if the roll then succeeds.\n\nPsychic Whispers. As a Magic action, choose up to a number of creatures you can see equal to your Proficiency Bonus, then roll one Psionic Energy Die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you and you with them (within 1 mile). The first time you use this power after each Long Rest, you don't expend the Psionic Energy Die. All other times you use it, you expend the die.",
+      "text_de": "In dir sprudelt eine Quelle psionischer Energie, repräsentiert durch deine Psi-Energie-Würfel.\n\nDu erhältst einen verbrauchten Psi-Energie-Würfel nach einer kurzen Rast zurück. Nach einer langen Rast erhältst du alle zurück.\n\nPsi-gestütztes Geschick: Wenn ein Attributswurf mit einer Fertigkeit oder einem Werkzeug, mit denen du Übung hast, scheitert, kannst du mit einem Psi-Energie-Würfel würfeln und das Ergebnis hinzufügen. Der Würfel wird nur verbraucht, wenn er den Wurf zu einem Erfolg macht.\n\nPsychisches Geflüster: Als magische Aktion wählst du Kreaturen, die du sehen kannst (maximal Übungsbonus Anzahl), und würfelst mit einem Psi-Energie-Würfel. Das Ergebnis bestimmt die Stundenzahl der telepathischen Verbindung (innerhalb von 1,6 km). Beim ersten Einsatz nach einer langen Rast wird kein Würfel verbraucht.",
+      "grants": [
+        {
+          "type": "uses_resource",
+          "resource": "psionic_energy_dice",
+          "recharge": [
+            {
+              "amount": 1,
+              "recharge": "short_rest"
+            },
+            {
+              "amount": "all",
+              "recharge": "long_rest"
+            }
+          ]
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "fail_ability_check_using_proficiency",
+          "optional": true,
+          "effect": {
+            "type": "roll_and_add_to_check",
+            "dice": {
+              "count": 1,
+              "die_from_resource": "psionic_energy_dice"
+            },
+            "expend_condition": "only_if_check_then_succeeds"
+          }
+        },
+        {
+          "type": "active_ability",
+          "action_type": "magic_action",
+          "effect": {
+            "type": "telepathic_link",
+            "targets": {
+              "type": "creatures_you_can_see",
+              "max_count_from": "proficiency_bonus"
+            },
+            "duration_dice": {
+              "count": 1,
+              "die_from_resource": "psionic_energy_dice"
+            },
+            "range_miles": 1
+          },
+          "cost": {
+            "resource": "psionic_energy_dice",
+            "amount": 1,
+            "first_use_after_long_rest_free": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "soulknife-psychic-blades",
+      "owner_type": "subclass",
+      "owner_id": "rogue-soulknife",
+      "level": 3,
+      "name_en": "Psychic Blades",
+      "name_de": "Psychische Klingen",
+      "player_choice": false,
+      "text_en": "You can manifest shimmering blades of psychic energy. Whenever you take the Attack action or make an Opportunity Attack, you can manifest a Psychic Blade in your free hand and make the attack with that blade.\n\nAfter you attack with the blade on your turn, you can make a melee or ranged attack with a second Psychic Blade as a Bonus Action on the same turn if your other hand is free to create it. The damage die of this bonus attack is 1d4 instead of 1d6.",
+      "text_de": "Du kannst schimmernde Klingen aus psychischer Energie manifestieren. Wann immer du die Angriffsaktion oder einen Gelegenheitsangriff ausführst, kannst du eine Psychische Klinge manifestieren und den Angriff damit ausführen.\n\nNachdem du in deinem Zug mit der Klinge angegriffen hast, kannst du als Bonusaktion einen weiteren Angriff mit einer zweiten Psychischen Klinge ausführen, sofern deine andere Hand frei ist. Der Schadenswürfel dieses Bonusangriffs ist 1W4 statt 1W6.",
+      "grants": [
+        {
+          "type": "weapon_grant",
+          "entity_id": "psychic-blade",
+          "trigger": [
+            "attack_action",
+            "opportunity_attack"
+          ],
+          "condition": "free_hand_available",
+          "optional": true
+        },
+        {
+          "type": "bonus_action_grant",
+          "actions": [
+            "second_psychic_blade_attack"
+          ],
+          "trigger": "after_psychic_blade_attack_on_your_turn",
+          "condition": "other_hand_free",
+          "modification": {
+            "damage_die": "d4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "soulknife-soul-blades",
+      "owner_type": "subclass",
+      "owner_id": "rogue-soulknife",
+      "level": 9,
+      "name_en": "Soul Blades",
+      "name_de": "Seelenklingen",
+      "player_choice": false,
+      "text_en": "You can now use the following powers with your Psychic Blades.\n\nHoming Strikes. If you make an attack roll with your Psychic Blade and miss the target, you can roll one Psionic Energy Die and add the number rolled to the attack roll. If this causes the attack to hit, the die is expended.\n\nPsychic Teleportation. As a Bonus Action, you manifest a Psychic Blade, expend one Psionic Energy Die and roll it, and throw the blade at an unoccupied space you can see up to a number of feet away equal to 10 times the number rolled. You then teleport to that space, and the blade vanishes.",
+      "text_de": "Du kannst mit deinen Psychischen Klingen jetzt folgende Kräfte verwenden.\n\nZielsuchhiebe: Wenn du mit deiner Psychischen Klinge einen Angriffswurf ausführst, das Ziel jedoch verfehlst, kannst du mit einem Psi-Energie-Würfel würfeln und das Ergebnis hinzufügen. Wenn der Angriff dadurch ein Treffer wird, ist der Würfel verbraucht.\n\nPsychische Teleportation: Als Bonusaktion manifestierst du eine Psychische Klinge, verbrauchst einen Psi-Energie-Würfel und würfelst damit. Du teleportierst dich dann bis zu einer Entfernung des Zehnfachen des Würfelergebnisses in Fuß.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "miss_with_psychic_blade_attack",
+          "optional": true,
+          "effect": {
+            "type": "roll_and_add_to_attack",
+            "dice": {
+              "count": 1,
+              "die_from_resource": "psionic_energy_dice"
+            },
+            "expend_condition": "only_if_attack_then_hits"
+          }
+        },
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "effect": {
+            "type": "teleport",
+            "range_feet": {
+              "multiplier": 10,
+              "of": "psionic_energy_die_roll"
+            },
+            "destination": "unoccupied_space_you_can_see"
+          },
+          "cost": {
+            "resource": "psionic_energy_dice",
+            "amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "soulknife-psychic-veil",
+      "owner_type": "subclass",
+      "owner_id": "rogue-soulknife",
+      "level": 13,
+      "name_en": "Psychic Veil",
+      "name_de": "Psychischer Schleier",
+      "player_choice": false,
+      "text_en": "You can weave a veil of psychic static to mask yourself. As a Magic action, you gain the Invisible condition for 1 hour or until you dismiss this effect (no action required). This invisibility ends early immediately after you deal damage to a creature or you force a creature to make a saving throw.\n\nOnce you use this feature, you can't do so again until you finish a Long Rest unless you expend a Psionic Energy Die (no action required) to restore your use of it.",
+      "text_de": "Du kannst einen Schleier aus psychischer Energie weben, um dich zu verbergen. Als magische Aktion erhältst du eine Stunde lang den Zustand Unsichtbar oder bis du diesen Effekt verwirfst (keine Aktion erforderlich). Diese Unsichtbarkeit endet sofort, nachdem du einer Kreatur Schaden zugefügt oder eine Kreatur zu einem Rettungswurf gezwungen hast.\n\nDu kannst dieses Merkmal erst nach einer langen Rast erneut verwenden, es sei denn, du verbrauchst einen Psi-Energie-Würfel (keine Aktion erforderlich), um die Anwendung wiederherzustellen.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "magic_action",
+          "uses": 1,
+          "recharge": "long_rest",
+          "refresh_option": {
+            "type": "feature_refresh",
+            "feature_id": "soulknife-psychic-veil",
+            "cost": {
+              "resource": "psionic_energy_dice",
+              "amount": 1
+            }
+          },
+          "effect": {
+            "type": "state",
+            "state_id": "invisible",
+            "duration": "1_hour",
+            "dismissable": true,
+            "early_end_conditions": [
+              "deal_damage_to_creature",
+              "force_creature_saving_throw"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "soulknife-rend-mind",
+      "owner_type": "subclass",
+      "owner_id": "rogue-soulknife",
+      "level": 17,
+      "name_en": "Rend Mind",
+      "name_de": "Geist zerfetzen",
+      "player_choice": false,
+      "text_en": "You can sweep your Psychic Blades through a creature's mind. When you use your Psychic Blades to deal Sneak Attack damage to a creature, you can force that target to make a Wisdom saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus). If the save fails, the target has the Stunned condition for 1 minute. The Stunned target repeats the save at the end of each of its turns, ending the effect on itself on a success.\n\nOnce you use this feature, you can't do so again until you finish a Long Rest unless you expend three Psionic Energy Dice (no action required) to restore your use of it.",
+      "text_de": "Du kannst mit deinen Psychischen Klingen den Geist einer Kreatur angreifen. Wenn du einer Kreatur mit Hinterhältigem Angriff und Psychischen Klingen Schaden zufügst, kannst du das Ziel zu einem Weisheitsrettungswurf (SG 8 plus Geschicklichkeitsmodifikator plus Übungsbonus) zwingen. Scheitert der Rettungswurf, ist das Ziel eine Minute lang betäubt. Das betäubte Ziel wiederholt den Rettungswurf am Ende jedes seiner Züge.\n\nDu kannst dieses Merkmal erst nach einer langen Rast erneut verwenden, es sei denn, du verbrauchst drei Psi-Energie-Würfel (keine Aktion erforderlich).",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "deal_sneak_attack_damage_with_psychic_blades",
+          "optional": true,
+          "uses": 1,
+          "recharge": "long_rest",
+          "refresh_option": {
+            "type": "feature_refresh",
+            "feature_id": "soulknife-rend-mind",
+            "cost": {
+              "resource": "psionic_energy_dice",
+              "amount": 3
+            }
+          },
+          "saving_throw": {
+            "ability": "wisdom",
+            "dc": {
+              "base": 8,
+              "modifiers": [
+                "dexterity_modifier",
+                "proficiency_bonus"
+              ]
+            }
+          },
+          "on_failure": {
+            "type": "apply_condition",
+            "condition": "stunned",
+            "duration": "1_minute",
+            "save_to_end": {
+              "timing": "end_of_targets_turn"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "thief-fast-hands",
+      "owner_type": "subclass",
+      "owner_id": "rogue-thief",
+      "level": 3,
+      "name_en": "Fast Hands",
+      "name_de": "Flinke Finger",
+      "player_choice": false,
+      "text_en": "As a Bonus Action, you can do one of the following.\n\nSleight of Hand. Make a Dexterity (Sleight of Hand) check to pick a lock or disarm a trap with Thieves' Tools or to pick a pocket.\n\nUse an Object. Take the Utilize action, or take the Magic action to use a magic item that requires that action.",
+      "text_de": "Als Bonusaktion kannst du eine der folgenden Optionen ausführen.\n\nFingerfertigkeit: Führe einen Geschicklichkeitswurf (Fingerfertigkeit) aus, um mit Diebeswerkzeug ein Schloss zu knacken, eine Falle zu entschärfen oder einen Taschendiebstahl auszuführen.\n\nEinen Gegenstand verwenden: Führe die Verwenden-Aktion oder die magische Aktion aus, um einen magischen Gegenstand zu verwenden, der diese Aktion erfordert.",
+      "grants": [
+        {
+          "type": "bonus_action_grant",
+          "choose": 1,
+          "options": [
+            {
+              "id": "fast-hands-sleight-of-hand",
+              "name_en": "Sleight of Hand",
+              "name_de": "Fingerfertigkeit",
+              "grants": [
+                {
+                  "type": "skill_check",
+                  "skill": "sleight_of_hand",
+                  "uses": [
+                    "pick_lock_with_thieves_tools",
+                    "disarm_trap_with_thieves_tools",
+                    "pick_pocket"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fast-hands-use-object",
+              "name_en": "Use an Object",
+              "name_de": "Einen Gegenstand verwenden",
+              "grants": [
+                {
+                  "type": "action_grant",
+                  "actions": [
+                    "utilize_action",
+                    "magic_action_to_use_magic_item"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thief-second-story-work",
+      "owner_type": "subclass",
+      "owner_id": "rogue-thief",
+      "level": 3,
+      "name_en": "Second-Story Work",
+      "name_de": "Kletteraffe",
+      "player_choice": false,
+      "text_en": "You've trained to get into especially hard-to-reach places, granting you these benefits.\n\nClimber. You gain a Climb Speed equal to your Speed.\n\nJumper. You can determine your jump distance using your Dexterity rather than your Strength.",
+      "text_de": "Du bist darin ausgebildet, an besonders schwierig zu erreichende Orte zu gelangen, was dir diese Vorzüge gewährt.\n\nKletterer: Du erhältst eine Kletterbewegungsrate in Höhe deiner Bewegungsrate.\n\nSpringer: Du kannst deine Sprungdistanz anhand deiner Geschicklichkeit anstatt deiner Stärke bestimmen.",
+      "grants": [
+        {
+          "type": "speed_grant",
+          "speed_type": "climb",
+          "value": "equal_to_speed"
+        },
+        {
+          "type": "ability_check_override",
+          "override_ability": "dexterity",
+          "applies_to": "jump_distance_calculation"
+        }
+      ]
+    },
+    {
+      "id": "thief-supreme-sneak",
+      "owner_type": "subclass",
+      "owner_id": "rogue-thief",
+      "level": 9,
+      "name_en": "Supreme Sneak",
+      "name_de": "Außerordentliches Schleichen",
+      "player_choice": false,
+      "text_en": "You gain the following Cunning Strike option.\n\nStealth Attack (Cost: 1d6). If you have the Hide action's Invisible condition, this attack doesn't end that condition on you if you end the turn behind Three-Quarters Cover or Total Cover.",
+      "text_de": "Du erhältst bei Raffinierter Schlag folgende Option.\n\nHeimlicher Angriff (Kosten: 1W6): Wenn du aufgrund der Verstecken-Aktion unsichtbar bist, wird die Unsichtbarkeit nicht durch diesen Angriff beendet, sofern du den Zug hinter Dreivierteldeckung oder vollständiger Deckung beendest.",
+      "grants": [
+        {
+          "type": "choice_upgrade",
+          "choice_feature_id": "rogue-cunning-strike",
+          "adds_options": [
+            {
+              "id": "cunning-strike-stealth-attack",
+              "name_en": "Stealth Attack",
+              "name_de": "Heimlicher Angriff",
+              "cost": {
+                "resource": "sneak_attack_dice",
+                "amount": 1
+              },
+              "text_en": "If you have the Hide action's Invisible condition, this attack doesn't end that condition on you if you end the turn behind Three-Quarters Cover or Total Cover.",
+              "text_de": "Wenn du aufgrund der Verstecken-Aktion unsichtbar bist, wird die Unsichtbarkeit nicht durch diesen Angriff beendet, sofern du den Zug hinter Dreivierteldeckung oder vollständiger Deckung beendest.",
+              "grants": [
+                {
+                  "type": "restriction_override",
+                  "override": "attacking_does_not_end_hide_invisibility",
+                  "condition": "end_turn_behind_three_quarters_or_total_cover"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thief-use-magic-device",
+      "owner_type": "subclass",
+      "owner_id": "rogue-thief",
+      "level": 13,
+      "name_en": "Use Magic Device",
+      "name_de": "Magischen Gegenstand verwenden",
+      "player_choice": false,
+      "text_en": "You've learned how to maximize use of magic items, granting you the following benefits.\n\nAttunement. You can attune to up to four magic items at once.\n\nCharges. Whenever you use a magic item property that expends charges, roll 1d6. On a roll of 6, you use the property without expending the charges.\n\nScrolls. You can use any Spell Scroll, using Intelligence as your spellcasting ability for the spell. If the spell is a cantrip or a level 1 spell, you can cast it reliably. If the scroll contains a higher-level spell, you must first succeed on an Intelligence (Arcana) check (DC 10 plus the spell's level). On a successful check, you cast the spell from the scroll. On a failed check, the scroll disintegrates.",
+      "text_de": "Du hast gelernt, magische Gegenstände optimal zu nutzen.\n\nEinstimmung: Du kannst dich auf bis zu vier magische Gegenstände auf einmal einstimmen.\n\nLadungen: Wann immer du eine Eigenschaft eines magischen Gegenstands verwendest, die Ladungen verbraucht, würfle mit 1W6. Bei einem Ergebnis von 6 verwendest du die Eigenschaft, ohne eine Ladung zu verbrauchen.\n\nSchriftrollen: Du kannst alle Zauberschriftrollen verwenden, und dein Attribut zum Wirken ist Intelligenz. Zaubertricks und Zauber des 1. Grades kannst du zuverlässig wirken. Für höhergraduierte Zauber musst du einen Intelligenzwurf (Arkane Kunde) bestehen (SG 10 plus Zaubergrad).",
+      "grants": [
+        {
+          "type": "attunement_slots",
+          "maximum": 4
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "use_magic_item_property_with_charges",
+          "effect": {
+            "type": "conditional_no_charge_cost",
+            "roll": {
+              "dice": "1d6"
+            },
+            "condition": "roll_equals_6"
+          }
+        },
+        {
+          "type": "spell_scroll_use",
+          "spellcasting_ability": "intelligence",
+          "cantrip_and_level_1": "reliable",
+          "level_2_plus": {
+            "requires_check": {
+              "skill": "arcana",
+              "ability": "intelligence",
+              "dc": {
+                "base": 10,
+                "plus_spell_level": true
+              }
+            },
+            "on_success": "cast_spell",
+            "on_failure": "scroll_disintegrates"
+          }
+        }
+      ]
+    },
+    {
+      "id": "thief-thiefs-reflexes",
+      "owner_type": "subclass",
+      "owner_id": "rogue-thief",
+      "level": 17,
+      "name_en": "Thief's Reflexes",
+      "name_de": "Reflexe eines Diebes",
+      "player_choice": false,
+      "text_en": "You are adept at laying ambushes and quickly escaping danger. You can take two turns during the first round of any combat. You take your first turn at your normal Initiative and your second turn at your Initiative minus 10.",
+      "text_de": "Du bist versiert darin, Hinterhalte zu legen und rasch aus Gefahren zu entkommen. In der ersten Runde jedes Kampfs kannst du zwei Züge ausführen. Du führst den ersten Zug mit deiner normalen Initiative und den zweiten Zug mit deiner Initiative minus 10 aus.",
+      "grants": [
+        {
+          "type": "extra_turn",
+          "when": "first_round_of_combat",
+          "initiative_offset": -10,
+          "note": "First turn at normal initiative, second turn at initiative minus 10. Both turns occur in the first round only."
+        }
+      ]
+    }
+  ],
+  "subclass_progressions": [
+    {
+      "subclass_id": "rogue-arcane-trickster",
+      "spell_slot_table": "third_caster",
+      "levels": [
+        {
+          "level": 3,
+          "resources": {
+            "cantrips_known": 3,
+            "prepared_spells": 3
+          }
+        },
+        {
+          "level": 4,
+          "resources": {
+            "cantrips_known": 3,
+            "prepared_spells": 4
+          }
+        },
+        {
+          "level": 7,
+          "resources": {
+            "cantrips_known": 3,
+            "prepared_spells": 5
+          }
+        },
+        {
+          "level": 8,
+          "resources": {
+            "cantrips_known": 3,
+            "prepared_spells": 6
+          }
+        },
+        {
+          "level": 10,
+          "resources": {
+            "cantrips_known": 4,
+            "prepared_spells": 7
+          }
+        },
+        {
+          "level": 11,
+          "resources": {
+            "cantrips_known": 4,
+            "prepared_spells": 8
+          }
+        },
+        {
+          "level": 13,
+          "resources": {
+            "cantrips_known": 4,
+            "prepared_spells": 9
+          }
+        },
+        {
+          "level": 14,
+          "resources": {
+            "cantrips_known": 4,
+            "prepared_spells": 10
+          }
+        },
+        {
+          "level": 16,
+          "resources": {
+            "cantrips_known": 4,
+            "prepared_spells": 11
+          }
+        },
+        {
+          "level": 19,
+          "resources": {
+            "cantrips_known": 4,
+            "prepared_spells": 12
+          }
+        },
+        {
+          "level": 20,
+          "resources": {
+            "cantrips_known": 4,
+            "prepared_spells": 13
+          }
+        }
+      ]
+    },
+    {
+      "subclass_id": "rogue-soulknife",
+      "levels": [
+        {
+          "level": 3,
+          "resources": {
+            "psionic_energy_dice": {
+              "count": 4,
+              "die": "d6"
+            }
+          }
+        },
+        {
+          "level": 5,
+          "resources": {
+            "psionic_energy_dice": {
+              "count": 6,
+              "die": "d8"
+            }
+          }
+        },
+        {
+          "level": 9,
+          "resources": {
+            "psionic_energy_dice": {
+              "count": 8,
+              "die": "d8"
+            }
+          }
+        },
+        {
+          "level": 11,
+          "resources": {
+            "psionic_energy_dice": {
+              "count": 8,
+              "die": "d10"
+            }
+          }
+        },
+        {
+          "level": 13,
+          "resources": {
+            "psionic_energy_dice": {
+              "count": 10,
+              "die": "d10"
+            }
+          }
+        },
+        {
+          "level": 17,
+          "resources": {
+            "psionic_energy_dice": {
+              "count": 12,
+              "die": "d12"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": "psychic-blade",
+      "name_en": "Psychic Blade",
+      "name_de": "Psychische Klinge",
+      "entity_type": "weapon",
+      "weapon_category": "simple_melee",
+      "damage": {
+        "die": "d6",
+        "type": "psychic",
+        "modifier": "attack_roll_ability_modifier"
+      },
+      "properties": [
+        "finesse",
+        "thrown"
+      ],
+      "thrown_range": {
+        "normal_feet": 60,
+        "long_feet": 120
+      },
+      "mastery": {
+        "property": "vex",
+        "note": "Does not count against Weapon Mastery property limit."
+      },
+      "special": [
+        "Vanishes immediately after hitting or missing its target.",
+        "Leaves no mark if it deals damage."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2115 @@
+{
+  "class": {
+    "id": "sorcerer",
+    "name_en": "Sorcerer",
+    "name_de": "Zauberer",
+    "hit_die": "d6",
+    "primary_abilities": [
+      "charisma"
+    ],
+    "saving_throw_proficiencies": [
+      "constitution",
+      "charisma"
+    ],
+    "proficiencies": {
+      "skills": {
+        "choose": 2,
+        "from": [
+          "arcana",
+          "deception",
+          "insight",
+          "intimidation",
+          "persuasion",
+          "religion"
+        ]
+      },
+      "weapons": [
+        "simple"
+      ],
+      "armor": []
+    },
+    "starting_equipment": {
+      "choose": 1,
+      "options": [
+        {
+          "id": "option_a",
+          "items": [
+            "spear",
+            "dagger_x2",
+            "arcane_focus_crystal",
+            "dungeoneers_pack",
+            "28gp"
+          ]
+        },
+        {
+          "id": "option_b",
+          "items": [
+            "50gp"
+          ]
+        }
+      ]
+    },
+    "multiclass_rules": {
+      "grants": [
+        "hit_die_d6"
+      ]
+    },
+    "subclass_level": 3
+  },
+  "class_progression": {
+    "class_id": "sorcerer",
+    "spell_slot_table": "full_caster",
+    "levels": [
+      {
+        "level": 1,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "sorcerer-spellcasting",
+          "sorcerer-innate-sorcery"
+        ],
+        "resources": {
+          "sorcery_points": 0,
+          "innate_sorcery_uses": 2,
+          "cantrips_known": 4,
+          "prepared_spells": 2,
+          "metamagic_count": 0
+        }
+      },
+      {
+        "level": 2,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "sorcerer-font-of-magic",
+          "sorcerer-metamagic"
+        ],
+        "resources": {
+          "sorcery_points": 2,
+          "innate_sorcery_uses": 2,
+          "cantrips_known": 4,
+          "prepared_spells": 4,
+          "metamagic_count": 2
+        }
+      },
+      {
+        "level": 3,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "sorcerer-subclass"
+        ],
+        "subclass_feature_level": true,
+        "resources": {
+          "sorcery_points": 3,
+          "innate_sorcery_uses": 2,
+          "cantrips_known": 4,
+          "prepared_spells": 6,
+          "metamagic_count": 2
+        }
+      },
+      {
+        "level": 4,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "sorcerer-asi-4"
+        ],
+        "resources": {
+          "sorcery_points": 4,
+          "innate_sorcery_uses": 2,
+          "cantrips_known": 5,
+          "prepared_spells": 7,
+          "metamagic_count": 2
+        }
+      },
+      {
+        "level": 5,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "sorcerer-sorcerous-restoration"
+        ],
+        "resources": {
+          "sorcery_points": 5,
+          "innate_sorcery_uses": 2,
+          "cantrips_known": 5,
+          "prepared_spells": 9,
+          "metamagic_count": 2
+        }
+      },
+      {
+        "level": 6,
+        "proficiency_bonus": 3,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "sorcery_points": 6,
+          "innate_sorcery_uses": 2,
+          "cantrips_known": 5,
+          "prepared_spells": 10,
+          "metamagic_count": 2
+        }
+      },
+      {
+        "level": 7,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "sorcerer-sorcery-incarnate"
+        ],
+        "resources": {
+          "sorcery_points": 7,
+          "innate_sorcery_uses": 2,
+          "cantrips_known": 5,
+          "prepared_spells": 11,
+          "metamagic_count": 2
+        }
+      },
+      {
+        "level": 8,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "sorcerer-asi-8"
+        ],
+        "resources": {
+          "sorcery_points": 8,
+          "innate_sorcery_uses": 2,
+          "cantrips_known": 5,
+          "prepared_spells": 12,
+          "metamagic_count": 2
+        }
+      },
+      {
+        "level": 9,
+        "proficiency_bonus": 4,
+        "feature_ids": [],
+        "resources": {
+          "sorcery_points": 9,
+          "innate_sorcery_uses": 2,
+          "cantrips_known": 5,
+          "prepared_spells": 14,
+          "metamagic_count": 2
+        }
+      },
+      {
+        "level": 10,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "sorcerer-metamagic-10"
+        ],
+        "resources": {
+          "sorcery_points": 10,
+          "innate_sorcery_uses": 2,
+          "cantrips_known": 6,
+          "prepared_spells": 15,
+          "metamagic_count": 4
+        }
+      },
+      {
+        "level": 11,
+        "proficiency_bonus": 4,
+        "feature_ids": [],
+        "resources": {
+          "sorcery_points": 11,
+          "innate_sorcery_uses": 2,
+          "cantrips_known": 6,
+          "prepared_spells": 16,
+          "metamagic_count": 4
+        }
+      },
+      {
+        "level": 12,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "sorcerer-asi-12"
+        ],
+        "resources": {
+          "sorcery_points": 12,
+          "innate_sorcery_uses": 2,
+          "cantrips_known": 6,
+          "prepared_spells": 16,
+          "metamagic_count": 4
+        }
+      },
+      {
+        "level": 13,
+        "proficiency_bonus": 5,
+        "feature_ids": [],
+        "resources": {
+          "sorcery_points": 13,
+          "innate_sorcery_uses": 2,
+          "cantrips_known": 6,
+          "prepared_spells": 17,
+          "metamagic_count": 4
+        }
+      },
+      {
+        "level": 14,
+        "proficiency_bonus": 5,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "sorcery_points": 14,
+          "innate_sorcery_uses": 2,
+          "cantrips_known": 6,
+          "prepared_spells": 17,
+          "metamagic_count": 4
+        }
+      },
+      {
+        "level": 15,
+        "proficiency_bonus": 5,
+        "feature_ids": [],
+        "resources": {
+          "sorcery_points": 15,
+          "innate_sorcery_uses": 2,
+          "cantrips_known": 6,
+          "prepared_spells": 18,
+          "metamagic_count": 4
+        }
+      },
+      {
+        "level": 16,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "sorcerer-asi-16"
+        ],
+        "resources": {
+          "sorcery_points": 16,
+          "innate_sorcery_uses": 2,
+          "cantrips_known": 6,
+          "prepared_spells": 18,
+          "metamagic_count": 4
+        }
+      },
+      {
+        "level": 17,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "sorcerer-metamagic-17"
+        ],
+        "resources": {
+          "sorcery_points": 17,
+          "innate_sorcery_uses": 2,
+          "cantrips_known": 6,
+          "prepared_spells": 19,
+          "metamagic_count": 6
+        }
+      },
+      {
+        "level": 18,
+        "proficiency_bonus": 6,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "sorcery_points": 18,
+          "innate_sorcery_uses": 2,
+          "cantrips_known": 6,
+          "prepared_spells": 20,
+          "metamagic_count": 6
+        }
+      },
+      {
+        "level": 19,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "sorcerer-epic-boon"
+        ],
+        "resources": {
+          "sorcery_points": 19,
+          "innate_sorcery_uses": 2,
+          "cantrips_known": 6,
+          "prepared_spells": 21,
+          "metamagic_count": 6
+        }
+      },
+      {
+        "level": 20,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "sorcerer-arcane-apotheosis"
+        ],
+        "resources": {
+          "sorcery_points": 20,
+          "innate_sorcery_uses": 2,
+          "cantrips_known": 6,
+          "prepared_spells": 22,
+          "metamagic_count": 6
+        }
+      }
+    ]
+  },
+  "subclasses": [
+    {
+      "id": "sorcerer-aberrant",
+      "class_id": "sorcerer",
+      "name_en": "Aberrant Sorcery",
+      "name_de": "Aberrante Zauberei",
+      "feature_levels": [
+        3,
+        6,
+        14,
+        18
+      ]
+    },
+    {
+      "id": "sorcerer-clockwork",
+      "class_id": "sorcerer",
+      "name_en": "Clockwork Sorcery",
+      "name_de": "Uhrwerk-Zauberei",
+      "feature_levels": [
+        3,
+        6,
+        14,
+        18
+      ]
+    },
+    {
+      "id": "sorcerer-draconic",
+      "class_id": "sorcerer",
+      "name_en": "Draconic Sorcery",
+      "name_de": "Drakonische Zauberei",
+      "feature_levels": [
+        3,
+        6,
+        14,
+        18
+      ]
+    },
+    {
+      "id": "sorcerer-wild-magic",
+      "class_id": "sorcerer",
+      "name_en": "Wild Magic Sorcery",
+      "name_de": "Wilde-Magie-Zauberei",
+      "feature_levels": [
+        3,
+        6,
+        14,
+        18
+      ]
+    }
+  ],
+  "features": [
+    {
+      "id": "sorcerer-spellcasting",
+      "owner_type": "class",
+      "owner_id": "sorcerer",
+      "level": 1,
+      "name_en": "Spellcasting",
+      "name_de": "Zauberwirken",
+      "player_choice": true,
+      "choice_prompt_en": "Choose your starting cantrips and two level 1 Sorcerer spells to prepare.",
+      "choice_prompt_de": "Wähle deine Zaubertricks und zwei Zaubererzauber des 1. Grades, die du vorbereitest.",
+      "text_en": "Drawing from your innate magic, you can cast spells. See chapter 7 for the rules on spellcasting.\n\nCantrips. You know four Sorcerer cantrips of your choice. Light, Prestidigitation, Shocking Grasp, and Sorcerous Burst are recommended. Whenever you gain a Sorcerer level, you can replace one of your cantrips from this feature with another Sorcerer cantrip of your choice. When you reach Sorcerer levels 4 and 10, you learn another Sorcerer cantrip of your choice.\n\nSpell Slots. The Sorcerer Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.\n\nPrepared Spells of Level 1+. You prepare the list of level 1+ spells available for you to cast. To start, choose two level 1 Sorcerer spells. The number of spells on your list increases as you gain Sorcerer levels. Whenever that number increases, choose additional Sorcerer spells until the number matches the table. If another Sorcerer feature gives you spells that you always have prepared, those spells don't count against the number you can prepare.\n\nChanging Your Prepared Spells. Whenever you gain a Sorcerer level, you can replace one spell on your list with another Sorcerer spell for which you have spell slots.\n\nSpellcasting Ability. Charisma is your spellcasting ability for your Sorcerer spells.\n\nSpellcasting Focus. You can use an Arcane Focus as a Spellcasting Focus for your Sorcerer spells.",
+      "text_de": "Mithilfe deiner intuitiven Magie kannst du Zauber wirken.\n\nZaubertricks: Du kennst vier Zaubererzaubertricks deiner Wahl. Explosion der Zauberei, Licht, Schockgriff und Taschenspielerei werden empfohlen. Wann immer du eine Zaubererstufe erhältst, kannst du einen deiner Zaubertricks durch einen anderen ersetzen. Auf der 4. und 10. Zaubererstufe erlernst du jeweils einen weiteren Zaubertrick.\n\nZauberplätze: Du erhältst alle verbrauchten Zauberplätze nach einer langen Rast zurück.\n\nVorbereitete Zauber: Wähle zu Beginn zwei Zaubererzauber des 1. Grades. Die Anzahl erhöht sich mit deiner Stufe. Wann immer du eine Zaubererstufe erhältst, kannst du einen Zauber auf deiner Liste ersetzen.\n\nAttribut zum Zauberwirken: Charisma.\n\nZauberfokus: Du kannst einen arkanen Fokus als Zauberfokus verwenden.",
+      "grants": [
+        {
+          "type": "spellcasting",
+          "casting_model": "prepared",
+          "spellcasting_ability": "charisma",
+          "spellcasting_focus": [
+            "arcane_focus"
+          ],
+          "cantrips": {
+            "count_from_resource": "cantrips_known",
+            "source": "sorcerer_spell_list",
+            "replaceable_on": "level_up",
+            "replace_count": 1
+          },
+          "prepared_spells": {
+            "count_from_resource": "prepared_spells",
+            "source": "sorcerer_spell_list",
+            "replaceable_on": "level_up",
+            "count_per_swap": 1
+          },
+          "recharge": "long_rest"
+        }
+      ]
+    },
+    {
+      "id": "sorcerer-innate-sorcery",
+      "owner_type": "class",
+      "owner_id": "sorcerer",
+      "level": 1,
+      "name_en": "Innate Sorcery",
+      "name_de": "Intuitive Zauberei",
+      "player_choice": false,
+      "text_en": "An event in your past left an indelible mark on you, infusing you with simmering magic. As a Bonus Action, you can unleash that magic for 1 minute, during which you gain the following benefits: the spell save DC of your Sorcerer spells increases by 1, and you have Advantage on the attack rolls of Sorcerer spells you cast.\n\nYou can use this feature twice, and you regain all expended uses of it when you finish a Long Rest.",
+      "text_de": "Ein Ereignis in deiner Vergangenheit hat sein unauslöschliches Zeichen hinterlassen und dich mit schwelender Magie erfüllt. Als Bonusaktion kannst du diese Magie eine Minute lang entfesseln. Während dieser Dauer wird der Zauberrettungswurf-SG deiner Zaubererzauber um 1 erhöht, und bei den Angriffswürfen der Zaubererzauber, die du wirkst, bist du im Vorteil.\n\nDu kannst dieses Merkmal zweimal anwenden und erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück.",
+      "grants": [
+        {
+          "type": "state",
+          "state_id": "innate_sorcery",
+          "activation": "bonus_action",
+          "duration": "1_minute",
+          "recharge": "long_rest"
+        },
+        {
+          "type": "uses_resource",
+          "resource": "innate_sorcery_uses",
+          "recharge": [
+            {
+              "amount": "all",
+              "recharge": "long_rest"
+            }
+          ]
+        },
+        {
+          "type": "active_ability",
+          "action_type": "none",
+          "effect": {
+            "type": "spell_save_dc_bonus",
+            "value": 1
+          },
+          "while_state": "innate_sorcery"
+        },
+        {
+          "type": "advantage",
+          "on": [
+            "sorcerer_spell_attack_rolls"
+          ],
+          "while_state": "innate_sorcery"
+        }
+      ]
+    },
+    {
+      "id": "sorcerer-font-of-magic",
+      "owner_type": "class",
+      "owner_id": "sorcerer",
+      "level": 2,
+      "name_en": "Font of Magic",
+      "name_de": "Quelle der Magie",
+      "player_choice": false,
+      "text_en": "You can tap into the wellspring of magic within yourself, represented by Sorcery Points. You have 2 Sorcery Points and gain more as you reach higher levels, as shown in the Sorcery Points column of the Sorcerer Features table. You can't have more Sorcery Points than the number shown for your level. You regain all expended Sorcery Points when you finish a Long Rest.\n\nConverting Spell Slots to Sorcery Points. You can expend a spell slot to gain a number of Sorcery Points equal to the slot's level (no action required).\n\nCreating Spell Slots. As a Bonus Action, you can transform unexpended Sorcery Points into one spell slot. Slot level 1 costs 2 points (min. level 2), level 2 costs 3 (min. level 3), level 3 costs 5 (min. level 5), level 4 costs 6 (min. level 7), level 5 costs 7 (min. level 9). You can create a slot no higher than level 5. Any slot created this way vanishes when you finish a Long Rest.",
+      "text_de": "Du kannst die Quelle der Magie nutzen, die du in dir trägst, repräsentiert durch Zaubereipunkte. Du besitzt 2 Zaubereipunkte und erhältst weitere auf höheren Stufen. Du erhältst alle verbrauchten Zaubereipunkte nach einer langen Rast zurück.\n\nZauberplätze in Zaubereipunkte umwandeln: Du kannst einen Zauberplatz verbrauchen, um eine Anzahl von Zaubereipunkten in Höhe des Zauberplatzgrades zu erhalten (keine Aktion erforderlich).\n\nZauberplätze erschaffen: Als Bonusaktion kannst du Zaubereipunkte in einen Zauberplatz umwandeln. Grad 1 kostet 2 Punkte (mind. Stufe 2), Grad 2 kostet 3 (mind. Stufe 3), Grad 3 kostet 5 (mind. Stufe 5), Grad 4 kostet 6 (mind. Stufe 7), Grad 5 kostet 7 (mind. Stufe 9). Erzeugte Zauberplätze verschwinden nach einer langen Rast.",
+      "grants": [
+        {
+          "type": "uses_resource",
+          "resource": "sorcery_points",
+          "recharge": [
+            {
+              "amount": "all",
+              "recharge": "long_rest"
+            }
+          ]
+        },
+        {
+          "type": "resource_conversion",
+          "from": {
+            "resource": "spell_slot",
+            "amount": "slot_level"
+          },
+          "to": {
+            "resource": "sorcery_points",
+            "amount": "slot_level"
+          },
+          "action_cost": "none"
+        },
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "effect": {
+            "type": "resource_conversion",
+            "from": {
+              "resource": "sorcery_points"
+            },
+            "to": {
+              "resource": "spell_slot"
+            },
+            "conversion_table": [
+              {
+                "slot_level": 1,
+                "cost": 2,
+                "min_sorcerer_level": 2
+              },
+              {
+                "slot_level": 2,
+                "cost": 3,
+                "min_sorcerer_level": 3
+              },
+              {
+                "slot_level": 3,
+                "cost": 5,
+                "min_sorcerer_level": 5
+              },
+              {
+                "slot_level": 4,
+                "cost": 6,
+                "min_sorcerer_level": 7
+              },
+              {
+                "slot_level": 5,
+                "cost": 7,
+                "min_sorcerer_level": 9
+              }
+            ],
+            "max_slot_level": 5,
+            "created_slots_expire_on": "long_rest"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sorcerer-metamagic",
+      "owner_type": "class",
+      "owner_id": "sorcerer",
+      "level": 2,
+      "name_en": "Metamagic",
+      "name_de": "Metamagie",
+      "player_choice": true,
+      "choice_prompt_en": "Choose two Metamagic options. You can replace one whenever you gain a Sorcerer level.",
+      "choice_prompt_de": "Wähle zwei Metamagie-Optionen. Du kannst eine davon bei jedem Stufenaufstieg ersetzen.",
+      "text_en": "Because your magic flows from within, you can alter your spells to suit your needs. You gain two Metamagic options of your choice. You use the chosen options to temporarily modify spells you cast. To use an option, you must spend the number of Sorcery Points that it costs. You can use only one Metamagic option on a spell when you cast it unless otherwise noted.\n\nWhenever you gain a Sorcerer level, you can replace one of your Metamagic options with one you don't know. You gain two more options at Sorcerer level 10 and two more at level 17.",
+      "text_de": "Deine Magie kommt aus deinem Inneren, daher kannst du deine Zauber nach deinen Wünschen ändern. Du erhältst zwei Metamagie-Optionen deiner Wahl. Du kannst nur eine Metamagie-Option auf einen Zauber anwenden, sofern nicht anders vermerkt.\n\nWann immer du eine Zaubererstufe erhältst, kannst du eine Option ersetzen. Auf der 10. und 17. Zaubererstufe erhältst du jeweils zwei weitere Optionen.",
+      "grants": [
+        {
+          "type": "entity_selection",
+          "count_from_resource": "metamagic_count",
+          "source": "sorcerer_metamagic_options",
+          "change_on": "level_up",
+          "change_count": 1,
+          "prerequisite_enforcement": false
+        }
+      ]
+    },
+    {
+      "id": "sorcerer-subclass",
+      "owner_type": "class",
+      "owner_id": "sorcerer",
+      "level": 3,
+      "name_en": "Sorcerer Subclass",
+      "name_de": "Zauberer-Unterklasse",
+      "player_choice": true,
+      "choice_prompt_en": "Choose a Sorcerer subclass: Aberrant Sorcery, Clockwork Sorcery, Draconic Sorcery, or Wild Magic Sorcery.",
+      "choice_prompt_de": "Wähle eine Zauberer-Unterklasse: Aberrante Zauberei, Drakonische Zauberei, Uhrwerk-Zauberei oder Wilde-Magie-Zauberei.",
+      "text_en": "You gain a Sorcerer subclass of your choice. The Aberrant Sorcery, Clockwork Sorcery, Draconic Sorcery, and Wild Magic Sorcery subclasses are detailed after this class's description. A subclass is a specialization that grants you features at certain Sorcerer levels. For the rest of your career, you gain each of your subclass's features that are of your Sorcerer level or lower.",
+      "text_de": "Du erhältst eine Zauberer-Unterklasse deiner Wahl. Unterklassen sind Spezialisierungen, die dir auf bestimmten Zaubererstufen Merkmale gewähren.",
+      "grants": [
+        {
+          "type": "subclass_choice",
+          "class_id": "sorcerer"
+        }
+      ]
+    },
+    {
+      "id": "sorcerer-asi-4",
+      "owner_type": "class",
+      "owner_id": "sorcerer",
+      "level": 4,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Sorcerer levels 8, 12, and 16.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung (siehe Kapitel 5) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Du erhältst dieses Merkmal auf der 8., 12. und 16. Zaubererstufe erneut.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "sorcerer-sorcerous-restoration",
+      "owner_type": "class",
+      "owner_id": "sorcerer",
+      "level": 5,
+      "name_en": "Sorcerous Restoration",
+      "name_de": "Zaubereiauffrischung",
+      "player_choice": false,
+      "text_en": "When you finish a Short Rest, you can regain expended Sorcery Points, but no more than a number equal to half your Sorcerer level (round down). Once you use this feature, you can't do so again until you finish a Long Rest.",
+      "text_de": "Verbrauchte Zaubereipunkte erhältst du nach einer kurzen Rast zurück, jedoch höchstens eine Anzahl in Höhe der Hälfte deiner Zaubererstufe (abgerundet). Du kannst dieses Merkmal erst nach einer langen Rast erneut verwenden.",
+      "grants": [
+        {
+          "type": "triggered_resource_restore",
+          "resource": "sorcery_points",
+          "trigger": "short_rest_end",
+          "amount": {
+            "equals": "half_sorcerer_level_round_down"
+          },
+          "recharge": "long_rest"
+        }
+      ]
+    },
+    {
+      "id": "sorcerer-metamagic-10",
+      "owner_type": "class",
+      "owner_id": "sorcerer",
+      "level": 10,
+      "name_en": "Metamagic",
+      "name_de": "Metamagie",
+      "player_choice": true,
+      "choice_prompt_en": "Choose two additional Metamagic options.",
+      "choice_prompt_de": "Wähle zwei weitere Metamagie-Optionen.",
+      "text_en": "You gain two more Metamagic options of your choice.",
+      "text_de": "Du erhältst zwei weitere Metamagie-Optionen deiner Wahl.",
+      "grants": [
+        {
+          "type": "choice_upgrade",
+          "choice_feature_id": "sorcerer-metamagic",
+          "modifications": {
+            "adds_selections": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "sorcerer-sorcery-incarnate",
+      "owner_type": "class",
+      "owner_id": "sorcerer",
+      "level": 7,
+      "name_en": "Sorcery Incarnate",
+      "name_de": "Zauberei-Inkarnat",
+      "player_choice": false,
+      "text_en": "If you have no uses of Innate Sorcery left, you can use it if you spend 2 Sorcery Points when you take the Bonus Action to activate it.\n\nIn addition, while your Innate Sorcery feature is active, you can use up to two of your Metamagic options on each spell you cast.",
+      "text_de": "Wenn keine Anwendungen von Intuitive Zauberei mehr übrig sind, kannst du diese dennoch einsetzen. Dazu musst du 2 Zaubereipunkte verbrauchen und zum Aktivieren die Bonusaktion ausführen.\n\nAußerdem kannst du, wenn dein Merkmal Intuitive Zauberei aktiv ist, bei jedem Zauber, den du wirkst, bis zu zwei deiner Metamagie-Optionen verwenden.",
+      "grants": [
+        {
+          "type": "feature_refresh",
+          "feature_id": "sorcerer-innate-sorcery",
+          "cost": {
+            "resource": "sorcery_points",
+            "amount": 2
+          }
+        },
+        {
+          "type": "restriction_override",
+          "restriction_id": "one_metamagic_per_spell",
+          "while_state": "innate_sorcery",
+          "exceptions": {
+            "max_metamagic_per_spell": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "sorcerer-asi-8",
+      "owner_type": "class",
+      "owner_id": "sorcerer",
+      "level": 8,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "sorcerer-asi-12",
+      "owner_type": "class",
+      "owner_id": "sorcerer",
+      "level": 12,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "sorcerer-metamagic-17",
+      "owner_type": "class",
+      "owner_id": "sorcerer",
+      "level": 17,
+      "name_en": "Metamagic",
+      "name_de": "Metamagie",
+      "player_choice": true,
+      "choice_prompt_en": "Choose two additional Metamagic options.",
+      "choice_prompt_de": "Wähle zwei weitere Metamagie-Optionen.",
+      "text_en": "You gain two more Metamagic options of your choice.",
+      "text_de": "Du erhältst zwei weitere Metamagie-Optionen deiner Wahl.",
+      "grants": [
+        {
+          "type": "choice_upgrade",
+          "choice_feature_id": "sorcerer-metamagic",
+          "modifications": {
+            "adds_selections": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "sorcerer-asi-16",
+      "owner_type": "class",
+      "owner_id": "sorcerer",
+      "level": 16,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "sorcerer-epic-boon",
+      "owner_type": "class",
+      "owner_id": "sorcerer",
+      "level": 19,
+      "name_en": "Epic Boon",
+      "name_de": "Epische Gabe",
+      "player_choice": true,
+      "choice_prompt_en": "Gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Dimensional Travel is recommended.",
+      "choice_prompt_de": "Erhalte ein Epische-Gabe-Talent oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Gabe des Dimensionsreisens wird empfohlen.",
+      "text_en": "You gain an Epic Boon feat (see chapter 5) or another feat of your choice for which you qualify. Boon of Dimensional Travel is recommended.",
+      "text_de": "Du erhältst ein Epische-Gabe-Talent (siehe Kapitel 5) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Gabe des Dimensionsreisens wird empfohlen.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "feat_category": "epic_boon",
+          "recommended": "boon_of_dimensional_travel"
+        }
+      ]
+    },
+    {
+      "id": "sorcerer-arcane-apotheosis",
+      "owner_type": "class",
+      "owner_id": "sorcerer",
+      "level": 20,
+      "name_en": "Arcane Apotheosis",
+      "name_de": "Arkane Vergöttlichung",
+      "player_choice": false,
+      "text_en": "While your Innate Sorcery feature is active, you can use one Metamagic option on each of your turns without spending Sorcery Points on it.",
+      "text_de": "Wenn dein Merkmal Intuitive Zauberei aktiv ist, kannst du in jedem deiner Züge eine Metamagie-Option verwenden, ohne Zaubereipunkte zu verbrauchen.",
+      "grants": [
+        {
+          "type": "passive",
+          "effect": "one_metamagic_option_per_turn_costs_no_sorcery_points",
+          "while_state": "innate_sorcery"
+        }
+      ]
+    }
+  ],
+  "subclass_features": [
+    {
+      "id": "aberrant-psionic-spells",
+      "owner_type": "subclass",
+      "owner_id": "sorcerer-aberrant",
+      "level": 3,
+      "name_en": "Psionic Spells",
+      "name_de": "Psionische Zauber",
+      "player_choice": false,
+      "text_en": "When you reach a Sorcerer level specified in the Psionic Spells table, you thereafter always have the listed spells prepared.\n\nLevel 3: Arms of Hadar, Calm Emotions, Detect Thoughts, Dissonant Whispers, Mind Sliver\nLevel 5: Hunger of Hadar, Sending\nLevel 7: Evard's Black Tentacles, Summon Aberration\nLevel 9: Rary's Telepathic Bond, Telekinesis",
+      "text_de": "Wenn du eine Zaubererstufe erreichst, die in der Tabelle Psionische Zauber aufgeführt ist, hast du die aufgeführten Zauber fortan stets vorbereitet.\n\nStufe 3: Arme von Hadar, Dissonantes Flüstern, Gedankensplitter, Gedanken wahrnehmen, Gefühle besänftigen\nStufe 5: Hunger von Hadar, Verständigung\nStufe 7: Aberration herbeirufen, Evards Schwarze Tentakel\nStufe 9: Rarys Telepathisches Band, Telekinese",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "arms-of-hadar",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "calm-emotions",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "detect-thoughts",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "dissonant-whispers",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "mind-sliver",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "hunger-of-hadar",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "sending",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "evards-black-tentacles",
+          "class_level_threshold": 7
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "summon-aberration",
+          "class_level_threshold": 7
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "rarys-telepathic-bond",
+          "class_level_threshold": 9
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "telekinesis",
+          "class_level_threshold": 9
+        }
+      ]
+    },
+    {
+      "id": "aberrant-telepathic-speech",
+      "owner_type": "subclass",
+      "owner_id": "sorcerer-aberrant",
+      "level": 3,
+      "name_en": "Telepathic Speech",
+      "name_de": "Telepathische Sprache",
+      "player_choice": false,
+      "text_en": "You can form a telepathic connection between your mind and the mind of another. As a Bonus Action, choose one creature you can see within 30 feet of yourself. You and the chosen creature can communicate telepathically with each other while the two of you are within a number of miles of each other equal to your Charisma modifier (minimum of 1 mile). To understand each other, you each must mentally use a language the other knows.\n\nThe telepathic connection lasts for a number of minutes equal to your Sorcerer level. It ends early if you use this ability to form a connection with a different creature.",
+      "text_de": "Du kannst eine telepathische Verbindung zwischen deinem und einem anderen Geist herstellen. Wähle als Bonusaktion eine Kreatur im Abstand von bis zu neun Metern von dir, die du sehen kannst. Du und die ausgewählte Kreatur könnt telepathisch kommunizieren. Die Verbindung hält eine Anzahl von Minuten in Höhe deiner Zaubererstufe an.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "recharge": "none",
+          "targets": {
+            "type": "creature_you_can_see",
+            "range_feet": 30,
+            "max_count": 1
+          },
+          "effect": {
+            "type": "telepathic_link",
+            "range_miles": {
+              "equals": "charisma_modifier",
+              "minimum": 1
+            },
+            "duration_minutes": {
+              "equals": "sorcerer_level"
+            },
+            "end_condition": "new_link_formed",
+            "requirement": "shared_language"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aberrant-psionic-sorcery",
+      "owner_type": "subclass",
+      "owner_id": "sorcerer-aberrant",
+      "level": 6,
+      "name_en": "Psionic Sorcery",
+      "name_de": "Psionische Zauberei",
+      "player_choice": false,
+      "text_en": "When you cast any level 1+ spell from your Psionic Spells feature, you can cast it by expending a spell slot as normal or by spending a number of Sorcery Points equal to the spell's level. If you cast the spell using Sorcery Points, it requires no Verbal or Somatic components, and it requires no Material components unless they are consumed by the spell or have a cost specified in it.",
+      "text_de": "Wenn du mit Psionische Zauber einen Zauberspruch ab dem 1. Grad wirkst, kannst du dazu entweder einen Zauberplatz oder eine Anzahl von Zaubereipunkten in Höhe des Zaubergrades verbrauchen. Wenn du den Zauber mit Zaubereipunkten wirkst, sind keine Verbal-, Gesten- oder Materialkomponenten erforderlich (außer verbrauchte oder mit Kosten versehene Materialkomponenten).",
+      "grants": [
+        {
+          "type": "spell_cost_override",
+          "spell_source": "aberrant-psionic-spells",
+          "cost": {
+            "resource": "sorcery_points",
+            "amount": "spell_level"
+          },
+          "condition": "level_1_or_higher"
+        },
+        {
+          "type": "spell_component_override",
+          "spell_source": "aberrant-psionic-spells",
+          "condition": "cast_via_sorcery_points",
+          "components": {
+            "verbal": false,
+            "somatic": false,
+            "material": false,
+            "material_exception": "consumed_or_has_cost"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aberrant-psychic-defenses",
+      "owner_type": "subclass",
+      "owner_id": "sorcerer-aberrant",
+      "level": 6,
+      "name_en": "Psychic Defenses",
+      "name_de": "Psychische Verteidigung",
+      "player_choice": false,
+      "text_en": "You have Resistance to Psychic damage, and you have Advantage on saving throws to avoid or end the Charmed or Frightened condition.",
+      "text_de": "Du bist gegen psychischen Schaden resistent sowie bei Rettungswürfen im Vorteil, die du zum Vermeiden oder Beenden der Zustände Bezaubert oder Verängstigt ausführst.",
+      "grants": [
+        {
+          "type": "damage_resistance",
+          "damage_types": [
+            "psychic"
+          ]
+        },
+        {
+          "type": "advantage",
+          "on": [
+            "saving_throws"
+          ],
+          "condition": "against_charmed_or_frightened"
+        }
+      ]
+    },
+    {
+      "id": "aberrant-revelation-in-flesh",
+      "owner_type": "subclass",
+      "owner_id": "sorcerer-aberrant",
+      "level": 14,
+      "name_en": "Revelation in Flesh",
+      "name_de": "Offenbarung in Fleisch",
+      "player_choice": true,
+      "choice_prompt_en": "When you use this feature, choose one or more benefits for each Sorcery Point spent: Aquatic Adaptation, Glistening Flight, See the Invisible, or Wormlike Movement.",
+      "choice_prompt_de": "Wenn du dieses Merkmal verwendest, wähle für jeden ausgegebenen Zaubereipunkt einen Vorzug: Aquatische Anpassung, Das Unsichtbare sehen, Glitzernder Flug oder Wurmartige Bewegung.",
+      "text_en": "As a Bonus Action, you can spend 1 Sorcery Point or more to magically alter your body for 10 minutes. For each Sorcery Point you spend, you gain one of the following benefits of your choice, lasting until the alteration ends.\n\nAquatic Adaptation. You gain a Swim Speed equal to twice your Speed, and you can breathe underwater.\n\nGlistening Flight. You gain a Fly Speed equal to your Speed, and you can hover.\n\nSee the Invisible. You can see any Invisible creature within 60 feet of yourself that isn't behind Total Cover.\n\nWormlike Movement. Your body becomes slimy and pliable. You can move through any space as narrow as 1 inch, and you can spend 5 feet of movement to escape from nonmagical restraints or the Grappled condition.",
+      "text_de": "Als Bonusaktion kannst du mindestens einen Zaubereipunkt verbrauchen, um deinen Körper für zehn Minuten zu verändern. Für jeden verbrauchten Zaubereipunkt erhältst du einen Vorzug:\n\nAquatische Anpassung: Schwimmbewegungsrate doppelt so hoch wie deine Bewegungsrate, unter Wasser atmen.\n\nGlitzernder Flug: Flugbewegungsrate gleich deiner Bewegungsrate, du kannst schweben.\n\nDas Unsichtbare sehen: Unsichtbare Kreaturen im Abstand von bis zu 18 Metern sehen (nicht hinter vollständiger Deckung).\n\nWurmartige Bewegung: Durch Lücken ab 2,5 cm Breite bewegen; 1,5 Meter Bewegungsrate verbrauchen zum Entkommen aus nichtmagischen Fesseln oder dem Greifen-Zustand.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "cost": {
+            "resource": "sorcery_points",
+            "amount": "variable_minimum_1"
+          },
+          "duration": "10_minutes",
+          "effect": {
+            "type": "choice",
+            "choose": "one_per_sorcery_point_spent",
+            "options": [
+              {
+                "id": "revelation-aquatic-adaptation",
+                "name_en": "Aquatic Adaptation",
+                "name_de": "Aquatische Anpassung",
+                "text_en": "You gain a Swim Speed equal to twice your Speed, and you can breathe underwater.",
+                "text_de": "Du erhältst eine Schwimmbewegungsrate in doppelter Höhe deiner Bewegungsrate und kannst unter Wasser atmen.",
+                "grants": [
+                  {
+                    "type": "speed_grant",
+                    "speed_type": "swim",
+                    "value": "double_speed"
+                  },
+                  {
+                    "type": "passive",
+                    "effect": "breathe_underwater"
+                  }
+                ]
+              },
+              {
+                "id": "revelation-glistening-flight",
+                "name_en": "Glistening Flight",
+                "name_de": "Glitzernder Flug",
+                "text_en": "You gain a Fly Speed equal to your Speed, and you can hover.",
+                "text_de": "Du erhältst eine Flugbewegungsrate in Höhe deiner Bewegungsrate und kannst schweben.",
+                "grants": [
+                  {
+                    "type": "speed_grant",
+                    "speed_type": "fly",
+                    "value": "equal_to_speed",
+                    "can_hover": true
+                  }
+                ]
+              },
+              {
+                "id": "revelation-see-invisible",
+                "name_en": "See the Invisible",
+                "name_de": "Das Unsichtbare sehen",
+                "text_en": "You can see any Invisible creature within 60 feet of yourself that isn't behind Total Cover.",
+                "text_de": "Du kannst unsichtbare Kreaturen im Abstand von bis zu 18 Metern sehen, sofern sie sich nicht hinter vollständiger Deckung befinden.",
+                "grants": [
+                  {
+                    "type": "special_sight",
+                    "sight_id": "see_invisible_60ft",
+                    "range_feet": 60,
+                    "effect": "see_invisible_creatures",
+                    "penetrates_magical_darkness": false
+                  }
+                ]
+              },
+              {
+                "id": "revelation-wormlike-movement",
+                "name_en": "Wormlike Movement",
+                "name_de": "Wurmartige Bewegung",
+                "text_en": "Your body becomes slimy and pliable. You can move through any space as narrow as 1 inch, and you can spend 5 feet of movement to escape from nonmagical restraints or the Grappled condition.",
+                "text_de": "Dein Körper wird schleimig und elastisch. Du kannst dich durch Lücken ab 2,5 cm bewegen und 1,5 Meter Bewegungsrate verbrauchen, um aus nichtmagischen Fesseln oder dem Gepackt-Zustand zu entkommen.",
+                "grants": [
+                  {
+                    "type": "passive",
+                    "effect": "squeeze_through_1_inch_gaps"
+                  },
+                  {
+                    "type": "passive",
+                    "effect": "escape_nonmagical_restraints_or_grappled_costs_5ft_movement"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "aberrant-warping-implosion",
+      "owner_type": "subclass",
+      "owner_id": "sorcerer-aberrant",
+      "level": 18,
+      "name_en": "Warping Implosion",
+      "name_de": "Verzerrende Implosion",
+      "player_choice": false,
+      "text_en": "As a Magic action, you teleport to an unoccupied space you can see within 120 feet of yourself. Immediately after you disappear, each creature within 30 feet of the space you left must make a Strength saving throw against your spell save DC. On a failed save, a creature takes 3d10 Force damage and is pulled straight toward the space you left, ending in the nearest unoccupied space. On a successful save, the creature takes half as much damage only.\n\nOnce you use this feature, you can't do so again until you finish a Long Rest unless you spend 5 Sorcery Points (no action required) to restore your use of it.",
+      "text_de": "Als magische Aktion kannst du dich in einen freien Bereich im Abstand von bis zu 36 Metern teleportieren. Sofort nach deinem Verschwinden muss jede Kreatur im Abstand von bis zu neun Metern um den verlassenen Bereich einen Stärkerettungswurf ausführen. Bei einem Misserfolg erleidet sie 3W10 Energieschaden und wird zum verlassenen Bereich gezogen.\n\nDu kannst dieses Merkmal erst nach einer langen Rast erneut verwenden, außer du verbrauchst 5 Zaubereipunkte (keine Aktion).",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "magic_action",
+          "recharge": "long_rest",
+          "refresh_option": {
+            "type": "feature_refresh",
+            "feature_id": "aberrant-warping-implosion",
+            "cost": {
+              "resource": "sorcery_points",
+              "amount": 5
+            }
+          },
+          "effect": {
+            "type": "teleport",
+            "range_feet": 120,
+            "destination": "unoccupied_space_you_can_see"
+          },
+          "after_effect": {
+            "type": "area_saving_throw",
+            "area": {
+              "type": "sphere",
+              "radius_feet": 30,
+              "origin": "space_you_left"
+            },
+            "saving_throw": {
+              "ability": "strength",
+              "dc": "spell_save_dc"
+            },
+            "on_failure": {
+              "damage": {
+                "dice": "3d10",
+                "type": "force"
+              },
+              "forced_movement": {
+                "type": "pull",
+                "toward": "space_you_left",
+                "destination": "nearest_unoccupied_space"
+              }
+            },
+            "on_success": {
+              "damage": {
+                "dice": "3d10",
+                "type": "force",
+                "multiplier": 0.5
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "clockwork-clockwork-spells",
+      "owner_type": "subclass",
+      "owner_id": "sorcerer-clockwork",
+      "level": 3,
+      "name_en": "Clockwork Spells",
+      "name_de": "Uhrwerkzauber",
+      "player_choice": false,
+      "text_en": "When you reach a Sorcerer level specified in the Clockwork Spells table, you thereafter always have the listed spells prepared.\n\nLevel 3: Aid, Alarm, Lesser Restoration, Protection from Evil and Good\nLevel 5: Dispel Magic, Protection from Energy\nLevel 7: Freedom of Movement, Summon Construct\nLevel 9: Greater Restoration, Wall of Force",
+      "text_de": "Wenn du eine Zaubererstufe erreichst, die in der Tabelle Uhrwerkzauber aufgeführt ist, hast du die aufgeführten Zauber fortan stets vorbereitet.\n\nStufe 3: Alarm, Beistand, Schutz vor Gut und Böse, Schwache Genesung\nStufe 5: Magie bannen, Schutz vor Energie\nStufe 7: Bewegungsfreiheit, Konstrukt herbeirufen\nStufe 9: Energiewand, Vollständige Genesung",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "aid",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "alarm",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "lesser-restoration",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "protection-from-evil-and-good",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "dispel-magic",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "protection-from-energy",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "freedom-of-movement",
+          "class_level_threshold": 7
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "summon-construct",
+          "class_level_threshold": 7
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "greater-restoration",
+          "class_level_threshold": 9
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "wall-of-force",
+          "class_level_threshold": 9
+        }
+      ]
+    },
+    {
+      "id": "clockwork-restore-balance",
+      "owner_type": "subclass",
+      "owner_id": "sorcerer-clockwork",
+      "level": 3,
+      "name_en": "Restore Balance",
+      "name_de": "Gleichgewicht wiederherstellen",
+      "player_choice": false,
+      "text_en": "Your connection to the plane of absolute order allows you to equalize chaotic moments. When a creature you can see within 60 feet of yourself is about to roll a d20 with Advantage or Disadvantage, you can take a Reaction to prevent the roll from being affected by Advantage and Disadvantage.\n\nYou can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.",
+      "text_de": "Wenn eine Kreatur im Abstand von bis zu 18 Metern von dir, die du sehen kannst, mit einem W20 würfelt und dabei im Vorteil oder Nachteil ist, kannst du eine Reaktion ausführen, um den Vorteil oder Nachteil wirkungslos zu machen.\n\nDie Anzahl der Anwendungen entspricht deinem Charismamodifikator (mindestens einmal). Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "creature_within_60ft_about_to_roll_d20_with_advantage_or_disadvantage",
+          "action_type": "reaction",
+          "uses": {
+            "equals": "charisma_modifier",
+            "minimum": 1
+          },
+          "recharge": "long_rest",
+          "effect": {
+            "type": "negate_advantage_and_disadvantage",
+            "target": "triggering_creature"
+          }
+        }
+      ]
+    },
+    {
+      "id": "clockwork-bastion-of-law",
+      "owner_type": "subclass",
+      "owner_id": "sorcerer-clockwork",
+      "level": 6,
+      "name_en": "Bastion of Law",
+      "name_de": "Bastion des Gesetzes",
+      "player_choice": false,
+      "text_en": "As a Magic action, you can expend 1 to 5 Sorcery Points to create a magical ward around yourself or another creature you can see within 30 feet. The ward is represented by a number of d8s equal to the number of Sorcery Points spent. When the warded creature takes damage, it can expend a number of those dice, roll them, and reduce the damage taken by the total rolled.\n\nThe ward lasts until you finish a Long Rest or until you use this feature again.",
+      "text_de": "Als magische Aktion kannst du bis zu 5 Zaubereipunkte verbrauchen, um einen Schutz um dich oder eine andere Kreatur im Abstand von bis zu neun Metern zu erschaffen. Der Schutz wird durch W8 repräsentiert, deren Anzahl den verbrauchten Zaubereipunkten entspricht. Wenn die geschützte Kreatur Schaden erleidet, kann sie Würfel verbrauchen, würfeln und den Schaden verringern.\n\nDer Schutz hält bis zur nächsten langen Rast oder bis du das Merkmal erneut verwendest.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "magic_action",
+          "cost": {
+            "resource": "sorcery_points",
+            "amount": "variable_1_to_5"
+          },
+          "targets": {
+            "type": "self_or_creature_you_can_see",
+            "range_feet": 30
+          },
+          "effect": {
+            "type": "damage_reduction_pool",
+            "pool_id": "bastion_of_law_ward",
+            "dice": {
+              "count": "sorcery_points_spent",
+              "die": "d8"
+            },
+            "usage": "expend_dice_to_reduce_damage",
+            "expires_on": [
+              "long_rest",
+              "feature_reused"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "clockwork-trance-of-order",
+      "owner_type": "subclass",
+      "owner_id": "sorcerer-clockwork",
+      "level": 14,
+      "name_en": "Trance of Order",
+      "name_de": "Trance der Ordnung",
+      "player_choice": false,
+      "text_en": "As a Bonus Action, you can enter this state for 1 minute. For the duration, attack rolls against you can't benefit from Advantage, and whenever you make a D20 Test, you can treat a roll of 9 or lower on the d20 as a 10.\n\nOnce you use this feature, you can't use it again until you finish a Long Rest unless you spend 5 Sorcery Points (no action required) to restore your use of it.",
+      "text_de": "Als Bonusaktion kannst du diesen Zustand eine Minute lang aufrechterhalten. Für die Wirkungsdauer können Angriffswürfe gegen dich nicht im Vorteil sein, und wenn du eine W20-Prüfung ausführst, kannst du Ergebnisse von unter 10 als 10 werten.\n\nDu kannst dieses Merkmal erst nach einer langen Rast erneut verwenden, außer du verbrauchst 5 Zaubereipunkte (keine Aktion).",
+      "grants": [
+        {
+          "type": "state",
+          "state_id": "trance_of_order",
+          "activation": "bonus_action",
+          "duration": "1_minute",
+          "recharge": "long_rest"
+        },
+        {
+          "type": "feature_refresh",
+          "feature_id": "clockwork-trance-of-order",
+          "cost": {
+            "resource": "sorcery_points",
+            "amount": 5
+          }
+        },
+        {
+          "type": "prevent_advantage_against_self",
+          "on": "attack_rolls",
+          "while_state": "trance_of_order"
+        },
+        {
+          "type": "minimum_roll_override",
+          "applies_to": [
+            "d20_tests"
+          ],
+          "minimum": 10,
+          "while_state": "trance_of_order"
+        }
+      ]
+    },
+    {
+      "id": "clockwork-clockwork-cavalcade",
+      "owner_type": "subclass",
+      "owner_id": "sorcerer-clockwork",
+      "level": 18,
+      "name_en": "Clockwork Cavalcade",
+      "name_de": "Uhrwerkkavalkade",
+      "player_choice": false,
+      "text_en": "As a Magic action, you summon spirits of order in a 30-foot Cube originating from you. The spirits create the following effects before vanishing: Heal (restore up to 100 Hit Points divided among creatures of your choice in the Cube), Repair (damaged objects entirely in the Cube are repaired instantly), and Dispel (every spell of level 6 and lower ends on creatures and objects of your choice in the Cube).\n\nOnce you use this feature, you can't use it again until you finish a Long Rest unless you spend 7 Sorcery Points (no action required) to restore your use of it.",
+      "text_de": "Als magische Aktion beschwörst du Geister der Ordnung in einem Würfel mit neun Metern Kantenlänge, der von dir ausgeht. Die Geister erzeugen folgende Effekte: Heilen (bis zu 100 TP verteilen), Reparieren (beschädigte Gegenstände werden repariert), Bannen (alle Zauber bis Grad 6 enden). Du kannst es nach einer langen Rast oder mit 7 Zaubereipunkten erneut nutzen.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "magic_action",
+          "recharge": "long_rest",
+          "refresh_option": {
+            "type": "feature_refresh",
+            "feature_id": "clockwork-clockwork-cavalcade",
+            "cost": {
+              "resource": "sorcery_points",
+              "amount": 7
+            }
+          },
+          "area": {
+            "type": "cube",
+            "size_feet": 30,
+            "origin": "self"
+          }
+        },
+        {
+          "type": "distribute_healing",
+          "total_value": 100,
+          "targets": "creatures_of_choice_in_area"
+        },
+        {
+          "type": "passive",
+          "effect": "repair_damaged_objects_in_area"
+        },
+        {
+          "type": "end_spells",
+          "max_spell_level": 6,
+          "targets": "creatures_and_objects_of_choice_in_area"
+        }
+      ]
+    },
+    {
+      "id": "draconic-draconic-resilience",
+      "owner_type": "subclass",
+      "owner_id": "sorcerer-draconic",
+      "level": 3,
+      "name_en": "Draconic Resilience",
+      "name_de": "Drakonische Widerstandskraft",
+      "player_choice": false,
+      "text_en": "The magic in your body manifests physical traits of your draconic gift. Your Hit Point maximum increases by 3, and it increases by 1 whenever you gain another Sorcerer level.\n\nParts of you are also covered by dragon-like scales. While you aren't wearing armor, your base Armor Class equals 10 plus your Dexterity and Charisma modifiers.",
+      "text_de": "Dein Trefferpunktemaximum wird um 3 Punkte erhöht und auf jeder weiteren Zaubererstufe um 1.\n\nSolange du keine Rüstung trägst, entspricht deine Basis-Rüstungsklasse 10 plus deinem Geschicklichkeits- plus deinem Charismamodifikator.",
+      "grants": [
+        {
+          "type": "passive",
+          "effect": "hp_maximum_increase",
+          "value_from_resource": "draconic_resilience_hp_bonus"
+        },
+        {
+          "type": "ac_formula",
+          "condition": "not_wearing_armor",
+          "formula": {
+            "base": 10,
+            "modifiers": [
+              "dexterity",
+              "charisma"
+            ]
+          },
+          "shield_allowed": true
+        }
+      ]
+    },
+    {
+      "id": "draconic-draconic-spells",
+      "owner_type": "subclass",
+      "owner_id": "sorcerer-draconic",
+      "level": 3,
+      "name_en": "Draconic Spells",
+      "name_de": "Drakonische Zauber",
+      "player_choice": false,
+      "text_en": "When you reach a Sorcerer level specified in the Draconic Spells table, you thereafter always have the listed spells prepared.\n\nLevel 3: Alter Self, Chromatic Orb, Command, Dragon's Breath\nLevel 5: Fear, Fly\nLevel 7: Arcane Eye, Charm Monster\nLevel 9: Legend Lore, Summon Dragon",
+      "text_de": "Wenn du eine Zaubererstufe erreichst, die in der Tabelle Drakonische Zauber aufgeführt ist, hast du die aufgeführten Zauber fortan stets vorbereitet.\n\nStufe 3: Befehl, Chromatische Kugel, Drachenodem, Gestalt verändern\nStufe 5: Fliegen, Furcht\nStufe 7: Arkanes Auge, Monster bezaubern\nStufe 9: Drachen herbeirufen, Sagenkunde",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "alter-self",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "chromatic-orb",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "command",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "dragons-breath",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "fear",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "fly",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "arcane-eye",
+          "class_level_threshold": 7
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "charm-monster",
+          "class_level_threshold": 7
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "legend-lore",
+          "class_level_threshold": 9
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "summon-dragon",
+          "class_level_threshold": 9
+        }
+      ]
+    },
+    {
+      "id": "draconic-elemental-affinity",
+      "owner_type": "subclass",
+      "owner_id": "sorcerer-draconic",
+      "level": 6,
+      "name_en": "Elemental Affinity",
+      "name_de": "Elementare Affinität",
+      "player_choice": true,
+      "choice_prompt_en": "Choose one damage type associated with dragons: Acid, Cold, Fire, Lightning, or Poison.",
+      "choice_prompt_de": "Wähle eine Schadensart, die mit Drachen assoziiert ist: Blitz, Feuer, Gift, Kälte oder Säure.",
+      "text_en": "Your draconic magic has an affinity with a damage type associated with dragons. Choose one of those types: Acid, Cold, Fire, Lightning, or Poison.\n\nYou have Resistance to that damage type, and when you cast a spell that deals damage of that type, you can add your Charisma modifier to one damage roll of that spell.",
+      "text_de": "Deine drakonische Magie hat eine Affinität mit einer Schadensart. Wähle: Blitz, Feuer, Gift, Kälte oder Säure.\n\nDu bist gegen diese Schadensart resistent, und wenn du einen Zauber wirkst, der Schaden dieser Art bewirkt, kannst du einem Schadenswurf deinen Charismamodifikator hinzufügen.",
+      "grants": [
+        {
+          "type": "choice",
+          "choose": 1,
+          "options": [
+            {
+              "id": "affinity-acid",
+              "name_en": "Acid",
+              "name_de": "Säure",
+              "grants": [
+                {
+                  "type": "damage_resistance",
+                  "damage_types": [
+                    "acid"
+                  ]
+                },
+                {
+                  "type": "damage_bonus",
+                  "value": "charisma_modifier",
+                  "condition": "sorcerer_spell_deals_acid_damage",
+                  "applies_to": "one_damage_roll_per_cast"
+                }
+              ]
+            },
+            {
+              "id": "affinity-cold",
+              "name_en": "Cold",
+              "name_de": "Kälte",
+              "grants": [
+                {
+                  "type": "damage_resistance",
+                  "damage_types": [
+                    "cold"
+                  ]
+                },
+                {
+                  "type": "damage_bonus",
+                  "value": "charisma_modifier",
+                  "condition": "sorcerer_spell_deals_cold_damage",
+                  "applies_to": "one_damage_roll_per_cast"
+                }
+              ]
+            },
+            {
+              "id": "affinity-fire",
+              "name_en": "Fire",
+              "name_de": "Feuer",
+              "grants": [
+                {
+                  "type": "damage_resistance",
+                  "damage_types": [
+                    "fire"
+                  ]
+                },
+                {
+                  "type": "damage_bonus",
+                  "value": "charisma_modifier",
+                  "condition": "sorcerer_spell_deals_fire_damage",
+                  "applies_to": "one_damage_roll_per_cast"
+                }
+              ]
+            },
+            {
+              "id": "affinity-lightning",
+              "name_en": "Lightning",
+              "name_de": "Blitz",
+              "grants": [
+                {
+                  "type": "damage_resistance",
+                  "damage_types": [
+                    "lightning"
+                  ]
+                },
+                {
+                  "type": "damage_bonus",
+                  "value": "charisma_modifier",
+                  "condition": "sorcerer_spell_deals_lightning_damage",
+                  "applies_to": "one_damage_roll_per_cast"
+                }
+              ]
+            },
+            {
+              "id": "affinity-poison",
+              "name_en": "Poison",
+              "name_de": "Gift",
+              "grants": [
+                {
+                  "type": "damage_resistance",
+                  "damage_types": [
+                    "poison"
+                  ]
+                },
+                {
+                  "type": "damage_bonus",
+                  "value": "charisma_modifier",
+                  "condition": "sorcerer_spell_deals_poison_damage",
+                  "applies_to": "one_damage_roll_per_cast"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "draconic-dragon-wings",
+      "owner_type": "subclass",
+      "owner_id": "sorcerer-draconic",
+      "level": 14,
+      "name_en": "Dragon Wings",
+      "name_de": "Drachenflügel",
+      "player_choice": false,
+      "text_en": "As a Bonus Action, you can cause draconic wings to appear on your back. The wings last for 1 hour or until you dismiss them (no action required). For the duration, you have a Fly Speed of 60 feet.\n\nOnce you use this feature, you can't use it again until you finish a Long Rest unless you spend 3 Sorcery Points (no action required) to restore your use of it.",
+      "text_de": "Als Bonusaktion kannst du drakonische Flügel erscheinen lassen. Diese halten eine Stunde lang an oder bis du sie verwirfst (keine Aktion). Für die Wirkungsdauer hast du eine Flugbewegungsrate von 18 Metern.\n\nDu kannst dieses Merkmal erst nach einer langen Rast erneut verwenden, außer du verbrauchst 3 Zaubereipunkte (keine Aktion).",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "recharge": "long_rest",
+          "refresh_option": {
+            "type": "feature_refresh",
+            "feature_id": "draconic-dragon-wings",
+            "cost": {
+              "resource": "sorcery_points",
+              "amount": 3
+            }
+          },
+          "effect": {
+            "type": "speed_grant",
+            "speed_type": "fly",
+            "value_feet": 60,
+            "duration": "1_hour",
+            "dismissible": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "draconic-dragon-companion",
+      "owner_type": "subclass",
+      "owner_id": "sorcerer-draconic",
+      "level": 18,
+      "name_en": "Dragon Companion",
+      "name_de": "Drachengefährte",
+      "player_choice": false,
+      "text_en": "You can cast Summon Dragon without a Material component. You can also cast it once without a spell slot, and you regain the ability to cast it in this way when you finish a Long Rest.\n\nWhenever you start casting the spell, you can modify it so that it doesn't require Concentration. If you do so, the spell's duration becomes 1 minute for that casting.",
+      "text_de": "Du kannst Drachen herbeirufen ohne Materialkomponente wirken. Du kannst den Zauber auch einmal ohne Zauberplatz wirken; diese Fähigkeit erhältst du nach einer langen Rast zurück.\n\nWann immer du diesen Zauber wirkst, kannst du ihn so verändern, dass er keine Konzentration erfordert. Dann beträgt die Wirkungsdauer eine Minute.",
+      "grants": [
+        {
+          "type": "spell_component_override",
+          "spell_id": "summon-dragon",
+          "components": {
+            "material": false
+          }
+        },
+        {
+          "type": "spell_cost_override",
+          "spell_id": "summon-dragon",
+          "cost": "no_spell_slot",
+          "uses": 1,
+          "recharge": "long_rest"
+        },
+        {
+          "type": "spell_effect_transformation",
+          "applies_to": [
+            "summon-dragon"
+          ],
+          "optional": true,
+          "modification": "remove_concentration",
+          "override_duration": "1_minute"
+        }
+      ]
+    },
+    {
+      "id": "wild-magic-wild-magic-surge",
+      "owner_type": "subclass",
+      "owner_id": "sorcerer-wild-magic",
+      "level": 3,
+      "name_en": "Wild Magic Surge",
+      "name_de": "Woge der Wilden Magie",
+      "player_choice": false,
+      "text_en": "Your spellcasting can unleash surges of untamed magic. Once per turn, you can roll 1d20 immediately after you cast a Sorcerer spell with a spell slot. If you roll a 20, roll on the Wild Magic Surge table to create a magical effect. If the magical effect is a spell, it is too wild to be affected by your Metamagic.",
+      "text_de": "Dein Zauberwirken kann Wogen ungezähmter Magie entfesseln. Einmal pro Zug kannst du sofort, nachdem du einen Zaubererzauber mit einem Zauberplatz gewirkt hast, mit 1W20 würfeln. Wenn das Ergebnis 20 ist, würfle anhand der Tabelle Woge der Wilden Magie. Ist der magische Effekt ein Zauber, ist er zu wild für Metamagie.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "cast_sorcerer_spell_with_slot",
+          "optional": true,
+          "once_per_turn": true,
+          "effect": {
+            "type": "roll_d20_for_wild_surge",
+            "on_result_20": {
+              "table": "wild-magic-surge-table"
+            },
+            "note": "Wild Magic Surge table excluded from schema per SCHEMA.md §14"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wild-magic-tides-of-chaos",
+      "owner_type": "subclass",
+      "owner_id": "sorcerer-wild-magic",
+      "level": 3,
+      "name_en": "Tides of Chaos",
+      "name_de": "Gezeiten des Chaos",
+      "player_choice": false,
+      "text_en": "You can manipulate chaos itself to give yourself Advantage on one D20 Test before you roll the d20. Once you do so, you must cast a Sorcerer spell with a spell slot or finish a Long Rest before you can use this feature again.\n\nIf you do cast a Sorcerer spell with a spell slot before you finish a Long Rest, you automatically roll on the Wild Magic Surge table.",
+      "text_de": "Du kannst das Chaos manipulieren und bewirken, dass eine W20-Prüfung im Vorteil ist. Danach musst du einen Zaubererzauber mit einem Zauberplatz wirken oder eine lange Rast beenden, um dieses Merkmal erneut zu nutzen.\n\nWirkst du einen Zaubererzauber mit einem Zauberplatz, würfelst du automatisch auf der Tabelle Woge der Wilden Magie.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "none",
+          "trigger": "before_d20_test",
+          "recharge": "long_rest",
+          "recharge_also_on": "cast_sorcerer_spell_with_slot",
+          "effect": {
+            "type": "advantage",
+            "on": [
+              "d20_test_of_choice"
+            ]
+          }
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "cast_sorcerer_spell_with_slot_while_tides_of_chaos_expended",
+          "effect": {
+            "type": "forced_table_roll",
+            "table": "wild-magic-surge-table"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wild-magic-bend-luck",
+      "owner_type": "subclass",
+      "owner_id": "sorcerer-wild-magic",
+      "level": 6,
+      "name_en": "Bend Luck",
+      "name_de": "Schicksal zurechtbiegen",
+      "player_choice": false,
+      "text_en": "Immediately after another creature you can see rolls the d20 for a D20 Test, you can take a Reaction and spend 1 Sorcery Point to roll 1d4 and apply the number rolled as a bonus or penalty (your choice) to the d20 roll.",
+      "text_de": "Sofort, nachdem eine andere Kreatur, die du sehen kannst, eine W20-Prüfung ausgeführt hat, kannst du eine Reaktion ausführen und einen Zaubereipunkt verbrauchen, um mit 1W4 zu würfeln und dem W20-Wurf das Ergebnis als Bonus oder Malus hinzuzufügen.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "creature_you_can_see_rolls_d20_for_d20_test",
+          "action_type": "reaction",
+          "cost": {
+            "resource": "sorcery_points",
+            "amount": 1
+          },
+          "effect": {
+            "type": "roll_and_apply_modifier",
+            "dice": "1d4",
+            "modifier_type": "bonus_or_penalty",
+            "choice": "player"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wild-magic-controlled-chaos",
+      "owner_type": "subclass",
+      "owner_id": "sorcerer-wild-magic",
+      "level": 14,
+      "name_en": "Controlled Chaos",
+      "name_de": "Kontrolliertes Chaos",
+      "player_choice": false,
+      "text_en": "You gain a modicum of control over the surges of your wild magic. Whenever you roll on the Wild Magic Surge table, you can roll twice and use either number.",
+      "text_de": "Du erhältst ein Mindestmaß an Kontrolle über deine Wilde Magie. Wann immer du anhand der Tabelle Woge der Wilden Magie würfelst, kannst du zweimal würfeln und dir eines der Ergebnisse aussuchen.",
+      "grants": [
+        {
+          "type": "feature_modifier",
+          "feature_id": "wild-magic-wild-magic-surge",
+          "modifies_grant": "roll_d20_for_wild_surge",
+          "modification": {
+            "on_result_20": {
+              "table": "wild-magic-surge-table",
+              "roll_count": 2,
+              "use_either": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "wild-magic-tamed-surge",
+      "owner_type": "subclass",
+      "owner_id": "sorcerer-wild-magic",
+      "level": 18,
+      "name_en": "Tamed Surge",
+      "name_de": "Gezähmte Woge",
+      "player_choice": true,
+      "choice_prompt_en": "When you use Tamed Surge, choose any effect from the Wild Magic Surge table except the final row.",
+      "choice_prompt_de": "Wenn du Gezähmte Woge verwendest, wähle einen Effekt von der Tabelle Woge der Wilden Magie (nicht die letzte Zeile).",
+      "text_en": "Immediately after you cast a Sorcerer spell with a spell slot, you can create an effect of your choice from the Wild Magic Surge table instead of rolling on that table. You can choose any effect in the table except for the final row, and if the chosen effect involves a roll, you must make it.\n\nOnce you use this feature, you can't do so again until you finish a Long Rest.",
+      "text_de": "Sofort, nachdem du einen Zaubererzauber mit einem Zauberplatz gewirkt hast, kannst du einen Effekt deiner Wahl von der Tabelle Woge der Wilden Magie wirken, anstatt anhand der Tabelle zu würfeln. Wenn zum ausgewählten Effekt ein Würfelwurf gehört, musst du diesen ausführen.\n\nDu kannst dieses Merkmal erst nach einer langen Rast erneut verwenden.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "cast_sorcerer_spell_with_slot",
+          "optional": true,
+          "uses": 1,
+          "recharge": "long_rest",
+          "effect": {
+            "type": "choose_wild_magic_surge_effect",
+            "table": "wild-magic-surge-table",
+            "exclude": "final_row",
+            "note": "Wild Magic Surge table excluded from schema per SCHEMA.md §14. Player chooses effect; any sub-rolls still required."
+          }
+        }
+      ]
+    }
+  ],
+  "subclass_progressions": [
+    {
+      "subclass_id": "sorcerer-draconic",
+      "levels": [
+        {
+          "level": 3,
+          "resources": {
+            "draconic_resilience_hp_bonus": 3
+          }
+        },
+        {
+          "level": 4,
+          "resources": {
+            "draconic_resilience_hp_bonus": 4
+          }
+        },
+        {
+          "level": 5,
+          "resources": {
+            "draconic_resilience_hp_bonus": 5
+          }
+        },
+        {
+          "level": 6,
+          "resources": {
+            "draconic_resilience_hp_bonus": 6
+          }
+        },
+        {
+          "level": 7,
+          "resources": {
+            "draconic_resilience_hp_bonus": 7
+          }
+        },
+        {
+          "level": 8,
+          "resources": {
+            "draconic_resilience_hp_bonus": 8
+          }
+        },
+        {
+          "level": 9,
+          "resources": {
+            "draconic_resilience_hp_bonus": 9
+          }
+        },
+        {
+          "level": 10,
+          "resources": {
+            "draconic_resilience_hp_bonus": 10
+          }
+        },
+        {
+          "level": 11,
+          "resources": {
+            "draconic_resilience_hp_bonus": 11
+          }
+        },
+        {
+          "level": 12,
+          "resources": {
+            "draconic_resilience_hp_bonus": 12
+          }
+        },
+        {
+          "level": 13,
+          "resources": {
+            "draconic_resilience_hp_bonus": 13
+          }
+        },
+        {
+          "level": 14,
+          "resources": {
+            "draconic_resilience_hp_bonus": 14
+          }
+        },
+        {
+          "level": 15,
+          "resources": {
+            "draconic_resilience_hp_bonus": 15
+          }
+        },
+        {
+          "level": 16,
+          "resources": {
+            "draconic_resilience_hp_bonus": 16
+          }
+        },
+        {
+          "level": 17,
+          "resources": {
+            "draconic_resilience_hp_bonus": 17
+          }
+        },
+        {
+          "level": 18,
+          "resources": {
+            "draconic_resilience_hp_bonus": 18
+          }
+        },
+        {
+          "level": 19,
+          "resources": {
+            "draconic_resilience_hp_bonus": 19
+          }
+        },
+        {
+          "level": 20,
+          "resources": {
+            "draconic_resilience_hp_bonus": 20
+          }
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": "metamagic-careful-spell",
+      "entity_type": "metamagic_option",
+      "pool": "sorcerer_metamagic_options",
+      "name_en": "Careful Spell",
+      "name_de": "Bedachter Zauber",
+      "cost": {
+        "resource": "sorcery_points",
+        "amount": 1
+      },
+      "text_en": "When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, spend 1 Sorcery Point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell, and it takes no damage if it would normally take half damage on a successful save.",
+      "text_de": "Wenn du einen Zauber wirkst, der andere Kreaturen zu einem Rettungswurf zwingt, kannst du einen Zaubereipunkt verbrauchen und eine Anzahl betroffener Kreaturen bis zur Höhe deines Charismamodifikators auswählen (mindestens eine). Eine ausgewählte Kreatur besteht ihren Rettungswurf automatisch und erleidet keinen Schaden, wenn sie normalerweise die Hälfte erleiden würde.",
+      "grants": [
+        {
+          "type": "sculpt_spells",
+          "applies_to": "any_spell_with_saving_throw",
+          "max_excluded_creatures": {
+            "equals": "charisma_modifier",
+            "minimum": 1
+          },
+          "excluded_creatures_effect": {
+            "saving_throw": "automatic_success",
+            "damage_on_success": "none"
+          }
+        }
+      ]
+    },
+    {
+      "id": "metamagic-distant-spell",
+      "entity_type": "metamagic_option",
+      "pool": "sorcerer_metamagic_options",
+      "name_en": "Distant Spell",
+      "name_de": "Weitreichender Zauber",
+      "cost": {
+        "resource": "sorcery_points",
+        "amount": 1
+      },
+      "text_en": "When you cast a spell that has a range of at least 5 feet, you can spend 1 Sorcery Point to double the spell's range. Or when you cast a spell that has a range of Touch, you can spend 1 Sorcery Point to make the spell's range 30 feet.",
+      "text_de": "Wenn du einen Zauber mit einer Reichweite von mindestens 1,5 Metern wirkst, kannst du einen Zaubereipunkt verbrauchen, um die Reichweite zu verdoppeln. Bei Berührungsreichweite kannst du sie auf neun Meter erhöhen.",
+      "grants": [
+        {
+          "type": "spell_range_override",
+          "applies_to": "spell_with_range_5ft_or_more",
+          "modification": "double_range"
+        },
+        {
+          "type": "spell_range_override",
+          "applies_to": "spell_with_range_touch",
+          "modification": "set_range_feet",
+          "value_feet": 30
+        }
+      ]
+    },
+    {
+      "id": "metamagic-empowered-spell",
+      "entity_type": "metamagic_option",
+      "pool": "sorcerer_metamagic_options",
+      "name_en": "Empowered Spell",
+      "name_de": "Mächtiger Zauber",
+      "cost": {
+        "resource": "sorcery_points",
+        "amount": 1
+      },
+      "text_en": "When you roll damage for a spell, you can spend 1 Sorcery Point to reroll a number of the damage dice up to your Charisma modifier (minimum of one), and you must use the new rolls. You can use Empowered Spell even if you've already used a different Metamagic option during the casting of the spell.",
+      "text_de": "Wenn du den Schaden eines Zaubers auswürfelst, kannst du einen Zaubereipunkt verbrauchen, um mit einer Anzahl von Schadenswürfeln bis zur Höhe deines Charismamodifikators (mindestens einem) erneut zu würfeln. Du musst die neuen Ergebnisse verwenden. Kann auch genutzt werden, wenn bereits eine andere Metamagie-Option verwendet wurde.",
+      "note": "Can be combined with another Metamagic option on the same spell.",
+      "grants": [
+        {
+          "type": "reroll",
+          "trigger": "spell_damage_roll",
+          "reroll_count": {
+            "equals": "charisma_modifier",
+            "minimum": 1
+          },
+          "must_use_new_roll": true,
+          "combinable_with_other_metamagic": true
+        }
+      ]
+    },
+    {
+      "id": "metamagic-extended-spell",
+      "entity_type": "metamagic_option",
+      "pool": "sorcerer_metamagic_options",
+      "name_en": "Extended Spell",
+      "name_de": "Verlängerter Zauber",
+      "cost": {
+        "resource": "sorcery_points",
+        "amount": 1
+      },
+      "text_en": "When you cast a spell that has a duration of 1 minute or longer, you can spend 1 Sorcery Point to double its duration to a maximum duration of 24 hours. If the affected spell requires Concentration, you have Advantage on any saving throw you make to maintain that Concentration.",
+      "text_de": "Wenn du einen Zauber mit einer Wirkungsdauer von mindestens einer Minute wirkst, kannst du einen Zaubereipunkt verbrauchen, um die Dauer zu verdoppeln (höchstens 24 Stunden). Wenn der Zauber Konzentration erfordert, bist du bei Rettungswürfen zum Aufrechterhalten im Vorteil.",
+      "grants": [
+        {
+          "type": "spell_effect_transformation",
+          "applies_to": "spell_with_duration_1_minute_or_longer",
+          "modification": "double_duration",
+          "maximum_duration": "24_hours"
+        },
+        {
+          "type": "advantage",
+          "on": [
+            "concentration_saving_throws"
+          ],
+          "condition": "spell_modified_by_extended_spell"
+        }
+      ]
+    },
+    {
+      "id": "metamagic-heightened-spell",
+      "entity_type": "metamagic_option",
+      "pool": "sorcerer_metamagic_options",
+      "name_en": "Heightened Spell",
+      "name_de": "Konzentrierter Zauber",
+      "cost": {
+        "resource": "sorcery_points",
+        "amount": 2
+      },
+      "text_en": "When you cast a spell that forces a creature to make a saving throw, you can spend 2 Sorcery Points to give one target of the spell Disadvantage on saves against the spell.",
+      "text_de": "Wenn du einen Zauber wirkst, der Kreaturen zu einem Rettungswurf zwingt, kannst du 2 Zaubereipunkte verbrauchen, damit ein Ziel bei Rettungswürfen gegen den Zauber im Nachteil ist.",
+      "grants": [
+        {
+          "type": "disadvantage_on_next_saving_throw",
+          "target": "one_target_of_spell",
+          "condition": "against_this_spell_cast"
+        }
+      ]
+    },
+    {
+      "id": "metamagic-quickened-spell",
+      "entity_type": "metamagic_option",
+      "pool": "sorcerer_metamagic_options",
+      "name_en": "Quickened Spell",
+      "name_de": "Beschleunigter Zauber",
+      "cost": {
+        "resource": "sorcery_points",
+        "amount": 2
+      },
+      "text_en": "When you cast a spell that has a casting time of an action, you can spend 2 Sorcery Points to change the casting time to a Bonus Action for this casting. You can't modify a spell in this way if you've already cast a level 1+ spell on the current turn, nor can you cast a level 1+ spell on this turn after modifying a spell in this way.",
+      "text_de": "Wenn du einen Zauber mit einem Zeitaufwand von einer Aktion wirkst, kannst du 2 Zaubereipunkte verbrauchen, um den Zeitaufwand in eine Bonusaktion zu ändern. Du kannst keinen Zauber so verändern, wenn du im aktuellen Zug bereits einen Zauber ab Grad 1 gewirkt hast. Außerdem kannst du danach im aktuellen Zug keinen Zauber ab Grad 1 wirken.",
+      "grants": [
+        {
+          "type": "spell_cost_override",
+          "applies_to": "spell_with_casting_time_action",
+          "action_type": "bonus_action",
+          "restriction": "no_level_1plus_spell_already_cast_this_turn",
+          "side_effect": "cannot_cast_level_1plus_spell_same_turn"
+        }
+      ]
+    },
+    {
+      "id": "metamagic-seeking-spell",
+      "entity_type": "metamagic_option",
+      "pool": "sorcerer_metamagic_options",
+      "name_en": "Seeking Spell",
+      "name_de": "Zielsuchzauber",
+      "cost": {
+        "resource": "sorcery_points",
+        "amount": 1
+      },
+      "text_en": "If you make an attack roll for a spell and miss, you can spend 1 Sorcery Point to reroll the d20, and you must use the new roll. You can use Seeking Spell even if you've already used a different Metamagic option during the casting of the spell.",
+      "text_de": "Wenn der Angriffswurf eines deiner Zauber scheitert, kannst du einen Zaubereipunkt verbrauchen und erneut mit dem W20 würfeln. Du musst das neue Ergebnis verwenden. Kann auch genutzt werden, wenn bereits eine andere Metamagie-Option verwendet wurde.",
+      "note": "Can be combined with another Metamagic option on the same spell.",
+      "grants": [
+        {
+          "type": "reroll",
+          "trigger": "spell_attack_roll_miss",
+          "must_use_new_roll": true,
+          "combinable_with_other_metamagic": true
+        }
+      ]
+    },
+    {
+      "id": "metamagic-subtle-spell",
+      "entity_type": "metamagic_option",
+      "pool": "sorcerer_metamagic_options",
+      "name_en": "Subtle Spell",
+      "name_de": "Subtiler Zauber",
+      "cost": {
+        "resource": "sorcery_points",
+        "amount": 1
+      },
+      "text_en": "When you cast a spell, you can spend 1 Sorcery Point to cast it without any Verbal, Somatic, or Material components, except Material components that are consumed by the spell or that have a cost specified in the spell.",
+      "text_de": "Wenn du einen Zauber wirkst, kannst du einen Zaubereipunkt verbrauchen, um ihn ohne Verbal-, Gesten- oder Materialkomponenten zu wirken (außer verbrauchte oder mit Kosten versehene Materialkomponenten).",
+      "grants": [
+        {
+          "type": "spell_component_override",
+          "applies_to": "any_spell",
+          "components": {
+            "verbal": false,
+            "somatic": false,
+            "material": false,
+            "material_exception": "consumed_or_has_cost"
+          }
+        }
+      ]
+    },
+    {
+      "id": "metamagic-transmuted-spell",
+      "entity_type": "metamagic_option",
+      "pool": "sorcerer_metamagic_options",
+      "name_en": "Transmuted Spell",
+      "name_de": "Verwandelter Zauber",
+      "cost": {
+        "resource": "sorcery_points",
+        "amount": 1
+      },
+      "text_en": "When you cast a spell that deals a type of damage from the following list, you can spend 1 Sorcery Point to change that damage type to one of the other listed types: Acid, Cold, Fire, Lightning, Poison, Thunder.",
+      "text_de": "Wenn du einen Zauber wirkst, der Schaden einer Art aus der folgenden Liste bewirkt, kannst du einen Zaubereipunkt verbrauchen, um die Schadensart zu ändern: Blitz, Feuer, Gift, Kälte, Säure, Schall.",
+      "grants": [
+        {
+          "type": "spell_effect_transformation",
+          "applies_to": "spell_dealing_acid_cold_fire_lightning_poison_or_thunder",
+          "modification": "change_damage_type",
+          "allowed_types": [
+            "acid",
+            "cold",
+            "fire",
+            "lightning",
+            "poison",
+            "thunder"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "metamagic-twinned-spell",
+      "entity_type": "metamagic_option",
+      "pool": "sorcerer_metamagic_options",
+      "name_en": "Twinned Spell",
+      "name_de": "Gespiegelter Zauber",
+      "cost": {
+        "resource": "sorcery_points",
+        "amount": 1
+      },
+      "text_en": "When you cast a spell, such as Charm Person, that can be cast with a higher-level spell slot to target an additional creature, you can spend 1 Sorcery Point to increase the spell's effective level by 1.",
+      "text_de": "Wenn du einen Zauber wirkst, der mit einem Zauberplatz eines höheren Grades gewirkt werden kann, um auf eine weitere Kreatur zu zielen, kannst du einen Zaubereipunkt verbrauchen, um den effektiven Grad des Zaubers um 1 zu erhöhen.",
+      "grants": [
+        {
+          "type": "spell_effect_transformation",
+          "applies_to": "spell_that_scales_for_additional_targets",
+          "modification": "increase_effective_spell_level",
+          "value": 1
+        }
+      ]
+    }
+  ]
+}

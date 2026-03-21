@@ -1,0 +1,1879 @@
+{
+  "class": {
+    "id": "cleric",
+    "name_en": "Cleric",
+    "name_de": "Kleriker",
+    "hit_die": "d8",
+    "primary_abilities": [
+      "wisdom"
+    ],
+    "saving_throw_proficiencies": [
+      "wisdom",
+      "charisma"
+    ],
+    "proficiencies": {
+      "skills": {
+        "choose": 2,
+        "from": [
+          "history",
+          "insight",
+          "medicine",
+          "persuasion",
+          "religion"
+        ]
+      },
+      "weapons": [
+        "simple"
+      ],
+      "armor": [
+        "light",
+        "medium",
+        "shields"
+      ]
+    },
+    "starting_equipment": {
+      "choose": 1,
+      "options": [
+        {
+          "id": "option_a",
+          "items": [
+            "chain_shirt",
+            "shield",
+            "mace",
+            "holy_symbol",
+            "priests_pack",
+            "7gp"
+          ]
+        },
+        {
+          "id": "option_b",
+          "items": [
+            "110gp"
+          ]
+        }
+      ]
+    },
+    "multiclass_rules": {
+      "grants": [
+        "hit_die_d8",
+        "proficiency_light_armor",
+        "proficiency_medium_armor",
+        "proficiency_shields"
+      ]
+    },
+    "subclass_level": 3
+  },
+  "class_progression": {
+    "class_id": "cleric",
+    "spell_slot_table": "full_caster",
+    "levels": [
+      {
+        "level": 1,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "cleric-spellcasting",
+          "cleric-divine-order"
+        ],
+        "resources": {
+          "cantrips_known": 3,
+          "prepared_spells": 4,
+          "channel_divinity_uses": 0,
+          "divine_spark_dice": {
+            "count": 1,
+            "die": "d8"
+          },
+          "sear_undead_dice": {
+            "count_from_ability": "wisdom_modifier",
+            "minimum": 1,
+            "die": "d8"
+          }
+        }
+      },
+      {
+        "level": 2,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "cleric-channel-divinity",
+          "cleric-divine-spark",
+          "cleric-turn-undead"
+        ],
+        "resources": {
+          "cantrips_known": 3,
+          "prepared_spells": 5,
+          "channel_divinity_uses": 2,
+          "divine_spark_dice": {
+            "count": 1,
+            "die": "d8"
+          },
+          "sear_undead_dice": {
+            "count_from_ability": "wisdom_modifier",
+            "minimum": 1,
+            "die": "d8"
+          }
+        }
+      },
+      {
+        "level": 3,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "cleric-subclass"
+        ],
+        "subclass_feature_level": true,
+        "resources": {
+          "cantrips_known": 3,
+          "prepared_spells": 6,
+          "channel_divinity_uses": 2,
+          "divine_spark_dice": {
+            "count": 1,
+            "die": "d8"
+          },
+          "sear_undead_dice": {
+            "count_from_ability": "wisdom_modifier",
+            "minimum": 1,
+            "die": "d8"
+          }
+        }
+      },
+      {
+        "level": 4,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "cleric-asi-4"
+        ],
+        "resources": {
+          "cantrips_known": 4,
+          "prepared_spells": 7,
+          "channel_divinity_uses": 2,
+          "divine_spark_dice": {
+            "count": 1,
+            "die": "d8"
+          },
+          "sear_undead_dice": {
+            "count_from_ability": "wisdom_modifier",
+            "minimum": 1,
+            "die": "d8"
+          }
+        }
+      },
+      {
+        "level": 5,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "cleric-sear-undead"
+        ],
+        "resources": {
+          "cantrips_known": 4,
+          "prepared_spells": 9,
+          "channel_divinity_uses": 2,
+          "divine_spark_dice": {
+            "count": 1,
+            "die": "d8"
+          },
+          "sear_undead_dice": {
+            "count_from_ability": "wisdom_modifier",
+            "minimum": 1,
+            "die": "d8"
+          }
+        }
+      },
+      {
+        "level": 6,
+        "proficiency_bonus": 3,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "cantrips_known": 4,
+          "prepared_spells": 10,
+          "channel_divinity_uses": 3,
+          "divine_spark_dice": {
+            "count": 1,
+            "die": "d8"
+          },
+          "sear_undead_dice": {
+            "count_from_ability": "wisdom_modifier",
+            "minimum": 1,
+            "die": "d8"
+          }
+        }
+      },
+      {
+        "level": 7,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "cleric-blessed-strikes"
+        ],
+        "resources": {
+          "cantrips_known": 4,
+          "prepared_spells": 11,
+          "channel_divinity_uses": 3,
+          "divine_spark_dice": {
+            "count": 2,
+            "die": "d8"
+          },
+          "sear_undead_dice": {
+            "count_from_ability": "wisdom_modifier",
+            "minimum": 1,
+            "die": "d8"
+          }
+        }
+      },
+      {
+        "level": 8,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "cleric-asi-8"
+        ],
+        "resources": {
+          "cantrips_known": 4,
+          "prepared_spells": 12,
+          "channel_divinity_uses": 3,
+          "divine_spark_dice": {
+            "count": 2,
+            "die": "d8"
+          },
+          "sear_undead_dice": {
+            "count_from_ability": "wisdom_modifier",
+            "minimum": 1,
+            "die": "d8"
+          }
+        }
+      },
+      {
+        "level": 9,
+        "proficiency_bonus": 4,
+        "feature_ids": [],
+        "resources": {
+          "cantrips_known": 4,
+          "prepared_spells": 14,
+          "channel_divinity_uses": 3,
+          "divine_spark_dice": {
+            "count": 2,
+            "die": "d8"
+          },
+          "sear_undead_dice": {
+            "count_from_ability": "wisdom_modifier",
+            "minimum": 1,
+            "die": "d8"
+          }
+        }
+      },
+      {
+        "level": 10,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "cleric-divine-intervention"
+        ],
+        "resources": {
+          "cantrips_known": 5,
+          "prepared_spells": 15,
+          "channel_divinity_uses": 3,
+          "divine_spark_dice": {
+            "count": 2,
+            "die": "d8"
+          },
+          "sear_undead_dice": {
+            "count_from_ability": "wisdom_modifier",
+            "minimum": 1,
+            "die": "d8"
+          }
+        }
+      },
+      {
+        "level": 11,
+        "proficiency_bonus": 4,
+        "feature_ids": [],
+        "resources": {
+          "cantrips_known": 5,
+          "prepared_spells": 16,
+          "channel_divinity_uses": 3,
+          "divine_spark_dice": {
+            "count": 2,
+            "die": "d8"
+          },
+          "sear_undead_dice": {
+            "count_from_ability": "wisdom_modifier",
+            "minimum": 1,
+            "die": "d8"
+          }
+        }
+      },
+      {
+        "level": 12,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "cleric-asi-12"
+        ],
+        "resources": {
+          "cantrips_known": 5,
+          "prepared_spells": 16,
+          "channel_divinity_uses": 3,
+          "divine_spark_dice": {
+            "count": 2,
+            "die": "d8"
+          },
+          "sear_undead_dice": {
+            "count_from_ability": "wisdom_modifier",
+            "minimum": 1,
+            "die": "d8"
+          }
+        }
+      },
+      {
+        "level": 13,
+        "proficiency_bonus": 5,
+        "feature_ids": [],
+        "resources": {
+          "cantrips_known": 5,
+          "prepared_spells": 17,
+          "channel_divinity_uses": 3,
+          "divine_spark_dice": {
+            "count": 3,
+            "die": "d8"
+          },
+          "sear_undead_dice": {
+            "count_from_ability": "wisdom_modifier",
+            "minimum": 1,
+            "die": "d8"
+          }
+        }
+      },
+      {
+        "level": 14,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "cleric-improved-blessed-strikes"
+        ],
+        "resources": {
+          "cantrips_known": 5,
+          "prepared_spells": 17,
+          "channel_divinity_uses": 3,
+          "divine_spark_dice": {
+            "count": 3,
+            "die": "d8"
+          },
+          "sear_undead_dice": {
+            "count_from_ability": "wisdom_modifier",
+            "minimum": 1,
+            "die": "d8"
+          }
+        }
+      },
+      {
+        "level": 15,
+        "proficiency_bonus": 5,
+        "feature_ids": [],
+        "resources": {
+          "cantrips_known": 5,
+          "prepared_spells": 18,
+          "channel_divinity_uses": 3,
+          "divine_spark_dice": {
+            "count": 3,
+            "die": "d8"
+          },
+          "sear_undead_dice": {
+            "count_from_ability": "wisdom_modifier",
+            "minimum": 1,
+            "die": "d8"
+          }
+        }
+      },
+      {
+        "level": 16,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "cleric-asi-16"
+        ],
+        "resources": {
+          "cantrips_known": 5,
+          "prepared_spells": 18,
+          "channel_divinity_uses": 3,
+          "divine_spark_dice": {
+            "count": 3,
+            "die": "d8"
+          },
+          "sear_undead_dice": {
+            "count_from_ability": "wisdom_modifier",
+            "minimum": 1,
+            "die": "d8"
+          }
+        }
+      },
+      {
+        "level": 17,
+        "proficiency_bonus": 6,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "cantrips_known": 5,
+          "prepared_spells": 19,
+          "channel_divinity_uses": 3,
+          "divine_spark_dice": {
+            "count": 3,
+            "die": "d8"
+          },
+          "sear_undead_dice": {
+            "count_from_ability": "wisdom_modifier",
+            "minimum": 1,
+            "die": "d8"
+          }
+        }
+      },
+      {
+        "level": 18,
+        "proficiency_bonus": 6,
+        "feature_ids": [],
+        "resources": {
+          "cantrips_known": 5,
+          "prepared_spells": 20,
+          "channel_divinity_uses": 4,
+          "divine_spark_dice": {
+            "count": 4,
+            "die": "d8"
+          },
+          "sear_undead_dice": {
+            "count_from_ability": "wisdom_modifier",
+            "minimum": 1,
+            "die": "d8"
+          }
+        }
+      },
+      {
+        "level": 19,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "cleric-epic-boon"
+        ],
+        "resources": {
+          "cantrips_known": 5,
+          "prepared_spells": 21,
+          "channel_divinity_uses": 4,
+          "divine_spark_dice": {
+            "count": 4,
+            "die": "d8"
+          },
+          "sear_undead_dice": {
+            "count_from_ability": "wisdom_modifier",
+            "minimum": 1,
+            "die": "d8"
+          }
+        }
+      },
+      {
+        "level": 20,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "cleric-greater-divine-intervention"
+        ],
+        "resources": {
+          "cantrips_known": 5,
+          "prepared_spells": 22,
+          "channel_divinity_uses": 4,
+          "divine_spark_dice": {
+            "count": 4,
+            "die": "d8"
+          },
+          "sear_undead_dice": {
+            "count_from_ability": "wisdom_modifier",
+            "minimum": 1,
+            "die": "d8"
+          }
+        }
+      }
+    ]
+  },
+  "subclasses": [
+    {
+      "id": "cleric-life-domain",
+      "class_id": "cleric",
+      "name_en": "Life Domain",
+      "name_de": "Domäne des Lebens",
+      "feature_levels": [
+        3,
+        6,
+        17
+      ]
+    },
+    {
+      "id": "cleric-light-domain",
+      "class_id": "cleric",
+      "name_en": "Light Domain",
+      "name_de": "Domäne des Lichts",
+      "feature_levels": [
+        3,
+        6,
+        17
+      ]
+    },
+    {
+      "id": "cleric-trickery-domain",
+      "class_id": "cleric",
+      "name_en": "Trickery Domain",
+      "name_de": "Domäne der List",
+      "feature_levels": [
+        3,
+        6,
+        17
+      ]
+    },
+    {
+      "id": "cleric-war-domain",
+      "class_id": "cleric",
+      "name_en": "War Domain",
+      "name_de": "Domäne des Krieges",
+      "feature_levels": [
+        3,
+        6,
+        17
+      ]
+    }
+  ],
+  "features": [
+    {
+      "id": "cleric-spellcasting",
+      "owner_type": "class",
+      "owner_id": "cleric",
+      "level": 1,
+      "name_en": "Spellcasting",
+      "name_de": "Zauberwirken",
+      "player_choice": true,
+      "choice_prompt_en": "Choose your prepared spells and cantrips from the Cleric spell list.",
+      "choice_prompt_de": "Wähle deine vorbereiteten Zauber und Zaubertricks aus der Zauberliste des Klerikers.",
+      "text_en": "You have learned to cast spells through prayer and meditation. See chapter 7 for the rules on spellcasting.\n\nCantrips. You know three cantrips of your choice from the Cleric spell list. Guidance, Sacred Flame, and Thaumaturgy are recommended. Whenever you gain a Cleric level, you can replace one of your cantrips with another cantrip of your choice from the Cleric spell list. When you reach Cleric levels 4 and 10, you learn another cantrip of your choice from the Cleric spell list.\n\nSpell Slots. The Cleric Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.\n\nPrepared Spells of Level 1+. You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose four level 1 spells from the Cleric spell list. Bless, Cure Wounds, Guiding Bolt, and Shield of Faith are recommended. The number of spells on your list increases as you gain Cleric levels. Whenever that number increases, choose additional spells from the Cleric spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots.\n\nIf another Cleric feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Cleric spells for you.\n\nChanging Your Prepared Spells. Whenever you finish a Long Rest, you can change your list of prepared spells, replacing any of the spells there with other Cleric spells for which you have spell slots.\n\nSpellcasting Ability. Wisdom is your spellcasting ability for your Cleric spells.\n\nSpellcasting Focus. You can use a Holy Symbol as a Spellcasting Focus for your Cleric spells.",
+      "text_de": "Du hast gelernt, durch Gebete und Meditation Zauber zu wirken. Die Regeln zum Zauberwirken findest du in Kapitel 7.\n\nZaubertricks: Du beherrschst drei Zaubertricks deiner Wahl aus der Zauberliste des Klerikers. Göttliche Führung, Heilige Flamme und Thaumaturgie werden empfohlen. Wann immer du eine Klerikerstufe erhältst, kannst du einen deiner Zaubertricks mit einem anderen Zaubertrick deiner Wahl aus der Zauberliste des Klerikers ersetzen. Wenn du die 4. und 10. Klerikerstufe erreichst, erlernst du einen weiteren Zaubertrick deiner Wahl.\n\nZauberplätze: Die Tabelle „Klerikermerkmale“ zeigt, wie viele Zauberplätze dir zum Wirken deiner Zauber ab dem 1. Grad zur Verfügung stehen. Du erhältst alle verbrauchten Zauberplätze nach einer langen Rast zurück.\n\nVorbereitete Zauber ab dem 1. Grad: Du bereitest die Liste der Zauber ab dem 1. Grad vor, die dir mit diesem Merkmal zur Verfügung stehen. Wähle zu Beginn vier Zauber des 1. Grades aus der Zauberliste des Klerikers aus. Lenkendes Geschoss, Schild des Glaubens, Segnen und Wunden heilen werden empfohlen. Die Anzahl der Zauber auf deiner Liste erhöht sich, wenn du weitere Klerikerstufen erhältst. Wann immer sich diese Anzahl erhöht, wählst du zusätzliche Zauber aus der Zauberliste des Klerikers aus, bis die Anzahl der Zauber auf deiner Liste der Anzahl in der Tabelle entspricht. Der Grad der ausgewählten Zauber muss dem der verfügbaren Zauberplätze entsprechen.\n\nWenn ein anderes Klerikermerkmal dir Zauber gibt, die du stets vorbereitet hast, zählen diese Zauber nicht bei der Anzahl von Zaubern, die du mit diesem Merkmal vorbereiten kannst. Ansonsten zählen diese Zauber jedoch als Klerikerzauber für dich.\n\nDeine vorbereiteten Zauber ändern: Wann immer du eine lange Rast beendest, kannst du deine Liste vorbereiteter Zauber ändern und beliebige Zauber von der Liste mit anderen Klerikerzaubern ersetzen, für die du Zauberplätze hast.\n\nAttribut zum Zauberwirken: Dein Attribut zum Wirken der Klerikerzauber ist Weisheit.\n\nZauberfokus: Du kannst ein heiliges Symbol als Zauberfokus für deine Klerikerzauber verwenden.",
+      "grants": [
+        {
+          "type": "spellcasting",
+          "casting_model": "prepared",
+          "spellcasting_ability": "wisdom",
+          "spellcasting_focus": "holy_symbol",
+          "cantrips": {
+            "count_from_resource": "cantrips_known",
+            "source": "cleric_spell_list",
+            "replaceable_on": "level_up"
+          },
+          "prepared_spells": {
+            "count_from_resource": "prepared_spells",
+            "source": "cleric_spell_list",
+            "replaceable_on": "long_rest",
+            "count_per_swap": "all"
+          },
+          "recharge": "long_rest"
+        }
+      ]
+    },
+    {
+      "id": "cleric-divine-order",
+      "owner_type": "class",
+      "owner_id": "cleric",
+      "level": 1,
+      "name_en": "Divine Order",
+      "name_de": "Göttliche Ordnung",
+      "player_choice": true,
+      "choice_prompt_en": "Choose one sacred role: Protector or Thaumaturge.",
+      "choice_prompt_de": "Wähle eine heilige Rolle: Beschützer oder Thaumaturg.",
+      "text_en": "You have dedicated yourself to one of the following sacred roles of your choice.\n\nProtector. Trained for battle, you gain proficiency with Martial weapons and training with Heavy armor.\n\nThaumaturge. You know one extra cantrip from the Cleric spell list. In addition, your mystical connection to the divine gives you a bonus to your Intelligence (Arcana or Religion) checks. The bonus equals your Wisdom modifier (minimum of +1).",
+      "text_de": "Du hast dich nach deiner Wahl einer der folgenden heiligen Rollen verschrieben.\n\nBeschützer: Du wurdest für den Kampf ausgebildet, daher hast du Übung im Umgang mit Kriegswaffen und Vertrautheit mit schwerer Rüstung.\n\nThaumaturg: Du kennst einen zusätzlichen Zaubertrick aus der Zauberliste des Klerikers. Außerdem gibt dir deine mystische Verbindung mit dem Göttlichen einen Bonus auf deine Intelligenzwürfe (Arkane Kunde oder Religion). Dieser Bonus entspricht deinem Weisheitsmodifikator (mindestens +1).",
+      "grants": [
+        {
+          "type": "choice",
+          "choose": 1,
+          "options": [
+            {
+              "id": "divine-order-protector",
+              "name_en": "Protector",
+              "name_de": "Beschützer",
+              "text_en": "Trained for battle, you gain proficiency with Martial weapons and training with Heavy armor.",
+              "text_de": "Du wurdest für den Kampf ausgebildet, daher hast du Übung im Umgang mit Kriegswaffen und Vertrautheit mit schwerer Rüstung.",
+              "grants": [
+                {
+                  "type": "weapon_proficiency",
+                  "weapons": [
+                    "martial"
+                  ]
+                },
+                {
+                  "type": "armor_proficiency",
+                  "armor": [
+                    "heavy"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "divine-order-thaumaturge",
+              "name_en": "Thaumaturge",
+              "name_de": "Thaumaturg",
+              "text_en": "You know one extra cantrip from the Cleric spell list. In addition, your mystical connection to the divine gives you a bonus to your Intelligence (Arcana or Religion) checks. The bonus equals your Wisdom modifier (minimum of +1).",
+              "text_de": "Du kennst einen zusätzlichen Zaubertrick aus der Zauberliste des Klerikers. Außerdem gibt dir deine mystische Verbindung mit dem Göttlichen einen Bonus auf deine Intelligenzwürfe (Arkane Kunde oder Religion). Dieser Bonus entspricht deinem Weisheitsmodifikator (mindestens +1).",
+              "grants": [
+                {
+                  "type": "spellcasting",
+                  "cantrips": {
+                    "bonus_count": 1,
+                    "source": "cleric_spell_list"
+                  }
+                },
+                {
+                  "type": "ability_check_bonus",
+                  "skills": [
+                    "arcana",
+                    "religion"
+                  ],
+                  "ability": "intelligence",
+                  "value": {
+                    "equals": "wisdom_modifier",
+                    "minimum": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cleric-channel-divinity",
+      "owner_type": "class",
+      "owner_id": "cleric",
+      "level": 2,
+      "name_en": "Channel Divinity",
+      "name_de": "Göttliche Macht fokussieren",
+      "player_choice": false,
+      "text_en": "You can channel divine energy directly from the Outer Planes to fuel magical effects. You start with two such effects: Divine Spark and Turn Undead, each described as separate features. Each time you use this class's Channel Divinity, choose which Channel Divinity effect to create.\n\nYou can use this class's Channel Divinity twice. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. You gain additional uses at higher Cleric levels, as shown in the Channel Divinity column of the Cleric Features table.\n\nIf a Channel Divinity effect requires a saving throw, the DC equals the spell save DC from this class's Spellcasting feature.",
+      "text_de": "Du kannst göttliche Energie direkt von den Äußeren Ebenen kanalisieren, um magische Effekte zu wirken. Du beginnst mit zwei solchen Effekten: Göttlicher Funke und Untote vertreiben (beide als separate Merkmale beschrieben). Wann immer du Göttliche Macht fokussieren einsetzt, wählst du, welchen Effekt du bewirkst.\n\nDu kannst Göttliche Macht fokussieren zweimal anwenden. Du erhältst eine verbrauchte Anwendung nach einer kurzen Rast zurück. Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück. Auf höheren Klerikerstufen erhältst du zusätzliche Anwendungen.\n\nWenn ein Effekt von Göttliche Macht fokussieren einen Rettungswurf erfordert, entspricht der SG dem Zauberrettungswurf-SG des Merkmals Zauberwirken.",
+      "grants": [
+        {
+          "type": "uses_resource",
+          "resource": "channel_divinity_uses",
+          "recharge": [
+            {
+              "amount": 1,
+              "recharge": "short_rest"
+            },
+            {
+              "amount": "all",
+              "recharge": "long_rest"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cleric-divine-spark",
+      "owner_type": "class",
+      "owner_id": "cleric",
+      "level": 2,
+      "name_en": "Divine Spark",
+      "name_de": "Göttlicher Funke",
+      "player_choice": true,
+      "choice_prompt_en": "When you use Divine Spark, choose whether to restore Hit Points or deal damage (Necrotic or Radiant).",
+      "choice_prompt_de": "Wenn du Göttlicher Funke einsetzt, wähle ob du Trefferpunkte wiederherstellen oder Schaden (nekrotisch oder gleißend) verursachen möchtest.",
+      "text_en": "As a Magic action, you point your Holy Symbol at another creature you can see within 30 feet of yourself and focus divine energy at it. Roll a number of d8s equal to the dice shown for your Cleric level and add your Wisdom modifier. You either restore Hit Points to the creature equal to that total or force the creature to make a Constitution saving throw. On a failed save, the creature takes Necrotic or Radiant damage (your choice) equal to that total. On a successful save, the creature takes half as much damage (round down).\n\nThe number of dice increases as you gain Cleric levels: 1d8 (levels 2–6), 2d8 (levels 7–12), 3d8 (levels 13–17), 4d8 (levels 18–20).",
+      "text_de": "Als magische Aktion richtest du dein heiliges Symbol auf eine andere Kreatur im Abstand von bis zu neun Metern von dir, die du sehen kannst, und fokussierst göttliche Energie auf sie. Würfle mit einer Anzahl von W8, die deiner Klerikerstufe entspricht, und füge deinen Weisheitsmodifikator hinzu. Nach deiner Wahl stellt die Kreatur entweder Trefferpunkte in Höhe des Gesamtergebnisses wieder her, oder sie muss einen Konstitutionsrettungswurf ablegen. Scheitert der Wurf, erleidet die Kreatur gleißenden oder nekrotischen Schaden (nach deiner Wahl) in Höhe des Gesamtergebnisses. Bei einem erfolgreichen Rettungswurf erleidet die Kreatur halb so viel Schaden (abgerundet).\n\nDie Anzahl der Würfel steigt mit der Klerikerstufe: 1W8 (Stufen 2–6), 2W8 (Stufen 7–12), 3W8 (Stufen 13–17), 4W8 (Stufen 18–20).",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "magic_action",
+          "uses_resource": "channel_divinity_uses",
+          "range_feet": 30,
+          "target_condition": "you_can_see",
+          "effect": {
+            "type": "choice",
+            "options": [
+              {
+                "id": "divine-spark-heal",
+                "name_en": "Restore Hit Points",
+                "name_de": "Trefferpunkte wiederherstellen",
+                "grants": [
+                  {
+                    "type": "heal_target",
+                    "value": {
+                      "dice": {
+                        "count_from_resource": "divine_spark_dice",
+                        "die": "d8"
+                      },
+                      "flat_modifier": "wisdom_modifier"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "divine-spark-damage",
+                "name_en": "Deal Damage",
+                "name_de": "Schaden verursachen",
+                "grants": [
+                  {
+                    "type": "triggered_saving_throw",
+                    "ability": "constitution",
+                    "dc": "spell_save_dc",
+                    "on_failure": {
+                      "type": "damage",
+                      "damage_type_choice": [
+                        "necrotic",
+                        "radiant"
+                      ],
+                      "value": {
+                        "dice": {
+                          "count_from_resource": "divine_spark_dice",
+                          "die": "d8"
+                        },
+                        "flat_modifier": "wisdom_modifier"
+                      }
+                    },
+                    "on_success": {
+                      "type": "damage",
+                      "damage_type_choice": [
+                        "necrotic",
+                        "radiant"
+                      ],
+                      "value": {
+                        "dice": {
+                          "count_from_resource": "divine_spark_dice",
+                          "die": "d8"
+                        },
+                        "flat_modifier": "wisdom_modifier",
+                        "half": true
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cleric-turn-undead",
+      "owner_type": "class",
+      "owner_id": "cleric",
+      "level": 2,
+      "name_en": "Turn Undead",
+      "name_de": "Untote vertreiben",
+      "player_choice": false,
+      "text_en": "As a Magic action, you present your Holy Symbol and censure Undead creatures. Each Undead of your choice within 30 feet of you must make a Wisdom saving throw. If the creature fails its save, it has the Frightened and Incapacitated conditions for 1 minute. For that duration, it tries to move as far from you as it can on its turns. This effect ends early on the creature if it takes any damage, if you have the Incapacitated condition, or if you die.",
+      "text_de": "Als magische Aktion präsentierst du dein heiliges Symbol und rügst untote Kreaturen. Jeder Untote deiner Wahl im Abstand von bis zu neun Metern von dir muss einen Weisheitsrettungswurf ausführen. Scheitert der Wurf, so ist die Kreatur eine Minute lang verängstigt und kampfunfähig. Während dieser Dauer versucht sie in ihren Zügen, sich so weit wie möglich von dir zu entfernen. Dieser Effekt endet vorzeitig, wenn die Kreatur Schaden erleidet, wenn du kampfunfähig wirst oder wenn du stirbst.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "magic_action",
+          "uses_resource": "channel_divinity_uses",
+          "area": {
+            "type": "emanation",
+            "radius_feet": 30
+          },
+          "targets": "undead_of_choice",
+          "saving_throw": {
+            "ability": "wisdom",
+            "dc": "spell_save_dc"
+          },
+          "on_failure": {
+            "type": "apply_conditions",
+            "conditions": [
+              "frightened",
+              "incapacitated"
+            ],
+            "duration": "1_minute",
+            "forced_movement": "maximum_distance_from_caster",
+            "end_conditions": [
+              "takes_any_damage",
+              "caster_incapacitated",
+              "caster_dies"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cleric-subclass",
+      "owner_type": "class",
+      "owner_id": "cleric",
+      "level": 3,
+      "name_en": "Cleric Subclass",
+      "name_de": "Kleriker-Unterklasse",
+      "player_choice": true,
+      "choice_prompt_en": "Choose a Cleric subclass: Life Domain, Light Domain, Trickery Domain, or War Domain.",
+      "choice_prompt_de": "Wähle eine Kleriker-Unterklasse: Domäne des Lebens, Domäne des Lichts, Domäne der List oder Domäne des Krieges.",
+      "text_en": "You gain a Cleric subclass of your choice. The Life Domain, Light Domain, Trickery Domain, and War Domain subclasses are detailed after this class's description. A subclass is a specialization that grants you features at certain Cleric levels. For the rest of your career, you gain each of your subclass's features that are of your Cleric level or lower.",
+      "text_de": "Du erhältst eine Kleriker-Unterklasse deiner Wahl. Die Unterklassen Domäne des Krieges, Domäne des Lebens, Domäne des Lichts und Domäne der List werden nach der Beschreibung dieser Klasse erläutert. Unterklassen sind Spezialisierungen, die dir auf bestimmten Klerikerstufen Merkmale gewähren. Du erhältst für den Rest deiner Laufbahn alle Merkmale deiner Unterklasse, die zu deiner aktuellen Klerikerstufe oder den niedrigeren Stufen gehören.",
+      "grants": [
+        {
+          "type": "subclass_choice",
+          "class_id": "cleric"
+        }
+      ]
+    },
+    {
+      "id": "cleric-asi-4",
+      "owner_type": "class",
+      "owner_id": "cleric",
+      "level": 4,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify. You gain this feature again at Cleric levels 8, 12, and 16.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung (siehe Kapitel 5) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Du erhältst dieses Merkmal auf der 8., 12. und 16. Klerikerstufe erneut.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "cleric-sear-undead",
+      "owner_type": "class",
+      "owner_id": "cleric",
+      "level": 5,
+      "name_en": "Sear Undead",
+      "name_de": "Untote versengen",
+      "player_choice": false,
+      "text_en": "Whenever you use Turn Undead, you can roll a number of d8s equal to your Wisdom modifier (minimum of 1d8) and add the rolls together. Each Undead that fails its saving throw against that use of Turn Undead takes Radiant damage equal to the roll's total. This damage doesn't end the turn effect.",
+      "text_de": "Wann immer du Untote vertreiben einsetzt, kannst du mit einer Anzahl W8 in Höhe deines Weisheitsmodifikators (mindestens 1W8) würfeln und die Ergebnisse addieren. Jeder Untote, dessen Rettungswurf gegen diesen Einsatz von Untote vertreiben scheitert, erleidet gleißenden Schaden in Höhe des Gesamtergebnisses. Dieser Schaden beendet nicht den Effekt von Untote vertreiben.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "use_turn_undead",
+          "optional": true,
+          "effect": {
+            "type": "damage",
+            "damage_type": "radiant",
+            "targets": "undead_that_failed_turn_undead_save",
+            "value": {
+              "dice": {
+                "count_from_resource": "sear_undead_dice",
+                "die": "d8"
+              }
+            },
+            "note": "does not end the Turn Undead effect"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cleric-blessed-strikes",
+      "owner_type": "class",
+      "owner_id": "cleric",
+      "level": 7,
+      "name_en": "Blessed Strikes",
+      "name_de": "Gesegnete Schläge",
+      "player_choice": true,
+      "choice_prompt_en": "Choose one option: Divine Strike or Potent Spellcasting.",
+      "choice_prompt_de": "Wähle eine Option: Göttlicher Schlag oder Verstärkte Zaubertricks.",
+      "text_en": "Divine power infuses you in battle. You gain one of the following options of your choice.\n\nDivine Strike. Once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra 1d8 Necrotic or Radiant damage (your choice).\n\nPotent Spellcasting. Add your Wisdom modifier to the damage you deal with any Cleric cantrip.",
+      "text_de": "Göttliche Macht erfüllt dich im Kampf. Du erhältst eine der folgenden Optionen nach deiner Wahl.\n\nGöttlicher Schlag: Einmal in jedem deiner Züge kannst du, wenn du eine Kreatur bei einem Angriffswurf mit einer Waffe triffst, dem Ziel zusätzlich 1W8 gleißenden oder nekrotischen Schaden (nach deiner Wahl) zufügen.\n\nVerstärkte Zaubertricks: Füge dem Schaden, den du mit Klerikerzaubertricks bewirkst, deinen Weisheitsmodifikator hinzu.",
+      "grants": [
+        {
+          "type": "choice",
+          "choose": 1,
+          "options": [
+            {
+              "id": "blessed-strikes-divine-strike",
+              "name_en": "Divine Strike",
+              "name_de": "Göttlicher Schlag",
+              "text_en": "Once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra 1d8 Necrotic or Radiant damage (your choice).",
+              "text_de": "Einmal in jedem deiner Züge kannst du, wenn du eine Kreatur bei einem Angriffswurf mit einer Waffe triffst, dem Ziel zusätzlich 1W8 gleißenden oder nekrotischen Schaden (nach deiner Wahl) zufügen.",
+              "grants": [
+                {
+                  "type": "on_hit_effect",
+                  "attack_type": "weapon",
+                  "once_per_turn": true,
+                  "optional": true,
+                  "effect": {
+                    "type": "damage",
+                    "damage_type_choice": [
+                      "necrotic",
+                      "radiant"
+                    ],
+                    "value": {
+                      "dice": "1d8"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "blessed-strikes-potent-spellcasting",
+              "name_en": "Potent Spellcasting",
+              "name_de": "Verstärkte Zaubertricks",
+              "text_en": "Add your Wisdom modifier to the damage you deal with any Cleric cantrip.",
+              "text_de": "Füge dem Schaden, den du mit Klerikerzaubertricks bewirkst, deinen Weisheitsmodifikator hinzu.",
+              "grants": [
+                {
+                  "type": "damage_bonus",
+                  "value": "wisdom_modifier",
+                  "condition": "cleric_cantrip_damage"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cleric-asi-8",
+      "owner_type": "class",
+      "owner_id": "cleric",
+      "level": 8,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung (siehe Kapitel 5) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "cleric-divine-intervention",
+      "owner_type": "class",
+      "owner_id": "cleric",
+      "level": 10,
+      "name_en": "Divine Intervention",
+      "name_de": "Göttliche Intervention",
+      "player_choice": false,
+      "text_en": "You can call on your deity or pantheon to intervene on your behalf. As a Magic action, choose any Cleric spell of level 5 or lower that doesn't require a Reaction to cast. As part of the same action, you cast that spell without expending a spell slot or needing Material components. You can't use this feature again until you finish a Long Rest.",
+      "text_de": "Du kannst deine Gottheit oder dein Pantheon anrufen, damit es in deinem Sinne eingreift. Wähle als magische Aktion einen beliebigen Klerikerzauber des höchstens 5. Grades aus, den zu wirken keine Reaktion erfordert. Als Teil derselben Aktion wirkst du diesen Zauber, ohne einen Zauberplatz zu verbrauchen oder Materialkomponenten zu benötigen. Du kannst dieses Merkmal erst nach einer langen Rast erneut verwenden.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "magic_action",
+          "recharge": "long_rest",
+          "effect": {
+            "type": "cast_spell",
+            "spell_source": "cleric_spell_list",
+            "max_level": 5,
+            "restriction": "no_reaction_casting_time",
+            "cost": "no_spell_slot",
+            "components_override": {
+              "material": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cleric-asi-12",
+      "owner_type": "class",
+      "owner_id": "cleric",
+      "level": 12,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung (siehe Kapitel 5) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "cleric-improved-blessed-strikes",
+      "owner_type": "class",
+      "owner_id": "cleric",
+      "level": 14,
+      "name_en": "Improved Blessed Strikes",
+      "name_de": "Verbesserte Gesegnete Schläge",
+      "player_choice": false,
+      "text_en": "The option you chose for Blessed Strikes grows more powerful.\n\nDivine Strike. The extra damage of your Divine Strike increases to 2d8.\n\nPotent Spellcasting. When you cast a Cleric cantrip and deal damage to a creature with it, you can give vitality to yourself or another creature within 60 feet of yourself, granting a number of Temporary Hit Points equal to twice your Wisdom modifier.",
+      "text_de": "Die Option, die du für Gesegnete Schläge ausgewählt hast, wird mächtiger.\n\nGöttlicher Schlag: Der zusätzliche Schaden deines Göttlichen Schlags ist auf 2W8 erhöht.\n\nVerstärkte Zaubertricks: Wenn du einen Klerikerzaubertrick wirkst und einer Kreatur damit Schaden zufügst, kannst du dir selbst oder einer anderen Kreatur im Abstand von bis zu 18 Metern von dir Lebenskraft geben, die eine Anzahl von temporären Trefferpunkten in doppelter Höhe deines Weisheitsmodifikators gewährt.",
+      "grants": [
+        {
+          "type": "choice_upgrade",
+          "choice_feature_id": "cleric-blessed-strikes",
+          "option_upgrades": [
+            {
+              "option_id": "blessed-strikes-divine-strike",
+              "modifications": {
+                "extra_damage": {
+                  "dice": "2d8"
+                }
+              }
+            },
+            {
+              "option_id": "blessed-strikes-potent-spellcasting",
+              "adds_grants": [
+                {
+                  "type": "triggered_effect",
+                  "trigger": "deal_damage_with_cleric_cantrip",
+                  "optional": true,
+                  "effect": {
+                    "type": "grant_temporary_hit_points",
+                    "target": "self_or_creature_within_60ft",
+                    "value": {
+                      "multiplier": 2,
+                      "of": "wisdom_modifier"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cleric-asi-16",
+      "owner_type": "class",
+      "owner_id": "cleric",
+      "level": 16,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat (see chapter 5) or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung (siehe Kapitel 5) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "cleric-epic-boon",
+      "owner_type": "class",
+      "owner_id": "cleric",
+      "level": 19,
+      "name_en": "Epic Boon",
+      "name_de": "Epische Gabe",
+      "player_choice": true,
+      "choice_prompt_en": "Gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Fate is recommended.",
+      "choice_prompt_de": "Erhalte ein Epische-Gabe-Talent oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Gabe des Schicksals wird empfohlen.",
+      "text_en": "You gain an Epic Boon feat (see chapter 5) or another feat of your choice for which you qualify. Boon of Fate is recommended.",
+      "text_de": "Du erhältst ein Epische-Gabe-Talent (siehe Kapitel 5) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Gabe des Schicksals wird empfohlen.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "feat_category": "epic_boon",
+          "recommended": "boon_of_fate"
+        }
+      ]
+    },
+    {
+      "id": "cleric-greater-divine-intervention",
+      "owner_type": "class",
+      "owner_id": "cleric",
+      "level": 20,
+      "name_en": "Greater Divine Intervention",
+      "name_de": "Mächtige Göttliche Intervention",
+      "player_choice": false,
+      "text_en": "You can call on even more powerful divine intervention. When you use your Divine Intervention feature, you can choose Wish when you select a spell. If you do so, you can't use Divine Intervention again until you finish 2d4 Long Rests.",
+      "text_de": "Du kannst um noch mächtigere Göttliche Intervention bitten. Wenn du dein Merkmal Göttliche Intervention einsetzt, kannst du den Zauber Wunsch auswählen. In diesem Fall kannst du Göttliche Intervention erst nach 2W4 langen Rasten erneut einsetzen.",
+      "grants": [
+        {
+          "type": "choice_upgrade",
+          "choice_feature_id": "cleric-divine-intervention",
+          "modifications": {
+            "spell_source_expansion": [
+              "wish"
+            ],
+            "conditional_recharge_override": {
+              "condition": "wish_was_chosen",
+              "recharge": {
+                "type": "long_rest_multiple",
+                "dice": "2d4"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "subclass_features": [
+    {
+      "id": "life-domain-spells",
+      "owner_type": "subclass",
+      "owner_id": "cleric-life-domain",
+      "level": 3,
+      "name_en": "Life Domain Spells",
+      "name_de": "Domänenzauber des Lebens",
+      "player_choice": false,
+      "text_en": "Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Life Domain Spells table, you thereafter always have the listed spells prepared.\n\nLevel 3: Aid, Bless, Cure Wounds, Lesser Restoration\nLevel 5: Mass Healing Word, Revivify\nLevel 7: Aura of Life, Death Ward\nLevel 9: Greater Restoration, Mass Cure Wounds",
+      "text_de": "Deine Verbindung mit dieser göttlichen Domäne sorgt dafür, dass du bestimmte Zauber stets bereithalten kannst. Wenn du eine Klerikerstufe erreichst, die in der Tabelle „Domänenzauber des Lebens“ aufgeführt ist, hast du die aufgeführten Zauber fortan stets vorbereitet.\n\nStufe 3: Beistand, Schwache Genesung, Segnen, Wunden heilen\nStufe 5: Massen-Heilendes Wort, Wiederbeleben\nStufe 7: Aura des Lebens, Todesschutz\nStufe 9: Massen-Wunden heilen, Vollständige Genesung",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "aid",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "bless",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "cure-wounds",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "lesser-restoration",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "mass-healing-word",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "revivify",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "aura-of-life",
+          "class_level_threshold": 7
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "death-ward",
+          "class_level_threshold": 7
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "greater-restoration",
+          "class_level_threshold": 9
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "mass-cure-wounds",
+          "class_level_threshold": 9
+        }
+      ]
+    },
+    {
+      "id": "life-disciple-of-life",
+      "owner_type": "subclass",
+      "owner_id": "cleric-life-domain",
+      "level": 3,
+      "name_en": "Disciple of Life",
+      "name_de": "Jünger des Lebens",
+      "player_choice": false,
+      "text_en": "When a spell you cast with a spell slot restores Hit Points to a creature, that creature regains additional Hit Points on the turn you cast the spell. The additional Hit Points equal 2 plus the spell slot's level.",
+      "text_de": "Wenn ein Zauber, den du mit einem Zauberplatz wirkst, Trefferpunkte bei einer Kreatur wiederherstellt, erhält diese Kreatur in dem Zug, in dem du den Zauber wirkst, zusätzliche Trefferpunkte zurück. Die zusätzlichen Trefferpunkte betragen 2 plus Zauberplatzgrad.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "cast_spell_with_spell_slot_that_restores_hp",
+          "effect": {
+            "type": "bonus_healing",
+            "value": {
+              "base": 2,
+              "plus_spell_slot_level": true
+            },
+            "timing": "same_turn_as_cast"
+          }
+        }
+      ]
+    },
+    {
+      "id": "life-preserve-life",
+      "owner_type": "subclass",
+      "owner_id": "cleric-life-domain",
+      "level": 3,
+      "name_en": "Preserve Life",
+      "name_de": "Leben erhalten",
+      "player_choice": false,
+      "text_en": "As a Magic action, you present your Holy Symbol and expend a use of your Channel Divinity to evoke healing energy that can restore a number of Hit Points equal to five times your Cleric level.\n\nChoose Bloodied creatures within 30 feet of yourself (which can include you), and divide those Hit Points among them. This feature can restore a creature to no more than half its Hit Point maximum.",
+      "text_de": "Als magische Aktion zeigst du dein heiliges Symbol und verbrauchst eine Anwendung von Göttliche Macht fokussieren, um heilende Energie zu beschwören, mit der sich Trefferpunkte in Höhe des Fünffachen deiner Klerikerstufe wiederherstellen lassen. Wähle blutige Kreaturen im Abstand von bis zu neun Metern von dir aus (auch du selbst kannst ein Ziel sein), und teile diese Trefferpunkte unter ihnen auf. Dieses Merkmal kann keine Trefferpunkte über die Hälfte des Trefferpunktemaximums hinaus wiederherstellen.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "magic_action",
+          "uses_resource": "channel_divinity_uses",
+          "area": {
+            "type": "emanation",
+            "radius_feet": 30
+          },
+          "targets": "bloodied_creatures_of_choice",
+          "effect": {
+            "type": "distribute_healing",
+            "total_value": {
+              "multiplier": 5,
+              "of": "cleric_level"
+            },
+            "cap_per_target": "half_hit_point_maximum"
+          }
+        }
+      ]
+    },
+    {
+      "id": "life-blessed-healer",
+      "owner_type": "subclass",
+      "owner_id": "cleric-life-domain",
+      "level": 6,
+      "name_en": "Blessed Healer",
+      "name_de": "Gesegneter Heiler",
+      "player_choice": false,
+      "text_en": "The healing spells you cast on others heal you as well. Immediately after you cast a spell with a spell slot that restores Hit Points to one or more creatures other than yourself, you regain Hit Points equal to 2 plus the spell slot's level.",
+      "text_de": "Die Heilzauber, die du auf andere wirkst, wirken auch auf dich. Sofort, nachdem du einen Zauber mit einem Zauberplatz gewirkt hast, der Trefferpunkte bei mindestens einer Kreatur außer dir selbst wiederherstellt, erhältst du Trefferpunkte in Höhe von 2 plus Zauberplatzgrad zurück.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "cast_spell_with_slot_that_heals_other_creature",
+          "effect": {
+            "type": "heal_self",
+            "value": {
+              "base": 2,
+              "plus_spell_slot_level": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "life-supreme-healing",
+      "owner_type": "subclass",
+      "owner_id": "cleric-life-domain",
+      "level": 17,
+      "name_en": "Supreme Healing",
+      "name_de": "Höchste Heilung",
+      "player_choice": false,
+      "text_en": "When you would normally roll one or more dice to restore Hit Points to a creature with a spell or Channel Divinity, don't roll those dice for the healing; instead use the highest number possible for each die. For example, instead of restoring 2d6 Hit Points to a creature with a spell, you restore 12.",
+      "text_de": "Wenn du normalerweise mit mindestens einem Würfel würfeln würdest, um mit einem Zauber oder Göttliche Macht fokussieren Trefferpunkte einer Kreatur wiederherzustellen, so verwendest du stattdessen die höchstmöglichen Ergebnisse der Würfel. Anstatt beispielsweise mit einem Zauber 2W6 Trefferpunkte bei einer Kreatur wiederherzustellen, stellst du 12 Trefferpunkte wieder her.",
+      "grants": [
+        {
+          "type": "minimum_roll_override",
+          "applies_to": [
+            "healing_spell_dice",
+            "channel_divinity_healing_dice"
+          ],
+          "minimum": "maximum_die_value"
+        }
+      ]
+    },
+    {
+      "id": "light-domain-spells",
+      "owner_type": "subclass",
+      "owner_id": "cleric-light-domain",
+      "level": 3,
+      "name_en": "Light Domain Spells",
+      "name_de": "Domänenzauber des Lichts",
+      "player_choice": false,
+      "text_en": "Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Light Domain Spells table, you thereafter always have the listed spells prepared.\n\nLevel 3: Burning Hands, Faerie Fire, Scorching Ray, See Invisibility\nLevel 5: Daylight, Fireball\nLevel 7: Arcane Eye, Wall of Fire\nLevel 9: Flame Strike, Scrying",
+      "text_de": "Deine Verbindung mit dieser göttlichen Domäne sorgt dafür, dass du bestimmte Zauber stets bereithalten kannst. Wenn du eine Klerikerstufe erreichst, die in der Tabelle „Domänenzauber des Lichts“ aufgeführt ist, hast du die aufgeführten Zauber fortan stets vorbereitet.\n\nStufe 3: Brennende Hände, Feenfeuer, Sengender Strahl, Unsichtbares sehen\nStufe 5: Feuerball, Tageslicht\nStufe 7: Arkanes Auge, Feuerwand\nStufe 9: Ausspähung, Flammenschlag",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "burning-hands",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "faerie-fire",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "scorching-ray",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "see-invisibility",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "daylight",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "fireball",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "arcane-eye",
+          "class_level_threshold": 7
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "wall-of-fire",
+          "class_level_threshold": 7
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "flame-strike",
+          "class_level_threshold": 9
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "scrying",
+          "class_level_threshold": 9
+        }
+      ]
+    },
+    {
+      "id": "light-warding-flare",
+      "owner_type": "subclass",
+      "owner_id": "cleric-light-domain",
+      "level": 3,
+      "name_en": "Warding Flare",
+      "name_de": "Schützendes Flackern",
+      "player_choice": false,
+      "text_en": "When a creature that you can see within 30 feet of yourself makes an attack roll, you can take a Reaction to impose Disadvantage on the attack roll, causing light to flare before it hits or misses.\n\nYou can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.",
+      "text_de": "Wenn eine Kreatur im Abstand von bis zu neun Metern von dir, die du sehen kannst, einen Angriffswurf ausführt, kannst du eine Reaktion ausführen, um den Angriffswurf im Nachteil sein zu lassen und Licht flackern zu lassen, bevor er sein Ziel trifft oder verfehlt.\n\nDie Anzahl der möglichen Anwendungen dieser Fähigkeit entspricht deinem Weisheitsmodifikator (mindestens einmal). Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "reaction",
+          "trigger": "creature_within_30ft_makes_attack_roll",
+          "condition": "you_can_see_creature",
+          "uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          },
+          "recharge": "long_rest",
+          "effect": {
+            "type": "impose_disadvantage",
+            "on": "triggering_attack_roll"
+          }
+        }
+      ]
+    },
+    {
+      "id": "light-radiance-of-the-dawn",
+      "owner_type": "subclass",
+      "owner_id": "cleric-light-domain",
+      "level": 3,
+      "name_en": "Radiance of the Dawn",
+      "name_de": "Strahlen des Sonnenaufgangs",
+      "player_choice": false,
+      "text_en": "As a Magic action, you present your Holy Symbol and expend a use of your Channel Divinity to emit a flash of light in a 30-foot Emanation originating from yourself. Any magical Darkness in that area is dispelled.\n\nAdditionally, each creature of your choice in that area must make a Constitution saving throw, taking Radiant damage equal to 2d10 plus your Cleric level on a failed save or half as much damage on a successful one.",
+      "text_de": "Als magische Aktion präsentierst du dein heiliges Symbol und verbrauchst eine Anwendung von Göttliche Macht fokussieren, um einen Lichtblitz in einer Ausströmung von neun Metern zu erzeugen, die von dir ausgeht. Jede magische Dunkelheit in diesem Bereich wird aufgelöst.\n\nAußerdem muss jede Kreatur deiner Wahl in diesem Bereich einen Konstitutionsrettungswurf ausführen. Scheitert der Wurf, erleidet sie gleißenden Schaden in Höhe von 2W10 plus deiner Klerikerstufe, anderenfalls die Hälfte.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "magic_action",
+          "uses_resource": "channel_divinity_uses",
+          "area": {
+            "type": "emanation",
+            "radius_feet": 30
+          },
+          "dispel": {
+            "type": "magical_darkness",
+            "within_area": true
+          },
+          "targets": "creatures_of_choice_in_area",
+          "saving_throw": {
+            "ability": "constitution",
+            "dc": "spell_save_dc"
+          },
+          "on_failure": {
+            "type": "damage",
+            "damage_type": "radiant",
+            "value": {
+              "dice": "2d10",
+              "flat_modifier": "cleric_level"
+            }
+          },
+          "on_success": {
+            "type": "damage",
+            "damage_type": "radiant",
+            "value": {
+              "dice": "2d10",
+              "flat_modifier": "cleric_level",
+              "half": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "light-improved-warding-flare",
+      "owner_type": "subclass",
+      "owner_id": "cleric-light-domain",
+      "level": 6,
+      "name_en": "Improved Warding Flare",
+      "name_de": "Verbessertes Schützendes Flackern",
+      "player_choice": false,
+      "text_en": "You regain all expended uses of your Warding Flare when you finish a Short or Long Rest.\n\nIn addition, whenever you use Warding Flare, you can give the target of the triggering attack a number of Temporary Hit Points equal to 2d6 plus your Wisdom modifier.",
+      "text_de": "Du erhältst alle verbrauchten Anwendungen deines Schützenden Flackerns nach einer kurzen oder langen Rast zurück.\n\nAußerdem kannst du bei jedem Einsatz von Schützendes Flackern dem Ziel des auslösenden Angriffs eine Anzahl von temporären Trefferpunkten in Höhe von 2W6 plus deinem Weisheitsmodifikator gewähren.",
+      "grants": [
+        {
+          "type": "recharge_modifier",
+          "feature_id": "light-warding-flare",
+          "new_recharge": [
+            "short_rest",
+            "long_rest"
+          ]
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "use_warding_flare",
+          "optional": true,
+          "effect": {
+            "type": "grant_temporary_hit_points",
+            "target": "target_of_triggering_attack",
+            "value": {
+              "dice": "2d6",
+              "flat_modifier": "wisdom_modifier"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "light-corona-of-light",
+      "owner_type": "subclass",
+      "owner_id": "cleric-light-domain",
+      "level": 17,
+      "name_en": "Corona of Light",
+      "name_de": "Korona des Lichts",
+      "player_choice": false,
+      "text_en": "As a Magic action, you cause yourself to emit an aura of sunlight that lasts for 1 minute or until you dismiss it (no action required). You emit Bright Light in a 60-foot radius and Dim Light for an additional 30 feet.\n\nYour enemies in the Bright Light have Disadvantage on saving throws against your Radiance of the Dawn and any spell that deals Fire or Radiant damage.\n\nYou can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.",
+      "text_de": "Als magische Aktion versiehst du dich mit einer Aura aus Sonnenlicht, die eine Minute lang bestehen bleibt oder bis du sie verwirfst (keine Aktion erforderlich). Du spendest in einem Radius von 18 Metern helles Licht und in einem Radius von weiteren neun Metern dämmriges Licht.\n\nGegner im hellen Licht sind bei Rettungswürfen gegen dein Strahlen des Sonnenaufgangs sowie jeden Zauber, der Feuer- oder gleißenden Schaden bewirkt, im Nachteil.\n\nDie Anzahl der möglichen Anwendungen dieses Merkmals entspricht deinem Weisheitsmodifikator (mindestens einmal). Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück.",
+      "grants": [
+        {
+          "type": "state",
+          "state_id": "corona_of_light",
+          "activation": "magic_action",
+          "duration": "1_minute",
+          "end_conditions": [
+            "dismissed"
+          ],
+          "uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          },
+          "recharge": "long_rest"
+        },
+        {
+          "type": "aura",
+          "aura_id": "corona_bright_light",
+          "radius_feet": 60,
+          "light_level": "bright",
+          "while_state": "corona_of_light"
+        },
+        {
+          "type": "aura",
+          "aura_id": "corona_dim_light",
+          "radius_feet": 90,
+          "light_level": "dim",
+          "while_state": "corona_of_light"
+        },
+        {
+          "type": "disadvantage_on_enemies",
+          "on": "saving_throws",
+          "against": [
+            "light-radiance-of-the-dawn",
+            "spells_dealing_fire_or_radiant_damage"
+          ],
+          "condition": "enemy_in_corona_bright_light",
+          "while_state": "corona_of_light"
+        }
+      ]
+    },
+    {
+      "id": "trickery-domain-spells",
+      "owner_type": "subclass",
+      "owner_id": "cleric-trickery-domain",
+      "level": 3,
+      "name_en": "Trickery Domain Spells",
+      "name_de": "Domänenzauber der List",
+      "player_choice": false,
+      "text_en": "Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Trickery Domain Spells table, you thereafter always have the listed spells prepared.\n\nLevel 3: Charm Person, Disguise Self, Invisibility, Pass without Trace\nLevel 5: Hypnotic Pattern, Nondetection\nLevel 7: Confusion, Dimension Door\nLevel 9: Dominate Person, Modify Memory",
+      "text_de": "Deine Verbindung mit dieser göttlichen Domäne sorgt dafür, dass du bestimmte Zauber stets bereithalten kannst. Wenn du eine Klerikerstufe erreichst, die in der Tabelle „Domänenzauber der List“ aufgeführt ist, hast du die aufgeführten Zauber fortan stets vorbereitet.\n\nStufe 3: Person bezaubern, Selbstverkleidung, Spurloses Gehen, Unsichtbarkeit\nStufe 5: Hypnotisches Muster, Unauffindbarkeit\nStufe 7: Dimensionstür, Verwirrung\nStufe 9: Erinnerung verändern, Person beherrschen",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "charm-person",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "disguise-self",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "invisibility",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "pass-without-trace",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "hypnotic-pattern",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "nondetection",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "confusion",
+          "class_level_threshold": 7
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "dimension-door",
+          "class_level_threshold": 7
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "dominate-person",
+          "class_level_threshold": 9
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "modify-memory",
+          "class_level_threshold": 9
+        }
+      ]
+    },
+    {
+      "id": "trickery-blessing-of-the-trickster",
+      "owner_type": "subclass",
+      "owner_id": "cleric-trickery-domain",
+      "level": 3,
+      "name_en": "Blessing of the Trickster",
+      "name_de": "Segen der List",
+      "player_choice": false,
+      "text_en": "As a Magic action, you can choose yourself or a willing creature within 30 feet of yourself to have Advantage on Dexterity (Stealth) checks. This blessing lasts until you finish a Long Rest or you use this feature again.",
+      "text_de": "Als magische Aktion kannst du dich selbst oder eine bereitwillige Kreatur im Abstand von bis zu neun Metern von dir auswählen. Das Ziel ist bei Geschicklichkeitswürfen (Heimlichkeit) im Vorteil. Der Segen hält an, bis du eine lange Rast beendest oder das Merkmal erneut verwendest.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "magic_action",
+          "targets": "self_or_willing_creature_within_30ft",
+          "effect": {
+            "type": "advantage",
+            "on": [
+              "dexterity_stealth_checks"
+            ],
+            "duration": "until_long_rest_or_reuse"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trickery-invoke-duplicity",
+      "owner_type": "subclass",
+      "owner_id": "cleric-trickery-domain",
+      "level": 3,
+      "name_en": "Invoke Duplicity",
+      "name_de": "Abbild beschwören",
+      "player_choice": false,
+      "text_en": "As a Bonus Action, you can expend one use of your Channel Divinity to create a perfect visual illusion of yourself in an unoccupied space you can see within 30 feet of yourself. The illusion is intangible and doesn't occupy its space.\n\nIt lasts for 1 minute, but it ends early if you dismiss it (no action required) or have the Incapacitated condition. The illusion is animated and mimics your expressions and gestures.\n\nWhile it persists, you gain the following benefits.\n\nCast Spells. You can cast spells as though you were in the illusion's space, but you must use your own senses.\n\nDistract. When both you and your illusion are within 5 feet of a creature that can see the illusion, you have Advantage on attack rolls against that creature.\n\nMove. As a Bonus Action, you can move the illusion up to 30 feet to an unoccupied space you can see that is within 120 feet of yourself.",
+      "text_de": "Als Bonusaktion kannst du eine Anwendung von Göttliche Macht fokussieren verbrauchen, um eine visuell perfekte Illusion von dir in einem freien Bereich im Abstand von bis zu neun Metern von dir zu erzeugen, den du sehen kannst. Die Illusion kann nicht berührt werden und besetzt ihren Bereich nicht.\n\nSie bleibt eine Minute lang bestehen, verschwindet jedoch vorzeitig, wenn du sie verwirfst (keine Aktion erforderlich) oder kampfunfähig wirst. Die Illusion ist belebt und imitiert deine Gestik und Mimik.\n\nSolange sie besteht, erhältst du folgende Vorzüge.\n\nZauber wirken: Du kannst Zauber wirken, als befändest du dich im Bereich der Illusion, doch du musst dich deiner eigenen Sinne bedienen.\n\nAblenken: Wenn sich sowohl du als auch deine Illusion im Abstand von bis zu 1,5 Metern von einer Kreatur befinden, welche die Illusion sehen kann, bist du bei Angriffswürfen gegen diese Kreatur im Vorteil.\n\nBewegen: Als Bonusaktion kannst du die Illusion bis zu neun Meter weit in einen freien Bereich im Abstand von bis zu 36 Metern von dir bewegen, den du sehen kannst.",
+      "grants": [
+        {
+          "type": "state",
+          "state_id": "invoke_duplicity",
+          "activation": "bonus_action",
+          "uses_resource": "channel_divinity_uses",
+          "placement": "unoccupied_space_within_30ft_you_can_see",
+          "duration": "1_minute",
+          "end_conditions": [
+            "dismissed",
+            "incapacitated"
+          ]
+        },
+        {
+          "type": "spell_origin_override",
+          "origin": "illusion_space",
+          "restriction": "must_use_own_senses",
+          "while_state": "invoke_duplicity",
+          "note": "PRESSURE POINT: spell origin override — see Known Future Pressure Points in SCHEMA.md"
+        },
+        {
+          "type": "advantage",
+          "on": [
+            "attack_rolls"
+          ],
+          "condition": "self_and_illusion_both_within_5ft_of_target_that_can_see_illusion",
+          "while_state": "invoke_duplicity"
+        },
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "while_state": "invoke_duplicity",
+          "effect": {
+            "type": "move_illusion",
+            "illusion_state": "invoke_duplicity",
+            "distance_feet": 30,
+            "max_range_from_self_feet": 120,
+            "destination": "unoccupied_space_you_can_see"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trickery-tricksters-transposition",
+      "owner_type": "subclass",
+      "owner_id": "cleric-trickery-domain",
+      "level": 6,
+      "name_en": "Trickster's Transposition",
+      "name_de": "Listige Transposition",
+      "player_choice": false,
+      "text_en": "Whenever you take the Bonus Action to create or move the illusion of your Invoke Duplicity, you can teleport, swapping places with the illusion.",
+      "text_de": "Wann immer du die Bonusaktion ausführst, um die Illusion deines Merkmals Abbild beschwören zu erzeugen oder zu bewegen, kannst du dich teleportieren, um mit deiner Illusion den Platz zu tauschen.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "use_bonus_action_to_create_or_move_invoke_duplicity_illusion",
+          "optional": true,
+          "effect": {
+            "type": "teleport",
+            "destination": "illusion_space",
+            "illusion_moves_to": "previous_self_space"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trickery-improved-duplicity",
+      "owner_type": "subclass",
+      "owner_id": "cleric-trickery-domain",
+      "level": 17,
+      "name_en": "Improved Duplicity",
+      "name_de": "Verbessertes Abbild",
+      "player_choice": false,
+      "text_en": "The illusion of your Invoke Duplicity has grown more powerful.\n\nShared Distraction. When you and your allies make attack rolls against a creature within 5 feet of the illusion, the attack rolls have Advantage.\n\nHealing Illusion. When the illusion ends, you or a creature of your choice within 5 feet of it regains a number of Hit Points equal to your Cleric level.",
+      "text_de": "Die Illusion von Abbild beschwören ist auf folgende Arten mächtiger geworden.\n\nGemeinsame Ablenkung: Wenn du und deine Verbündeten Angriffswürfe gegen eine Kreatur im Abstand von bis zu 1,5 Metern von der Illusion ausführen, sind die Angriffswürfe im Vorteil.\n\nHeilende Illusion: Wenn die Illusion endet, erhältst du – oder eine Kreatur deiner Wahl im Abstand von bis zu 1,5 Metern von der Illusion – eine Anzahl von Trefferpunkten in Höhe deiner Klerikerstufe zurück.",
+      "grants": [
+        {
+          "type": "feature_modifier",
+          "feature_id": "trickery-invoke-duplicity",
+          "modifies_grant": "advantage_on_attack_rolls",
+          "modification": {
+            "expand_targets": "self_and_allies",
+            "condition": "self_or_ally_attacking_creature_within_5ft_of_illusion"
+          }
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "invoke_duplicity_illusion_ends",
+          "while_state": "invoke_duplicity",
+          "effect": {
+            "type": "heal",
+            "target": "self_or_creature_of_choice_within_5ft_of_illusion",
+            "value": "cleric_level"
+          }
+        }
+      ]
+    },
+    {
+      "id": "war-domain-spells",
+      "owner_type": "subclass",
+      "owner_id": "cleric-war-domain",
+      "level": 3,
+      "name_en": "War Domain Spells",
+      "name_de": "Domänenzauber des Krieges",
+      "player_choice": false,
+      "text_en": "Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the War Domain Spells table, you thereafter always have the listed spells prepared.\n\nLevel 3: Guiding Bolt, Magic Weapon, Shield of Faith, Spiritual Weapon\nLevel 5: Crusader's Mantle, Spirit Guardians\nLevel 7: Fire Shield, Freedom of Movement\nLevel 9: Hold Monster, Steel Wind Strike",
+      "text_de": "Deine Verbindung mit dieser göttlichen Domäne sorgt dafür, dass du bestimmte Zauber stets bereithalten kannst. Wenn du eine Klerikerstufe erreichst, die in der Tabelle „Domänenzauber des Krieges“ aufgeführt ist, hast du die aufgeführten Zauber fortan stets vorbereitet.\n\nStufe 3: Lenkendes Geschoss, Magische Waffe, Schild des Glaubens, Waffe des Glaubens\nStufe 5: Kreuzfahrermantel, Schutzgeister\nStufe 7: Bewegungsfreiheit, Feuerschild\nStufe 9: Monster festhalten, Stahlwindschlag",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "guiding-bolt",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "magic-weapon",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "shield-of-faith",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "spiritual-weapon",
+          "class_level_threshold": 3
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "crusaders-mantle",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "spirit-guardians",
+          "class_level_threshold": 5
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "fire-shield",
+          "class_level_threshold": 7
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "freedom-of-movement",
+          "class_level_threshold": 7
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "hold-monster",
+          "class_level_threshold": 9
+        },
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "steel-wind-strike",
+          "class_level_threshold": 9
+        }
+      ]
+    },
+    {
+      "id": "war-guided-strike",
+      "owner_type": "subclass",
+      "owner_id": "cleric-war-domain",
+      "level": 3,
+      "name_en": "Guided Strike",
+      "name_de": "Geführter Schlag",
+      "player_choice": false,
+      "text_en": "When you or a creature within 30 feet of you misses with an attack roll, you can expend one use of your Channel Divinity and give that roll a +10 bonus, potentially causing it to hit.\n\nWhen you use this feature to benefit another creature's attack roll, you must take a Reaction to do so.",
+      "text_de": "Wenn du oder eine Kreatur im Abstand von bis zu neun Metern von dir mit einem Angriffswurf scheitert, kannst du eine Anwendung von Göttliche Macht fokussieren verbrauchen, um dem Wurf einen Bonus von +10 zu verleihen und ihn so möglicherweise zu einem Treffer zu machen. Wenn du dieses Merkmal für den Angriffswurf einer anderen Kreatur einsetzt, musst du dazu eine Reaktion ausführen.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "self_misses_with_attack_roll",
+          "optional": true,
+          "cost": {
+            "resource": "channel_divinity_uses",
+            "amount": 1
+          },
+          "effect": {
+            "type": "attack_roll_bonus",
+            "value": 10
+          }
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "ally_within_30ft_misses_with_attack_roll",
+          "optional": true,
+          "action_type": "reaction",
+          "cost": {
+            "resource": "channel_divinity_uses",
+            "amount": 1
+          },
+          "effect": {
+            "type": "attack_roll_bonus",
+            "value": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "war-war-priest",
+      "owner_type": "subclass",
+      "owner_id": "cleric-war-domain",
+      "level": 3,
+      "name_en": "War Priest",
+      "name_de": "Kriegspriester",
+      "player_choice": false,
+      "text_en": "As a Bonus Action, you can make one attack with a weapon or an Unarmed Strike.\n\nYou can use this Bonus Action a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Short or Long Rest.",
+      "text_de": "Du kannst als Bonusaktion einen Waffenangriff oder einen waffenlosen Angriff ausführen. Die Anzahl der möglichen Anwendungen dieser Bonusaktion entspricht deinem Weisheitsmodifikator (mindestens einmal). Du erhältst alle verbrauchten Anwendungen nach einer kurzen oder langen Rast zurück.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          },
+          "recharge": [
+            "short_rest",
+            "long_rest"
+          ],
+          "effect": {
+            "type": "attack",
+            "attack_type": "weapon_or_unarmed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "war-war-gods-blessing",
+      "owner_type": "subclass",
+      "owner_id": "cleric-war-domain",
+      "level": 6,
+      "name_en": "War God's Blessing",
+      "name_de": "Segen des Kriegsgottes",
+      "player_choice": false,
+      "text_en": "You can expend a use of your Channel Divinity to cast Shield of Faith or Spiritual Weapon rather than expending a spell slot.\n\nWhen you cast either spell in this way, the spell doesn't require Concentration. Instead, the spell lasts for 1 minute, but it ends early if you cast that spell again, have the Incapacitated condition, or die.",
+      "text_de": "Du kannst eine Anwendung von Göttliche Macht fokussieren verbrauchen, um Schild des Glaubens oder Waffe des Glaubens zu wirken, anstatt einen Zauberplatz zu verbrauchen. Wirkst du einen dieser Zauber auf diese Art, so erfordert er keine Konzentration. Er bleibt eine Minute lang bestehen oder endet vorzeitig, wenn du diesen Zauber erneut wirkst, kampfunfähig wirst oder stirbst.",
+      "grants": [
+        {
+          "type": "spell_cost_override",
+          "spell_id": "shield-of-faith",
+          "cost": {
+            "resource": "channel_divinity_uses",
+            "amount": 1
+          },
+          "action_type": "original"
+        },
+        {
+          "type": "spell_cost_override",
+          "spell_id": "spiritual-weapon",
+          "cost": {
+            "resource": "channel_divinity_uses",
+            "amount": 1
+          },
+          "action_type": "original"
+        },
+        {
+          "type": "spell_effect_transformation",
+          "applies_to": [
+            "shield-of-faith",
+            "spiritual-weapon"
+          ],
+          "condition": "cast_via_war_gods_blessing",
+          "modification": "remove_concentration",
+          "override_duration": "1_minute",
+          "end_conditions": [
+            "cast_same_spell_again",
+            "incapacitated",
+            "caster_dies"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "war-avatar-of-battle",
+      "owner_type": "subclass",
+      "owner_id": "cleric-war-domain",
+      "level": 17,
+      "name_en": "Avatar of Battle",
+      "name_de": "Verkörperung der Schlacht",
+      "player_choice": false,
+      "text_en": "You gain Resistance to Bludgeoning, Piercing, and Slashing damage.",
+      "text_de": "Du bist gegen Hieb-, Stich- und Wuchtschaden resistent.",
+      "grants": [
+        {
+          "type": "damage_resistance",
+          "damage_types": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ]
+        }
+      ]
+    }
+  ]
+}

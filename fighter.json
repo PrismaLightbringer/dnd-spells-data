@@ -1,0 +1,2624 @@
+{
+  "class": {
+    "id": "fighter",
+    "name_en": "Fighter",
+    "name_de": "Kämpfer",
+    "hit_die": "d10",
+    "primary_abilities": [
+      "strength",
+      "dexterity"
+    ],
+    "saving_throw_proficiencies": [
+      "strength",
+      "constitution"
+    ],
+    "proficiencies": {
+      "skills": {
+        "choose": 2,
+        "from": [
+          "acrobatics",
+          "animal_handling",
+          "athletics",
+          "history",
+          "insight",
+          "intimidation",
+          "persuasion",
+          "perception",
+          "survival"
+        ]
+      },
+      "weapons": [
+        "simple",
+        "martial"
+      ],
+      "armor": [
+        "light",
+        "medium",
+        "heavy",
+        "shields"
+      ]
+    },
+    "starting_equipment": {
+      "choose": 1,
+      "options": [
+        {
+          "id": "option_a",
+          "items": [
+            "chain_mail",
+            "greatsword",
+            "flail",
+            "javelin_x8",
+            "dungeoneers_pack",
+            "4gp"
+          ]
+        },
+        {
+          "id": "option_b",
+          "items": [
+            "studded_leather_armor",
+            "scimitar",
+            "shortsword",
+            "longbow",
+            "arrows_x20",
+            "quiver",
+            "dungeoneers_pack",
+            "11gp"
+          ]
+        },
+        {
+          "id": "option_c",
+          "items": [
+            "155gp"
+          ]
+        }
+      ]
+    },
+    "multiclass_rules": {
+      "grants": [
+        "hit_die_d10",
+        "proficiency_martial_weapons",
+        "proficiency_light_armor",
+        "proficiency_medium_armor",
+        "proficiency_shields"
+      ]
+    },
+    "subclass_level": 3
+  },
+  "class_progression": {
+    "class_id": "fighter",
+    "levels": [
+      {
+        "level": 1,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "fighter-fighting-style",
+          "fighter-second-wind",
+          "fighter-weapon-mastery"
+        ],
+        "resources": {
+          "second_wind_uses": 2,
+          "weapon_mastery_count": 3,
+          "action_surge_uses": 0,
+          "indomitable_uses": 0,
+          "extra_attacks": 1
+        }
+      },
+      {
+        "level": 2,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "fighter-action-surge",
+          "fighter-tactical-mind"
+        ],
+        "resources": {
+          "second_wind_uses": 2,
+          "weapon_mastery_count": 3,
+          "action_surge_uses": 1,
+          "indomitable_uses": 0,
+          "extra_attacks": 1
+        }
+      },
+      {
+        "level": 3,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "fighter-subclass"
+        ],
+        "subclass_feature_level": true,
+        "resources": {
+          "second_wind_uses": 2,
+          "weapon_mastery_count": 3,
+          "action_surge_uses": 1,
+          "indomitable_uses": 0,
+          "extra_attacks": 1
+        }
+      },
+      {
+        "level": 4,
+        "proficiency_bonus": 2,
+        "feature_ids": [
+          "fighter-asi-4"
+        ],
+        "resources": {
+          "second_wind_uses": 3,
+          "weapon_mastery_count": 4,
+          "action_surge_uses": 1,
+          "indomitable_uses": 0,
+          "extra_attacks": 1
+        }
+      },
+      {
+        "level": 5,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "fighter-extra-attack",
+          "fighter-tactical-shift"
+        ],
+        "resources": {
+          "second_wind_uses": 3,
+          "weapon_mastery_count": 4,
+          "action_surge_uses": 1,
+          "indomitable_uses": 0,
+          "extra_attacks": 2
+        }
+      },
+      {
+        "level": 6,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "fighter-asi-6"
+        ],
+        "resources": {
+          "second_wind_uses": 3,
+          "weapon_mastery_count": 4,
+          "action_surge_uses": 1,
+          "indomitable_uses": 0,
+          "extra_attacks": 2
+        }
+      },
+      {
+        "level": 7,
+        "proficiency_bonus": 3,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "second_wind_uses": 3,
+          "weapon_mastery_count": 4,
+          "action_surge_uses": 1,
+          "indomitable_uses": 0,
+          "extra_attacks": 2
+        }
+      },
+      {
+        "level": 8,
+        "proficiency_bonus": 3,
+        "feature_ids": [
+          "fighter-asi-8"
+        ],
+        "resources": {
+          "second_wind_uses": 3,
+          "weapon_mastery_count": 4,
+          "action_surge_uses": 1,
+          "indomitable_uses": 0,
+          "extra_attacks": 2
+        }
+      },
+      {
+        "level": 9,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "fighter-indomitable",
+          "fighter-tactical-master"
+        ],
+        "resources": {
+          "second_wind_uses": 3,
+          "weapon_mastery_count": 4,
+          "action_surge_uses": 1,
+          "indomitable_uses": 1,
+          "extra_attacks": 2
+        }
+      },
+      {
+        "level": 10,
+        "proficiency_bonus": 4,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "second_wind_uses": 4,
+          "weapon_mastery_count": 5,
+          "action_surge_uses": 1,
+          "indomitable_uses": 1,
+          "extra_attacks": 2
+        }
+      },
+      {
+        "level": 11,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "fighter-two-extra-attacks"
+        ],
+        "resources": {
+          "second_wind_uses": 4,
+          "weapon_mastery_count": 5,
+          "action_surge_uses": 1,
+          "indomitable_uses": 1,
+          "extra_attacks": 3
+        }
+      },
+      {
+        "level": 12,
+        "proficiency_bonus": 4,
+        "feature_ids": [
+          "fighter-asi-12"
+        ],
+        "resources": {
+          "second_wind_uses": 4,
+          "weapon_mastery_count": 5,
+          "action_surge_uses": 1,
+          "indomitable_uses": 1,
+          "extra_attacks": 3
+        }
+      },
+      {
+        "level": 13,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "fighter-indomitable-two",
+          "fighter-studied-attacks"
+        ],
+        "resources": {
+          "second_wind_uses": 4,
+          "weapon_mastery_count": 5,
+          "action_surge_uses": 1,
+          "indomitable_uses": 2,
+          "extra_attacks": 3
+        }
+      },
+      {
+        "level": 14,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "fighter-asi-14"
+        ],
+        "resources": {
+          "second_wind_uses": 4,
+          "weapon_mastery_count": 5,
+          "action_surge_uses": 1,
+          "indomitable_uses": 2,
+          "extra_attacks": 3
+        }
+      },
+      {
+        "level": 15,
+        "proficiency_bonus": 5,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "second_wind_uses": 4,
+          "weapon_mastery_count": 5,
+          "action_surge_uses": 1,
+          "indomitable_uses": 2,
+          "extra_attacks": 3
+        }
+      },
+      {
+        "level": 16,
+        "proficiency_bonus": 5,
+        "feature_ids": [
+          "fighter-asi-16"
+        ],
+        "resources": {
+          "second_wind_uses": 4,
+          "weapon_mastery_count": 6,
+          "action_surge_uses": 1,
+          "indomitable_uses": 2,
+          "extra_attacks": 3
+        }
+      },
+      {
+        "level": 17,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "fighter-action-surge-two",
+          "fighter-indomitable-three"
+        ],
+        "resources": {
+          "second_wind_uses": 4,
+          "weapon_mastery_count": 6,
+          "action_surge_uses": 2,
+          "indomitable_uses": 3,
+          "extra_attacks": 3
+        }
+      },
+      {
+        "level": 18,
+        "proficiency_bonus": 6,
+        "feature_ids": [],
+        "subclass_feature_level": true,
+        "resources": {
+          "second_wind_uses": 4,
+          "weapon_mastery_count": 6,
+          "action_surge_uses": 2,
+          "indomitable_uses": 3,
+          "extra_attacks": 3
+        }
+      },
+      {
+        "level": 19,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "fighter-epic-boon"
+        ],
+        "resources": {
+          "second_wind_uses": 4,
+          "weapon_mastery_count": 6,
+          "action_surge_uses": 2,
+          "indomitable_uses": 3,
+          "extra_attacks": 3
+        }
+      },
+      {
+        "level": 20,
+        "proficiency_bonus": 6,
+        "feature_ids": [
+          "fighter-three-extra-attacks"
+        ],
+        "resources": {
+          "second_wind_uses": 4,
+          "weapon_mastery_count": 6,
+          "action_surge_uses": 2,
+          "indomitable_uses": 3,
+          "extra_attacks": 4
+        }
+      }
+    ]
+  },
+  "subclasses": [
+    {
+      "id": "fighter-battle-master",
+      "class_id": "fighter",
+      "name_en": "Battle Master",
+      "name_de": "Kampfmeister",
+      "feature_levels": [
+        3,
+        7,
+        10,
+        15,
+        18
+      ]
+    },
+    {
+      "id": "fighter-champion",
+      "class_id": "fighter",
+      "name_en": "Champion",
+      "name_de": "Champion",
+      "feature_levels": [
+        3,
+        7,
+        10,
+        15,
+        18
+      ]
+    },
+    {
+      "id": "fighter-eldritch-knight",
+      "class_id": "fighter",
+      "name_en": "Eldritch Knight",
+      "name_de": "Mystischer Ritter",
+      "feature_levels": [
+        3,
+        7,
+        10,
+        15,
+        18
+      ]
+    },
+    {
+      "id": "fighter-psi-warrior",
+      "class_id": "fighter",
+      "name_en": "Psi Warrior",
+      "name_de": "Psi-Krieger",
+      "feature_levels": [
+        3,
+        7,
+        10,
+        15,
+        18
+      ]
+    }
+  ],
+  "features": [
+    {
+      "id": "fighter-fighting-style",
+      "owner_type": "class",
+      "owner_id": "fighter",
+      "level": 1,
+      "name_en": "Fighting Style",
+      "name_de": "Kampfstil",
+      "player_choice": true,
+      "choice_prompt_en": "Choose a Fighting Style feat. Defense is recommended. You can replace it with a different Fighting Style feat whenever you gain a Fighter level.",
+      "choice_prompt_de": "Wähle ein Kampfstil-Talent. Verteidigung wird empfohlen. Du kannst es wann immer du eine Kämpferstufe erhältst durch ein anderes Kampfstil-Talent ersetzen.",
+      "text_en": "You have honed your martial prowess and gain a Fighting Style feat of your choice. Defense is recommended.\n\nWhenever you gain a Fighter level, you can replace the feat you chose with a different Fighting Style feat.",
+      "text_de": "Du hast deine Kampfkünste verfeinert und erhältst ein Kampfstil-Talent deiner Wahl. Verteidigung wird empfohlen.\n\nWann immer du eine Kämpferstufe erhältst, kannst du das ausgewählte Talent durch ein anderes Kampfstil-Talent ersetzen.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "feat_category": "fighting_style",
+          "recommended": "defense",
+          "replaceable_on": "level_up",
+          "replace_count": 1
+        }
+      ]
+    },
+    {
+      "id": "fighter-second-wind",
+      "owner_type": "class",
+      "owner_id": "fighter",
+      "level": 1,
+      "name_en": "Second Wind",
+      "name_de": "Durchschnaufen",
+      "player_choice": false,
+      "text_en": "You have a limited well of physical and mental stamina that you can draw on. As a Bonus Action, you can use it to regain Hit Points equal to 1d10 plus your Fighter level.\n\nYou can use this feature twice. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.\n\nWhen you reach certain Fighter levels, you gain more uses of this feature, as shown in the Second Wind column of the Fighter Features table.",
+      "text_de": "Du hast einen gewissen Vorrat an körperlicher und geistiger Ausdauer zur Verfügung. Als Bonusaktion kannst du Trefferpunkte in Höhe von 1W10 plus deiner Kämpferstufe zurückerhalten.\n\nDu kannst dieses Merkmal zweimal anwenden. Wenn du eine kurze Rast beendest, erhältst du eine verbrauchte Anwendung zurück. Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück.\n\nWenn du bestimmte Kämpferstufen erreichst, erhältst du mehr Anwendungen dieses Merkmals.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "uses_resource": "second_wind_uses",
+          "recharge": [
+            {
+              "amount": 1,
+              "recharge": "short_rest"
+            },
+            {
+              "amount": "all",
+              "recharge": "long_rest"
+            }
+          ],
+          "effect": {
+            "type": "heal_target",
+            "target": "self",
+            "value": {
+              "dice": "1d10",
+              "plus_class_level": "fighter_level"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "fighter-weapon-mastery",
+      "owner_type": "class",
+      "owner_id": "fighter",
+      "level": 1,
+      "name_en": "Weapon Mastery",
+      "name_de": "Waffenmeisterung",
+      "player_choice": true,
+      "choice_prompt_en": "Choose three kinds of Simple or Martial weapons whose mastery properties you can use. You can change one choice whenever you finish a Long Rest.",
+      "choice_prompt_de": "Wähle drei Waffenarten (einfach oder Kriegswaffe), deren Meisterschaftseigenschaften du nutzen kannst. Du kannst eine Wahl bei jeder langen Rast ändern.",
+      "text_en": "Your training with weapons allows you to use the mastery properties of three kinds of Simple or Martial weapons of your choice. Whenever you finish a Long Rest, you can practice weapon drills and change one of those weapon choices.\n\nWhen you reach certain Fighter levels, you gain the ability to use the mastery properties of more kinds of weapons, as shown in the Weapon Mastery column of the Fighter Features table.",
+      "text_de": "Deine Vertrautheit mit Waffen gestattet dir, die Meisterschaftseigenschaften dreier Arten von einfachen Waffen oder Kriegswaffen deiner Wahl zu verwenden. Wann immer du eine lange Rast beendest, kannst du Waffenübungen ausführen und eine dieser Waffenentscheidungen ändern.\n\nWenn du bestimmte Kämpferstufen erreichst, erhältst du das Attribut zum Verwenden der Meisterschaftseigenschaften von mehr Waffenarten.",
+      "grants": [
+        {
+          "type": "weapon_mastery",
+          "count_from_resource": "weapon_mastery_count",
+          "weapon_categories": [
+            "simple",
+            "martial"
+          ],
+          "change_on": "long_rest",
+          "change_count": 1
+        }
+      ]
+    },
+    {
+      "id": "fighter-action-surge",
+      "owner_type": "class",
+      "owner_id": "fighter",
+      "level": 2,
+      "name_en": "Action Surge",
+      "name_de": "Tatendrang",
+      "player_choice": false,
+      "text_en": "You can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action, except the Magic action.\n\nOnce you use this feature, you can't do so again until you finish a Short or Long Rest. Starting at level 17, you can use it twice before a rest but only once on a turn.",
+      "text_de": "Du kannst kurzzeitig deine normalen Grenzen überwinden. In deinem Zug kannst du eine zusätzliche Aktion (außer der magischen Aktion) ausführen.\n\nDu kannst dieses Merkmal erst nach einer kurzen oder langen Rast erneut verwenden. Ab der 17. Stufe kannst du Tatendrang zweimal vor einer Rast, jedoch nur einmal pro Zug einsetzen.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "free",
+          "uses_resource": "action_surge_uses",
+          "max_uses_per_turn": 1,
+          "recharge": [
+            {
+              "amount": "all",
+              "recharge": "short_rest"
+            },
+            {
+              "amount": "all",
+              "recharge": "long_rest"
+            }
+          ],
+          "effect": {
+            "type": "grant_additional_action",
+            "excludes": [
+              "magic_action"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fighter-tactical-mind",
+      "owner_type": "class",
+      "owner_id": "fighter",
+      "level": 2,
+      "name_en": "Tactical Mind",
+      "name_de": "Taktisches Verständnis",
+      "player_choice": false,
+      "text_en": "You have a mind for tactics on and off the battlefield. When you fail an ability check, you can expend a use of your Second Wind to push yourself toward success. Rather than regaining Hit Points, you roll 1d10 and add the number rolled to the ability check, potentially turning it into a success. If the check still fails, this use of Second Wind isn't expended.",
+      "text_de": "Du hast auf dem Schlachtfeld sowie anderswo einen ausgeprägten Sinn für Taktik. Wenn du bei einem Attributswurf scheiterst, kannst du eine Anwendung von Durchschnaufen verbrauchen, um einen Erfolg anzustreben. Anstatt Trefferpunkte zurückzuerhalten, würfelst du mit 1W10 und fügst das Ergebnis dem Attributswurf hinzu. Scheitert der Wurf dennoch, wird diese Anwendung nicht verbraucht.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "fail_ability_check",
+          "optional": true,
+          "cost": {
+            "resource": "second_wind_uses",
+            "amount": 1
+          },
+          "refund_on_continued_failure": true,
+          "effect": {
+            "type": "add_to_roll",
+            "value": {
+              "roll": {
+                "die": "d10",
+                "count": 1
+              }
+            },
+            "note": "Replaces the healing effect of Second Wind for this use."
+          }
+        }
+      ]
+    },
+    {
+      "id": "fighter-subclass",
+      "owner_type": "class",
+      "owner_id": "fighter",
+      "level": 3,
+      "name_en": "Fighter Subclass",
+      "name_de": "Kämpfer-Unterklasse",
+      "player_choice": true,
+      "choice_prompt_en": "Choose a Fighter subclass: Battle Master, Champion, Eldritch Knight, or Psi Warrior.",
+      "choice_prompt_de": "Wähle eine Kämpfer-Unterklasse: Champion, Kampfmeister, Mystischer Ritter oder Psi-Krieger.",
+      "text_en": "You gain a Fighter subclass of your choice. The Battle Master, Champion, Eldritch Knight, and Psi Warrior subclasses are detailed after this class's description.",
+      "text_de": "Du erhältst eine Kämpfer-Unterklasse deiner Wahl. Die Unterklassen Champion, Kampfmeister, Mystischer Ritter und Psi-Krieger werden nach der Beschreibung dieser Klasse erläutert.",
+      "grants": [
+        {
+          "type": "subclass_choice",
+          "class_id": "fighter"
+        }
+      ]
+    },
+    {
+      "id": "fighter-asi-4",
+      "owner_type": "class",
+      "owner_id": "fighter",
+      "level": 4,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Fighter levels 6, 8, 12, 14, and 16.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl. Du erhältst dieses Merkmal auf der 6., 8., 12., 14. und 16. Kämpferstufe erneut.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "fighter-extra-attack",
+      "owner_type": "class",
+      "owner_id": "fighter",
+      "level": 5,
+      "name_en": "Extra Attack",
+      "name_de": "Zusätzlicher Angriff",
+      "player_choice": false,
+      "text_en": "You can attack twice instead of once whenever you take the Attack action on your turn.",
+      "text_de": "Du kannst jetzt zweimal angreifen, wenn du in deinem Zug eine Angriffsaktion ausführst.",
+      "grants": [
+        {
+          "type": "extra_attack",
+          "total_attacks_from_resource": "extra_attacks"
+        }
+      ]
+    },
+    {
+      "id": "fighter-tactical-shift",
+      "owner_type": "class",
+      "owner_id": "fighter",
+      "level": 5,
+      "name_en": "Tactical Shift",
+      "name_de": "Taktikwechsel",
+      "player_choice": false,
+      "text_en": "Whenever you activate your Second Wind with a Bonus Action, you can move up to half your Speed without provoking Opportunity Attacks.",
+      "text_de": "Wann immer du Durchschnaufen mit einer Bonusaktion aktivierst, kannst du bis zur Hälfte deiner Bewegungsrate nutzen, ohne Gelegenheitsangriffe zu provozieren.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "activate_second_wind",
+          "effect": {
+            "type": "free_movement",
+            "distance": "half_speed",
+            "no_opportunity_attacks": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "fighter-asi-6",
+      "owner_type": "class",
+      "owner_id": "fighter",
+      "level": 6,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "fighter-asi-8",
+      "owner_type": "class",
+      "owner_id": "fighter",
+      "level": 8,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "fighter-indomitable",
+      "owner_type": "class",
+      "owner_id": "fighter",
+      "level": 9,
+      "name_en": "Indomitable",
+      "name_de": "Unbeugsamkeit",
+      "player_choice": false,
+      "text_en": "If you fail a saving throw, you can reroll it with a bonus equal to your Fighter level. You must use the new roll, and you can't use this feature again until you finish a Long Rest.\n\nYou can use this feature twice before a Long Rest starting at level 13 and three times before a Long Rest starting at level 17.",
+      "text_de": "Wenn du bei einem Rettungswurf scheiterst, kannst du ihn mit einem Bonus in Höhe deiner Kämpferstufe erneut ausführen. Du musst das neue Ergebnis verwenden und kannst das Merkmal erst nach einer langen Rast erneut verwenden.\n\nDu kannst dieses Merkmal ab der 13. Stufe zweimal und ab der 17. Stufe dreimal vor einer langen Rast anwenden.",
+      "grants": [
+        {
+          "type": "reroll",
+          "trigger": "fail_saving_throw",
+          "bonus": {
+            "equals": "fighter_level"
+          },
+          "must_use_new_roll": true,
+          "uses_resource": "indomitable_uses",
+          "recharge": "long_rest"
+        }
+      ]
+    },
+    {
+      "id": "fighter-tactical-master",
+      "owner_type": "class",
+      "owner_id": "fighter",
+      "level": 9,
+      "name_en": "Tactical Master",
+      "name_de": "Taktischer Meister",
+      "player_choice": false,
+      "text_en": "When you attack with a weapon whose mastery property you can use, you can replace that property with the Push, Sap, or Slow property for that attack.",
+      "text_de": "Wenn du mit einer Waffe angreifst, deren Meisterschaftseigenschaft du nutzen kannst, so kannst du die Eigenschaft bei diesem Angriff durch eine der Eigenschaften Auslaugen, Stoßen oder Verlangsamen ersetzen.",
+      "grants": [
+        {
+          "type": "bonus_mastery_property",
+          "condition": "attacking_with_mastery_weapon",
+          "bonus_properties": [
+            "push",
+            "sap",
+            "slow"
+          ],
+          "choose": 1,
+          "in_addition_to_active_mastery": false,
+          "note": "Replaces (does not add to) the weapon's existing mastery property for that attack."
+        }
+      ]
+    },
+    {
+      "id": "fighter-two-extra-attacks",
+      "owner_type": "class",
+      "owner_id": "fighter",
+      "level": 11,
+      "name_en": "Two Extra Attacks",
+      "name_de": "Zwei zusätzliche Angriffe",
+      "player_choice": false,
+      "text_en": "You can attack three times instead of once whenever you take the Attack action on your turn.",
+      "text_de": "Du kannst jetzt dreimal angreifen, wenn du in deinem Zug eine Angriffsaktion ausführst.",
+      "grants": []
+    },
+    {
+      "id": "fighter-asi-12",
+      "owner_type": "class",
+      "owner_id": "fighter",
+      "level": 12,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "fighter-indomitable-two",
+      "owner_type": "class",
+      "owner_id": "fighter",
+      "level": 13,
+      "name_en": "Indomitable (two uses)",
+      "name_de": "Unbeugsamkeit (zwei Anwendungen)",
+      "player_choice": false,
+      "text_en": "You can now use Indomitable twice before a Long Rest.",
+      "text_de": "Du kannst Unbeugsamkeit nun zweimal vor einer langen Rast einsetzen.",
+      "grants": []
+    },
+    {
+      "id": "fighter-studied-attacks",
+      "owner_type": "class",
+      "owner_id": "fighter",
+      "level": 13,
+      "name_en": "Studied Attacks",
+      "name_de": "Angriffsstudien",
+      "player_choice": false,
+      "text_en": "You study your opponents and learn from each attack you make. If you make an attack roll against a creature and miss, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+      "text_de": "Du studierst deine Gegner und lernst aus jedem Angriff, den du ausführst. Wenn du bei einem Angriffswurf gegen eine Kreatur scheiterst, bist du bei deinem nächsten Angriffswurf gegen diese Kreatur vor Ende deines nächsten Zugs im Vorteil.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "miss_attack_roll_against_creature",
+          "effect": {
+            "type": "advantage",
+            "on": [
+              "next_attack_roll_against_same_creature"
+            ],
+            "duration": "before_end_of_your_next_turn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fighter-asi-14",
+      "owner_type": "class",
+      "owner_id": "fighter",
+      "level": 14,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "fighter-asi-16",
+      "owner_type": "class",
+      "owner_id": "fighter",
+      "level": 16,
+      "name_en": "Ability Score Improvement",
+      "name_de": "Attributswerterhöhung",
+      "player_choice": true,
+      "choice_prompt_en": "Gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "choice_prompt_de": "Erhalte das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl, für das du qualifiziert bist.",
+      "text_en": "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify.",
+      "text_de": "Du erhältst das Talent Attributswerterhöhung oder ein anderes Talent deiner Wahl.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "default_feat": "ability_score_improvement"
+        }
+      ]
+    },
+    {
+      "id": "fighter-action-surge-two",
+      "owner_type": "class",
+      "owner_id": "fighter",
+      "level": 17,
+      "name_en": "Action Surge (two uses)",
+      "name_de": "Tatendrang (zwei Anwendungen)",
+      "player_choice": false,
+      "text_en": "You can now use Action Surge twice before a rest, but still only once on a turn.",
+      "text_de": "Du kannst Tatendrang nun zweimal vor einer Rast einsetzen, jedoch weiterhin nur einmal pro Zug.",
+      "grants": []
+    },
+    {
+      "id": "fighter-indomitable-three",
+      "owner_type": "class",
+      "owner_id": "fighter",
+      "level": 17,
+      "name_en": "Indomitable (three uses)",
+      "name_de": "Unbeugsamkeit (drei Anwendungen)",
+      "player_choice": false,
+      "text_en": "You can now use Indomitable three times before a Long Rest.",
+      "text_de": "Du kannst Unbeugsamkeit nun dreimal vor einer langen Rast einsetzen.",
+      "grants": []
+    },
+    {
+      "id": "fighter-epic-boon",
+      "owner_type": "class",
+      "owner_id": "fighter",
+      "level": 19,
+      "name_en": "Epic Boon",
+      "name_de": "Epische Gabe",
+      "player_choice": true,
+      "choice_prompt_en": "Gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Combat Prowess is recommended.",
+      "choice_prompt_de": "Erhalte ein Epische-Gabe-Talent oder ein anderes Talent deiner Wahl. Gabe der Kampffertigkeit wird empfohlen.",
+      "text_en": "You gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Combat Prowess is recommended.",
+      "text_de": "Du erhältst ein Epische-Gabe-Talent oder ein anderes Talent deiner Wahl. Gabe der Kampffertigkeit wird empfohlen.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "feat_category": "epic_boon",
+          "recommended": "boon_of_combat_prowess"
+        }
+      ]
+    },
+    {
+      "id": "fighter-three-extra-attacks",
+      "owner_type": "class",
+      "owner_id": "fighter",
+      "level": 20,
+      "name_en": "Three Extra Attacks",
+      "name_de": "Drei zusätzliche Angriffe",
+      "player_choice": false,
+      "text_en": "You can attack four times instead of once whenever you take the Attack action on your turn.",
+      "text_de": "Du kannst jetzt viermal angreifen, wenn du in deinem Zug eine Angriffsaktion ausführst.",
+      "grants": []
+    }
+  ],
+  "subclass_features": [
+    {
+      "id": "battle-master-combat-superiority",
+      "owner_type": "subclass",
+      "owner_id": "fighter-battle-master",
+      "level": 3,
+      "name_en": "Combat Superiority",
+      "name_de": "Kampfüberlegenheit",
+      "player_choice": true,
+      "choice_prompt_en": "Choose three maneuvers from the Battle Master Maneuver options. You learn two more at levels 7, 10, and 15, and can replace one known maneuver each time.",
+      "choice_prompt_de": "Wähle drei Manöver aus den Kampfmeister-Manöver-Optionen. Du erlernst je zwei weitere auf den Stufen 7, 10 und 15 und kannst dabei ein bekanntes ersetzen.",
+      "text_en": "Your experience on the battlefield has refined your fighting techniques. You learn maneuvers that are fueled by Superiority Dice.\n\nManeuvers. You learn three maneuvers of your choice. You can use only one maneuver per attack. You learn two additional maneuvers at Fighter levels 7, 10, and 15, and can replace one each time.\n\nSuperiority Dice. You have four Superiority Dice (d8s). A die is expended when used. You regain all expended dice when you finish a Short or Long Rest. You gain an additional die at levels 7 (five total) and 15 (six total).\n\nSaving Throws. If a maneuver requires a saving throw, the DC equals 8 plus your Strength or Dexterity modifier (your choice) and Proficiency Bonus.",
+      "text_de": "Deine Erfahrung auf dem Schlachtfeld hat deine Kampftechniken verfeinert. Du beherrschst Manöver, die von Überlegenheitswürfeln gespeist werden.\n\nManöver: Du erlernst drei Manöver deiner Wahl. Du kannst pro Angriff nur ein Manöver einsetzen. Du erlernst je zwei weitere auf den Stufen 7, 10 und 15 und kannst dabei eines ersetzen.\n\nÜberlegenheitswürfel: Du hast vier Überlegenheitswürfel (W8). Du erhältst alle verbrauchten Würfel nach einer kurzen oder langen Rast zurück. Du erhältst je einen weiteren auf Stufe 7 (fünf) und 15 (sechs).\n\nRettungswürfe: Der SG entspricht 8 plus deinem Stärke- oder Geschicklichkeitsmodifikator plus deinem Übungsbonus.",
+      "grants": [
+        {
+          "type": "entity_selection",
+          "count_from_resource": "maneuvers_known",
+          "source": "battle_master_maneuvers",
+          "change_on": "level_up",
+          "change_count": 1,
+          "prerequisite_enforcement": false
+        },
+        {
+          "type": "uses_resource",
+          "resource": "superiority_dice",
+          "recharge": [
+            {
+              "amount": "all",
+              "recharge": "short_rest"
+            },
+            {
+              "amount": "all",
+              "recharge": "long_rest"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "battle-master-student-of-war",
+      "owner_type": "subclass",
+      "owner_id": "fighter-battle-master",
+      "level": 3,
+      "name_en": "Student of War",
+      "name_de": "Adept des Krieges",
+      "player_choice": true,
+      "choice_prompt_en": "Choose one type of Artisan's Tools and one skill from the Fighter skill list (Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Persuasion, Perception, or Survival).",
+      "choice_prompt_de": "Wähle eine Art Handwerkszeug und eine Fertigkeit aus der Kämpfer-Fertigkeitsliste.",
+      "text_en": "You gain proficiency with one type of Artisan's Tools of your choice, and you gain proficiency in one skill of your choice from the skills available to Fighters at level 1.",
+      "text_de": "Du erhältst Übung im Umgang mit einer Art von Handwerkszeug deiner Wahl sowie in einer Fertigkeit deiner Wahl von den Fertigkeiten, die Kämpfern auf der 1. Stufe zur Verfügung stehen.",
+      "grants": [
+        {
+          "type": "tool_proficiency",
+          "choose": 1,
+          "from": "artisans_tools"
+        },
+        {
+          "type": "skill_proficiency",
+          "choose": 1,
+          "from": [
+            "acrobatics",
+            "animal_handling",
+            "athletics",
+            "history",
+            "insight",
+            "intimidation",
+            "persuasion",
+            "perception",
+            "survival"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "battle-master-know-your-enemy",
+      "owner_type": "subclass",
+      "owner_id": "fighter-battle-master",
+      "level": 7,
+      "name_en": "Know Your Enemy",
+      "name_de": "Kenne deinen Feind",
+      "player_choice": false,
+      "text_en": "As a Bonus Action, you can discern certain strengths and weaknesses of a creature you can see within 30 feet of yourself; you know whether that creature has any Immunities, Resistances, or Vulnerabilities, and if so, what they are.\n\nOnce you use this feature, you can't do so again until you finish a Long Rest. You can also restore a use by expending one Superiority Die (no action required).",
+      "text_de": "Als Bonusaktion kannst du bestimmte Stärken und Schwächen einer Kreatur im Abstand von bis zu neun Metern einschätzen. Du erkennst, ob sie Immunitäten, Resistenzen oder Anfälligkeiten hat und wenn ja, welche.\n\nDu kannst dieses Merkmal erst nach einer langen Rast erneut verwenden. Du kannst eine Anwendung auch durch Verbrauchen eines Überlegenheitswürfels wiederherstellen (keine Aktion).",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "range_feet": 30,
+          "condition": "target_you_can_see",
+          "uses": 1,
+          "recharge": "long_rest",
+          "refresh_option": {
+            "type": "feature_refresh",
+            "feature_id": "battle-master-know-your-enemy",
+            "cost": {
+              "resource": "superiority_dice",
+              "amount": 1
+            }
+          },
+          "effect": {
+            "type": "reveal_creature_traits",
+            "reveals": [
+              "immunities",
+              "resistances",
+              "vulnerabilities"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "battle-master-improved-combat-superiority",
+      "owner_type": "subclass",
+      "owner_id": "fighter-battle-master",
+      "level": 10,
+      "name_en": "Improved Combat Superiority",
+      "name_de": "Verbesserte Kampfüberlegenheit",
+      "player_choice": false,
+      "text_en": "Your Superiority Die becomes a d10.",
+      "text_de": "Dein Überlegenheitswürfel ist ab sofort ein W10.",
+      "grants": [
+        {
+          "type": "feature_modifier",
+          "feature_id": "battle-master-combat-superiority",
+          "modifies_grant": "uses_resource",
+          "modification": {
+            "resource": "superiority_dice"
+          },
+          "note": "Die size upgrade tracked via subclass_progressions resource."
+        }
+      ]
+    },
+    {
+      "id": "battle-master-relentless",
+      "owner_type": "subclass",
+      "owner_id": "fighter-battle-master",
+      "level": 15,
+      "name_en": "Relentless",
+      "name_de": "Unermüdlich",
+      "player_choice": false,
+      "text_en": "Once per turn, when you use a maneuver, you can roll 1d8 and use the number rolled instead of expending a Superiority Die.",
+      "text_de": "Einmal pro Zug kannst du, wenn du ein Manöver einsetzt, mit 1W8 würfeln und das Ergebnis verwenden, statt einen Überlegenheitswürfel zu verbrauchen.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "use_maneuver",
+          "once_per_turn": true,
+          "optional": true,
+          "effect": {
+            "type": "roll_free_superiority_die",
+            "die": "d8",
+            "note": "Rolls a free d8 in place of expending a Superiority Die. Does not stack with actual die expend."
+          }
+        }
+      ]
+    },
+    {
+      "id": "battle-master-ultimate-combat-superiority",
+      "owner_type": "subclass",
+      "owner_id": "fighter-battle-master",
+      "level": 18,
+      "name_en": "Ultimate Combat Superiority",
+      "name_de": "Ultimative Kampfüberlegenheit",
+      "player_choice": false,
+      "text_en": "Your Superiority Die becomes a d12.",
+      "text_de": "Dein Überlegenheitswürfel ist ab sofort ein W12.",
+      "grants": [
+        {
+          "type": "feature_modifier",
+          "feature_id": "battle-master-combat-superiority",
+          "modifies_grant": "uses_resource",
+          "modification": {
+            "resource": "superiority_dice"
+          },
+          "note": "Die size upgrade tracked via subclass_progressions resource."
+        }
+      ]
+    },
+    {
+      "id": "champion-improved-critical",
+      "owner_type": "subclass",
+      "owner_id": "fighter-champion",
+      "level": 3,
+      "name_en": "Improved Critical",
+      "name_de": "Verbesserter kritischer Treffer",
+      "player_choice": false,
+      "text_en": "Your attack rolls with weapons and Unarmed Strikes can score a Critical Hit on a roll of 19 or 20 on the d20.",
+      "text_de": "Deine Angriffswürfe mit Waffen und deine waffenlosen Angriffe bewirken kritische Treffer, wenn du mit dem W20 eine 19 oder eine 20 würfelst.",
+      "grants": [
+        {
+          "type": "critical_hit_threshold",
+          "minimum_roll": 19,
+          "applies_to": [
+            "weapon_attacks",
+            "unarmed_strikes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "champion-remarkable-athlete",
+      "owner_type": "subclass",
+      "owner_id": "fighter-champion",
+      "level": 3,
+      "name_en": "Remarkable Athlete",
+      "name_de": "Bemerkenswerter Athlet",
+      "player_choice": false,
+      "text_en": "Thanks to your athleticism, you have Advantage on Initiative rolls and Strength (Athletics) checks.\n\nIn addition, immediately after you score a Critical Hit, you can move up to half your Speed without provoking Opportunity Attacks.",
+      "text_de": "Dank deiner hervorragenden Konstitution bist du bei Initiative- und Stärkewürfen (Athletik) im Vorteil.\n\nAußerdem kannst du sofort nach Erzielen eines kritischen Treffers bis zur Hälfte deiner Bewegungsrate zurücklegen, ohne Gelegenheitsangriffe zu provozieren.",
+      "grants": [
+        {
+          "type": "advantage",
+          "on": [
+            "initiative_rolls",
+            "strength_athletics_checks"
+          ]
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "score_critical_hit",
+          "effect": {
+            "type": "free_movement",
+            "distance": "half_speed",
+            "no_opportunity_attacks": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "champion-additional-fighting-style",
+      "owner_type": "subclass",
+      "owner_id": "fighter-champion",
+      "level": 7,
+      "name_en": "Additional Fighting Style",
+      "name_de": "Weiterer Kampfstil",
+      "player_choice": true,
+      "choice_prompt_en": "Choose another Fighting Style feat of your choice.",
+      "choice_prompt_de": "Wähle ein weiteres Kampfstil-Talent deiner Wahl.",
+      "text_en": "You gain another Fighting Style feat of your choice.",
+      "text_de": "Du erhältst ein weiteres Kampfstil-Talent deiner Wahl.",
+      "grants": [
+        {
+          "type": "feat_choice",
+          "feat_category": "fighting_style"
+        }
+      ]
+    },
+    {
+      "id": "champion-heroic-warrior",
+      "owner_type": "subclass",
+      "owner_id": "fighter-champion",
+      "level": 10,
+      "name_en": "Heroic Warrior",
+      "name_de": "Heldenhafter Krieger",
+      "player_choice": false,
+      "text_en": "The thrill of battle drives you toward victory. During combat, you can give yourself Heroic Inspiration whenever you start your turn without it.",
+      "text_de": "Der Nervenkitzel der Schlacht treibt dich zum Sieg. Im Kampf kannst du dir selbst Heldische Inspiration geben, wann immer du deinen Zug ohne diese beginnst.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "start_turn_without_heroic_inspiration",
+          "condition": "in_combat",
+          "effect": {
+            "type": "grant_heroic_inspiration",
+            "target": "self"
+          }
+        }
+      ]
+    },
+    {
+      "id": "champion-superior-critical",
+      "owner_type": "subclass",
+      "owner_id": "fighter-champion",
+      "level": 15,
+      "name_en": "Superior Critical",
+      "name_de": "Überlegener kritischer Treffer",
+      "player_choice": false,
+      "text_en": "Your attack rolls with weapons and Unarmed Strikes can now score a Critical Hit on a roll of 18–20 on the d20.",
+      "text_de": "Deine Angriffswürfe mit Waffen und deine waffenlosen Angriffe bewirken ab sofort kritische Treffer, wenn du mit dem W20 ein Ergebnis von 18–20 würfelst.",
+      "grants": [
+        {
+          "type": "feature_modifier",
+          "feature_id": "champion-improved-critical",
+          "modifies_grant": "critical_hit_threshold",
+          "modification": {
+            "minimum_roll": 18
+          }
+        }
+      ]
+    },
+    {
+      "id": "champion-survivor",
+      "owner_type": "subclass",
+      "owner_id": "fighter-champion",
+      "level": 18,
+      "name_en": "Survivor",
+      "name_de": "Der Überlebende",
+      "player_choice": false,
+      "text_en": "You attain the pinnacle of resilience in battle.\n\nDefy Death. You have Advantage on Death Saving Throws. Moreover, when you roll 18–20 on a Death Saving Throw, you gain the benefit of rolling a 20 on it.\n\nHeroic Rally. At the start of each of your turns, you regain Hit Points equal to 5 plus your Constitution modifier if you are Bloodied and have at least 1 Hit Point.",
+      "text_de": "Du erreichst den Gipfel der Zähigkeit im Kampf.\n\nDem Tode trotzen: Du bist bei Todesrettungswürfeln im Vorteil. Außerdem erhältst du, wenn du bei einem Todesrettungswurf ein Ergebnis von 18–20 würfelst, den Vorzug wie bei einem Ergebnis von 20.\n\nHeldischer Schlachtruf: Zu Beginn jedes deiner Züge erhältst du Trefferpunkte in Höhe von 5 plus deinem Konstitutionsmodifikator zurück, wenn du blutig bist und mindestens 1 Trefferpunkt hast.",
+      "grants": [
+        {
+          "type": "advantage",
+          "on": [
+            "death_saving_throws"
+          ]
+        },
+        {
+          "type": "minimum_roll_override",
+          "applies_to": "death_saving_throws",
+          "minimum": 20,
+          "trigger_roll": 18,
+          "note": "A roll of 18–20 on a Death Saving Throw counts as a 20."
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "start_of_turn",
+          "condition": "bloodied_and_at_least_1_hp",
+          "effect": {
+            "type": "heal_target",
+            "target": "self",
+            "value": {
+              "base": 5,
+              "flat_modifier": "constitution_modifier"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "eldritch-knight-spellcasting",
+      "owner_type": "subclass",
+      "owner_id": "fighter-eldritch-knight",
+      "level": 3,
+      "name_en": "Spellcasting",
+      "name_de": "Zauberwirken",
+      "player_choice": true,
+      "choice_prompt_en": "Choose three level 1 Wizard spells to prepare. Ray of Frost and Shocking Grasp are recommended cantrips. Burning Hands, Jump, and Shield are recommended level 1 spells.",
+      "choice_prompt_de": "Wähle drei Magierzauber des 1. Grades vor. Kältestrahl und Schockgriff werden als Zaubertricks empfohlen. Brennende Hände, Schild und Springen als Zauber des 1. Grades.",
+      "text_en": "You have learned to cast spells from the Wizard spell list. Intelligence is your spellcasting ability. You can use an Arcane Focus as a Spellcasting Focus.\n\nCantrips. You know two Wizard cantrips. Ray of Frost and Shocking Grasp are recommended. You learn a third at Fighter level 10.\n\nSpell Slots. Shown on the Eldritch Knight Spellcasting table. Regained on Long Rest.\n\nPrepared Spells. Choose three level 1 Wizard spells to start. The count increases with Fighter level. You can replace one prepared spell per level gained.",
+      "text_de": "Du hast gelernt, Zauber der Magier-Zauberliste zu wirken. Intelligenz ist dein Attribut zum Zauberwirken. Du kannst einen arkanen Fokus als Zauberfokus verwenden.\n\nZaubertricks: Du kennst zwei Magierzaubertricks. Kältestrahl und Schockgriff werden empfohlen. Auf der 10. Kämpferstufe erlernst du einen weiteren.\n\nZauberplätze: Sieh Tabelle. Aufladung nach langer Rast.\n\nVorbereitete Zauber: Wähle zu Beginn drei Magierzauber des 1. Grades. Die Anzahl steigt mit der Kämpferstufe. Einmal pro Stufenaufstieg austauschbar.",
+      "grants": [
+        {
+          "type": "spellcasting",
+          "casting_model": "prepared",
+          "spellcasting_ability": "intelligence",
+          "spellcasting_focus": "arcane_focus",
+          "spell_slot_table": "third_caster",
+          "recharge": "long_rest",
+          "cantrips": {
+            "count_from_resource": "ek_cantrips_known",
+            "source": "wizard_spell_list",
+            "replaceable_on": "level_up",
+            "replace_count": 1
+          },
+          "prepared_spells": {
+            "count_from_resource": "ek_prepared_spells",
+            "source": "wizard_spell_list",
+            "replaceable_on": "level_up",
+            "count_per_swap": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "eldritch-knight-war-bond",
+      "owner_type": "subclass",
+      "owner_id": "fighter-eldritch-knight",
+      "level": 3,
+      "name_en": "War Bond",
+      "name_de": "Kriegsbindung",
+      "player_choice": false,
+      "text_en": "You learn a ritual that creates a magical bond between yourself and one weapon. The ritual takes 1 hour (can be done during a Short Rest). The bond fails if another Fighter is bonded to the weapon or if it is a magic item attuned by someone else.\n\nWhile bonded, you can't be disarmed of that weapon unless Incapacitated. If on the same plane, you can summon it as a Bonus Action.\n\nYou can have up to two bonded weapons but can summon only one at a time. Bonding a third weapon requires breaking an existing bond.",
+      "text_de": "Du erlernst ein Ritual, das eine magische Bindung zwischen dir und einer Waffe erschafft. Dieses Ritual dauert eine Stunde. Die Bindung scheitert, wenn ein anderer Kämpfer daran gebunden ist oder es ein magischer Gegenstand ist, auf den jemand eingestimmt ist.\n\nSolange du gebunden bist, kannst du nicht entwaffnet werden, sofern du nicht kampfunfähig bist. Befindet sich die Waffe auf derselben Ebene, kannst du sie als Bonusaktion beschwören.\n\nDu kannst bis zu zwei Waffen binden, aber nur eine mit einer Bonusaktion beschwören. Eine dritte Bindung erfordert das Lösen einer bestehenden.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "rite",
+          "rite_duration_minutes": 60,
+          "effect": {
+            "type": "weapon_bond",
+            "max_bonded_weapons": 2,
+            "bond_restrictions": [
+              "not_bonded_by_other_fighter",
+              "not_attuned_by_other"
+            ]
+          }
+        },
+        {
+          "type": "passive",
+          "effect": "cannot_be_disarmed_of_bonded_weapon",
+          "condition": "not_incapacitated"
+        },
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "condition": "bonded_weapon_on_same_plane",
+          "effect": {
+            "type": "teleport",
+            "range_feet": 0,
+            "destination": "hand",
+            "target": "bonded_weapon"
+          }
+        }
+      ]
+    },
+    {
+      "id": "eldritch-knight-war-magic",
+      "owner_type": "subclass",
+      "owner_id": "fighter-eldritch-knight",
+      "level": 7,
+      "name_en": "War Magic",
+      "name_de": "Kriegsmagie",
+      "player_choice": false,
+      "text_en": "When you take the Attack action on your turn, you can replace one of the attacks with a casting of one of your Wizard cantrips that has a casting time of an action.",
+      "text_de": "Wenn du in deinem Zug die Angriffsaktion ausführst, kannst du einen der Angriffe ersetzen und einen deiner Magierzaubertricks wirken, der den Zeitaufwand von einer Aktion hat.",
+      "grants": [
+        {
+          "type": "attack_replacement",
+          "replace_with": "wizard_cantrip",
+          "cantrip_casting_time": "action",
+          "attacks_replaceable": 1
+        }
+      ]
+    },
+    {
+      "id": "eldritch-knight-eldritch-strike",
+      "owner_type": "subclass",
+      "owner_id": "fighter-eldritch-knight",
+      "level": 10,
+      "name_en": "Eldritch Strike",
+      "name_de": "Mystischer Schlag",
+      "player_choice": false,
+      "text_en": "When you hit a creature with an attack using a weapon, that creature has Disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn.",
+      "text_de": "Wenn du eine Kreatur mit einer Waffe triffst, ist die Kreatur beim nächsten Rettungswurf gegen einen Zauber, den du vor Ende deines nächsten Zugs wirkst, im Nachteil.",
+      "grants": [
+        {
+          "type": "on_hit_effect",
+          "attack_type": "weapon",
+          "effect": {
+            "type": "disadvantage_on_next_saving_throw",
+            "target": "hit_creature",
+            "condition": "against_your_spells",
+            "duration": "before_end_of_your_next_turn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "eldritch-knight-arcane-charge",
+      "owner_type": "subclass",
+      "owner_id": "fighter-eldritch-knight",
+      "level": 15,
+      "name_en": "Arcane Charge",
+      "name_de": "Arkaner Sturmangriff",
+      "player_choice": false,
+      "text_en": "When you use your Action Surge, you can teleport up to 30 feet to an unoccupied space you can see. You can teleport before or after the additional action.",
+      "text_de": "Wenn du Tatendrang einsetzt, kannst du dich bis zu neun Meter weit in einen freien Bereich teleportieren, den du sehen kannst. Du kannst dich vor oder nach der zusätzlichen Aktion teleportieren.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "use_action_surge",
+          "optional": true,
+          "effect": {
+            "type": "teleport",
+            "range_feet": 30,
+            "destination": "unoccupied_space_you_can_see",
+            "timing_choice": [
+              "before_additional_action",
+              "after_additional_action"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "eldritch-knight-improved-war-magic",
+      "owner_type": "subclass",
+      "owner_id": "fighter-eldritch-knight",
+      "level": 18,
+      "name_en": "Improved War Magic",
+      "name_de": "Verbesserte Kriegsmagie",
+      "player_choice": false,
+      "text_en": "When you take the Attack action on your turn, you can replace two of the attacks with a casting of one of your level 1 or level 2 Wizard spells that has a casting time of an action.",
+      "text_de": "Wenn du in deinem Zug die Angriffsaktion ausführst, kannst du zwei der Angriffe ersetzen und einen deiner Magierzauber des 1. oder 2. Grades wirken, der den Zeitaufwand von einer Aktion hat.",
+      "grants": [
+        {
+          "type": "feature_modifier",
+          "feature_id": "eldritch-knight-war-magic",
+          "modifies_grant": "attack_replacement",
+          "modification": {
+            "replace_with": "wizard_spell",
+            "max_spell_level": 2,
+            "cantrip_casting_time": "action",
+            "attacks_replaceable": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "psi-warrior-psionic-power",
+      "owner_type": "subclass",
+      "owner_id": "fighter-psi-warrior",
+      "level": 3,
+      "name_en": "Psionic Power",
+      "name_de": "Psionische Kraft",
+      "player_choice": false,
+      "text_en": "You harbor a wellspring of psionic energy represented by Psionic Energy Dice. You regain one die on a Short Rest and all on a Long Rest.\n\nProtective Field. When you or a creature you can see within 30 feet takes damage, you can take a Reaction to expend one die, roll it, and reduce the damage by the roll plus your Intelligence modifier (minimum 1).\n\nPsionic Strike. Once per turn, after hitting a target within 30 feet with a weapon attack, you can expend one die, roll it, and deal bonus Force damage equal to the roll plus your Intelligence modifier.\n\nTelekinetic Movement. As a Magic action, choose a target you can see within 30 feet — a loose Large or smaller object or a willing creature other than you — and transport it up to 30 feet to an unoccupied space you can see. A Tiny object can be transported to or from your hand. Once used, requires a Short or Long Rest, or expend a die to restore.",
+      "text_de": "In dir sprudelt eine Quelle psionischer Energie, repräsentiert durch Psi-Energie-Würfel. Du erhältst einen Würfel nach einer kurzen Rast und alle nach einer langen Rast zurück.\n\nSchützende Barriere: Wenn du oder eine Kreatur im Abstand von bis zu neun Metern Schaden erleidet, kannst du eine Reaktion ausführen, einen Würfel verbrauchen, würfeln und den Schaden um das Ergebnis plus deinen Intelligenzmodifikator (mindestens 1) verringern.\n\nPsionischer Schlag: Einmal pro Zug kannst du nach einem Waffenangriff-Treffer gegen ein Ziel im Abstand von bis zu neun Metern einen Würfel verbrauchen, würfeln und dem Ziel zusätzlichen Energieschaden in Höhe des Ergebnisses plus deines Intelligenzmodifikators zufügen.\n\nTelekinese: Als magische Aktion kannst du ein Ziel bis zu neun Meter weit teleportieren. Aufladung nach kurzer oder langer Rast oder durch Verbrauch eines Würfels.",
+      "grants": [
+        {
+          "type": "uses_resource",
+          "resource": "psionic_energy_dice",
+          "recharge": [
+            {
+              "amount": 1,
+              "recharge": "short_rest"
+            },
+            {
+              "amount": "all",
+              "recharge": "long_rest"
+            }
+          ]
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "self_or_creature_within_30ft_takes_damage",
+          "action_type": "reaction",
+          "cost": {
+            "resource": "psionic_energy_dice",
+            "amount": 1
+          },
+          "effect": {
+            "type": "damage_reduction",
+            "value": {
+              "roll": "psionic_energy_die",
+              "flat_modifier": "intelligence_modifier",
+              "minimum": 1
+            }
+          }
+        },
+        {
+          "type": "on_hit_effect",
+          "attack_type": "weapon",
+          "trigger_range_feet": 30,
+          "once_per_turn": true,
+          "optional": true,
+          "cost": {
+            "resource": "psionic_energy_dice",
+            "amount": 1
+          },
+          "effect": {
+            "type": "damage",
+            "damage_type": "force",
+            "value": {
+              "roll": "psionic_energy_die",
+              "flat_modifier": "intelligence_modifier"
+            }
+          }
+        },
+        {
+          "type": "active_ability",
+          "action_type": "magic_action",
+          "range_feet": 30,
+          "uses": 1,
+          "recharge": [
+            {
+              "amount": "all",
+              "recharge": "short_rest"
+            },
+            {
+              "amount": "all",
+              "recharge": "long_rest"
+            }
+          ],
+          "refresh_option": {
+            "type": "feature_refresh",
+            "feature_id": "psi-warrior-psionic-power",
+            "cost": {
+              "resource": "psionic_energy_dice",
+              "amount": 1
+            }
+          },
+          "effect": {
+            "type": "telekinetic_transport",
+            "targets": [
+              "loose_object_large_or_smaller",
+              "willing_creature_other_than_self"
+            ],
+            "distance_feet": 30,
+            "destination": "unoccupied_space_you_can_see",
+            "tiny_object_special": "can_transport_to_or_from_hand"
+          }
+        }
+      ]
+    },
+    {
+      "id": "psi-warrior-telekinetic-adept",
+      "owner_type": "subclass",
+      "owner_id": "fighter-psi-warrior",
+      "level": 7,
+      "name_en": "Telekinetic Adept",
+      "name_de": "Adept der Telekinese",
+      "player_choice": false,
+      "text_en": "You have mastered new ways to use your telekinetic abilities.\n\nPsi-Powered Leap. As a Bonus Action, you gain a Fly Speed equal to twice your Speed until the end of the current turn. Requires Short or Long Rest, or expend a Psionic Energy Die to restore.\n\nTelekinetic Thrust. When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw (DC 8 + Intelligence modifier + Proficiency Bonus). On a failed save, you can give the target the Prone condition or transport it up to 10 feet horizontally.",
+      "text_de": "Du hast neue Wege erschlossen, deine telekinetischen Fähigkeiten zu nutzen.\n\nPsi-Sprung: Als Bonusaktion erhältst du bis zum Ende des aktuellen Zugs eine Flugbewegungsrate in doppelter Höhe deiner Bewegungsrate. Aufladung nach kurzer oder langer Rast oder durch Verbrauch eines Würfels.\n\nTelekinetischer Stoß: Wenn du einem Ziel mit deinem Psionischen Schlag Schaden zufügst, kannst du es zu einem Stärkerettungswurf (SG 8 + Intelligenzmodifikator + Übungsbonus) zwingen. Scheitert der Wurf, kannst du es umstoßen oder bis zu drei Meter weit horizontal bewegen.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "uses": 1,
+          "recharge": [
+            {
+              "amount": "all",
+              "recharge": "short_rest"
+            },
+            {
+              "amount": "all",
+              "recharge": "long_rest"
+            }
+          ],
+          "refresh_option": {
+            "type": "feature_refresh",
+            "feature_id": "psi-warrior-telekinetic-adept",
+            "cost": {
+              "resource": "psionic_energy_dice",
+              "amount": 1
+            }
+          },
+          "effect": {
+            "type": "speed_grant",
+            "speed_type": "fly",
+            "value": "twice_speed",
+            "duration": "until_end_of_current_turn"
+          }
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "deal_psionic_strike_damage",
+          "optional": true,
+          "saving_throw": {
+            "ability": "strength",
+            "dc": {
+              "base": 8,
+              "modifiers": [
+                "intelligence_modifier",
+                "proficiency_bonus"
+              ]
+            }
+          },
+          "on_failure": {
+            "type": "choice",
+            "choose": 1,
+            "options": [
+              {
+                "id": "prone",
+                "grants": [
+                  {
+                    "type": "apply_conditions",
+                    "conditions": [
+                      "prone"
+                    ],
+                    "target": "target"
+                  }
+                ]
+              },
+              {
+                "id": "horizontal_transport",
+                "grants": [
+                  {
+                    "type": "push",
+                    "distance_feet": 10,
+                    "direction": "horizontal_any"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "psi-warrior-guarded-mind",
+      "owner_type": "subclass",
+      "owner_id": "fighter-psi-warrior",
+      "level": 10,
+      "name_en": "Guarded Mind",
+      "name_de": "Bewachter Wille",
+      "player_choice": false,
+      "text_en": "You have Resistance to Psychic damage. Moreover, if you start your turn with the Charmed or Frightened condition, you can expend a Psionic Energy Die (no action required) and end every effect on yourself giving you those conditions.",
+      "text_de": "Du bist gegen psychischen Schaden resistent. Außerdem kannst du, wenn du deinen Zug in bezaubertem oder verängstigtem Zustand beginnst, einen Psi-Energie-Würfel verbrauchen (keine Aktion erforderlich) und alle diese Zustände bei dir beenden.",
+      "grants": [
+        {
+          "type": "damage_resistance",
+          "damage_types": [
+            "psychic"
+          ]
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "start_turn_with_charmed_or_frightened",
+          "optional": true,
+          "cost": {
+            "resource": "psionic_energy_dice",
+            "amount": 1
+          },
+          "effect": {
+            "type": "remove_condition",
+            "conditions": [
+              "charmed",
+              "frightened"
+            ],
+            "target": "self",
+            "scope": "all_effects_granting_those_conditions"
+          }
+        }
+      ]
+    },
+    {
+      "id": "psi-warrior-bulwark-of-force",
+      "owner_type": "subclass",
+      "owner_id": "fighter-psi-warrior",
+      "level": 15,
+      "name_en": "Bulwark of Force",
+      "name_de": "Mentaler Schutzwall",
+      "player_choice": false,
+      "text_en": "You can shield yourself and others with telekinetic force. As a Bonus Action, choose creatures within 30 feet of yourself, up to a number equal to your Intelligence modifier (minimum of one). Each chosen creature has Half Cover for 1 minute or until you have the Incapacitated condition.\n\nOnce you use this feature, you can't do so again until you finish a Long Rest unless you expend a Psionic Energy Die (no action required).",
+      "text_de": "Du beschützt dich und andere mit telekinetischer Kraft. Als Bonusaktion kannst du Kreaturen im Abstand von bis zu neun Metern auswählen (Anzahl höchstens gleich deinem Intelligenzmodifikator, mindestens eine). Jede ausgewählte Kreatur hat eine Minute lang – oder bis du kampfunfähig wirst – Teildeckung.\n\nDu kannst dieses Merkmal erst nach einer langen Rast erneut verwenden, es sei denn, du verbrauchst einen Psi-Energie-Würfel (keine Aktion).",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "range_feet": 30,
+          "uses": 1,
+          "recharge": "long_rest",
+          "refresh_option": {
+            "type": "feature_refresh",
+            "feature_id": "psi-warrior-bulwark-of-force",
+            "cost": {
+              "resource": "psionic_energy_dice",
+              "amount": 1
+            }
+          },
+          "targets": {
+            "choose_up_to": {
+              "equals": "intelligence_modifier",
+              "minimum": 1
+            },
+            "includes_self": true
+          },
+          "effect": {
+            "type": "grant_half_cover",
+            "duration": "1_minute",
+            "end_conditions": [
+              "you_become_incapacitated"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "psi-warrior-telekinetic-master",
+      "owner_type": "subclass",
+      "owner_id": "fighter-psi-warrior",
+      "level": 18,
+      "name_en": "Telekinetic Master",
+      "name_de": "Meister der Telekinese",
+      "player_choice": false,
+      "text_en": "You always have the Telekinesis spell prepared. With this feature, you can cast it without a spell slot or components, and your spellcasting ability for it is Intelligence. On each of your turns while you maintain Concentration on it (including the turn you cast it), you can make one weapon attack as a Bonus Action.\n\nOnce you cast the spell with this feature, you can't do so again until you finish a Long Rest unless you expend a Psionic Energy Die (no action required).",
+      "text_de": "Du hast den Zauber Telekinese stets vorbereitet. Mit diesem Merkmal kannst du ihn wirken, ohne einen Zauberplatz zu verbrauchen oder Komponenten zu benötigen, und dein Attribut zum Wirken des Zaubers ist Intelligenz. In allen Zügen, in denen du dich auf den Zauber konzentrierst, kannst du einen Waffenangriff als Bonusaktion ausführen.\n\nDu kannst den Zauber erst nach einer langen Rast erneut auf diese Art wirken, es sei denn, du verbrauchst einen Psi-Energie-Würfel (keine Aktion).",
+      "grants": [
+        {
+          "type": "always_prepared_spell",
+          "spell_id": "telekinesis",
+          "class_level_threshold": 18
+        },
+        {
+          "type": "spell_cost_override",
+          "spell_id": "telekinesis",
+          "cost": "no_spell_slot",
+          "components_override": {
+            "verbal": false,
+            "somatic": false,
+            "material": false
+          },
+          "spellcasting_ability": "intelligence",
+          "uses": 1,
+          "recharge": "long_rest",
+          "refresh_option": {
+            "type": "feature_refresh",
+            "feature_id": "psi-warrior-telekinetic-master",
+            "cost": {
+              "resource": "psionic_energy_dice",
+              "amount": 1
+            }
+          }
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "concentrating_on_telekinesis",
+          "effect": {
+            "type": "bonus_action_grant",
+            "actions": [
+              "weapon_attack"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "subclass_progressions": [
+    {
+      "subclass_id": "fighter-battle-master",
+      "spell_slot_table": null,
+      "levels": [
+        {
+          "level": 3,
+          "resources": {
+            "superiority_dice": {
+              "count": 4,
+              "die": "d8"
+            },
+            "maneuvers_known": 3
+          }
+        },
+        {
+          "level": 7,
+          "resources": {
+            "superiority_dice": {
+              "count": 5,
+              "die": "d8"
+            },
+            "maneuvers_known": 5
+          }
+        },
+        {
+          "level": 10,
+          "resources": {
+            "superiority_dice": {
+              "count": 5,
+              "die": "d10"
+            },
+            "maneuvers_known": 7
+          }
+        },
+        {
+          "level": 15,
+          "resources": {
+            "superiority_dice": {
+              "count": 6,
+              "die": "d10"
+            },
+            "maneuvers_known": 9
+          }
+        },
+        {
+          "level": 18,
+          "resources": {
+            "superiority_dice": {
+              "count": 6,
+              "die": "d12"
+            },
+            "maneuvers_known": 9
+          }
+        }
+      ]
+    },
+    {
+      "subclass_id": "fighter-eldritch-knight",
+      "spell_slot_table": "third_caster",
+      "levels": [
+        {
+          "level": 3,
+          "resources": {
+            "ek_prepared_spells": 3,
+            "ek_cantrips_known": 2
+          }
+        },
+        {
+          "level": 4,
+          "resources": {
+            "ek_prepared_spells": 4,
+            "ek_cantrips_known": 2
+          }
+        },
+        {
+          "level": 5,
+          "resources": {
+            "ek_prepared_spells": 4,
+            "ek_cantrips_known": 2
+          }
+        },
+        {
+          "level": 6,
+          "resources": {
+            "ek_prepared_spells": 4,
+            "ek_cantrips_known": 2
+          }
+        },
+        {
+          "level": 7,
+          "resources": {
+            "ek_prepared_spells": 5,
+            "ek_cantrips_known": 2
+          }
+        },
+        {
+          "level": 8,
+          "resources": {
+            "ek_prepared_spells": 6,
+            "ek_cantrips_known": 2
+          }
+        },
+        {
+          "level": 9,
+          "resources": {
+            "ek_prepared_spells": 6,
+            "ek_cantrips_known": 2
+          }
+        },
+        {
+          "level": 10,
+          "resources": {
+            "ek_prepared_spells": 7,
+            "ek_cantrips_known": 3
+          }
+        },
+        {
+          "level": 11,
+          "resources": {
+            "ek_prepared_spells": 8,
+            "ek_cantrips_known": 3
+          }
+        },
+        {
+          "level": 12,
+          "resources": {
+            "ek_prepared_spells": 8,
+            "ek_cantrips_known": 3
+          }
+        },
+        {
+          "level": 13,
+          "resources": {
+            "ek_prepared_spells": 9,
+            "ek_cantrips_known": 3
+          }
+        },
+        {
+          "level": 14,
+          "resources": {
+            "ek_prepared_spells": 10,
+            "ek_cantrips_known": 3
+          }
+        },
+        {
+          "level": 15,
+          "resources": {
+            "ek_prepared_spells": 10,
+            "ek_cantrips_known": 3
+          }
+        },
+        {
+          "level": 16,
+          "resources": {
+            "ek_prepared_spells": 11,
+            "ek_cantrips_known": 3
+          }
+        },
+        {
+          "level": 17,
+          "resources": {
+            "ek_prepared_spells": 11,
+            "ek_cantrips_known": 3
+          }
+        },
+        {
+          "level": 18,
+          "resources": {
+            "ek_prepared_spells": 11,
+            "ek_cantrips_known": 3
+          }
+        },
+        {
+          "level": 19,
+          "resources": {
+            "ek_prepared_spells": 12,
+            "ek_cantrips_known": 3
+          }
+        },
+        {
+          "level": 20,
+          "resources": {
+            "ek_prepared_spells": 13,
+            "ek_cantrips_known": 3
+          }
+        }
+      ]
+    },
+    {
+      "subclass_id": "fighter-psi-warrior",
+      "spell_slot_table": null,
+      "levels": [
+        {
+          "level": 3,
+          "resources": {
+            "psionic_energy_dice": {
+              "count": 4,
+              "die": "d6"
+            }
+          }
+        },
+        {
+          "level": 5,
+          "resources": {
+            "psionic_energy_dice": {
+              "count": 6,
+              "die": "d8"
+            }
+          }
+        },
+        {
+          "level": 9,
+          "resources": {
+            "psionic_energy_dice": {
+              "count": 8,
+              "die": "d8"
+            }
+          }
+        },
+        {
+          "level": 11,
+          "resources": {
+            "psionic_energy_dice": {
+              "count": 8,
+              "die": "d10"
+            }
+          }
+        },
+        {
+          "level": 13,
+          "resources": {
+            "psionic_energy_dice": {
+              "count": 10,
+              "die": "d10"
+            }
+          }
+        },
+        {
+          "level": 17,
+          "resources": {
+            "psionic_energy_dice": {
+              "count": 12,
+              "die": "d12"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": "maneuver-ambush",
+      "type": "battle_master_maneuver",
+      "name_en": "Ambush",
+      "name_de": "Hinterhalt",
+      "prerequisites": {},
+      "text_en": "When you make a Dexterity (Stealth) check or an Initiative roll, you can expend one Superiority Die and add the die to the roll, unless you have the Incapacitated condition.",
+      "text_de": "Wenn du einen Geschicklichkeitswurf (Heimlichkeit) oder einen Initiativewurf ausführst, kannst du einen Überlegenheitswürfel verbrauchen und dem Ergebnis hinzufügen, sofern du nicht kampfunfähig bist.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": [
+            "dexterity_stealth_check",
+            "initiative_roll"
+          ],
+          "optional": true,
+          "condition": "not_incapacitated",
+          "cost": {
+            "resource": "superiority_dice",
+            "amount": 1
+          },
+          "effect": {
+            "type": "add_to_roll",
+            "value": {
+              "roll": "superiority_die"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "maneuver-bait-and-switch",
+      "type": "battle_master_maneuver",
+      "name_en": "Bait and Switch",
+      "name_de": "Lockvogeltaktik",
+      "prerequisites": {},
+      "text_en": "When you're within 5 feet of a creature on your turn, you can expend one Superiority Die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and doesn't have the Incapacitated condition. This movement doesn't provoke Opportunity Attacks.\n\nRoll the Superiority Die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled.",
+      "text_de": "Wenn du in deinem Zug im Abstand von bis zu 1,5 Metern von einer Kreatur bist, kannst du einen Überlegenheitswürfel verbrauchen und den Platz tauschen. Du musst mindestens 1,5 Meter Bewegung verbrauchen, die Kreatur muss bereitwillig und nicht kampfunfähig sein. Diese Bewegung provoziert keine Gelegenheitsangriffe.\n\nWürfle mit dem Überlegenheitswürfel. Bis zum Beginn deines nächsten Zugs erhältst du oder die andere Kreatur (nach deiner Wahl) einen Bonus auf die RK in Höhe des Ergebnisses.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "free",
+          "condition": "within_5ft_of_creature_on_your_turn",
+          "cost": {
+            "resource": "superiority_dice",
+            "amount": 1
+          },
+          "effect": {
+            "type": "swap_places",
+            "target_conditions": [
+              "willing",
+              "not_incapacitated"
+            ],
+            "movement_cost_feet": 5,
+            "no_opportunity_attacks": true
+          }
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "use_bait_and_switch",
+          "effect": {
+            "type": "ac_bonus",
+            "target_choice": [
+              "self",
+              "swapped_creature"
+            ],
+            "value": {
+              "roll": "superiority_die"
+            },
+            "duration": "until_start_of_your_next_turn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "maneuver-commanders-strike",
+      "type": "battle_master_maneuver",
+      "name_en": "Commander's Strike",
+      "name_de": "Schlag des Befehlshabers",
+      "prerequisites": {},
+      "text_en": "When you take the Attack action on your turn, you can replace one of your attacks to direct one of your companions to strike. Choose a willing creature who can see or hear you and expend one Superiority Die. That creature can immediately use its Reaction to make one attack with a weapon or an Unarmed Strike, adding the Superiority Die to the attack's damage roll on a hit.",
+      "text_de": "Wenn du in deinem Zug die Angriffsaktion ausführst, kannst du einen deiner Angriffe damit ersetzen, dass du einem deiner Gefährten einen Angriff befiehlst. Wähle eine bereitwillige Kreatur, die dich hören oder sehen kann, und verbrauche einen Überlegenheitswürfel. Die ausgewählte Kreatur kann sofort ihre Reaktion verwenden, um einen Angriff auszuführen. Bei einem Treffer fügt sie dem Schadenswurf das Ergebnis des Überlegenheitswürfels hinzu.",
+      "grants": [
+        {
+          "type": "attack_replacement",
+          "replace_with": "direct_companion_attack",
+          "attacks_replaceable": 1,
+          "cost": {
+            "resource": "superiority_dice",
+            "amount": 1
+          },
+          "effect": {
+            "type": "ally_attack_with_reaction",
+            "target": "willing_ally_that_can_see_or_hear_you",
+            "on_hit_bonus_damage": {
+              "roll": "superiority_die"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "maneuver-commanding-presence",
+      "type": "battle_master_maneuver",
+      "name_en": "Commanding Presence",
+      "name_de": "Gebieterische Erscheinung",
+      "prerequisites": {},
+      "text_en": "When you make a Charisma (Intimidation, Performance, or Persuasion) check, you can expend one Superiority Die and add that die to the roll.",
+      "text_de": "Wenn du einen Charismawurf (Auftreten, Einschüchtern oder Überzeugen) ausführst, kannst du einen Überlegenheitswürfel verbrauchen und dem Ergebnis hinzufügen.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": [
+            "charisma_intimidation_check",
+            "charisma_performance_check",
+            "charisma_persuasion_check"
+          ],
+          "optional": true,
+          "cost": {
+            "resource": "superiority_dice",
+            "amount": 1
+          },
+          "effect": {
+            "type": "add_to_roll",
+            "value": {
+              "roll": "superiority_die"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "maneuver-disarming-attack",
+      "type": "battle_master_maneuver",
+      "name_en": "Disarming Attack",
+      "name_de": "Entwaffnender Angriff",
+      "prerequisites": {},
+      "text_en": "When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to disarm the target. Add the Superiority Die roll to the attack's damage roll. The target must succeed on a Strength saving throw or drop one object of your choice that it's holding, with the object landing in its space.",
+      "text_de": "Wenn du eine Kreatur mit einem Angriffswurf triffst, kannst du einen Überlegenheitswürfel verbrauchen, um zu versuchen, das Ziel zu entwaffnen. Füge dem Schadenswurf das Ergebnis hinzu. Das Ziel muss einen Stärkerettungswurf bestehen, oder es lässt einen Gegenstand deiner Wahl fallen.",
+      "grants": [
+        {
+          "type": "on_hit_effect",
+          "attack_type": "any",
+          "optional": true,
+          "cost": {
+            "resource": "superiority_dice",
+            "amount": 1
+          },
+          "effect": {
+            "type": "damage",
+            "value": {
+              "roll": "superiority_die"
+            }
+          },
+          "saving_throw": {
+            "ability": "strength",
+            "dc": "maneuver_save_dc"
+          },
+          "on_failure": {
+            "type": "drop_held_object",
+            "object_choice": "attacker"
+          }
+        }
+      ]
+    },
+    {
+      "id": "maneuver-distracting-strike",
+      "type": "battle_master_maneuver",
+      "name_en": "Distracting Strike",
+      "name_de": "Ablenkender Angriff",
+      "prerequisites": {},
+      "text_en": "When you hit a creature with an attack roll, you can expend one Superiority Die to distract the target. Add the Superiority Die roll to the attack's damage roll. The next attack roll against the target by an attacker other than you has Advantage if the attack is made before the start of your next turn.",
+      "text_de": "Wenn du eine Kreatur mit einem Angriffswurf triffst, kannst du einen Überlegenheitswürfel verbrauchen, um das Ziel abzulenken. Füge dem Schadenswurf das Ergebnis hinzu. Der nächste Angriffswurf einer anderen Kreatur gegen das Ziel ist im Vorteil, sofern der Angriff vor Beginn deines nächsten Zugs ausgeführt wird.",
+      "grants": [
+        {
+          "type": "on_hit_effect",
+          "attack_type": "any",
+          "optional": true,
+          "cost": {
+            "resource": "superiority_dice",
+            "amount": 1
+          },
+          "effect": {
+            "type": "damage",
+            "value": {
+              "roll": "superiority_die"
+            }
+          },
+          "secondary_effect": {
+            "type": "attack_roll_bonus_to_allies",
+            "target": "hit_creature",
+            "bonus": "advantage",
+            "applies_to": "next_attack_by_another_creature",
+            "duration": "before_start_of_your_next_turn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "maneuver-evasive-footwork",
+      "type": "battle_master_maneuver",
+      "name_en": "Evasive Footwork",
+      "name_de": "Tänzelnde Beinarbeit",
+      "prerequisites": {},
+      "text_en": "As a Bonus Action, you can expend one Superiority Die and take the Disengage action. You also roll the die and add the number rolled to your AC until the start of your next turn.",
+      "text_de": "Als Bonusaktion kannst du einen Überlegenheitswürfel verbrauchen und die Rückzug-Aktion ausführen. Außerdem würfelst du mit dem Würfel und fügst das Ergebnis bis zum Beginn deines nächsten Zugs deiner RK hinzu.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "cost": {
+            "resource": "superiority_dice",
+            "amount": 1
+          },
+          "effect": {
+            "type": "disengage_action"
+          },
+          "secondary_effect": {
+            "type": "ac_bonus",
+            "target": "self",
+            "value": {
+              "roll": "superiority_die"
+            },
+            "duration": "until_start_of_your_next_turn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "maneuver-feinting-attack",
+      "type": "battle_master_maneuver",
+      "name_en": "Feinting Attack",
+      "name_de": "Täuschungsmanöver",
+      "prerequisites": {},
+      "text_en": "As a Bonus Action, you can expend one Superiority Die to feint, choosing one creature within 5 feet of yourself as your target. You have Advantage on your next attack roll against that target this turn. If that attack hits, add the Superiority Die to the attack's damage roll.",
+      "text_de": "Als Bonusaktion kannst du einen Überlegenheitswürfel für ein Täuschungsmanöver verbrauchen. Wähle eine Kreatur im Abstand von bis zu 1,5 Metern als Ziel. In diesem Zug bist du bei deinem nächsten Angriffswurf gegen dieses Ziel im Vorteil. Wenn dein Angriff trifft, fügst du dem Schadenswurf das Ergebnis des Überlegenheitswürfels hinzu.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "range_feet": 5,
+          "cost": {
+            "resource": "superiority_dice",
+            "amount": 1
+          },
+          "effect": {
+            "type": "advantage",
+            "on": [
+              "next_attack_roll_against_target"
+            ],
+            "duration": "this_turn"
+          },
+          "on_hit_bonus_damage": {
+            "roll": "superiority_die"
+          }
+        }
+      ]
+    },
+    {
+      "id": "maneuver-goading-attack",
+      "type": "battle_master_maneuver",
+      "name_en": "Goading Attack",
+      "name_de": "Provozierender Angriff",
+      "prerequisites": {},
+      "text_en": "When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to goad the target into attacking you. Add the Superiority Die to the attack's damage roll. The target must succeed on a Wisdom saving throw or have Disadvantage on attack rolls against targets other than you until the end of your next turn.",
+      "text_de": "Wenn du eine Kreatur mit einem Angriffswurf triffst, kannst du einen Überlegenheitswürfel verbrauchen, um das Ziel zu provozieren. Füge dem Schadenswurf das Ergebnis hinzu. Das Ziel muss einen Weisheitsrettungswurf bestehen, oder es ist bis zum Ende deines nächsten Zugs bei Angriffswürfen gegen andere Ziele im Nachteil.",
+      "grants": [
+        {
+          "type": "on_hit_effect",
+          "attack_type": "any",
+          "optional": true,
+          "cost": {
+            "resource": "superiority_dice",
+            "amount": 1
+          },
+          "effect": {
+            "type": "damage",
+            "value": {
+              "roll": "superiority_die"
+            }
+          },
+          "saving_throw": {
+            "ability": "wisdom",
+            "dc": "maneuver_save_dc"
+          },
+          "on_failure": {
+            "type": "disadvantage_on_enemies",
+            "on": [
+              "attack_rolls"
+            ],
+            "against": "creatures_other_than_self",
+            "duration": "until_end_of_your_next_turn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "maneuver-lunging-attack",
+      "type": "battle_master_maneuver",
+      "name_en": "Lunging Attack",
+      "name_de": "Ausfall",
+      "prerequisites": {},
+      "text_en": "As a Bonus Action, you can expend one Superiority Die and take the Dash action. If you move at least 5 feet in a straight line immediately before hitting with a melee attack as part of the Attack action on this turn, you can add the Superiority Die to the attack's damage roll.",
+      "text_de": "Als Bonusaktion kannst du einen Überlegenheitswürfel verbrauchen und die Spurt-Aktion ausführen. Wenn du dich unmittelbar bevor du einen Nahkampfangriff triffst mindestens 1,5 Meter in gerader Linie bewegst, kannst du dem Schadenswurf das Ergebnis hinzufügen.",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "cost": {
+            "resource": "superiority_dice",
+            "amount": 1
+          },
+          "effect": {
+            "type": "dash_action"
+          }
+        },
+        {
+          "type": "triggered_effect",
+          "trigger": "hit_melee_attack_after_moving_5ft_straight",
+          "condition": "use_lunging_attack_this_turn",
+          "effect": {
+            "type": "damage",
+            "value": {
+              "roll": "superiority_die"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "maneuver-maneuvering-attack",
+      "type": "battle_master_maneuver",
+      "name_en": "Maneuvering Attack",
+      "name_de": "Manövrierender Angriff",
+      "prerequisites": {},
+      "text_en": "When you hit a creature with an attack roll, you can expend one Superiority Die to maneuver one of your comrades into another position. Add the Superiority Die roll to the attack's damage roll, and choose a willing creature who can see or hear you. That creature can use its Reaction to move up to half its Speed without provoking an Opportunity Attack from the target of your attack.",
+      "text_de": "Wenn du eine Kreatur mit einem Angriffswurf triffst, kannst du einen Überlegenheitswürfel verbrauchen, um einen Gefährten zu manövrieren. Füge dem Schadenswurf das Ergebnis hinzu und wähle eine bereitwillige Kreatur aus. Diese kann ihre Reaktion verwenden, um bis zur Hälfte ihrer Bewegungsrate zurückzulegen, ohne einen Gelegenheitsangriff des Angriffsziels zu provozieren.",
+      "grants": [
+        {
+          "type": "on_hit_effect",
+          "attack_type": "any",
+          "optional": true,
+          "cost": {
+            "resource": "superiority_dice",
+            "amount": 1
+          },
+          "effect": {
+            "type": "damage",
+            "value": {
+              "roll": "superiority_die"
+            }
+          },
+          "secondary_effect": {
+            "type": "ally_movement_with_reaction",
+            "target": "willing_ally_that_can_see_or_hear_you",
+            "distance": "half_speed",
+            "no_opportunity_attack_from": "attack_target"
+          }
+        }
+      ]
+    },
+    {
+      "id": "maneuver-menacing-attack",
+      "type": "battle_master_maneuver",
+      "name_en": "Menacing Attack",
+      "name_de": "Bedrohlicher Angriff",
+      "prerequisites": {},
+      "text_en": "When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to frighten the target. Add the Superiority Die to the attack's damage roll. The target must succeed on a Wisdom saving throw or have the Frightened condition until the end of your next turn.",
+      "text_de": "Wenn du eine Kreatur mit einem Angriffswurf triffst, kannst du einen Überlegenheitswürfel verbrauchen, um das Ziel zu verängstigen. Füge dem Schadenswurf das Ergebnis hinzu. Das Ziel muss einen Weisheitsrettungswurf bestehen, oder es ist bis zum Ende deines nächsten Zugs verängstigt.",
+      "grants": [
+        {
+          "type": "on_hit_effect",
+          "attack_type": "any",
+          "optional": true,
+          "cost": {
+            "resource": "superiority_dice",
+            "amount": 1
+          },
+          "effect": {
+            "type": "damage",
+            "value": {
+              "roll": "superiority_die"
+            }
+          },
+          "saving_throw": {
+            "ability": "wisdom",
+            "dc": "maneuver_save_dc"
+          },
+          "on_failure": {
+            "type": "apply_conditions",
+            "conditions": [
+              "frightened"
+            ],
+            "duration": "until_end_of_your_next_turn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "maneuver-parry",
+      "type": "battle_master_maneuver",
+      "name_en": "Parry",
+      "name_de": "Parieren",
+      "prerequisites": {},
+      "text_en": "When another creature damages you with a melee attack roll, you can take a Reaction and expend one Superiority Die to reduce the damage by the number you roll on your Superiority Die plus your Strength or Dexterity modifier (your choice).",
+      "text_de": "Wenn eine andere Kreatur dir mit einem Nahkampfangriffswurf Schaden zufügt, kannst du eine Reaktion ausführen und einen Überlegenheitswürfel verbrauchen, um den Schaden zu verringern: Ziehe das Ergebnis plus deinen Stärke- oder Geschicklichkeitsmodifikator (nach Wahl) vom Schaden ab.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "hit_by_melee_attack",
+          "action_type": "reaction",
+          "optional": true,
+          "cost": {
+            "resource": "superiority_dice",
+            "amount": 1
+          },
+          "effect": {
+            "type": "damage_reduction",
+            "value": {
+              "roll": "superiority_die",
+              "flat_modifier_choice": [
+                "strength_modifier",
+                "dexterity_modifier"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "maneuver-precision-attack",
+      "type": "battle_master_maneuver",
+      "name_en": "Precision Attack",
+      "name_de": "Präzisionsangriff",
+      "prerequisites": {},
+      "text_en": "When you miss with an attack roll, you can expend one Superiority Die, roll that die, and add it to the attack roll, potentially causing the attack to hit.",
+      "text_de": "Wenn du mit einem Angriffswurf scheiterst, kannst du einen Überlegenheitswürfel verbrauchen, würfeln und das Ergebnis dem Angriffswurf hinzufügen, um diesen möglicherweise zu einem Treffer zu machen.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "miss_attack_roll",
+          "optional": true,
+          "cost": {
+            "resource": "superiority_dice",
+            "amount": 1
+          },
+          "effect": {
+            "type": "add_to_roll",
+            "value": {
+              "roll": "superiority_die"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "maneuver-pushing-attack",
+      "type": "battle_master_maneuver",
+      "name_en": "Pushing Attack",
+      "name_de": "Stoßangriff",
+      "prerequisites": {},
+      "text_en": "When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die to attempt to drive the target back. Add the Superiority Die to the attack's damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or be pushed up to 15 feet directly away from you.",
+      "text_de": "Wenn du eine Kreatur mit einer Waffe oder einem waffenlosen Angriff triffst, kannst du einen Überlegenheitswürfel verbrauchen, um das Ziel zurückzustoßen. Füge dem Schadenswurf das Ergebnis hinzu. Wenn das Ziel von höchstens großer Größe ist, muss es einen Stärkerettungswurf bestehen, oder es wird bis zu 4,5 Meter weit wegggestoßen.",
+      "grants": [
+        {
+          "type": "on_hit_effect",
+          "attack_type": [
+            "weapon",
+            "unarmed"
+          ],
+          "optional": true,
+          "cost": {
+            "resource": "superiority_dice",
+            "amount": 1
+          },
+          "effect": {
+            "type": "damage",
+            "value": {
+              "roll": "superiority_die"
+            }
+          },
+          "saving_throw": {
+            "ability": "strength",
+            "dc": "maneuver_save_dc"
+          },
+          "on_failure": {
+            "type": "push",
+            "distance_feet": 15,
+            "direction": "directly_away",
+            "target_size_max": "large"
+          }
+        }
+      ]
+    },
+    {
+      "id": "maneuver-rally",
+      "type": "battle_master_maneuver",
+      "name_en": "Rally",
+      "name_de": "Schlachtruf",
+      "prerequisites": {},
+      "text_en": "As a Bonus Action, you can expend one Superiority Die to bolster the resolve of a companion. Choose an ally within 30 feet who can see or hear you. That creature gains Temporary Hit Points equal to the Superiority Die roll plus half your Fighter level (round down).",
+      "text_de": "Als Bonusaktion kannst du einen Überlegenheitswürfel verbrauchen, um die Entschlossenheit eines Gefährten zu stärken. Wähle einen Verbündeten im Abstand von bis zu neun Metern. Diese Kreatur erhält temporäre Trefferpunkte in Höhe des Würfelergebnisses plus der Hälfte deiner Kämpferstufe (abgerundet).",
+      "grants": [
+        {
+          "type": "active_ability",
+          "action_type": "bonus_action",
+          "range_feet": 30,
+          "cost": {
+            "resource": "superiority_dice",
+            "amount": 1
+          },
+          "effect": {
+            "type": "grant_temporary_hit_points",
+            "target": "ally_that_can_see_or_hear_you",
+            "value": {
+              "roll": "superiority_die",
+              "plus_half_class_level": "fighter_level"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "maneuver-riposte",
+      "type": "battle_master_maneuver",
+      "name_en": "Riposte",
+      "name_de": "Riposte",
+      "prerequisites": {},
+      "text_en": "When a creature misses you with a melee attack roll, you can take a Reaction and expend one Superiority Die to make a melee attack roll with a weapon or an Unarmed Strike against the creature. If you hit, add the Superiority Die to the attack's damage.",
+      "text_de": "Wenn eine Kreatur dich mit einem Nahkampfangriffswurf verfehlt, kannst du eine Reaktion ausführen und einen Überlegenheitswürfel verbrauchen, um einen Nahkampfangriff gegen die Kreatur auszuführen. Bei einem Treffer fügst du das Ergebnis dem Angriffsschaden hinzu.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": "missed_by_melee_attack",
+          "action_type": "reaction",
+          "optional": true,
+          "cost": {
+            "resource": "superiority_dice",
+            "amount": 1
+          },
+          "effect": {
+            "type": "make_melee_attack",
+            "attack_type": [
+              "weapon",
+              "unarmed"
+            ],
+            "on_hit_bonus_damage": {
+              "roll": "superiority_die"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "maneuver-sweeping-attack",
+      "type": "battle_master_maneuver",
+      "name_en": "Sweeping Attack",
+      "name_de": "Doppelschlag",
+      "prerequisites": {},
+      "text_en": "When you hit a creature with a melee attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die to attempt to damage another creature. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you roll on your Superiority Die. The damage is of the same type dealt by the original attack.",
+      "text_de": "Wenn du eine Kreatur im Nahkampf mit einer Waffe oder einem waffenlosen Angriff triffst, kannst du einen Überlegenheitswürfel verbrauchen, um einer weiteren Kreatur Schaden zuzufügen. Wähle eine andere Kreatur im Abstand von bis zu 1,5 Metern vom ursprünglichen Ziel und in Reichweite. Wenn der ursprüngliche Angriffswurf die zweite Kreatur treffen würde, erleidet diese Schaden in Höhe des Überlegenheitswürfelergebnisses.",
+      "grants": [
+        {
+          "type": "on_hit_effect",
+          "attack_type": [
+            "melee_weapon",
+            "unarmed"
+          ],
+          "optional": true,
+          "cost": {
+            "resource": "superiority_dice",
+            "amount": 1
+          },
+          "effect": {
+            "type": "secondary_target_damage",
+            "secondary_target": "creature_within_5ft_of_original_target_and_in_reach",
+            "condition": "original_attack_roll_would_hit_secondary",
+            "value": {
+              "roll": "superiority_die"
+            },
+            "damage_type": "same_as_original_attack"
+          }
+        }
+      ]
+    },
+    {
+      "id": "maneuver-tactical-assessment",
+      "type": "battle_master_maneuver",
+      "name_en": "Tactical Assessment",
+      "name_de": "Taktisches Abschätzen",
+      "prerequisites": {},
+      "text_en": "When you make an Intelligence (History or Investigation) check or a Wisdom (Insight) check, you can expend one Superiority Die and add that die to the ability check.",
+      "text_de": "Bei einem Intelligenzwurf (Geschichte oder Nachforschungen) oder einem Weisheitswurf (Motiv erkennen) kannst du einen Überlegenheitswürfel verbrauchen und das Ergebnis dem Attributswurf hinzufügen.",
+      "grants": [
+        {
+          "type": "triggered_effect",
+          "trigger": [
+            "intelligence_history_check",
+            "intelligence_investigation_check",
+            "wisdom_insight_check"
+          ],
+          "optional": true,
+          "cost": {
+            "resource": "superiority_dice",
+            "amount": 1
+          },
+          "effect": {
+            "type": "add_to_roll",
+            "value": {
+              "roll": "superiority_die"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "maneuver-trip-attack",
+      "type": "battle_master_maneuver",
+      "name_en": "Trip Attack",
+      "name_de": "Stolperangriff",
+      "prerequisites": {},
+      "text_en": "When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die and add the die to the attack's damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or have the Prone condition.",
+      "text_de": "Wenn du eine Kreatur mit einer Waffe oder einem waffenlosen Angriff triffst, kannst du einen Überlegenheitswürfel verbrauchen und das Ergebnis dem Schadenswurf hinzufügen. Wenn das Ziel von höchstens großer Größe ist, muss es einen Stärkerettungswurf bestehen, oder es wird umgestoßen.",
+      "grants": [
+        {
+          "type": "on_hit_effect",
+          "attack_type": [
+            "weapon",
+            "unarmed"
+          ],
+          "optional": true,
+          "cost": {
+            "resource": "superiority_dice",
+            "amount": 1
+          },
+          "effect": {
+            "type": "damage",
+            "value": {
+              "roll": "superiority_die"
+            }
+          },
+          "saving_throw": {
+            "ability": "strength",
+            "dc": "maneuver_save_dc"
+          },
+          "on_failure": {
+            "type": "apply_conditions",
+            "conditions": [
+              "prone"
+            ],
+            "target_size_max": "large"
+          }
+        }
+      ]
+    }
+  ]
+}
