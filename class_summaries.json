@@ -1,0 +1,590 @@
+[
+  {
+    "id": "barbarian",
+    "flavor_en": "A primal warrior who channels fury into raw durability and crushing melee offense, thriving by charging in, hitting hard, and surviving punishment that would drop other heroes.",
+    "flavor_de": "Ein urtümlicher Krieger, der seine Wut in rohe Zähigkeit und vernichtende Nahkampfkraft verwandelt und davon lebt, frontal anzugreifen, hart zuzuschlagen und Treffer wegzustecken, die andere Helden zu Fall bringen würden.",
+    "armor_proficiencies_en": "Light, Medium, Shields",
+    "armor_proficiencies_de": "Leichte Rüstung, Mittlere Rüstung, Schilde",
+    "weapon_proficiencies_en": "Simple, Martial",
+    "weapon_proficiencies_de": "Einfache Waffen, Kriegswaffen",
+    "primary_ability_en": "Strength",
+    "primary_ability_de": "Stärke",
+    "caster_type_en": null,
+    "caster_type_de": null,
+    "progression_summary_en": "Levels 1-3 establish Rage, Unarmored Defense, and Weapon Mastery, then add Reckless Attack and Danger Sense before your subclass arrives at level 3 alongside Primal Knowledge.",
+    "progression_summary_de": "Die Stufen 1-3 etablieren Kampfrausch, Ungepanzerte Verteidigung und Waffenbeherrschung, dann kommen Rücksichtsloser Angriff und Gefahreninstinkt hinzu, bevor auf Stufe 3 die Unterklasse zusammen mit Urtümlichem Wissen erscheint.",
+    "subclasses": [
+      {
+        "id": "barbarian-berserker",
+        "name_en": "Path of the Berserker",
+        "name_de": "Pfad des Berserkers",
+        "summary_en": "The Berserker is the pure rage fantasy: a brutally direct barbarian who turns Reckless Attack into even more damage and later punishes enemies for daring to strike back. It is the simplest offensive barbarian path, built for relentless aggression and intimidation.",
+        "summary_de": "Der Berserker verkörpert die reine Kampfrausch-Fantasie: ein brutal direkter Barbar, der Rücksichtslosen Angriff in noch mehr Schaden verwandelt und später Gegner dafür bestraft, zurückzuschlagen. Dieser Pfad ist die geradlinigste offensive Barbarenoption und steht für unaufhaltsame Aggression und Einschüchterung.",
+        "feature_levels": [3, 6, 10, 14]
+      },
+      {
+        "id": "barbarian-wild-heart",
+        "name_en": "Path of the Wild Heart",
+        "name_de": "Pfad des Wilden Herzens",
+        "summary_en": "The Wild Heart barbarian channels animal spirits and natural instincts, mixing primal flavor with flexible utility and adaptive rage benefits. It suits players who want a nature-themed bruiser with more exploration flavor than a straightforward damage build.",
+        "summary_de": "Der Barbar des Wilden Herzens kanalisiert Tiergeister und natürliche Instinkte und verbindet urtümliches Flair mit flexibler Nützlichkeit und anpassbaren Vorteilen im Kampfrausch. Er passt zu Spielern, die einen naturverbundenen Frontkämpfer mit mehr Erkundungsflair als eine reine Schadensausrichtung wollen.",
+        "feature_levels": [3, 6, 10, 14]
+      },
+      {
+        "id": "barbarian-world-tree",
+        "name_en": "Path of the World Tree",
+        "name_de": "Pfad des Weltenbaums",
+        "summary_en": "The World Tree barbarian draws on cosmic life and roots, protecting allies, controlling space, and moving creatures around the battlefield. Its identity is a sturdier, more tactical barbarian that mixes frontline toughness with team support.",
+        "summary_de": "Der Barbar des Weltenbaums schöpft aus kosmischem Leben und Wurzeln, schützt Verbündete, kontrolliert Raum und verschiebt Kreaturen über das Schlachtfeld. Seine Identität ist die eines zäheren, taktischeren Barbaren, der Frontkampfhärte mit Gruppenunterstützung verbindet.",
+        "feature_levels": [3, 6, 10, 14]
+      },
+      {
+        "id": "barbarian-zealot",
+        "name_en": "Path of the Zealot",
+        "name_de": "Pfad des Eiferers",
+        "summary_en": "The Zealot is a divine fanatic whose rage carries holy wrath, resilience, and rallying presence. It is an ideal choice for players who want a barbarian with a sacred edge, strong damage, and a heroic, death-defying feel.",
+        "summary_de": "Der Eiferer ist ein göttlicher Fanatiker, dessen Kampfrausch heiligen Zorn, Widerstandskraft und inspirierende Präsenz trägt. Er ist ideal für Spieler, die einen Barbaren mit sakraler Note, starkem Schaden und heroischem, todesverachtendem Spielgefühl suchen.",
+        "feature_levels": [3, 6, 10, 14]
+      }
+    ]
+  },
+  {
+    "id": "bard",
+    "flavor_en": "A charismatic artist and magical support specialist who shapes the battlefield with spells, inspiration, and skill mastery while keeping the whole party better at everything.",
+    "flavor_de": "Ein charismatischer Künstler und magischer Unterstützer, der mit Zaubern, Inspiration und Fertigkeitsmeisterschaft das Schlachtfeld prägt und die ganze Gruppe in allem besser macht.",
+    "armor_proficiencies_en": "Light",
+    "armor_proficiencies_de": "Leichte Rüstung",
+    "weapon_proficiencies_en": "Simple",
+    "weapon_proficiencies_de": "Einfache Waffen",
+    "primary_ability_en": "Charisma",
+    "primary_ability_de": "Charisma",
+    "caster_type_en": "Full Caster",
+    "caster_type_de": "Vollzauberer",
+    "progression_summary_en": "Levels 1-3 give you full spellcasting and Bardic Inspiration at the start, then Expertise and Jack of All Trades at level 2, followed by your subclass at level 3.",
+    "progression_summary_de": "Die Stufen 1-3 geben dir von Beginn an volles Zauberwirken und Bardische Inspiration, dann auf Stufe 2 Expertise und Alleskönner, gefolgt von deiner Unterklasse auf Stufe 3.",
+    "subclasses": [
+      {
+        "id": "bard-college-of-dance",
+        "name_en": "College of Dance",
+        "name_de": "Schule des Tanzes",
+        "summary_en": "The College of Dance turns performance into motion, defense, and teamwork, giving the bard a highly mobile and expressive battlefield style. It fits players who want a graceful support character who stays in the thick of the action instead of hiding in the back line.",
+        "summary_de": "Die Schule des Tanzes verwandelt Darbietung in Bewegung, Verteidigung und Teamspiel und verleiht dem Barden einen sehr mobilen und ausdrucksstarken Kampfstil. Sie passt zu Spielern, die einen eleganten Unterstützer wollen, der mitten im Geschehen bleibt statt nur in der hinteren Reihe zu stehen.",
+        "feature_levels": [3, 6, 14]
+      },
+      {
+        "id": "bard-college-of-glamour",
+        "name_en": "College of Glamour",
+        "name_de": "Schule des Zauberbanns",
+        "summary_en": "The College of Glamour embodies fey beauty and supernatural presence, charming foes and uplifting allies with irresistible style. Its playstyle centers on social power, enchantment, and commanding the flow of a fight through presence rather than brute force.",
+        "summary_de": "Die Schule des Zauberbanns verkörpert Feenschönheit und übernatürliche Präsenz, bezaubert Feinde und erhebt Verbündete mit unwiderstehlichem Stil. Ihr Spielstil dreht sich um soziale Macht, Verzauberung und darum, den Verlauf eines Kampfes durch Ausstrahlung statt rohe Gewalt zu lenken.",
+        "feature_levels": [3, 6, 14]
+      },
+      {
+        "id": "bard-college-of-lore",
+        "name_en": "College of Lore",
+        "name_de": "Schule des Wissens",
+        "summary_en": "The College of Lore is the consummate scholar-performer, using broad knowledge, cutting wit, and extra magical versatility to solve almost any problem. It is perfect for players who want the most flexible, skill-heavy, spell-savvy bard possible.",
+        "summary_de": "Die Schule des Wissens ist der Inbegriff des gelehrten Darstellers und löst mit breitem Wissen, scharfem Spott und zusätzlicher magischer Vielseitigkeit beinahe jedes Problem. Sie ist perfekt für Spieler, die den flexibelsten, fertigkeitenstärksten und zauberkundigsten Barden wollen.",
+        "feature_levels": [3, 6, 14]
+      },
+      {
+        "id": "bard-college-of-valor",
+        "name_en": "College of Valor",
+        "name_de": "Schule des Wagemuts",
+        "summary_en": "The College of Valor brings the bard into the front line with martial training, stronger combat inspiration, and weapon-friendly spell support. It suits players who want a heroic skald who can fight beside the party while still casting and inspiring.",
+        "summary_de": "Die Schule des Wagemuts bringt den Barden mit kriegerischer Ausbildung, stärkerer Kampfinspiration und waffenfreundlicher Zauberunterstützung an die Front. Sie passt zu Spielern, die einen heroischen Skalden wollen, der an der Seite der Gruppe kämpft und zugleich zaubert und inspiriert.",
+        "feature_levels": [3, 6, 14]
+      }
+    ]
+  },
+  {
+    "id": "cleric",
+    "flavor_en": "A divine champion who blends sturdy defenses, healing, radiant power, and prepared magic to serve a god or sacred cause on the front line or from the rear.",
+    "flavor_de": "Ein göttlicher Streiter, der starke Verteidigung, Heilung, strahlende Macht und vorbereitete Magie verbindet, um einem Gott oder heiligen Anliegen an der Front oder aus der zweiten Reihe zu dienen.",
+    "armor_proficiencies_en": "Light, Medium, Shields",
+    "armor_proficiencies_de": "Leichte Rüstung, Mittlere Rüstung, Schilde",
+    "weapon_proficiencies_en": "Simple",
+    "weapon_proficiencies_de": "Einfache Waffen",
+    "primary_ability_en": "Wisdom",
+    "primary_ability_de": "Weisheit",
+    "caster_type_en": "Full Caster",
+    "caster_type_de": "Vollzauberer",
+    "progression_summary_en": "Levels 1-3 begin with Spellcasting and Divine Order, then add Channel Divinity with Divine Spark and Turn Undead at level 2, followed by your Divine Domain at level 3.",
+    "progression_summary_de": "Die Stufen 1-3 beginnen mit Zauberwirken und Göttlicher Ordnung, dann kommen auf Stufe 2 Göttliche Kanalisierung mit Göttlichem Funken und Untote vertreiben hinzu, gefolgt von deiner Göttlichen Domäne auf Stufe 3.",
+    "subclasses": [
+      {
+        "id": "cleric-life-domain",
+        "name_en": "Life Domain",
+        "name_de": "Domäne des Lebens",
+        "summary_en": "The Life Domain is the classic healer-priest, focused on restoration, endurance, and protecting the faithful through overwhelming divine care. It is the clearest choice for players who want strong healing throughput and a traditional holy support identity.",
+        "summary_de": "Die Domäne des Lebens ist der klassische Heilerpriester und konzentriert sich auf Wiederherstellung, Ausdauer und den Schutz der Gläubigen durch überwältigende göttliche Fürsorge. Sie ist die naheliegendste Wahl für Spieler, die starke Heilung und eine traditionelle heilige Unterstützerrolle suchen.",
+        "feature_levels": [3, 6, 17]
+      },
+      {
+        "id": "cleric-light-domain",
+        "name_en": "Light Domain",
+        "name_de": "Domäne des Lichts",
+        "summary_en": "The Light Domain wields holy fire and blinding radiance, punishing darkness with explosive magic and protective flashes. Its playstyle is an aggressive divine caster who burns enemies down while still carrying cleric utility.",
+        "summary_de": "Die Domäne des Lichts führt heiliges Feuer und blendende Strahlkraft, bestraft die Dunkelheit mit explosiver Magie und schützenden Lichtblitzen. Ihr Spielstil ist der eines offensiven göttlichen Zauberwirkers, der Feinde verbrennt und dennoch die Nützlichkeit des Klerikers mitbringt.",
+        "feature_levels": [3, 6, 17]
+      },
+      {
+        "id": "cleric-trickery-domain",
+        "name_en": "Trickery Domain",
+        "name_de": "Domäne der List",
+        "summary_en": "The Trickery Domain serves gods of deceit, illusion, and misdirection, using stealth, duplication, and clever positioning to outplay enemies. It is ideal for players who want a slippery cleric with rogue-like flair and magical trickery.",
+        "summary_de": "Die Domäne der List dient Göttern der Täuschung, Illusion und Irreführung und setzt auf Heimlichkeit, Doppelbilder und clevere Positionierung, um Gegner auszumanövrieren. Sie ist ideal für Spieler, die einen schwer greifbaren Kleriker mit Schurkenflair und magischer Trickserei wollen.",
+        "feature_levels": [3, 6, 17]
+      },
+      {
+        "id": "cleric-war-domain",
+        "name_en": "War Domain",
+        "name_de": "Domäne des Krieges",
+        "summary_en": "The War Domain is a battle priest who empowers weapon strikes with divine force and leads from the thick of combat. It supports players who want a more martial cleric with decisive offense, accuracy boosts, and battlefield authority.",
+        "summary_de": "Die Domäne des Krieges ist ein Kampfpriester, der Waffenschläge mit göttlicher Macht verstärkt und mitten im Kampf führt. Sie unterstützt Spieler, die einen kriegerischeren Kleriker mit entschlossener Offensive, Genauigkeitsboni und Autorität auf dem Schlachtfeld wollen.",
+        "feature_levels": [3, 6, 17]
+      }
+    ]
+  },
+  {
+    "id": "druid",
+    "flavor_en": "A nature mystic who commands primal magic, changes shape, and adapts to nearly any challenge through healing, control, summoning, and exploration tools.",
+    "flavor_de": "Ein Naturmystiker, der urtümliche Magie beherrscht, die Gestalt wandelt und sich mit Heilung, Kontrolle, Beschwörung und Erkundungswerkzeugen fast jeder Herausforderung anpasst.",
+    "armor_proficiencies_en": "Light, Shields",
+    "armor_proficiencies_de": "Leichte Rüstung, Schilde",
+    "weapon_proficiencies_en": "Simple",
+    "weapon_proficiencies_de": "Einfache Waffen",
+    "primary_ability_en": "Wisdom",
+    "primary_ability_de": "Weisheit",
+    "caster_type_en": "Full Caster",
+    "caster_type_de": "Vollzauberer",
+    "progression_summary_en": "Levels 1-3 give you Spellcasting, Druidic, and Primal Order at level 1, then Wild Shape and Wild Companion at level 2, with your subclass arriving at level 3.",
+    "progression_summary_de": "Die Stufen 1-3 geben dir auf Stufe 1 Zauberwirken, Druidisch und Urtümliche Ordnung, dann auf Stufe 2 Gestaltwandeln und Wilden Gefährten, während die Unterklasse auf Stufe 3 hinzukommt.",
+    "subclasses": [
+      {
+        "id": "druid-circle-of-the-land",
+        "name_en": "Circle of the Land",
+        "name_de": "Zirkel des Landes",
+        "summary_en": "The Circle of the Land reflects a druid deeply tied to specific terrains, emphasizing magical breadth, recovery, and classic spellcaster utility. It is the best fit for players who want a more spell-focused druid and less emphasis on beast combat.",
+        "summary_de": "Der Zirkel des Landes steht für einen Druiden, der eng mit bestimmten Landschaften verbunden ist, und betont magische Breite, Erholung und klassische Zauberwirker-Nützlichkeit. Er ist die beste Wahl für Spieler, die einen stärker zauberorientierten Druiden und weniger Fokus auf Tierkampf möchten.",
+        "feature_levels": [3, 6, 10, 14]
+      },
+      {
+        "id": "druid-circle-of-the-moon",
+        "name_en": "Circle of the Moon",
+        "name_de": "Zirkel des Mondes",
+        "summary_en": "The Circle of the Moon is the iconic shapeshifter, turning Wild Shape into a serious combat form and later layering mobility and lunar power on top. Choose it if you want your druid fantasy to center on becoming the beast rather than merely commanding nature.",
+        "summary_de": "Der Zirkel des Mondes ist der ikonische Gestaltwandler, der Gestaltwandeln in eine ernstzunehmende Kampfform verwandelt und später noch Mobilität und Mondmacht hinzufügt. Wähle ihn, wenn deine Druidenfantasie darin besteht, selbst zum Tier zu werden, statt die Natur nur zu befehligen.",
+        "feature_levels": [3, 6, 10, 14]
+      },
+      {
+        "id": "druid-circle-of-the-sea",
+        "name_en": "Circle of the Sea",
+        "name_de": "Zirkel des Meeres",
+        "summary_en": "The Circle of the Sea channels storms, surf, and oceanic force, blending battlefield control with fluid movement and elemental pressure. It is a thematic choice for players who want a druid defined by water, wind, and tempestuous space control.",
+        "summary_de": "Der Zirkel des Meeres kanalisiert Stürme, Brandung und ozeanische Kraft und verbindet Schlachtfeldkontrolle mit fließender Bewegung und elementarem Druck. Er ist eine stimmige Wahl für Spieler, die einen Druiden wollen, der durch Wasser, Wind und stürmische Raumkontrolle geprägt ist.",
+        "feature_levels": [3, 6, 10, 14]
+      },
+      {
+        "id": "druid-circle-of-the-stars",
+        "name_en": "Circle of the Stars",
+        "name_de": "Zirkel der Sterne",
+        "summary_en": "The Circle of the Stars reads fate in the heavens, using constellations to enhance healing, offense, and concentration with radiant cosmic flavor. It excels for players who want a calm, versatile druid whose power feels mystical and celestial rather than bestial.",
+        "summary_de": "Der Zirkel der Sterne liest das Schicksal am Himmel und nutzt Sternbilder, um Heilung, Offensive und Konzentration mit strahlendem kosmischem Flair zu verstärken. Er glänzt für Spieler, die einen ruhigen, vielseitigen Druiden wollen, dessen Macht eher mystisch und himmlisch als tierisch wirkt.",
+        "feature_levels": [3, 6, 10, 14]
+      }
+    ]
+  },
+  {
+    "id": "fighter",
+    "flavor_en": "A master of weapons and tactics who can be built into nearly any martial archetype, from durable defender to precision striker to disciplined battlefield specialist.",
+    "flavor_de": "Ein Meister der Waffen und Taktik, der sich zu nahezu jedem kriegerischen Archetyp formen lässt, vom zähen Verteidiger über den präzisen Angreifer bis zum disziplinierten Schlachtfeldspezialisten.",
+    "armor_proficiencies_en": "Light, Medium, Heavy, Shields",
+    "armor_proficiencies_de": "Leichte Rüstung, Mittlere Rüstung, Schwere Rüstung, Schilde",
+    "weapon_proficiencies_en": "Simple, Martial",
+    "weapon_proficiencies_de": "Einfache Waffen, Kriegswaffen",
+    "primary_ability_en": "Strength or Dexterity",
+    "primary_ability_de": "Stärke oder Geschicklichkeit",
+    "caster_type_en": null,
+    "caster_type_de": null,
+    "progression_summary_en": "Levels 1-3 start with Fighting Style, Second Wind, and Weapon Mastery, then add Action Surge and Tactical Mind at level 2, before your subclass arrives at level 3.",
+    "progression_summary_de": "Die Stufen 1-3 beginnen mit Kampfstil, Zweitem Wind und Waffenbeherrschung, dann kommen auf Stufe 2 Aktionsschub und Taktischer Verstand hinzu, bevor auf Stufe 3 die Unterklasse erscheint.",
+    "subclasses": [
+      {
+        "id": "fighter-battle-master",
+        "name_en": "Battle Master",
+        "name_de": "Kampfmeister",
+        "summary_en": "The Battle Master turns martial skill into tactical superiority, spending maneuvers to control positioning, accuracy, defense, and damage. It is the thinking player's fighter, rewarding planning, timing, and mastery of combat choices.",
+        "summary_de": "Der Kampfmeister verwandelt kriegerisches Können in taktische Überlegenheit und setzt Manöver ein, um Positionierung, Genauigkeit, Verteidigung und Schaden zu kontrollieren. Er ist der Kämpfer für taktisch denkende Spieler und belohnt Planung, Timing und die Beherrschung vieler Kampfentscheidungen.",
+        "feature_levels": [3, 7, 10, 15, 18]
+      },
+      {
+        "id": "fighter-champion",
+        "name_en": "Champion",
+        "name_de": "Champion",
+        "summary_en": "The Champion is the pure athlete-warrior, focusing on reliability, physical excellence, and straightforward combat pressure without much complexity. It is great for players who want a simple but effective fighter that always feels ready to swing.",
+        "summary_de": "Der Champion ist der reine Athlet unter den Kriegern und setzt auf Verlässlichkeit, körperliche Exzellenz und geradlinigen Kampfdruck ohne viel Komplexität. Er eignet sich hervorragend für Spieler, die einen einfachen, aber wirkungsvollen Kämpfer wollen, der immer bereit zum Zuschlagen ist.",
+        "feature_levels": [3, 7, 10, 15, 18]
+      },
+      {
+        "id": "fighter-eldritch-knight",
+        "name_en": "Eldritch Knight",
+        "name_de": "Mystischer Ritter",
+        "summary_en": "The Eldritch Knight binds steel and arcane magic, combining weapon attacks with protective and utility spells for a disciplined warrior-mage feel. It suits players who want a fighter first, but with enough spellcasting to add tricks, defense, and magical flair.",
+        "summary_de": "Der Mystische Ritter verbindet Stahl und arkane Magie und kombiniert Waffenangriffe mit Schutz- und Nützlichkeitszaubern für das Gefühl eines disziplinierten Krieger-Magiers. Er passt zu Spielern, die in erster Linie einen Kämpfer wollen, aber genug Zauberei für Tricks, Verteidigung und magisches Flair schätzen.",
+        "feature_levels": [3, 7, 10, 15, 18]
+      },
+      {
+        "id": "fighter-psi-warrior",
+        "name_en": "Psi Warrior",
+        "name_de": "Psi-Krieger",
+        "summary_en": "The Psi Warrior channels mental force into telekinetic defense, movement, and empowered strikes, creating a clean psionic superhero vibe. It offers a fighter with strong utility and protection tools without leaving the martial role behind.",
+        "summary_de": "Der Psi-Krieger kanalisiert mentale Kraft in telekinetische Verteidigung, Bewegung und verstärkte Angriffe und erzeugt so das Gefühl eines psionischen Superhelden. Er bietet einen Kämpfer mit starken Nützlichkeits- und Schutzwerkzeugen, ohne die kriegerische Rolle aufzugeben.",
+        "feature_levels": [3, 7, 10, 15, 18]
+      }
+    ]
+  },
+  {
+    "id": "monk",
+    "flavor_en": "A disciplined martial artist who fights with speed, movement, focus, and unarmed skill, darting through battle with precise strikes and supernatural self-mastery.",
+    "flavor_de": "Ein disziplinierter Kampfkünstler, der mit Geschwindigkeit, Bewegung, Fokus und waffenlosem Können kämpft und mit präzisen Schlägen und übernatürlicher Selbstbeherrschung durch die Schlacht gleitet.",
+    "armor_proficiencies_en": "None",
+    "armor_proficiencies_de": "Keine",
+    "weapon_proficiencies_en": "Simple, Martial (Light)",
+    "weapon_proficiencies_de": "Einfache Waffen, Kriegswaffen (leicht)",
+    "primary_ability_en": "Dexterity and Wisdom",
+    "primary_ability_de": "Geschicklichkeit und Weisheit",
+    "caster_type_en": null,
+    "caster_type_de": null,
+    "progression_summary_en": "Levels 1-3 establish Martial Arts and Unarmored Defense, then add your Focus features, Unarmored Movement, and Uncanny Metabolism at level 2, followed by Deflect Attacks and your subclass at level 3.",
+    "progression_summary_de": "Die Stufen 1-3 etablieren Kampfkünste und Ungepanzerte Verteidigung, dann kommen auf Stufe 2 deine Fokus-Fähigkeiten, Ungepanzerte Bewegung und Unheimlicher Stoffwechsel hinzu, gefolgt von Geschosse abwehren und deiner Unterklasse auf Stufe 3.",
+    "subclasses": [
+      {
+        "id": "monk-warrior-of-mercy",
+        "name_en": "Warrior of Mercy",
+        "name_de": "Krieger der Gnade",
+        "summary_en": "The Warrior of Mercy walks the line between healer and executioner, using the same trained hands to restore allies or punish enemies. It is perfect for players who want a monk with medical, masked, and morally dramatic flavor plus real support value.",
+        "summary_de": "Der Krieger der Gnade wandelt auf der Linie zwischen Heiler und Vollstrecker und nutzt dieselben geschulten Hände, um Verbündete zu heilen oder Feinde zu bestrafen. Er ist perfekt für Spieler, die einen Mönch mit medizinischem, maskiertem und moralisch dramatischem Flair sowie echtem Unterstützungswert wollen.",
+        "feature_levels": [3, 6, 11, 17]
+      },
+      {
+        "id": "monk-warrior-of-shadow",
+        "name_en": "Warrior of Shadow",
+        "name_de": "Krieger der Schatten",
+        "summary_en": "The Warrior of Shadow is a stealthy infiltrator who uses darkness, mobility, and surprise to appear where enemies least expect. It gives the monk a rogue-like identity built around ambushes, positioning, and vanishing acts.",
+        "summary_de": "Der Krieger der Schatten ist ein heimlicher Infiltrator, der Dunkelheit, Mobilität und Überraschung nutzt, um dort aufzutauchen, wo Feinde ihn am wenigsten erwarten. Er verleiht dem Mönch eine schurkenhafte Identität, die auf Hinterhalten, Positionierung und plötzlichem Verschwinden beruht.",
+        "feature_levels": [3, 6, 11, 17]
+      },
+      {
+        "id": "monk-warrior-of-the-elements",
+        "name_en": "Warrior of the Elements",
+        "name_de": "Krieger der Elemente",
+        "summary_en": "The Warrior of the Elements unleashes disciplined elemental force, extending the monk's reach and shaping the field with blasts and movement. It is a flashy, supernatural monk for players who want elemental spectacle without becoming a full spellcaster.",
+        "summary_de": "Der Krieger der Elemente entfesselt disziplinierte Elementarkraft, erweitert die Reichweite des Mönchs und formt das Schlachtfeld mit Ausbrüchen und Bewegung. Er ist ein spektakulärer, übernatürlicher Mönch für Spieler, die elementare Showeffekte wollen, ohne ein Vollzauberer zu werden.",
+        "feature_levels": [3, 6, 11, 17]
+      },
+      {
+        "id": "monk-warrior-of-the-open-hand",
+        "name_en": "Warrior of the Open Hand",
+        "name_de": "Krieger der Offenen Hand",
+        "summary_en": "The Warrior of the Open Hand is the classic master of body and technique, using perfect strikes, mobility, and internal balance to dominate close combat. Choose it for the purest traditional monk fantasy and strong control through martial precision.",
+        "summary_de": "Der Krieger der Offenen Hand ist der klassische Meister von Körper und Technik und beherrscht den Nahkampf mit perfekten Schlägen, Mobilität und innerem Gleichgewicht. Wähle ihn für die reinste traditionelle Mönchsfantasie und starke Kontrolle durch martialische Präzision.",
+        "feature_levels": [3, 6, 11, 17]
+      }
+    ]
+  },
+  {
+    "id": "paladin",
+    "flavor_en": "A holy warrior bound by oath, mixing armor, weapons, healing, divine magic, and righteous burst damage into one of the game's most iconic frontline leaders.",
+    "flavor_de": "Ein heiliger Krieger, der an einen Schwur gebunden ist und Rüstung, Waffen, Heilung, göttliche Magie und rechtschaffenen Explosionsschaden zu einem der ikonischsten Frontanführer des Spiels verbindet.",
+    "armor_proficiencies_en": "Light, Medium, Heavy, Shields",
+    "armor_proficiencies_de": "Leichte Rüstung, Mittlere Rüstung, Schwere Rüstung, Schilde",
+    "weapon_proficiencies_en": "Simple, Martial",
+    "weapon_proficiencies_de": "Einfache Waffen, Kriegswaffen",
+    "primary_ability_en": "Strength and Charisma",
+    "primary_ability_de": "Stärke und Charisma",
+    "caster_type_en": "Half Caster",
+    "caster_type_de": "Halbzauberer",
+    "progression_summary_en": "Levels 1-3 begin with Lay On Hands, Spellcasting, and Weapon Mastery at level 1, then add a Fighting Style and Paladin's Smite at level 2, before Channel Divinity, Divine Sense, and your Sacred Oath arrive at level 3.",
+    "progression_summary_de": "Die Stufen 1-3 beginnen auf Stufe 1 mit Hände auflegen, Zauberwirken und Waffenbeherrschung, dann kommen auf Stufe 2 ein Kampfstil und die Paladinischen Züchtigungen hinzu, bevor auf Stufe 3 Göttliche Kanalisierung, Göttlicher Sinn und dein Heiliger Schwur folgen.",
+    "subclasses": [
+      {
+        "id": "paladin-oath-of-devotion",
+        "name_en": "Oath of Devotion",
+        "name_de": "Schwur der Hingabe",
+        "summary_en": "The Oath of Devotion is the classic shining knight, devoted to honesty, courage, and sacred protection. It is the most traditional paladin path, emphasizing purity, dependable defense, and radiant heroism.",
+        "summary_de": "Der Schwur der Hingabe ist der klassische strahlende Ritter, der sich Ehrlichkeit, Mut und heiligem Schutz verschreibt. Er ist der traditionellste Paladinpfad und betont Reinheit, verlässliche Verteidigung und strahlenden Heroismus.",
+        "feature_levels": [3, 7, 15, 20]
+      },
+      {
+        "id": "paladin-oath-of-glory",
+        "name_en": "Oath of Glory",
+        "name_de": "Schwur des Ruhmes",
+        "summary_en": "The Oath of Glory celebrates heroic excellence, athletic prowess, and inspiring deeds that lift allies higher. Its identity is a fast, confident, mythic champion who turns bold action into momentum for the whole party.",
+        "summary_de": "Der Schwur des Ruhmes feiert heroische Exzellenz, athletische Stärke und inspirierende Taten, die Verbündete mitreißen. Seine Identität ist die eines schnellen, selbstbewussten, mythischen Champions, der kühnes Handeln in Schwung für die ganze Gruppe verwandelt.",
+        "feature_levels": [3, 7, 15, 20]
+      },
+      {
+        "id": "paladin-oath-of-the-ancients",
+        "name_en": "Oath of the Ancients",
+        "name_de": "Schwur der Alten",
+        "summary_en": "The Oath of the Ancients protects life, hope, and the beauty of the natural world, blending sacred purpose with primal resilience. It works well for players who want a gentler but still powerful paladin with anti-magic durability and timeless flavor.",
+        "summary_de": "Der Schwur der Alten schützt Leben, Hoffnung und die Schönheit der natürlichen Welt und verbindet heiligen Auftrag mit urtümlicher Widerstandskraft. Er eignet sich für Spieler, die einen sanfteren, aber dennoch mächtigen Paladin mit Antimagie-Zähigkeit und zeitlosem Flair wollen.",
+        "feature_levels": [3, 7, 15, 20]
+      },
+      {
+        "id": "paladin-oath-of-vengeance",
+        "name_en": "Oath of Vengeance",
+        "name_de": "Schwur der Rache",
+        "summary_en": "The Oath of Vengeance is a relentless divine hunter who singles out the guilty and pursues them without mercy. It is the most aggressive paladin path, built around focus, mobility, and finishing dangerous foes fast.",
+        "summary_de": "Der Schwur der Rache ist ein unerbittlicher göttlicher Jäger, der die Schuldigen herausgreift und gnadenlos verfolgt. Er ist der offensivste Paladinpfad und dreht sich um Fokus, Mobilität und das schnelle Ausschalten gefährlicher Feinde.",
+        "feature_levels": [3, 7, 15, 20]
+      }
+    ]
+  },
+  {
+    "id": "ranger",
+    "flavor_en": "A skilled wilderness hunter who blends weapons, mobility, tracking, and primal magic to excel at exploration, skirmishing, and focused pressure on key enemies.",
+    "flavor_de": "Ein kundiger Wildnisjäger, der Waffen, Mobilität, Fährtenlesen und urtümliche Magie verbindet, um bei Erkundung, Plänkeln und gezieltem Druck auf wichtige Gegner zu glänzen.",
+    "armor_proficiencies_en": "Light, Medium, Shields",
+    "armor_proficiencies_de": "Leichte Rüstung, Mittlere Rüstung, Schilde",
+    "weapon_proficiencies_en": "Simple, Martial",
+    "weapon_proficiencies_de": "Einfache Waffen, Kriegswaffen",
+    "primary_ability_en": "Dexterity and Wisdom",
+    "primary_ability_de": "Geschicklichkeit und Weisheit",
+    "caster_type_en": "Half Caster",
+    "caster_type_de": "Halbzauberer",
+    "progression_summary_en": "Levels 1-3 start with Spellcasting, Weapon Mastery, and Favored Enemy at level 1, then add Deft Explorer and a Fighting Style at level 2, before your subclass arrives at level 3.",
+    "progression_summary_de": "Die Stufen 1-3 beginnen auf Stufe 1 mit Zauberwirken, Waffenbeherrschung und Bevorzugtem Feind, dann kommen auf Stufe 2 Gewandter Entdecker und ein Kampfstil hinzu, bevor auf Stufe 3 die Unterklasse erscheint.",
+    "subclasses": [
+      {
+        "id": "ranger-beast-master",
+        "name_en": "Beast Master",
+        "name_de": "Herr der Tiere",
+        "summary_en": "The Beast Master fights beside a primal companion, turning the ranger into a coordinated duo with shared offense, positioning, and utility. It is the obvious choice for players who want an animal-partner fantasy without giving up the ranger's core skirmisher identity.",
+        "summary_de": "Der Herr der Tiere kämpft an der Seite eines urtümlichen Gefährten und macht den Waldläufer zu einem eingespielten Duo mit gemeinsamer Offensive, Positionierung und Nützlichkeit. Er ist die naheliegende Wahl für Spieler, die eine Tiergefährten-Fantasie wollen, ohne die Kernidentität des Waldläufers als Plänkler aufzugeben.",
+        "feature_levels": [3, 7, 11, 15]
+      },
+      {
+        "id": "ranger-fey-wanderer",
+        "name_en": "Fey Wanderer",
+        "name_de": "Feenwanderer",
+        "summary_en": "The Fey Wanderer carries the influence of the Feywild, combining charm, psychic edge, and eerie grace with ranger mobility. It offers a social and magical twist on the class for players who want a stranger, more mystical hunter.",
+        "summary_de": "Der Feenwanderer trägt den Einfluss der Feenwildnis in sich und verbindet Charme, psychische Schärfe und unheimliche Anmut mit der Mobilität des Waldläufers. Er bietet eine soziale und magische Wendung der Klasse für Spieler, die einen fremdartigeren, mystischeren Jäger wollen.",
+        "feature_levels": [3, 7, 11, 15]
+      },
+      {
+        "id": "ranger-gloom-stalker",
+        "name_en": "Gloom Stalker",
+        "name_de": "Düsterpirscher",
+        "summary_en": "The Gloom Stalker rules darkness, ambushes, and the opening moments of combat, striking first and vanishing into the shadows. It is ideal for players who want a stealthy predator with deadly initiative and a strong assassin-like feel.",
+        "summary_de": "Der Düsterpirscher beherrscht Dunkelheit, Hinterhalte und die ersten Augenblicke eines Kampfes, schlägt zuerst zu und verschwindet in den Schatten. Er ist ideal für Spieler, die einen heimlichen Räuber mit tödlicher Initiative und starkem Assassinen-Gefühl wollen.",
+        "feature_levels": [3, 7, 11, 15]
+      },
+      {
+        "id": "ranger-hunter",
+        "name_en": "Hunter",
+        "name_de": "Jäger",
+        "summary_en": "The Hunter is the classic adaptable slayer, choosing practical techniques to bring down many kinds of prey. It is the most straightforward ranger subclass, rewarding players who want dependable combat options without a heavy supernatural theme.",
+        "summary_de": "Der Jäger ist der klassische anpassungsfähige Töter, der praktische Techniken wählt, um viele Arten von Beute zu Fall zu bringen. Er ist die geradlinigste Waldläufer-Unterklasse und belohnt Spieler, die verlässliche Kampfoptionen ohne starken übernatürlichen Schwerpunkt wollen.",
+        "feature_levels": [3, 7, 11, 15]
+      }
+    ]
+  },
+  {
+    "id": "rogue",
+    "flavor_en": "A cunning expert in precision, stealth, and utility who wins through smart positioning, skill superiority, and explosive Sneak Attack damage at the right moment.",
+    "flavor_de": "Ein listiger Experte für Präzision, Heimlichkeit und Nützlichkeit, der durch kluge Positionierung, Fertigkeitsüberlegenheit und explosiven Hinterhältigen Angriff im richtigen Moment gewinnt.",
+    "armor_proficiencies_en": "Light",
+    "armor_proficiencies_de": "Leichte Rüstung",
+    "weapon_proficiencies_en": "Simple, Martial (Finesse or Light)",
+    "weapon_proficiencies_de": "Einfache Waffen, Kriegswaffen (Finesse oder leicht)",
+    "primary_ability_en": "Dexterity",
+    "primary_ability_de": "Geschicklichkeit",
+    "caster_type_en": null,
+    "caster_type_de": null,
+    "progression_summary_en": "Levels 1-3 give you Sneak Attack, Expertise, Thieves' Cant, and Weapon Mastery at level 1, then Cunning Action at level 2, followed by your subclass and Steady Aim at level 3.",
+    "progression_summary_de": "Die Stufen 1-3 geben dir auf Stufe 1 Hinterhältigen Angriff, Expertise, Zeichensprache der Diebe und Waffenbeherrschung, dann auf Stufe 2 Listige Aktion, gefolgt von deiner Unterklasse und Sicherem Zielen auf Stufe 3.",
+    "subclasses": [
+      {
+        "id": "rogue-arcane-trickster",
+        "name_en": "Arcane Trickster",
+        "name_de": "Arkaner Betrüger",
+        "summary_en": "The Arcane Trickster uses magic to elevate stealth, manipulation, and trickery, turning the rogue into a slippery spell-assisted infiltrator. It is ideal for players who want rogue fundamentals with just enough arcane mischief to reshape encounters.",
+        "summary_de": "Der Arkane Betrüger nutzt Magie, um Heimlichkeit, Manipulation und Trickserei zu steigern, und macht den Schurken zu einem schwer fassbaren Infiltrator mit Zauberunterstützung. Er ist ideal für Spieler, die die Grundlagen des Schurken mit gerade genug arkanem Schabernack kombinieren wollen, um Begegnungen neu zu gestalten.",
+        "feature_levels": [3, 9, 13, 17]
+      },
+      {
+        "id": "rogue-assassin",
+        "name_en": "Assassin",
+        "name_de": "Assassine",
+        "summary_en": "The Assassin is the master of prepared kills, false identities, and high-stakes openings that punish unsuspecting targets. Choose it if you want a rogue built around infiltration, burst damage, and the fantasy of the perfect strike.",
+        "summary_de": "Der Assassine ist der Meister vorbereiteter Tötungen, falscher Identitäten und hochgefährlicher Eröffnungen, die ahnungslose Ziele hart bestrafen. Wähle ihn, wenn du einen Schurken willst, der um Infiltration, Explosionsschaden und die Fantasie des perfekten Schlags kreist.",
+        "feature_levels": [3, 9, 13, 17]
+      },
+      {
+        "id": "rogue-soulknife",
+        "name_en": "Soulknife",
+        "name_de": "Seelenmesser",
+        "summary_en": "The Soulknife turns psionic talent into invisible blades, subtle communication, and uncanny precision. It offers a sleek supernatural rogue for players who want mental power, flexibility, and a clean spy-thriller aesthetic.",
+        "summary_de": "Das Seelenmesser verwandelt psionisches Talent in unsichtbare Klingen, subtile Kommunikation und unheimliche Präzision. Es bietet einen eleganten übernatürlichen Schurken für Spieler, die mentale Macht, Flexibilität und eine klare Spionage-Ästhetik suchen.",
+        "feature_levels": [3, 9, 13, 17]
+      },
+      {
+        "id": "rogue-thief",
+        "name_en": "Thief",
+        "name_de": "Dieb",
+        "summary_en": "The Thief is the classic agile criminal and adventurer, excelling at climbing, using objects, and exploiting the environment better than anyone else. It is a versatile, low-magic rogue that feels practical, clever, and always prepared.",
+        "summary_de": "Der Dieb ist der klassische flinke Kriminelle und Abenteurer, der beim Klettern, Nutzen von Gegenständen und Ausspielen der Umgebung besser ist als jeder andere. Er ist ein vielseitiger, magieloser Schurke, der praktisch, clever und stets vorbereitet wirkt.",
+        "feature_levels": [3, 9, 13, 17]
+      }
+    ]
+  },
+  {
+    "id": "sorcerer",
+    "flavor_en": "A born spellcaster whose magic comes from an extraordinary bloodline or supernatural source, shaping spells with raw talent, sorcery points, and explosive magical identity.",
+    "flavor_de": "Ein angeborener Zauberwirker, dessen Magie aus einer außergewöhnlichen Blutlinie oder übernatürlichen Quelle stammt und der Zauber mit rohem Talent, Zauberpunkten und starker magischer Identität formt.",
+    "armor_proficiencies_en": "None",
+    "armor_proficiencies_de": "Keine",
+    "weapon_proficiencies_en": "Simple",
+    "weapon_proficiencies_de": "Einfache Waffen",
+    "primary_ability_en": "Charisma",
+    "primary_ability_de": "Charisma",
+    "caster_type_en": "Full Caster",
+    "caster_type_de": "Vollzauberer",
+    "progression_summary_en": "Levels 1-3 start with Spellcasting and Innate Sorcery at level 1, then add Font of Magic and Metamagic at level 2, before your Sorcerous Origin arrives at level 3.",
+    "progression_summary_de": "Die Stufen 1-3 beginnen mit Zauberwirken und Angeborener Zauberei auf Stufe 1, dann kommen auf Stufe 2 Quelle der Magie und Metamagie hinzu, bevor auf Stufe 3 deine Zauberherkunft erscheint.",
+    "subclasses": [
+      {
+        "id": "sorcerer-aberrant",
+        "name_en": "Aberrant Sorcery",
+        "name_de": "Aberrante Zauberei",
+        "summary_en": "Aberrant Sorcery twists the sorcerer toward alien minds, psychic power, and unsettling body-bending magic. It is perfect for players who want a strange, telepathic caster with a distinctly otherworldly presence.",
+        "summary_de": "Aberrante Zauberei verdreht den Zauberer in Richtung fremdartiger Geister, psionischer Macht und verstörender körperverändernder Magie. Sie ist perfekt für Spieler, die einen seltsamen, telepathischen Zauberwirker mit deutlich überirdischer Präsenz wollen.",
+        "feature_levels": [3, 6, 14, 18]
+      },
+      {
+        "id": "sorcerer-clockwork",
+        "name_en": "Clockwork Sorcery",
+        "name_de": "Uhrwerk-Zauberei",
+        "summary_en": "Clockwork Sorcery draws from cosmic order, balance, and inevitability, letting the sorcerer correct chaos and impose structure on the battlefield. It suits players who like controlled magic, defense, and a precise, lawful aesthetic.",
+        "summary_de": "Uhrwerk-Zauberei schöpft aus kosmischer Ordnung, Ausgleich und Unvermeidlichkeit und lässt den Zauberer Chaos korrigieren und dem Schlachtfeld Struktur aufzwingen. Sie passt zu Spielern, die kontrollierte Magie, Verteidigung und eine präzise, gesetzmäßige Ästhetik mögen.",
+        "feature_levels": [3, 6, 14, 18]
+      },
+      {
+        "id": "sorcerer-draconic",
+        "name_en": "Draconic Sorcery",
+        "name_de": "Drakonische Zauberei",
+        "summary_en": "Draconic Sorcery awakens the might of dragonkind, enhancing durability, elemental power, and majestic presence as your bloodline asserts itself. It is the iconic blaster-sorcerer choice for players who want raw magical force with draconic style.",
+        "summary_de": "Drakonische Zauberei erweckt die Macht der Drachen, steigert Zähigkeit, Elementarkraft und majestätische Präsenz, wenn sich deine Blutlinie durchsetzt. Sie ist die ikonische Wahl des Schadens-Zauberers für Spieler, die rohe magische Gewalt mit drakonischem Stil wollen.",
+        "feature_levels": [3, 6, 14, 18]
+      },
+      {
+        "id": "sorcerer-wild-magic",
+        "name_en": "Wild Magic Sorcery",
+        "name_de": "Wilde-Magie-Zauberei",
+        "summary_en": "Wild Magic Sorcery embraces unstable, reality-bending arcana, trading predictability for bursts of luck, chaos, and memorable magical swings. It is the best subclass for players who enjoy risk, surprise, and stories that get weird fast.",
+        "summary_de": "Wilde-Magie-Zauberei umarmt instabile, wirklichkeitsverzerrende Arkana und tauscht Berechenbarkeit gegen Schübe von Glück, Chaos und unvergessliche magische Ausschläge. Sie ist die beste Unterklasse für Spieler, die Risiko, Überraschung und Geschichten mögen, die schnell seltsam werden.",
+        "feature_levels": [3, 6, 14, 18]
+      }
+    ]
+  },
+  {
+    "id": "warlock",
+    "flavor_en": "A pact-bound caster who draws power from an otherworldly patron, combining short-rest spell recovery, invocations, and eerie magical customization into a highly distinctive style.",
+    "flavor_de": "Ein an einen Pakt gebundener Zauberwirker, der Macht von einem überweltlichen Schutzherrn bezieht und kurze Rast-Zaubererholung, Anrufungen und unheimliche magische Anpassung zu einem sehr markanten Stil verbindet.",
+    "armor_proficiencies_en": "Light",
+    "armor_proficiencies_de": "Leichte Rüstung",
+    "weapon_proficiencies_en": "Simple",
+    "weapon_proficiencies_de": "Einfache Waffen",
+    "primary_ability_en": "Charisma",
+    "primary_ability_de": "Charisma",
+    "caster_type_en": "Pact Caster",
+    "caster_type_de": "Paktzauberer",
+    "progression_summary_en": "Levels 1-3 begin with Pact Magic and Eldritch Invocations at level 1, then add Magical Cunning at level 2, before your patron subclass arrives at level 3.",
+    "progression_summary_de": "Die Stufen 1-3 beginnen mit Paktmagie und Unheimlichen Anrufungen auf Stufe 1, dann kommt auf Stufe 2 Magische List hinzu, bevor auf Stufe 3 die Unterklasse deines Schutzherrn erscheint.",
+    "subclasses": [
+      {
+        "id": "warlock-archfey",
+        "name_en": "Archfey Patron",
+        "name_de": "Erzfee-Schutzherr",
+        "summary_en": "The Archfey patron grants glamour, misdirection, and fey mobility, making the warlock slippery, theatrical, and difficult to pin down. It is a strong fit for players who want enchantment, movement tricks, and a whimsical but dangerous vibe.",
+        "summary_de": "Der Erzfee-Schutzherr verleiht Glamour, Irreführung und Feenmobilität und macht den Hexenmeister schwer greifbar, theatralisch und schwer festzunageln. Er passt hervorragend zu Spielern, die Verzauberung, Bewegungstricks und eine verspielte, aber gefährliche Ausstrahlung wollen.",
+        "feature_levels": [3, 6, 10, 14]
+      },
+      {
+        "id": "warlock-celestial",
+        "name_en": "Celestial Patron",
+        "name_de": "Celestischer Schutzherr",
+        "summary_en": "The Celestial patron wraps the warlock in radiant magic, healing, and holy resilience while preserving the class's eerie pact identity. It is a compelling choice for players who want a support-capable warlock with a brighter supernatural source.",
+        "summary_de": "Der Celestische Schutzherr umhüllt den Hexenmeister mit strahlender Magie, Heilung und heiliger Widerstandskraft, ohne die unheimliche Pakt-Identität der Klasse aufzugeben. Er ist eine überzeugende Wahl für Spieler, die einen unterstützungsfähigen Hexenmeister mit einer helleren übernatürlichen Quelle wollen.",
+        "feature_levels": [3, 6, 10, 14]
+      },
+      {
+        "id": "warlock-fiend",
+        "name_en": "Fiend Patron",
+        "name_de": "Unhold-Schutzherr",
+        "summary_en": "The Fiend patron offers infernal power, survivability, and punishing offensive magic fueled by dark bargains. It suits players who want a classic dangerous warlock with hellish flavor and strong destructive momentum.",
+        "summary_de": "Der Unhold-Schutzherr bietet infernale Macht, Überlebensfähigkeit und vernichtende offensive Magie, gespeist von dunklen Pakten. Er passt zu Spielern, die einen klassischen gefährlichen Hexenmeister mit höllischem Flair und starker zerstörerischer Dynamik wollen.",
+        "feature_levels": [3, 6, 10, 14]
+      },
+      {
+        "id": "warlock-great-old-one",
+        "name_en": "Great Old One Patron",
+        "name_de": "Großer-Alter-Schutzherr",
+        "summary_en": "The Great Old One patron leans into alien insight, psychic intrusion, and unsettling control, making the warlock feel like a conduit for impossible truths. It is excellent for players who want mind-bending flavor, telepathy, and eerie battlefield manipulation.",
+        "summary_de": "Der Große-Alter-Schutzherr setzt auf fremdartige Einsicht, psychisches Eindringen und verstörende Kontrolle und lässt den Hexenmeister wie einen Kanal für unmögliche Wahrheiten wirken. Er ist hervorragend für Spieler, die geistesverbiegendes Flair, Telepathie und unheimliche Schlachtfeldmanipulation suchen.",
+        "feature_levels": [3, 6, 10, 14]
+      }
+    ]
+  },
+  {
+    "id": "wizard",
+    "flavor_en": "A scholarly arcane master who solves problems with preparation, breadth of spells, and unmatched magical versatility, rewarding planning and system mastery.",
+    "flavor_de": "Ein gelehrter Meister der Arkana, der Probleme mit Vorbereitung, breiter Zauberauswahl und unübertroffener magischer Vielseitigkeit löst und Planung sowie Systembeherrschung belohnt.",
+    "armor_proficiencies_en": "None",
+    "armor_proficiencies_de": "Keine",
+    "weapon_proficiencies_en": "Simple",
+    "weapon_proficiencies_de": "Einfache Waffen",
+    "primary_ability_en": "Intelligence",
+    "primary_ability_de": "Intelligenz",
+    "caster_type_en": "Full Caster",
+    "caster_type_de": "Vollzauberer",
+    "progression_summary_en": "Levels 1-3 start with Spellcasting, Arcane Recovery, and Ritual Adept at level 1, then add Scholar at level 2, before your arcane subclass arrives at level 3.",
+    "progression_summary_de": "Die Stufen 1-3 beginnen mit Zauberwirken, Arkane Erholung und Ritualkundig auf Stufe 1, dann kommt auf Stufe 2 Gelehrter hinzu, bevor auf Stufe 3 deine arkane Unterklasse erscheint.",
+    "subclasses": [
+      {
+        "id": "wizard-abjurer",
+        "name_en": "Abjurer",
+        "name_de": "Bannmagier",
+        "summary_en": "The Abjurer specializes in wards, negation, and magical defense, protecting self and allies through disciplined arcane shielding. It is ideal for players who want a wizard that feels resilient, controlled, and exceptionally safe under pressure.",
+        "summary_de": "Der Bannmagier spezialisiert sich auf Schutzzauber, Aufhebung und magische Verteidigung und schützt sich und Verbündete durch disziplinierte arkane Abschirmung. Er ist ideal für Spieler, die einen Magier wollen, der sich widerstandsfähig, kontrolliert und unter Druck außergewöhnlich sicher anfühlt.",
+        "feature_levels": [3, 6, 10, 14]
+      },
+      {
+        "id": "wizard-diviner",
+        "name_en": "Diviner",
+        "name_de": "Seher",
+        "summary_en": "The Diviner peers ahead and bends fate, turning foresight into one of the most potent control tools in the game. It rewards players who enjoy planning, manipulation, and quietly deciding which rolls matter most.",
+        "summary_de": "Der Seher blickt voraus und beugt das Schicksal, wodurch Voraussicht zu einem der stärksten Kontrollwerkzeuge im Spiel wird. Er belohnt Spieler, die Planung, Manipulation und die stille Entscheidung darüber mögen, welche Würfe am wichtigsten sind.",
+        "feature_levels": [3, 6, 10, 14]
+      },
+      {
+        "id": "wizard-evoker",
+        "name_en": "Evoker",
+        "name_de": "Hervorrufer",
+        "summary_en": "The Evoker is the iconic battle mage, shaping destructive magic for maximum effect while protecting allies from the worst of the blast. It is the best wizard path for players who want direct damage without giving up arcane sophistication.",
+        "summary_de": "Der Hervorrufer ist der ikonische Kampfmagier, der zerstörerische Magie für maximale Wirkung formt und Verbündete vor dem Schlimmsten der Explosion schützt. Er ist der beste Magierpfad für Spieler, die direkten Schaden wollen, ohne auf arkane Raffinesse zu verzichten.",
+        "feature_levels": [3, 6, 10, 14]
+      },
+      {
+        "id": "wizard-illusionist",
+        "name_en": "Illusionist",
+        "name_de": "Illusionist",
+        "summary_en": "The Illusionist turns deception into power, using misdirection, crafted images, and unreal threats that become dangerously convincing. It is perfect for inventive players who like solving problems sideways and making enemies doubt reality itself.",
+        "summary_de": "Der Illusionist verwandelt Täuschung in Macht und nutzt Irreführung, erschaffene Bilder und unwirkliche Bedrohungen, die gefährlich überzeugend werden. Er ist perfekt für einfallsreiche Spieler, die Probleme lieber indirekt lösen und Gegner an der Wirklichkeit selbst zweifeln lassen.",
+        "feature_levels": [3, 6, 10, 14]
+      }
+    ]
+  }
+]
