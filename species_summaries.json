@@ -1,0 +1,191 @@
+{
+  "source_file": "species.json",
+  "format_version": 1,
+  "races": [
+    {
+      "id": "aasimar",
+      "name": "Aasimar",
+      "summary": "Celestial-touched mortals marked by light, healing, and divine power. In play, aasimar are durable against radiant and necrotic threats, bring emergency healing, and gain a level-3 transformation that can add flight, area pressure, or fear-based control depending on the moment.",
+      "subraces": []
+    },
+    {
+      "id": "dragonborn",
+      "name": "Dragonborn",
+      "summary": "Proud draconic humanoids whose ancestry shapes both appearance and powers. In play, dragonborn are straightforward offensive generalists: a scalable breath weapon gives repeatable area damage, ancestry grants an elemental resistance, and later flight improves mobility.",
+      "subraces": [
+        {
+          "id": "black",
+          "name": "Black Dragonborn",
+          "summary": "Black Dragonborn descend from black-dragon bloodlines tied to acid and ruin. Gameplay-wise, they specialize in acid breath and acid resistance, making them strong in corrosive environments and against acid-using foes."
+        },
+        {
+          "id": "blue",
+          "name": "Blue Dragonborn",
+          "summary": "Blue Dragonborn reflect blue-dragon heritage associated with storms and desert might. Gameplay-wise, they gain lightning breath and lightning resistance, a solid choice for ranged area damage and protection against electrical effects."
+        },
+        {
+          "id": "brass",
+          "name": "Brass Dragonborn",
+          "summary": "Brass Dragonborn carry the legacy of talkative, fire-aligned brass dragons. Gameplay-wise, they gain fire breath and fire resistance, offering reliable offense and one of the most commonly useful resistances in the game."
+        },
+        {
+          "id": "bronze",
+          "name": "Bronze Dragonborn",
+          "summary": "Bronze Dragonborn inherit the disciplined, stormy legacy of bronze dragons. Gameplay-wise, they gain lightning breath and lightning resistance, pairing mobile battlefield pressure with protection from electrical attacks."
+        },
+        {
+          "id": "copper",
+          "name": "Copper Dragonborn",
+          "summary": "Copper Dragonborn descend from clever acid-aligned dragons known for wit and trickery. Gameplay-wise, they gain acid breath and acid resistance, useful for area attacks while shrugging off corrosive hazards."
+        },
+        {
+          "id": "gold",
+          "name": "Gold Dragonborn",
+          "summary": "Gold Dragonborn echo noble gold-dragon lineages associated with majesty and flame. Gameplay-wise, they gain fire breath and fire resistance, making them dependable frontliners or blasters in fire-heavy campaigns."
+        },
+        {
+          "id": "green",
+          "name": "Green Dragonborn",
+          "summary": "Green Dragonborn stem from cunning green-dragon ancestry tied to poison and manipulation. Gameplay-wise, they gain poison breath and poison resistance, offering niche but potent protection in toxin-heavy adventures."
+        },
+        {
+          "id": "red",
+          "name": "Red Dragonborn",
+          "summary": "Red Dragonborn channel the iconic power of red dragons and destructive flame. Gameplay-wise, they gain fire breath and fire resistance, a very practical pairing for aggressive builds."
+        },
+        {
+          "id": "silver",
+          "name": "Silver Dragonborn",
+          "summary": "Silver Dragonborn carry the refined legacy of silver dragons and winter skies. Gameplay-wise, they gain cold breath and cold resistance, making them effective in icy regions and against cold-based enemies."
+        },
+        {
+          "id": "white",
+          "name": "White Dragonborn",
+          "summary": "White Dragonborn reflect hardy white-dragon ancestry shaped by frost and survival. Gameplay-wise, they gain cold breath and cold resistance, useful for rugged martial characters who expect harsh environments."
+        }
+      ]
+    },
+    {
+      "id": "dwarf",
+      "name": "Dwarf",
+      "summary": "Stone-born folk of forge, mountain, and underground strongholds, famed for endurance. In play, dwarves are sturdy explorers and frontliners: extra hit points scale every level, poison defenses are excellent, and Stonecunning grants repeatable tremorsense for detecting nearby creatures through stone.",
+      "subraces": []
+    },
+    {
+      "id": "elf",
+      "name": "Elf",
+      "summary": "Ancient fey-touched people shaped by long memory, magic, and environment. In play, elves are flexible utility characters with charm resistance, a short long rest through Trance, and a lineage choice that steers them toward stealth, mobility, or arcane utility.",
+      "subraces": [
+        {
+          "id": "drow",
+          "name": "Drow",
+          "summary": "Drow are elves shaped by the Underdark and its shadowy magic. Gameplay-wise, they trade toward vision and control: superior darkvision plus Dancing Lights, Faerie Fire, and Darkness makes them excellent for stealthy casters, ambushers, and parties that can exploit visibility tricks."
+        },
+        {
+          "id": "high_elf",
+          "name": "High Elf",
+          "summary": "High Elves are refined elves steeped in crossroads magic between the Material Plane and the Feywild. Gameplay-wise, they are the most versatile magical lineage, with a swappable wizard cantrip plus Detect Magic and Misty Step for utility, scouting, and repositioning."
+        },
+        {
+          "id": "wood_elf",
+          "name": "Wood Elf",
+          "summary": "Wood Elves carry the magic of ancient forests and self-reliant wandering. Gameplay-wise, they are the most mobile and stealth-oriented lineage, gaining extra speed, nature magic, and eventually Pass without Trace for strong exploration and infiltration play."
+        }
+      ]
+    },
+    {
+      "id": "gnome",
+      "name": "Gnome",
+      "summary": "Small, ingenious folk shaped by invention, illusion, and hidden living. In play, gnomes are excellent at resisting mental effects thanks to Gnomish Cunning, and their lineage lets you lean into either illusion-and-animal utility or magical tinkering.",
+      "subraces": [
+        {
+          "id": "forest_gnome",
+          "name": "Forest Gnome",
+          "summary": "Forest Gnomes are secretive woodland tricksters with a bond to illusion and beasts. Gameplay-wise, they bring Minor Illusion and repeated Speak with Animals, making them strong scouts, social problem-solvers, and exploration specialists."
+        },
+        {
+          "id": "rock_gnome",
+          "name": "Rock Gnome",
+          "summary": "Rock Gnomes are inventive tinkerers who express magic through gadgets and handiwork. Gameplay-wise, they gain two very practical cantrips and can build temporary clockwork devices, making them flavorful utility characters with lots of creative out-of-combat options."
+        }
+      ]
+    },
+    {
+      "id": "goliath",
+      "name": "Goliath",
+      "summary": "Towering descendants of giants who carry supernatural giant boons in their blood. In play, goliaths are highly physical characters with extra speed, strong carrying power, anti-grapple utility, and a level-5 size boost; their ancestry choice lets them tailor toward mobility, defense, control, or burst damage.",
+      "subraces": [
+        {
+          "id": "cloud",
+          "name": "Cloud Goliath",
+          "summary": "Cloud Goliaths inherit elusive cloud-giant magic. Gameplay-wise, Cloud's Jaunt gives short-range teleportation, which is excellent for repositioning, escaping danger, reaching backlines, or bypassing obstacles."
+        },
+        {
+          "id": "fire",
+          "name": "Fire Goliath",
+          "summary": "Fire Goliaths reflect the destructive force of fire giants. Gameplay-wise, Fire's Burn adds bonus fire damage on hits, making it a clean choice for aggressive martial builds that want extra burst."
+        },
+        {
+          "id": "frost",
+          "name": "Frost Goliath",
+          "summary": "Frost Goliaths carry the brutal momentum of frost giants. Gameplay-wise, Frost's Chill adds damage and slows the target, giving melee characters a simple way to stick to enemies and control movement."
+        },
+        {
+          "id": "hill",
+          "name": "Hill Goliath",
+          "summary": "Hill Goliaths echo the crushing physicality of hill giants. Gameplay-wise, Hill's Tumble knocks Large-or-smaller targets prone on a hit, which is strong for melee control and for helping allies attack with advantage in close combat."
+        },
+        {
+          "id": "stone",
+          "name": "Stone Goliath",
+          "summary": "Stone Goliaths inherit the staying power of stone giants. Gameplay-wise, Stone's Endurance reduces incoming damage as a reaction, making it one of the best defensive options for tanks and frontliners."
+        },
+        {
+          "id": "storm",
+          "name": "Storm Goliath",
+          "summary": "Storm Goliaths channel the retaliatory force of storm giants. Gameplay-wise, Storm's Thunder punishes enemies that hurt you, giving durable builds a reactive damage option without spending their turn."
+        }
+      ]
+    },
+    {
+      "id": "halfling",
+      "name": "Halfling",
+      "summary": "Small, community-minded wanderers famous for improbable luck and quiet bravery. In play, halflings are slippery and dependable: rerolling natural 1s boosts consistency, fear defense improves survivability, and their movement and hiding traits make them excellent rogues, scouts, and skirmishers.",
+      "subraces": []
+    },
+    {
+      "id": "human",
+      "name": "Human",
+      "summary": "Ambitious, adaptable people found across the multiverse and defined more by flexibility than a single destiny. In play, humans are the most open-ended option here: an extra skill, a bonus Origin feat, and daily Heroic Inspiration make them easy to fit into almost any build.",
+      "subraces": []
+    },
+    {
+      "id": "orc",
+      "name": "Orc",
+      "summary": "Gruumsh-touched wanderers built for hardship, momentum, and stubborn survival. In play, orcs are excellent frontliners and chargers: bonus-action Dash with temporary hit points boosts engagement, darkvision supports dungeon play, and Relentless Endurance helps you stay standing when others would fall.",
+      "subraces": []
+    },
+    {
+      "id": "tiefling",
+      "name": "Tiefling",
+      "summary": "Fiend-blooded mortals whose heritage comes from the Lower Planes but does not dictate their morality. In play, tieflings are flexible spell-leaning characters with solid utility from Thaumaturgy and a legacy choice that determines resistance type plus a distinct spell package.",
+      "subraces": [
+        {
+          "id": "abyssal",
+          "name": "Abyssal Tiefling",
+          "summary": "Abyssal Tieflings reflect chaotic, demonic bloodlines tied to poison, entropy, and raw menace. Gameplay-wise, they gain poison resistance plus Poison Spray, Ray of Sickness, and Hold Person, giving them an aggressive debuff-oriented toolkit."
+        },
+        {
+          "id": "chthonic",
+          "name": "Chthonic Tiefling",
+          "summary": "Chthonic Tieflings draw from grim underworld legacies tied to death, greed, and despair. Gameplay-wise, they gain necrotic resistance plus Chill Touch, False Life, and Ray of Enfeeblement, making them good at attrition, anti-healing pressure, and survivability."
+        },
+        {
+          "id": "infernal",
+          "name": "Infernal Tiefling",
+          "summary": "Infernal Tieflings descend from devilish bloodlines associated with flame, authority, and hellish power. Gameplay-wise, they gain fire resistance plus Fire Bolt, Hellish Rebuke, and Darkness, a very reliable package for damage, retaliation, and battlefield disruption."
+        }
+      ]
+    }
+  ]
+}
