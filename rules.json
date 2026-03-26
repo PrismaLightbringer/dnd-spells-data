@@ -1,0 +1,703 @@
+{
+  "ability_score_modifiers_table": [
+    {
+      "score_range": "1",
+      "modifier": -5
+    },
+    {
+      "score_range": "2-3",
+      "modifier": -4
+    },
+    {
+      "score_range": "4-5",
+      "modifier": -3
+    },
+    {
+      "score_range": "6-7",
+      "modifier": -2
+    },
+    {
+      "score_range": "8-9",
+      "modifier": -1
+    },
+    {
+      "score_range": "10-11",
+      "modifier": 0
+    },
+    {
+      "score_range": "12-13",
+      "modifier": 1
+    },
+    {
+      "score_range": "14-15",
+      "modifier": 2
+    },
+    {
+      "score_range": "16-17",
+      "modifier": 3
+    },
+    {
+      "score_range": "18-19",
+      "modifier": 4
+    },
+    {
+      "score_range": "20-21",
+      "modifier": 5
+    },
+    {
+      "score_range": "22-23",
+      "modifier": 6
+    },
+    {
+      "score_range": "24-25",
+      "modifier": 7
+    },
+    {
+      "score_range": "26-27",
+      "modifier": 8
+    },
+    {
+      "score_range": "28-29",
+      "modifier": 9
+    },
+    {
+      "score_range": "30",
+      "modifier": 10
+    }
+  ],
+  "xp_advancement_table": [
+    {
+      "level": 1,
+      "xp_required": 0
+    },
+    {
+      "level": 2,
+      "xp_required": 300
+    },
+    {
+      "level": 3,
+      "xp_required": 900
+    },
+    {
+      "level": 4,
+      "xp_required": 2700
+    },
+    {
+      "level": 5,
+      "xp_required": 6500
+    },
+    {
+      "level": 6,
+      "xp_required": 14000
+    },
+    {
+      "level": 7,
+      "xp_required": 23000
+    },
+    {
+      "level": 8,
+      "xp_required": 34000
+    },
+    {
+      "level": 9,
+      "xp_required": 48000
+    },
+    {
+      "level": 10,
+      "xp_required": 64000
+    },
+    {
+      "level": 11,
+      "xp_required": 85000
+    },
+    {
+      "level": 12,
+      "xp_required": 100000
+    },
+    {
+      "level": 13,
+      "xp_required": 120000
+    },
+    {
+      "level": 14,
+      "xp_required": 140000
+    },
+    {
+      "level": 15,
+      "xp_required": 165000
+    },
+    {
+      "level": 16,
+      "xp_required": 195000
+    },
+    {
+      "level": 17,
+      "xp_required": 225000
+    },
+    {
+      "level": 18,
+      "xp_required": 265000
+    },
+    {
+      "level": 19,
+      "xp_required": 305000
+    },
+    {
+      "level": 20,
+      "xp_required": 355000
+    }
+  ],
+  "point_buy_costs_table": [
+    {
+      "score": 8,
+      "cost": 0
+    },
+    {
+      "score": 9,
+      "cost": 1
+    },
+    {
+      "score": 10,
+      "cost": 2
+    },
+    {
+      "score": 11,
+      "cost": 3
+    },
+    {
+      "score": 12,
+      "cost": 4
+    },
+    {
+      "score": 13,
+      "cost": 5
+    },
+    {
+      "score": 14,
+      "cost": 7
+    },
+    {
+      "score": 15,
+      "cost": 9
+    }
+  ],
+  "standard_array": {
+    "values": [
+      15,
+      14,
+      13,
+      12,
+      10,
+      8
+    ],
+    "recommended_assignment_per_class": {
+      "Barbarian": {
+        "Str": 15,
+        "Dex": 13,
+        "Con": 14,
+        "Int": 10,
+        "Wis": 12,
+        "Cha": 8
+      },
+      "Bard": {
+        "Str": 8,
+        "Dex": 14,
+        "Con": 12,
+        "Int": 13,
+        "Wis": 10,
+        "Cha": 15
+      },
+      "Cleric": {
+        "Str": 14,
+        "Dex": 8,
+        "Con": 13,
+        "Int": 10,
+        "Wis": 15,
+        "Cha": 12
+      },
+      "Druid": {
+        "Str": 8,
+        "Dex": 12,
+        "Con": 14,
+        "Int": 13,
+        "Wis": 15,
+        "Cha": 10
+      },
+      "Fighter": {
+        "Str": 15,
+        "Dex": 14,
+        "Con": 13,
+        "Int": 8,
+        "Wis": 10,
+        "Cha": 12
+      },
+      "Monk": {
+        "Str": 12,
+        "Dex": 15,
+        "Con": 13,
+        "Int": 10,
+        "Wis": 14,
+        "Cha": 8
+      },
+      "Paladin": {
+        "Str": 15,
+        "Dex": 10,
+        "Con": 13,
+        "Int": 8,
+        "Wis": 12,
+        "Cha": 14
+      },
+      "Ranger": {
+        "Str": 12,
+        "Dex": 15,
+        "Con": 13,
+        "Int": 8,
+        "Wis": 14,
+        "Cha": 10
+      },
+      "Rogue": {
+        "Str": 12,
+        "Dex": 15,
+        "Con": 13,
+        "Int": 14,
+        "Wis": 10,
+        "Cha": 8
+      },
+      "Sorcerer": {
+        "Str": 10,
+        "Dex": 13,
+        "Con": 14,
+        "Int": 8,
+        "Wis": 12,
+        "Cha": 15
+      },
+      "Warlock": {
+        "Str": 8,
+        "Dex": 14,
+        "Con": 13,
+        "Int": 12,
+        "Wis": 10,
+        "Cha": 15
+      },
+      "Wizard": {
+        "Str": 8,
+        "Dex": 12,
+        "Con": 13,
+        "Int": 15,
+        "Wis": 14,
+        "Cha": 10
+      }
+    }
+  },
+  "fixed_hp_per_level_per_class": {
+    "Barbarian": "7 + Con. modifier",
+    "Fighter": "6 + Con. modifier",
+    "Paladin": "6 + Con. modifier",
+    "Ranger": "6 + Con. modifier",
+    "Bard": "5 + Con. modifier",
+    "Cleric": "5 + Con. modifier",
+    "Druid": "5 + Con. modifier",
+    "Monk": "5 + Con. modifier",
+    "Rogue": "5 + Con. modifier",
+    "Warlock": "5 + Con. modifier",
+    "Sorcerer": "4 + Con. modifier",
+    "Wizard": "4 + Con. modifier"
+  },
+  "languages": {
+    "standard": [
+      {
+        "roll": null,
+        "language": "Common",
+        "origin": "Sigil"
+      },
+      {
+        "roll": "1",
+        "language": "Common Sign Language",
+        "origin": "Sigil"
+      },
+      {
+        "roll": "2",
+        "language": "Draconic",
+        "origin": "Dragons"
+      },
+      {
+        "roll": "3-4",
+        "language": "Dwarvish",
+        "origin": "Dwarves"
+      },
+      {
+        "roll": "5-6",
+        "language": "Elvish",
+        "origin": "Elves"
+      },
+      {
+        "roll": "7",
+        "language": "Giant",
+        "origin": "Giants"
+      },
+      {
+        "roll": "8",
+        "language": "Gnomish",
+        "origin": "Gnomes"
+      },
+      {
+        "roll": "9",
+        "language": "Goblin",
+        "origin": "Goblinoids"
+      },
+      {
+        "roll": "10-11",
+        "language": "Halfling",
+        "origin": "Halflings"
+      },
+      {
+        "roll": "12",
+        "language": "Orc",
+        "origin": "Orcs"
+      }
+    ],
+    "rare": [
+      {
+        "language": "Abyssal",
+        "origin": "Demons of the Abyss"
+      },
+      {
+        "language": "Celestial",
+        "origin": "Celestials"
+      },
+      {
+        "language": "Deep Speech",
+        "origin": "Aberrations"
+      },
+      {
+        "language": "Druidic",
+        "origin": "Druidic circles"
+      },
+      {
+        "language": "Infernal",
+        "origin": "Devils of the Nine Hells"
+      },
+      {
+        "language": "Primordial",
+        "origin": "Elementals",
+        "note": "Includes the Aquan, Auran, Ignan, and Terran dialects. Creatures that know one of these dialects can communicate with those that know a different one."
+      },
+      {
+        "language": "Sylvan",
+        "origin": "The Feywild"
+      },
+      {
+        "language": "Thieves' Cant",
+        "origin": "Various criminal guilds"
+      },
+      {
+        "language": "Undercommon",
+        "origin": "The Underdark"
+      }
+    ]
+  },
+  "multiclass_spell_slot_table": [
+    {
+      "level": 1,
+      "slots": {
+        "1": 2,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "level": 2,
+      "slots": {
+        "1": 3,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "level": 3,
+      "slots": {
+        "1": 4,
+        "2": 2,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "level": 4,
+      "slots": {
+        "1": 4,
+        "2": 3,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "level": 5,
+      "slots": {
+        "1": 4,
+        "2": 3,
+        "3": 2,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "level": 6,
+      "slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "level": 7,
+      "slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 1,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "level": 8,
+      "slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 2,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "level": 9,
+      "slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 1,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "level": 10,
+      "slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "level": 11,
+      "slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "level": 12,
+      "slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "level": 13,
+      "slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "level": 14,
+      "slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "level": 15,
+      "slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 0
+      }
+    },
+    {
+      "level": 16,
+      "slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 0
+      }
+    },
+    {
+      "level": 17,
+      "slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      }
+    },
+    {
+      "level": 18,
+      "slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      }
+    },
+    {
+      "level": 19,
+      "slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 2,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      }
+    },
+    {
+      "level": 20,
+      "slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 2,
+        "7": 2,
+        "8": 1,
+        "9": 1
+      }
+    }
+  ],
+  "proficiency_bonus_by_level": [
+    {
+      "level_range": "1-4",
+      "proficiency_bonus": 2
+    },
+    {
+      "level_range": "5-8",
+      "proficiency_bonus": 3
+    },
+    {
+      "level_range": "9-12",
+      "proficiency_bonus": 4
+    },
+    {
+      "level_range": "13-16",
+      "proficiency_bonus": 5
+    },
+    {
+      "level_range": "17-20",
+      "proficiency_bonus": 6
+    }
+  ]
+}
