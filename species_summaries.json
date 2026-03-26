@@ -5,185 +5,253 @@
     {
       "id": "aasimar",
       "name": "Aasimar",
+      "name_de": "Aasimar",
       "summary": "Celestial-touched mortals marked by light, healing, and divine power. In play, aasimar are durable against radiant and necrotic threats, bring emergency healing, and gain a level-3 transformation that can add flight, area pressure, or fear-based control depending on the moment.",
+      "summary_de": "Aasimar sind Sterbliche mit celestischem Funken, geprägt von Licht, Heilung und göttlicher Macht. Im Spiel sind Aasimar widerstandsfähig gegen gleißenden und nekrotischen Schaden, bringen mit Heilende Hände Notfallheilung mit und erhalten auf Stufe 3 eine Verwandlung, die je nach Wahl Flug, Flächendruck oder furchtbasierten Kontrollverlust erzeugt.",
       "subraces": []
     },
     {
       "id": "dragonborn",
       "name": "Dragonborn",
+      "name_de": "Drachenblütiger",
       "summary": "Proud draconic humanoids whose ancestry shapes both appearance and powers. In play, dragonborn are straightforward offensive generalists: a scalable breath weapon gives repeatable area damage, ancestry grants an elemental resistance, and later flight improves mobility.",
+      "summary_de": "Drachenblütige sind stolze drakonische Humanoide, deren Abstammung sowohl Aussehen als auch Kräfte prägt. Im Spiel sind sie geradlinige offensive Allrounder: Eine mitwachsende Odemwaffe liefert wiederholbaren Flächenschaden, die drakonische Abstammung gibt eine passende Schadensresistenz, und später verbessert Drakonischer Flug die Mobilität.",
       "subraces": [
         {
           "id": "black",
           "name": "Black Dragonborn",
-          "summary": "Black Dragonborn descend from black-dragon bloodlines tied to acid and ruin. Gameplay-wise, they specialize in acid breath and acid resistance, making them strong in corrosive environments and against acid-using foes."
+          "name_de": "Schwarz (Säure)",
+          "summary": "Black Dragonborn descend from black-dragon bloodlines tied to acid and ruin. Gameplay-wise, they specialize in acid breath and acid resistance, making them strong in corrosive environments and against acid-using foes.",
+          "summary_de": "Schwarze Drachenblütige stammen aus Blutlinien schwarzer Drachen, die mit Säure und Verfall verbunden sind. Im Spiel spezialisieren sie sich auf eine Odemwaffe mit Säureschaden und Resistenz gegen Säureschaden, was sie in korrosiven Umgebungen und gegen säurebasierte Gegner besonders stark macht."
         },
         {
           "id": "blue",
           "name": "Blue Dragonborn",
-          "summary": "Blue Dragonborn reflect blue-dragon heritage associated with storms and desert might. Gameplay-wise, they gain lightning breath and lightning resistance, a solid choice for ranged area damage and protection against electrical effects."
+          "name_de": "Blau (Blitz)",
+          "summary": "Blue Dragonborn reflect blue-dragon heritage associated with storms and desert might. Gameplay-wise, they gain lightning breath and lightning resistance, a solid choice for ranged area damage and protection against electrical effects.",
+          "summary_de": "Blaue Drachenblütige spiegeln das Erbe blauer Drachen wider, das mit Sturmgewalt und Wüstenmacht verbunden ist. Im Spiel erhalten sie eine Odemwaffe mit Blitzschaden und Resistenz gegen Blitzschaden, eine starke Wahl für Flächenschaden auf Distanz und Schutz vor elektrischen Effekten."
         },
         {
           "id": "brass",
           "name": "Brass Dragonborn",
-          "summary": "Brass Dragonborn carry the legacy of talkative, fire-aligned brass dragons. Gameplay-wise, they gain fire breath and fire resistance, offering reliable offense and one of the most commonly useful resistances in the game."
+          "name_de": "Messing (Feuer)",
+          "summary": "Brass Dragonborn carry the legacy of talkative, fire-aligned brass dragons. Gameplay-wise, they gain fire breath and fire resistance, offering reliable offense and one of the most commonly useful resistances in the game.",
+          "summary_de": "Messing-Drachenblütige tragen das Vermächtnis gesprächiger, feuerverbundener Messingdrachen. Im Spiel erhalten sie eine Odemwaffe mit Feuerschaden und Resistenz gegen Feuerschaden – verlässliche Offensive und eine der nützlichsten Resistenzarten im Spiel."
         },
         {
           "id": "bronze",
           "name": "Bronze Dragonborn",
-          "summary": "Bronze Dragonborn inherit the disciplined, stormy legacy of bronze dragons. Gameplay-wise, they gain lightning breath and lightning resistance, pairing mobile battlefield pressure with protection from electrical attacks."
+          "name_de": "Bronze (Blitz)",
+          "summary": "Bronze Dragonborn inherit the disciplined, stormy legacy of bronze dragons. Gameplay-wise, they gain lightning breath and lightning resistance, pairing mobile battlefield pressure with protection from electrical attacks.",
+          "summary_de": "Bronze-Drachenblütige erben das disziplinierte, sturmgeladene Vermächtnis von Bronzedrachen. Im Spiel erhalten sie eine Odemwaffe mit Blitzschaden und Resistenz gegen Blitzschaden und verbinden so Bewegungsdruck im Kampf mit Schutz vor elektrischen Angriffen."
         },
         {
           "id": "copper",
           "name": "Copper Dragonborn",
-          "summary": "Copper Dragonborn descend from clever acid-aligned dragons known for wit and trickery. Gameplay-wise, they gain acid breath and acid resistance, useful for area attacks while shrugging off corrosive hazards."
+          "name_de": "Kupfer (Säure)",
+          "summary": "Copper Dragonborn descend from clever acid-aligned dragons known for wit and trickery. Gameplay-wise, they gain acid breath and acid resistance, useful for area attacks while shrugging off corrosive hazards.",
+          "summary_de": "Kupfer-Drachenblütige stammen von cleveren, säureverbundenen Drachen ab, die für Witz und Trickreichtum bekannt sind. Im Spiel erhalten sie eine Odemwaffe mit Säureschaden und Resistenz gegen Säureschaden, nützlich für Flächenangriffe und gegen ätzende Gefahren."
         },
         {
           "id": "gold",
           "name": "Gold Dragonborn",
-          "summary": "Gold Dragonborn echo noble gold-dragon lineages associated with majesty and flame. Gameplay-wise, they gain fire breath and fire resistance, making them dependable frontliners or blasters in fire-heavy campaigns."
+          "name_de": "Gold (Feuer)",
+          "summary": "Gold Dragonborn echo noble gold-dragon lineages associated with majesty and flame. Gameplay-wise, they gain fire breath and fire resistance, making them dependable frontliners or blasters in fire-heavy campaigns.",
+          "summary_de": "Gold-Drachenblütige spiegeln die edlen Blutlinien von Golddrachen wider, die mit Majestät und Flammen verbunden sind. Im Spiel erhalten sie eine Odemwaffe mit Feuerschaden und Resistenz gegen Feuerschaden, was sie zu verlässlichen Frontkämpfern oder Zauberwirkern in feuerlastigen Kampagnen macht."
         },
         {
           "id": "green",
           "name": "Green Dragonborn",
-          "summary": "Green Dragonborn stem from cunning green-dragon ancestry tied to poison and manipulation. Gameplay-wise, they gain poison breath and poison resistance, offering niche but potent protection in toxin-heavy adventures."
+          "name_de": "Grün (Gift)",
+          "summary": "Green Dragonborn stem from cunning green-dragon ancestry tied to poison and manipulation. Gameplay-wise, they gain poison breath and poison resistance, offering niche but potent protection in toxin-heavy adventures.",
+          "summary_de": "Grüne Drachenblütige entstammen listiger grüner Drachenabstammung, die mit Gift und Manipulation verbunden ist. Im Spiel erhalten sie eine Odemwaffe mit Giftschaden und Resistenz gegen Giftschaden – eher spezialisiert, aber sehr stark in abenteuerlastigen Giften und Toxinen."
         },
         {
           "id": "red",
           "name": "Red Dragonborn",
-          "summary": "Red Dragonborn channel the iconic power of red dragons and destructive flame. Gameplay-wise, they gain fire breath and fire resistance, a very practical pairing for aggressive builds."
+          "name_de": "Rot (Feuer)",
+          "summary": "Red Dragonborn channel the iconic power of red dragons and destructive flame. Gameplay-wise, they gain fire breath and fire resistance, a very practical pairing for aggressive builds.",
+          "summary_de": "Rote Drachenblütige verkörpern die ikonische Macht roter Drachen und zerstörerischer Flammen. Im Spiel erhalten sie eine Odemwaffe mit Feuerschaden und Resistenz gegen Feuerschaden – eine sehr praktische Kombination für aggressive Builds."
         },
         {
           "id": "silver",
           "name": "Silver Dragonborn",
-          "summary": "Silver Dragonborn carry the refined legacy of silver dragons and winter skies. Gameplay-wise, they gain cold breath and cold resistance, making them effective in icy regions and against cold-based enemies."
+          "name_de": "Silber (Kälte)",
+          "summary": "Silver Dragonborn carry the refined legacy of silver dragons and winter skies. Gameplay-wise, they gain cold breath and cold resistance, making them effective in icy regions and against cold-based enemies.",
+          "summary_de": "Silberne Drachenblütige tragen das kultivierte Vermächtnis silberner Drachen und winterlicher Himmel in sich. Im Spiel erhalten sie eine Odemwaffe mit Kälteschaden und Resistenz gegen Kälteschaden, was sie in eisigen Regionen und gegen kältebasierte Feinde stark macht."
         },
         {
           "id": "white",
           "name": "White Dragonborn",
-          "summary": "White Dragonborn reflect hardy white-dragon ancestry shaped by frost and survival. Gameplay-wise, they gain cold breath and cold resistance, useful for rugged martial characters who expect harsh environments."
+          "name_de": "Weiß (Kälte)",
+          "summary": "White Dragonborn reflect hardy white-dragon ancestry shaped by frost and survival. Gameplay-wise, they gain cold breath and cold resistance, useful for rugged martial characters who expect harsh environments.",
+          "summary_de": "Weiße Drachenblütige spiegeln die zähe Abstammung weißer Drachen wider, geprägt von Frost und Überleben. Im Spiel erhalten sie eine Odemwaffe mit Kälteschaden und Resistenz gegen Kälteschaden, besonders passend für robuste, martialische Figuren in harschen Umgebungen."
         }
       ]
     },
     {
       "id": "dwarf",
       "name": "Dwarf",
+      "name_de": "Zwerg",
       "summary": "Stone-born folk of forge, mountain, and underground strongholds, famed for endurance. In play, dwarves are sturdy explorers and frontliners: extra hit points scale every level, poison defenses are excellent, and Stonecunning grants repeatable tremorsense for detecting nearby creatures through stone.",
+      "summary_de": "Zwerge sind aus Stein geborene Leute der Schmiede, Berge und unterirdischen Festungen, berühmt für ihre Ausdauer. Im Spiel sind Zwerge robuste Entdecker und Frontkämpfer: Zusätzliche Trefferpunkte skalieren mit jeder Stufe, ihre Giftabwehr ist stark, und Steingespür gewährt wiederholt Erschütterungssinn, um Kreaturen durch Stein in der Nähe aufzuspüren.",
       "subraces": []
     },
     {
       "id": "elf",
       "name": "Elf",
+      "name_de": "Elf",
       "summary": "Ancient fey-touched people shaped by long memory, magic, and environment. In play, elves are flexible utility characters with charm resistance, a short long rest through Trance, and a lineage choice that steers them toward stealth, mobility, or arcane utility.",
+      "summary_de": "Elfen sind uralte, von der Feenwelt geprägte Wesen, geformt von langer Erinnerung, Magie und Umgebung. Im Spiel sind Elfen flexible Nutzcharaktere mit Vorteil gegen Bezaubert, einer verkürzten langen Rast durch Trance und einer Abstammungswahl, die sie stärker in Richtung Heimlichkeit, Mobilität oder arkane Vielseitigkeit lenkt.",
       "subraces": [
         {
           "id": "drow",
           "name": "Drow",
-          "summary": "Drow are elves shaped by the Underdark and its shadowy magic. Gameplay-wise, they trade toward vision and control: superior darkvision plus Dancing Lights, Faerie Fire, and Darkness makes them excellent for stealthy casters, ambushers, and parties that can exploit visibility tricks."
+          "name_de": "Drow",
+          "summary": "Drow are elves shaped by the Underdark and its shadowy magic. Gameplay-wise, they trade toward vision and control: superior darkvision plus Dancing Lights, Faerie Fire, and Darkness makes them excellent for stealthy casters, ambushers, and parties that can exploit visibility tricks.",
+          "summary_de": "Drow sind Elfen, die vom Unterreich und dessen Schattenmagie geprägt wurden. Im Spiel verschieben sie den Fokus auf Sicht und Kontrolle: stärkere Dunkelsicht sowie Tanzende Lichter, Feenfeuer und Dunkelheit machen sie stark für heimliche Zauberwirker, Hinterhalte und Gruppen, die Sichtverhältnisse gezielt ausnutzen."
         },
         {
           "id": "high_elf",
           "name": "High Elf",
-          "summary": "High Elves are refined elves steeped in crossroads magic between the Material Plane and the Feywild. Gameplay-wise, they are the most versatile magical lineage, with a swappable wizard cantrip plus Detect Magic and Misty Step for utility, scouting, and repositioning."
+          "name_de": "Hochelf",
+          "summary": "High Elves are refined elves steeped in crossroads magic between the Material Plane and the Feywild. Gameplay-wise, they are the most versatile magical lineage, with a swappable wizard cantrip plus Detect Magic and Misty Step for utility, scouting, and repositioning.",
+          "summary_de": "Hochelfen sind kultivierte Elfen, durchdrungen von der Magie der Übergänge zwischen materieller Ebene und Feenwildnis. Im Spiel sind sie die vielseitigste magische Linie: ein austauschbarer Magier-Zaubertrick sowie Magie entdecken und Nebelschritt liefern starke Werkzeuge für Nutzen, Erkundung und Umpositionierung."
         },
         {
           "id": "wood_elf",
           "name": "Wood Elf",
-          "summary": "Wood Elves carry the magic of ancient forests and self-reliant wandering. Gameplay-wise, they are the most mobile and stealth-oriented lineage, gaining extra speed, nature magic, and eventually Pass without Trace for strong exploration and infiltration play."
+          "name_de": "Waldelf",
+          "summary": "Wood Elves carry the magic of ancient forests and self-reliant wandering. Gameplay-wise, they are the most mobile and stealth-oriented lineage, gaining extra speed, nature magic, and eventually Pass without Trace for strong exploration and infiltration play.",
+          "summary_de": "Waldelfen tragen die Magie urtümlicher Wälder und selbstgenügsamer Wanderschaft in sich. Im Spiel sind sie die mobilste und heimlichste Linie: mehr Bewegungsrate, Naturmagie und später Spurloses Gehen machen sie stark für Erkundung, Infiltration und Gruppen, die unentdeckt bleiben wollen."
         }
       ]
     },
     {
       "id": "gnome",
       "name": "Gnome",
+      "name_de": "Gnom",
       "summary": "Small, ingenious folk shaped by invention, illusion, and hidden living. In play, gnomes are excellent at resisting mental effects thanks to Gnomish Cunning, and their lineage lets you lean into either illusion-and-animal utility or magical tinkering.",
+      "summary_de": "Gnome sind kleine, einfallsreiche Leute, geprägt von Erfindungsgeist, Illusionen und verborgenem Leben. Im Spiel sind sie dank Gnomischer Gerissenheit besonders stark gegen geistige Effekte, und ihre Abstammung lässt sie entweder auf Illusionen und Tiermagie oder auf magisches Tüfteln ausrichten.",
       "subraces": [
         {
           "id": "forest_gnome",
           "name": "Forest Gnome",
-          "summary": "Forest Gnomes are secretive woodland tricksters with a bond to illusion and beasts. Gameplay-wise, they bring Minor Illusion and repeated Speak with Animals, making them strong scouts, social problem-solvers, and exploration specialists."
+          "name_de": "Waldgnom",
+          "summary": "Forest Gnomes are secretive woodland tricksters with a bond to illusion and beasts. Gameplay-wise, they bring Minor Illusion and repeated Speak with Animals, making them strong scouts, social problem-solvers, and exploration specialists.",
+          "summary_de": "Waldgnome sind verschlagene Waldtrickser mit Bindung an Illusionen und Tiere. Im Spiel bringen sie Einfache Illusion und Mit Tieren sprechen mit und eignen sich dadurch hervorragend als Kundschafter, soziale Problemlöser und Spezialisten für Erkundung."
         },
         {
           "id": "rock_gnome",
           "name": "Rock Gnome",
-          "summary": "Rock Gnomes are inventive tinkerers who express magic through gadgets and handiwork. Gameplay-wise, they gain two very practical cantrips and can build temporary clockwork devices, making them flavorful utility characters with lots of creative out-of-combat options."
+          "name_de": "Felsengnom",
+          "summary": "Rock Gnomes are inventive tinkerers who express magic through gadgets and handiwork. Gameplay-wise, they gain two very practical cantrips and can build temporary clockwork devices, making them flavorful utility characters with lots of creative out-of-combat options.",
+          "summary_de": "Felsengnome sind erfinderische Tüftler, die Magie durch Geräte und Handwerk ausdrücken. Im Spiel erhalten sie zwei sehr praktische Zaubertricks und können vorübergehende Uhrwerkgeräte bauen, was ihnen viele kreative Optionen außerhalb des Kampfes gibt."
         }
       ]
     },
     {
       "id": "goliath",
       "name": "Goliath",
+      "name_de": "Goliath",
       "summary": "Towering descendants of giants who carry supernatural giant boons in their blood. In play, goliaths are highly physical characters with extra speed, strong carrying power, anti-grapple utility, and a level-5 size boost; their ancestry choice lets them tailor toward mobility, defense, control, or burst damage.",
+      "summary_de": "Goliaths sind hochgewachsene Nachfahren der Riesen, die übernatürliche riesische Gaben im Blut tragen. Im Spiel sind sie körperlich starke Figuren mit höherer Bewegungsrate, großer Tragkraft, Schutz gegen Gepackt und ab Stufe 5 einer Vergrößerung; ihre riesige Abstammung lässt sie auf Mobilität, Defensive, Kontrolle oder zusätzlichen Schaden zuschneiden.",
       "subraces": [
         {
           "id": "cloud",
           "name": "Cloud Goliath",
-          "summary": "Cloud Goliaths inherit elusive cloud-giant magic. Gameplay-wise, Cloud's Jaunt gives short-range teleportation, which is excellent for repositioning, escaping danger, reaching backlines, or bypassing obstacles."
+          "name_de": "Wolken-Goliath",
+          "summary": "Cloud Goliaths inherit elusive cloud-giant magic. Gameplay-wise, Cloud's Jaunt gives short-range teleportation, which is excellent for repositioning, escaping danger, reaching backlines, or bypassing obstacles.",
+          "summary_de": "Wolken-Goliaths erben die schwer greifbare Magie der Wolkenriesen. Im Spiel erlaubt Wolkensprung kurze Teleportation und ist dadurch hervorragend zum Umpositionieren, Entkommen, Erreichen der Hinterreihe oder Umgehen von Hindernissen."
         },
         {
           "id": "fire",
           "name": "Fire Goliath",
-          "summary": "Fire Goliaths reflect the destructive force of fire giants. Gameplay-wise, Fire's Burn adds bonus fire damage on hits, making it a clean choice for aggressive martial builds that want extra burst."
+          "name_de": "Feuer-Goliath",
+          "summary": "Fire Goliaths reflect the destructive force of fire giants. Gameplay-wise, Fire's Burn adds bonus fire damage on hits, making it a clean choice for aggressive martial builds that want extra burst.",
+          "summary_de": "Feuer-Goliaths spiegeln die zerstörerische Kraft der Feuerriesen. Im Spiel fügt Feuersbrunst bei Treffern zusätzlichen Feuerschaden zu und ist damit eine saubere Wahl für aggressive, martialische Builds mit mehr Burst."
         },
         {
           "id": "frost",
           "name": "Frost Goliath",
-          "summary": "Frost Goliaths carry the brutal momentum of frost giants. Gameplay-wise, Frost's Chill adds damage and slows the target, giving melee characters a simple way to stick to enemies and control movement."
+          "name_de": "Frost-Goliath",
+          "summary": "Frost Goliaths carry the brutal momentum of frost giants. Gameplay-wise, Frost's Chill adds damage and slows the target, giving melee characters a simple way to stick to enemies and control movement.",
+          "summary_de": "Frost-Goliaths tragen die brutale Wucht der Frostriesen in sich. Im Spiel fügt Eiseskälte zusätzlichen Kälteschaden zu und verlangsamt das Ziel, was Nahkämpfern hilft, an Gegnern dranzubleiben und Bewegung zu kontrollieren."
         },
         {
           "id": "hill",
           "name": "Hill Goliath",
-          "summary": "Hill Goliaths echo the crushing physicality of hill giants. Gameplay-wise, Hill's Tumble knocks Large-or-smaller targets prone on a hit, which is strong for melee control and for helping allies attack with advantage in close combat."
+          "name_de": "Hügel-Goliath",
+          "summary": "Hill Goliaths echo the crushing physicality of hill giants. Gameplay-wise, Hill's Tumble knocks Large-or-smaller targets prone on a hit, which is strong for melee control and for helping allies attack with advantage in close combat.",
+          "summary_de": "Hügel-Goliaths verkörpern die vernichtende Körperlichkeit der Hügelriesen. Im Spiel kann Hügelsturz Ziele von höchstens großer Größe nach einem Treffer umstoßen – stark für Nahkampfkontrolle und um Verbündeten im Nahkampf Vorteil zu verschaffen."
         },
         {
           "id": "stone",
           "name": "Stone Goliath",
-          "summary": "Stone Goliaths inherit the staying power of stone giants. Gameplay-wise, Stone's Endurance reduces incoming damage as a reaction, making it one of the best defensive options for tanks and frontliners."
+          "name_de": "Stein-Goliath",
+          "summary": "Stone Goliaths inherit the staying power of stone giants. Gameplay-wise, Stone's Endurance reduces incoming damage as a reaction, making it one of the best defensive options for tanks and frontliners.",
+          "summary_de": "Stein-Goliaths erben die Zähigkeit der Steinriesen. Im Spiel reduziert Felsenfestigkeit eingehenden Schaden als Reaktion und gehört damit zu den besten defensiven Optionen für Tanks und Frontkämpfer."
         },
         {
           "id": "storm",
           "name": "Storm Goliath",
-          "summary": "Storm Goliaths channel the retaliatory force of storm giants. Gameplay-wise, Storm's Thunder punishes enemies that hurt you, giving durable builds a reactive damage option without spending their turn."
+          "name_de": "Sturm-Goliath",
+          "summary": "Storm Goliaths channel the retaliatory force of storm giants. Gameplay-wise, Storm's Thunder punishes enemies that hurt you, giving durable builds a reactive damage option without spending their turn.",
+          "summary_de": "Sturm-Goliaths kanalisieren die vergeltende Kraft der Sturmriesen. Im Spiel bestraft Sturmdonner Gegner, die dir Schaden zufügen, und gibt zähen Builds eine reaktive Schadensoption ohne den eigenen Zug zu verbrauchen."
         }
       ]
     },
     {
       "id": "halfling",
       "name": "Halfling",
+      "name_de": "Halbling",
       "summary": "Small, community-minded wanderers famous for improbable luck and quiet bravery. In play, halflings are slippery and dependable: rerolling natural 1s boosts consistency, fear defense improves survivability, and their movement and hiding traits make them excellent rogues, scouts, and skirmishers.",
+      "summary_de": "Halblinge sind kleine, gemeinschaftsorientierte Wanderer, bekannt für unwahrscheinliches Glück und leisen Mut. Im Spiel sind sie wendig und verlässlich: Halblingsglück macht W20-Prüfungen konstanter, Tapferkeit verbessert das Überleben gegen Furcht, und ihre Bewegungs- und Verstecken-Merkmale machen sie stark als Schurken, Kundschafter und Plänkler.",
       "subraces": []
     },
     {
       "id": "human",
       "name": "Human",
+      "name_de": "Mensch",
       "summary": "Ambitious, adaptable people found across the multiverse and defined more by flexibility than a single destiny. In play, humans are the most open-ended option here: an extra skill, a bonus Origin feat, and daily Heroic Inspiration make them easy to fit into almost any build.",
+      "summary_de": "Menschen sind ehrgeizige, anpassungsfähige Leute, die im ganzen Multiversum vorkommen und eher durch Vielseitigkeit als durch ein gemeinsames Schicksal geprägt sind. Im Spiel sind sie die offenste Option: eine zusätzliche Fertigkeitsübung, ein Herkunftstalent und Heldische Inspiration nach jeder langen Rast passen in fast jeden Build.",
       "subraces": []
     },
     {
       "id": "orc",
       "name": "Orc",
+      "name_de": "Ork",
       "summary": "Gruumsh-touched wanderers built for hardship, momentum, and stubborn survival. In play, orcs are excellent frontliners and chargers: bonus-action Dash with temporary hit points boosts engagement, darkvision supports dungeon play, and Relentless Endurance helps you stay standing when others would fall.",
+      "summary_de": "Orks sind von Gruumsh geprägte Wanderer, gebaut für Entbehrung, Vorwärtsdrang und zähen Überlebenswillen. Im Spiel sind sie starke Frontkämpfer und Angreifer: Adrenalinrausch liefert Spurt als Bonusaktion plus temporäre Trefferpunkte, Dunkelsicht hilft im Dungeon, und Durchhaltevermögen hält sie auf den Beinen, wenn andere schon fallen würden.",
       "subraces": []
     },
     {
       "id": "tiefling",
       "name": "Tiefling",
+      "name_de": "Tiefling",
       "summary": "Fiend-blooded mortals whose heritage comes from the Lower Planes but does not dictate their morality. In play, tieflings are flexible spell-leaning characters with solid utility from Thaumaturgy and a legacy choice that determines resistance type plus a distinct spell package.",
+      "summary_de": "Tieflinge sind Sterbliche mit unholdischem Erbe aus den Unteren Ebenen, dessen Herkunft aber nichts über ihre Moral festlegt. Im Spiel sind sie flexible, zaubernahe Figuren mit solider Nutzmagie durch Thaumaturgie; die Wahl des unholdischen Erbes bestimmt Schadensresistenz und ein jeweils eigenes Zauberpaket.",
       "subraces": [
         {
           "id": "abyssal",
           "name": "Abyssal Tiefling",
-          "summary": "Abyssal Tieflings reflect chaotic, demonic bloodlines tied to poison, entropy, and raw menace. Gameplay-wise, they gain poison resistance plus Poison Spray, Ray of Sickness, and Hold Person, giving them an aggressive debuff-oriented toolkit."
+          "name_de": "Abyssisch",
+          "summary": "Abyssal Tieflings reflect chaotic, demonic bloodlines tied to poison, entropy, and raw menace. Gameplay-wise, they gain poison resistance plus Poison Spray, Ray of Sickness, and Hold Person, giving them an aggressive debuff-oriented toolkit.",
+          "summary_de": "Abyssische Tieflinge spiegeln chaotische, dämonische Blutlinien wider, die mit Gift, Entropie und roher Bedrohlichkeit verbunden sind. Im Spiel erhalten sie Resistenz gegen Giftschaden sowie Gift versprühen, Strahl der Übelkeit und Person festhalten – ein aggressives, auf Schwächung ausgerichtetes Paket."
         },
         {
           "id": "chthonic",
           "name": "Chthonic Tiefling",
-          "summary": "Chthonic Tieflings draw from grim underworld legacies tied to death, greed, and despair. Gameplay-wise, they gain necrotic resistance plus Chill Touch, False Life, and Ray of Enfeeblement, making them good at attrition, anti-healing pressure, and survivability."
+          "name_de": "Chthonisch",
+          "summary": "Chthonic Tieflings draw from grim underworld legacies tied to death, greed, and despair. Gameplay-wise, they gain necrotic resistance plus Chill Touch, False Life, and Ray of Enfeeblement, making them good at attrition, anti-healing pressure, and survivability.",
+          "summary_de": "Chthonische Tieflinge schöpfen aus düsteren Unterwelterben, die mit Tod, Gier und Verzweiflung verbunden sind. Im Spiel erhalten sie Resistenz gegen nekrotischen Schaden sowie Kalte Hand, Falsches Leben und Schwächestrahl, was sie stark für Zermürbung, Anti-Heilung und Überlebensfähigkeit macht."
         },
         {
           "id": "infernal",
           "name": "Infernal Tiefling",
-          "summary": "Infernal Tieflings descend from devilish bloodlines associated with flame, authority, and hellish power. Gameplay-wise, they gain fire resistance plus Fire Bolt, Hellish Rebuke, and Darkness, a very reliable package for damage, retaliation, and battlefield disruption."
+          "name_de": "Infernalisch",
+          "summary": "Infernal Tieflings descend from devilish bloodlines associated with flame, authority, and hellish power. Gameplay-wise, they gain fire resistance plus Fire Bolt, Hellish Rebuke, and Darkness, a very reliable package for damage, retaliation, and battlefield disruption.",
+          "summary_de": "Infernalische Tieflinge entstammen teuflischen Blutlinien, die mit Flammen, Autorität und höllischer Macht verbunden sind. Im Spiel erhalten sie Resistenz gegen Feuerschaden sowie Feuerpfeil, Höllischer Tadel und Dunkelheit – ein sehr verlässliches Paket für Schaden, Vergeltung und Kampfkontrolle."
         }
       ]
     }
