@@ -8,7 +8,10 @@
     "creature_type": "humanoid",
     "size": {
       "default": "medium",
-      "choice": ["medium", "small"],
+      "choice": [
+        "medium",
+        "small"
+      ],
       "description_en": "Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species",
       "description_de": "Mittelgroß (120–210 cm) oder Klein (60–120 cm) – lege die Größe fest, wenn du diese Spezies auswählst"
     },
@@ -23,7 +26,13 @@
         "text_en": "You have Resistance to Necrotic damage and Radiant damage.",
         "text_de": "Du bist gegen gleißenden und nekrotischen Schaden resistent.",
         "grants": [
-          { "type": "damage_resistance", "damage_types": ["necrotic", "radiant"] }
+          {
+            "type": "damage_resistance",
+            "damage_types": [
+              "necrotic",
+              "radiant"
+            ]
+          }
         ]
       },
       {
@@ -35,7 +44,10 @@
         "text_en": "You have Darkvision with a range of 60 feet.",
         "text_de": "Du hast Dunkelsicht mit einer Reichweite von 18 Metern.",
         "grants": [
-          { "type": "darkvision", "range_ft": 60 }
+          {
+            "type": "darkvision",
+            "range_ft": 60
+          }
         ]
       },
       {
@@ -68,7 +80,11 @@
         "text_en": "You know the Light cantrip. Charisma is your spellcasting ability for it.",
         "text_de": "Du kennst den Zaubertrick Licht. Dein Attribut zum Wirken des Zaubers ist Charisma.",
         "grants": [
-          { "type": "spell_access", "spell_id": "light", "spellcasting_ability": "charisma" }
+          {
+            "type": "spell_access",
+            "spell_id": "light",
+            "spellcasting_ability": "charisma"
+          }
         ]
       },
       {
@@ -125,16 +141,156 @@
             "type": "choice",
             "choose": 1,
             "options": [
-              { "id": "draconic-ancestry-black", "name_en": "Black (Acid)", "name_de": "Schwarz (Säure)", "text_en": "Your draconic ancestor is a Black dragon. Your Breath Weapon and Damage Resistance use Acid damage.", "text_de": "Dein drakonischer Vorfahr ist ein Schwarzer Drache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Säureschaden.", "grants": [{ "type": "damage_resistance", "damage_types": ["acid"] }] },
-              { "id": "draconic-ancestry-blue", "name_en": "Blue (Lightning)", "name_de": "Blau (Blitz)", "text_en": "Your draconic ancestor is a Blue dragon. Your Breath Weapon and Damage Resistance use Lightning damage.", "text_de": "Dein drakonischer Vorfahr ist ein Blauer Drache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Blitzschaden.", "grants": [{ "type": "damage_resistance", "damage_types": ["lightning"] }] },
-              { "id": "draconic-ancestry-brass", "name_en": "Brass (Fire)", "name_de": "Messing (Feuer)", "text_en": "Your draconic ancestor is a Brass dragon. Your Breath Weapon and Damage Resistance use Fire damage.", "text_de": "Dein drakonischer Vorfahr ist ein Messingdrache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Feuerschaden.", "grants": [{ "type": "damage_resistance", "damage_types": ["fire"] }] },
-              { "id": "draconic-ancestry-bronze", "name_en": "Bronze (Lightning)", "name_de": "Bronze (Blitz)", "text_en": "Your draconic ancestor is a Bronze dragon. Your Breath Weapon and Damage Resistance use Lightning damage.", "text_de": "Dein drakonischer Vorfahr ist ein Bronzedrache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Blitzschaden.", "grants": [{ "type": "damage_resistance", "damage_types": ["lightning"] }] },
-              { "id": "draconic-ancestry-copper", "name_en": "Copper (Acid)", "name_de": "Kupfer (Säure)", "text_en": "Your draconic ancestor is a Copper dragon. Your Breath Weapon and Damage Resistance use Acid damage.", "text_de": "Dein drakonischer Vorfahr ist ein Kupferdrache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Säureschaden.", "grants": [{ "type": "damage_resistance", "damage_types": ["acid"] }] },
-              { "id": "draconic-ancestry-gold", "name_en": "Gold (Fire)", "name_de": "Gold (Feuer)", "text_en": "Your draconic ancestor is a Gold dragon. Your Breath Weapon and Damage Resistance use Fire damage.", "text_de": "Dein drakonischer Vorfahr ist ein Golddrache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Feuerschaden.", "grants": [{ "type": "damage_resistance", "damage_types": ["fire"] }] },
-              { "id": "draconic-ancestry-green", "name_en": "Green (Poison)", "name_de": "Grün (Gift)", "text_en": "Your draconic ancestor is a Green dragon. Your Breath Weapon and Damage Resistance use Poison damage.", "text_de": "Dein drakonischer Vorfahr ist ein Grüner Drache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Giftschaden.", "grants": [{ "type": "damage_resistance", "damage_types": ["poison"] }] },
-              { "id": "draconic-ancestry-red", "name_en": "Red (Fire)", "name_de": "Rot (Feuer)", "text_en": "Your draconic ancestor is a Red dragon. Your Breath Weapon and Damage Resistance use Fire damage.", "text_de": "Dein drakonischer Vorfahr ist ein Roter Drache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Feuerschaden.", "grants": [{ "type": "damage_resistance", "damage_types": ["fire"] }] },
-              { "id": "draconic-ancestry-silver", "name_en": "Silver (Cold)", "name_de": "Silber (Kälte)", "text_en": "Your draconic ancestor is a Silver dragon. Your Breath Weapon and Damage Resistance use Cold damage.", "text_de": "Dein drakonischer Vorfahr ist ein Silberdrache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Kälteschaden.", "grants": [{ "type": "damage_resistance", "damage_types": ["cold"] }] },
-              { "id": "draconic-ancestry-white", "name_en": "White (Cold)", "name_de": "Weiß (Kälte)", "text_en": "Your draconic ancestor is a White dragon. Your Breath Weapon and Damage Resistance use Cold damage.", "text_de": "Dein drakonischer Vorfahr ist ein Weißer Drache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Kälteschaden.", "grants": [{ "type": "damage_resistance", "damage_types": ["cold"] }] }
+              {
+                "id": "draconic-ancestry-black",
+                "name_en": "Black Dragonborn",
+                "name_de": "Schwarz (Säure)",
+                "text_en": "Your draconic ancestor is a Black dragon. Your Breath Weapon and Damage Resistance use Acid damage.",
+                "text_de": "Dein drakonischer Vorfahr ist ein Schwarzer Drache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Säureschaden.",
+                "grants": [
+                  {
+                    "type": "damage_resistance",
+                    "damage_types": [
+                      "acid"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "draconic-ancestry-blue",
+                "name_en": "Blue Dragonborn",
+                "name_de": "Blau (Blitz)",
+                "text_en": "Your draconic ancestor is a Blue dragon. Your Breath Weapon and Damage Resistance use Lightning damage.",
+                "text_de": "Dein drakonischer Vorfahr ist ein Blauer Drache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Blitzschaden.",
+                "grants": [
+                  {
+                    "type": "damage_resistance",
+                    "damage_types": [
+                      "lightning"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "draconic-ancestry-brass",
+                "name_en": "Brass Dragonborn",
+                "name_de": "Messing (Feuer)",
+                "text_en": "Your draconic ancestor is a Brass dragon. Your Breath Weapon and Damage Resistance use Fire damage.",
+                "text_de": "Dein drakonischer Vorfahr ist ein Messingdrache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Feuerschaden.",
+                "grants": [
+                  {
+                    "type": "damage_resistance",
+                    "damage_types": [
+                      "fire"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "draconic-ancestry-bronze",
+                "name_en": "Bronze Dragonborn",
+                "name_de": "Bronze (Blitz)",
+                "text_en": "Your draconic ancestor is a Bronze dragon. Your Breath Weapon and Damage Resistance use Lightning damage.",
+                "text_de": "Dein drakonischer Vorfahr ist ein Bronzedrache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Blitzschaden.",
+                "grants": [
+                  {
+                    "type": "damage_resistance",
+                    "damage_types": [
+                      "lightning"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "draconic-ancestry-copper",
+                "name_en": "Copper Dragonborn",
+                "name_de": "Kupfer (Säure)",
+                "text_en": "Your draconic ancestor is a Copper dragon. Your Breath Weapon and Damage Resistance use Acid damage.",
+                "text_de": "Dein drakonischer Vorfahr ist ein Kupferdrache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Säureschaden.",
+                "grants": [
+                  {
+                    "type": "damage_resistance",
+                    "damage_types": [
+                      "acid"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "draconic-ancestry-gold",
+                "name_en": "Gold Dragonborn",
+                "name_de": "Gold (Feuer)",
+                "text_en": "Your draconic ancestor is a Gold dragon. Your Breath Weapon and Damage Resistance use Fire damage.",
+                "text_de": "Dein drakonischer Vorfahr ist ein Golddrache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Feuerschaden.",
+                "grants": [
+                  {
+                    "type": "damage_resistance",
+                    "damage_types": [
+                      "fire"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "draconic-ancestry-green",
+                "name_en": "Green Dragonborn",
+                "name_de": "Grün (Gift)",
+                "text_en": "Your draconic ancestor is a Green dragon. Your Breath Weapon and Damage Resistance use Poison damage.",
+                "text_de": "Dein drakonischer Vorfahr ist ein Grüner Drache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Giftschaden.",
+                "grants": [
+                  {
+                    "type": "damage_resistance",
+                    "damage_types": [
+                      "poison"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "draconic-ancestry-red",
+                "name_en": "Red Dragonborn",
+                "name_de": "Rot (Feuer)",
+                "text_en": "Your draconic ancestor is a Red dragon. Your Breath Weapon and Damage Resistance use Fire damage.",
+                "text_de": "Dein drakonischer Vorfahr ist ein Roter Drache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Feuerschaden.",
+                "grants": [
+                  {
+                    "type": "damage_resistance",
+                    "damage_types": [
+                      "fire"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "draconic-ancestry-silver",
+                "name_en": "Silver Dragonborn",
+                "name_de": "Silber (Kälte)",
+                "text_en": "Your draconic ancestor is a Silver dragon. Your Breath Weapon and Damage Resistance use Cold damage.",
+                "text_de": "Dein drakonischer Vorfahr ist ein Silberdrache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Kälteschaden.",
+                "grants": [
+                  {
+                    "type": "damage_resistance",
+                    "damage_types": [
+                      "cold"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "draconic-ancestry-white",
+                "name_en": "White Dragonborn",
+                "name_de": "Weiß (Kälte)",
+                "text_en": "Your draconic ancestor is a White dragon. Your Breath Weapon and Damage Resistance use Cold damage.",
+                "text_de": "Dein drakonischer Vorfahr ist ein Weißer Drache. Deine Odemwaffe und Schadensresistenz beziehen sich auf Kälteschaden.",
+                "grants": [
+                  {
+                    "type": "damage_resistance",
+                    "damage_types": [
+                      "cold"
+                    ]
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -154,17 +310,34 @@
             "uses": "proficiency_bonus",
             "recharge": "long_rest",
             "effect": {
-              "save": { "type": "dexterity", "dc": "8 + constitution_modifier + proficiency_bonus" },
-              "area": { "choice": ["15ft_cone", "30ft_line_5ft_wide"] },
+              "save": {
+                "type": "dexterity",
+                "dc": "8 + constitution_modifier + proficiency_bonus"
+              },
+              "area": {
+                "choice": [
+                  "15ft_cone",
+                  "30ft_line_5ft_wide"
+                ]
+              },
               "damage": {
                 "type": "from_draconic_ancestry",
                 "scaling": {
                   "type": "scaling_damage",
                   "base_dice": "1d10",
                   "scaling": [
-                    { "level": 5, "dice": "2d10" },
-                    { "level": 11, "dice": "3d10" },
-                    { "level": 17, "dice": "4d10" }
+                    {
+                      "level": 5,
+                      "dice": "2d10"
+                    },
+                    {
+                      "level": 11,
+                      "dice": "3d10"
+                    },
+                    {
+                      "level": 17,
+                      "dice": "4d10"
+                    }
                   ]
                 }
               },
@@ -182,7 +355,12 @@
         "text_en": "You have Resistance to the damage type determined by your Draconic Ancestry trait.",
         "text_de": "Du bist gegen die Schadensart resistent, die mit deiner drakonischen Abstammung assoziiert ist.",
         "grants": [
-          { "type": "damage_resistance", "damage_types": ["from_draconic_ancestry"] }
+          {
+            "type": "damage_resistance",
+            "damage_types": [
+              "from_draconic_ancestry"
+            ]
+          }
         ]
       },
       {
@@ -194,7 +372,10 @@
         "text_en": "You have Darkvision with a range of 60 feet.",
         "text_de": "Du hast Dunkelsicht mit einer Reichweite von 18 Metern.",
         "grants": [
-          { "type": "darkvision", "range_ft": 60 }
+          {
+            "type": "darkvision",
+            "range_ft": 60
+          }
         ]
       },
       {
@@ -243,7 +424,10 @@
         "text_en": "You have Darkvision with a range of 120 feet.",
         "text_de": "Du hast Dunkelsicht mit einer Reichweite von 36 Metern.",
         "grants": [
-          { "type": "darkvision", "range_ft": 120 }
+          {
+            "type": "darkvision",
+            "range_ft": 120
+          }
         ]
       },
       {
@@ -255,8 +439,18 @@
         "text_en": "You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned condition.",
         "text_de": "Du bist gegen Giftschaden resistent. Außerdem bist du bei Rettungswürfen zum Vermeiden oder Beenden des Zustands Vergiftet im Vorteil.",
         "grants": [
-          { "type": "damage_resistance", "damage_types": ["poison"] },
-          { "type": "advantage", "on": ["saving_throws_against_poisoned"] }
+          {
+            "type": "damage_resistance",
+            "damage_types": [
+              "poison"
+            ]
+          },
+          {
+            "type": "advantage",
+            "on": [
+              "saving_throws_against_poisoned"
+            ]
+          }
         ]
       },
       {
@@ -268,7 +462,10 @@
         "text_en": "Your Hit Point maximum increases by 1, and it increases by 1 again whenever you gain a level.",
         "text_de": "Dein Trefferpunktemaximum wird um 1 und bei jedem Stufenaufstieg um 1 weiteren Punkt erhöht.",
         "grants": [
-          { "type": "hp_bonus_per_level", "bonus_per_level": 1 }
+          {
+            "type": "hp_bonus_per_level",
+            "bonus_per_level": 1
+          }
         ]
       },
       {
@@ -317,7 +514,10 @@
         "text_en": "You have Darkvision with a range of 60 feet.",
         "text_de": "Du hast Dunkelsicht mit einer Reichweite von 18 Metern.",
         "grants": [
-          { "type": "darkvision", "range_ft": 60 }
+          {
+            "type": "darkvision",
+            "range_ft": 60
+          }
         ]
       },
       {
@@ -342,14 +542,35 @@
                 "text_en": "The range of your Darkvision increases to 120 feet. You also know the Dancing Lights cantrip. Level 3: Faerie Fire (free cast, long rest recharge). Level 5: Darkness (free cast, long rest recharge).",
                 "text_de": "Die Reichweite deiner Dunkelsicht ist auf 36 Meter erhöht. Außerdem kennst du den Zaubertrick Tanzende Lichter. 3. Stufe: Feenfeuer (einmal ohne Zauberplatz, Wiederaufladung nach langer Rast). 5. Stufe: Dunkelheit (einmal ohne Zauberplatz, Wiederaufladung nach langer Rast).",
                 "grants": [
-                  { "type": "darkvision", "range_ft": 120 },
+                  {
+                    "type": "darkvision",
+                    "range_ft": 120
+                  },
                   {
                     "type": "spell_progression",
-                    "spellcasting_ability_choice": ["intelligence", "wisdom", "charisma"],
+                    "spellcasting_ability_choice": [
+                      "intelligence",
+                      "wisdom",
+                      "charisma"
+                    ],
                     "spells": [
-                      { "level": 1, "spell_id": "dancing-lights", "type": "cantrip" },
-                      { "level": 3, "spell_id": "faerie-fire", "free_cast": 1, "recharge": "long_rest" },
-                      { "level": 5, "spell_id": "darkness", "free_cast": 1, "recharge": "long_rest" }
+                      {
+                        "level": 1,
+                        "spell_id": "dancing-lights",
+                        "type": "cantrip"
+                      },
+                      {
+                        "level": 3,
+                        "spell_id": "faerie-fire",
+                        "free_cast": 1,
+                        "recharge": "long_rest"
+                      },
+                      {
+                        "level": 5,
+                        "spell_id": "darkness",
+                        "free_cast": 1,
+                        "recharge": "long_rest"
+                      }
                     ]
                   }
                 ]
@@ -363,11 +584,31 @@
                 "grants": [
                   {
                     "type": "spell_progression",
-                    "spellcasting_ability_choice": ["intelligence", "wisdom", "charisma"],
+                    "spellcasting_ability_choice": [
+                      "intelligence",
+                      "wisdom",
+                      "charisma"
+                    ],
                     "spells": [
-                      { "level": 1, "spell_id": "prestidigitation", "type": "cantrip", "note_en": "Can be swapped for any Wizard cantrip after each Long Rest.", "note_de": "Kann nach jeder langen Rast gegen einen beliebigen Magier-Zaubertrick ausgetauscht werden." },
-                      { "level": 3, "spell_id": "detect-magic", "free_cast": 1, "recharge": "long_rest" },
-                      { "level": 5, "spell_id": "misty-step", "free_cast": 1, "recharge": "long_rest" }
+                      {
+                        "level": 1,
+                        "spell_id": "prestidigitation",
+                        "type": "cantrip",
+                        "note_en": "Can be swapped for any Wizard cantrip after each Long Rest.",
+                        "note_de": "Kann nach jeder langen Rast gegen einen beliebigen Magier-Zaubertrick ausgetauscht werden."
+                      },
+                      {
+                        "level": 3,
+                        "spell_id": "detect-magic",
+                        "free_cast": 1,
+                        "recharge": "long_rest"
+                      },
+                      {
+                        "level": 5,
+                        "spell_id": "misty-step",
+                        "free_cast": 1,
+                        "recharge": "long_rest"
+                      }
                     ]
                   }
                 ]
@@ -379,14 +620,35 @@
                 "text_en": "Your Speed increases to 35 feet. You also know the Druidcraft cantrip. Level 3: Longstrider (free cast, long rest recharge). Level 5: Pass without Trace (free cast, long rest recharge).",
                 "text_de": "Deine Bewegungsrate ist auf zehn Meter erhöht. Außerdem kennst du den Zaubertrick Druidenkunst. 3. Stufe: Lange Schritte (einmal ohne Zauberplatz, Wiederaufladung nach langer Rast). 5. Stufe: Spurloses Gehen (einmal ohne Zauberplatz, Wiederaufladung nach langer Rast).",
                 "grants": [
-                  { "type": "speed_bonus", "bonus_ft": 5 },
+                  {
+                    "type": "speed_bonus",
+                    "bonus_ft": 5
+                  },
                   {
                     "type": "spell_progression",
-                    "spellcasting_ability_choice": ["intelligence", "wisdom", "charisma"],
+                    "spellcasting_ability_choice": [
+                      "intelligence",
+                      "wisdom",
+                      "charisma"
+                    ],
                     "spells": [
-                      { "level": 1, "spell_id": "druidcraft", "type": "cantrip" },
-                      { "level": 3, "spell_id": "longstrider", "free_cast": 1, "recharge": "long_rest" },
-                      { "level": 5, "spell_id": "pass-without-trace", "free_cast": 1, "recharge": "long_rest" }
+                      {
+                        "level": 1,
+                        "spell_id": "druidcraft",
+                        "type": "cantrip"
+                      },
+                      {
+                        "level": 3,
+                        "spell_id": "longstrider",
+                        "free_cast": 1,
+                        "recharge": "long_rest"
+                      },
+                      {
+                        "level": 5,
+                        "spell_id": "pass-without-trace",
+                        "free_cast": 1,
+                        "recharge": "long_rest"
+                      }
                     ]
                   }
                 ]
@@ -404,7 +666,12 @@
         "text_en": "You have Advantage on saving throws you make to avoid or end the Charmed condition.",
         "text_de": "Du bist bei Rettungswürfen zum Vermeiden oder Beenden des Zustands Bezaubert im Vorteil.",
         "grants": [
-          { "type": "advantage", "on": ["saving_throws_against_charmed"] }
+          {
+            "type": "advantage",
+            "on": [
+              "saving_throws_against_charmed"
+            ]
+          }
         ]
       },
       {
@@ -418,7 +685,15 @@
         "text_en": "You have proficiency in the Insight, Perception, or Survival skill.",
         "text_de": "Du bist in einer der Fertigkeiten Motiv erkennen, Überlebenskunst oder Wahrnehmung geübt.",
         "grants": [
-          { "type": "skill_proficiency", "choose": 1, "from": ["insight", "perception", "survival"] }
+          {
+            "type": "skill_proficiency",
+            "choose": 1,
+            "from": [
+              "insight",
+              "perception",
+              "survival"
+            ]
+          }
         ]
       },
       {
@@ -430,7 +705,11 @@
         "text_en": "You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.",
         "text_de": "Du musst nicht schlafen und kannst nicht magisch zum Einschlafen gebracht werden. Du kannst eine lange Rast in vier Stunden beenden, wenn du diese Stunden in tranceartiger Meditation verbringst. Dabei bleibst du bei Bewusstsein.",
         "grants": [
-          { "type": "special", "description_en": "No need to sleep; immune to magical sleep. Long Rest requires only 4 hours of trance meditation.", "description_de": "Kein Schlafbedürfnis; immun gegen magischen Schlaf. Lange Rast erfordert nur 4 Stunden Trancemeditation." }
+          {
+            "type": "special",
+            "description_en": "No need to sleep; immune to magical sleep. Long Rest requires only 4 hours of trance meditation.",
+            "description_de": "Kein Schlafbedürfnis; immun gegen magischen Schlaf. Lange Rast erfordert nur 4 Stunden Trancemeditation."
+          }
         ]
       }
     ]
@@ -458,7 +737,10 @@
         "text_en": "You have Darkvision with a range of 60 feet.",
         "text_de": "Du hast Dunkelsicht mit einer Reichweite von 18 Metern.",
         "grants": [
-          { "type": "darkvision", "range_ft": 60 }
+          {
+            "type": "darkvision",
+            "range_ft": 60
+          }
         ]
       },
       {
@@ -470,7 +752,14 @@
         "text_en": "You have Advantage on Intelligence, Wisdom, and Charisma saving throws.",
         "text_de": "Du bist bei Charisma-, Intelligenz- und Weisheitsrettungswürfen im Vorteil.",
         "grants": [
-          { "type": "advantage", "on": ["intelligence_saving_throws", "wisdom_saving_throws", "charisma_saving_throws"] }
+          {
+            "type": "advantage",
+            "on": [
+              "intelligence_saving_throws",
+              "wisdom_saving_throws",
+              "charisma_saving_throws"
+            ]
+          }
         ]
       },
       {
@@ -497,10 +786,23 @@
                 "grants": [
                   {
                     "type": "spell_progression",
-                    "spellcasting_ability_choice": ["intelligence", "wisdom", "charisma"],
+                    "spellcasting_ability_choice": [
+                      "intelligence",
+                      "wisdom",
+                      "charisma"
+                    ],
                     "spells": [
-                      { "level": 1, "spell_id": "minor-illusion", "type": "cantrip" },
-                      { "level": 1, "spell_id": "speak-with-animals", "free_cast": "proficiency_bonus", "recharge": "long_rest" }
+                      {
+                        "level": 1,
+                        "spell_id": "minor-illusion",
+                        "type": "cantrip"
+                      },
+                      {
+                        "level": 1,
+                        "spell_id": "speak-with-animals",
+                        "free_cast": "proficiency_bonus",
+                        "recharge": "long_rest"
+                      }
                     ]
                   }
                 ]
@@ -514,10 +816,22 @@
                 "grants": [
                   {
                     "type": "spell_progression",
-                    "spellcasting_ability_choice": ["intelligence", "wisdom", "charisma"],
+                    "spellcasting_ability_choice": [
+                      "intelligence",
+                      "wisdom",
+                      "charisma"
+                    ],
                     "spells": [
-                      { "level": 1, "spell_id": "mending", "type": "cantrip" },
-                      { "level": 1, "spell_id": "prestidigitation", "type": "cantrip" }
+                      {
+                        "level": 1,
+                        "spell_id": "mending",
+                        "type": "cantrip"
+                      },
+                      {
+                        "level": 1,
+                        "spell_id": "prestidigitation",
+                        "type": "cantrip"
+                      }
                     ]
                   },
                   {
@@ -564,51 +878,117 @@
             "options": [
               {
                 "id": "clouds-jaunt",
-                "name_en": "Cloud's Jaunt (Cloud Giant)",
-                "name_de": "Wolkensprung (Wolkenriese)",
+                "name_en": "Cloud Goliath",
+                "name_de": "Wolken-Goliath",
                 "text_en": "As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see. Uses: Proficiency Bonus per Long Rest.",
                 "text_de": "Als Bonusaktion kannst du dich auf magische Art bis zu neun Meter weit in einen freien Bereich teleportieren, den du sehen kannst. Anwendungen: Übungsbonus pro langer Rast.",
-                "grants": [{ "type": "active_ability", "action_type": "bonus_action", "uses": "proficiency_bonus", "recharge": "long_rest", "effect": { "description_en": "Teleport up to 30 feet to an unoccupied space you can see.", "description_de": "Teleportiere dich bis zu neun Meter weit in einen freien Bereich, den du sehen kannst." } }]
+                "grants": [
+                  {
+                    "type": "active_ability",
+                    "action_type": "bonus_action",
+                    "uses": "proficiency_bonus",
+                    "recharge": "long_rest",
+                    "effect": {
+                      "description_en": "Teleport up to 30 feet to an unoccupied space you can see.",
+                      "description_de": "Teleportiere dich bis zu neun Meter weit in einen freien Bereich, den du sehen kannst."
+                    }
+                  }
+                ]
               },
               {
                 "id": "fires-burn",
-                "name_en": "Fire's Burn (Fire Giant)",
-                "name_de": "Feuersbrunst (Feuerriese)",
+                "name_en": "Fire Goliath",
+                "name_de": "Feuer-Goliath",
                 "text_en": "When you hit a target with an attack roll and deal damage to it, you can also deal 1d10 Fire damage to that target. Uses: Proficiency Bonus per Long Rest.",
                 "text_de": "Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du ihm zusätzlich 1W10 Feuerschaden zufügen. Anwendungen: Übungsbonus pro langer Rast.",
-                "grants": [{ "type": "active_ability", "action_type": "reaction_on_hit", "uses": "proficiency_bonus", "recharge": "long_rest", "effect": { "description_en": "Deal an additional 1d10 Fire damage to the target.", "description_de": "Füge dem Ziel zusätzlich 1W10 Feuerschaden zu." } }]
+                "grants": [
+                  {
+                    "type": "active_ability",
+                    "action_type": "reaction_on_hit",
+                    "uses": "proficiency_bonus",
+                    "recharge": "long_rest",
+                    "effect": {
+                      "description_en": "Deal an additional 1d10 Fire damage to the target.",
+                      "description_de": "Füge dem Ziel zusätzlich 1W10 Feuerschaden zu."
+                    }
+                  }
+                ]
               },
               {
                 "id": "frosts-chill",
-                "name_en": "Frost's Chill (Frost Giant)",
-                "name_de": "Eiseskälte (Frostriese)",
+                "name_en": "Frost Goliath",
+                "name_de": "Frost-Goliath",
                 "text_en": "When you hit a target with an attack roll and deal damage to it, you can also deal 1d6 Cold damage to that target and reduce its Speed by 10 feet until the start of your next turn. Uses: Proficiency Bonus per Long Rest.",
                 "text_de": "Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du ihm zusätzlich 1W6 Kälteschaden zufügen und seine Bewegungsrate bis zum Beginn deines nächsten Zugs um drei Meter verringern. Anwendungen: Übungsbonus pro langer Rast.",
-                "grants": [{ "type": "active_ability", "action_type": "reaction_on_hit", "uses": "proficiency_bonus", "recharge": "long_rest", "effect": { "description_en": "Deal an additional 1d6 Cold damage and reduce target's Speed by 10 feet until start of your next turn.", "description_de": "Füge zusätzlich 1W6 Kälteschaden zu und verringere die Bewegungsrate des Ziels bis zum Beginn deines nächsten Zugs um drei Meter." } }]
+                "grants": [
+                  {
+                    "type": "active_ability",
+                    "action_type": "reaction_on_hit",
+                    "uses": "proficiency_bonus",
+                    "recharge": "long_rest",
+                    "effect": {
+                      "description_en": "Deal an additional 1d6 Cold damage and reduce target's Speed by 10 feet until start of your next turn.",
+                      "description_de": "Füge zusätzlich 1W6 Kälteschaden zu und verringere die Bewegungsrate des Ziels bis zum Beginn deines nächsten Zugs um drei Meter."
+                    }
+                  }
+                ]
               },
               {
                 "id": "hills-tumble",
-                "name_en": "Hill's Tumble (Hill Giant)",
-                "name_de": "Hügelsturz (Hügelriese)",
+                "name_en": "Hill Goliath",
+                "name_de": "Hügel-Goliath",
                 "text_en": "When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the Prone condition. Uses: Proficiency Bonus per Long Rest.",
                 "text_de": "Wenn du eine Kreatur von höchstens großer Größe mit einem Angriffswurf triffst und ihr Schaden zufügst, kannst du sie außerdem umstoßen. Anwendungen: Übungsbonus pro langer Rast.",
-                "grants": [{ "type": "active_ability", "action_type": "reaction_on_hit", "uses": "proficiency_bonus", "recharge": "long_rest", "effect": { "description_en": "Give the target the Prone condition (Large or smaller targets only).", "description_de": "Versetzt das Ziel in den Zustand Liegend (nur Kreaturen von höchstens großer Größe)." } }]
+                "grants": [
+                  {
+                    "type": "active_ability",
+                    "action_type": "reaction_on_hit",
+                    "uses": "proficiency_bonus",
+                    "recharge": "long_rest",
+                    "effect": {
+                      "description_en": "Give the target the Prone condition (Large or smaller targets only).",
+                      "description_de": "Versetzt das Ziel in den Zustand Liegend (nur Kreaturen von höchstens großer Größe)."
+                    }
+                  }
+                ]
               },
               {
                 "id": "stones-endurance",
-                "name_en": "Stone's Endurance (Stone Giant)",
-                "name_de": "Felsenfestigkeit (Steinriese)",
+                "name_en": "Stone Goliath",
+                "name_de": "Stein-Goliath",
                 "text_en": "When you take damage, you can take a Reaction to roll 1d12. Add your Constitution modifier to the number rolled and reduce the damage by that total. Uses: Proficiency Bonus per Long Rest.",
                 "text_de": "Wenn du Schaden erleidest, kannst du eine Reaktion ausführen, um mit 1W12 zu würfeln. Füge dem Ergebnis deinen Konstitutionsmodifikator hinzu und ziehe die Summe vom erlittenen Schaden ab. Anwendungen: Übungsbonus pro langer Rast.",
-                "grants": [{ "type": "active_ability", "action_type": "reaction", "uses": "proficiency_bonus", "recharge": "long_rest", "effect": { "description_en": "Roll 1d12 + Constitution modifier and reduce incoming damage by that amount.", "description_de": "Würfle 1W12 + Konstitutionsmodifikator und reduziere den eingehenden Schaden um diesen Betrag." } }]
+                "grants": [
+                  {
+                    "type": "active_ability",
+                    "action_type": "reaction",
+                    "uses": "proficiency_bonus",
+                    "recharge": "long_rest",
+                    "effect": {
+                      "description_en": "Roll 1d12 + Constitution modifier and reduce incoming damage by that amount.",
+                      "description_de": "Würfle 1W12 + Konstitutionsmodifikator und reduziere den eingehenden Schaden um diesen Betrag."
+                    }
+                  }
+                ]
               },
               {
                 "id": "storms-thunder",
-                "name_en": "Storm's Thunder (Storm Giant)",
-                "name_de": "Sturmdonner (Sturmriese)",
+                "name_en": "Storm Goliath",
+                "name_de": "Sturm-Goliath",
                 "text_en": "When you take damage from a creature within 60 feet of you, you can take a Reaction to deal 1d8 Thunder damage to that creature. Uses: Proficiency Bonus per Long Rest.",
                 "text_de": "Wenn dir eine Kreatur im Abstand von bis zu 18 Metern von dir Schaden zufügt, kannst du eine Reaktion ausführen, um dieser Kreatur 1W8 Schallschaden zuzufügen. Anwendungen: Übungsbonus pro langer Rast.",
-                "grants": [{ "type": "active_ability", "action_type": "reaction", "uses": "proficiency_bonus", "recharge": "long_rest", "effect": { "description_en": "Deal 1d8 Thunder damage to the creature that damaged you (must be within 60 feet).", "description_de": "Füge der Kreatur, die dir Schaden zugefügt hat, 1W8 Schallschaden zu (muss sich innerhalb von 18 Metern befinden)." } }]
+                "grants": [
+                  {
+                    "type": "active_ability",
+                    "action_type": "reaction",
+                    "uses": "proficiency_bonus",
+                    "recharge": "long_rest",
+                    "effect": {
+                      "description_en": "Deal 1d8 Thunder damage to the creature that damaged you (must be within 60 feet).",
+                      "description_de": "Füge der Kreatur, die dir Schaden zugefügt hat, 1W8 Schallschaden zu (muss sich innerhalb von 18 Metern befinden)."
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -644,8 +1024,17 @@
         "text_en": "You have Advantage on any saving throw you make to end the Grappled condition. You also count as one size larger when determining your carrying capacity.",
         "text_de": "Du bist bei allen Attributswürfen zum Beenden des Zustands Gepackt im Vorteil. Außerdem gilt bei deiner Traglast die nächsthöhere Größenkategorie.",
         "grants": [
-          { "type": "advantage", "on": ["saving_throws_to_end_grappled"] },
-          { "type": "special", "description_en": "Count as one size larger for carrying capacity.", "description_de": "Gilt bei der Traglast als eine Größenkategorie größer." }
+          {
+            "type": "advantage",
+            "on": [
+              "saving_throws_to_end_grappled"
+            ]
+          },
+          {
+            "type": "special",
+            "description_en": "Count as one size larger for carrying capacity.",
+            "description_de": "Gilt bei der Traglast als eine Größenkategorie größer."
+          }
         ]
       }
     ]
@@ -673,7 +1062,12 @@
         "text_en": "You have Advantage on saving throws you make to avoid or end the Frightened condition.",
         "text_de": "Du bist bei Rettungswürfen zum Vermeiden oder Beenden des Zustands Verängstigt im Vorteil.",
         "grants": [
-          { "type": "advantage", "on": ["saving_throws_against_frightened"] }
+          {
+            "type": "advantage",
+            "on": [
+              "saving_throws_against_frightened"
+            ]
+          }
         ]
       },
       {
@@ -685,7 +1079,11 @@
         "text_en": "You can move through the space of any creature that is a size larger than you, but you can't stop in the same space.",
         "text_de": "Du kannst dich durch den Bereich jeder Kreatur bewegen, die mindestens eine Kategorie größer ist als du. Du kannst jedoch nicht in ihrem Bereich anhalten.",
         "grants": [
-          { "type": "special", "description_en": "Can move through the space of any creature larger than you, but cannot stop there.", "description_de": "Kann sich durch den Bereich jeder Kreatur bewegen, die mindestens eine Größenkategorie größer ist, kann dort aber nicht anhalten." }
+          {
+            "type": "special",
+            "description_en": "Can move through the space of any creature larger than you, but cannot stop there.",
+            "description_de": "Kann sich durch den Bereich jeder Kreatur bewegen, die mindestens eine Größenkategorie größer ist, kann dort aber nicht anhalten."
+          }
         ]
       },
       {
@@ -697,7 +1095,11 @@
         "text_en": "When you roll a 1 on the d20 of a D20 Test, you can reroll the die, and you must use the new roll.",
         "text_de": "Wenn du bei einer W20-Prüfung eine 1 würfelst, kannst du erneut würfeln. In diesem Fall musst du das neue Ergebnis verwenden.",
         "grants": [
-          { "type": "special", "description_en": "When you roll a 1 on a d20 Test, reroll and use the new result.", "description_de": "Wenn du bei einer W20-Prüfung eine 1 würfelst, würfele erneut und verwende das neue Ergebnis." }
+          {
+            "type": "special",
+            "description_en": "When you roll a 1 on a d20 Test, reroll and use the new result.",
+            "description_de": "Wenn du bei einer W20-Prüfung eine 1 würfelst, würfele erneut und verwende das neue Ergebnis."
+          }
         ]
       },
       {
@@ -709,7 +1111,11 @@
         "text_en": "You can take the Hide action even when you are obscured only by a creature that is at least one size larger than you.",
         "text_de": "Du kannst die Verstecken-Aktion auch dann ausführen, wenn du nur von einer Kreatur verdeckt wirst, die mindestens eine Kategorie größer ist als du.",
         "grants": [
-          { "type": "special", "description_en": "Can take the Hide action while obscured only by a creature at least one size larger than you.", "description_de": "Kann die Verstecken-Aktion ausführen, wenn nur von einer Kreatur verdeckt, die mindestens eine Größenkategorie größer ist." }
+          {
+            "type": "special",
+            "description_en": "Can take the Hide action while obscured only by a creature at least one size larger than you.",
+            "description_de": "Kann die Verstecken-Aktion ausführen, wenn nur von einer Kreatur verdeckt, die mindestens eine Größenkategorie größer ist."
+          }
         ]
       }
     ]
@@ -723,7 +1129,10 @@
     "creature_type": "humanoid",
     "size": {
       "default": "medium",
-      "choice": ["medium", "small"],
+      "choice": [
+        "medium",
+        "small"
+      ],
       "description_en": "Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species",
       "description_de": "Mittelgroß (120–210 cm) oder Klein (60–120 cm) – lege die Größe fest, wenn du diese Spezies auswählst"
     },
@@ -738,7 +1147,11 @@
         "text_en": "You gain Heroic Inspiration whenever you finish a Long Rest.",
         "text_de": "Du erhältst Heldische Inspiration, wann immer du eine lange Rast beendest.",
         "grants": [
-          { "type": "special", "description_en": "Gain Heroic Inspiration at the end of every Long Rest.", "description_de": "Erhalte Heldische Inspiration am Ende jeder langen Rast." }
+          {
+            "type": "special",
+            "description_en": "Gain Heroic Inspiration at the end of every Long Rest.",
+            "description_de": "Erhalte Heldische Inspiration am Ende jeder langen Rast."
+          }
         ]
       },
       {
@@ -752,7 +1165,11 @@
         "text_en": "You gain proficiency in one skill of your choice.",
         "text_de": "Du bist in einer Fertigkeit deiner Wahl geübt.",
         "grants": [
-          { "type": "skill_proficiency", "choose": 1, "from": "any" }
+          {
+            "type": "skill_proficiency",
+            "choose": 1,
+            "from": "any"
+          }
         ]
       },
       {
@@ -766,7 +1183,11 @@
         "text_en": "You gain an Origin feat of your choice (see chapter 5). Skilled is recommended.",
         "text_de": "Du erhältst ein Herkunftstalent deiner Wahl (siehe Kapitel 5). Begabt wird empfohlen.",
         "grants": [
-          { "type": "feat", "category": "origin", "choose": 1 }
+          {
+            "type": "feat",
+            "category": "origin",
+            "choose": 1
+          }
         ]
       }
     ]
@@ -815,7 +1236,10 @@
         "text_en": "You have Darkvision with a range of 120 feet.",
         "text_de": "Du hast Dunkelsicht mit einer Reichweite von 36 Metern.",
         "grants": [
-          { "type": "darkvision", "range_ft": 120 }
+          {
+            "type": "darkvision",
+            "range_ft": 120
+          }
         ]
       },
       {
@@ -850,7 +1274,10 @@
     "creature_type": "humanoid",
     "size": {
       "default": "medium",
-      "choice": ["medium", "small"],
+      "choice": [
+        "medium",
+        "small"
+      ],
       "description_en": "Medium (about 4–7 feet tall) or Small (about 3–4 feet tall), chosen when you select this species",
       "description_de": "Mittelgroß (120–210 cm) oder Klein (90–120 cm) – lege die Größe fest, wenn du diese Spezies auswählst"
     },
@@ -865,7 +1292,10 @@
         "text_en": "You have Darkvision with a range of 60 feet.",
         "text_de": "Du hast Dunkelsicht mit einer Reichweite von 18 Metern.",
         "grants": [
-          { "type": "darkvision", "range_ft": 60 }
+          {
+            "type": "darkvision",
+            "range_ft": 60
+          }
         ]
       },
       {
@@ -885,57 +1315,126 @@
             "options": [
               {
                 "id": "abyssal-legacy",
-                "name_en": "Abyssal",
+                "name_en": "Abyssal Tiefling",
                 "name_de": "Abyssisch",
                 "text_en": "You have Resistance to Poison damage. You also know the Poison Spray cantrip. Level 3: Ray of Sickness (free cast, long rest recharge). Level 5: Hold Person (free cast, long rest recharge).",
                 "text_de": "Du bist gegen Giftschaden resistent. Außerdem kennst du den Zaubertrick Gift versprühen. 3. Stufe: Strahl der Übelkeit (einmal ohne Zauberplatz, Wiederaufladung nach langer Rast). 5. Stufe: Person festhalten (einmal ohne Zauberplatz, Wiederaufladung nach langer Rast).",
                 "grants": [
-                  { "type": "damage_resistance", "damage_types": ["poison"] },
+                  {
+                    "type": "damage_resistance",
+                    "damage_types": [
+                      "poison"
+                    ]
+                  },
                   {
                     "type": "spell_progression",
-                    "spellcasting_ability_choice": ["intelligence", "wisdom", "charisma"],
+                    "spellcasting_ability_choice": [
+                      "intelligence",
+                      "wisdom",
+                      "charisma"
+                    ],
                     "spells": [
-                      { "level": 1, "spell_id": "poison-spray", "type": "cantrip" },
-                      { "level": 3, "spell_id": "ray-of-sickness", "free_cast": 1, "recharge": "long_rest" },
-                      { "level": 5, "spell_id": "hold-person", "free_cast": 1, "recharge": "long_rest" }
+                      {
+                        "level": 1,
+                        "spell_id": "poison-spray",
+                        "type": "cantrip"
+                      },
+                      {
+                        "level": 3,
+                        "spell_id": "ray-of-sickness",
+                        "free_cast": 1,
+                        "recharge": "long_rest"
+                      },
+                      {
+                        "level": 5,
+                        "spell_id": "hold-person",
+                        "free_cast": 1,
+                        "recharge": "long_rest"
+                      }
                     ]
                   }
                 ]
               },
               {
                 "id": "chthonic-legacy",
-                "name_en": "Chthonic",
+                "name_en": "Chthonic Tiefling",
                 "name_de": "Chthonisch",
                 "text_en": "You have Resistance to Necrotic damage. You also know the Chill Touch cantrip. Level 3: False Life (free cast, long rest recharge). Level 5: Ray of Enfeeblement (free cast, long rest recharge).",
                 "text_de": "Du bist gegen nekrotischen Schaden resistent. Außerdem kennst du den Zaubertrick Kalte Hand. 3. Stufe: Falsches Leben (einmal ohne Zauberplatz, Wiederaufladung nach langer Rast). 5. Stufe: Schwächestrahl (einmal ohne Zauberplatz, Wiederaufladung nach langer Rast).",
                 "grants": [
-                  { "type": "damage_resistance", "damage_types": ["necrotic"] },
+                  {
+                    "type": "damage_resistance",
+                    "damage_types": [
+                      "necrotic"
+                    ]
+                  },
                   {
                     "type": "spell_progression",
-                    "spellcasting_ability_choice": ["intelligence", "wisdom", "charisma"],
+                    "spellcasting_ability_choice": [
+                      "intelligence",
+                      "wisdom",
+                      "charisma"
+                    ],
                     "spells": [
-                      { "level": 1, "spell_id": "chill-touch", "type": "cantrip" },
-                      { "level": 3, "spell_id": "false-life", "free_cast": 1, "recharge": "long_rest" },
-                      { "level": 5, "spell_id": "ray-of-enfeeblement", "free_cast": 1, "recharge": "long_rest" }
+                      {
+                        "level": 1,
+                        "spell_id": "chill-touch",
+                        "type": "cantrip"
+                      },
+                      {
+                        "level": 3,
+                        "spell_id": "false-life",
+                        "free_cast": 1,
+                        "recharge": "long_rest"
+                      },
+                      {
+                        "level": 5,
+                        "spell_id": "ray-of-enfeeblement",
+                        "free_cast": 1,
+                        "recharge": "long_rest"
+                      }
                     ]
                   }
                 ]
               },
               {
                 "id": "infernal-legacy",
-                "name_en": "Infernal",
+                "name_en": "Infernal Tiefling",
                 "name_de": "Infernalisch",
                 "text_en": "You have Resistance to Fire damage. You also know the Fire Bolt cantrip. Level 3: Hellish Rebuke (free cast, long rest recharge). Level 5: Darkness (free cast, long rest recharge).",
                 "text_de": "Du bist gegen Feuerschaden resistent. Außerdem kennst du den Zaubertrick Feuerpfeil. 3. Stufe: Höllischer Tadel (einmal ohne Zauberplatz, Wiederaufladung nach langer Rast). 5. Stufe: Dunkelheit (einmal ohne Zauberplatz, Wiederaufladung nach langer Rast).",
                 "grants": [
-                  { "type": "damage_resistance", "damage_types": ["fire"] },
+                  {
+                    "type": "damage_resistance",
+                    "damage_types": [
+                      "fire"
+                    ]
+                  },
                   {
                     "type": "spell_progression",
-                    "spellcasting_ability_choice": ["intelligence", "wisdom", "charisma"],
+                    "spellcasting_ability_choice": [
+                      "intelligence",
+                      "wisdom",
+                      "charisma"
+                    ],
                     "spells": [
-                      { "level": 1, "spell_id": "fire-bolt", "type": "cantrip" },
-                      { "level": 3, "spell_id": "hellish-rebuke", "free_cast": 1, "recharge": "long_rest" },
-                      { "level": 5, "spell_id": "darkness", "free_cast": 1, "recharge": "long_rest" }
+                      {
+                        "level": 1,
+                        "spell_id": "fire-bolt",
+                        "type": "cantrip"
+                      },
+                      {
+                        "level": 3,
+                        "spell_id": "hellish-rebuke",
+                        "free_cast": 1,
+                        "recharge": "long_rest"
+                      },
+                      {
+                        "level": 5,
+                        "spell_id": "darkness",
+                        "free_cast": 1,
+                        "recharge": "long_rest"
+                      }
                     ]
                   }
                 ]
@@ -953,7 +1452,11 @@
         "text_en": "You know the Thaumaturgy cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Fiendish Legacy trait.",
         "text_de": "Du kennst den Zaubertrick Thaumaturgie. Wenn du ihn mit diesem Merkmal wirkst, verwendest du das gleiche Attribut zum Zauberwirken wie bei deinem Merkmal Unholdisches Erbe.",
         "grants": [
-          { "type": "spell_access", "spell_id": "thaumaturgy", "spellcasting_ability": "from_fiendish_legacy" }
+          {
+            "type": "spell_access",
+            "spell_id": "thaumaturgy",
+            "spellcasting_ability": "from_fiendish_legacy"
+          }
         ]
       }
     ]
