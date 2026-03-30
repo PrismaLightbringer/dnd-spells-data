@@ -23,7 +23,14 @@
       "option_a_de": "Kalligrafenwerkzeug, Buch (Gebete), Heiliges Symbol, Pergament (10 Blätter), Robe, 8 GM",
       "option_b_en": "50 GP",
       "option_b_de": "50 GM"
-    }
+    },
+    "grants": [
+      { "type": "ability_score_increase", "total": 3, "from": ["intelligence", "wisdom", "charisma"] },
+      { "type": "feat_grant", "feat_id": "magic-initiate-cleric" },
+      { "type": "skill_proficiency", "skills": ["insight", "religion"] },
+      { "type": "tool_proficiency", "tool_id": "calligraphers-supplies" },
+      { "type": "equipment_choice", "option_a_en": "Calligrapher's Supplies, Book (prayers), Holy Symbol, Parchment (10 sheets), Robe, 8 GP", "option_a_de": "Kalligrafenwerkzeug, Buch (Gebete), Heiliges Symbol, Pergament (10 Blätter), Robe, 8 GM", "option_b_en": "50 GP", "option_b_de": "50 GM" }
+    ]
   },
   {
     "id": "artisan",
@@ -51,7 +58,14 @@
       "option_a_de": "Handwerkszeug (wie oben), zwei Beutel, Reisekleidung, 32 GM",
       "option_b_en": "50 GP",
       "option_b_de": "50 GM"
-    }
+    },
+    "grants": [
+      { "type": "ability_score_increase", "total": 3, "from": ["strength", "dexterity", "intelligence"] },
+      { "type": "feat_grant", "feat_id": "crafter" },
+      { "type": "skill_proficiency", "skills": ["investigation", "persuasion"] },
+      { "type": "tool_proficiency", "choice": true, "choice_category_en": "Artisan's Tools", "choice_category_de": "Handwerkszeug" },
+      { "type": "equipment_choice", "option_a_en": "Artisan's Tools (same as above), 2 Pouches, Traveler's Clothes, 32 GP", "option_a_de": "Handwerkszeug (wie oben), zwei Beutel, Reisekleidung, 32 GM", "option_b_en": "50 GP", "option_b_de": "50 GM" }
+    ]
   },
   {
     "id": "charlatan",
@@ -77,7 +91,14 @@
       "option_a_de": "Fälscherausrüstung, Kostüm, feine Kleidung, 15 GM",
       "option_b_en": "50 GP",
       "option_b_de": "50 GM"
-    }
+    },
+    "grants": [
+      { "type": "ability_score_increase", "total": 3, "from": ["dexterity", "constitution", "charisma"] },
+      { "type": "feat_grant", "feat_id": "skilled" },
+      { "type": "skill_proficiency", "skills": ["deception", "sleight-of-hand"] },
+      { "type": "tool_proficiency", "tool_id": "forgery-kit" },
+      { "type": "equipment_choice", "option_a_en": "Forgery Kit, Costume, Fine Clothes, 15 GP", "option_a_de": "Fälscherausrüstung, Kostüm, feine Kleidung, 15 GM", "option_b_en": "50 GP", "option_b_de": "50 GM" }
+    ]
   },
   {
     "id": "criminal",
@@ -103,7 +124,14 @@
       "option_a_de": "zwei Dolche, Diebeswerkzeug, Brechstange, zwei Beutel, Reisekleidung, 16 GM",
       "option_b_en": "50 GP",
       "option_b_de": "50 GM"
-    }
+    },
+    "grants": [
+      { "type": "ability_score_increase", "total": 3, "from": ["dexterity", "constitution", "intelligence"] },
+      { "type": "feat_grant", "feat_id": "alert" },
+      { "type": "skill_proficiency", "skills": ["sleight-of-hand", "stealth"] },
+      { "type": "tool_proficiency", "tool_id": "thieves-tools" },
+      { "type": "equipment_choice", "option_a_en": "2 Daggers, Thieves' Tools, Crowbar, 2 Pouches, Traveler's Clothes, 16 GP", "option_a_de": "zwei Dolche, Diebeswerkzeug, Brechstange, zwei Beutel, Reisekleidung, 16 GM", "option_b_en": "50 GP", "option_b_de": "50 GM" }
+    ]
   },
   {
     "id": "entertainer",
@@ -131,7 +159,14 @@
       "option_a_de": "Musikinstrument (wie oben), zwei Kostüme, Spiegel, Parfüm, Reisekleidung, 11 GM",
       "option_b_en": "50 GP",
       "option_b_de": "50 GM"
-    }
+    },
+    "grants": [
+      { "type": "ability_score_increase", "total": 3, "from": ["strength", "dexterity", "charisma"] },
+      { "type": "feat_grant", "feat_id": "musician" },
+      { "type": "skill_proficiency", "skills": ["acrobatics", "performance"] },
+      { "type": "tool_proficiency", "choice": true, "choice_category_en": "Musical Instrument", "choice_category_de": "Musikinstrument" },
+      { "type": "equipment_choice", "option_a_en": "Musical Instrument (same as above), 2 Costumes, Mirror, Perfume, Traveler's Clothes, 11 GP", "option_a_de": "Musikinstrument (wie oben), zwei Kostüme, Spiegel, Parfüm, Reisekleidung, 11 GM", "option_b_en": "50 GP", "option_b_de": "50 GM" }
+    ]
   },
   {
     "id": "farmer",
@@ -157,7 +192,14 @@
       "option_a_de": "Sichel, Schreinerwerkzeug, Heilerausrüstung, Eisentopf, Schaufel, Reisekleidung, 30 GM",
       "option_b_en": "50 GP",
       "option_b_de": "50 GM"
-    }
+    },
+    "grants": [
+      { "type": "ability_score_increase", "total": 3, "from": ["strength", "constitution", "wisdom"] },
+      { "type": "feat_grant", "feat_id": "tough" },
+      { "type": "skill_proficiency", "skills": ["animal-handling", "nature"] },
+      { "type": "tool_proficiency", "tool_id": "carpenters-tools" },
+      { "type": "equipment_choice", "option_a_en": "Sickle, Carpenter's Tools, Healer's Kit, Iron Pot, Shovel, Traveler's Clothes, 30 GP", "option_a_de": "Sichel, Schreinerwerkzeug, Heilerausrüstung, Eisentopf, Schaufel, Reisekleidung, 30 GM", "option_b_en": "50 GP", "option_b_de": "50 GM" }
+    ]
   },
   {
     "id": "guard",
@@ -185,7 +227,14 @@
       "option_a_de": "Speer, leichte Armbrust, 20 Bolzen, Spielset (wie oben), abdeckbare Laterne, Handschellen, Köcher, Reisekleidung, 12 GM",
       "option_b_en": "50 GP",
       "option_b_de": "50 GM"
-    }
+    },
+    "grants": [
+      { "type": "ability_score_increase", "total": 3, "from": ["strength", "intelligence", "wisdom"] },
+      { "type": "feat_grant", "feat_id": "alert" },
+      { "type": "skill_proficiency", "skills": ["athletics", "perception"] },
+      { "type": "tool_proficiency", "choice": true, "choice_category_en": "Gaming Set", "choice_category_de": "Spielset" },
+      { "type": "equipment_choice", "option_a_en": "Spear, Light Crossbow, 20 Bolts, Gaming Set (same as above), Hooded Lantern, Manacles, Quiver, Traveler's Clothes, 12 GP", "option_a_de": "Speer, leichte Armbrust, 20 Bolzen, Spielset (wie oben), abdeckbare Laterne, Handschellen, Köcher, Reisekleidung, 12 GM", "option_b_en": "50 GP", "option_b_de": "50 GM" }
+    ]
   },
   {
     "id": "guide",
@@ -211,7 +260,14 @@
       "option_a_de": "Kurzbogen, 20 Pfeile, Kartografenwerkzeug, Schlafsack, Köcher, Zelt, Reisekleidung, 3 GM",
       "option_b_en": "50 GP",
       "option_b_de": "50 GM"
-    }
+    },
+    "grants": [
+      { "type": "ability_score_increase", "total": 3, "from": ["dexterity", "constitution", "wisdom"] },
+      { "type": "feat_grant", "feat_id": "magic-initiate-druid" },
+      { "type": "skill_proficiency", "skills": ["stealth", "survival"] },
+      { "type": "tool_proficiency", "tool_id": "cartographers-tools" },
+      { "type": "equipment_choice", "option_a_en": "Shortbow, 20 Arrows, Cartographer's Tools, Bedroll, Quiver, Tent, Traveler's Clothes, 3 GP", "option_a_de": "Kurzbogen, 20 Pfeile, Kartografenwerkzeug, Schlafsack, Köcher, Zelt, Reisekleidung, 3 GM", "option_b_en": "50 GP", "option_b_de": "50 GM" }
+    ]
   },
   {
     "id": "hermit",
@@ -237,7 +293,14 @@
       "option_a_de": "Kampfstab, Kräuterkundeausrüstung, Schlafsack, Buch (Philosophie), Lampe, Öl (drei Flaschen), Reisekleidung, 16 GM",
       "option_b_en": "50 GP",
       "option_b_de": "50 GM"
-    }
+    },
+    "grants": [
+      { "type": "ability_score_increase", "total": 3, "from": ["constitution", "wisdom", "charisma"] },
+      { "type": "feat_grant", "feat_id": "healer" },
+      { "type": "skill_proficiency", "skills": ["medicine", "religion"] },
+      { "type": "tool_proficiency", "tool_id": "herbalism-kit" },
+      { "type": "equipment_choice", "option_a_en": "Quarterstaff, Herbalism Kit, Bedroll, Book (philosophy), Lamp, Oil (3 flasks), Traveler's Clothes, 16 GP", "option_a_de": "Kampfstab, Kräuterkundeausrüstung, Schlafsack, Buch (Philosophie), Lampe, Öl (drei Flaschen), Reisekleidung, 16 GM", "option_b_en": "50 GP", "option_b_de": "50 GM" }
+    ]
   },
   {
     "id": "merchant",
@@ -263,7 +326,14 @@
       "option_a_de": "Navigationswerkzeug, zwei Beutel, Reisekleidung, 22 GM",
       "option_b_en": "50 GP",
       "option_b_de": "50 GM"
-    }
+    },
+    "grants": [
+      { "type": "ability_score_increase", "total": 3, "from": ["constitution", "intelligence", "charisma"] },
+      { "type": "feat_grant", "feat_id": "lucky" },
+      { "type": "skill_proficiency", "skills": ["animal-handling", "persuasion"] },
+      { "type": "tool_proficiency", "tool_id": "navigators-tools" },
+      { "type": "equipment_choice", "option_a_en": "Navigator's Tools, 2 Pouches, Traveler's Clothes, 22 GP", "option_a_de": "Navigationswerkzeug, zwei Beutel, Reisekleidung, 22 GM", "option_b_en": "50 GP", "option_b_de": "50 GM" }
+    ]
   },
   {
     "id": "noble",
@@ -291,7 +361,14 @@
       "option_a_de": "Spielset (wie oben), feine Kleidung, Parfüm, 29 GM",
       "option_b_en": "50 GP",
       "option_b_de": "50 GM"
-    }
+    },
+    "grants": [
+      { "type": "ability_score_increase", "total": 3, "from": ["strength", "intelligence", "charisma"] },
+      { "type": "feat_grant", "feat_id": "skilled" },
+      { "type": "skill_proficiency", "skills": ["history", "persuasion"] },
+      { "type": "tool_proficiency", "choice": true, "choice_category_en": "Gaming Set", "choice_category_de": "Spielset" },
+      { "type": "equipment_choice", "option_a_en": "Gaming Set (same as above), Fine Clothes, Perfume, 29 GP", "option_a_de": "Spielset (wie oben), feine Kleidung, Parfüm, 29 GM", "option_b_en": "50 GP", "option_b_de": "50 GM" }
+    ]
   },
   {
     "id": "sage",
@@ -317,7 +394,14 @@
       "option_a_de": "Kampfstab, Kalligrafenwerkzeug, Buch (Geschichte), Pergament (8 Blätter), Robe, 8 GM",
       "option_b_en": "50 GP",
       "option_b_de": "50 GM"
-    }
+    },
+    "grants": [
+      { "type": "ability_score_increase", "total": 3, "from": ["constitution", "intelligence", "wisdom"] },
+      { "type": "feat_grant", "feat_id": "magic-initiate-wizard" },
+      { "type": "skill_proficiency", "skills": ["arcana", "history"] },
+      { "type": "tool_proficiency", "tool_id": "calligraphers-supplies" },
+      { "type": "equipment_choice", "option_a_en": "Quarterstaff, Calligrapher's Supplies, Book (history), Parchment (8 sheets), Robe, 8 GP", "option_a_de": "Kampfstab, Kalligrafenwerkzeug, Buch (Geschichte), Pergament (8 Blätter), Robe, 8 GM", "option_b_en": "50 GP", "option_b_de": "50 GM" }
+    ]
   },
   {
     "id": "sailor",
@@ -343,7 +427,14 @@
       "option_a_de": "Dolch, Navigationswerkzeug, Seil, Reisekleidung, 20 GM",
       "option_b_en": "50 GP",
       "option_b_de": "50 GM"
-    }
+    },
+    "grants": [
+      { "type": "ability_score_increase", "total": 3, "from": ["strength", "dexterity", "wisdom"] },
+      { "type": "feat_grant", "feat_id": "tavern-brawler" },
+      { "type": "skill_proficiency", "skills": ["acrobatics", "perception"] },
+      { "type": "tool_proficiency", "tool_id": "navigators-tools" },
+      { "type": "equipment_choice", "option_a_en": "Dagger, Navigator's Tools, Rope, Traveler's Clothes, 20 GP", "option_a_de": "Dolch, Navigationswerkzeug, Seil, Reisekleidung, 20 GM", "option_b_en": "50 GP", "option_b_de": "50 GM" }
+    ]
   },
   {
     "id": "scribe",
@@ -369,7 +460,14 @@
       "option_a_de": "Kalligrafenwerkzeug, feine Kleidung, Lampe, Öl (drei Flaschen), Pergament (12 Blätter), 23 GM",
       "option_b_en": "50 GP",
       "option_b_de": "50 GM"
-    }
+    },
+    "grants": [
+      { "type": "ability_score_increase", "total": 3, "from": ["dexterity", "intelligence", "wisdom"] },
+      { "type": "feat_grant", "feat_id": "skilled" },
+      { "type": "skill_proficiency", "skills": ["investigation", "perception"] },
+      { "type": "tool_proficiency", "tool_id": "calligraphers-supplies" },
+      { "type": "equipment_choice", "option_a_en": "Calligrapher's Supplies, Fine Clothes, Lamp, Oil (3 flasks), Parchment (12 sheets), 23 GP", "option_a_de": "Kalligrafenwerkzeug, feine Kleidung, Lampe, Öl (drei Flaschen), Pergament (12 Blätter), 23 GM", "option_b_en": "50 GP", "option_b_de": "50 GM" }
+    ]
   },
   {
     "id": "soldier",
@@ -397,7 +495,14 @@
       "option_a_de": "Speer, Kurzbogen, 20 Pfeile, Spielset (wie oben), Heilerausrüstung, Köcher, Reisekleidung, 14 GM",
       "option_b_en": "50 GP",
       "option_b_de": "50 GM"
-    }
+    },
+    "grants": [
+      { "type": "ability_score_increase", "total": 3, "from": ["strength", "dexterity", "constitution"] },
+      { "type": "feat_grant", "feat_id": "savage-attacker" },
+      { "type": "skill_proficiency", "skills": ["athletics", "intimidation"] },
+      { "type": "tool_proficiency", "choice": true, "choice_category_en": "Gaming Set", "choice_category_de": "Spielset" },
+      { "type": "equipment_choice", "option_a_en": "Spear, Shortbow, 20 Arrows, Gaming Set (same as above), Healer's Kit, Quiver, Traveler's Clothes, 14 GP", "option_a_de": "Speer, Kurzbogen, 20 Pfeile, Spielset (wie oben), Heilerausrüstung, Köcher, Reisekleidung, 14 GM", "option_b_en": "50 GP", "option_b_de": "50 GM" }
+    ]
   },
   {
     "id": "wayfarer",
@@ -423,6 +528,13 @@
       "option_a_de": "zwei Dolche, Diebeswerkzeug, Spielset (beliebig), Schlafsack, zwei Beutel, Reisekleidung, 16 GM",
       "option_b_en": "50 GP",
       "option_b_de": "50 GM"
-    }
+    },
+    "grants": [
+      { "type": "ability_score_increase", "total": 3, "from": ["dexterity", "wisdom", "charisma"] },
+      { "type": "feat_grant", "feat_id": "lucky" },
+      { "type": "skill_proficiency", "skills": ["insight", "stealth"] },
+      { "type": "tool_proficiency", "tool_id": "thieves-tools" },
+      { "type": "equipment_choice", "option_a_en": "2 Daggers, Thieves' Tools, Gaming Set (any), Bedroll, 2 Pouches, Traveler's Clothes, 16 GP", "option_a_de": "zwei Dolche, Diebeswerkzeug, Spielset (beliebig), Schlafsack, zwei Beutel, Reisekleidung, 16 GM", "option_b_en": "50 GP", "option_b_de": "50 GM" }
+    ]
   }
 ]

@@ -1,0 +1,110 @@
+[
+  {
+    "skill_en": "Acrobatics",
+    "skill_de": "Akrobatik",
+    "ability_en": "Dexterity",
+    "ability_de": "Geschicklichkeit"
+  },
+  {
+    "skill_en": "Animal Handling",
+    "skill_de": "Mit Tieren umgehen",
+    "ability_en": "Wisdom",
+    "ability_de": "Weisheit"
+  },
+  {
+    "skill_en": "Arcana",
+    "skill_de": "Arkane Kunde",
+    "ability_en": "Intelligence",
+    "ability_de": "Intelligenz"
+  },
+  {
+    "skill_en": "Athletics",
+    "skill_de": "Athletik",
+    "ability_en": "Strength",
+    "ability_de": "Stärke"
+  },
+  {
+    "skill_en": "Deception",
+    "skill_de": "Täuschen",
+    "ability_en": "Charisma",
+    "ability_de": "Charisma"
+  },
+  {
+    "skill_en": "History",
+    "skill_de": "Geschichte",
+    "ability_en": "Intelligence",
+    "ability_de": "Intelligenz"
+  },
+  {
+    "skill_en": "Insight",
+    "skill_de": "Motiv erkennen",
+    "ability_en": "Wisdom",
+    "ability_de": "Weisheit"
+  },
+  {
+    "skill_en": "Intimidation",
+    "skill_de": "Einschüchtern",
+    "ability_en": "Charisma",
+    "ability_de": "Charisma"
+  },
+  {
+    "skill_en": "Investigation",
+    "skill_de": "Nachforschungen",
+    "ability_en": "Intelligence",
+    "ability_de": "Intelligenz"
+  },
+  {
+    "skill_en": "Medicine",
+    "skill_de": "Heilkunde",
+    "ability_en": "Wisdom",
+    "ability_de": "Weisheit"
+  },
+  {
+    "skill_en": "Nature",
+    "skill_de": "Naturkunde",
+    "ability_en": "Intelligence",
+    "ability_de": "Intelligenz"
+  },
+  {
+    "skill_en": "Perception",
+    "skill_de": "Wahrnehmung",
+    "ability_en": "Wisdom",
+    "ability_de": "Weisheit"
+  },
+  {
+    "skill_en": "Performance",
+    "skill_de": "Auftreten",
+    "ability_en": "Charisma",
+    "ability_de": "Charisma"
+  },
+  {
+    "skill_en": "Persuasion",
+    "skill_de": "Überzeugen",
+    "ability_en": "Charisma",
+    "ability_de": "Charisma"
+  },
+  {
+    "skill_en": "Religion",
+    "skill_de": "Religion",
+    "ability_en": "Intelligence",
+    "ability_de": "Intelligenz"
+  },
+  {
+    "skill_en": "Sleight of Hand",
+    "skill_de": "Fingerfertigkeit",
+    "ability_en": "Dexterity",
+    "ability_de": "Geschicklichkeit"
+  },
+  {
+    "skill_en": "Stealth",
+    "skill_de": "Heimlichkeit",
+    "ability_en": "Dexterity",
+    "ability_de": "Geschicklichkeit"
+  },
+  {
+    "skill_en": "Survival",
+    "skill_de": "Überlebenskunst",
+    "ability_en": "Wisdom",
+    "ability_de": "Weisheit"
+  }
+]

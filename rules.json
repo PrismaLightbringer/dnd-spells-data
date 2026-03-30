@@ -1,5 +1,5 @@
 {
-  "ability_score_modifiers_table": [
+  "ability_score_modifiers_table_en": [
     {
       "score_range": "1",
       "modifier": -5
@@ -65,7 +65,73 @@
       "modifier": 10
     }
   ],
-  "xp_advancement_table": [
+  "ability_score_modifiers_table_de": [
+    {
+      "wertbereich": "1",
+      "modifikator": -5
+    },
+    {
+      "wertbereich": "2-3",
+      "modifikator": -4
+    },
+    {
+      "wertbereich": "4-5",
+      "modifikator": -3
+    },
+    {
+      "wertbereich": "6-7",
+      "modifikator": -2
+    },
+    {
+      "wertbereich": "8-9",
+      "modifikator": -1
+    },
+    {
+      "wertbereich": "10-11",
+      "modifikator": 0
+    },
+    {
+      "wertbereich": "12-13",
+      "modifikator": 1
+    },
+    {
+      "wertbereich": "14-15",
+      "modifikator": 2
+    },
+    {
+      "wertbereich": "16-17",
+      "modifikator": 3
+    },
+    {
+      "wertbereich": "18-19",
+      "modifikator": 4
+    },
+    {
+      "wertbereich": "20-21",
+      "modifikator": 5
+    },
+    {
+      "wertbereich": "22-23",
+      "modifikator": 6
+    },
+    {
+      "wertbereich": "24-25",
+      "modifikator": 7
+    },
+    {
+      "wertbereich": "26-27",
+      "modifikator": 8
+    },
+    {
+      "wertbereich": "28-29",
+      "modifikator": 9
+    },
+    {
+      "wertbereich": "30",
+      "modifikator": 10
+    }
+  ],
+  "xp_advancement_table_en": [
     {
       "level": 1,
       "xp_required": 0
@@ -147,7 +213,89 @@
       "xp_required": 355000
     }
   ],
-  "point_buy_costs_table": [
+  "xp_advancement_table_de": [
+    {
+      "stufe": 1,
+      "erfahrungspunkte": 0
+    },
+    {
+      "stufe": 2,
+      "erfahrungspunkte": 300
+    },
+    {
+      "stufe": 3,
+      "erfahrungspunkte": 900
+    },
+    {
+      "stufe": 4,
+      "erfahrungspunkte": 2700
+    },
+    {
+      "stufe": 5,
+      "erfahrungspunkte": 6500
+    },
+    {
+      "stufe": 6,
+      "erfahrungspunkte": 14000
+    },
+    {
+      "stufe": 7,
+      "erfahrungspunkte": 23000
+    },
+    {
+      "stufe": 8,
+      "erfahrungspunkte": 34000
+    },
+    {
+      "stufe": 9,
+      "erfahrungspunkte": 48000
+    },
+    {
+      "stufe": 10,
+      "erfahrungspunkte": 64000
+    },
+    {
+      "stufe": 11,
+      "erfahrungspunkte": 85000
+    },
+    {
+      "stufe": 12,
+      "erfahrungspunkte": 100000
+    },
+    {
+      "stufe": 13,
+      "erfahrungspunkte": 120000
+    },
+    {
+      "stufe": 14,
+      "erfahrungspunkte": 140000
+    },
+    {
+      "stufe": 15,
+      "erfahrungspunkte": 165000
+    },
+    {
+      "stufe": 16,
+      "erfahrungspunkte": 195000
+    },
+    {
+      "stufe": 17,
+      "erfahrungspunkte": 225000
+    },
+    {
+      "stufe": 18,
+      "erfahrungspunkte": 265000
+    },
+    {
+      "stufe": 19,
+      "erfahrungspunkte": 305000
+    },
+    {
+      "stufe": 20,
+      "erfahrungspunkte": 355000
+    }
+  ],
+  "point_buy_costs_table_en": [
     {
       "score": 8,
       "cost": 0
@@ -181,7 +329,41 @@
       "cost": 9
     }
   ],
-  "standard_array": {
+  "point_buy_costs_table_de": [
+    {
+      "wert": 8,
+      "kosten": 0
+    },
+    {
+      "wert": 9,
+      "kosten": 1
+    },
+    {
+      "wert": 10,
+      "kosten": 2
+    },
+    {
+      "wert": 11,
+      "kosten": 3
+    },
+    {
+      "wert": 12,
+      "kosten": 4
+    },
+    {
+      "wert": 13,
+      "kosten": 5
+    },
+    {
+      "wert": 14,
+      "kosten": 7
+    },
+    {
+      "wert": 15,
+      "kosten": 9
+    }
+  ],
+  "standard_array_en": {
     "values": [
       15,
       14,
@@ -289,7 +471,115 @@
       }
     }
   },
-  "fixed_hp_per_level_per_class": {
+  "standard_array_de": {
+    "werte": [
+      15,
+      14,
+      13,
+      12,
+      10,
+      8
+    ],
+    "empfohlene_zuweisung_pro_klasse": {
+      "Barbar": {
+        "Stä": 15,
+        "Ges": 13,
+        "Kon": 14,
+        "Int": 10,
+        "Wei": 12,
+        "Cha": 8
+      },
+      "Barde": {
+        "Stä": 8,
+        "Ges": 14,
+        "Kon": 12,
+        "Int": 13,
+        "Wei": 10,
+        "Cha": 15
+      },
+      "Kleriker": {
+        "Stä": 14,
+        "Ges": 8,
+        "Kon": 13,
+        "Int": 10,
+        "Wei": 15,
+        "Cha": 12
+      },
+      "Druide": {
+        "Stä": 8,
+        "Ges": 12,
+        "Kon": 14,
+        "Int": 13,
+        "Wei": 15,
+        "Cha": 10
+      },
+      "Kämpfer": {
+        "Stä": 15,
+        "Ges": 14,
+        "Kon": 13,
+        "Int": 8,
+        "Wei": 10,
+        "Cha": 12
+      },
+      "Mönch": {
+        "Stä": 12,
+        "Ges": 15,
+        "Kon": 13,
+        "Int": 10,
+        "Wei": 14,
+        "Cha": 8
+      },
+      "Paladin": {
+        "Stä": 15,
+        "Ges": 10,
+        "Kon": 13,
+        "Int": 8,
+        "Wei": 12,
+        "Cha": 14
+      },
+      "Waldläufer": {
+        "Stä": 12,
+        "Ges": 15,
+        "Kon": 13,
+        "Int": 8,
+        "Wei": 14,
+        "Cha": 10
+      },
+      "Schurke": {
+        "Stä": 12,
+        "Ges": 15,
+        "Kon": 13,
+        "Int": 14,
+        "Wei": 10,
+        "Cha": 8
+      },
+      "Zauberer": {
+        "Stä": 10,
+        "Ges": 13,
+        "Kon": 14,
+        "Int": 8,
+        "Wei": 12,
+        "Cha": 15
+      },
+      "Hexenmeister": {
+        "Stä": 8,
+        "Ges": 14,
+        "Kon": 13,
+        "Int": 12,
+        "Wei": 10,
+        "Cha": 15
+      },
+      "Magier": {
+        "Stä": 8,
+        "Ges": 12,
+        "Kon": 13,
+        "Int": 15,
+        "Wei": 14,
+        "Cha": 10
+      }
+    }
+  },
+  "fixed_hp_per_level_per_class_en": {
     "Barbarian": "7 + Con. modifier",
     "Fighter": "6 + Con. modifier",
     "Paladin": "6 + Con. modifier",
@@ -303,7 +593,21 @@
     "Sorcerer": "4 + Con. modifier",
     "Wizard": "4 + Con. modifier"
   },
-  "languages": {
+  "fixed_hp_per_level_per_class_de": {
+    "Barbar": "7 + KON-Modifikator",
+    "Kämpfer": "6 + KON-Modifikator",
+    "Paladin": "6 + KON-Modifikator",
+    "Waldläufer": "6 + KON-Modifikator",
+    "Barde": "5 + KON-Modifikator",
+    "Kleriker": "5 + KON-Modifikator",
+    "Druide": "5 + KON-Modifikator",
+    "Mönch": "5 + KON-Modifikator",
+    "Schurke": "5 + KON-Modifikator",
+    "Hexenmeister": "5 + KON-Modifikator",
+    "Zauberer": "4 + KON-Modifikator",
+    "Magier": "4 + KON-Modifikator"
+  },
+  "languages_en": {
     "standard": [
       {
         "roll": null,
@@ -396,7 +700,100 @@
       }
     ]
   },
-  "multiclass_spell_slot_table": [
+  "languages_de": {
+    "standard": [
+      {
+        "wurf": null,
+        "sprache": "Gemeinsprache",
+        "ursprung": "Sigil"
+      },
+      {
+        "wurf": "1",
+        "sprache": "Drakonisch",
+        "ursprung": "Drachen"
+      },
+      {
+        "wurf": "2-3",
+        "sprache": "Elfisch",
+        "ursprung": "Elfen"
+      },
+      {
+        "wurf": "4",
+        "sprache": "Gebärden-Gemeinsprache",
+        "ursprung": "Sigil"
+      },
+      {
+        "wurf": "5",
+        "sprache": "Gnomisch",
+        "ursprung": "Gnome"
+      },
+      {
+        "wurf": "6",
+        "sprache": "Goblinisch",
+        "ursprung": "Goblinoide"
+      },
+      {
+        "wurf": "7-8",
+        "sprache": "Halblingisch",
+        "ursprung": "Halblinge"
+      },
+      {
+        "wurf": "9",
+        "sprache": "Orkisch",
+        "ursprung": "Orks"
+      },
+      {
+        "wurf": "10",
+        "sprache": "Riesisch",
+        "ursprung": "Riesen"
+      },
+      {
+        "wurf": "11-12",
+        "sprache": "Zwergisch",
+        "ursprung": "Zwerge"
+      }
+    ],
+    "selten": [
+      {
+        "sprache": "Abyssisch",
+        "ursprung": "Dämonen des Abyss"
+      },
+      {
+        "sprache": "Celestisch",
+        "ursprung": "Celestische Wesen"
+      },
+      {
+        "sprache": "Diebessprache",
+        "ursprung": "Verschiedene kriminelle Gilden"
+      },
+      {
+        "sprache": "Druidisch",
+        "ursprung": "Druidenzirkel"
+      },
+      {
+        "sprache": "Gemeinsprache der Unterreiche",
+        "ursprung": "Das Unterreich"
+      },
+      {
+        "sprache": "Infernalisch",
+        "ursprung": "Teufel aus den Neun Höllen"
+      },
+      {
+        "sprache": "Sylvanisch",
+        "ursprung": "Bewohner der Feenwildnis"
+      },
+      {
+        "sprache": "Tiefensprache",
+        "ursprung": "Aberrationen"
+      },
+      {
+        "sprache": "Urtümlich",
+        "ursprung": "Elementare",
+        "anmerkung": "Urtümlich umfasst die Dialekte Aqual, Aural, Ignal und Terral. Kreaturen, die einen dieser Dialekte sprechen, können mit Kreaturen kommunizieren, die einen anderen sprechen."
+      }
+    ]
+  },
+  "multiclass_spell_slot_table_en": [
     {
       "level": 1,
       "slots": {
@@ -678,7 +1075,289 @@
       }
     }
   ],
-  "proficiency_bonus_by_level": [
+  "multiclass_spell_slot_table_de": [
+    {
+      "stufe": 1,
+      "zauberplätze": {
+        "1": 2,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "stufe": 2,
+      "zauberplätze": {
+        "1": 3,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "stufe": 3,
+      "zauberplätze": {
+        "1": 4,
+        "2": 2,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "stufe": 4,
+      "zauberplätze": {
+        "1": 4,
+        "2": 3,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "stufe": 5,
+      "zauberplätze": {
+        "1": 4,
+        "2": 3,
+        "3": 2,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "stufe": 6,
+      "zauberplätze": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "stufe": 7,
+      "zauberplätze": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 1,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "stufe": 8,
+      "zauberplätze": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 2,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "stufe": 9,
+      "zauberplätze": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 1,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "stufe": 10,
+      "zauberplätze": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "stufe": 11,
+      "zauberplätze": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "stufe": 12,
+      "zauberplätze": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "stufe": 13,
+      "zauberplätze": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "stufe": 14,
+      "zauberplätze": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "stufe": 15,
+      "zauberplätze": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 0
+      }
+    },
+    {
+      "stufe": 16,
+      "zauberplätze": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 0
+      }
+    },
+    {
+      "stufe": 17,
+      "zauberplätze": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      }
+    },
+    {
+      "stufe": 18,
+      "zauberplätze": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      }
+    },
+    {
+      "stufe": 19,
+      "zauberplätze": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 2,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      }
+    },
+    {
+      "stufe": 20,
+      "zauberplätze": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 2,
+        "7": 2,
+        "8": 1,
+        "9": 1
+      }
+    }
+  ],
+  "proficiency_bonus_by_level_en": [
     {
       "level_range": "1-4",
       "proficiency_bonus": 2
@@ -698,6 +1377,28 @@
     {
       "level_range": "17-20",
       "proficiency_bonus": 6
+    }
+  ],
+  "proficiency_bonus_by_level_de": [
+    {
+      "stufenbereich": "1-4",
+      "übungsbonus": 2
+    },
+    {
+      "stufenbereich": "5-8",
+      "übungsbonus": 3
+    },
+    {
+      "stufenbereich": "9-12",
+      "übungsbonus": 4
+    },
+    {
+      "stufenbereich": "13-16",
+      "übungsbonus": 5
+    },
+    {
+      "stufenbereich": "17-20",
+      "übungsbonus": 6
     }
   ]
 }
