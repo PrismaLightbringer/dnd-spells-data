@@ -22,7 +22,18 @@
       "option_a_en": "Calligrapher's Supplies, Book (prayers), Holy Symbol, Parchment (10 sheets), Robe, 8 GP",
       "option_a_de": "Kalligrafenwerkzeug, Buch (Gebete), Heiliges Symbol, Pergament (10 Blätter), Robe, 8 GM",
       "option_b_en": "50 GP",
-      "option_b_de": "50 GM"
+      "option_b_de": "50 GM",
+      "option_a_items": [
+        { "item_id": "calligraphers-supplies", "qty": 1 },
+        { "item_id": "book", "qty": 1 },
+        { "item_id": "holy-symbol", "qty": 1 },
+        { "item_id": "parchment", "qty": 10 },
+        { "item_id": "robe", "qty": 1 },
+        { "type": "gold", "amount": 8 }
+      ],
+      "option_b_items": [
+        { "type": "gold", "amount": 50 }
+      ]
     },
     "grants": [
       { "type": "ability_score_increase", "total": 3, "from": ["intelligence", "wisdom", "charisma"] },
@@ -57,7 +68,16 @@
       "option_a_en": "Artisan's Tools (same as above), 2 Pouches, Traveler's Clothes, 32 GP",
       "option_a_de": "Handwerkszeug (wie oben), zwei Beutel, Reisekleidung, 32 GM",
       "option_b_en": "50 GP",
-      "option_b_de": "50 GM"
+      "option_b_de": "50 GM",
+      "option_a_items": [
+        { "type": "tool_proficiency_choice" },
+        { "item_id": "pouch", "qty": 2 },
+        { "item_id": "travelers-clothes", "qty": 1 },
+        { "type": "gold", "amount": 32 }
+      ],
+      "option_b_items": [
+        { "type": "gold", "amount": 50 }
+      ]
     },
     "grants": [
       { "type": "ability_score_increase", "total": 3, "from": ["strength", "dexterity", "intelligence"] },
@@ -90,7 +110,16 @@
       "option_a_en": "Forgery Kit, Costume, Fine Clothes, 15 GP",
       "option_a_de": "Fälscherausrüstung, Kostüm, feine Kleidung, 15 GM",
       "option_b_en": "50 GP",
-      "option_b_de": "50 GM"
+      "option_b_de": "50 GM",
+      "option_a_items": [
+        { "item_id": "forgery-kit", "qty": 1 },
+        { "item_id": "costume", "qty": 1 },
+        { "item_id": "fine-clothes", "qty": 1 },
+        { "type": "gold", "amount": 15 }
+      ],
+      "option_b_items": [
+        { "type": "gold", "amount": 50 }
+      ]
     },
     "grants": [
       { "type": "ability_score_increase", "total": 3, "from": ["dexterity", "constitution", "charisma"] },
@@ -123,7 +152,18 @@
       "option_a_en": "2 Daggers, Thieves' Tools, Crowbar, 2 Pouches, Traveler's Clothes, 16 GP",
       "option_a_de": "zwei Dolche, Diebeswerkzeug, Brechstange, zwei Beutel, Reisekleidung, 16 GM",
       "option_b_en": "50 GP",
-      "option_b_de": "50 GM"
+      "option_b_de": "50 GM",
+      "option_a_items": [
+        { "item_id": "dagger", "qty": 2 },
+        { "item_id": "thieves-tools", "qty": 1 },
+        { "item_id": "crowbar", "qty": 1 },
+        { "item_id": "pouch", "qty": 2 },
+        { "item_id": "travelers-clothes", "qty": 1 },
+        { "type": "gold", "amount": 16 }
+      ],
+      "option_b_items": [
+        { "type": "gold", "amount": 50 }
+      ]
     },
     "grants": [
       { "type": "ability_score_increase", "total": 3, "from": ["dexterity", "constitution", "intelligence"] },
@@ -158,7 +198,18 @@
       "option_a_en": "Musical Instrument (same as above), 2 Costumes, Mirror, Perfume, Traveler's Clothes, 11 GP",
       "option_a_de": "Musikinstrument (wie oben), zwei Kostüme, Spiegel, Parfüm, Reisekleidung, 11 GM",
       "option_b_en": "50 GP",
-      "option_b_de": "50 GM"
+      "option_b_de": "50 GM",
+      "option_a_items": [
+        { "type": "tool_proficiency_choice" },
+        { "item_id": "costume", "qty": 2 },
+        { "item_id": "mirror", "qty": 1 },
+        { "item_id": "perfume", "qty": 1 },
+        { "item_id": "travelers-clothes", "qty": 1 },
+        { "type": "gold", "amount": 11 }
+      ],
+      "option_b_items": [
+        { "type": "gold", "amount": 50 }
+      ]
     },
     "grants": [
       { "type": "ability_score_increase", "total": 3, "from": ["strength", "dexterity", "charisma"] },
@@ -191,7 +242,19 @@
       "option_a_en": "Sickle, Carpenter's Tools, Healer's Kit, Iron Pot, Shovel, Traveler's Clothes, 30 GP",
       "option_a_de": "Sichel, Schreinerwerkzeug, Heilerausrüstung, Eisentopf, Schaufel, Reisekleidung, 30 GM",
       "option_b_en": "50 GP",
-      "option_b_de": "50 GM"
+      "option_b_de": "50 GM",
+      "option_a_items": [
+        { "item_id": "sickle", "qty": 1 },
+        { "item_id": "carpenters-tools", "qty": 1 },
+        { "item_id": "healers-kit", "qty": 1 },
+        { "item_id": "iron-pot", "qty": 1 },
+        { "item_id": "shovel", "qty": 1 },
+        { "item_id": "travelers-clothes", "qty": 1 },
+        { "type": "gold", "amount": 30 }
+      ],
+      "option_b_items": [
+        { "type": "gold", "amount": 50 }
+      ]
     },
     "grants": [
       { "type": "ability_score_increase", "total": 3, "from": ["strength", "constitution", "wisdom"] },
@@ -226,7 +289,21 @@
       "option_a_en": "Spear, Light Crossbow, 20 Bolts, Gaming Set (same as above), Hooded Lantern, Manacles, Quiver, Traveler's Clothes, 12 GP",
       "option_a_de": "Speer, leichte Armbrust, 20 Bolzen, Spielset (wie oben), abdeckbare Laterne, Handschellen, Köcher, Reisekleidung, 12 GM",
       "option_b_en": "50 GP",
-      "option_b_de": "50 GM"
+      "option_b_de": "50 GM",
+      "option_a_items": [
+        { "item_id": "spear", "qty": 1 },
+        { "item_id": "light-crossbow", "qty": 1 },
+        { "item_id": "ammunition", "variant": "bolts", "qty": 20 },
+        { "type": "tool_proficiency_choice" },
+        { "item_id": "hooded-lantern", "qty": 1 },
+        { "item_id": "manacles", "qty": 1 },
+        { "item_id": "quiver", "qty": 1 },
+        { "item_id": "travelers-clothes", "qty": 1 },
+        { "type": "gold", "amount": 12 }
+      ],
+      "option_b_items": [
+        { "type": "gold", "amount": 50 }
+      ]
     },
     "grants": [
       { "type": "ability_score_increase", "total": 3, "from": ["strength", "intelligence", "wisdom"] },
@@ -259,7 +336,20 @@
       "option_a_en": "Shortbow, 20 Arrows, Cartographer's Tools, Bedroll, Quiver, Tent, Traveler's Clothes, 3 GP",
       "option_a_de": "Kurzbogen, 20 Pfeile, Kartografenwerkzeug, Schlafsack, Köcher, Zelt, Reisekleidung, 3 GM",
       "option_b_en": "50 GP",
-      "option_b_de": "50 GM"
+      "option_b_de": "50 GM",
+      "option_a_items": [
+        { "item_id": "shortbow", "qty": 1 },
+        { "item_id": "ammunition", "variant": "arrows", "qty": 20 },
+        { "item_id": "cartographers-tools", "qty": 1 },
+        { "item_id": "bedroll", "qty": 1 },
+        { "item_id": "quiver", "qty": 1 },
+        { "item_id": "tent", "qty": 1 },
+        { "item_id": "travelers-clothes", "qty": 1 },
+        { "type": "gold", "amount": 3 }
+      ],
+      "option_b_items": [
+        { "type": "gold", "amount": 50 }
+      ]
     },
     "grants": [
       { "type": "ability_score_increase", "total": 3, "from": ["dexterity", "constitution", "wisdom"] },
@@ -292,7 +382,20 @@
       "option_a_en": "Quarterstaff, Herbalism Kit, Bedroll, Book (philosophy), Lamp, Oil (3 flasks), Traveler's Clothes, 16 GP",
       "option_a_de": "Kampfstab, Kräuterkundeausrüstung, Schlafsack, Buch (Philosophie), Lampe, Öl (drei Flaschen), Reisekleidung, 16 GM",
       "option_b_en": "50 GP",
-      "option_b_de": "50 GM"
+      "option_b_de": "50 GM",
+      "option_a_items": [
+        { "item_id": "quarterstaff", "qty": 1 },
+        { "item_id": "herbalism-kit", "qty": 1 },
+        { "item_id": "bedroll", "qty": 1 },
+        { "item_id": "book", "qty": 1 },
+        { "item_id": "lamp", "qty": 1 },
+        { "item_id": "oil", "qty": 3 },
+        { "item_id": "travelers-clothes", "qty": 1 },
+        { "type": "gold", "amount": 16 }
+      ],
+      "option_b_items": [
+        { "type": "gold", "amount": 50 }
+      ]
     },
     "grants": [
       { "type": "ability_score_increase", "total": 3, "from": ["constitution", "wisdom", "charisma"] },
@@ -325,7 +428,16 @@
       "option_a_en": "Navigator's Tools, 2 Pouches, Traveler's Clothes, 22 GP",
       "option_a_de": "Navigationswerkzeug, zwei Beutel, Reisekleidung, 22 GM",
       "option_b_en": "50 GP",
-      "option_b_de": "50 GM"
+      "option_b_de": "50 GM",
+      "option_a_items": [
+        { "item_id": "navigators-tools", "qty": 1 },
+        { "item_id": "pouch", "qty": 2 },
+        { "item_id": "travelers-clothes", "qty": 1 },
+        { "type": "gold", "amount": 22 }
+      ],
+      "option_b_items": [
+        { "type": "gold", "amount": 50 }
+      ]
     },
     "grants": [
       { "type": "ability_score_increase", "total": 3, "from": ["constitution", "intelligence", "charisma"] },
@@ -360,7 +472,16 @@
       "option_a_en": "Gaming Set (same as above), Fine Clothes, Perfume, 29 GP",
       "option_a_de": "Spielset (wie oben), feine Kleidung, Parfüm, 29 GM",
       "option_b_en": "50 GP",
-      "option_b_de": "50 GM"
+      "option_b_de": "50 GM",
+      "option_a_items": [
+        { "type": "tool_proficiency_choice" },
+        { "item_id": "fine-clothes", "qty": 1 },
+        { "item_id": "perfume", "qty": 1 },
+        { "type": "gold", "amount": 29 }
+      ],
+      "option_b_items": [
+        { "type": "gold", "amount": 50 }
+      ]
     },
     "grants": [
       { "type": "ability_score_increase", "total": 3, "from": ["strength", "intelligence", "charisma"] },
@@ -393,7 +514,18 @@
       "option_a_en": "Quarterstaff, Calligrapher's Supplies, Book (history), Parchment (8 sheets), Robe, 8 GP",
       "option_a_de": "Kampfstab, Kalligrafenwerkzeug, Buch (Geschichte), Pergament (8 Blätter), Robe, 8 GM",
       "option_b_en": "50 GP",
-      "option_b_de": "50 GM"
+      "option_b_de": "50 GM",
+      "option_a_items": [
+        { "item_id": "quarterstaff", "qty": 1 },
+        { "item_id": "calligraphers-supplies", "qty": 1 },
+        { "item_id": "book", "qty": 1 },
+        { "item_id": "parchment", "qty": 8 },
+        { "item_id": "robe", "qty": 1 },
+        { "type": "gold", "amount": 8 }
+      ],
+      "option_b_items": [
+        { "type": "gold", "amount": 50 }
+      ]
     },
     "grants": [
       { "type": "ability_score_increase", "total": 3, "from": ["constitution", "intelligence", "wisdom"] },
@@ -426,7 +558,17 @@
       "option_a_en": "Dagger, Navigator's Tools, Rope, Traveler's Clothes, 20 GP",
       "option_a_de": "Dolch, Navigationswerkzeug, Seil, Reisekleidung, 20 GM",
       "option_b_en": "50 GP",
-      "option_b_de": "50 GM"
+      "option_b_de": "50 GM",
+      "option_a_items": [
+        { "item_id": "dagger", "qty": 1 },
+        { "item_id": "navigators-tools", "qty": 1 },
+        { "item_id": "rope", "qty": 1 },
+        { "item_id": "travelers-clothes", "qty": 1 },
+        { "type": "gold", "amount": 20 }
+      ],
+      "option_b_items": [
+        { "type": "gold", "amount": 50 }
+      ]
     },
     "grants": [
       { "type": "ability_score_increase", "total": 3, "from": ["strength", "dexterity", "wisdom"] },
@@ -459,7 +601,18 @@
       "option_a_en": "Calligrapher's Supplies, Fine Clothes, Lamp, Oil (3 flasks), Parchment (12 sheets), 23 GP",
       "option_a_de": "Kalligrafenwerkzeug, feine Kleidung, Lampe, Öl (drei Flaschen), Pergament (12 Blätter), 23 GM",
       "option_b_en": "50 GP",
-      "option_b_de": "50 GM"
+      "option_b_de": "50 GM",
+      "option_a_items": [
+        { "item_id": "calligraphers-supplies", "qty": 1 },
+        { "item_id": "fine-clothes", "qty": 1 },
+        { "item_id": "lamp", "qty": 1 },
+        { "item_id": "oil", "qty": 3 },
+        { "item_id": "parchment", "qty": 12 },
+        { "type": "gold", "amount": 23 }
+      ],
+      "option_b_items": [
+        { "type": "gold", "amount": 50 }
+      ]
     },
     "grants": [
       { "type": "ability_score_increase", "total": 3, "from": ["dexterity", "intelligence", "wisdom"] },
@@ -494,7 +647,20 @@
       "option_a_en": "Spear, Shortbow, 20 Arrows, Gaming Set (same as above), Healer's Kit, Quiver, Traveler's Clothes, 14 GP",
       "option_a_de": "Speer, Kurzbogen, 20 Pfeile, Spielset (wie oben), Heilerausrüstung, Köcher, Reisekleidung, 14 GM",
       "option_b_en": "50 GP",
-      "option_b_de": "50 GM"
+      "option_b_de": "50 GM",
+      "option_a_items": [
+        { "item_id": "spear", "qty": 1 },
+        { "item_id": "shortbow", "qty": 1 },
+        { "item_id": "ammunition", "variant": "arrows", "qty": 20 },
+        { "type": "tool_proficiency_choice" },
+        { "item_id": "healers-kit", "qty": 1 },
+        { "item_id": "quiver", "qty": 1 },
+        { "item_id": "travelers-clothes", "qty": 1 },
+        { "type": "gold", "amount": 14 }
+      ],
+      "option_b_items": [
+        { "type": "gold", "amount": 50 }
+      ]
     },
     "grants": [
       { "type": "ability_score_increase", "total": 3, "from": ["strength", "dexterity", "constitution"] },
@@ -527,7 +693,19 @@
       "option_a_en": "2 Daggers, Thieves' Tools, Gaming Set (any), Bedroll, 2 Pouches, Traveler's Clothes, 16 GP",
       "option_a_de": "zwei Dolche, Diebeswerkzeug, Spielset (beliebig), Schlafsack, zwei Beutel, Reisekleidung, 16 GM",
       "option_b_en": "50 GP",
-      "option_b_de": "50 GM"
+      "option_b_de": "50 GM",
+      "option_a_items": [
+        { "item_id": "dagger", "qty": 2 },
+        { "item_id": "thieves-tools", "qty": 1 },
+        { "type": "tool_proficiency_choice" },
+        { "item_id": "bedroll", "qty": 1 },
+        { "item_id": "pouch", "qty": 2 },
+        { "item_id": "travelers-clothes", "qty": 1 },
+        { "type": "gold", "amount": 16 }
+      ],
+      "option_b_items": [
+        { "type": "gold", "amount": 50 }
+      ]
     },
     "grants": [
       { "type": "ability_score_increase", "total": 3, "from": ["dexterity", "wisdom", "charisma"] },

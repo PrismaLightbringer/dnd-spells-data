@@ -41,19 +41,43 @@
         {
           "id": "option_a",
           "items": [
-            "chain_mail",
-            "shield",
-            "longsword",
-            "javelin_x6",
-            "holy_symbol",
-            "priests_pack",
-            "9gp"
+            {
+              "item_id": "chain-mail",
+              "qty": 1
+            },
+            {
+              "item_id": "shield",
+              "qty": 1
+            },
+            {
+              "item_id": "longsword",
+              "qty": 1
+            },
+            {
+              "item_id": "javelin",
+              "qty": 6
+            },
+            {
+              "item_id": "holy-symbol",
+              "qty": 1
+            },
+            {
+              "item_id": "priests-pack",
+              "qty": 1
+            },
+            {
+              "type": "gold",
+              "amount": 9
+            }
           ]
         },
         {
           "id": "option_b",
           "items": [
-            "150gp"
+            {
+              "type": "gold",
+              "amount": 150
+            }
           ]
         }
       ]

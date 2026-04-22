@@ -52,17 +52,34 @@
         {
           "id": "option_a",
           "items": [
-            "leather_armor",
-            "dagger_x2",
-            "musical_instrument_choice",
-            "entertainers_pack",
-            "19gp"
+            {
+              "item_id": "leather-armor",
+              "qty": 1
+            },
+            {
+              "item_id": "dagger",
+              "qty": 2
+            },
+            {
+              "type": "tool_proficiency_choice"
+            },
+            {
+              "item_id": "entertainers-pack",
+              "qty": 1
+            },
+            {
+              "type": "gold",
+              "amount": 19
+            }
           ]
         },
         {
           "id": "option_b",
           "items": [
-            "90gp"
+            {
+              "type": "gold",
+              "amount": 90
+            }
           ]
         }
       ]

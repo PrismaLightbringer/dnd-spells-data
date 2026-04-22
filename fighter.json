@@ -44,31 +44,77 @@
         {
           "id": "option_a",
           "items": [
-            "chain_mail",
-            "greatsword",
-            "flail",
-            "javelin_x8",
-            "dungeoneers_pack",
-            "4gp"
+            {
+              "item_id": "chain-mail",
+              "qty": 1
+            },
+            {
+              "item_id": "greatsword",
+              "qty": 1
+            },
+            {
+              "item_id": "flail",
+              "qty": 1
+            },
+            {
+              "item_id": "javelin",
+              "qty": 8
+            },
+            {
+              "item_id": "dungeoneers-pack",
+              "qty": 1
+            },
+            {
+              "type": "gold",
+              "amount": 4
+            }
           ]
         },
         {
           "id": "option_b",
           "items": [
-            "studded_leather_armor",
-            "scimitar",
-            "shortsword",
-            "longbow",
-            "arrows_x20",
-            "quiver",
-            "dungeoneers_pack",
-            "11gp"
+            {
+              "item_id": "studded-leather-armor",
+              "qty": 1
+            },
+            {
+              "item_id": "scimitar",
+              "qty": 1
+            },
+            {
+              "item_id": "shortsword",
+              "qty": 1
+            },
+            {
+              "item_id": "longbow",
+              "qty": 1
+            },
+            {
+              "item_id": "ammunition",
+              "variant": "arrows",
+              "qty": 20
+            },
+            {
+              "item_id": "quiver",
+              "qty": 1
+            },
+            {
+              "item_id": "dungeoneers-pack",
+              "qty": 1
+            },
+            {
+              "type": "gold",
+              "amount": 11
+            }
           ]
         },
         {
           "id": "option_c",
           "items": [
-            "155gp"
+            {
+              "type": "gold",
+              "amount": 155
+            }
           ]
         }
       ]

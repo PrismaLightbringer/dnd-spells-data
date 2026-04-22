@@ -34,17 +34,36 @@
         {
           "id": "option_a",
           "items": [
-            "spear",
-            "dagger_x2",
-            "arcane_focus_crystal",
-            "dungeoneers_pack",
-            "28gp"
+            {
+              "item_id": "spear",
+              "qty": 1
+            },
+            {
+              "item_id": "dagger",
+              "qty": 2
+            },
+            {
+              "item_id": "arcane-focus",
+              "variant": "crystal",
+              "qty": 1
+            },
+            {
+              "item_id": "dungeoneers-pack",
+              "qty": 1
+            },
+            {
+              "type": "gold",
+              "amount": 28
+            }
           ]
         },
         {
           "id": "option_b",
           "items": [
-            "50gp"
+            {
+              "type": "gold",
+              "amount": 50
+            }
           ]
         }
       ]

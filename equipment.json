@@ -1448,5 +1448,1307 @@
       "craft_de": null,
       "variants": null
     }
+  ],
+  "adventuring_gear": [
+    {
+      "id": "acid",
+      "name_en": "Acid",
+      "name_de": "Säure",
+      "category": "consumable",
+      "weight": "1 lb.",
+      "cost": "25 GP",
+      "text_en": "When you take the Attack action, you can replace one of your attacks with throwing a vial of Acid. Target one creature or object you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 2d6 Acid damage.",
+      "text_de": "Wenn du die Angriffsaktion ausführst, kannst du einen deiner Angriffe dadurch ersetzen, dass du eine Phiole mit Säure wirfst. Wähle ein Ziel (Kreatur oder Gegenstand), das du im Abstand von bis zu 6 Metern von dir sehen kannst. Das Ziel muss einen Geschicklichkeitsrettungswurf (SG 8 plus dein Geschicklichkeitsmodifikator plus dein Übungsbonus) bestehen, oder es erleidet 2W6 Säureschaden.",
+      "variants": null
+    },
+    {
+      "id": "alchemists-fire",
+      "name_en": "Alchemist's Fire",
+      "name_de": "Alchemistenfeuer",
+      "category": "consumable",
+      "weight": "1 lb.",
+      "cost": "50 GP",
+      "text_en": "When you take the Attack action, you can replace one of your attacks with throwing a flask of Alchemist's Fire. Target one creature or object you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 1d4 Fire damage and start burning (see the rules glossary).",
+      "text_de": "Wenn du die Angriffsaktion ausführst, kannst du einen deiner Angriffe dadurch ersetzen, dass du eine Flasche mit Alchemistenfeuer wirfst. Wähle ein Ziel (Kreatur oder Gegenstand) im Abstand von bis zu sechs Metern von dir aus, das du sehen kannst. Das Ziel muss einen Geschicklichkeitsrettungswurf (SG 8 plus dein Geschicklichkeitsmodifikator plus dein Übungsbonus) bestehen, oder es erleidet 1W4 Feuerschaden und beginnt zu brennen (siehe Regelglossar).",
+      "variants": null
+    },
+    {
+      "id": "ammunition",
+      "name_en": "Ammunition",
+      "name_de": "Geschosse",
+      "category": "ammunition",
+      "weight": "Varies",
+      "cost": "Varies",
+      "text_en": "Ammunition is required by a weapon that has the Ammunition property. A weapon's description specifies the type of ammunition used by the weapon. The Ammunition table lists the different types and the amount you get when you buy them. The table also lists the item that is typically used to store each type; storage must be bought separately.",
+      "text_de": "Geschosse werden für Waffen mit der Eigenschaft Geschosse benötigt. Die jeweils erforderliche Art der Geschosse ist in der Waffenbeschreibung angegeben.\r\n\r\nIn der Tabelle „Geschosse“ sind die verschiedenen Arten sowie die Mengen aufgeführt, die du beim Kauf erhältst. Außerdem ist der Gegenstand genannt, der üblicherweise zur Aufbewahrung der Geschosse verwendet wird (er muss separat erworben werden).",
+      "variants": [
+        {
+          "name_en": "Arrows",
+          "name_de": "Pfeile",
+          "amount": 20,
+          "storage_en": "Quiver",
+          "storage_de": "Köcher",
+          "weight": "1 lb.",
+          "cost": "1 GP"
+        },
+        {
+          "name_en": "Bolts",
+          "name_de": "Bolzen",
+          "amount": 20,
+          "storage_en": "Case",
+          "storage_de": "Behälter",
+          "weight": "1½ lb.",
+          "cost": "1 GP"
+        },
+        {
+          "name_en": "Bullets, Firearm",
+          "name_de": "Munition, Feuerwaffe",
+          "amount": 10,
+          "storage_en": "Pouch",
+          "storage_de": "Beutel",
+          "weight": "2 lb.",
+          "cost": "3 GP"
+        },
+        {
+          "name_en": "Bullets, Sling",
+          "name_de": "Munition, Schleuder",
+          "amount": 20,
+          "storage_en": "Pouch",
+          "storage_de": "Beutel",
+          "weight": "1½ lb.",
+          "cost": "4 CP"
+        },
+        {
+          "name_en": "Needles",
+          "name_de": "Blasrohrpfeile",
+          "amount": 50,
+          "storage_en": "Pouch",
+          "storage_de": "Beutel",
+          "weight": "1 lb.",
+          "cost": "1 GP"
+        }
+      ]
+    },
+    {
+      "id": "antitoxin",
+      "name_en": "Antitoxin",
+      "name_de": "Gegengift",
+      "category": "consumable",
+      "weight": "—",
+      "cost": "50 GP",
+      "text_en": "As a Bonus Action, you can drink a vial of Antitoxin to gain Advantage on saving throws to avoid or end the Poisoned condition for 1 hour.",
+      "text_de": "Als Bonusaktion kannst du eine Phiole mit Gegengift zu dir nehmen, damit deine Rettungswürfe zum Vermeiden oder Beenden des Zustands Vergiftet eine Stunde lang im Vorteil sind.",
+      "variants": null
+    },
+    {
+      "id": "arcane-focus",
+      "name_en": "Arcane Focus",
+      "name_de": "Arkaner Fokus",
+      "category": "focus",
+      "weight": "Varies",
+      "cost": "Varies",
+      "text_en": "An Arcane Focus takes one of the forms in the Arcane Focuses table and is bejeweled or carved to channel arcane magic. A Sorcerer, Warlock, or Wizard can use such an item as a Spellcasting Focus.",
+      "text_de": "Ein Arkaner Fokus hat eine der Formen, die in der Tabelle „Arkane Fokusse“ aufgeführt sind. Er ist mit Juwelen besetzt oder mit Schnitzereien versehen, um arkane Magie zu kanalisieren. Hexenmeister, Magier und Zauberer können diese Gegenstände als Zauberfokus verwenden.",
+      "variants": [
+        {
+          "name_en": "Crystal",
+          "name_de": "Kristall",
+          "weight": "1 lb.",
+          "cost": "10 GP"
+        },
+        {
+          "name_en": "Orb",
+          "name_de": "Kugel",
+          "weight": "3 lb.",
+          "cost": "20 GP"
+        },
+        {
+          "name_en": "Rod",
+          "name_de": "Rute",
+          "weight": "2 lb.",
+          "cost": "10 GP"
+        },
+        {
+          "name_en": "Staff (also a Quarterstaff)",
+          "name_de": "Stab (auch Kampfstab)",
+          "weight": "4 lb.",
+          "cost": "5 GP"
+        },
+        {
+          "name_en": "Wand",
+          "name_de": "Zauberstab",
+          "weight": "1 lb.",
+          "cost": "10 GP"
+        }
+      ]
+    },
+    {
+      "id": "backpack",
+      "name_en": "Backpack",
+      "name_de": "Rucksack",
+      "category": "container",
+      "weight": "5 lb.",
+      "cost": "2 GP",
+      "text_en": "A Backpack holds up to 30 pounds within 1 cubic foot. It can also serve as a saddlebag.",
+      "text_de": "Ein Rucksack fasst bis zu 15 Kilogramm bei einem Volumen von 28 Litern. Er kann auch als Satteltasche dienen.",
+      "variants": null
+    },
+    {
+      "id": "ball-bearings",
+      "name_en": "Ball Bearings",
+      "name_de": "Metallkügelchen",
+      "category": "gear",
+      "weight": "2 lb.",
+      "cost": "1 GP",
+      "text_en": "As a Utilize action, you can spill Ball Bearings from their pouch. They spread to cover a level, 10-foot-square area within 10 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a DC 10 Dexterity saving throw or have the Prone condition. It takes 10 minutes to recover the Ball Bearings.",
+      "text_de": "Als Verwenden-Aktion kannst du Metallkügelchen aus ihrem Beutel verschütten. Sie verteilen sich so, dass sie einen ebenen Bereich von 3 Metern Seitenlänge im Abstand von bis zu 3 Metern von dir bedecken. Eine Kreatur, die diesen Bereich zum ersten Mal in einem Zug betritt, muss einen SG-10-Geschicklichkeitsrettungswurf bestehen, oder sie wird umgestoßen. Das Einsammeln der Metallkügelchen dauert 10 Minuten.",
+      "variants": null
+    },
+    {
+      "id": "barrel",
+      "name_en": "Barrel",
+      "name_de": "Fass",
+      "category": "container",
+      "weight": "70 lb.",
+      "cost": "2 GP",
+      "text_en": "A Barrel holds up to 40 gallons of liquid or up to 4 cubic feet of dry goods.",
+      "text_de": "Ein Fass bietet ein Volumen von 112 Litern und kann Flüssigkeiten oder trockene Güter fassen.",
+      "variants": null
+    },
+    {
+      "id": "basket",
+      "name_en": "Basket",
+      "name_de": "Korb",
+      "category": "container",
+      "weight": "2 lb.",
+      "cost": "4 SP",
+      "text_en": "A Basket holds up to 40 pounds within 2 cubic feet.",
+      "text_de": "Ein Korb fasst bis zu 20 Kilogramm bei einem Volumen von 56 Litern.",
+      "variants": null
+    },
+    {
+      "id": "bedroll",
+      "name_en": "Bedroll",
+      "name_de": "Schlafsack",
+      "category": "gear",
+      "weight": "7 lb.",
+      "cost": "1 GP",
+      "text_en": "A Bedroll sleeps one Small or Medium creature. While in a Bedroll, you automatically succeed on saving throws against extreme cold (see the Dungeon Master's Guide).",
+      "text_de": "Ein Schlafsack bietet einer kleinen oder mittelgroßen Kreatur Platz zum Schlafen. In einem Schlafsack bist du automatisch erfolgreich bei Rettungswürfen gegen extreme Kälte (siehe *Spielleiterhandbuch*).",
+      "variants": null
+    },
+    {
+      "id": "bell",
+      "name_en": "Bell",
+      "name_de": "Glocke",
+      "category": "gear",
+      "weight": "—",
+      "cost": "1 GP",
+      "text_en": "When rung as a Utilize action, a Bell produces a sound that can be heard up to 60 feet away.",
+      "text_de": "Wenn du eine Glocke mithilfe der Verwenden-Aktion läutest, ist ihr Klang bis zu 18 Meter weit zu hören.",
+      "variants": null
+    },
+    {
+      "id": "blanket",
+      "name_en": "Blanket",
+      "name_de": "Decke",
+      "category": "gear",
+      "weight": "3 lb.",
+      "cost": "5 SP",
+      "text_en": "While wrapped in a Blanket, you have Advantage on saving throws against extreme cold (see the Dungeon Master's Guide).",
+      "text_de": "In eine Decke gewickelt bist du bei Rettungswürfen gegen extreme Kälte (siehe *Spielleiterhandbuch*) im Vorteil.",
+      "variants": null
+    },
+    {
+      "id": "block-and-tackle",
+      "name_en": "Block and Tackle",
+      "name_de": "Flaschenzug",
+      "category": "gear",
+      "weight": "5 lb.",
+      "cost": "1 GP",
+      "text_en": "A Block and Tackle allows you to hoist up to four times the weight you can normally lift.",
+      "text_de": "Mit einem Flaschenzug kannst du das Vierfache des Gewichts anheben, das du auf normale Weise heben könntest.",
+      "variants": null
+    },
+    {
+      "id": "book",
+      "name_en": "Book",
+      "name_de": "Buch",
+      "category": "gear",
+      "weight": "5 lb.",
+      "cost": "25 GP",
+      "text_en": "A Book contains fiction or nonfiction. If you consult an accurate nonfiction Book about its topic, you gain a +5 bonus to Intelligence (Arcana, History, Nature, or Religion) checks you make about that topic.",
+      "text_de": "Ein Buch enthält Belletristik oder Sachtexte. Wenn du ein korrektes Sachbuch zu einem Thema liest, erhältst du einen Bonus von +5 auf Intelligenzwürfe (Arkane Kunde, Geschichte, Naturkunde oder Religion) zu diesem Thema.",
+      "variants": null
+    },
+    {
+      "id": "glass-bottle",
+      "name_en": "Bottle, Glass",
+      "name_de": "Flasche, Glas",
+      "category": "container",
+      "weight": "2 lb.",
+      "cost": "2 GP",
+      "text_en": "A Glass Bottle holds up to 1½ pints.",
+      "text_de": "Eine Glasflasche fasst bis zu 0,75 Liter.",
+      "variants": null
+    },
+    {
+      "id": "bucket",
+      "name_en": "Bucket",
+      "name_de": "Eimer",
+      "category": "container",
+      "weight": "2 lb.",
+      "cost": "5 CP",
+      "text_en": "A Bucket holds up to half a cubic foot of contents.",
+      "text_de": "Ein Eimer fasst bis zu 14 Liter.",
+      "variants": null
+    },
+    {
+      "id": "burglars-pack",
+      "name_en": "Burglar's Pack",
+      "name_de": "Einbrecherausrüstung",
+      "category": "pack",
+      "weight": "42 lb.",
+      "cost": "16 GP",
+      "text_en": "A Burglar's Pack contains the following items: Backpack, Ball Bearings, Bell, 10 Candles, Crowbar, Hooded Lantern, 7 flasks of Oil, 5 days of Rations, Rope, Tinderbox, and Waterskin.",
+      "text_de": "Eine Einbrecherausrüstung enthält folgende Gegenstände: Abdeckbare Laterne, Brechstange, Glocke, zehn Kerzen, Metallkügelchen, sieben Flaschen Öl, Rucksack, Seil, fünf Tagesrationen, Trinkschlauch und Zunderkästchen.",
+      "contents": [
+        {
+          "item_id": "backpack",
+          "qty": 1
+        },
+        {
+          "item_id": "ball-bearings",
+          "qty": 1
+        },
+        {
+          "item_id": "bell",
+          "qty": 1
+        },
+        {
+          "item_id": "candle",
+          "qty": 10
+        },
+        {
+          "item_id": "crowbar",
+          "qty": 1
+        },
+        {
+          "item_id": "hooded-lantern",
+          "qty": 1
+        },
+        {
+          "item_id": "oil",
+          "qty": 7
+        },
+        {
+          "item_id": "rations",
+          "qty": 5
+        },
+        {
+          "item_id": "rope",
+          "qty": 1
+        },
+        {
+          "item_id": "tinderbox",
+          "qty": 1
+        },
+        {
+          "item_id": "waterskin",
+          "qty": 1
+        }
+      ],
+      "variants": null
+    },
+    {
+      "id": "caltrops",
+      "name_en": "Caltrops",
+      "name_de": "Krähenfüße",
+      "category": "gear",
+      "weight": "2 lb.",
+      "cost": "1 GP",
+      "text_en": "As a Utilize action, you can spread Caltrops from their bag to cover a 5-foot-square area within 5 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a DC 15 Dexterity saving throw or take 1 Piercing damage and have its Speed reduced to 0 until the start of its next turn. It takes 10 minutes to recover the Caltrops.",
+      "text_de": "Als Verwenden-Aktion kannst du Krähenfüße aus ihrem Beutel ausstreuen, um einen Bereich von 1,5 Metern Seitenlänge im Abstand von bis zu 1,5 Metern von dir zu bedecken. Eine Kreatur, die diesen Bereich zum ersten Mal in einem Zug betritt, muss einen SG-15-Geschicklichkeitsrettungswurf bestehen, oder sie erleidet 1 Stichschaden und ihre Bewegungsrate wird bis zum Beginn ihres nächsten Zugs auf 0 verringert. Das Einsammeln der Krähenfüße dauert 10 Minuten.",
+      "variants": null
+    },
+    {
+      "id": "candle",
+      "name_en": "Candle",
+      "name_de": "Kerze",
+      "category": "gear",
+      "weight": "—",
+      "cost": "1 CP",
+      "text_en": "For 1 hour, a lit Candle sheds Bright Light in a 5-foot radius and Dim Light for an additional 5 feet.",
+      "text_de": "Eine angezündete Kerze spendet 1 Stunde lang in einem Radius von 1,5 Metern helles Licht und in einem Radius von weiteren 1,5 Metern dämmriges Licht.",
+      "variants": null
+    },
+    {
+      "id": "crossbow-bolt-case",
+      "name_en": "Case, Crossbow Bolt",
+      "name_de": "Behälter, Armbrustbolzen",
+      "category": "container",
+      "weight": "1 lb.",
+      "cost": "1 GP",
+      "text_en": "A Crossbow Bolt Case holds up to 20 Bolts.",
+      "text_de": "Ein Behälter für Armbrustbolzen fasst bis zu 20 Bolzen.",
+      "variants": null
+    },
+    {
+      "id": "map-or-scroll-case",
+      "name_en": "Case, Map or Scroll",
+      "name_de": "Behälter, Karten oder Schriftrollen",
+      "category": "container",
+      "weight": "1 lb.",
+      "cost": "1 GP",
+      "text_en": "A Map or Scroll Case holds up to 10 sheets of paper or 5 sheets of parchment.",
+      "text_de": "Ein Behälter für Karten oder Schriftrollen fasst bis zu 10 Papierbögen oder 5 Pergamentbögen.",
+      "variants": null
+    },
+    {
+      "id": "chain",
+      "name_en": "Chain",
+      "name_de": "Kette",
+      "category": "gear",
+      "weight": "10 lb.",
+      "cost": "5 GP",
+      "text_en": "As a Utilize action, you can wrap 10 feet of Chain around an unwilling creature within 5 feet of yourself that has the Grappled, Incapacitated, or Restrained condition if you succeed on a DC 13 Strength (Athletics) check. If the creature's legs are bound, the creature has the Restrained condition until it escapes. Escaping the Chain requires the creature to make a successful DC 18 Dexterity (Acrobatics) check as an action. Bursting the Chain requires a successful DC 20 Strength (Athletics) check as an action.",
+      "text_de": "Als Verwenden-Aktion kannst du eine Kette um eine widerstrebende Kreatur im Abstand von bis zu 1,5 Metern von dir wickeln, die gepackt, kampfunfähig oder festgesetzt ist, wenn du einen SG-13-Stärkewurf (Athletik) bestehst. Wenn die Beine der Kreatur gefesselt sind, ist sie festgesetzt, bis sie entkommt. Das Entkommen aus der Kette erfordert eine erfolgreiche SG-18-Geschicklichkeitsprobe (Akrobatik) als Aktion. Das Zerreißen der Kette erfordert eine erfolgreiche SG-20-Stärkeprobe (Athletik) als Aktion.",
+      "variants": null
+    },
+    {
+      "id": "chest",
+      "name_en": "Chest",
+      "name_de": "Truhe",
+      "category": "container",
+      "weight": "25 lb.",
+      "cost": "5 GP",
+      "text_en": "A Chest holds up to 12 cubic feet of contents.",
+      "text_de": "Eine Truhe fasst bis zu 336 Liter.",
+      "variants": null
+    },
+    {
+      "id": "climbers-kit",
+      "name_en": "Climber's Kit",
+      "name_de": "Kletterausrüstung",
+      "category": "gear",
+      "weight": "12 lb.",
+      "cost": "25 GP",
+      "text_en": "A Climber's Kit includes boot tips, gloves, pitons, and a harness. As a Utilize action, you can use the Climber's Kit to anchor yourself; when you do, you can't fall more than 25 feet from the anchor point, and you can't move more than 25 feet from there without undoing the anchor as a Bonus Action.",
+      "text_de": "Eine Kletterausrüstung umfasst Schuhspitzen, Handschuhe, Haken und ein Geschirr. Als Verwenden-Aktion kannst du dich mit der Kletterausrüstung verankern. Wenn du das tust, kannst du nicht tiefer als 7,5 Meter vom Ankerpunkt stürzen und dich nicht weiter als 7,5 Meter von ihm entfernen, ohne den Anker als Bonusaktion zu lösen.",
+      "variants": null
+    },
+    {
+      "id": "fine-clothes",
+      "name_en": "Clothes, Fine",
+      "name_de": "Kleidung, fein",
+      "category": "gear",
+      "weight": "6 lb.",
+      "cost": "15 GP",
+      "text_en": "Fine Clothes are made of expensive fabrics and adorned with expertly crafted details. Some events and locations admit only people wearing these clothes.",
+      "text_de": "Feine Kleidung wird aus kostbaren Stoffen gefertigt und mit meisterlich gearbeiteten Details verziert. Manche Veranstaltungen und Orte lassen nur Personen in dieser Kleidung zu.",
+      "variants": null
+    },
+    {
+      "id": "travelers-clothes",
+      "name_en": "Clothes, Traveler's",
+      "name_de": "Kleidung, Reise",
+      "category": "gear",
+      "weight": "4 lb.",
+      "cost": "2 GP",
+      "text_en": "Traveler's Clothes are resilient garments designed for travel in various environments.",
+      "text_de": "Reisekleidung ist robuste Kleidung, die für Reisen in unterschiedlichsten Umgebungen ausgelegt ist.",
+      "variants": null
+    },
+    {
+      "id": "component-pouch",
+      "name_en": "Component Pouch",
+      "name_de": "Materialkomponentenbeutel",
+      "category": "container",
+      "weight": "2 lb.",
+      "cost": "25 GP",
+      "text_en": "A Component Pouch is watertight and filled with compartments that hold all the free Material components of your spells.",
+      "text_de": "Ein Materialkomponentenbeutel ist wasserdicht und mit Fächern versehen, in denen alle kostenlosen Materialkomponenten deiner Zauber Platz finden.",
+      "variants": null
+    },
+    {
+      "id": "costume",
+      "name_en": "Costume",
+      "name_de": "Kostüm",
+      "category": "gear",
+      "weight": "4 lb.",
+      "cost": "5 GP",
+      "text_en": "While wearing a Costume, you have Advantage on any ability check you make to impersonate the person or type of person it represents.",
+      "text_de": "Solange du ein Kostüm trägst, bist du bei allen Attributswürfen im Vorteil, mit denen du die Person oder Personengruppe imitieren willst, die es darstellt.",
+      "variants": null
+    },
+    {
+      "id": "crowbar",
+      "name_en": "Crowbar",
+      "name_de": "Brechstange",
+      "category": "gear",
+      "weight": "5 lb.",
+      "cost": "2 GP",
+      "text_en": "Using a Crowbar gives you Advantage on Strength checks where the Crowbar's leverage can be applied.",
+      "text_de": "Wenn du eine Brechstange verwendest, bist du bei Stärkewürfen im Vorteil, bei denen sich die Hebelwirkung der Brechstange anwenden lässt.",
+      "variants": null
+    },
+    {
+      "id": "diplomats-pack",
+      "name_en": "Diplomat's Pack",
+      "name_de": "Diplomatenausrüstung",
+      "category": "pack",
+      "weight": "39 lb.",
+      "cost": "39 GP",
+      "text_en": "A Diplomat's Pack contains the following items: Chest, Fine Clothes, Ink, 5 Ink Pens, Lamp, 2 Map or Scroll Cases, 4 flasks of Oil, 5 sheets of Paper, 5 sheets of Parchment, Perfume, and Tinderbox.",
+      "text_de": "Eine Diplomatenausrüstung enthält folgende Gegenstände: zwei Karten- oder Schriftrollenbehälter, feine Kleidung, Lampe, vier Flaschen Öl, fünf Bögen Papier, Parfüm, fünf Bögen Pergament, Tinte, fünf Tintenfüller, Truhe und Zunderkästchen.",
+      "contents": [
+        {
+          "item_id": "chest",
+          "qty": 1
+        },
+        {
+          "item_id": "fine-clothes",
+          "qty": 1
+        },
+        {
+          "item_id": "ink",
+          "qty": 1
+        },
+        {
+          "item_id": "ink-pen",
+          "qty": 5
+        },
+        {
+          "item_id": "lamp",
+          "qty": 1
+        },
+        {
+          "item_id": "map-or-scroll-case",
+          "qty": 2
+        },
+        {
+          "item_id": "oil",
+          "qty": 4
+        },
+        {
+          "item_id": "paper",
+          "qty": 5
+        },
+        {
+          "item_id": "parchment",
+          "qty": 5
+        },
+        {
+          "item_id": "perfume",
+          "qty": 1
+        },
+        {
+          "item_id": "tinderbox",
+          "qty": 1
+        }
+      ],
+      "variants": null
+    },
+    {
+      "id": "druidic-focus",
+      "name_en": "Druidic Focus",
+      "name_de": "Druidischer Fokus",
+      "category": "focus",
+      "weight": "Varies",
+      "cost": "Varies",
+      "text_en": "A Druidic Focus takes one of the forms in the Druidic Focuses table and is carved, tied with ribbon, or painted to channel primal magic. A Druid or Ranger can use such an object as a Spellcasting Focus.",
+      "text_de": "Ein Druidischer Fokus hat eine der Formen, die in der Tabelle „Druidische Fokusse“ aufgeführt sind. Er ist mit Schnitzereien, Bändern oder Malereien versehen, um Urmagie zu kanalisieren. Ein Druide oder Waldläufer kann einen solchen Gegenstand als Zauberfokus verwenden.",
+      "variants": [
+        {
+          "name_en": "Sprig of mistletoe",
+          "name_de": "Mistelzweig",
+          "weight": "—",
+          "cost": "1 GP"
+        },
+        {
+          "name_en": "Wooden staff (also a Quarterstaff)",
+          "name_de": "Holzstab (auch Kampfstab)",
+          "weight": "4 lb.",
+          "cost": "5 GP"
+        },
+        {
+          "name_en": "Yew wand",
+          "name_de": "Zauberstab aus Eibe",
+          "weight": "1 lb.",
+          "cost": "10 GP"
+        }
+      ]
+    },
+    {
+      "id": "dungeoneers-pack",
+      "name_en": "Dungeoneer's Pack",
+      "name_de": "Gewölbeforscherausrüstung",
+      "category": "pack",
+      "weight": "55 lb.",
+      "cost": "12 GP",
+      "text_en": "A Dungeoneer's Pack contains the following items: Backpack, Caltrops, Crowbar, 2 flasks of Oil, 10 days of Rations, Rope, Tinderbox, 10 Torches, and Waterskin.",
+      "text_de": "Eine Gewölbeforscherausrüstung enthält folgende Gegenstände: Brechstange, zehn Fackeln, Krähenfüße, zwei Flaschen Öl, zehn Tagesrationen, Seil, Zunderkästchen, Rucksack und Trinkschlauch.",
+      "contents": [
+        {
+          "item_id": "backpack",
+          "qty": 1
+        },
+        {
+          "item_id": "caltrops",
+          "qty": 1
+        },
+        {
+          "item_id": "crowbar",
+          "qty": 1
+        },
+        {
+          "item_id": "oil",
+          "qty": 2
+        },
+        {
+          "item_id": "rations",
+          "qty": 10
+        },
+        {
+          "item_id": "rope",
+          "qty": 1
+        },
+        {
+          "item_id": "tinderbox",
+          "qty": 1
+        },
+        {
+          "item_id": "torch",
+          "qty": 10
+        },
+        {
+          "item_id": "waterskin",
+          "qty": 1
+        }
+      ],
+      "variants": null
+    },
+    {
+      "id": "entertainers-pack",
+      "name_en": "Entertainer's Pack",
+      "name_de": "Unterhaltungskünstler-Ausrüstung",
+      "category": "pack",
+      "weight": "58½ lb.",
+      "cost": "40 GP",
+      "text_en": "An Entertainer's Pack contains the following items: Backpack, Bedroll, Bell, Bullseye Lantern, 3 Costumes, Mirror, 8 flasks of Oil, 9 days of Rations, Tinderbox, and Waterskin.",
+      "text_de": "Eine Unterhaltungskünstler-Ausrüstung enthält folgende Gegenstände: Abdeckbare Laterne, Bettrolle/Schlafsack, Glocke, Blendlaterne, drei Kostüme, Spiegel, acht Flaschen Öl, neun Tagesrationen, Rucksack, Trinkschlauch und Zunderkästchen.",
+      "contents": [
+        {
+          "item_id": "backpack",
+          "qty": 1
+        },
+        {
+          "item_id": "bedroll",
+          "qty": 1
+        },
+        {
+          "item_id": "bell",
+          "qty": 1
+        },
+        {
+          "item_id": "bullseye-lantern",
+          "qty": 1
+        },
+        {
+          "item_id": "costume",
+          "qty": 3
+        },
+        {
+          "item_id": "mirror",
+          "qty": 1
+        },
+        {
+          "item_id": "oil",
+          "qty": 8
+        },
+        {
+          "item_id": "rations",
+          "qty": 9
+        },
+        {
+          "item_id": "tinderbox",
+          "qty": 1
+        },
+        {
+          "item_id": "waterskin",
+          "qty": 1
+        }
+      ],
+      "variants": null
+    },
+    {
+      "id": "explorers-pack",
+      "name_en": "Explorer's Pack",
+      "name_de": "Entdeckerausrüstung",
+      "category": "pack",
+      "weight": "55 lb.",
+      "cost": "10 GP",
+      "text_en": "An Explorer's Pack contains the following items: Backpack, Bedroll, 2 flasks of Oil, 10 days of Rations, Rope, Tinderbox, 10 Torches, and Waterskin.",
+      "text_de": "Eine Entdeckerausrüstung enthält folgende Gegenstände: zehn Fackeln, zwei Flaschen Öl, Rucksack, Schlafsack, Seil, zehn Tagesrationen, Trinkschlauch und Zunderkästchen.",
+      "contents": [
+        {
+          "item_id": "backpack",
+          "qty": 1
+        },
+        {
+          "item_id": "bedroll",
+          "qty": 1
+        },
+        {
+          "item_id": "oil",
+          "qty": 2
+        },
+        {
+          "item_id": "rations",
+          "qty": 10
+        },
+        {
+          "item_id": "rope",
+          "qty": 1
+        },
+        {
+          "item_id": "tinderbox",
+          "qty": 1
+        },
+        {
+          "item_id": "torch",
+          "qty": 10
+        },
+        {
+          "item_id": "waterskin",
+          "qty": 1
+        }
+      ],
+      "variants": null
+    },
+    {
+      "id": "flask",
+      "name_en": "Flask",
+      "name_de": "Flasche",
+      "category": "container",
+      "weight": "1 lb.",
+      "cost": "2 CP",
+      "text_en": "A Flask holds up to 1 pint.",
+      "text_de": "Eine Flasche fasst bis zu 0,5 Liter.",
+      "variants": null
+    },
+    {
+      "id": "grappling-hook",
+      "name_en": "Grappling Hook",
+      "name_de": "Enterhaken",
+      "category": "gear",
+      "weight": "4 lb.",
+      "cost": "2 GP",
+      "text_en": "As a Utilize action, you can throw the Grappling Hook at a railing, a ledge, or another catch within 50 feet of yourself, and the hook catches on if you succeed on a DC 13 Dexterity (Acrobatics) check. If you tied a Rope to the hook, you can then climb it.",
+      "text_de": "Als Verwenden-Aktion kannst du den Enterhaken nach einer Reling, einem Sims oder einem anderen geeigneten Gegenstand im Abstand von bis zu 15 Metern von dir werfen. Er greift, wenn du einen SG-13-Geschicklichkeitswurf (Akrobatik) bestehst. Wenn du ein Seil am Haken befestigt hast, kannst du daran hochklettern.",
+      "variants": null
+    },
+    {
+      "id": "healers-kit",
+      "name_en": "Healer's Kit",
+      "name_de": "Heilerausrüstung",
+      "category": "gear",
+      "weight": "3 lb.",
+      "cost": "5 GP",
+      "text_en": "A Healer's Kit has ten uses. As a Utilize action, you can expend one of its uses to stabilize an Unconscious creature that has 0 Hit Points without needing to make a Wisdom (Medicine) check.",
+      "text_de": "Eine Heilerausrüstung hat zehn Anwendungen. Als Verwenden-Aktion kannst du eine Anwendung verbrauchen, um eine bewusstlose Kreatur mit 0 Trefferpunkten zu stabilisieren, ohne einen Weisheitswurf (Heilkunde) machen zu müssen.",
+      "variants": null
+    },
+    {
+      "id": "holy-symbol",
+      "name_en": "Holy Symbol",
+      "name_de": "Heiliges Symbol",
+      "category": "focus",
+      "weight": "Varies",
+      "cost": "Varies",
+      "text_en": "A Holy Symbol takes one of the forms in the Holy Symbol table and is bejeweled or painted to channel divine magic. A Cleric or Paladin can use a Holy Symbol as a Spellcasting Focus.\n\nThe table indicates whether a Holy Symbol needs to be held, worn, or borne on fabric (such as a tabard or banner) or a Shield.",
+      "text_de": "Ein Heiliges Symbol hat eine der Formen, die in der Tabelle „Heilige Symbole“ aufgeführt sind. Es ist mit Edelsteinen besetzt oder bemalt, um göttliche Magie zu kanalisieren. Ein Kleriker oder Paladin kann ein Heiliges Symbol als Zauberfokus verwenden.\r\n\r\nDie Tabelle zeigt, ob ein Heiliges Symbol gehalten, getragen oder auf Stoff (etwa auf einem Wappenrock oder Banner) oder einem Schild angebracht werden muss.",
+      "variants": [
+        {
+          "name_en": "Amulet (worn or held)",
+          "name_de": "Amulett (getragen oder gehalten)",
+          "weight": "1 lb.",
+          "cost": "5 GP"
+        },
+        {
+          "name_en": "Emblem (borne on fabric or a Shield)",
+          "name_de": "Emblem (auf Stoff oder einem Schild angebracht)",
+          "weight": "—",
+          "cost": "5 GP"
+        },
+        {
+          "name_en": "Reliquary (held)",
+          "name_de": "Reliquiar (gehalten)",
+          "weight": "2 lb.",
+          "cost": "5 GP"
+        }
+      ]
+    },
+    {
+      "id": "holy-water",
+      "name_en": "Holy Water",
+      "name_de": "Weihwasser",
+      "category": "consumable",
+      "weight": "1 lb.",
+      "cost": "25 GP",
+      "text_en": "When you take the Attack action, you can replace one of your attacks with throwing a flask of Holy Water. Target one creature you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 2d8 Radiant damage if it is a Fiend or an Undead.",
+      "text_de": "Wenn du die Angriffsaktion ausführst, kannst du einen deiner Angriffe dadurch ersetzen, dass du eine Phiole Weihwasser wirfst. Wähle eine Kreatur aus, die du im Abstand von bis zu 6 Metern von dir sehen kannst. Das Ziel muss einen Geschicklichkeitsrettungswurf (SG 8 plus dein Geschicklichkeitsmodifikator plus dein Übungsbonus) bestehen, oder es erleidet 2W8 gleißenden Schaden, falls es ein Fiend oder Untoter ist.",
+      "variants": null
+    },
+    {
+      "id": "hunting-trap",
+      "name_en": "Hunting Trap",
+      "name_de": "Jagdfalle",
+      "category": "gear",
+      "weight": "25 lb.",
+      "cost": "5 GP",
+      "text_en": "As a Utilize action, you can set a Hunting Trap, which is a sawtooth steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground. A creature that steps on the plate must succeed on a DC 13 Dexterity saving throw or take 1d4 Piercing damage and have its Speed reduced to 0 until the start of its next turn. Thereafter, until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 3 feet). A creature can use its action to make a DC 13 Strength (Athletics) check, freeing itself or another creature within its reach on a success. Each failed check deals 1 Piercing damage to the trapped creature.",
+      "text_de": "Als Verwenden-Aktion kannst du eine Jagdfalle aufstellen. Dabei handelt es sich um einen gezahnten Stahlring, der zuschnappt, wenn eine Kreatur auf eine Druckplatte in seiner Mitte tritt. Die Falle ist mit einer schweren Kette an einem unbeweglichen Gegenstand befestigt, zum Beispiel einem Baum oder einem in den Boden getriebenen Eisenstachel. Eine Kreatur, die auf die Platte tritt, muss einen SG-13-Geschicklichkeitsrettungswurf bestehen, oder sie erleidet 1W4 Stichschaden und ihre Bewegungsrate wird bis zum Beginn ihres nächsten Zugs auf 0 verringert. Danach ist ihre Bewegung, bis sie sich befreit, durch die Länge der Kette begrenzt (normalerweise 1 Meter). Eine Kreatur kann ihre Aktion verwenden, um einen SG-13-Stärkewurf (Athletik) auszuführen und sich oder eine andere Kreatur in Reichweite bei einem Erfolg zu befreien. Jeder misslungene Wurf verursacht 1 Stichschaden bei der gefangenen Kreatur.",
+      "variants": null
+    },
+    {
+      "id": "ink",
+      "name_en": "Ink",
+      "name_de": "Tinte",
+      "category": "gear",
+      "weight": "—",
+      "cost": "10 GP",
+      "text_en": "Ink comes in a 1-ounce bottle, which provides enough ink to write about 500 pages.",
+      "text_de": "Tinte wird in einer 30-Milliliter-Flasche verkauft, deren Inhalt ausreicht, um ungefähr 500 Seiten zu beschreiben.",
+      "variants": null
+    },
+    {
+      "id": "ink-pen",
+      "name_en": "Ink Pen",
+      "name_de": "Tintenfüller",
+      "category": "gear",
+      "weight": "—",
+      "cost": "2 CP",
+      "text_en": "Using Ink, an Ink Pen is used to write or draw.",
+      "text_de": "Mit Tinte kannst du mithilfe eines Tintenfüllers schreiben oder zeichnen.",
+      "variants": null
+    },
+    {
+      "id": "jug",
+      "name_en": "Jug",
+      "name_de": "Krug",
+      "category": "container",
+      "weight": "4 lb.",
+      "cost": "2 CP",
+      "text_en": "A Jug holds up to 1 gallon.",
+      "text_de": "Ein Krug fasst bis zu 4,5 Liter.",
+      "variants": null
+    },
+    {
+      "id": "ladder",
+      "name_en": "Ladder",
+      "name_de": "Leiter",
+      "category": "gear",
+      "weight": "25 lb.",
+      "cost": "1 SP",
+      "text_en": "A Ladder is 10 feet tall. You must climb to move up or down it.",
+      "text_de": "Eine Leiter ist 3 Meter hoch. Du musst klettern, um dich an ihr auf- oder abzubewegen.",
+      "variants": null
+    },
+    {
+      "id": "lamp",
+      "name_en": "Lamp",
+      "name_de": "Lampe",
+      "category": "gear",
+      "weight": "1 lb.",
+      "cost": "5 SP",
+      "text_en": "A Lamp burns Oil as fuel to cast Bright Light in a 15-foot radius and Dim Light for an additional 30 feet.",
+      "text_de": "Eine Lampe verbrennt Öl als Brennstoff und spendet in einem Radius von 4,5 Metern helles Licht und in weiteren 9 Metern dämmriges Licht.",
+      "variants": null
+    },
+    {
+      "id": "bullseye-lantern",
+      "name_en": "Lantern, Bullseye",
+      "name_de": "Blendlaterne",
+      "category": "gear",
+      "weight": "2 lb.",
+      "cost": "10 GP",
+      "text_en": "A Bullseye Lantern burns Oil as fuel to cast Bright Light in a 60-foot Cone and Dim Light for an additional 60 feet.",
+      "text_de": "Eine Blendlaterne spendet in einem Kegel von 18 Metern helles Licht und in weiteren 18 Metern dämmriges Licht.",
+      "variants": null
+    },
+    {
+      "id": "hooded-lantern",
+      "name_en": "Lantern, Hooded",
+      "name_de": "Abdeckbare Laterne",
+      "category": "gear",
+      "weight": "2 lb.",
+      "cost": "5 GP",
+      "text_en": "A Hooded Lantern burns Oil as fuel to cast Bright Light in a 30-foot radius and Dim Light for an additional 30 feet. As a Bonus Action, you can lower the hood, reducing the light to Dim Light in a 5-foot radius, or raise it again.",
+      "text_de": "Eine abdeckbare Laterne verbrennt Öl als Brennstoff und spendet in einem Radius von 9 Metern helles Licht und in weiteren 9 Metern dämmriges Licht. Als Bonusaktion kannst du die Abdeckung senken, wodurch das Licht auf dämmriges Licht in einem Radius von 1,5 Metern reduziert wird, oder sie wieder anheben.",
+      "variants": null
+    },
+    {
+      "id": "lock",
+      "name_en": "Lock",
+      "name_de": "Schloss",
+      "category": "gear",
+      "weight": "1 lb.",
+      "cost": "10 GP",
+      "text_en": "A Lock comes with a key. Without the key, a creature can use Thieves' Tools to pick this Lock with a successful DC 15 Dexterity (Sleight of Hand) check.",
+      "text_de": "Ein Schloss wird mit einem Schlüssel geliefert. Ohne diesen kann eine Kreatur mit Diebeswerkzeug und einer erfolgreichen SG-15-Geschicklichkeitsprobe (Fingerfertigkeit) das Schloss knacken.",
+      "variants": null
+    },
+    {
+      "id": "magnifying-glass",
+      "name_en": "Magnifying Glass",
+      "name_de": "Lupe",
+      "category": "gear",
+      "weight": "—",
+      "cost": "100 GP",
+      "text_en": "A Magnifying Glass grants Advantage on any ability check made to appraise or inspect a highly detailed item. Lighting a fire with a Magnifying Glass requires light as bright as sunlight to focus, tinder to ignite, and about 5 minutes for the fire to ignite.",
+      "text_de": "Eine Lupe verleiht Vorteil auf Attributswürfe, die zum Begutachten oder Untersuchen eines sehr detaillierten Gegenstands gemacht werden. Um mit einer Lupe Feuer zu entzünden, braucht es Licht von der Stärke des Sonnenlichts, Zunder, der sich entzünden kann, und ungefähr 5 Minuten Zeit.",
+      "variants": null
+    },
+    {
+      "id": "manacles",
+      "name_en": "Manacles",
+      "name_de": "Handschellen",
+      "category": "gear",
+      "weight": "6 lb.",
+      "cost": "2 GP",
+      "text_en": "As a Utilize action, you can use Manacles to bind an unwilling Small or Medium creature within 5 feet of yourself that has the Grappled, Incapacitated, or Restrained condition if you succeed on a DC 13 Dexterity (Sleight of Hand) check. While bound, a creature has Disadvantage on attack rolls, and the creature is Restrained if the Manacles are attached to a chain or hook that is fixed in place. Escaping the Manacles requires a successful DC 20 Dexterity (Sleight of Hand) check as an action. Bursting them requires a successful DC 25 Strength (Athletics) check as an action.\n\nEach set of Manacles comes with a key. Without the key, a creature can use Thieves' Tools to pick the Manacles' lock with a successful DC 15 Dexterity (Sleight of Hand) check.",
+      "text_de": "Als Verwenden-Aktion kannst du Handschellen benutzen, um eine widerstrebende kleine oder mittelgroße Kreatur im Abstand von bis zu 1,5 Metern von dir zu fesseln, wenn sie gepackt, kampfunfähig oder festgesetzt ist und du einen SG-13-Geschicklichkeitswurf (Fingerfertigkeit) bestehst. Solange die Kreatur gefesselt ist, ist sie bei Angriffswürfen im Nachteil, und sie ist festgesetzt, falls die Handschellen an einer Kette oder einem Haken befestigt sind, die beziehungsweise der nicht bewegt werden kann. Das Entkommen aus den Handschellen erfordert eine erfolgreiche SG-20-Geschicklichkeitsprobe (Fingerfertigkeit) als Aktion. Das Zerbrechen der Handschellen erfordert eine erfolgreiche SG-25-Stärkeprobe (Athletik) als Aktion.\r\n\r\nJedem Satz Handschellen liegt ein Schlüssel bei. Ohne Schlüssel kann eine Kreatur mit Diebeswerkzeug das Schloss der Handschellen mit einer erfolgreichen SG-15-Geschicklichkeitsprobe (Fingerfertigkeit) knacken.",
+      "variants": null
+    },
+    {
+      "id": "map",
+      "name_en": "Map",
+      "name_de": "Karte",
+      "category": "gear",
+      "weight": "—",
+      "cost": "1 GP",
+      "text_en": "If you consult an accurate Map, you gain a +5 bonus to Wisdom (Survival) checks you make to find your way in the place represented on it.",
+      "text_de": "Wenn du eine korrekte Karte zurate ziehst, erhältst du einen Bonus von +5 auf Weisheitswürfe (Überlebenskunst), die du machst, um dich an dem auf der Karte dargestellten Ort zurechtzufinden.",
+      "variants": null
+    },
+    {
+      "id": "mirror",
+      "name_en": "Mirror",
+      "name_de": "Spiegel",
+      "category": "gear",
+      "weight": "1/2 lb.",
+      "cost": "5 GP",
+      "text_en": "A handheld steel Mirror is useful for personal cosmetics but also for peeking around corners and reflecting light as a signal.",
+      "text_de": "Ein kleiner Stahlspiegel ist nützlich für Kosmetik, aber auch dafür, um um Ecken zu spähen und Licht als Signal zu reflektieren.",
+      "variants": null
+    },
+    {
+      "id": "net",
+      "name_en": "Net",
+      "name_de": "Netz",
+      "category": "gear",
+      "weight": "3 lb.",
+      "cost": "1 GP",
+      "text_en": "When you take the Attack action, you can replace one of your attacks with throwing a Net. Target a creature you can see within 15 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or have the Restrained condition until it escapes. The target succeeds automatically if it is Huge or larger.\n\nTo escape, the target or a creature within 5 feet of it must take an action to make a DC 10 Strength (Athletics) check, freeing the Restrained creature on a success. Destroying the Net (AC 10; 5 HP; Immunity to Bludgeoning, Poison, and Psychic damage) also frees the target, ending the effect.",
+      "text_de": "Wenn du die Angriffsaktion ausführst, kannst du einen deiner Angriffe durch das Werfen eines Netzes ersetzen. Wähle eine Kreatur aus, die du im Abstand von bis zu 4,5 Metern von dir sehen kannst. Das Ziel muss einen Geschicklichkeitsrettungswurf (SG 8 plus dein Geschicklichkeitsmodifikator plus dein Übungsbonus) bestehen, oder es ist festgesetzt, bis es entkommt. Das Ziel besteht automatisch, wenn es riesig oder größer ist.\r\n\r\nUm zu entkommen, muss das Ziel oder eine Kreatur im Abstand von bis zu 1,5 Metern von ihm eine Aktion verwenden, um einen SG-10-Stärkewurf (Athletik) auszuführen. Bei Erfolg wird die festgesetzte Kreatur befreit. Wird das Netz zerstört (RK 10; 5 Trefferpunkte; Immunität gegen Wucht-, Gift- und Psychoschaden), endet der Effekt ebenfalls.",
+      "variants": null
+    },
+    {
+      "id": "oil",
+      "name_en": "Oil",
+      "name_de": "Öl",
+      "category": "consumable",
+      "weight": "1 lb.",
+      "cost": "1 SP",
+      "text_en": "You can douse a creature, object, or space with Oil or use it as fuel, as detailed below.\n\nDousing a Creature or an Object:\n\nWhen you take the Attack action, you can replace one of your attacks with throwing an Oil flask. Target one creature or object within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or be covered in oil. If the target takes Fire damage before the oil dries (after 1 minute), the target takes an extra 5 Fire damage from burning oil.\n\nDousing a Space:\n\nYou can take the Utilize action to pour an Oil flask on level ground to cover a 5-foot-square area within 5 feet of yourself. If lit, the oil burns until the end of the turn 2 rounds from when the oil was lit (or 12 seconds) and deals 5 Fire damage to any creature that enters the area or ends its turn there. A creature can take this damage only once per turn.\n\nFuel:\n\nOil serves as fuel for Lamps and Lanterns. Once lit, a flask of Oil burns for 6 hours in a Lamp or Lantern. That duration doesn't need to be consecutive; you can extinguish the burning Oil (as a Utilize action) and rekindle it again until it has burned for a total of 6 hours.",
+      "text_de": "Du kannst eine Kreatur, einen Gegenstand oder einen Bereich mit Öl bedecken oder es als Brennstoff verwenden, wie nachfolgend beschrieben.\r\n\r\n**Eine Kreatur oder einen Gegenstand bedecken:** Wenn du die Angriffsaktion ausführst, kannst du einen deiner Angriffe dadurch ersetzen, dass du eine Flasche Öl wirfst. Wähle eine Kreatur oder einen Gegenstand im Abstand von bis zu 6 Metern von dir aus. Das Ziel muss einen Geschicklichkeitsrettungswurf (SG 8 plus dein Geschicklichkeitsmodifikator plus dein Übungsbonus) bestehen, oder es ist mit Öl bedeckt. Wenn das Ziel Feuerschaden erleidet, bevor das Öl trocknet (nach 1 Minute), erleidet es durch das brennende Öl zusätzliche 5 Feuerschaden.\r\n\r\n**Einen Bereich bedecken:** Du kannst die Verwenden-Aktion ausführen, um eine Flasche Öl auf ebenem Boden auszuschütten und einen Bereich von 1,5 Metern Seitenlänge im Abstand von bis zu 1,5 Metern von dir zu bedecken. Wird das Öl entzündet, brennt es bis zum Ende des Zuges 2 Runden nach dem Entzünden (also 12 Sekunden lang) und verursacht 5 Feuerschaden bei jeder Kreatur, die den Bereich betritt oder ihren Zug darin beendet. Eine Kreatur kann diesen Schaden nur einmal pro Zug erleiden.\r\n\r\n**Brennstoff:** Öl dient als Brennstoff für Lampen und Laternen. Einmal entzündet, brennt eine Flasche Öl 6 Stunden lang in einer Lampe oder Laterne. Diese Dauer muss nicht zusammenhängend sein; du kannst das brennende Öl löschen (als Verwenden-Aktion) und später erneut entzünden, bis es insgesamt 6 Stunden gebrannt hat.",
+      "variants": null
+    },
+    {
+      "id": "paper",
+      "name_en": "Paper",
+      "name_de": "Papier",
+      "category": "gear",
+      "weight": "—",
+      "cost": "2 SP",
+      "text_en": "One sheet of Paper can hold about 250 handwritten words.",
+      "text_de": "Ein Bogen Papier fasst etwa 250 handgeschriebene Wörter.",
+      "variants": null
+    },
+    {
+      "id": "parchment",
+      "name_en": "Parchment",
+      "name_de": "Pergament",
+      "category": "gear",
+      "weight": "—",
+      "cost": "1 SP",
+      "text_en": "One sheet of Parchment can hold about 250 handwritten words.",
+      "text_de": "Ein Bogen Pergament fasst etwa 250 handgeschriebene Wörter.",
+      "variants": null
+    },
+    {
+      "id": "perfume",
+      "name_en": "Perfume",
+      "name_de": "Parfüm",
+      "category": "consumable",
+      "weight": "—",
+      "cost": "5 GP",
+      "text_en": "Perfume comes in a 4-ounce vial. For 1 hour after applying Perfume to yourself, you have Advantage on Charisma (Persuasion) checks made to influence an Indifferent Humanoid within 5 feet of yourself.",
+      "text_de": "Parfüm wird in einer 120-Milliliter-Phiole verkauft. Für 1 Stunde nach dem Auftragen von Parfüm auf dich selbst bist du bei Charismawürfen (Überzeugen) im Vorteil, die du machst, um einen gleichgültigen Humanoiden im Abstand von bis zu 1,5 Metern zu beeinflussen.",
+      "variants": null
+    },
+    {
+      "id": "basic-poison",
+      "name_en": "Poison, Basic",
+      "name_de": "Gift (einfach)",
+      "category": "consumable",
+      "weight": "—",
+      "cost": "100 GP",
+      "text_en": "As a Bonus Action, you can use a vial of Basic Poison to coat one weapon or up to three pieces of ammunition. A creature that takes Piercing or Slashing damage from the poisoned weapon or ammunition takes an extra 1d4 Poison damage. Once applied, the poison retains potency for 1 minute or until its damage is dealt, whichever comes first.",
+      "text_de": "Als Bonusaktion kannst du eine Phiole mit Einfachem Gift verwenden, um eine Waffe oder bis zu drei Stück Munition zu bestreichen. Eine Kreatur, die durch die vergiftete Waffe oder Munition Stich- oder Hiebschaden erleidet, erleidet zusätzlich 1W4 Giftschaden. Nachdem das Gift aufgetragen wurde, behält es seine Wirksamkeit 1 Minute lang oder bis sein Schaden zum ersten Mal verursacht wird.",
+      "variants": null
+    },
+    {
+      "id": "pole",
+      "name_en": "Pole",
+      "name_de": "Stange",
+      "category": "gear",
+      "weight": "7 lb.",
+      "cost": "5 CP",
+      "text_en": "A Pole is 10 feet long. You can use it to touch something up to 10 feet away. If you must make a Strength (Athletics) check as part of a High or Long Jump, you can use the Pole to vault, giving yourself Advantage on the check.",
+      "text_de": "Eine Stange ist 3 Meter lang. Du kannst sie verwenden, um etwas im Abstand von bis zu 3 Metern zu berühren. Wenn du im Rahmen eines Hoch- oder Weitsprungs einen Stärkewurf (Athletik) machen musst, kannst du die Stange zum Stabhochsprung verwenden und dir Vorteil auf den Wurf verschaffen.",
+      "variants": null
+    },
+    {
+      "id": "iron-pot",
+      "name_en": "Pot, Iron",
+      "name_de": "Topf, Eisen",
+      "category": "container",
+      "weight": "10 lb.",
+      "cost": "2 GP",
+      "text_en": "An Iron Pot holds up to 1 gallon.",
+      "text_de": "Ein eiserner Topf fasst bis zu 4,5 Liter.",
+      "variants": null
+    },
+    {
+      "id": "potion-of-healing",
+      "name_en": "Potion of Healing",
+      "name_de": "Heiltrank",
+      "category": "magic_item",
+      "weight": "1/2 lb.",
+      "cost": "50 GP",
+      "text_en": "This potion is a magic item. As a Bonus Action, you can drink it or administer it to another creature within 5 feet of yourself. The creature that drinks the magical red fluid in this vial regains 2d4 + 2 Hit Points.",
+      "text_de": "Dieser Trank ist ein magischer Gegenstand. Als Bonusaktion kannst du ihn trinken oder ihn einer anderen Kreatur im Abstand von bis zu 1,5 Metern von dir verabreichen. Die Kreatur, die die magische rote Flüssigkeit in dieser Phiole trinkt, erhält 2W4 + 2 Trefferpunkte zurück.",
+      "variants": null
+    },
+    {
+      "id": "pouch",
+      "name_en": "Pouch",
+      "name_de": "Beutel",
+      "category": "container",
+      "weight": "1 lb.",
+      "cost": "5 SP",
+      "text_en": "A Pouch holds up to 6 pounds within one-fifth of a cubic foot.",
+      "text_de": "Ein Beutel fasst bis zu drei Kilogramm in einem Volumen von 5,6 Litern.",
+      "variants": null
+    },
+    {
+      "id": "priests-pack",
+      "name_en": "Priest's Pack",
+      "name_de": "Priesterausrüstung",
+      "category": "pack",
+      "weight": "29 lb.",
+      "cost": "33 GP",
+      "text_en": "A Priest's Pack contains the following items: Backpack, Blanket, Holy Water, Lamp, 7 days of Rations, Robe, and Tinderbox.",
+      "text_de": "Eine Priesterausrüstung enthält folgende Gegenstände: Decke, Heiliges Wasser, Lampe, sieben Tagesrationen, Robe, Rucksack und Zunderkästchen.",
+      "contents": [
+        {
+          "item_id": "backpack",
+          "qty": 1
+        },
+        {
+          "item_id": "blanket",
+          "qty": 1
+        },
+        {
+          "item_id": "holy-water",
+          "qty": 1
+        },
+        {
+          "item_id": "lamp",
+          "qty": 1
+        },
+        {
+          "item_id": "rations",
+          "qty": 7
+        },
+        {
+          "item_id": "robe",
+          "qty": 1
+        },
+        {
+          "item_id": "tinderbox",
+          "qty": 1
+        }
+      ],
+      "variants": null
+    },
+    {
+      "id": "quiver",
+      "name_en": "Quiver",
+      "name_de": "Köcher",
+      "category": "container",
+      "weight": "1 lb.",
+      "cost": "1 GP",
+      "text_en": "A Quiver holds up to 20 Arrows.",
+      "text_de": "Ein Köcher fasst bis zu 20 Pfeile.",
+      "variants": null
+    },
+    {
+      "id": "portable-ram",
+      "name_en": "Ram, Portable",
+      "name_de": "Rammbock (tragbar)",
+      "category": "gear",
+      "weight": "35 lb.",
+      "cost": "4 GP",
+      "text_en": "You can use a Portable Ram to break down doors. When doing so, you gain a +4 bonus to the Strength check. One other character can help you use the ram, giving you Advantage on this check.",
+      "text_de": "Du kannst einen tragbaren Rammbock zum Aufbrechen von Türen verwenden. Wenn du das tust, erhältst du einen Bonus von +4 auf den Stärkewurf. Eine weitere Person kann dir helfen und dir dadurch Vorteil auf diesen Wurf verschaffen.",
+      "variants": null
+    },
+    {
+      "id": "rations",
+      "name_en": "Rations",
+      "name_de": "Rationen",
+      "category": "consumable",
+      "weight": "2 lb.",
+      "cost": "5 SP",
+      "text_en": "Rations consist of travel-ready food, including jerky, dried fruit, hardtack, and nuts. See \"Malnutrition\" in the rules glossary for the risks of not eating.",
+      "text_de": "Rationen bestehen aus reisetauglichen Nahrungsmitteln wie Dörrfleisch, Trockenobst, Hartkeksen und Nüssen. Im Regelglossar unter „Mangelernährung“ sind die Risiken des Nichtessens beschrieben.",
+      "variants": null
+    },
+    {
+      "id": "robe",
+      "name_en": "Robe",
+      "name_de": "Robe",
+      "category": "gear",
+      "weight": "4 lb.",
+      "cost": "1 GP",
+      "text_en": "A Robe has vocational or ceremonial significance. Some events and locations admit only people wearing a Robe bearing certain colors or symbols.",
+      "text_de": "Eine Robe hat berufliche oder zeremonielle Bedeutung. Manche Veranstaltungen und Orte lassen nur Personen in einer Robe zu, die bestimmte Farben oder Symbole trägt.",
+      "variants": null
+    },
+    {
+      "id": "rope",
+      "name_en": "Rope",
+      "name_de": "Seil",
+      "category": "gear",
+      "weight": "5 lb.",
+      "cost": "1 GP",
+      "text_en": "As a Utilize action, you can tie a knot with Rope if you succeed on a DC 10 Dexterity (Sleight of Hand) check. The Rope can be burst with a successful DC 20 Strength (Athletics) check.\n\nYou can bind an unwilling creature with the Rope only if the creature has the Grappled, Incapacitated, or Restrained condition. If the creature's legs are bound, the creature has the Restrained condition until it escapes. Escaping the Rope requires the creature to make a successful DC 15 Dexterity (Acrobatics) check as an action.",
+      "text_de": "Als Verwenden-Aktion kannst du ein Seil verknoten, wenn du einen SG-10-Geschicklichkeitswurf (Fingerfertigkeit) bestehst. Das Seil kann mit einem erfolgreichen SG-20-Stärkewurf (Athletik) zerrissen werden.\r\n\r\nDu kannst eine widerstrebende Kreatur mit dem Seil nur dann fesseln, wenn die Kreatur gepackt, kampfunfähig oder festgesetzt ist. Wenn die Beine der Kreatur gebunden sind, ist sie festgesetzt, bis sie entkommt. Das Entkommen aus dem Seil erfordert eine erfolgreiche SG-15-Geschicklichkeitsprobe (Akrobatik) als Aktion.",
+      "variants": null
+    },
+    {
+      "id": "sack",
+      "name_en": "Sack",
+      "name_de": "Sack",
+      "category": "container",
+      "weight": "1/2 lb.",
+      "cost": "1 CP",
+      "text_en": "A Sack holds up to 30 pounds within 1 cubic foot.",
+      "text_de": "Ein Sack fasst bis zu 15 Kilogramm bei einem Volumen von 28 Litern.",
+      "variants": null
+    },
+    {
+      "id": "scholars-pack",
+      "name_en": "Scholar's Pack",
+      "name_de": "Gelehrtenausrüstung",
+      "category": "pack",
+      "weight": "22 lb.",
+      "cost": "40 GP",
+      "text_en": "A Scholar's Pack contains the following items: Backpack, Book, Ink, Ink Pen, Lamp, 10 flasks of Oil, 10 sheets of Parchment, and Tinderbox.",
+      "text_de": "Eine Gelehrtenausrüstung enthält folgende Gegenstände: Buch, Lampe, zehn Flaschen Öl, zehn Bögen Pergament, Rucksack, Tinte, Tintenfüller und Zunderkästchen.",
+      "contents": [
+        {
+          "item_id": "backpack",
+          "qty": 1
+        },
+        {
+          "item_id": "book",
+          "qty": 1
+        },
+        {
+          "item_id": "ink",
+          "qty": 1
+        },
+        {
+          "item_id": "ink-pen",
+          "qty": 1
+        },
+        {
+          "item_id": "lamp",
+          "qty": 1
+        },
+        {
+          "item_id": "oil",
+          "qty": 10
+        },
+        {
+          "item_id": "parchment",
+          "qty": 10
+        },
+        {
+          "item_id": "tinderbox",
+          "qty": 1
+        }
+      ],
+      "variants": null
+    },
+    {
+      "id": "shovel",
+      "name_en": "Shovel",
+      "name_de": "Schaufel",
+      "category": "gear",
+      "weight": "5 lb.",
+      "cost": "2 GP",
+      "text_en": "Working for 1 hour, you can use a Shovel to dig a hole that is 5 feet on each side in soil or similar material.",
+      "text_de": "Mit einer Stunde Arbeit kannst du mit einer Schaufel ein Loch ausheben, das in Erde oder ähnlichem Material 1,5 Meter lang, breit und tief ist.",
+      "variants": null
+    },
+    {
+      "id": "signal-whistle",
+      "name_en": "Signal Whistle",
+      "name_de": "Signalpfeife",
+      "category": "gear",
+      "weight": "—",
+      "cost": "5 CP",
+      "text_en": "When blown as a Utilize action, a Signal Whistle produces a sound that can be heard up to 600 feet away.",
+      "text_de": "Wenn du eine Signalpfeife mithilfe der Verwenden-Aktion bläst, ist ihr Ton bis zu 180 Meter weit zu hören.",
+      "variants": null
+    },
+    {
+      "id": "spell-scroll",
+      "name_en": "Spell Scroll",
+      "name_de": "Zauberschriftrolle",
+      "category": "magic_item",
+      "weight": "—",
+      "cost": "Varies",
+      "text_en": "A Spell Scroll (Cantrip) or Spell Scroll (Level 1) is a magic item that bears the words of a cantrip or level 1 spell, respectively, determined by the scroll's creator. If the spell is on your class's spell list, you can read the scroll and cast the spell using its normal casting time and without providing any Material components.\n\nIf the spell requires a saving throw or an attack roll, the spell save DC is 13, and the attack bonus is +5. The scroll disintegrates when the casting is completed.",
+      "text_de": "Eine *Zauberschriftrolle* (Zaubertrick) oder *Zauberschriftrolle* (1. Grad) ist ein magischer Gegenstand, der die Worte eines Zaubertricks beziehungsweise eines Zaubers des 1. Grades enthält, der vom Erschaffer der Rolle festgelegt wurde. Wenn sich der Zauber auf der Zauberliste deiner Klasse befindet, kannst du die Rolle lesen und den Zauber mit seiner normalen Wirkzeit ausführen, ohne Materialkomponenten bereitzustellen.\r\n\r\nWenn der Zauber einen Rettungswurf oder einen Angriffswurf erfordert, beträgt der Zauberrettungswurf-SG 13 und der Angriffsbonus +5. Die Rolle zerfällt, wenn das Wirken abgeschlossen ist.",
+      "variants": [
+        {
+          "name_en": "Spell Scroll (Cantrip)",
+          "name_de": "Zauberschriftrolle (Zaubertrick)",
+          "weight": "—",
+          "cost": "30 GP"
+        },
+        {
+          "name_en": "Spell Scroll (Level 1)",
+          "name_de": "Zauberschriftrolle (1. Grad)",
+          "weight": "—",
+          "cost": "50 GP"
+        }
+      ]
+    },
+    {
+      "id": "spellbook",
+      "name_en": "Spellbook",
+      "name_de": "Zauberbuch",
+      "category": "gear",
+      "weight": "3 lb.",
+      "cost": "50 GP",
+      "text_en": "A Spellbook is a leather-bound tome with 100 blank vellum pages suitable for recording spells. A Wizard uses it to record the arcane formulas for their spells.",
+      "text_de": "Ein Zauberbuch ist ein ledergebundenes Buch mit 100 leeren Pergamentseiten, auf denen Zauber aufgezeichnet werden können. Ein Magier nutzt es, um die arkanen Formeln seiner Zaubersprüche festzuhalten.",
+      "variants": null
+    },
+    {
+      "id": "iron-spikes",
+      "name_en": "Spikes, Iron",
+      "name_de": "Stachel, Eisen",
+      "category": "gear",
+      "weight": "5 lb.",
+      "cost": "1 GP",
+      "text_en": "Iron Spikes come in bundles of ten. As a Utilize action, you can use a blunt object, such as a Light Hammer, to hammer a spike into wood, earth, or a similar material. You can do so to jam a door shut or to then tie a Rope or Chain to the Spike.",
+      "text_de": "Eisenstachel werden in Bündeln zu zehn Stück verkauft. Als Verwenden-Aktion kannst du mit einem stumpfen Gegenstand, beispielsweise einem leichten Hammer, einen Eisenstachel in Holz, Erde oder ähnliches Material treiben. So kannst du etwa eine Tür verkeilen oder ein Seil oder eine Kette an dem Eisenstachel befestigen.",
+      "variants": null
+    },
+    {
+      "id": "spyglass",
+      "name_en": "Spyglass",
+      "name_de": "Fernrohr",
+      "category": "gear",
+      "weight": "1 lb.",
+      "cost": "1,000 GP",
+      "text_en": "Objects viewed through a Spyglass are magnified to twice their size.",
+      "text_de": "Durch ein Fernrohr erscheint alles doppelt so groß.",
+      "variants": null
+    },
+    {
+      "id": "string",
+      "name_en": "String",
+      "name_de": "Schnur",
+      "category": "gear",
+      "weight": "—",
+      "cost": "1 SP",
+      "text_en": "String is 10 feet long. You can tie a knot in it as a Utilize action.",
+      "text_de": "Schnur ist 3 Meter lang. Du kannst sie als Verwenden-Aktion verknoten.",
+      "variants": null
+    },
+    {
+      "id": "tent",
+      "name_en": "Tent",
+      "name_de": "Zelt",
+      "category": "gear",
+      "weight": "20 lb.",
+      "cost": "2 GP",
+      "text_en": "A Tent sleeps up to two Small or Medium creatures.",
+      "text_de": "Ein Zelt bietet bis zu zwei kleinen oder mittelgroßen Kreaturen Platz zum Schlafen.",
+      "variants": null
+    },
+    {
+      "id": "tinderbox",
+      "name_en": "Tinderbox",
+      "name_de": "Zunderkästchen",
+      "category": "gear",
+      "weight": "1 lb.",
+      "cost": "5 SP",
+      "text_en": "A Tinderbox is a small container holding flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a Candle, Lamp, Lantern, or Torch—or anything else with exposed fuel—takes a Bonus Action. Lighting any other fire takes 1 minute.",
+      "text_de": "Ein Zunderkästchen ist ein kleiner Behälter mit Feuerstein, Schlagstahl und Zunder (normalerweise trockenes, in leichtem Öl getränktes Tuch), der zum Entfachen eines Feuers verwendet wird. Damit eine Kerze, Lampe, Laterne oder Fackel – oder alles andere mit offenem Brennstoff – anzuzünden, dauert eine Bonusaktion. Ein anderes Feuer zu entzünden dauert 1 Minute.",
+      "variants": null
+    },
+    {
+      "id": "torch",
+      "name_en": "Torch",
+      "name_de": "Fackel",
+      "category": "gear",
+      "weight": "1 lb.",
+      "cost": "1 CP",
+      "text_en": "A Torch burns for 1 hour, casting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. When you take the Attack action, you can attack with the Torch, using it as a Simple Melee weapon. On a hit, the target takes 1 Fire damage.",
+      "text_de": "Eine Fackel brennt eine Stunde lang. Sie spendet in einem Radius von sechs Metern helles Licht und in einem Radius von weiteren sechs Metern dämmriges Licht. Mithilfe der Angriffsaktion kannst du mit der Fackel angreifen, wobei du sie als einfache Nahkampfwaffe verwendest. Bei einem Treffer erleidet das Ziel 1 Feuerschaden.",
+      "variants": null
+    },
+    {
+      "id": "vial",
+      "name_en": "Vial",
+      "name_de": "Phiole",
+      "category": "container",
+      "weight": "—",
+      "cost": "1 GP",
+      "text_en": "A Vial holds up to 4 ounces.",
+      "text_de": "Eine Phiole fasst bis zu 120 Milliliter.",
+      "variants": null
+    },
+    {
+      "id": "waterskin",
+      "name_en": "Waterskin",
+      "name_de": "Trinkschlauch",
+      "category": "container",
+      "weight": "5 lb. (full)",
+      "cost": "2 SP",
+      "text_en": "A Waterskin holds up to 4 pints. If you don't drink sufficient water, you risk dehydration (see the rules glossary).",
+      "text_de": "Ein Trinkschlauch fasst bis zu 2 Liter. Wenn du nicht genügend Wasser trinkst, droht dir Dehydrierung (siehe Regelglossar).",
+      "variants": null
+    }
   ]
 }

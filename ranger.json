@@ -42,21 +42,52 @@
         {
           "id": "option_a",
           "items": [
-            "studded_leather_armor",
-            "scimitar",
-            "shortsword",
-            "longbow",
-            "arrows_x20",
-            "quiver",
-            "druidic_focus_mistletoe",
-            "explorers_pack",
-            "7gp"
+            {
+              "item_id": "studded-leather-armor",
+              "qty": 1
+            },
+            {
+              "item_id": "scimitar",
+              "qty": 1
+            },
+            {
+              "item_id": "shortsword",
+              "qty": 1
+            },
+            {
+              "item_id": "longbow",
+              "qty": 1
+            },
+            {
+              "item_id": "ammunition",
+              "variant": "arrows",
+              "qty": 20
+            },
+            {
+              "item_id": "quiver",
+              "qty": 1
+            },
+            {
+              "item_id": "druidic-focus",
+              "qty": 1
+            },
+            {
+              "item_id": "explorers-pack",
+              "qty": 1
+            },
+            {
+              "type": "gold",
+              "amount": 7
+            }
           ]
         },
         {
           "id": "option_b",
           "items": [
-            "150gp"
+            {
+              "type": "gold",
+              "amount": 150
+            }
           ]
         }
       ]

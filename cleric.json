@@ -37,18 +37,39 @@
         {
           "id": "option_a",
           "items": [
-            "chain_shirt",
-            "shield",
-            "mace",
-            "holy_symbol",
-            "priests_pack",
-            "7gp"
+            {
+              "item_id": "chain-shirt",
+              "qty": 1
+            },
+            {
+              "item_id": "shield",
+              "qty": 1
+            },
+            {
+              "item_id": "mace",
+              "qty": 1
+            },
+            {
+              "item_id": "holy-symbol",
+              "qty": 1
+            },
+            {
+              "item_id": "priests-pack",
+              "qty": 1
+            },
+            {
+              "type": "gold",
+              "amount": 7
+            }
           ]
         },
         {
           "id": "option_b",
           "items": [
-            "110gp"
+            {
+              "type": "gold",
+              "amount": 110
+            }
           ]
         }
       ]

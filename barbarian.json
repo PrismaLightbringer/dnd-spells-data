@@ -39,16 +39,31 @@
         {
           "id": "option_a",
           "items": [
-            "greataxe",
-            "handaxe_x4",
-            "explorers_pack",
-            "15gp"
+            {
+              "item_id": "greataxe",
+              "qty": 1
+            },
+            {
+              "item_id": "handaxe",
+              "qty": 4
+            },
+            {
+              "item_id": "explorers-pack",
+              "qty": 1
+            },
+            {
+              "type": "gold",
+              "amount": 15
+            }
           ]
         },
         {
           "id": "option_b",
           "items": [
-            "75gp"
+            {
+              "type": "gold",
+              "amount": 75
+            }
           ]
         }
       ]
