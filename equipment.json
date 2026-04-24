@@ -2750,5 +2750,37 @@
       "text_de": "Ein Trinkschlauch fasst bis zu 2 Liter. Wenn du nicht genügend Wasser trinkst, droht dir Dehydrierung (siehe Regelglossar).",
       "variants": null
     }
-  ]
+  ],
+  "weapon_property_labels_en": {
+    "light":      "Light",
+    "finesse":    "Finesse",
+    "thrown":     "Thrown",
+    "versatile":  "Versatile",
+    "two-handed": "Two-Handed",
+    "reach":      "Reach",
+    "ammunition": "Ammunition",
+    "loading":    "Loading",
+    "heavy":      "Heavy"
+  },
+  "weapon_property_labels_de": {
+    "light":      "Leicht",
+    "finesse":    "Finesse",
+    "thrown":     "Wurf",
+    "versatile":  "Vielseitig",
+    "two-handed": "Zweihändig",
+    "reach":      "Reichweite",
+    "ammunition": "Munition",
+    "loading":    "Ladend",
+    "heavy":      "Schwer"
+  },
+  "weapon_damage_type_labels_en": {
+    "bludgeoning": "Bludgeoning",
+    "piercing":    "Piercing",
+    "slashing":    "Slashing"
+  },
+  "weapon_damage_type_labels_de": {
+    "bludgeoning": "Wucht",
+    "piercing":    "Stich",
+    "slashing":    "Hieb"
+  }
 }
