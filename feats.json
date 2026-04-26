@@ -8,6 +8,19 @@
     "prerequisite_de": null,
     "repeatable": false,
     "ability_score_increase": null,
+    "summary_en": "Add your Proficiency Bonus to Initiative rolls. After rolling Initiative, you can swap your result with one willing ally's.",
+    "summary_de": "Übungsbonus auf Initiativewürfe addieren. Nach dem Auswürfeln der Initiative kannst du dein Ergebnis mit dem eines bereitwilligen Verbündeten tauschen.",
+    "grants": [
+      {
+        "type": "initiative_bonus",
+        "value": "proficiency_bonus"
+      },
+      {
+        "type": "special",
+        "description_en": "Immediately after rolling Initiative, you can swap your Initiative with one willing ally in the same combat. Not possible if either has the Incapacitated condition.",
+        "description_de": "Sofort nach dem Auswürfeln der Initiative kannst du deine Initiative mit der eines bereitwilligen Verbündeten tauschen. Nicht möglich, wenn einer von euch kampfunfähig ist."
+      }
+    ],
     "benefits": [
       {
         "name_en": "Initiative Proficiency",
@@ -32,6 +45,24 @@
     "prerequisite_de": null,
     "repeatable": false,
     "ability_score_increase": null,
+    "summary_en": "Proficiency with 3 Artisan's Tools of your choice. 20% discount on nonmagical item purchases. After a Long Rest, craft one temporary item from the Fast Crafting table (lasts until your next Long Rest).",
+    "summary_de": "Übung mit 3 Handwerkszeugen deiner Wahl. 20 % Rabatt auf nichtmagische Gegenstände. Nach einer langen Rast einen temporären Gegenstand aus der Tabelle Flinkes Handwerk herstellen (hält bis zur nächsten langen Rast).",
+    "grants": [
+      {
+        "type": "tool_proficiency",
+        "tools": ["artisans_tools_choice_3"]
+      },
+      {
+        "type": "special",
+        "description_en": "You receive a 20% discount whenever you buy a nonmagical item.",
+        "description_de": "Du erhältst einen Rabatt von 20 % auf jeden Kauf eines nichtmagischen Gegenstands."
+      },
+      {
+        "type": "special",
+        "description_en": "After a Long Rest, craft one item from the Fast Crafting table using the associated Artisan's Tools (requires proficiency). The item lasts until your next Long Rest.",
+        "description_de": "Nach einer langen Rast kannst du einen Gegenstand aus der Tabelle Flinkes Handwerk herstellen (Übung mit dem zugehörigen Werkzeug erforderlich). Der Gegenstand hält bis zur nächsten langen Rast."
+      }
+    ],
     "benefits": [
       {
         "name_en": "Tool Proficiency",
@@ -62,6 +93,23 @@
     "prerequisite_de": null,
     "repeatable": false,
     "ability_score_increase": null,
+    "summary_en": "Utilize action: expend one Healer's Kit use so a creature within 5 ft spends a Hit Die and regains HP equal to the roll + your Proficiency Bonus. Reroll 1s on any healing dice you roll.",
+    "summary_de": "Verwenden-Aktion: Heilerausrüstung verbrauchen, damit eine Kreatur im Abstand von 1,5 m einen Trefferwürfel verbraucht und TP in Höhe des Wurfs + Übungsbonus erhält. Heilungswürfel mit Ergebnis 1 erneut würfeln.",
+    "grants": [
+      {
+        "type": "active_ability",
+        "ability_id": "battle_medic",
+        "action_type": "utilize",
+        "cost": { "resource": "healers_kit_uses", "amount": 1 },
+        "description_en": "Tend to a creature within 5 ft. It expends one Hit Die; you roll it and the creature regains HP equal to the roll + your Proficiency Bonus.",
+        "description_de": "Eine Kreatur im Abstand von 1,5 m versorgen. Sie verbraucht einen Trefferwürfel; du würfelst ihn und die Kreatur erhält TP in Höhe des Würfelergebnisses + Übungsbonus zurück."
+      },
+      {
+        "type": "special",
+        "description_en": "Whenever you roll a die to determine HP restored (from a spell or Battle Medic), you can reroll if the result is a 1, and must use the new roll.",
+        "description_de": "Wann immer du für die Wiederherstellung von TP würfelst (durch Zauber oder Kampfheiler), kannst du bei einem Ergebnis von 1 erneut würfeln und musst das neue Ergebnis verwenden."
+      }
+    ],
     "benefits": [
       {
         "name_en": "Battle Medic",
@@ -86,6 +134,28 @@
     "prerequisite_de": null,
     "repeatable": false,
     "ability_score_increase": null,
+    "summary_en": "Luck Points equal to your Proficiency Bonus (recharge: Long Rest). Spend 1 for Advantage on a D20 Test, or spend 1 to impose Disadvantage on an attack roll against you.",
+    "summary_de": "Glückspunkte in Höhe des Übungsbonus (Aufladung: Lange Rast). 1 Punkt ausgeben für Vorteil bei einer W20-Prüfung oder Nachteil auf einen Angriffswurf gegen dich.",
+    "grants": [
+      {
+        "type": "active_ability",
+        "ability_id": "luck_points",
+        "uses": "proficiency_bonus",
+        "recharge": "long_rest"
+      },
+      {
+        "type": "special",
+        "description_en": "Spend 1 Luck Point to gain Advantage on a D20 Test.",
+        "description_de": "1 Glückspunkt ausgeben, um bei einer W20-Prüfung im Vorteil zu sein.",
+        "cost": { "resource": "luck_points", "amount": 1 }
+      },
+      {
+        "type": "special",
+        "description_en": "Spend 1 Luck Point to impose Disadvantage on an attack roll against you.",
+        "description_de": "1 Glückspunkt ausgeben, um Nachteil auf einen Angriffswurf gegen dich zu erzwingen.",
+        "cost": { "resource": "luck_points", "amount": 1 }
+      }
+    ],
     "benefits": [
       {
         "name_en": "Luck Points",
@@ -116,6 +186,28 @@
     "prerequisite_de": null,
     "repeatable": true,
     "ability_score_increase": null,
+    "summary_en": "Learn 2 cantrips and always have 1 level 1 spell prepared from one chosen list (Cleric, Druid, or Wizard). Cast the level 1 spell once for free per Long Rest; also castable with spell slots. Repeatable with a different list.",
+    "summary_de": "2 Zaubertricks erlernen und stets einen Zauber des 1. Grades vorbereitet haben, von einer gewählten Liste (Kleriker, Druide oder Magier). Den 1.-Grades-Zauber einmal pro langer Rast kostenlos wirken; auch mit Zauberplätzen möglich. Mit anderer Liste wiederholbar.",
+    "grants": [
+      {
+        "type": "spell_access",
+        "count": 2,
+        "spell_level": 0,
+        "source_list": "chosen_cleric_druid_or_wizard",
+        "spellcasting_ability": "chosen_intelligence_wisdom_or_charisma"
+      },
+      {
+        "type": "spell_access",
+        "count": 1,
+        "spell_level": 1,
+        "source_list": "chosen_same_as_cantrips",
+        "always_prepared": true,
+        "free_cast": { "uses": 1, "recharge": "long_rest" },
+        "spellcasting_ability": "chosen_intelligence_wisdom_or_charisma"
+      }
+    ],
+    "needs_review": true,
+    "review_notes": "Spell list and spellcasting ability are both player-determined at feat selection. Specific spell choices cannot be modeled without character-level state.",
     "benefits": [
       {
         "name_en": "Two Cantrips",
@@ -152,6 +244,19 @@
     "prerequisite_de": null,
     "repeatable": false,
     "ability_score_increase": null,
+    "summary_en": "Proficiency with 3 Musical Instruments of your choice. After a Short or Long Rest, play a song to grant Heroic Inspiration to a number of allies equal to your Proficiency Bonus.",
+    "summary_de": "Übung mit 3 Musikinstrumenten deiner Wahl. Nach einer kurzen oder langen Rast ein Lied spielen und einer Anzahl von Verbündeten in Höhe des Übungsbonus Heldische Inspiration verleihen.",
+    "grants": [
+      {
+        "type": "tool_proficiency",
+        "tools": ["musical_instrument_choice_3"]
+      },
+      {
+        "type": "special",
+        "description_en": "After finishing a Short or Long Rest, play a song on a Musical Instrument you have proficiency with to grant Heroic Inspiration to a number of allies equal to your Proficiency Bonus.",
+        "description_de": "Nach einer kurzen oder langen Rast kannst du auf einem Musikinstrument, mit dem du Übung hast, ein Lied spielen und einer Anzahl von Verbündeten in Höhe deines Übungsbonus Heldische Inspiration verleihen."
+      }
+    ],
     "benefits": [
       {
         "name_en": "Instrument Training",
@@ -176,6 +281,16 @@
     "prerequisite_de": null,
     "repeatable": false,
     "ability_score_increase": null,
+    "summary_en": "Once per turn when you hit with a weapon, roll the weapon's damage dice twice and use either result.",
+    "summary_de": "Einmal pro Zug kannst du, wenn du mit einer Waffe triffst, zweimal mit den Schadenswürfeln würfeln und dir eines der Ergebnisse aussuchen.",
+    "grants": [
+      {
+        "type": "special",
+        "description_en": "Once per turn when you hit a target with a weapon, roll the weapon's damage dice twice and use either roll.",
+        "description_de": "Einmal pro Zug kannst du, wenn du ein Ziel mit einer Waffe triffst, zweimal mit den Schadenswürfeln der Waffe würfeln und dir eines der Ergebnisse aussuchen.",
+        "frequency": "once_per_turn"
+      }
+    ],
     "benefits": [
       {
         "name_en": "Savage Attacker",
@@ -194,6 +309,15 @@
     "prerequisite_de": null,
     "repeatable": true,
     "ability_score_increase": null,
+    "summary_en": "Gain proficiency in any combination of three skills or tools of your choice. Repeatable.",
+    "summary_de": "Übung in drei Fertigkeiten oder Werkzeugen deiner Wahl in beliebiger Kombination. Kann wiederholt werden.",
+    "grants": [
+      {
+        "type": "special",
+        "description_en": "Gain proficiency in any combination of three skills or tools of your choice.",
+        "description_de": "Du erhältst Übung in drei Fertigkeiten oder Werkzeugen deiner Wahl in beliebiger Kombination."
+      }
+    ],
     "benefits": [
       {
         "name_en": "Skilled",
@@ -212,6 +336,29 @@
     "prerequisite_de": null,
     "repeatable": false,
     "ability_score_increase": null,
+    "summary_en": "Option to deal 1d4 + STR Bludgeoning with Unarmed Strikes. Reroll 1s on unarmed damage dice. Proficiency with improvised weapons. Once per turn when you hit with an Unarmed Strike (Attack action), push the target 5 feet.",
+    "summary_de": "Option: 1W4 + STR Wuchtschaden mit waffenlosem Angriff. Erneut würfeln bei waffenlosen Schadenswürfeln mit Ergebnis 1. Übung mit improvisierten Waffen. Einmal pro Zug nach Treffer mit waffenlosem Angriff (Angriffsaktion): Ziel 1,5 m wegstoßen.",
+    "grants": [
+      {
+        "type": "special",
+        "description_en": "When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to 1d4 + your Strength modifier instead of the normal Unarmed Strike damage.",
+        "description_de": "Wenn du mit deinem waffenlosen Angriff triffst, kannst du statt des normalen Schadens Wuchtschaden in Höhe von 1W4 + Stärkemodifikator verursachen."
+      },
+      {
+        "type": "special",
+        "description_en": "Whenever you roll a damage die for your Unarmed Strike, you can reroll if the result is a 1, and must use the new roll.",
+        "description_de": "Wann immer du für deinen waffenlosen Angriff mit einem Schadenswürfel würfelst, kannst du bei einem Ergebnis von 1 erneut würfeln und musst das neue Ergebnis verwenden."
+      },
+      {
+        "type": "weapon_proficiency",
+        "weapons": ["improvised"]
+      },
+      {
+        "type": "special",
+        "description_en": "Once per turn when you hit a creature with an Unarmed Strike as part of the Attack action, you can push it 5 feet away.",
+        "description_de": "Einmal pro Zug kannst du, wenn du als Teil der Angriffsaktion eine Kreatur mit einem waffenlosen Angriff triffst, sie 1,5 Meter von dir wegstoßen."
+      }
+    ],
     "benefits": [
       {
         "name_en": "Enhanced Unarmed Strike",
@@ -248,6 +395,14 @@
     "prerequisite_de": null,
     "repeatable": false,
     "ability_score_increase": null,
+    "summary_en": "HP maximum increases by 2 per character level.",
+    "summary_de": "Trefferpunktemaximum wird pro Charakterstufe um 2 erhöht.",
+    "grants": [
+      {
+        "type": "hp_bonus_per_level",
+        "bonus_per_level": 2
+      }
+    ],
     "benefits": [
       {
         "name_en": "Tough",
@@ -280,6 +435,9 @@
         "max": 20
       }
     },
+    "summary_en": "No additional mechanical benefits — the feat consists entirely of the stat increase.",
+    "summary_de": "Keine weiteren Mechanismen — das Talent besteht ausschließlich aus der Erhöhung eines Attributs.",
+    "grants": [],
     "benefits": [
       {
         "name_en": "Ability Score Improvement",
@@ -304,6 +462,20 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Advantage on Charisma (Deception or Performance) checks while disguised as a specific person. Can mimic sounds and speech (DC 8 + CHA modifier + Proficiency Bonus to detect).",
+    "summary_de": "Vorteil bei Charisma(Täuschen oder Auftreten)-Würfen beim Vortäuschen einer bestimmten Identität. Geräusche und Sprache nachahmen (SG 8 + CHA-Modifikator + Übungsbonus zur Erkennung).",
+    "grants": [
+      {
+        "type": "advantage",
+        "on": ["charisma_deception_checks", "charisma_performance_checks"],
+        "condition": "disguised_as_specific_person"
+      },
+      {
+        "type": "special",
+        "description_en": "You can mimic sounds and speech of other creatures. A listener must succeed on a Wisdom (Insight) check (DC 8 + CHA modifier + Proficiency Bonus) to identify the mimicry as fake.",
+        "description_de": "Du kannst Geräusche und Sprache anderer Kreaturen nachahmen. Ein Zuhörer muss einen Weisheitswurf (Motiv erkennen) bestehen (SG 8 + CHA-Modifikator + Übungsbonus), um die Nachahmung zu erkennen."
+      }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -341,6 +513,25 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Gain a Climb Speed equal to your Speed. Standing up from Prone costs only 5 feet of movement. You can Long Jump or High Jump after moving only 5 feet.",
+    "summary_de": "Kletterbewegungsrate in Höhe deiner Bewegungsrate. Aufstehen aus Umgestoßen kostet nur 1,5 m Bewegung. Weit- oder Hochsprung nach nur 1,5 m Anlauf möglich.",
+    "grants": [
+      {
+        "type": "special",
+        "description_en": "You gain a Climb Speed equal to your Speed.",
+        "description_de": "Du erhältst eine Kletterbewegungsrate in Höhe deiner Bewegungsrate."
+      },
+      {
+        "type": "special",
+        "description_en": "When you have the Prone condition, you can stand up using only 5 feet of movement.",
+        "description_de": "Wenn du umgestoßen wurdest, kannst du mit nur 1,5 Metern Bewegung aufstehen."
+      },
+      {
+        "type": "special",
+        "description_en": "You can make a running Long Jump or High Jump after moving only 5 feet.",
+        "description_de": "Du kannst einen Weit- oder Hochsprung ausführen, nachdem du dich nur 1,5 Meter bewegt hast."
+      }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -384,6 +575,21 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Dash action gives +10 ft Speed. After moving 10+ ft straight toward a target, a melee hit deals +1d8 damage OR pushes the target up to 10 ft (if not more than 1 size larger). Once per turn.",
+    "summary_de": "Spurt-Aktion: +3 m Bewegungsrate. Nach mindestens 3 m gerader Bewegung auf ein Ziel: Nahkampftreffer gibt +1W8 Schaden ODER stößt Ziel bis zu 3 m weg (höchstens 1 Kategorie größer). Einmal pro Zug.",
+    "grants": [
+      {
+        "type": "special",
+        "description_en": "When you take the Dash action, your Speed increases by 10 feet for that action.",
+        "description_de": "Wenn du die Spurt-Aktion ausführst, ist deine Bewegungsrate bei dieser Aktion um 3 Meter erhöht."
+      },
+      {
+        "type": "special",
+        "description_en": "If you move at least 10 feet straight toward a target before hitting it with a melee attack (Attack action), choose: gain +1d8 damage OR push the target up to 10 feet (if no more than 1 size larger). Once per turn.",
+        "description_de": "Wenn du dich mindestens 3 Meter in gerader Linie auf ein Ziel zubewegst und es mit einem Nahkampfangriff (Angriffsaktion) triffst: +1W8 Schaden ODER bis zu 3 Meter wegstoßen (höchstens 1 Kategorie größer). Einmal pro Zug.",
+        "frequency": "once_per_turn"
+      }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -421,6 +627,24 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Cook's Utensils proficiency. Short Rest: cook a meal for 4+PB creatures (extra 1d8 HP when spending Hit Dice). Long Rest or 1 hour: create PB treats (Bonus Action: eat for PB temp HP, 8hr duration).",
+    "summary_de": "Übung mit Kochutensilien. Kurze Rast: Mahlzeit für 4+ÜB Kreaturen kochen (1W8 extra TP bei Trefferwürfeln). Lange Rast oder 1 Stunde: ÜB Leckereien herstellen (Bonusaktion: essen für ÜB temporäre TP, 8 Std.).",
+    "grants": [
+      {
+        "type": "tool_proficiency",
+        "tools": ["cooks_utensils"]
+      },
+      {
+        "type": "special",
+        "description_en": "During a Short Rest, cook a meal for up to 4 + Proficiency Bonus creatures. Those who spend Hit Dice regain an extra 1d8 HP.",
+        "description_de": "Während einer kurzen Rast eine Mahlzeit für bis zu 4 + Übungsbonus Kreaturen kochen. Wer Trefferwürfel verbraucht, erhält 1W8 zusätzliche TP zurück."
+      },
+      {
+        "type": "special",
+        "description_en": "Create Proficiency Bonus treats (1 hour of work or Long Rest). A creature can use a Bonus Action to eat one for temporary HP equal to your Proficiency Bonus. Treats last 8 hours.",
+        "description_de": "Übungsbonus Leckereien herstellen (1 Stunde Arbeit oder lange Rast). Eine Kreatur kann mit einer Bonusaktion eine Leckerei essen und temporäre TP in Höhe deines Übungsbonus erhalten. Leckereien halten 8 Stunden."
+      }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -463,6 +687,25 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Ignore the Loading property on crossbows; reload even without a free hand. No Disadvantage on crossbow attack rolls within 5 ft of enemies. When making the Light property extra attack with a Light crossbow, add your ability modifier to its damage.",
+    "summary_de": "Eigenschaft Laden bei Armbrüsten ignorieren; auch ohne freie Hand nachladen. Keine Nachteile bei Armbrüstenangriffswürfen in Meleenähe. Beim zusätzlichen Leicht-Angriff mit leichter Armbrust Attributsmodifikator zum Schaden addieren.",
+    "grants": [
+      {
+        "type": "special",
+        "description_en": "You ignore the Loading property of Hand, Heavy, and Light Crossbows and can reload even without a free hand.",
+        "description_de": "Du ignorierst die Eigenschaft Laden bei Hand-, schweren und leichten Armbrüsten und kannst auch ohne freie Hand nachladen."
+      },
+      {
+        "type": "special",
+        "description_en": "Being within 5 feet of an enemy doesn't impose Disadvantage on your crossbow attack rolls.",
+        "description_de": "Wenn du dich im Abstand von 1,5 Metern von einem Gegner aufhältst, sind deine Angriffswürfe mit Armbrüsten nicht im Nachteil."
+      },
+      {
+        "type": "special",
+        "description_en": "When you make the extra attack from the Light property with a Light crossbow, you can add your ability modifier to its damage (if not already added).",
+        "description_de": "Wenn du den zusätzlichen Angriff aus der Eigenschaft Leicht mit einer leichten Armbrust ausführst, kannst du deinen Attributsmodifikator zum Schaden addieren (sofern noch nicht geschehen)."
+      }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -506,6 +749,21 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Once per turn when dealing Bludgeoning damage, push the target 5 feet (if no more than 1 size larger). On a Bludgeoning Critical Hit, all attacks against that creature have Advantage until your next turn starts.",
+    "summary_de": "Einmal pro Zug bei Wuchtschadentreffer: Ziel 1,5 m in einen freien Bereich stoßen (höchstens 1 Kategorie größer). Bei Wucht-Kritischem Treffer: Angriffe gegen die Kreatur haben Vorteil bis zum Beginn deines nächsten Zugs.",
+    "grants": [
+      {
+        "type": "special",
+        "description_en": "Once per turn when you hit a creature with a Bludgeoning damage attack, you can move it 5 feet to an unoccupied space (target must be no more than 1 size larger than you).",
+        "description_de": "Einmal pro Zug kannst du bei einem Wuchtschadentreffer die Kreatur 1,5 Meter in einen freien Bereich stoßen (höchstens 1 Kategorie größer als du).",
+        "frequency": "once_per_turn"
+      },
+      {
+        "type": "special",
+        "description_en": "When you score a Critical Hit that deals Bludgeoning damage, attack rolls against that creature have Advantage until the start of your next turn.",
+        "description_de": "Wenn du einen kritischen Treffer erzielst, der Wuchtschaden bewirkt, sind Angriffswürfe gegen diese Kreatur bis zum Beginn deines nächsten Zugs im Vorteil."
+      }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -542,6 +800,16 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Reaction when a melee attack hits you while holding a Finesse weapon: add your Proficiency Bonus to your AC, potentially causing the attack to miss. Bonus applies against melee attacks until the start of your next turn.",
+    "summary_de": "Reaktion bei Nahkampftreffer mit Finesse-Waffe in der Hand: Übungsbonus zur RK addieren, sodass der Angriff scheitern kann. Bonus gilt gegen Nahkampfangriffe bis zum Beginn deines nächsten Zugs.",
+    "grants": [
+      {
+        "type": "reaction",
+        "trigger": "hit_by_melee_attack_while_holding_finesse_weapon",
+        "effect": "add_proficiency_bonus_to_ac_against_melee_attacks",
+        "duration": "until_start_of_next_turn"
+      }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -573,6 +841,20 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "When you Attack with a Light weapon, make one extra Bonus Action melee attack (no ability modifier to extra damage unless negative). Draw or stow 2 non-Two-Handed weapons where you'd normally draw only one.",
+    "summary_de": "Bei Angriff mit einer Leicht-Waffe: zusätzlichen Bonusaktion-Nahkampfangriff ausführen (kein Attributsmodifikator zum Schaden, außer er ist negativ). 2 Nicht-Zweihändig-Waffen ziehen/wegstecken statt einer.",
+    "grants": [
+      {
+        "type": "special",
+        "description_en": "When you take the Attack action and attack with a Light weapon, you can make one extra attack as a Bonus Action with a different non-Two-Handed melee weapon. No ability modifier to extra attack damage unless negative.",
+        "description_de": "Wenn du die Angriffsaktion ausführst und mit einer Leicht-Waffe angreifst, kannst du als Bonusaktion einen zusätzlichen Angriff mit einer anderen Nicht-Zweihändig-Nahkampfwaffe ausführen. Kein Attributsmodifikator zum Schaden (außer er ist negativ)."
+      },
+      {
+        "type": "special",
+        "description_en": "You can draw or stow two non-Two-Handed weapons when you would normally only be able to draw or stow one.",
+        "description_de": "Du kannst zwei Waffen ohne die Eigenschaft Zweihändig ziehen oder wegstecken, wenn du normalerweise nur eine ziehen oder wegstecken könntest."
+      }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -609,6 +891,22 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Advantage on Death Saving Throws. Bonus Action: spend one Hit Die, roll it, and regain that many HP.",
+    "summary_de": "Vorteil bei Todesrettungswürfen. Bonusaktion: einen Trefferwürfel verbrauchen, würfeln und entsprechend viele TP zurückerhalten.",
+    "grants": [
+      {
+        "type": "advantage",
+        "on": ["death_saving_throws"]
+      },
+      {
+        "type": "active_ability",
+        "ability_id": "speedy_recovery",
+        "action_type": "bonus_action",
+        "cost": { "resource": "hit_dice", "amount": 1 },
+        "description_en": "Expend one Hit Die, roll it, and regain that many HP.",
+        "description_de": "Einen Trefferwürfel verbrauchen, würfeln und entsprechend viele TP zurückerhalten."
+      }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -647,6 +945,22 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Choose one damage type (Acid, Cold, Fire, Lightning, or Thunder): your spells ignore Resistance to that type, and you can treat 1s on damage dice for those spells as 2s. Repeatable with a different type.",
+    "summary_de": "Eine Schadensart wählen (Blitz, Feuer, Kälte, Säure oder Schall): Zauber ignorieren Resistenz dagegen, und 1en auf Schadenswürfeln gelten als 2en. Mit anderer Schadensart wiederholbar.",
+    "grants": [
+      {
+        "type": "special",
+        "description_en": "Spells you cast ignore Resistance to the chosen damage type.",
+        "description_de": "Zauber, die du wirkst, ignorieren Resistenz gegen die gewählte Schadensart."
+      },
+      {
+        "type": "special",
+        "description_en": "When you roll damage for a spell of the chosen type, you can treat any 1 on a damage die as a 2.",
+        "description_de": "Wenn du den Schaden eines Zaubers der gewählten Schadensart auswürfelst, kannst du jede gewürfelte 1 als 2 werten."
+      }
+    ],
+    "needs_review": true,
+    "review_notes": "Damage type is player-chosen at feat selection; cannot be fully modeled without character-level state.",
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -685,6 +999,28 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Always have Misty Step and one chosen level 1 Divination or Enchantment spell prepared. Each can be cast once for free per Long Rest; also castable with spell slots. Spellcasting ability is the one increased by this feat.",
+    "summary_de": "Nebelschritt und einen gewählten Zauber des 1. Grades (Erkenntnis oder Verzauberung) stets vorbereitet. Jeder kann einmal pro langer Rast kostenlos gewirkt werden; auch mit Zauberplätzen möglich.",
+    "grants": [
+      {
+        "type": "spell_access",
+        "spell_id": "misty_step",
+        "always_prepared": true,
+        "free_cast": { "uses": 1, "recharge": "long_rest" },
+        "spellcasting_ability": "chosen_by_asi_selection"
+      },
+      {
+        "type": "spell_access",
+        "count": 1,
+        "spell_level": 1,
+        "source_list": "divination_or_enchantment",
+        "always_prepared": true,
+        "free_cast": { "uses": 1, "recharge": "long_rest" },
+        "spellcasting_ability": "chosen_by_asi_selection"
+      }
+    ],
+    "needs_review": true,
+    "review_notes": "Spellcasting ability equals whichever ability is boosted at feat selection — requires character-level state to resolve.",
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -716,6 +1052,26 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Unarmed Strike (Attack action) can simultaneously deal damage and Grapple — once per turn. Advantage on attacks against Grappled creatures. Speed not halved when moving a Grappled creature of your size or smaller.",
+    "summary_de": "Waffenloser Angriff (Angriffsaktion) kann gleichzeitig Schaden und Packen bewirken — einmal pro Zug. Vorteil bei Angriffen gegen gepackte Kreaturen. Bewegungsrate beim Mitziehen gepackter Kreaturen (gleiche Größe oder kleiner) nicht halbiert.",
+    "grants": [
+      {
+        "type": "special",
+        "description_en": "When you hit a creature with an Unarmed Strike (Attack action), you can use both the Damage and the Grapple option. Once per turn.",
+        "description_de": "Wenn du eine Kreatur mit einem waffenlosen Angriff (Angriffsaktion) triffst, kannst du gleichzeitig Schaden bewirken und die Packen-Option nutzen. Einmal pro Zug.",
+        "frequency": "once_per_turn"
+      },
+      {
+        "type": "advantage",
+        "on": ["attack_rolls"],
+        "condition": "target_is_grappled_by_you"
+      },
+      {
+        "type": "special",
+        "description_en": "Your Speed is not halved when you move a Grappled creature, provided the creature is your size or smaller.",
+        "description_de": "Deine Bewegungsrate wird nicht halbiert, wenn du eine gepackte Kreatur mit dir ziehst, sofern sie höchstens so groß ist wie du."
+      }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -758,6 +1114,20 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Hitting with a Heavy weapon (Attack action) deals extra damage equal to Proficiency Bonus. After a Critical Hit or reducing a creature to 0 HP with a melee weapon, make one Bonus Action attack with the same weapon.",
+    "summary_de": "Treffer mit einer Schwer-Waffe (Angriffsaktion) fügt zusätzlichen Schaden in Höhe des Übungsbonus zu. Nach einem kritischen Treffer oder Reduzierung auf 0 TP mit Nahkampfwaffe: eine Bonusaktion-Attacke mit derselben Waffe.",
+    "grants": [
+      {
+        "type": "damage_bonus",
+        "value": "proficiency_bonus",
+        "condition": "attack_action_with_heavy_weapon"
+      },
+      {
+        "type": "special",
+        "description_en": "Immediately after you score a Critical Hit or reduce a creature to 0 HP with a melee weapon, you can make one attack with the same weapon as a Bonus Action.",
+        "description_de": "Sofort nach einem kritischen Treffer oder wenn du eine Kreatur mit einer Nahkampfwaffe auf 0 TP reduzierst, kannst du als Bonusaktion einen Angriff mit derselben Waffe ausführen."
+      }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -795,6 +1165,14 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Gain training with Heavy armor.",
+    "summary_de": "Vertrautheit mit schwerer Rüstung erhalten.",
+    "grants": [
+      {
+        "type": "armor_proficiency",
+        "armor_types": ["heavy"]
+      }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -826,6 +1204,17 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "While wearing Heavy armor, Bludgeoning, Piercing, and Slashing damage from attacks is reduced by your Proficiency Bonus.",
+    "summary_de": "Solange du schwere Rüstung trägst, wird Hieb-, Stich- und Wuchtschaden durch Angriffe um deinen Übungsbonus verringert.",
+    "grants": [
+      {
+        "type": "damage_reduction",
+        "damage_types": ["bludgeoning", "piercing", "slashing"],
+        "value": "proficiency_bonus",
+        "condition": "wearing_heavy_armor",
+        "applies_to": "attacks"
+      }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -857,6 +1246,15 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "After a Short or Long Rest, give an inspiring performance. Up to 6 allies within 30 ft each gain Temporary HP equal to your character level + the modifier of the ability increased by this feat.",
+    "summary_de": "Nach einer kurzen oder langen Rast einen inspirierenden Auftritt darbieten. Bis zu 6 Verbündete im Abstand von bis zu 9 Metern erhalten jeweils temporäre TP in Höhe der Charakterstufe + des Modifikators des durch dieses Talent erhöhten Attributs.",
+    "grants": [
+      {
+        "type": "special",
+        "description_en": "After finishing a Short or Long Rest, give an inspiring performance (speech, song, or dance). Up to 6 allies within 30 ft who witness it each gain Temporary HP equal to your character level + the modifier of the ability increased by this feat.",
+        "description_de": "Nach einer kurzen oder langen Rast einen inspirierenden Auftritt darbieten (Ansprache, Lied oder Tanz). Bis zu 6 Verbündete im Umkreis von 9 Metern, die ihn miterleben, erhalten jeweils temporäre TP in Höhe der Charakterstufe + des Modifikators des erhöhten Attributs."
+      }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -887,6 +1285,20 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Proficiency (or Expertise if already proficient) in one of: Arcana, History, Investigation, Nature, or Religion. Take the Study action as a Bonus Action.",
+    "summary_de": "Übung (oder Expertise, falls bereits geübt) in einer der Fertigkeiten: Arkane Kunde, Geschichte, Nachforschungen, Naturkunde oder Religion. Studieren-Aktion als Bonusaktion ausführen.",
+    "grants": [
+      {
+        "type": "special",
+        "description_en": "Choose one skill from Arcana, History, Investigation, Nature, or Religion. Gain proficiency if you lack it, or Expertise if you already have proficiency.",
+        "description_de": "Wähle eine der Fertigkeiten Arkane Kunde, Geschichte, Nachforschungen, Naturkunde oder Religion. Erhalte Übung (falls noch nicht vorhanden) oder Expertise (falls bereits geübt)."
+      },
+      {
+        "type": "special",
+        "description_en": "You can take the Study action as a Bonus Action.",
+        "description_de": "Du kannst die Studieren-Aktion als Bonusaktion ausführen."
+      }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -924,6 +1336,14 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Gain training with Light armor and Shields.",
+    "summary_de": "Vertrautheit mit leichter Rüstung und Schilden erhalten.",
+    "grants": [
+      {
+        "type": "armor_proficiency",
+        "armor_types": ["light", "shields"]
+      }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -955,6 +1375,23 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "When you damage a concentrating creature, it has Disadvantage on its Concentration save. Once per Short or Long Rest: if you fail an INT, WIS, or CHA save, succeed instead.",
+    "summary_de": "Wenn du einer konzentrierten Kreatur Schaden zufügst, ist sie bei ihrem Konzentrations-Rettungswurf im Nachteil. Einmal pro kurzer oder langer Rast: Misserfolg bei INT/WEI/CHA-Rettungswurf in Erfolg umwandeln.",
+    "grants": [
+      {
+        "type": "special",
+        "description_en": "When you damage a creature that is concentrating, it has Disadvantage on the saving throw to maintain Concentration.",
+        "description_de": "Wenn du einer Kreatur Schaden zufügst, die sich konzentriert, ist sie beim Rettungswurf zur Aufrechterhaltung der Konzentration im Nachteil."
+      },
+      {
+        "type": "active_ability",
+        "ability_id": "guarded_mind",
+        "uses": 1,
+        "recharge": "short_rest",
+        "description_en": "If you fail an Intelligence, Wisdom, or Charisma saving throw, you can succeed instead.",
+        "description_de": "Wenn du bei einem Intelligenz-, Weisheits- oder Charismarettungswurf scheiterst, kannst du stattdessen Erfolg haben."
+      }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -992,6 +1429,14 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Gain proficiency with Martial weapons.",
+    "summary_de": "Übung im Umgang mit Kriegswaffen erhalten.",
+    "grants": [
+      {
+        "type": "weapon_proficiency",
+        "weapons": ["martial"]
+      }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -1023,6 +1468,15 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "While wearing Medium armor with DEX 16+, add +3 to AC instead of the normal +2.",
+    "summary_de": "Bei mittelschwerer Rüstung und GES-Wert 16+: RK-Bonus von +3 statt +2 aus Geschicklichkeit.",
+    "grants": [
+      {
+        "type": "special",
+        "description_en": "While wearing Medium armor, you can add 3 (instead of 2) to your AC from your Dexterity modifier if your Dexterity score is 16 or higher.",
+        "description_de": "Wenn du eine mittelschwere Rüstung trägst und einen Geschicklichkeitswert von mindestens 16 hast, kannst du deiner RK 3 statt 2 aus deinem Geschicklichkeitsmodifikator hinzufügen."
+      }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -1054,6 +1508,14 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Gain training with Medium armor.",
+    "summary_de": "Vertrautheit mit mittelschwerer Rüstung erhalten.",
+    "grants": [
+      {
+        "type": "armor_proficiency",
+        "armor_types": ["medium"]
+      }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -1086,6 +1548,26 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "While mounted: Advantage on attacks against smaller unmounted creatures near your mount. Mount gains Evasion on DEX saves. Redirect attacks targeting your mount to yourself.",
+    "summary_de": "Beritten: Vorteil bei Angriffen gegen kleinere unberittene Kreaturen in Reittier-Nähe. Reittier erhält Ausweichen bei GES-Würfen. Angriffe auf dein Reittier auf dich umlenken.",
+    "grants": [
+      {
+        "type": "advantage",
+        "on": ["attack_rolls"],
+        "condition": "mounted_target_unmounted_within_5ft_of_mount_and_at_least_1_size_smaller_than_mount"
+      },
+      {
+        "type": "special",
+        "description_en": "While you ride your mount, it has Evasion: on a successful DEX save against a half-damage effect, it takes no damage; on a failure, only half.",
+        "description_de": "Solange du dein Reittier reitest, hat es Ausweichen: Bei erfolgreichem GES-Rettungswurf gegen Halbschadeneffekte kein Schaden; bei Misserfolg nur der halbe."
+      },
+      {
+        "type": "reaction",
+        "trigger": "attack_targets_your_mount",
+        "effect": "redirect_attack_to_self",
+        "condition": "mounted_and_not_incapacitated"
+      }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -1129,6 +1611,12 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Gain Proficiency or Expertise in Insight, Investigation, or Perception (your choice). You can take the Search action as a Bonus Action.",
+    "summary_de": "Erhalte Übung oder Expertise in Motiv erkennen, Nachforschungen oder Wahrnehmung (nach Wahl). Du kannst die Suchen-Aktion als Bonusaktion ausführen.",
+    "grants": [
+      { "type": "skill_proficiency", "skills": ["insight", "investigation", "perception"], "choose": 1, "upgrade_to_expertise": true },
+      { "type": "special", "description_en": "You can take the Search action as a Bonus Action.", "description_de": "Du kannst die Suchen-Aktion als Bonusaktion ausführen." }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -1166,6 +1654,12 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Once per turn, when you deal Piercing damage you can reroll one damage die (keep new result). On a Piercing critical hit, roll one additional damage die.",
+    "summary_de": "Einmal pro Zug kannst du bei Stichschaden einen Schadenswürfel neu würfeln (neues Ergebnis gilt). Bei einem kritischen Stichtreffer würfelst du einen zusätzlichen Schadenswürfel.",
+    "grants": [
+      { "type": "special", "description_en": "Once per turn, when you hit with an attack dealing Piercing damage, reroll one damage die and use the new result.", "description_de": "Einmal pro Zug kannst du bei einem Treffer mit Stichschaden einen Schadenswürfel neu würfeln und musst das neue Ergebnis verwenden." },
+      { "type": "special", "description_en": "When you score a Critical Hit dealing Piercing damage, roll one additional damage die.", "description_de": "Wenn du einen kritischen Treffer mit Stichschaden erzielst, würfelst du einen zusätzlichen Schadenswürfel." }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -1203,6 +1697,13 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Poison damage you deal ignores Resistance. Gain Poisoner's Kit proficiency; craft poison doses (PB per hour, 50 GP materials); apply as Bonus Action; on hit CON save (DC 8 + PB + mod) or 2d8 Poison damage + Poisoned until end of your next turn.",
+    "summary_de": "Dein Giftschaden ignoriert Resistenz. Übung mit Giftmischerausrüstung; Herstellen von Giftdosen (Übungsbonus pro Stunde, Material für 50 GM); als Bonusaktion anbringen; bei Treffer: Konstitutionsrettungswurf (SG 8 + Übungsbonus + Mod) oder 2W8 Giftschaden + Vergiftet bis Ende deines nächsten Zugs.",
+    "grants": [
+      { "type": "special", "description_en": "Your Poison damage ignores Resistance to Poison damage.", "description_de": "Dein Giftschaden ignoriert Resistenz gegen Giftschaden." },
+      { "type": "tool_proficiency", "tools": ["poisoners_kit"] },
+      { "type": "special", "description_en": "With 1 hour of work using a Poisoner's Kit and 50 GP of materials, create poison doses equal to your Proficiency Bonus. Apply as a Bonus Action; on hit, target makes a Constitution saving throw (DC 8 + ability modifier + Proficiency Bonus) or takes 2d8 Poison damage and gains Poisoned until the end of your next turn.", "description_de": "Mit einer Stunde Arbeit mit der Giftmischerausrüstung und Material für 50 GM Giftdosen in Höhe des Übungsbonus herstellen. Als Bonusaktion anbringen; bei Treffer: Konstitutionsrettungswurf (SG 8 + Attributmodifikator + Übungsbonus) oder 2W8 Giftschaden und Vergiftet bis Ende deines nächsten Zugs." }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -1240,6 +1741,12 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "After taking the Attack action with a Quarterstaff, Spear, or Heavy+Reach weapon, use a Bonus Action to strike the butt-end (d4 Bludgeoning). While holding such a weapon, use a Reaction to attack a creature that enters your reach.",
+    "summary_de": "Nachdem du die Angriffsaktion mit Kampfstab, Speer oder einer Schwer+Weitreichend-Waffe ausgeführt hast, schlage als Bonusaktion mit dem anderen Ende zu (W4 Wuchtschaden). Solange du eine solche Waffe hältst, nutze eine Reaktion für einen Angriff gegen Kreaturen, die deine Reichweite betreten.",
+    "grants": [
+      { "type": "active_ability", "ability_id": "pole_strike", "action_type": "bonus_action", "condition": "after_attack_action_with_polearm", "damage": { "die": "d4", "type": "bludgeoning" } },
+      { "type": "reaction", "trigger": "creature_enters_reach", "condition": "holding_polearm", "effect": "melee_attack" }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -1276,6 +1783,11 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Gain saving throw proficiency in the ability increased by this feat.",
+    "summary_de": "Erhalte Übung in Rettungswürfen mit dem durch dieses Talent erhöhten Attribut.",
+    "grants": [
+      { "type": "saving_throw_proficiency", "saving_throw": "chosen_ability" }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -1308,6 +1820,12 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Always have a number of level 1 Ritual-tagged spells prepared equal to your Proficiency Bonus (spellcasting ability = chosen stat; expands as PB increases). Once per Long Rest, cast a prepared ritual at normal casting time without a spell slot.",
+    "summary_de": "Anzahl von Zaubern des 1. Grades mit Ritual-Kennzeichnung in Höhe des Übungsbonus stets vorbereitet (Zaubermerkmal = gewähltes Attribut; erweitert sich mit steigendem Übungsbonus). Einmal pro langer Rast: Ritualzauber mit normalem Zeitaufwand ohne Zauberplatz wirken.",
+    "grants": [
+      { "type": "spell_access", "count": "proficiency_bonus", "spell_level": 1, "filter": "ritual_tag", "always_prepared": true, "spellcasting_ability": "chosen_intelligence_wisdom_or_charisma" },
+      { "type": "active_ability", "ability_id": "quick_ritual", "uses": 1, "recharge": "long_rest", "description_en": "Cast a prepared ritual spell at its normal casting time without expending a spell slot.", "description_de": "Wirke einen vorbereiteten Ritualzauber mit normalem Zeitaufwand, ohne einen Zauberplatz zu verbrauchen." }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -1345,6 +1863,12 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "When a creature within 5 feet Disengages or hits a target other than you, make an Opportunity Attack against it. On a successful Opportunity Attack, the target's Speed becomes 0 for the rest of the turn.",
+    "summary_de": "Wenn eine Kreatur in 1,5 Metern Rückzug nutzt oder ein anderes Ziel trifft, führe einen Gelegenheitsangriff gegen sie aus. Triffst du mit einem Gelegenheitsangriff, wird die Bewegungsrate bis Ende des Zugs auf 0 verringert.",
+    "grants": [
+      { "type": "reaction", "trigger": "creature_within_5ft_disengages_or_hits_other_target", "effect": "opportunity_attack" },
+      { "type": "special", "description_en": "When you hit with an Opportunity Attack, the target's Speed becomes 0 for the rest of the turn.", "description_de": "Wenn du mit einem Gelegenheitsangriff triffst, wird die Bewegungsrate des Ziels bis Ende des Zugs auf 0 verringert." }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -1383,6 +1907,14 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Always have Invisibility and one chosen level 1 Illusion or Necromancy spell prepared. Cast each once per Long Rest without a spell slot (also castable with spell slots; spellcasting ability = chosen stat).",
+    "summary_de": "Unsichtbarkeit und ein gewählter Zauber des 1. Grades aus Illusion oder Nekromantie stets vorbereitet. Jeden Zauber einmal pro langer Rast ohne Zauberplatz wirken (auch mit Zauberplätzen; Zaubermerkmal = gewähltes Attribut).",
+    "grants": [
+      { "type": "spell_access", "spell_id": "invisibility", "always_prepared": true, "free_cast": { "uses": 1, "recharge": "long_rest" }, "spellcasting_ability": "chosen_intelligence_wisdom_or_charisma" },
+      { "type": "spell_access", "count": 1, "spell_level": 1, "source_list": "chosen_illusion_or_necromancy", "always_prepared": true, "free_cast": { "uses": 1, "recharge": "long_rest" }, "spellcasting_ability": "chosen_intelligence_wisdom_or_charisma" }
+    ],
+    "needs_review": true,
+    "review_notes": "Spell school choice and spellcasting ability are both player-determined at feat selection. Specific spell choice cannot be modeled without character-level state.",
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -1413,6 +1945,13 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Ranged weapon attacks ignore Half and Three-Quarters Cover. No Disadvantage within 5 feet or at long range.",
+    "summary_de": "Fernkampfangriffe mit Waffen ignorieren Teildeckung und Dreivierteldeckung. Kein Nachteil im Nahbereich oder auf Maximalreichweite.",
+    "grants": [
+      { "type": "special", "description_en": "Ranged weapon attacks ignore Half Cover and Three-Quarters Cover.", "description_de": "Fernkampfangriffe mit Waffen ignorieren Teildeckung sowie Dreivierteldeckung." },
+      { "type": "special", "description_en": "Being within 5 feet of an enemy doesn't impose Disadvantage on attack rolls with Ranged weapons.", "description_de": "Im Abstand von bis zu 1,5 Metern von einem Gegner kein Nachteil auf Angriffswürfe mit Fernkampfwaffen." },
+      { "type": "special", "description_en": "Attacking at long range doesn't impose Disadvantage on attack rolls with Ranged weapons.", "description_de": "Angriffe auf Maximalreichweite verursachen keinen Nachteil auf Angriffswürfe mit Fernkampfwaffen." }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -1455,6 +1994,12 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Once per turn after a melee hit on the Attack action, bash with Shield (STR save DC 8+STR+PB: push 5 feet or knock Prone). Reaction: hold a Shield while subjected to a DEX save for half damage — take no damage on success.",
+    "summary_de": "Einmal pro Zug nach einem Nahkampftreffer in der Angriffsaktion: Schildstoß (STR-RW SG 8+STR+ÜB: 1,5 m Stoß oder Niederwerfen). Reaktion: Mit Schild bei GES-Rettungswurf auf halben Schaden — bei Erfolg kein Schaden.",
+    "grants": [
+      { "type": "active_ability", "ability_id": "shield_bash", "frequency": "once_per_turn", "condition": "hit_melee_on_attack_action_while_shield_equipped", "description_en": "Bash target with Shield; STR save (DC 8 + STR modifier + PB) or be pushed 5 feet or knocked Prone (your choice).", "description_de": "Ziel mit Schild stoßen; Stärkerettungswurf (SG 8 + STR-Mod + ÜB) oder 1,5 m Stoß bzw. Niederwerfen (nach Wahl)." },
+      { "type": "reaction", "trigger": "subjected_to_dex_save_half_damage_effect", "condition": "holding_shield", "effect": "take_no_damage_on_success" }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -1491,6 +2036,12 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Gain proficiency in one skill of your choice. Gain Expertise in one skill in which you already have proficiency.",
+    "summary_de": "Übung in einer Fertigkeit nach Wahl. Expertise in einer Fertigkeit, in der du bereits geübt bist.",
+    "grants": [
+      { "type": "skill_proficiency", "skills": "any", "choose": 1 },
+      { "type": "skill_proficiency", "skills": "any_already_proficient", "choose": 1, "upgrade_to_expertise": true }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -1527,6 +2078,13 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Blindsight 10 feet. Advantage on Dexterity (Stealth) checks made as part of the Hide action in combat. Missing an attack roll while hidden doesn't reveal your location.",
+    "summary_de": "Blindsicht mit 3 m Reichweite. Vorteil auf Geschicklichkeitswürfe (Heimlichkeit) bei der Verstecken-Aktion im Kampf. Misslungene Angriffswürfe, während du verborgen bist, geben deinen Ort nicht preis.",
+    "grants": [
+      { "type": "special", "description_en": "You have Blindsight with a range of 10 feet.", "description_de": "Du erlangst Blindsicht mit einer Reichweite von drei Metern." },
+      { "type": "advantage", "on": ["dexterity_stealth_checks"], "condition": "hide_action_during_combat" },
+      { "type": "special", "description_en": "Missing an attack roll while hidden doesn't reveal your location.", "description_de": "Wenn du einen Angriffswurf ausführst, während du verborgen bist, und der Wurf scheitert, gibt er deinen Ort nicht preis." }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -1570,6 +2128,12 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Once per turn on a Slashing damage hit, reduce target's Speed by 10 feet until your next turn. On a Slashing critical hit, the target has Disadvantage on attack rolls until your next turn.",
+    "summary_de": "Einmal pro Zug bei einem Hiebschadenstreffer: Bewegungsrate des Ziels bis zu deinem nächsten Zug um 3 Meter verringern. Bei einem kritischen Hiebschadenstreffer: Nachteil auf Angriffswürfe bis zu deinem nächsten Zug.",
+    "grants": [
+      { "type": "special", "description_en": "Once per turn when you hit with Slashing damage, reduce the target's Speed by 10 feet until the start of your next turn.", "description_de": "Einmal pro Zug beim Treffer mit Hiebschaden: Bewegungsrate des Ziels bis zum Beginn deines nächsten Zugs um drei Meter verringern." },
+      { "type": "special", "description_en": "On a Critical Hit dealing Slashing damage, the target has Disadvantage on attack rolls until the start of your next turn.", "description_de": "Bei einem kritischen Treffer mit Hiebschaden ist das Ziel bis zum Beginn deines nächsten Zugs bei Angriffswürfen im Nachteil." }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -1607,6 +2171,13 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Speed +10 feet. When you Dash, Difficult Terrain costs no extra movement that turn. Opportunity Attacks against you have Disadvantage.",
+    "summary_de": "Bewegungsrate +3 Meter. Beim Spurt kostet schwieriges Gelände in diesem Zug keine zusätzliche Bewegung. Gelegenheitsangriffe auf dich sind im Nachteil.",
+    "grants": [
+      { "type": "speed_bonus", "value": 10 },
+      { "type": "special", "description_en": "When you take the Dash action, Difficult Terrain doesn't cost you extra movement for the rest of that turn.", "description_de": "Wenn du die Spurt-Aktion ausführst, kostet schwieriges Gelände dir für den Rest des Zugs keine zusätzliche Bewegung." },
+      { "type": "disadvantage_on_attacks_against", "attack_types": ["opportunity_attacks"] }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -1651,6 +2222,13 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Spell attack rolls ignore Half and Three-Quarters Cover. No Disadvantage on spell attack rolls within 5 feet. When casting an attack-roll spell with range 10+ feet, increase its range by 60 feet.",
+    "summary_de": "Zauberangriffswürfe ignorieren Teildeckung und Dreivierteldeckung. Kein Nachteil auf Zauberangriffswürfe im Nahbereich. Beim Wirken eines Zaubers mit Angriffswurf und Reichweite ab 3 Metern: Reichweite um 18 Meter erhöhen.",
+    "grants": [
+      { "type": "special", "description_en": "Spell attack rolls ignore Half Cover and Three-Quarters Cover.", "description_de": "Zauberangriffswürfe ignorieren Teildeckung sowie Dreivierteldeckung." },
+      { "type": "special", "description_en": "Being within 5 feet of an enemy doesn't impose Disadvantage on attack rolls with spells.", "description_de": "Im Abstand von bis zu 1,5 Metern von einem Gegner kein Nachteil auf Zauberangriffswürfe." },
+      { "type": "spell_range_override", "bonus_feet": 60, "condition": "spell_requires_attack_roll_and_range_at_least_10ft" }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -1695,6 +2273,12 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Learn Mage Hand (no verbal/somatic components, can be invisible, +30 ft range; spellcasting ability = chosen stat). Bonus Action: shove a creature within 30 feet (STR save DC 8 + mod + PB, push 5 feet toward or away).",
+    "summary_de": "Lerne Magierhand (keine Verbal-/Gestenkomponenten, unsichtbar möglich, +9 m Reichweite; Zaubermerkmal = gewähltes Attribut). Bonusaktion: Kreatur in neun Metern telekinetisch stoßen (STR-RW SG 8 + Mod + ÜB, 1,5 m auf dich zu oder weg).",
+    "grants": [
+      { "type": "spell_access", "spell_id": "mage_hand", "always_prepared": true, "modifications": { "verbal_component": false, "somatic_component": false, "invisible": true, "range_bonus_feet": 30 }, "spellcasting_ability": "chosen_intelligence_wisdom_or_charisma" },
+      { "type": "active_ability", "ability_id": "telekinetic_shove", "action_type": "bonus_action", "description_en": "Shove one creature within 30 feet; STR save (DC 8 + ability modifier + PB) or be pushed 5 feet toward or away from you.", "description_de": "Einer Kreatur in neun Metern einen telekinetischen Stoß versetzen; Stärkerettungswurf (SG 8 + Attributsmodifikator + ÜB) oder 1,5 m auf dich zu oder weg." }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -1733,6 +2317,12 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Speak telepathically (one-way) to any visible creature within 60 feet in a language you both know. Always have Detect Thoughts prepared; cast it once per Long Rest without a spell slot or components.",
+    "summary_de": "Telepathisch (einseitig) mit einer sichtbaren Kreatur in 18 Metern in einer gemeinsamen Sprache sprechen. Gedanken wahrnehmen stets vorbereitet; einmal pro langer Rast ohne Zauberplatz und Zauberkomponenten wirken.",
+    "grants": [
+      { "type": "special", "description_en": "You can speak telepathically (one-way) to any visible creature within 60 feet in a language you know.", "description_de": "Du kannst telepathisch (einseitig) mit jeder sichtbaren Kreatur in 18 Metern in einer dir bekannten Sprache sprechen." },
+      { "type": "spell_access", "spell_id": "detect_thoughts", "always_prepared": true, "free_cast": { "uses": 1, "recharge": "long_rest", "components_required": false }, "spellcasting_ability": "chosen_intelligence_wisdom_or_charisma" }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -1771,6 +2361,13 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Advantage on CON saves for Concentration. Somatic components with hands full. Reaction: cast a spell instead of Opportunity Attack.",
+    "summary_de": "Vorteil auf KON-Rettungswürfe für Konzentration. Gestenkomponenten mit vollen Händen. Reaktion: Zauber statt Gelegenheitsangriff wirken.",
+    "grants": [
+      { "type": "advantage", "on": ["constitution_saving_throws"], "condition": "concentration_check" },
+      { "type": "special", "description_en": "You can perform Somatic components of spells with weapons or a Shield in one or both hands.", "description_de": "Du kannst Gestenkomponenten von Zaubern auch mit Waffen oder einem Schild in einer oder beiden Händen ausführen." },
+      { "type": "reaction", "trigger": "creature_leaves_reach", "effect": "cast_spell_instead_of_opportunity_attack", "condition": "spell_with_1_action_casting_time_targeting_only_that_creature" }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -1814,6 +2411,11 @@
       "amount": 1,
       "max": 20
     },
+    "summary_en": "Use the Mastery property of one Simple or Martial weapon you're proficient with. After each Long Rest, you can change the chosen weapon type.",
+    "summary_de": "Meisterschaftseigenschaft einer einfachen Waffe oder Kriegswaffe nutzen, mit der du geübt bist. Nach jeder langen Rast kann die gewählte Waffenart gewechselt werden.",
+    "grants": [
+      { "type": "special", "description_en": "Use the Mastery property of one Simple or Martial weapon you have proficiency with. After each Long Rest, you can change the chosen weapon type.", "description_de": "Meisterschaftseigenschaft einer einfachen Waffe oder Kriegswaffe nutzen, mit der du geübt bist. Nach jeder langen Rast Waffenart wechseln." }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -1838,6 +2440,11 @@
     "prerequisite_de": "Kampfstil-Merkmal",
     "repeatable": false,
     "ability_score_increase": null,
+    "summary_en": "+2 bonus to attack rolls with Ranged weapons.",
+    "summary_de": "+2 Bonus auf Angriffswürfe mit Fernkampfwaffen.",
+    "grants": [
+      { "type": "attack_roll_bonus", "value": 2, "applies_to": "ranged_weapons" }
+    ],
     "benefits": [
       {
         "name_en": "Archery",
@@ -1856,6 +2463,11 @@
     "prerequisite_de": "Kampfstil-Merkmal",
     "repeatable": false,
     "ability_score_increase": null,
+    "summary_en": "Blindsight with a range of 10 feet.",
+    "summary_de": "Blindsicht mit einer Reichweite von drei Metern.",
+    "grants": [
+      { "type": "special", "description_en": "You have Blindsight with a range of 10 feet.", "description_de": "Du erlangst Blindsicht mit einer Reichweite von drei Metern." }
+    ],
     "benefits": [
       {
         "name_en": "Blind Fighting",
@@ -1874,6 +2486,11 @@
     "prerequisite_de": "Kampfstil-Merkmal",
     "repeatable": false,
     "ability_score_increase": null,
+    "summary_en": "+1 bonus to Armor Class while wearing Light, Medium, or Heavy armor.",
+    "summary_de": "+1 Bonus auf die Rüstungsklasse, solange du leichte, mittelschwere oder schwere Rüstung trägst.",
+    "grants": [
+      { "type": "ac_bonus", "value": 1, "condition": "wearing_armor" }
+    ],
     "benefits": [
       {
         "name_en": "Defense",
@@ -1892,6 +2509,11 @@
     "prerequisite_de": "Kampfstil-Merkmal",
     "repeatable": false,
     "ability_score_increase": null,
+    "summary_en": "+2 bonus to damage rolls when holding a Melee weapon in one hand with no other weapons.",
+    "summary_de": "+2 Bonus auf Schadenswürfe, wenn du eine Nahkampfwaffe in einer Hand hältst und keine weiteren Waffen trägst.",
+    "grants": [
+      { "type": "damage_bonus", "value": 2, "condition": "single_one_handed_melee_weapon_no_other_weapons" }
+    ],
     "benefits": [
       {
         "name_en": "Dueling",
@@ -1910,6 +2532,11 @@
     "prerequisite_de": "Kampfstil-Merkmal",
     "repeatable": false,
     "ability_score_increase": null,
+    "summary_en": "When rolling damage for a two-handed melee attack with a Two-Handed or Versatile weapon, treat any 1 or 2 on a damage die as 3.",
+    "summary_de": "Beim Auswürfeln des Schadens für Angriffe mit Zweihändig- oder Vielseitig-Waffen werden alle Ergebnisse von 1 oder 2 auf Schadenswürfeln als 3 gewertet.",
+    "grants": [
+      { "type": "special", "description_en": "When rolling damage for a two-handed melee attack with a Two-Handed or Versatile weapon, treat any 1 or 2 on a damage die as 3.", "description_de": "Beim Auswürfeln des Schadens für Angriffe mit Zweihändig- oder Vielseitig-Waffen gelten alle 1 oder 2 auf Schadenswürfeln als 3." }
+    ],
     "benefits": [
       {
         "name_en": "Great Weapon Fighting",
@@ -1928,6 +2555,11 @@
     "prerequisite_de": "Kampfstil-Merkmal",
     "repeatable": false,
     "ability_score_increase": null,
+    "summary_en": "Reaction: when a visible enemy hits an ally within 5 feet, reduce the damage by 1d10 + Proficiency Bonus (requires holding a Shield or weapon).",
+    "summary_de": "Reaktion: Wenn ein sichtbarer Gegner einen Verbündeten in 1,5 Metern trifft, Schaden um 1W10 + Übungsbonus verringern (Schild oder Waffe erforderlich).",
+    "grants": [
+      { "type": "reaction", "trigger": "creature_hits_ally_within_5ft", "condition": "holding_shield_or_weapon", "effect": "reduce_damage", "damage_reduction": { "die": "d10", "bonus": "proficiency_bonus" } }
+    ],
     "benefits": [
       {
         "name_en": "Interception",
@@ -1946,6 +2578,11 @@
     "prerequisite_de": "Kampfstil-Merkmal",
     "repeatable": false,
     "ability_score_increase": null,
+    "summary_en": "Reaction (requires Shield): when an enemy attacks an ally within 5 feet, impose Disadvantage on that attack and all attacks against that ally until your next turn (stay within 5 feet).",
+    "summary_de": "Reaktion (Schild erforderlich): Wenn ein Gegner einen Verbündeten in 1,5 Metern angreift, Nachteil auf diesen und alle weiteren Angriffe gegen das Ziel bis zu deinem nächsten Zug (innerhalb 1,5 Meter bleiben).",
+    "grants": [
+      { "type": "reaction", "trigger": "enemy_attacks_ally_within_5ft", "condition": "holding_shield_and_within_5ft_of_target", "effect": "impose_disadvantage_on_attacks_against_ally_until_next_turn" }
+    ],
     "benefits": [
       {
         "name_en": "Protection",
@@ -1964,6 +2601,11 @@
     "prerequisite_de": "Kampfstil-Merkmal",
     "repeatable": false,
     "ability_score_increase": null,
+    "summary_en": "+2 bonus to damage rolls on ranged attacks with Thrown weapons.",
+    "summary_de": "+2 Schadensbonus bei Fernkampfangriffen mit Wurfwaffen.",
+    "grants": [
+      { "type": "damage_bonus", "value": 2, "applies_to": "thrown_weapon_ranged_attacks" }
+    ],
     "benefits": [
       {
         "name_en": "Thrown Weapon Fighting",
@@ -1982,6 +2624,11 @@
     "prerequisite_de": "Kampfstil-Merkmal",
     "repeatable": false,
     "ability_score_increase": null,
+    "summary_en": "Add your ability modifier to the damage of the extra attack made with a Light weapon.",
+    "summary_de": "Attributsmodifikator zum Schaden des zusätzlichen Angriffs mit einer Waffe mit Leicht-Eigenschaft hinzufügen.",
+    "grants": [
+      { "type": "damage_bonus", "value": "ability_modifier", "applies_to": "light_weapon_extra_attack" }
+    ],
     "benefits": [
       {
         "name_en": "Two-Weapon Fighting",
@@ -2000,6 +2647,12 @@
     "prerequisite_de": "Kampfstil-Merkmal",
     "repeatable": false,
     "ability_score_increase": null,
+    "summary_en": "Unarmed Strikes deal 1d6 + STR modifier Bludgeoning (1d8 if no weapon or Shield). At the start of each turn, deal 1d4 Bludgeoning to one Grappled creature.",
+    "summary_de": "Waffenlose Angriffe verursachen 1W6 + STR-Modifikator Wuchtschaden (1W8 ohne Waffe oder Schild). Zu Beginn jedes Zugs 1W4 Wuchtschaden an einer gepackten Kreatur.",
+    "grants": [
+      { "type": "special", "description_en": "Unarmed Strikes deal 1d6 + Strength modifier Bludgeoning damage (1d8 if not holding a weapon or Shield).", "description_de": "Waffenlose Angriffe verursachen 1W6 + STR-Modifikator Wuchtschaden (1W8, wenn weder Waffe noch Schild gehalten wird)." },
+      { "type": "special", "description_en": "At the start of each of your turns, deal 1d4 Bludgeoning damage to one creature you have Grappled.", "description_de": "Zu Beginn jedes deiner Züge kannst du einer Kreatur, die du gepackt hältst, 1W4 Wuchtschaden zufügen." }
+    ],
     "benefits": [
       {
         "name_en": "Unarmed Fighting",
@@ -2024,6 +2677,11 @@
       "amount": 1,
       "max": 30
     },
+    "summary_en": "When you miss with an attack roll, you can hit instead. Once per turn.",
+    "summary_de": "Wenn du bei einem Angriffswurf nicht triffst, wird der Wurf zu einem Treffer. Einmal pro Zug.",
+    "grants": [
+      { "type": "convert_miss_to_hit", "frequency": "once_per_turn" }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -2054,6 +2712,11 @@
       "amount": 1,
       "max": 30
     },
+    "summary_en": "Immediately after taking the Attack action or the Magic action, teleport up to 30 feet to an unoccupied space you can see.",
+    "summary_de": "Sofort nach der Angriffs- oder der magischen Aktion: Bis zu neun Meter weit in einen sichtbaren freien Bereich teleportieren.",
+    "grants": [
+      { "type": "movement_special", "trigger": "after_attack_or_magic_action", "distance_feet": 30, "description_en": "Teleport up to 30 feet to an unoccupied space you can see.", "description_de": "Bis zu neun Meter weit in einen sichtbaren freien Bereich teleportieren." }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -2084,6 +2747,12 @@
       "amount": 1,
       "max": 30
     },
+    "summary_en": "Resistance to two chosen damage types from a list of nine (change on Long Rest). Reaction: redirect incoming damage of a chosen type to a visible creature within 60 feet (DEX save DC 8 + CON + PB; fail: 2d12 + CON modifier).",
+    "summary_de": "Resistenz gegen zwei gewählte Schadensarten aus neun Optionen (nach langer Rast änderbar). Reaktion: Eingehenden gewählten Schadenstyp zu einer sichtbaren Kreatur in 18 Metern umleiten (GES-RW SG 8 + KON + ÜB; Misserfolg: 2W12 + KON-Modifikator).",
+    "grants": [
+      { "type": "damage_resistance", "damage_types": "chosen_2_from_acid_cold_fire_lightning_necrotic_poison_psychic_radiant_thunder", "change_on": "long_rest" },
+      { "type": "reaction", "trigger": "take_chosen_resistance_damage_type", "effect": "redirect_2d12_plus_con_damage_to_visible_creature_within_60ft", "saving_throw": "dexterity_dc_8_plus_con_plus_pb" }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -2120,6 +2789,11 @@
       "amount": 1,
       "max": 30
     },
+    "summary_en": "When you or an ally within 60 feet makes a D20 Test, roll 2d4 and add the total as a bonus or penalty. Recharges on Initiative roll or Short/Long Rest.",
+    "summary_de": "Wenn du oder ein Verbündeter in 18 Metern eine W20-Prüfung ablegt, 2W4 würfeln und Ergebnis als Bonus oder Malus addieren. Aufladung nach Initiativewurf oder kurzer/langer Rast.",
+    "grants": [
+      { "type": "active_ability", "ability_id": "improve_fate", "uses": 1, "recharge": "initiative_or_short_rest", "description_en": "When you or an ally within 60 feet makes a D20 Test, roll 2d4 and apply the total as a bonus or penalty to that roll.", "description_de": "Wenn du oder ein Verbündeter in 18 Metern eine W20-Prüfung ablegt, 2W4 würfeln und Ergebnis als Bonus oder Malus auf den Wurf anwenden." }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -2150,6 +2824,12 @@
       "amount": 1,
       "max": 30
     },
+    "summary_en": "HP maximum +40. Whenever you regain HP, also recover additional HP equal to your CON modifier (once per turn).",
+    "summary_de": "Trefferpunktemaximum +40. Wann immer du TP zurückerhältst, erhältst du zusätzliche TP in Höhe deines KON-Modifikators (einmal pro Zug).",
+    "grants": [
+      { "type": "hp_bonus", "value": 40 },
+      { "type": "special", "description_en": "Whenever you regain Hit Points, recover additional HP equal to your CON modifier. Once per turn.", "description_de": "Wann immer du Trefferpunkte zurückerhältst, kannst du zusätzliche TP in Höhe deines KON-Modifikators erhalten. Einmal pro Zug." }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -2181,6 +2861,12 @@
       "amount": 1,
       "max": 30
     },
+    "summary_en": "Bludgeoning, Piercing, and Slashing damage you deal ignores Resistance. On a d20 roll of 20 for an attack, deal bonus damage equal to the stat increased by this feat (same damage type).",
+    "summary_de": "Dein Hieb-, Stich- und Wuchtschaden ignoriert Resistenzen. Bei einem W20-Ergebnis von 20 auf einem Angriffswurf: Zusätzlicher Schaden in Höhe des durch dieses Talent erhöhten Werts (gleiche Schadensart).",
+    "grants": [
+      { "type": "special", "description_en": "Bludgeoning, Piercing, and Slashing damage you deal always ignores Resistance.", "description_de": "Jeder Hieb-, Stich- und Wuchtschaden, den du bewirkst, ignoriert entsprechende Resistenzen." },
+      { "type": "special", "description_en": "When you roll a 20 on the d20 for an attack roll, deal extra damage equal to the ability score increased by this feat (same type as the attack).", "description_de": "Bei einem W20-Ergebnis von 20 auf einem Angriffswurf: Zusätzlicher Schaden in Höhe des durch dieses Talent erhöhten Attributswerts (gleiche Art wie Angriff)." }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -2217,6 +2903,12 @@
       "amount": 1,
       "max": 30
     },
+    "summary_en": "Once per Long Rest: when reduced to 0 HP, drop to 1 HP and regain half your HP maximum. Pool of 10d10s: Bonus Action to spend and roll any from the pool, regaining HP equal to the total (pool refreshes on Long Rest).",
+    "summary_de": "Einmal pro langer Rast: Statt auf 0 TP zu fallen, auf 1 TP bleiben und Hälfte des TP-Maximums zurückerhalten. Vorrat aus 10 W10: Bonusaktion, um beliebig viele zu verbrauchen, würfeln und TP in Höhe des Ergebnisses zurückerhalten (Vorrat nach langer Rast).",
+    "grants": [
+      { "type": "active_ability", "ability_id": "last_stand", "trigger": "reduced_to_0_hp", "uses": 1, "recharge": "long_rest", "description_en": "Drop to 1 HP instead of 0 and regain HP equal to half your HP maximum.", "description_de": "Auf 1 TP fallen statt auf 0, und TP in Höhe der Hälfte des TP-Maximums zurückerhalten." },
+      { "type": "active_ability", "ability_id": "recover_vitality", "action_type": "bonus_action", "resource_pool": { "dice_count": 10, "die": "d10" }, "recharge": "long_rest", "description_en": "Spend any number of d10s from the pool, roll them, and regain HP equal to the total.", "description_de": "Beliebig viele W10 aus dem Vorrat verbrauchen, würfeln und TP in Höhe des Gesamtergebnisses zurückerhalten." }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -2253,6 +2945,12 @@
       "amount": 1,
       "max": 30
     },
+    "summary_en": "Gain proficiency in all skills. Gain Expertise in one skill of your choice.",
+    "summary_de": "Übung in allen Fertigkeiten. Expertise in einer Fertigkeit nach Wahl.",
+    "grants": [
+      { "type": "skill_proficiency", "skills": "all" },
+      { "type": "skill_proficiency", "skills": "any", "choose": 1, "upgrade_to_expertise": true }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -2289,6 +2987,12 @@
       "amount": 1,
       "max": 30
     },
+    "summary_en": "Speed +30 feet. Bonus Action: take the Disengage action and end the Grappled condition on yourself.",
+    "summary_de": "Bewegungsrate +9 Meter. Bonusaktion: Rückzug-Aktion ausführen und den Gepackt-Zustand bei dir beenden.",
+    "grants": [
+      { "type": "speed_bonus", "value": 30 },
+      { "type": "active_ability", "ability_id": "escape_artist", "action_type": "bonus_action", "description_en": "Take the Disengage action, which also ends the Grappled condition on you.", "description_de": "Rückzug-Aktion ausführen, die auch den Zustand Gepackt bei dir beendet." }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -2327,6 +3031,11 @@
       "amount": 1,
       "max": 30
     },
+    "summary_en": "When you cast a level 1–4 spell, roll 1d4. If the result matches the slot's level, the slot is not expended.",
+    "summary_de": "Wenn du einen Zauber des 1.–4. Grades wirkst, 1W4 würfeln. Stimmt das Ergebnis mit dem Platzgrad überein, wird der Platz nicht verbraucht.",
+    "grants": [
+      { "type": "special", "description_en": "When you cast a spell using a level 1–4 slot, roll 1d4. If the result equals the slot's level, the slot is not expended.", "description_de": "Beim Wirken eines Zaubers mit einem Platz des 1.–4. Grades: 1W4 würfeln. Stimmt das Ergebnis mit dem Platzgrad überein, wird der Platz nicht verbraucht." }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -2357,6 +3066,12 @@
       "amount": 1,
       "max": 30
     },
+    "summary_en": "In Dim Light or Darkness: Bonus Action to become Invisible (ends on your next action, Bonus Action, or Reaction). Resistance to all damage except Psychic and Radiant.",
+    "summary_de": "Bei dämmrigem Licht oder in Dunkelheit: Bonusaktion zum Unsichtbarwerden (endet bei nächster Aktion, Bonusaktion oder Reaktion). Resistenz gegen alle Schadensarten außer Gleißend und Psychisch.",
+    "grants": [
+      { "type": "active_ability", "ability_id": "merge_with_shadows", "action_type": "bonus_action", "condition": "in_dim_light_or_darkness", "description_en": "Gain the Invisible condition. Ends immediately when you take an action, Bonus Action, or Reaction.", "description_de": "Unsichtbar werden. Endet sofort nach einer Aktion, Bonusaktion oder Reaktion." },
+      { "type": "damage_resistance", "damage_types": "all_except_psychic_and_radiant", "condition": "in_dim_light_or_darkness" }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
@@ -2393,6 +3108,11 @@
       "amount": 1,
       "max": 30
     },
+    "summary_en": "Truesight with a range of 60 feet.",
+    "summary_de": "Wahrer Blick mit einer Reichweite von 18 Metern.",
+    "grants": [
+      { "type": "special", "description_en": "You have Truesight with a range of 60 feet.", "description_de": "Du hast Wahrer Blick mit einer Reichweite von 18 Metern." }
+    ],
     "benefits": [
       {
         "name_en": "Ability Score Increase",
