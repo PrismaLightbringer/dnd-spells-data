@@ -1024,6 +1024,14 @@
       "utilize_de": "Eine Substanz identifizieren (SG 15) oder ein Feuer entfachen (SG 15)",
       "craft_en": "Acid, Alchemist's Fire, Component Pouch, Oil, Paper, Perfume",
       "craft_de": "Alchemistenfeuer, Materialkomponentenbeutel, Öl, Papier, Parfüm, Säure",
+      "craftables": [
+        { "type": "item", "item_id": "acid" },
+        { "type": "item", "item_id": "alchemists-fire" },
+        { "type": "item", "item_id": "component-pouch" },
+        { "type": "item", "item_id": "oil" },
+        { "type": "item", "item_id": "paper" },
+        { "type": "item", "item_id": "perfume" }
+      ],
       "variants": null
     },
     {
@@ -1038,6 +1046,9 @@
       "utilize_de": "Ein vergiftetes Getränk erkennen (SG 15) oder Alkohol identifizieren (SG 10)",
       "craft_en": "Antitoxin",
       "craft_de": "Gegengift",
+      "craftables": [
+        { "type": "item", "item_id": "antitoxin" }
+      ],
       "variants": null
     },
     {
@@ -1052,6 +1063,10 @@
       "utilize_de": "Ästhetischen und fälschungssicheren Text notieren (SG 15)",
       "craft_en": "Ink, Spell Scroll",
       "craft_de": "Tinte, Zauberschriftrolle",
+      "craftables": [
+        { "type": "item", "item_id": "ink" },
+        { "type": "item", "item_id": "spell-scroll", "include_variants": true }
+      ],
       "variants": null
     },
     {
@@ -1066,6 +1081,17 @@
       "utilize_de": "Eine Tür oder einen Behälter versiegeln oder aufbrechen (SG 20)",
       "craft_en": "Club, Greatclub, Quarterstaff, Barrel, Chest, Ladder, Pole, Portable Ram, Torch",
       "craft_de": "Kampfstab, Knüppel, Zweihandknüppel, Fackel, Fass, Leiter, Stange, tragbarer Rammbock, Truhe",
+      "craftables": [
+        { "type": "item", "item_id": "club" },
+        { "type": "item", "item_id": "greatclub" },
+        { "type": "item", "item_id": "quarterstaff" },
+        { "type": "item", "item_id": "barrel" },
+        { "type": "item", "item_id": "chest" },
+        { "type": "item", "item_id": "ladder" },
+        { "type": "item", "item_id": "pole" },
+        { "type": "item", "item_id": "portable-ram" },
+        { "type": "item", "item_id": "torch" }
+      ],
       "variants": null
     },
     {
@@ -1080,6 +1106,9 @@
       "utilize_de": "Die Karte eines kleinen Gebiets zeichnen (SG 15)",
       "craft_en": "Map",
       "craft_de": "Karte",
+      "craftables": [
+        { "type": "item", "item_id": "map" }
+      ],
       "variants": null
     },
     {
@@ -1094,6 +1123,9 @@
       "utilize_de": "Schuhe bearbeiten, sodass der nächste Geschicklichkeitswurf (Akrobatik) des Trägers im Vorteil ist (SG 10)",
       "craft_en": "Climber's Kit",
       "craft_de": "Kletterausrüstung",
+      "craftables": [
+        { "type": "item", "item_id": "climbers-kit" }
+      ],
       "variants": null
     },
     {
@@ -1108,6 +1140,9 @@
       "utilize_de": "Geschmack von Nahrung verbessern (SG 10), verdorbene oder vergiftete Nahrung erkennen (SG 15)",
       "craft_en": "Rations",
       "craft_de": "Rationen",
+      "craftables": [
+        { "type": "item", "item_id": "rations" }
+      ],
       "variants": null
     },
     {
@@ -1122,6 +1157,12 @@
       "utilize_de": "Bestimmen, was ein Glasbehälter in den letzten 24 Stunden enthalten hat (SG 15)",
       "craft_en": "Glass Bottle, Magnifying Glass, Spyglass, Vial",
       "craft_de": "Fernrohr, Glasflasche, Lupe, Phiole",
+      "craftables": [
+        { "type": "item", "item_id": "glass-bottle" },
+        { "type": "item", "item_id": "magnifying-glass" },
+        { "type": "item", "item_id": "spyglass" },
+        { "type": "item", "item_id": "vial" }
+      ],
       "variants": null
     },
     {
@@ -1136,6 +1177,10 @@
       "utilize_de": "Den Wert eines Edelsteins bestimmen (SG 15)",
       "craft_en": "Arcane Focus, Holy Symbol",
       "craft_de": "Arkaner Fokus, Heiliges Symbol",
+      "craftables": [
+        { "type": "item", "item_id": "arcane-focus", "include_variants": true },
+        { "type": "item", "item_id": "holy-symbol", "include_variants": true }
+      ],
       "variants": null
     },
     {
@@ -1150,6 +1195,20 @@
       "utilize_de": "Einem Ledergegenstand Verzierungen hinzufügen (SG 10)",
       "craft_en": "Sling, Whip, Hide Armor, Leather Armor, Studded Leather Armor, Backpack, Crossbow Bolt Case, Map or Scroll Case, Parchment, Pouch, Quiver, Waterskin",
       "craft_de": "Peitsche, Schleuder, Fellrüstung, beschlagene Lederrüstung, Lederrüstung, Armbrustbolzen-Behälter, Behälter für Karten oder Schriftrollen, Beutel, Köcher, Pergament, Rucksack, Trinkschlauch",
+      "craftables": [
+        { "type": "item", "item_id": "sling" },
+        { "type": "item", "item_id": "whip" },
+        { "type": "item", "item_id": "hide-armor" },
+        { "type": "item", "item_id": "leather-armor" },
+        { "type": "item", "item_id": "studded-leather-armor" },
+        { "type": "item", "item_id": "backpack" },
+        { "type": "item", "item_id": "crossbow-bolt-case" },
+        { "type": "item", "item_id": "map-or-scroll-case" },
+        { "type": "item", "item_id": "parchment" },
+        { "type": "item", "item_id": "pouch" },
+        { "type": "item", "item_id": "quiver" },
+        { "type": "item", "item_id": "waterskin" }
+      ],
       "variants": null
     },
     {
@@ -1164,6 +1223,9 @@
       "utilize_de": "Einen Stein mit einem Symbol oder einem Loch versehen (SG 10)",
       "craft_en": "Block and Tackle",
       "craft_de": "Flaschenzug",
+      "craftables": [
+        { "type": "item", "item_id": "block-and-tackle" }
+      ],
       "variants": null
     },
     {
@@ -1178,6 +1240,10 @@
       "utilize_de": "Ein erkennbares Bild von etwas anfertigen, was du gesehen hast (SG 10)",
       "craft_en": "Druidic Focus, Holy Symbol",
       "craft_de": "Druidischer Fokus, Heiliges Symbol",
+      "craftables": [
+        { "type": "item", "item_id": "druidic-focus", "include_variants": true },
+        { "type": "item", "item_id": "holy-symbol", "include_variants": true }
+      ],
       "variants": null
     },
     {
@@ -1192,6 +1258,10 @@
       "utilize_de": "Bestimmen, was ein Keramikbehälter in den letzten 24 Stunden enthalten hat (SG 15)",
       "craft_en": "Jug, Lamp",
       "craft_de": "Krug, Lampe",
+      "craftables": [
+        { "type": "item", "item_id": "jug" },
+        { "type": "item", "item_id": "lamp" }
+      ],
       "variants": null
     },
     {
@@ -1206,6 +1276,21 @@
       "utilize_de": "Eine Tür oder einen Behälter aufbrechen (SG 20)",
       "craft_en": "Any Melee weapon (except Club, Greatclub, Quarterstaff, and Whip), Medium armor (except Hide), Heavy armor, Ball Bearings, Bucket, Caltrops, Chain, Crowbar, Firearm Bullets, Grappling Hook, Iron Pot, Iron Spikes, Sling Bullets",
       "craft_de": "Jede Nahkampfwaffe (außer Kampfstab, Knüppel, Peitsche und Zweihandknüppel), mittelschwere Rüstung (außer Fellrüstung), schwere Rüstung, Brechstange, Eimer, Eisenstachel, Eisentopf, Enterhaken, Feuerwaffenmunition, Kette, Krähenfüße, Metallkügelchen, Schleudermunition",
+      "craftables": [
+        { "type": "group", "label_en": "Any Melee weapon (except Club, Greatclub, Quarterstaff, and Whip)", "label_de": "Jede Nahkampfwaffe (außer Kampfstab, Knüppel, Peitsche und Zweihandknüppel)", "source": "weapons", "filter": { "category_contains": "melee" }, "exclude_ids": ["club", "greatclub", "quarterstaff", "whip"] },
+        { "type": "group", "label_en": "Medium armor (except Hide)", "label_de": "Mittelschwere Rüstung (außer Fellrüstung)", "source": "armor", "filter": { "category": "medium" }, "exclude_ids": ["hide-armor"] },
+        { "type": "group", "label_en": "Heavy armor", "label_de": "Schwere Rüstung", "source": "armor", "filter": { "category": "heavy" }, "exclude_ids": [] },
+        { "type": "item", "item_id": "ball-bearings" },
+        { "type": "item", "item_id": "bucket" },
+        { "type": "item", "item_id": "caltrops" },
+        { "type": "item", "item_id": "chain" },
+        { "type": "item", "item_id": "crowbar" },
+        { "type": "item", "item_id": "ammunition", "variant_id": "bullets-firearm" },
+        { "type": "item", "item_id": "grappling-hook" },
+        { "type": "item", "item_id": "iron-pot" },
+        { "type": "item", "item_id": "iron-spikes" },
+        { "type": "item", "item_id": "ammunition", "variant_id": "bullets-sling" }
+      ],
       "variants": null
     },
     {
@@ -1220,6 +1305,21 @@
       "utilize_de": "Einen winzigen Gegenstand aus Abfällen herstellen, der nach einer Minute zerfällt (SG 20)",
       "craft_en": "Musket, Pistol, Bell, Bullseye Lantern, Flask, Hooded Lantern, Hunting Trap, Lock, Manacles, Mirror, Shovel, Signal Whistle, Tinderbox",
       "craft_de": "Muskete, Pistole, Glocke, abdeckbare Laterne, Blendlaterne, Flasche, Handschellen, Jagdfalle, Schaufel, Schloss, Signalpfeife, Spiegel, Zunderkästchen",
+      "craftables": [
+        { "type": "item", "item_id": "musket" },
+        { "type": "item", "item_id": "pistol" },
+        { "type": "item", "item_id": "bell" },
+        { "type": "item", "item_id": "bullseye-lantern" },
+        { "type": "item", "item_id": "flask" },
+        { "type": "item", "item_id": "hooded-lantern" },
+        { "type": "item", "item_id": "hunting-trap" },
+        { "type": "item", "item_id": "lock" },
+        { "type": "item", "item_id": "manacles" },
+        { "type": "item", "item_id": "mirror" },
+        { "type": "item", "item_id": "shovel" },
+        { "type": "item", "item_id": "signal-whistle" },
+        { "type": "item", "item_id": "tinderbox" }
+      ],
       "variants": null
     },
     {
@@ -1234,6 +1334,20 @@
       "utilize_de": "Einen Riss in Kleidung flicken (SG 10) oder eine winzige Näharbeit anfertigen (SG 10)",
       "craft_en": "Padded Armor, Basket, Bedroll, Blanket, Fine Clothes, Net, Robe, Rope, Sack, String, Tent, Traveler's Clothes",
       "craft_de": "Gepolsterte Rüstung, feine Kleidung, Decke, Netz, Korb, Reisekleidung, Robe, Sack, Seil, Schlafsack, Schnur, Zelt",
+      "craftables": [
+        { "type": "item", "item_id": "padded-armor" },
+        { "type": "item", "item_id": "basket" },
+        { "type": "item", "item_id": "bedroll" },
+        { "type": "item", "item_id": "blanket" },
+        { "type": "item", "item_id": "fine-clothes" },
+        { "type": "item", "item_id": "net" },
+        { "type": "item", "item_id": "robe" },
+        { "type": "item", "item_id": "rope" },
+        { "type": "item", "item_id": "sack" },
+        { "type": "item", "item_id": "string" },
+        { "type": "item", "item_id": "tent" },
+        { "type": "item", "item_id": "travelers-clothes" }
+      ],
       "variants": null
     },
     {
@@ -1248,6 +1362,18 @@
       "utilize_de": "Muster in Holz schnitzen (SG 10)",
       "craft_en": "Club, Greatclub, Quarterstaff, Ranged weapons (except Pistol, Musket, and Sling), Arcane Focus, Arrows, Bolts, Druidic Focus, Ink Pen, Needles",
       "craft_de": "Kampfstab, Knüppel, Zweihandknüppel, Fernkampfwaffen (außer Muskete, Pistole und Schleuder), Arkaner Fokus, Blasrohrpfeile, Bolzen, Druidischer Fokus, Pfeile, Tintenfüller",
+      "craftables": [
+        { "type": "item", "item_id": "club" },
+        { "type": "item", "item_id": "greatclub" },
+        { "type": "item", "item_id": "quarterstaff" },
+        { "type": "group", "label_en": "Ranged weapons (except Pistol, Musket, and Sling)", "label_de": "Fernkampfwaffen (außer Muskete, Pistole und Schleuder)", "source": "weapons", "filter": { "category_contains": "ranged" }, "exclude_ids": ["pistol", "musket", "sling"] },
+        { "type": "item", "item_id": "arcane-focus", "include_variants": true },
+        { "type": "item", "item_id": "ammunition", "variant_id": "arrows" },
+        { "type": "item", "item_id": "ammunition", "variant_id": "bolts" },
+        { "type": "item", "item_id": "druidic-focus", "include_variants": true },
+        { "type": "item", "item_id": "ink-pen" },
+        { "type": "item", "item_id": "ammunition", "variant_id": "needles" }
+      ],
       "variants": null
     },
     {
@@ -1262,6 +1388,9 @@
       "utilize_de": "Schminke auftragen (SG 10)",
       "craft_en": "Costume",
       "craft_de": "Kostüm",
+      "craftables": [
+        { "type": "item", "item_id": "costume" }
+      ],
       "variants": null
     },
     {
@@ -1292,24 +1421,28 @@
       "craft_de": null,
       "variants": [
         {
+          "id": "dice",
           "name_en": "Dice",
           "name_de": "Würfel",
           "cost": "1 SP",
           "weight": "—"
         },
         {
+          "id": "dragonchess",
           "name_en": "Dragonchess",
           "name_de": "Drachenschach",
           "cost": "1 GP",
           "weight": "—"
         },
         {
+          "id": "playing-cards",
           "name_en": "Playing Cards",
           "name_de": "Spielkarten",
           "cost": "5 SP",
           "weight": "—"
         },
         {
+          "id": "three-dragon-ante",
           "name_en": "Three-Dragon Ante",
           "name_de": "Drei-Drachen-Ante",
           "cost": "1 GP",
@@ -1329,6 +1462,12 @@
       "utilize_de": "Eine Pflanze identifizieren (SG 10)",
       "craft_en": "Antitoxin, Candle, Healer's Kit, Potion of Healing",
       "craft_de": "Gegengift, Heilerausrüstung, Heiltrank, Kerze",
+      "craftables": [
+        { "type": "item", "item_id": "antitoxin" },
+        { "type": "item", "item_id": "candle" },
+        { "type": "item", "item_id": "healers-kit" },
+        { "type": "item", "item_id": "potion-of-healing" }
+      ],
       "variants": null
     },
     {
@@ -1345,60 +1484,70 @@
       "craft_de": null,
       "variants": [
         {
+          "id": "bagpipes",
           "name_en": "Bagpipes",
           "name_de": "Dudelsack",
           "cost": "30 GP",
           "weight": "6 lb."
         },
         {
+          "id": "drum",
           "name_en": "Drum",
           "name_de": "Trommel",
           "cost": "6 GP",
           "weight": "3 lb."
         },
         {
+          "id": "dulcimer",
           "name_en": "Dulcimer",
           "name_de": "Hackbrett",
           "cost": "25 GP",
           "weight": "10 lb."
         },
         {
+          "id": "flute",
           "name_en": "Flute",
           "name_de": "Flöte",
           "cost": "2 GP",
           "weight": "1 lb."
         },
         {
+          "id": "horn",
           "name_en": "Horn",
           "name_de": "Horn",
           "cost": "3 GP",
           "weight": "2 lb."
         },
         {
+          "id": "lute",
           "name_en": "Lute",
           "name_de": "Laute",
           "cost": "35 GP",
           "weight": "2 lb."
         },
         {
+          "id": "lyre",
           "name_en": "Lyre",
           "name_de": "Leier",
           "cost": "30 GP",
           "weight": "2 lb."
         },
         {
+          "id": "pan-flute",
           "name_en": "Pan Flute",
           "name_de": "Panflöte",
           "cost": "12 GP",
           "weight": "2 lb."
         },
         {
+          "id": "shawm",
           "name_en": "Shawm",
           "name_de": "Schalmei",
           "cost": "2 GP",
           "weight": "1 lb."
         },
         {
+          "id": "viol",
           "name_en": "Viol",
           "name_de": "Gambe",
           "cost": "30 GP",
@@ -1432,6 +1581,9 @@
       "utilize_de": "Einen vergifteten Gegenstand erkennen (SG 10)",
       "craft_en": "Basic Poison",
       "craft_de": "Einfaches Gift",
+      "craftables": [
+        { "type": "item", "item_id": "basic-poison" }
+      ],
       "variants": null
     },
     {
@@ -1483,6 +1635,7 @@
       "text_de": "Geschosse werden für Waffen mit der Eigenschaft Geschosse benötigt. Die jeweils erforderliche Art der Geschosse ist in der Waffenbeschreibung angegeben.\r\n\r\nIn der Tabelle „Geschosse“ sind die verschiedenen Arten sowie die Mengen aufgeführt, die du beim Kauf erhältst. Außerdem ist der Gegenstand genannt, der üblicherweise zur Aufbewahrung der Geschosse verwendet wird (er muss separat erworben werden).",
       "variants": [
         {
+          "id": "arrows",
           "name_en": "Arrows",
           "name_de": "Pfeile",
           "amount": 20,
@@ -1492,6 +1645,7 @@
           "cost": "1 GP"
         },
         {
+          "id": "bolts",
           "name_en": "Bolts",
           "name_de": "Bolzen",
           "amount": 20,
@@ -1501,6 +1655,7 @@
           "cost": "1 GP"
         },
         {
+          "id": "bullets-firearm",
           "name_en": "Bullets, Firearm",
           "name_de": "Munition, Feuerwaffe",
           "amount": 10,
@@ -1510,6 +1665,7 @@
           "cost": "3 GP"
         },
         {
+          "id": "bullets-sling",
           "name_en": "Bullets, Sling",
           "name_de": "Munition, Schleuder",
           "amount": 20,
@@ -1519,6 +1675,7 @@
           "cost": "4 CP"
         },
         {
+          "id": "needles",
           "name_en": "Needles",
           "name_de": "Blasrohrpfeile",
           "amount": 50,
@@ -1551,30 +1708,35 @@
       "text_de": "Ein Arkaner Fokus hat eine der Formen, die in der Tabelle „Arkane Fokusse“ aufgeführt sind. Er ist mit Juwelen besetzt oder mit Schnitzereien versehen, um arkane Magie zu kanalisieren. Hexenmeister, Magier und Zauberer können diese Gegenstände als Zauberfokus verwenden.",
       "variants": [
         {
+          "id": "crystal",
           "name_en": "Crystal",
           "name_de": "Kristall",
           "weight": "1 lb.",
           "cost": "10 GP"
         },
         {
+          "id": "orb",
           "name_en": "Orb",
           "name_de": "Kugel",
           "weight": "3 lb.",
           "cost": "20 GP"
         },
         {
+          "id": "rod",
           "name_en": "Rod",
           "name_de": "Rute",
           "weight": "2 lb.",
           "cost": "10 GP"
         },
         {
+          "id": "staff-also-a-quarterstaff",
           "name_en": "Staff (also a Quarterstaff)",
           "name_de": "Stab (auch Kampfstab)",
           "weight": "4 lb.",
           "cost": "5 GP"
         },
         {
+          "id": "wand",
           "name_en": "Wand",
           "name_de": "Zauberstab",
           "weight": "1 lb.",
@@ -1960,18 +2122,21 @@
       "text_de": "Ein Druidischer Fokus hat eine der Formen, die in der Tabelle „Druidische Fokusse“ aufgeführt sind. Er ist mit Schnitzereien, Bändern oder Malereien versehen, um Urmagie zu kanalisieren. Ein Druide oder Waldläufer kann einen solchen Gegenstand als Zauberfokus verwenden.",
       "variants": [
         {
+          "id": "sprig-of-mistletoe",
           "name_en": "Sprig of mistletoe",
           "name_de": "Mistelzweig",
           "weight": "—",
           "cost": "1 GP"
         },
         {
+          "id": "wooden-staff-also-a-quarterstaff",
           "name_en": "Wooden staff (also a Quarterstaff)",
           "name_de": "Holzstab (auch Kampfstab)",
           "weight": "4 lb.",
           "cost": "5 GP"
         },
         {
+          "id": "yew-wand",
           "name_en": "Yew wand",
           "name_de": "Zauberstab aus Eibe",
           "weight": "1 lb.",
@@ -2170,18 +2335,21 @@
       "text_de": "Ein Heiliges Symbol hat eine der Formen, die in der Tabelle „Heilige Symbole“ aufgeführt sind. Es ist mit Edelsteinen besetzt oder bemalt, um göttliche Magie zu kanalisieren. Ein Kleriker oder Paladin kann ein Heiliges Symbol als Zauberfokus verwenden.\r\n\r\nDie Tabelle zeigt, ob ein Heiliges Symbol gehalten, getragen oder auf Stoff (etwa auf einem Wappenrock oder Banner) oder einem Schild angebracht werden muss.",
       "variants": [
         {
+          "id": "amulet-worn-or-held",
           "name_en": "Amulet (worn or held)",
           "name_de": "Amulett (getragen oder gehalten)",
           "weight": "1 lb.",
           "cost": "5 GP"
         },
         {
+          "id": "emblem-borne-on-fabric-or-a-shield",
           "name_en": "Emblem (borne on fabric or a Shield)",
           "name_de": "Emblem (auf Stoff oder einem Schild angebracht)",
           "weight": "—",
           "cost": "5 GP"
         },
         {
+          "id": "reliquary-held",
           "name_en": "Reliquary (held)",
           "name_de": "Reliquiar (gehalten)",
           "weight": "2 lb.",
@@ -2638,12 +2806,14 @@
       "text_de": "Eine *Zauberschriftrolle* (Zaubertrick) oder *Zauberschriftrolle* (1. Grad) ist ein magischer Gegenstand, der die Worte eines Zaubertricks beziehungsweise eines Zaubers des 1. Grades enthält, der vom Erschaffer der Rolle festgelegt wurde. Wenn sich der Zauber auf der Zauberliste deiner Klasse befindet, kannst du die Rolle lesen und den Zauber mit seiner normalen Wirkzeit ausführen, ohne Materialkomponenten bereitzustellen.\r\n\r\nWenn der Zauber einen Rettungswurf oder einen Angriffswurf erfordert, beträgt der Zauberrettungswurf-SG 13 und der Angriffsbonus +5. Die Rolle zerfällt, wenn das Wirken abgeschlossen ist.",
       "variants": [
         {
+          "id": "cantrip",
           "name_en": "Spell Scroll (Cantrip)",
           "name_de": "Zauberschriftrolle (Zaubertrick)",
           "weight": "—",
           "cost": "30 GP"
         },
         {
+          "id": "level-1",
           "name_en": "Spell Scroll (Level 1)",
           "name_de": "Zauberschriftrolle (1. Grad)",
           "weight": "—",
