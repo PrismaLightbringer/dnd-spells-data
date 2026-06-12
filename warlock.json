@@ -98,6 +98,7 @@
           "warlock-eldritch-invocations"
         ],
         "resources": {
+          "warlock_level": 1,
           "cantrips_known": 2,
           "prepared_spells": 2,
           "prepared_spell_max_level": 1,
@@ -113,6 +114,7 @@
           "warlock-magical-cunning"
         ],
         "resources": {
+          "warlock_level": 2,
           "cantrips_known": 2,
           "prepared_spells": 3,
           "prepared_spell_max_level": 1,
@@ -129,6 +131,7 @@
         ],
         "subclass_feature_level": true,
         "resources": {
+          "warlock_level": 3,
           "cantrips_known": 2,
           "prepared_spells": 4,
           "prepared_spell_max_level": 2,
@@ -144,6 +147,7 @@
           "warlock-asi-4"
         ],
         "resources": {
+          "warlock_level": 4,
           "cantrips_known": 3,
           "prepared_spells": 5,
           "prepared_spell_max_level": 2,
@@ -157,6 +161,7 @@
         "proficiency_bonus": 3,
         "feature_ids": [],
         "resources": {
+          "warlock_level": 5,
           "cantrips_known": 3,
           "prepared_spells": 6,
           "prepared_spell_max_level": 3,
@@ -171,6 +176,7 @@
         "feature_ids": [],
         "subclass_feature_level": true,
         "resources": {
+          "warlock_level": 6,
           "cantrips_known": 3,
           "prepared_spells": 7,
           "prepared_spell_max_level": 3,
@@ -184,6 +190,7 @@
         "proficiency_bonus": 3,
         "feature_ids": [],
         "resources": {
+          "warlock_level": 7,
           "cantrips_known": 3,
           "prepared_spells": 8,
           "prepared_spell_max_level": 4,
@@ -199,6 +206,7 @@
           "warlock-asi-8"
         ],
         "resources": {
+          "warlock_level": 8,
           "cantrips_known": 3,
           "prepared_spells": 9,
           "prepared_spell_max_level": 4,
@@ -214,6 +222,7 @@
           "warlock-contact-patron"
         ],
         "resources": {
+          "warlock_level": 9,
           "cantrips_known": 3,
           "prepared_spells": 10,
           "prepared_spell_max_level": 5,
@@ -228,6 +237,7 @@
         "feature_ids": [],
         "subclass_feature_level": true,
         "resources": {
+          "warlock_level": 10,
           "cantrips_known": 4,
           "prepared_spells": 10,
           "prepared_spell_max_level": 5,
@@ -243,6 +253,7 @@
           "warlock-mystic-arcanum-6"
         ],
         "resources": {
+          "warlock_level": 11,
           "cantrips_known": 4,
           "prepared_spells": 11,
           "prepared_spell_max_level": 5,
@@ -258,6 +269,7 @@
           "warlock-asi-12"
         ],
         "resources": {
+          "warlock_level": 12,
           "cantrips_known": 4,
           "prepared_spells": 11,
           "prepared_spell_max_level": 5,
@@ -273,6 +285,7 @@
           "warlock-mystic-arcanum-7"
         ],
         "resources": {
+          "warlock_level": 13,
           "cantrips_known": 4,
           "prepared_spells": 12,
           "prepared_spell_max_level": 5,
@@ -287,6 +300,7 @@
         "feature_ids": [],
         "subclass_feature_level": true,
         "resources": {
+          "warlock_level": 14,
           "cantrips_known": 4,
           "prepared_spells": 12,
           "prepared_spell_max_level": 5,
@@ -302,6 +316,7 @@
           "warlock-mystic-arcanum-8"
         ],
         "resources": {
+          "warlock_level": 15,
           "cantrips_known": 4,
           "prepared_spells": 13,
           "prepared_spell_max_level": 5,
@@ -317,6 +332,7 @@
           "warlock-asi-16"
         ],
         "resources": {
+          "warlock_level": 16,
           "cantrips_known": 4,
           "prepared_spells": 13,
           "prepared_spell_max_level": 5,
@@ -332,6 +348,7 @@
           "warlock-mystic-arcanum-9"
         ],
         "resources": {
+          "warlock_level": 17,
           "cantrips_known": 4,
           "prepared_spells": 14,
           "prepared_spell_max_level": 5,
@@ -345,6 +362,7 @@
         "proficiency_bonus": 6,
         "feature_ids": [],
         "resources": {
+          "warlock_level": 18,
           "cantrips_known": 4,
           "prepared_spells": 14,
           "prepared_spell_max_level": 5,
@@ -360,6 +378,7 @@
           "warlock-epic-boon"
         ],
         "resources": {
+          "warlock_level": 19,
           "cantrips_known": 4,
           "prepared_spells": 15,
           "prepared_spell_max_level": 5,
@@ -375,6 +394,7 @@
           "warlock-eldritch-master"
         ],
         "resources": {
+          "warlock_level": 20,
           "cantrips_known": 4,
           "prepared_spells": 15,
           "prepared_spell_max_level": 5,
@@ -925,7 +945,7 @@
       "name_de": "Schritte der Feenwesen",
       "summary_en": "Cast Misty Step without a spell slot (CHA modifier times, min. 1, Long Rest). Choose a bonus effect each casting: Refreshing Step (grant Temp HP) or Taunting Step (target has Disadvantage on attacks against others until your next turn).",
       "summary_de": "Nebelschritt ohne Zauberplatz (CHA-Mod. mal, mind. 1, Lange Rast). Bonuseffekt wählen: Erfrischender Schritt (temporäre TP) oder Verlockender Schritt (Ziel im Nachteil bei Angriffen gegen andere).",
-      "player_choice": true,
+      "player_choice": false,
       "choice_prompt_en": "Whenever you cast Misty Step via Steps of the Fey, choose one additional effect: Refreshing Step or Taunting Step.",
       "choice_prompt_de": "Wann immer du Nebelschritt via Schritte der Feenwesen wirkst, wähle einen zusätzlichen Effekt: Erfrischender Schritt oder Schmähender Schritt.",
       "text_en": "Your patron grants you the ability to move between the boundaries of the planes. You can cast Misty Step without expending a spell slot a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.\n\nIn addition, whenever you cast that spell, you can choose one of the following additional effects.\n\nRefreshing Step. Immediately after you teleport, you or one creature you can see within 10 feet gains 1d10 Temporary Hit Points.\n\nTaunting Step. Creatures within 5 feet of the space you left must succeed on a Wisdom saving throw against your spell save DC or have Disadvantage on attack rolls against creatures other than you until the start of your next turn.",
@@ -1097,7 +1117,7 @@
       "summary_de": "Immunität gegen den Zustand Bezaubert. Reaktion: Bei Treffer Bewegungsrate auf 0 senken; Angreifer WIS-RW oder Bezaubert bis Ende deines nächsten Zugs.",
       "player_choice": false,
       "text_en": "Your patron teaches you how to guard your mind and body. You are immune to the Charmed condition.\n\nIn addition, immediately after a creature you can see hits you with an attack roll, you can take a Reaction to reduce the damage you take by half (round down), and you can force the attacker to make a Wisdom saving throw against your spell save DC. On a failed save, the attacker takes Psychic damage equal to the damage you take. Once you use this Reaction, you can't use it again until you finish a Long Rest unless you expend a Pact Magic spell slot (no action required) to restore your use of it.",
-      "text_de": "Dein Schutzherr lehrt dich, wie du Körper und Geist schützt. Du bist gegen den Zustand Bezaubert immun.\n\nAußerdem kannst du sofort, nachdem eine Kreatur dich mit einem Angriffswurf getroffen hat, eine Reaktion ausführen, um den Schaden um die Hälfte zu verringern (abgerundet), und den Angreifer zu einem Weisheitsrettungswurf zwingen. Scheitert der Wurf, erleidet der Angreifer psychischen Schaden in Höhe des Schadens, den du erleidest. Du kannst diese Reaktion erst nach einer langen Rast erneut verwenden, es sei denn, du verbrauchst einen Paktmagie-Zauberplatz (keine Aktion erforderlich).",
+      "text_de": "Dein Schutzherr lehrt dich, wie du Körper und Geist schützt. Du bist gegen den Zustand Bezaubert immun.\n\nAußerdem kannst du sofort, nachdem eine Kreatur, die du sehen kannst, dich mit einem Angriffswurf getroffen hat, eine Reaktion ausführen, um den Schaden um die Hälfte zu verringern (abgerundet), und den Angreifer zu einem Weisheitsrettungswurf zwingen. Scheitert der Wurf, erleidet der Angreifer psychischen Schaden in Höhe des Schadens, den du erleidest. Du kannst diese Reaktion erst nach einer langen Rast erneut verwenden, es sei denn, du verbrauchst einen Paktmagie-Zauberplatz (keine Aktion erforderlich).",
       "grants": [
         {
           "type": "condition_immunity",
@@ -1107,7 +1127,7 @@
         },
         {
           "type": "triggered_effect",
-          "trigger": "hit_by_attack_roll",
+          "trigger": "hit_by_attack_roll_from_creature_you_can_see",
           "action_type": "reaction",
           "uses": 1,
           "recharge": "long_rest",
@@ -1887,6 +1907,31 @@
             }
           }
         }
+      ]
+    }
+  ],
+  "subclass_progressions": [
+    {
+      "subclass_id": "warlock-celestial",
+      "levels": [
+        { "level": 3, "resources": { "healing_light_dice_count": 4 } },
+        { "level": 4, "resources": { "healing_light_dice_count": 5 } },
+        { "level": 5, "resources": { "healing_light_dice_count": 6 } },
+        { "level": 6, "resources": { "healing_light_dice_count": 7 } },
+        { "level": 7, "resources": { "healing_light_dice_count": 8 } },
+        { "level": 8, "resources": { "healing_light_dice_count": 9 } },
+        { "level": 9, "resources": { "healing_light_dice_count": 10 } },
+        { "level": 10, "resources": { "healing_light_dice_count": 11 } },
+        { "level": 11, "resources": { "healing_light_dice_count": 12 } },
+        { "level": 12, "resources": { "healing_light_dice_count": 13 } },
+        { "level": 13, "resources": { "healing_light_dice_count": 14 } },
+        { "level": 14, "resources": { "healing_light_dice_count": 15 } },
+        { "level": 15, "resources": { "healing_light_dice_count": 16 } },
+        { "level": 16, "resources": { "healing_light_dice_count": 17 } },
+        { "level": 17, "resources": { "healing_light_dice_count": 18 } },
+        { "level": 18, "resources": { "healing_light_dice_count": 19 } },
+        { "level": 19, "resources": { "healing_light_dice_count": 20 } },
+        { "level": 20, "resources": { "healing_light_dice_count": 21 } }
       ]
     }
   ],

@@ -1025,7 +1025,7 @@
       "name_de": "Offenbarung in Fleisch",
       "summary_en": "Bonus Action: spend 1+ Sorcery Points to alter your body for 10 minutes. Per point: Aquatic Adaptation, Amphibious, double Climbing/Burrowing/Swimming speed, see in magical darkness, or squeeze through Tiny spaces.",
       "summary_de": "Bonusaktion: mindestens 1 Zaubereipunkt verbrauchen, Körper für 10 Min. verändern. Pro Punkt: aquatische Anpassung, beidatmend, verdoppelte Kletter-/Grab-/Schwimmrate, Sehen in magischer Dunkelheit oder durch kleine Öffnungen zwängen.",
-      "player_choice": true,
+      "player_choice": false,
       "choice_prompt_en": "When you use this feature, choose one or more benefits for each Sorcery Point spent: Aquatic Adaptation, Glistening Flight, See the Invisible, or Wormlike Movement.",
       "choice_prompt_de": "Wenn du dieses Merkmal verwendest, wähle für jeden ausgegebenen Zaubereipunkt einen Vorzug: Aquatische Anpassung, Das Unsichtbare sehen, Glitzernder Flug oder Wurmartige Bewegung.",
       "text_en": "As a Bonus Action, you can spend 1 Sorcery Point or more to magically alter your body for 10 minutes. For each Sorcery Point you spend, you gain one of the following benefits of your choice, lasting until the alteration ends.\n\nAquatic Adaptation. You gain a Swim Speed equal to twice your Speed, and you can breathe underwater.\n\nGlistening Flight. You gain a Fly Speed equal to your Speed, and you can hover.\n\nSee the Invisible. You can see any Invisible creature within 60 feet of yourself that isn't behind Total Cover.\n\nWormlike Movement. Your body becomes slimy and pliable. You can move through any space as narrow as 1 inch, and you can spend 5 feet of movement to escape from nonmagical restraints or the Grappled condition.",
@@ -1819,7 +1819,7 @@
       "name_de": "Gezähmte Woge",
       "summary_en": "After casting a Sorcerer spell with a slot, choose any Wild Magic Surge effect (except the final row) instead of rolling. If the effect requires a roll, use a result of 20.",
       "summary_de": "Nach dem Wirken eines Zaubererzaubers mit Zauberplatz Effekt der Tabelle Woge der Wilden Magie wählen statt zu würfeln. Wenn Würfelwurf nötig ist, gilt Ergebnis 20.",
-      "player_choice": true,
+      "player_choice": false,
       "choice_prompt_en": "When you use Tamed Surge, choose any effect from the Wild Magic Surge table except the final row.",
       "choice_prompt_de": "Wenn du Gezähmte Woge verwendest, wähle einen Effekt von der Tabelle Woge der Wilden Magie (nicht die letzte Zeile).",
       "text_en": "Immediately after you cast a Sorcerer spell with a spell slot, you can create an effect of your choice from the Wild Magic Surge table instead of rolling on that table. You can choose any effect in the table except for the final row, and if the chosen effect involves a roll, you must make it.\n\nOnce you use this feature, you can't do so again until you finish a Long Rest.",
@@ -2088,7 +2088,7 @@
       "text_de": "Wenn du einen Zauber wirkst, der Kreaturen zu einem Rettungswurf zwingt, kannst du 2 Zaubereipunkte verbrauchen, damit ein Ziel bei Rettungswürfen gegen den Zauber im Nachteil ist.",
       "grants": [
         {
-          "type": "disadvantage_on_next_saving_throw",
+          "type": "disadvantage_on_saving_throws",
           "target": "one_target_of_spell",
           "condition": "against_this_spell_cast"
         }

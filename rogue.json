@@ -512,7 +512,7 @@
           ],
           "prerequisite": "must_have_proficiency_in_chosen_weapon",
           "change_on": "long_rest",
-          "change_count": "all"
+          "change_count": 2
         }
       ]
     },
@@ -620,7 +620,7 @@
       "name_de": "Raffinierter Schlag",
       "summary_en": "When you deal Sneak Attack damage, you can apply one Cunning Strike effect (pay the die cost from Sneak Attack dice): Poison (1d6 cost), Trip (1d6), or Withdraw (1d6).",
       "summary_de": "Beim Schaden durch Hinterhältiger Angriff kannst du einen Raffinierter-Schlag-Effekt anwenden (Würfelkosten von Hinterhältiger-Angriff-Würfeln): Gift (1W6), Fällen (1W6) oder Zurückziehen (1W6).",
-      "player_choice": true,
+      "player_choice": false,
       "choice_prompt_en": "When you deal Sneak Attack damage, you may choose one Cunning Strike effect to apply, paying its die cost from your Sneak Attack dice before rolling.",
       "choice_prompt_de": "Wenn du Schaden mit Hinterhältiger Angriff bewirkst, kannst du einen Effekt von Raffinierter Schlag anwenden und dafür die entsprechenden Würfel von deinen Hinterhältigen-Angriff-Würfeln abziehen.",
       "text_en": "You've developed cunning ways to use your Sneak Attack. When you deal Sneak Attack damage, you can add one of the following Cunning Strike effects. Each effect has a die cost, which is the number of Sneak Attack damage dice you must forgo to add the effect. You remove the die before rolling, and the effect occurs immediately after the attack's damage is dealt.\n\nIf a Cunning Strike effect requires a saving throw, the DC equals 8 plus your Dexterity modifier and Proficiency Bonus.\n\nPoison (Cost: 1d6). You add a toxin to your strike, forcing the target to make a Constitution saving throw. On a failed save, the target has the Poisoned condition for 1 minute. At the end of each of its turns, the Poisoned target repeats the save, ending the effect on itself on a success. To use this effect, you must have a Poisoner's Kit on your person.\n\nTrip (Cost: 1d6). If the target is Large or smaller, it must succeed on a Dexterity saving throw or have the Prone condition.\n\nWithdraw (Cost: 1d6). Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks.",

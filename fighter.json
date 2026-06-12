@@ -703,15 +703,15 @@
       "level": 5,
       "name_en": "Tactical Shift",
       "name_de": "Taktikwechsel",
-      "summary_en": "Whenever you activate Second Wind, you can move up to half your Speed without provoking Opportunity Attacks.",
-      "summary_de": "Wann immer du Durchschnaufen aktivierst, kannst du dich bis zur Hälfte deiner Bewegungsrate fortbewegen, ohne Gelegenheitsangriffe zu provozieren.",
+      "summary_en": "Whenever you activate Second Wind with a Bonus Action, you can move up to half your Speed without provoking Opportunity Attacks.",
+      "summary_de": "Wann immer du Durchschnaufen mit einer Bonusaktion aktivierst, kannst du dich bis zur Hälfte deiner Bewegungsrate fortbewegen, ohne Gelegenheitsangriffe zu provozieren.",
       "player_choice": false,
       "text_en": "Whenever you activate your Second Wind with a Bonus Action, you can move up to half your Speed without provoking Opportunity Attacks.",
       "text_de": "Wann immer du Durchschnaufen mit einer Bonusaktion aktivierst, kannst du bis zur Hälfte deiner Bewegungsrate nutzen, ohne Gelegenheitsangriffe zu provozieren.",
       "grants": [
         {
           "type": "triggered_effect",
-          "trigger": "activate_second_wind",
+          "trigger": "activate_second_wind_with_bonus_action",
           "effect": {
             "type": "free_movement",
             "distance": "half_speed",
@@ -1016,7 +1016,7 @@
           "type": "entity_selection",
           "count_from_resource": "maneuvers_known",
           "source": "battle_master_maneuvers",
-          "change_on": "level_up",
+          "change_on": "maneuver_learned",
           "change_count": 1,
           "prerequisite_enforcement": false
         },
@@ -1033,6 +1033,17 @@
               "recharge": "long_rest"
             }
           ]
+        },
+        {
+          "type": "saving_throw_dc",
+          "dc_id": "maneuver_save_dc",
+          "formula": {
+            "base": 8,
+            "modifiers": [
+              "strength_or_dexterity_modifier_choice",
+              "proficiency_bonus"
+            ]
+          }
         }
       ]
     },
@@ -1519,15 +1530,11 @@
       "text_de": "Wenn du in deinem Zug die Angriffsaktion ausführst, kannst du zwei der Angriffe ersetzen und einen deiner Magierzauber des 1. oder 2. Grades wirken, der den Zeitaufwand von einer Aktion hat.",
       "grants": [
         {
-          "type": "feature_modifier",
-          "feature_id": "eldritch-knight-war-magic",
-          "modifies_grant": "attack_replacement",
-          "modification": {
-            "replace_with": "wizard_spell",
-            "max_spell_level": 2,
-            "cantrip_casting_time": "action",
-            "attacks_replaceable": 2
-          }
+          "type": "attack_replacement",
+          "replace_with": "wizard_spell",
+          "max_spell_level": 2,
+          "spell_casting_time": "action",
+          "attacks_replaceable": 2
         }
       ]
     },

@@ -585,8 +585,8 @@
       "player_choice": true,
       "choice_prompt_en": "Choose your known Beast forms. Eligible forms scale with your Druid level: levels 2–3 max CR 1/4 (no Fly Speed), levels 4–7 max CR 1/2 (no Fly Speed), level 8+ max CR 1 (Fly Speed allowed). Whenever you finish a Long Rest, you can replace one known form with another eligible form.",
       "choice_prompt_de": "Wähle deine bekannten Tiergestalten. Zulässige Gestalten steigen mit deiner Druidenstufe: Stufen 2–3 max. HG 1/4 (keine Flugbewegungsrate), Stufen 4–7 max. HG 1/2 (keine Flugbewegungsrate), ab Stufe 8 max. HG 1 (Flugbewegungsrate erlaubt). Nach jeder langen Rast kannst du eine bekannte Gestalt durch eine andere geeignete ersetzen.",
-      "text_en": "The power of nature allows you to assume the form of an animal. As a Bonus Action, you shape-shift into a Beast form that you have learned for this feature. You stay in that form for a number of hours equal to half your Druid level or until you use Wild Shape again, have the Incapacitated condition, or die. You can also leave the form early as a Bonus Action.\n\nNumber of Uses. You can use Wild Shape twice. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. You gain additional uses at higher Druid levels.\n\nKnown Forms. You know four Beast forms, chosen from Beast stat blocks with a maximum CR of 1/4 and no Fly Speed. Whenever you finish a Long Rest, you can replace one known form with another eligible form. The number of known forms, maximum CR, and fly speed eligibility increase as shown in the Beast Shapes table.\n\nRules While Shape-Shifted. While in a form, you retain your personality, memories, and ability to speak. You gain Temporary Hit Points equal to your Druid level. Your game statistics are replaced by the Beast's stat block, but you retain your creature type, Hit Points, Hit Point Dice, Intelligence/Wisdom/Charisma scores, class features, languages, feats, and skill/saving throw proficiencies. You can't cast spells, but shape-shifting doesn't break Concentration.",
-      "text_de": "Die Mächte der Natur erlauben dir, die Gestalt eines Tieres anzunehmen. Als Bonusaktion nimmst du eine Tiergestalt an, die du für dieses Merkmal erlernt hast. Du bleibst für eine Anzahl von Stunden in Höhe der Hälfte deiner Druidenstufe in dieser Gestalt, oder bis du Tiergestalt erneut einsetzt, kampfunfähig wirst oder stirbst. Du kannst die Gestalt auch als Bonusaktion vorzeitig aufgeben.\n\nAnzahl der Anwendungen: Du kannst Tiergestalt zweimal einsetzen. Du erhältst eine verbrauchte Anwendung nach einer kurzen Rast zurück, alle nach einer langen Rast. Du erhältst zusätzliche Anwendungen auf höheren Druidenstufen.\n\nBekannte Gestalten: Du kennst vier Tiergestalten, ausgewählt aus Tieren mit höchstens Herausforderungsgrad 1/4 und ohne Flugbewegungsrate. Nach jeder langen Rast kannst du eine bekannte Gestalt ersetzen. Die Anzahl der Gestalten, der maximale Herausforderungsgrad und die Flugbewegungsrate-Berechtigung steigen mit der Druidenstufe.\n\nRegeln bei verwandelter Gestalt: Du behältst deine Persönlichkeit, Erinnerungen und Sprechfähigkeit. Du erhältst temporäre Trefferpunkte in Höhe deiner Druidenstufe. Deine Spielwerte werden durch den Wertekasten des Tieres ersetzt, aber du behältst Kreaturentyp, Trefferpunkte, Trefferpunktewürfel, Intelligenz/Weisheit/Charisma-Werte, Klassenmerkmale, Sprachen, Talente sowie Fertigkeits- und Rettungswurfübungen. Du kannst keine Zauber wirken, aber Gestaltwandel unterbricht nicht deine Konzentration.",
+      "text_en": "The power of nature allows you to assume the form of an animal. As a Bonus Action, you shape-shift into a Beast form that you have learned for this feature. You stay in that form for a number of hours equal to half your Druid level or until you use Wild Shape again, have the Incapacitated condition, or die. You can also leave the form early as a Bonus Action.\n\nNumber of Uses. You can use Wild Shape twice. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. You gain additional uses at higher Druid levels.\n\nKnown Forms. You know four Beast forms, chosen from Beast stat blocks with a maximum CR of 1/4 and no Fly Speed. Whenever you finish a Long Rest, you can replace one known form with another eligible form. The number of known forms, maximum CR, and fly speed eligibility increase as shown in the Beast Shapes table.\n\nRules While Shape-Shifted. While in a form, you retain your personality, memories, and ability to speak. You gain Temporary Hit Points equal to your Druid level. Your game statistics are replaced by the Beast's stat block, but you retain your creature type, Hit Points, Hit Point Dice, Intelligence/Wisdom/Charisma scores, class features, languages, and feats. You also keep your skill and saving throw proficiencies and apply your own Proficiency Bonus; the creature's proficiencies are added to yours. If a skill or saving throw modifier in the Beast's stat block is higher than yours, use the one in the stat block. You can't cast spells, but shape-shifting doesn't break Concentration.",
+      "text_de": "Die Mächte der Natur erlauben dir, die Gestalt eines Tieres anzunehmen. Als Bonusaktion nimmst du eine Tiergestalt an, die du für dieses Merkmal erlernt hast. Du bleibst für eine Anzahl von Stunden in Höhe der Hälfte deiner Druidenstufe in dieser Gestalt, oder bis du Tiergestalt erneut einsetzt, kampfunfähig wirst oder stirbst. Du kannst die Gestalt auch als Bonusaktion vorzeitig aufgeben.\n\nAnzahl der Anwendungen: Du kannst Tiergestalt zweimal einsetzen. Du erhältst eine verbrauchte Anwendung nach einer kurzen Rast zurück, alle nach einer langen Rast. Du erhältst zusätzliche Anwendungen auf höheren Druidenstufen.\n\nBekannte Gestalten: Du kennst vier Tiergestalten, ausgewählt aus Tieren mit höchstens Herausforderungsgrad 1/4 und ohne Flugbewegungsrate. Nach jeder langen Rast kannst du eine bekannte Gestalt ersetzen. Die Anzahl der Gestalten, der maximale Herausforderungsgrad und die Flugbewegungsrate-Berechtigung steigen mit der Druidenstufe.\n\nRegeln bei verwandelter Gestalt: In verwandelter Gestalt behältst du deine Persönlichkeit, deine Erinnerungen und deine Sprechfähigkeit bei. Wenn du Tiergestalt annimmst, erhältst du temporäre Trefferpunkte in Höhe deiner Druidenstufe. Deine Spielwerte werden durch den Wertekasten des Tieres ersetzt, aber du behältst deinen Kreaturentyp, deine Trefferpunkte, deine Trefferpunktewürfel, deine Werte für Intelligenz, Weisheit und Charisma, deine Klassenmerkmale, deine Sprachen und deine Talente bei. Außerdem behältst du Übung in Fertigkeiten und Rettungswürfen bei und wendest deinen entsprechenden Übungsbonus an; die Übungen der Kreatur kommen noch dazu. Wenn ein Fertigkeits- oder Rettungswurfmodifikator im Wertekasten des Tieres höher als deiner ist, verwendest du den im Wertekasten. Du kannst keine Zauber wirken, aber Gestaltwandel unterbricht nicht deine Konzentration.",
       "grants": [
         {
           "type": "state",
@@ -643,8 +643,7 @@
             "dexterity",
             "constitution",
             "ac",
-            "speed",
-            "hp"
+            "speed"
           ],
           "retains": [
             "intelligence",
@@ -653,7 +652,9 @@
             "proficiencies",
             "class_features",
             "languages",
-            "feats"
+            "feats",
+            "hit_points",
+            "hit_point_dice"
           ],
           "source_entity": "beast",
           "while_state": "wild_shape"
@@ -1060,7 +1061,7 @@
       "name_de": "Zirkelzauber des Landes",
       "summary_en": "After each Long Rest, choose a land type (arid, polar, temperate, or tropical); you always have the corresponding spells prepared based on your Druid level.",
       "summary_de": "Nach jeder langen Rast wählst du eine Landart (trocken, polar, gemäßigt oder tropisch); die entsprechenden Zauber für deine Druidenstufe und darunter hast du stets vorbereitet.",
-      "player_choice": true,
+      "player_choice": false,
       "choice_prompt_en": "Whenever you finish a Long Rest, choose one type of land: arid, polar, temperate, or tropical. You have the spells listed for your Druid level and lower prepared.",
       "choice_prompt_de": "Wann immer du eine lange Rast beendest, wähle eine Art des Landes aus: gemäßigt, polar, trocken oder tropisch. Die für deine Druidenstufe und darunter aufgeführten Zauber hast du vorbereitet.",
       "text_en": "Whenever you finish a Long Rest, choose one type of land: arid, polar, temperate, or tropical. Consult the table for the chosen type; you have the spells listed for your Druid level and lower prepared.\n\nArid: level 3 — Blur, Burning Hands, Fire Bolt; level 5 — Fireball; level 7 — Blight; level 9 — Wall of Stone.\nPolar: level 3 — Fog Cloud, Hold Person, Ray of Frost; level 5 — Sleet Storm; level 7 — Ice Storm; level 9 — Cone of Cold.\nTemperate: level 3 — Misty Step, Shocking Grasp, Sleep; level 5 — Lightning Bolt; level 7 — Freedom of Movement; level 9 — Tree Stride.\nTropical: level 3 — Acid Splash, Ray of Sickness, Web; level 5 — Stinking Cloud; level 7 — Polymorph; level 9 — Insect Plague.",
@@ -1204,6 +1205,7 @@
             "type": "sphere",
             "radius_feet": 10
           },
+          "targets": "creatures_of_choice_in_area",
           "saving_throw": {
             "ability": "constitution",
             "dc": "spell_save_dc"
@@ -1680,7 +1682,7 @@
           "type": "aura",
           "aura_id": "wrath_of_the_sea_emanation",
           "radius_feet": 5,
-          "targets": "enemies",
+          "targets": "creatures",
           "while_state": "wrath_of_the_sea"
         },
         {
@@ -1874,7 +1876,7 @@
       "name_de": "Sterngestalt",
       "summary_en": "Bonus Action (1 wild_shape_use): assume a luminous Starry Form for 10 minutes, retaining your own stats. Choose a constellation — Archer (Bonus Action ranged spell attack, 1d8 + Wisdom Radiant), Chalice (bonus 1d8 + Wisdom healing when you cast a healing spell with a slot), or Dragon (treat d20 rolls of ≤9 as 10 on Intelligence/Wisdom checks and Concentration saves).",
       "summary_de": "Bonusaktion (1 Tiergestalt-Anwendung): Nimm für 10 Minuten eine leuchtende Sterngestalt an (eigene Spielwerte bleiben erhalten). Wähle ein Sternbild — Bogenschütze (Bonusaktion Fernkampf-Zauberangriff, 1W8 + Weisheit gleißend), Kelch (Bonus-Heilung 1W8 + Weisheit beim Wirken eines Heilzaubers mit Zauberplatz) oder Drache (W20-Ergebnisse ≤ 9 als 10 werten für Int-/Weis-Würfe und Konzentrations-Rettungswürfe).",
-      "player_choice": true,
+      "player_choice": false,
       "choice_prompt_en": "Whenever you assume your Starry Form, choose which constellation glimmers on your body: Archer, Chalice, or Dragon.",
       "choice_prompt_de": "Wann immer du deine Sterngestalt annimmst, wähle welche Konstellation auf deinem Körper schimmert: Bogenschütze, Drache oder Kelch.",
       "text_en": "As a Bonus Action, you can expend a use of your Wild Shape feature to take on a starry form. While in your starry form, you retain your game statistics, but your body becomes luminous. This form sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet. The form lasts for 10 minutes. It ends early if you dismiss it (no action required), have the Incapacitated condition, or use this feature again.\n\nWhenever you assume your starry form, choose which of the following constellations glimmers on your body.\n\nArcher. When you activate this form and as a Bonus Action on your subsequent turns while it lasts, you can make a ranged spell attack targeting one creature within 60 feet. On a hit, the attack deals Radiant damage equal to 1d8 plus your Wisdom modifier.\n\nChalice. Whenever you cast a spell using a spell slot that restores Hit Points to a creature, you or another creature within 30 feet of you can regain Hit Points equal to 1d8 plus your Wisdom modifier.\n\nDragon. When you make an Intelligence or Wisdom check or a Constitution saving throw to maintain Concentration, you can treat a roll of 9 or lower on the d20 as a 10.",

@@ -563,7 +563,7 @@
       "grants": [
         {
           "type": "half_proficiency_bonus",
-          "applies_to": "ability_checks_without_proficiency",
+          "applies_to": "skill_checks_without_proficiency",
           "condition": "not_already_using_proficiency_bonus"
         }
       ]
@@ -649,15 +649,15 @@
       "level": 7,
       "name_en": "Countercharm",
       "name_de": "Bannlied",
-      "summary_en": "Reaction: when you or an ally within 30 ft fails a save against Charmed or Frightened, reroll the save with Advantage.",
-      "summary_de": "Reaktion: Wenn du oder ein Verbündeter im Umkreis von 9 m einen Rettungswurf gegen Bezaubert oder Verängstigt misslingt, Rettungswurf mit Vorteil wiederholen.",
+      "summary_en": "Reaction: when you or a creature within 30 ft fails a save against Charmed or Frightened, reroll the save with Advantage.",
+      "summary_de": "Reaktion: Wenn du oder eine Kreatur im Umkreis von 9 m einen Rettungswurf gegen Bezaubert oder Verängstigt misslingt, Rettungswurf mit Vorteil wiederholen.",
       "player_choice": false,
       "text_en": "You can use musical notes or words of power to disrupt mind-influencing effects.\n\nIf you or a creature within 30 feet of you fails a saving throw against an effect that applies the Charmed or Frightened condition, you can take a Reaction to cause the save to be rerolled, and the new roll has Advantage.",
       "text_de": "Du kannst Musiknoten oder Worte der Macht verwenden, um Effekte zu unterbrechen, die den Verstand beeinflussen.\n\nWenn du oder eine Kreatur im Abstand von bis zu neun Metern von dir bei einem Rettungswurf gegen einen Effekt scheitert, der die Zustände Bezaubert oder Verängstigt bewirkt, kannst du eine Reaktion ausführen, um den Rettungswurf erneut auszuführen. Bei diesem neuen Rettungswurf bist du im Vorteil.",
       "grants": [
         {
           "type": "triggered_effect",
-          "trigger": "self_or_ally_within_30ft_fails_save_against_charmed_or_frightened",
+          "trigger": "self_or_creature_within_30ft_fails_save_against_charmed_or_frightened",
           "action_type": "reaction",
           "effect": {
             "type": "reroll_saving_throw",
@@ -1025,7 +1025,7 @@
       "name_de": "Betörende Magie",
       "summary_en": "Charm Person and Mirror Image always prepared. After casting an Enchantment or Illusion spell using a slot (Long Rest, or spend 1 Bardic Inspiration to restore): force a WIS save (spell DC) on a creature within 60 ft; fail → Charmed or Frightened 1 minute (save at end of each turn).",
       "summary_de": "Person bezaubern und Spiegelbilder stets vorbereitet. Nach einem Verzauberungs- oder Illusionszauber mit Zauberplatz (Lange Rast oder 1 Bardische Inspiration): WEI-Rettungswurf (Zauber-SG) gegen Kreatur im Umkreis von 18 m; Scheitern → 1 Minute bezaubert oder verängstigt (Rettungswurf am Zug-Ende).",
-      "player_choice": true,
+      "player_choice": false,
       "choice_prompt_en": "When you trigger Beguiling Magic's saving throw effect, choose whether the target is Charmed or Frightened.",
       "choice_prompt_de": "Wenn du den Rettungswurf-Effekt von Betörende Magie auslöst, wähle ob das Ziel Bezaubert oder Verängstigt ist.",
       "text_en": "You always have the Charm Person and Mirror Image spells prepared.\n\nIn addition, immediately after you cast an Enchantment or Illusion spell using a spell slot, you can cause a creature you can see within 60 feet of yourself to make a Wisdom saving throw against your spell save DC. On a failed save, the target has the Charmed or Frightened condition (your choice) for 1 minute. The target repeats the save at the end of each of its turns, ending the effect on itself on a success.\n\nOnce you use this benefit, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending one use of your Bardic Inspiration (no action required).",
@@ -1083,7 +1083,7 @@
       "name_de": "Mantel der Inspiration",
       "summary_en": "Bonus Action (spend 1 Bardic Inspiration): roll Bardic Inspiration die; up to CHA modifier creatures within 60 ft (minimum 1) gain 2× roll Temporary HP and can use their Reaction to move their full Speed without provoking Opportunity Attacks.",
       "summary_de": "Bonusaktion (1 Bardische Inspiration): Bardischen-Inspiration-Würfel würfeln; bis zu CHA-Modifikator Kreaturen im Umkreis von 18 m (mind. 1) erhalten 2× Würfelergebnis temporäre TP und dürfen Reaktion für volle Bewegungsrate ohne Gelegenheitsangriffe nutzen.",
-      "player_choice": true,
+      "player_choice": false,
       "choice_prompt_en": "Choose a number of creatures within 60 feet to receive Temporary Hit Points, up to your Charisma modifier.",
       "choice_prompt_de": "Wähle eine Anzahl von Kreaturen im Abstand von bis zu 18 Metern, die temporäre Trefferpunkte erhalten, bis maximal deinem Charismamodifikator.",
       "text_en": "You can weave fey magic into a song or dance to fill others with vigor. As a Bonus Action, you can expend a use of Bardic Inspiration, rolling a Bardic Inspiration die.\n\nWhen you do so, choose a number of other creatures within 60 feet of yourself, up to a number equal to your Charisma modifier (minimum of one creature). Each of those creatures gains a number of Temporary Hit Points equal to two times the number rolled on the Bardic Inspiration die, and then each can use its Reaction to move up to its Speed without provoking Opportunity Attacks.",

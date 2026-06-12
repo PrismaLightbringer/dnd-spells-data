@@ -1424,6 +1424,10 @@
         {
           "type": "uses_resource",
           "resource": "flurry_healing_harm_uses",
+          "uses_from_stat": {
+            "stat": "wisdom_modifier",
+            "minimum": 1
+          },
           "recharge": "long_rest",
           "note": "Pool size equals Wisdom modifier (minimum 1). Shared across all free Hand of Healing replacements and free Hand of Harm uses granted by this feature."
         }
@@ -1727,7 +1731,7 @@
       "name_de": "Elementare Explosion",
       "summary_en": "Magic Action, 2 FP: choose Acid/Cold/Fire/Lightning/Thunder; 20-ft-radius sphere within 120 ft. DEX save: fail = 3 × martial_arts_die damage, success = half.",
       "summary_de": "Magische Aktion, 2 FP: Schadensart wählen (Blitz/Feuer/Kälte/Säure/Schall); Kugel 6 m Radius in bis zu 36 m. GES-Rettungswurf: Scheitern = 3 × Kampfkünste-Würfel Schaden, Erfolg = halb.",
-      "player_choice": true,
+      "player_choice": false,
       "choice_prompt_en": "When you use Elemental Burst, choose a damage type: Acid, Cold, Fire, Lightning, or Thunder.",
       "choice_prompt_de": "Wenn du Elementare Explosion einsetzt, wähle eine Schadensart: Blitz, Feuer, Kälte, Säure oder Schall.",
       "text_en": "As a Magic action, you can expend 2 Focus Points to cause elemental energy to burst in a 20-foot-radius Sphere centered on a point within 120 feet of yourself. Choose a damage type: Acid, Cold, Fire, Lightning, or Thunder.\n\nEach creature in the Sphere must make a Dexterity saving throw. On a failed save, a creature takes damage equal to three rolls of your Martial Arts die. On a successful save, a creature takes half as much damage.",
@@ -1812,7 +1816,7 @@
       "name_de": "Elementarer Schritt",
       "summary_en": "While Elemental Attunement is active: choose a damage Resistance type each turn; Step of the Wind grants +20 ft speed and deals 1 martial_arts_die elemental damage to creatures you pass within 5 ft; once per turn, deal extra 1 martial_arts_die damage on an Unarmed Strike hit.",
       "summary_de": "Solange Elementare Einstimmung aktiv ist: jeden Zug Schadensresistenz-Typ wählen; Windschritt gewährt +6 m Bewegungsrate und bewirkt 1 Kampfkünste-Würfel Schaden bei Kreaturen innerhalb 1,5 m; einmal pro Zug 1 zusätzlicher Kampfkünste-Würfel Schaden bei waffenlosem Treffer.",
-      "player_choice": true,
+      "player_choice": false,
       "choice_prompt_en": "At the start of each of your turns while Elemental Attunement is active, choose your damage Resistance type: Acid, Cold, Fire, Lightning, or Thunder.",
       "choice_prompt_de": "Zu Beginn jedes deiner Züge, solange Elementare Einstimmung aktiv ist, wähle deine Resistenz: Blitz, Feuer, Kälte, Säure oder Schall.",
       "text_en": "While your Elemental Attunement is active, you also gain the following benefits.\n\nDamage Resistance. You gain Resistance to one of the following damage types of your choice: Acid, Cold, Fire, Lightning, or Thunder. At the start of each of your turns, you can change this choice.\n\nDestructive Stride. When you use your Step of the Wind, your Speed increases by 20 feet until the end of the turn. For that duration, any creature of your choice takes damage equal to one roll of your Martial Arts die when you enter a space within 5 feet of it. The damage type is your choice of Acid, Cold, Fire, Lightning, or Thunder. A creature can take this damage only once per turn.\n\nEmpowered Strikes. Once on each of your turns, you can deal extra damage to a target equal to one roll of your Martial Arts die when you hit it with an Unarmed Strike. The extra damage is the same type dealt by that strike.",
@@ -1890,7 +1894,7 @@
       "name_de": "Technik der Offenen Hand",
       "summary_en": "When you hit with a Flurry of Blows attack, choose one effect: Addle (target can't make Opportunity Attacks until its next turn), Push (STR save or pushed 15 ft), or Topple (DEX save or Prone).",
       "summary_de": "Bei einem Schlaghagel-Treffer einen Effekt wählen: Verdattern (keine Gelegenheitsangriffe bis zum nächsten Zug des Ziels), Stoßen (STR-Rettungswurf oder 4,5 m weggestoßen) oder Umstoßen (GES-Rettungswurf oder Umgestoßen).",
-      "player_choice": true,
+      "player_choice": false,
       "choice_prompt_en": "Whenever you hit with a Flurry of Blows attack, choose one effect to impose: Addle, Push, or Topple.",
       "choice_prompt_de": "Wann immer du mit einem Schlaghagel-Angriff triffst, wähle einen Effekt: Stoßen, Umstoßen oder Verdattern.",
       "text_en": "Whenever you hit a creature with an attack granted by your Flurry of Blows, you can impose one of the following effects on that target.\n\nAddle. The target can't make Opportunity Attacks until the start of its next turn.\n\nPush. The target must succeed on a Strength saving throw or be pushed up to 15 feet away from you.\n\nTopple. The target must succeed on a Dexterity saving throw or have the Prone condition.",

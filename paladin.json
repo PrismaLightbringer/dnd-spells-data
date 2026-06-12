@@ -1110,7 +1110,8 @@
             "duration": "10_minutes",
             "end_conditions": [
               "use_feature_again",
-              "not_carrying_weapon"
+              "not_carrying_weapon",
+              "dismiss_no_action"
             ]
           }
         },
@@ -1212,6 +1213,9 @@
           "state_id": "holy_nimbus",
           "activation": "bonus_action",
           "duration": "10_minutes",
+          "end_conditions": [
+            "dismiss_no_action"
+          ],
           "recharge": "long_rest",
           "refresh_option": {
             "type": "feature_refresh",
@@ -1429,15 +1433,15 @@
       "level": 15,
       "name_en": "Glorious Defense",
       "name_de": "Glorreiche Verteidigung",
-      "summary_en": "Reaction (CHA modifier uses per Long Rest): when you or an ally within 10 ft is hit, add CHA modifier (min +1) to their AC against that attack. If it misses, immediately make one weapon attack against the attacker if in range.",
-      "summary_de": "Reaktion (CHA-Modifikator Anwendungen pro Langer Rast): wenn du oder ein Verbündeter bis 3 m getroffen wird, CHA-Modifikator (min. +1) auf RK gegen den Angriff addieren. Scheitert er, sofort einen Waffenangriff gegen den Angreifer ausführen.",
+      "summary_en": "Reaction (CHA modifier uses per Long Rest): when you or a creature you can see within 10 ft is hit, add CHA modifier (min +1) to their AC against that attack. If it misses, immediately make one weapon attack against the attacker if in range.",
+      "summary_de": "Reaktion (CHA-Modifikator Anwendungen pro Langer Rast): wenn du oder eine sichtbare Kreatur bis 3 m getroffen wird, CHA-Modifikator (min. +1) auf RK gegen den Angriff addieren. Scheitert er, sofort einen Waffenangriff gegen den Angreifer ausführen.",
       "player_choice": false,
       "text_en": "When you or another creature you can see within 10 feet of you is hit by an attack roll, you can take a Reaction to grant a bonus to the target's AC against that attack, potentially causing it to miss. The bonus equals your Charisma modifier (minimum of +1). If the attack misses, you can make one attack with a weapon against the attacker as part of this Reaction if the attacker is within your weapon's range.\n\nYou can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.",
       "text_de": "Wenn du oder eine andere Kreatur im Abstand von bis zu drei Metern von dir, die du sehen kannst, von einem Angriffswurf getroffen wird, kannst du eine Reaktion ausführen, um der RK des Ziels einen Bonus zu gewähren, sodass der Angriff möglicherweise scheitert. Dieser Bonus entspricht deinem Charismamodifikator (mindestens +1). Scheitert der Angriff, kannst du als Teil dieser Reaktion einen Waffenangriff gegen den Angreifer ausführen, sofern er sich in Reichweite befindet.\n\nDie Anzahl der möglichen Anwendungen entspricht deinem Charismamodifikator (mindestens einmal). Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück.",
       "grants": [
         {
           "type": "triggered_effect",
-          "trigger": "self_or_ally_within_10ft_hit_by_attack",
+          "trigger": "self_or_creature_within_10ft_you_can_see_hit_by_attack",
           "action_type": "reaction",
           "uses": {
             "equals": "charisma_modifier",
@@ -1478,6 +1482,9 @@
           "state_id": "living_legend",
           "activation": "bonus_action",
           "duration": "10_minutes",
+          "end_conditions": [
+            "dismiss_no_action"
+          ],
           "recharge": "long_rest",
           "refresh_option": {
             "type": "feature_refresh",
@@ -1701,6 +1708,9 @@
           "state_id": "elder_champion",
           "activation": "bonus_action",
           "duration": "1_minute",
+          "end_conditions": [
+            "dismiss_no_action"
+          ],
           "recharge": "long_rest",
           "refresh_option": {
             "type": "feature_refresh",
@@ -1929,6 +1939,9 @@
           "state_id": "avenging_angel",
           "activation": "bonus_action",
           "duration": "10_minutes",
+          "end_conditions": [
+            "dismiss_no_action"
+          ],
           "recharge": "long_rest",
           "refresh_option": {
             "type": "feature_refresh",

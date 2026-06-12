@@ -694,7 +694,7 @@
       "name_de": "Göttlicher Funke",
       "summary_en": "Use channel_divinity_uses as a Magic action: roll divine_spark_dice d8s + Wisdom modifier to either restore Hit Points to a creature or deal Necrotic/Radiant damage (Constitution save for half).",
       "summary_de": "Als magische Aktion channel_divinity_uses verbrauchen: divine_spark_dice W8 + Weisheitsmodifikator würfeln, um entweder Trefferpunkte wiederherzustellen oder nekrotischen/gleißenden Schaden zu verursachen (Konstitutionsrettungswurf für halben Schaden).",
-      "player_choice": true,
+      "player_choice": false,
       "choice_prompt_en": "When you use Divine Spark, choose whether to restore Hit Points or deal damage (Necrotic or Radiant).",
       "choice_prompt_de": "Wenn du Göttlicher Funke einsetzt, wähle ob du Trefferpunkte wiederherstellen oder Schaden (nekrotisch oder gleißend) verursachen möchtest.",
       "text_en": "As a Magic action, you point your Holy Symbol at another creature you can see within 30 feet of yourself and focus divine energy at it. Roll a number of d8s equal to the dice shown for your Cleric level and add your Wisdom modifier. You either restore Hit Points to the creature equal to that total or force the creature to make a Constitution saving throw. On a failed save, the creature takes Necrotic or Radiant damage (your choice) equal to that total. On a successful save, the creature takes half as much damage (round down).\n\nThe number of dice increases as you gain Cleric levels: 1d8 (levels 2–6), 2d8 (levels 7–12), 3d8 (levels 13–17), 4d8 (levels 18–20).",
@@ -706,6 +706,7 @@
           "uses_resource": "channel_divinity_uses",
           "range_feet": 30,
           "target_condition": "you_can_see",
+          "excludes_self": true,
           "effect": {
             "type": "choice",
             "options": [
@@ -1852,7 +1853,7 @@
         },
         {
           "type": "triggered_effect",
-          "trigger": "ally_within_30ft_misses_with_attack_roll",
+          "trigger": "creature_within_30ft_misses_with_attack_roll",
           "optional": true,
           "action_type": "reaction",
           "cost": {

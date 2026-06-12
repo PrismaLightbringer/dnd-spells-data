@@ -117,6 +117,7 @@
           "ranger-weapon-mastery"
         ],
         "resources": {
+          "ranger_level": 1,
           "prepared_spells": 2,
           "favored_enemy_uses": 2,
           "weapon_mastery_count": 2
@@ -130,6 +131,7 @@
           "ranger-fighting-style"
         ],
         "resources": {
+          "ranger_level": 2,
           "prepared_spells": 3,
           "favored_enemy_uses": 2,
           "weapon_mastery_count": 2
@@ -143,6 +145,7 @@
         ],
         "subclass_feature_level": true,
         "resources": {
+          "ranger_level": 3,
           "prepared_spells": 4,
           "favored_enemy_uses": 2,
           "weapon_mastery_count": 2
@@ -155,6 +158,7 @@
           "ranger-asi-4"
         ],
         "resources": {
+          "ranger_level": 4,
           "prepared_spells": 5,
           "favored_enemy_uses": 2,
           "weapon_mastery_count": 2
@@ -167,6 +171,7 @@
           "ranger-extra-attack"
         ],
         "resources": {
+          "ranger_level": 5,
           "prepared_spells": 6,
           "favored_enemy_uses": 3,
           "weapon_mastery_count": 2
@@ -179,6 +184,7 @@
           "ranger-roving"
         ],
         "resources": {
+          "ranger_level": 6,
           "prepared_spells": 6,
           "favored_enemy_uses": 3,
           "weapon_mastery_count": 2
@@ -190,6 +196,7 @@
         "feature_ids": [],
         "subclass_feature_level": true,
         "resources": {
+          "ranger_level": 7,
           "prepared_spells": 7,
           "favored_enemy_uses": 3,
           "weapon_mastery_count": 2
@@ -202,6 +209,7 @@
           "ranger-asi-8"
         ],
         "resources": {
+          "ranger_level": 8,
           "prepared_spells": 7,
           "favored_enemy_uses": 3,
           "weapon_mastery_count": 2
@@ -214,6 +222,7 @@
           "ranger-expertise-9"
         ],
         "resources": {
+          "ranger_level": 9,
           "prepared_spells": 9,
           "favored_enemy_uses": 4,
           "weapon_mastery_count": 2
@@ -226,6 +235,7 @@
           "ranger-tireless"
         ],
         "resources": {
+          "ranger_level": 10,
           "prepared_spells": 9,
           "favored_enemy_uses": 4,
           "weapon_mastery_count": 2
@@ -237,6 +247,7 @@
         "feature_ids": [],
         "subclass_feature_level": true,
         "resources": {
+          "ranger_level": 11,
           "prepared_spells": 10,
           "favored_enemy_uses": 4,
           "weapon_mastery_count": 2
@@ -249,6 +260,7 @@
           "ranger-asi-12"
         ],
         "resources": {
+          "ranger_level": 12,
           "prepared_spells": 10,
           "favored_enemy_uses": 4,
           "weapon_mastery_count": 2
@@ -261,6 +273,7 @@
           "ranger-relentless-hunter"
         ],
         "resources": {
+          "ranger_level": 13,
           "prepared_spells": 11,
           "favored_enemy_uses": 5,
           "weapon_mastery_count": 2
@@ -273,6 +286,7 @@
           "ranger-natures-veil"
         ],
         "resources": {
+          "ranger_level": 14,
           "prepared_spells": 11,
           "favored_enemy_uses": 5,
           "weapon_mastery_count": 2
@@ -284,6 +298,7 @@
         "feature_ids": [],
         "subclass_feature_level": true,
         "resources": {
+          "ranger_level": 15,
           "prepared_spells": 12,
           "favored_enemy_uses": 5,
           "weapon_mastery_count": 2
@@ -296,6 +311,7 @@
           "ranger-asi-16"
         ],
         "resources": {
+          "ranger_level": 16,
           "prepared_spells": 12,
           "favored_enemy_uses": 5,
           "weapon_mastery_count": 2
@@ -308,6 +324,7 @@
           "ranger-precise-hunter"
         ],
         "resources": {
+          "ranger_level": 17,
           "prepared_spells": 14,
           "favored_enemy_uses": 6,
           "weapon_mastery_count": 2
@@ -320,6 +337,7 @@
           "ranger-feral-senses"
         ],
         "resources": {
+          "ranger_level": 18,
           "prepared_spells": 14,
           "favored_enemy_uses": 6,
           "weapon_mastery_count": 2
@@ -332,6 +350,7 @@
           "ranger-epic-boon"
         ],
         "resources": {
+          "ranger_level": 19,
           "prepared_spells": 15,
           "favored_enemy_uses": 6,
           "weapon_mastery_count": 2
@@ -344,6 +363,7 @@
           "ranger-foe-slayer"
         ],
         "resources": {
+          "ranger_level": 20,
           "prepared_spells": 15,
           "favored_enemy_uses": 6,
           "weapon_mastery_count": 2
@@ -1287,9 +1307,9 @@
       "level": 7,
       "name_en": "Beguiling Twist",
       "name_de": "Betörende Verdrehung",
-      "summary_en": "Advantage on saves vs. Charmed/Frightened. When you or an ally within 120 ft. succeeds on such a save, use Reaction to force a Wisdom save on another creature — on failure, it is Charmed or Frightened for 1 minute.",
-      "summary_de": "Vorteil auf Rettungswürfe gegen Bezaubert/Verängstigt. Wenn du oder ein Verbündeter in 36 m einen solchen Wurf besteht, nutze deine Reaktion, um eine andere Kreatur zu einem Weisheitsrettungswurf zu zwingen — scheitert sie, ist sie eine Minute bezaubert oder verängstigt.",
-      "player_choice": true,
+      "summary_en": "Advantage on saves vs. Charmed/Frightened. When you or a creature you can see within 120 ft. succeeds on such a save, use Reaction to force a Wisdom save on another creature — on failure, it is Charmed or Frightened for 1 minute.",
+      "summary_de": "Vorteil auf Rettungswürfe gegen Bezaubert/Verängstigt. Wenn du oder eine sichtbare Kreatur in 36 m einen solchen Wurf besteht, nutze deine Reaktion, um eine andere Kreatur zu einem Weisheitsrettungswurf zu zwingen — scheitert sie, ist sie eine Minute bezaubert oder verängstigt.",
+      "player_choice": false,
       "choice_prompt_en": "When you redirect the Charmed or Frightened condition, choose whether the new target is Charmed or Frightened.",
       "choice_prompt_de": "Wenn du den Zustand Bezaubert oder Verängstigt umlenkst, wähle ob das neue Ziel bezaubert oder verängstigt ist.",
       "text_en": "The magic of the Feywild guards your mind. You have Advantage on saving throws to avoid or end the Charmed or Frightened condition.\n\nIn addition, whenever you or a creature you can see within 120 feet of you succeeds on a saving throw to avoid or end the Charmed or Frightened condition, you can take a Reaction to force a different creature you can see within 120 feet of yourself to make a Wisdom save against your spell save DC. On a failed save, the target is Charmed or Frightened (your choice) for 1 minute. The target repeats the save at the end of each of its turns, ending the effect on itself on a success.",
@@ -1304,7 +1324,7 @@
         },
         {
           "type": "triggered_effect",
-          "trigger": "self_or_ally_within_120ft_succeeds_on_save_vs_charmed_or_frightened",
+          "trigger": "self_or_creature_within_120ft_you_can_see_succeeds_on_save_vs_charmed_or_frightened",
           "action_type": "reaction",
           "effect": {
             "type": "saving_throw",
@@ -1561,7 +1581,7 @@
       "name_de": "Schlaghagel des Pirschers",
       "summary_en": "Dreadful Strike damage increases to 2d8. When you use Dreadful Strike, choose one bonus effect: Sudden Strike (extra attack on nearby creature) or Mass Fear (Wisdom save or Frightened).",
       "summary_de": "Grässliche-Schläge-Schaden erhöht sich auf 2W8. Bei Grässlichen Schlägen wähle einen Bonuseffekt: Plötzlicher Schlag (extra Angriff auf nahe Kreatur) oder Massenfurcht (Weisheitsrettungswurf oder Verängstigt).",
-      "player_choice": true,
+      "player_choice": false,
       "choice_prompt_en": "When you use Dreadful Strike, choose one additional effect: Sudden Strike or Mass Fear.",
       "choice_prompt_de": "Wenn du Grässliche Schläge einsetzt, wähle einen zusätzlichen Effekt: Massenfurcht oder Plötzlicher Schlag.",
       "text_en": "The Psychic damage of your Dreadful Strike becomes 2d8. In addition, when you use the Dreadful Strike effect of your Dread Ambusher feature, you can cause one of the following additional effects.\n\nSudden Strike. You can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within the weapon's range.\n\nMass Fear. The target and each creature within 10 feet of it must make a Wisdom saving throw against your spell save DC. On a failed save, a creature has the Frightened condition until the start of your next turn.",
