@@ -519,7 +519,8 @@
           "source": "warlock_invocations",
           "change_on": "level_up",
           "change_count": 1,
-          "prerequisite_enforcement": true
+          "prerequisite_enforcement": true,
+          "replace_restriction": "not_a_prerequisite_of_known_invocation"
         }
       ]
     },

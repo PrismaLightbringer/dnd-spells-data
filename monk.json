@@ -1422,8 +1422,7 @@
           }
         },
         {
-          "type": "uses_resource",
-          "resource": "flurry_healing_harm_uses",
+          "type": "active_ability",
           "uses_from_stat": {
             "stat": "wisdom_modifier",
             "minimum": 1
