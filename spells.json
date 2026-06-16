@@ -564,6 +564,8 @@
     "id": "armor-of-agathys",
     "name_en": "Armor of Agathys",
     "name_de": "Rüstung von Agathys",
+    "display_name_en": "Frost Armor",
+    "display_name_de": "Frostrüstung",
     "level": 1,
     "school_en": "Abjuration",
     "school_de": "Bannzauber",
