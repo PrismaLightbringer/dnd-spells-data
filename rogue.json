@@ -1253,7 +1253,8 @@
               "duration_hours": 8,
               "source_creature_restriction": "cannot_cast_stolen_spell_for_8_hours"
             }
-          }
+          },
+          "uses_resource": "spell_thief_uses"
         }
       ]
     },
@@ -1590,7 +1591,8 @@
               "deal_damage_to_creature",
               "force_creature_saving_throw"
             ]
-          }
+          },
+          "uses_resource": "psychic_veil_uses"
         }
       ]
     },
@@ -1638,7 +1640,8 @@
             "save_to_end": {
               "timing": "end_of_targets_turn"
             }
-          }
+          },
+          "uses_resource": "rend_mind_uses"
         }
       ]
     },
@@ -1895,6 +1898,12 @@
           }
         },
         {
+          "level": 17,
+          "resources": {
+            "spell_thief_uses": 1
+          }
+        },
+        {
           "level": 19,
           "resources": {
             "cantrips_known": 4,
@@ -1955,7 +1964,8 @@
             "psionic_energy_dice": {
               "count": 10,
               "die": "d10"
-            }
+            },
+            "psychic_veil_uses": 1
           }
         },
         {
@@ -1964,7 +1974,8 @@
             "psionic_energy_dice": {
               "count": 12,
               "die": "d12"
-            }
+            },
+            "rend_mind_uses": 1
           }
         }
       ]

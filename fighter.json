@@ -1119,7 +1119,8 @@
               "resistances",
               "vulnerabilities"
             ]
-          }
+          },
+          "uses_resource": "know_your_enemy_uses"
         }
       ]
     },
@@ -1677,7 +1678,8 @@
             "speed_type": "fly",
             "value": "twice_speed",
             "duration": "until_end_of_current_turn"
-          }
+          },
+          "uses_resource": "telekinetic_adept_uses"
         },
         {
           "type": "triggered_effect",
@@ -1803,7 +1805,8 @@
             "end_conditions": [
               "you_become_incapacitated"
             ]
-          }
+          },
+          "uses_resource": "bulwark_of_force_uses"
         }
       ]
     },
@@ -1881,7 +1884,8 @@
               "count": 5,
               "die": "d8"
             },
-            "maneuvers_known": 5
+            "maneuvers_known": 5,
+            "know_your_enemy_uses": 1
           }
         },
         {
@@ -2071,6 +2075,12 @@
           }
         },
         {
+          "level": 7,
+          "resources": {
+            "telekinetic_adept_uses": 1
+          }
+        },
+        {
           "level": 9,
           "resources": {
             "psionic_energy_dice": {
@@ -2095,6 +2105,12 @@
               "count": 10,
               "die": "d10"
             }
+          }
+        },
+        {
+          "level": 15,
+          "resources": {
+            "bulwark_of_force_uses": 1
           }
         },
         {

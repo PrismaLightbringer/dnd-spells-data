@@ -296,7 +296,8 @@
             "count_from_ability": "wisdom_modifier",
             "minimum": 1,
             "die": "d8"
-          }
+          },
+          "divine_intervention_uses": 1
         }
       },
       {
@@ -315,7 +316,8 @@
             "count_from_ability": "wisdom_modifier",
             "minimum": 1,
             "die": "d8"
-          }
+          },
+          "divine_intervention_uses": 1
         }
       },
       {
@@ -336,7 +338,8 @@
             "count_from_ability": "wisdom_modifier",
             "minimum": 1,
             "die": "d8"
-          }
+          },
+          "divine_intervention_uses": 1
         }
       },
       {
@@ -355,7 +358,8 @@
             "count_from_ability": "wisdom_modifier",
             "minimum": 1,
             "die": "d8"
-          }
+          },
+          "divine_intervention_uses": 1
         }
       },
       {
@@ -376,7 +380,8 @@
             "count_from_ability": "wisdom_modifier",
             "minimum": 1,
             "die": "d8"
-          }
+          },
+          "divine_intervention_uses": 1
         }
       },
       {
@@ -395,7 +400,8 @@
             "count_from_ability": "wisdom_modifier",
             "minimum": 1,
             "die": "d8"
-          }
+          },
+          "divine_intervention_uses": 1
         }
       },
       {
@@ -416,7 +422,8 @@
             "count_from_ability": "wisdom_modifier",
             "minimum": 1,
             "die": "d8"
-          }
+          },
+          "divine_intervention_uses": 1
         }
       },
       {
@@ -436,7 +443,8 @@
             "count_from_ability": "wisdom_modifier",
             "minimum": 1,
             "die": "d8"
-          }
+          },
+          "divine_intervention_uses": 1
         }
       },
       {
@@ -455,7 +463,8 @@
             "count_from_ability": "wisdom_modifier",
             "minimum": 1,
             "die": "d8"
-          }
+          },
+          "divine_intervention_uses": 1
         }
       },
       {
@@ -476,7 +485,8 @@
             "count_from_ability": "wisdom_modifier",
             "minimum": 1,
             "die": "d8"
-          }
+          },
+          "divine_intervention_uses": 1
         }
       },
       {
@@ -497,7 +507,8 @@
             "count_from_ability": "wisdom_modifier",
             "minimum": 1,
             "die": "d8"
-          }
+          },
+          "divine_intervention_uses": 1
         }
       }
     ]
@@ -999,7 +1010,8 @@
             "components_override": {
               "material": false
             }
-          }
+          },
+          "uses_resource": "divine_intervention_uses"
         }
       ]
     },

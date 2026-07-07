@@ -238,7 +238,11 @@
           "ranger_level": 10,
           "prepared_spells": 9,
           "favored_enemy_uses": 4,
-          "weapon_mastery_count": 2
+          "weapon_mastery_count": 2,
+          "tireless_uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          }
         }
       },
       {
@@ -250,7 +254,11 @@
           "ranger_level": 11,
           "prepared_spells": 10,
           "favored_enemy_uses": 4,
-          "weapon_mastery_count": 2
+          "weapon_mastery_count": 2,
+          "tireless_uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          }
         }
       },
       {
@@ -263,7 +271,11 @@
           "ranger_level": 12,
           "prepared_spells": 10,
           "favored_enemy_uses": 4,
-          "weapon_mastery_count": 2
+          "weapon_mastery_count": 2,
+          "tireless_uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          }
         }
       },
       {
@@ -276,7 +288,11 @@
           "ranger_level": 13,
           "prepared_spells": 11,
           "favored_enemy_uses": 5,
-          "weapon_mastery_count": 2
+          "weapon_mastery_count": 2,
+          "tireless_uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          }
         }
       },
       {
@@ -289,7 +305,15 @@
           "ranger_level": 14,
           "prepared_spells": 11,
           "favored_enemy_uses": 5,
-          "weapon_mastery_count": 2
+          "weapon_mastery_count": 2,
+          "tireless_uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          },
+          "natures_veil_uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          }
         }
       },
       {
@@ -301,7 +325,15 @@
           "ranger_level": 15,
           "prepared_spells": 12,
           "favored_enemy_uses": 5,
-          "weapon_mastery_count": 2
+          "weapon_mastery_count": 2,
+          "tireless_uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          },
+          "natures_veil_uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          }
         }
       },
       {
@@ -314,7 +346,15 @@
           "ranger_level": 16,
           "prepared_spells": 12,
           "favored_enemy_uses": 5,
-          "weapon_mastery_count": 2
+          "weapon_mastery_count": 2,
+          "tireless_uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          },
+          "natures_veil_uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          }
         }
       },
       {
@@ -327,7 +367,15 @@
           "ranger_level": 17,
           "prepared_spells": 14,
           "favored_enemy_uses": 6,
-          "weapon_mastery_count": 2
+          "weapon_mastery_count": 2,
+          "tireless_uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          },
+          "natures_veil_uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          }
         }
       },
       {
@@ -340,7 +388,15 @@
           "ranger_level": 18,
           "prepared_spells": 14,
           "favored_enemy_uses": 6,
-          "weapon_mastery_count": 2
+          "weapon_mastery_count": 2,
+          "tireless_uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          },
+          "natures_veil_uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          }
         }
       },
       {
@@ -353,7 +409,15 @@
           "ranger_level": 19,
           "prepared_spells": 15,
           "favored_enemy_uses": 6,
-          "weapon_mastery_count": 2
+          "weapon_mastery_count": 2,
+          "tireless_uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          },
+          "natures_veil_uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          }
         }
       },
       {
@@ -366,7 +430,15 @@
           "ranger_level": 20,
           "prepared_spells": 15,
           "favored_enemy_uses": 6,
-          "weapon_mastery_count": 2
+          "weapon_mastery_count": 2,
+          "tireless_uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          },
+          "natures_veil_uses": {
+            "equals": "wisdom_modifier",
+            "minimum": 1
+          }
         }
       }
     ]
@@ -753,7 +825,8 @@
               "flat_modifier": "wisdom_modifier",
               "minimum": 1
             }
-          }
+          },
+          "uses_resource": "tireless_uses"
         },
         {
           "type": "triggered_effect",
@@ -834,7 +907,8 @@
             ],
             "target": "self",
             "duration": "until_end_of_your_next_turn"
-          }
+          },
+          "uses_resource": "natures_veil_uses"
         }
       ]
     },

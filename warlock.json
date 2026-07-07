@@ -120,7 +120,8 @@
           "prepared_spell_max_level": 1,
           "pact_slot_count": 2,
           "pact_slot_level": 1,
-          "invocation_count": 3
+          "invocation_count": 3,
+          "magical_cunning_uses": 1
         }
       },
       {
@@ -137,7 +138,8 @@
           "prepared_spell_max_level": 2,
           "pact_slot_count": 2,
           "pact_slot_level": 2,
-          "invocation_count": 3
+          "invocation_count": 3,
+          "magical_cunning_uses": 1
         }
       },
       {
@@ -153,7 +155,8 @@
           "prepared_spell_max_level": 2,
           "pact_slot_count": 2,
           "pact_slot_level": 2,
-          "invocation_count": 3
+          "invocation_count": 3,
+          "magical_cunning_uses": 1
         }
       },
       {
@@ -167,7 +170,8 @@
           "prepared_spell_max_level": 3,
           "pact_slot_count": 2,
           "pact_slot_level": 3,
-          "invocation_count": 5
+          "invocation_count": 5,
+          "magical_cunning_uses": 1
         }
       },
       {
@@ -182,7 +186,8 @@
           "prepared_spell_max_level": 3,
           "pact_slot_count": 2,
           "pact_slot_level": 3,
-          "invocation_count": 5
+          "invocation_count": 5,
+          "magical_cunning_uses": 1
         }
       },
       {
@@ -196,7 +201,8 @@
           "prepared_spell_max_level": 4,
           "pact_slot_count": 2,
           "pact_slot_level": 4,
-          "invocation_count": 6
+          "invocation_count": 6,
+          "magical_cunning_uses": 1
         }
       },
       {
@@ -212,7 +218,8 @@
           "prepared_spell_max_level": 4,
           "pact_slot_count": 2,
           "pact_slot_level": 4,
-          "invocation_count": 6
+          "invocation_count": 6,
+          "magical_cunning_uses": 1
         }
       },
       {
@@ -228,7 +235,8 @@
           "prepared_spell_max_level": 5,
           "pact_slot_count": 2,
           "pact_slot_level": 5,
-          "invocation_count": 7
+          "invocation_count": 7,
+          "magical_cunning_uses": 1
         }
       },
       {
@@ -243,7 +251,8 @@
           "prepared_spell_max_level": 5,
           "pact_slot_count": 2,
           "pact_slot_level": 5,
-          "invocation_count": 7
+          "invocation_count": 7,
+          "magical_cunning_uses": 1
         }
       },
       {
@@ -259,7 +268,8 @@
           "prepared_spell_max_level": 5,
           "pact_slot_count": 3,
           "pact_slot_level": 5,
-          "invocation_count": 7
+          "invocation_count": 7,
+          "magical_cunning_uses": 1
         }
       },
       {
@@ -275,7 +285,8 @@
           "prepared_spell_max_level": 5,
           "pact_slot_count": 3,
           "pact_slot_level": 5,
-          "invocation_count": 8
+          "invocation_count": 8,
+          "magical_cunning_uses": 1
         }
       },
       {
@@ -291,7 +302,8 @@
           "prepared_spell_max_level": 5,
           "pact_slot_count": 3,
           "pact_slot_level": 5,
-          "invocation_count": 8
+          "invocation_count": 8,
+          "magical_cunning_uses": 1
         }
       },
       {
@@ -306,7 +318,8 @@
           "prepared_spell_max_level": 5,
           "pact_slot_count": 3,
           "pact_slot_level": 5,
-          "invocation_count": 8
+          "invocation_count": 8,
+          "magical_cunning_uses": 1
         }
       },
       {
@@ -322,7 +335,8 @@
           "prepared_spell_max_level": 5,
           "pact_slot_count": 3,
           "pact_slot_level": 5,
-          "invocation_count": 9
+          "invocation_count": 9,
+          "magical_cunning_uses": 1
         }
       },
       {
@@ -338,7 +352,8 @@
           "prepared_spell_max_level": 5,
           "pact_slot_count": 3,
           "pact_slot_level": 5,
-          "invocation_count": 9
+          "invocation_count": 9,
+          "magical_cunning_uses": 1
         }
       },
       {
@@ -354,7 +369,8 @@
           "prepared_spell_max_level": 5,
           "pact_slot_count": 4,
           "pact_slot_level": 5,
-          "invocation_count": 9
+          "invocation_count": 9,
+          "magical_cunning_uses": 1
         }
       },
       {
@@ -368,7 +384,8 @@
           "prepared_spell_max_level": 5,
           "pact_slot_count": 4,
           "pact_slot_level": 5,
-          "invocation_count": 10
+          "invocation_count": 10,
+          "magical_cunning_uses": 1
         }
       },
       {
@@ -384,7 +401,8 @@
           "prepared_spell_max_level": 5,
           "pact_slot_count": 4,
           "pact_slot_level": 5,
-          "invocation_count": 10
+          "invocation_count": 10,
+          "magical_cunning_uses": 1
         }
       },
       {
@@ -400,7 +418,8 @@
           "prepared_spell_max_level": 5,
           "pact_slot_count": 4,
           "pact_slot_level": 5,
-          "invocation_count": 10
+          "invocation_count": 10,
+          "magical_cunning_uses": 1
         }
       }
     ]
@@ -547,7 +566,8 @@
             "max_recovered": {
               "equals": "half_pact_slot_maximum_round_up"
             }
-          }
+          },
+          "uses_resource": "magical_cunning_uses"
         }
       ]
     },
@@ -1410,7 +1430,8 @@
               "condition": "blinded",
               "duration": "until_end_of_current_turn"
             }
-          ]
+          ],
+          "uses_resource": "searing_vengeance_uses"
         }
       ]
     },
@@ -1926,7 +1947,13 @@
         { "level": 11, "resources": { "healing_light_dice_count": 12 } },
         { "level": 12, "resources": { "healing_light_dice_count": 13 } },
         { "level": 13, "resources": { "healing_light_dice_count": 14 } },
-        { "level": 14, "resources": { "healing_light_dice_count": 15 } },
+        {
+          "level": 14,
+          "resources": {
+            "healing_light_dice_count": 15,
+            "searing_vengeance_uses": 1
+          }
+        },
         { "level": 15, "resources": { "healing_light_dice_count": 16 } },
         { "level": 16, "resources": { "healing_light_dice_count": 17 } },
         { "level": 17, "resources": { "healing_light_dice_count": 18 } },

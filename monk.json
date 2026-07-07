@@ -111,7 +111,8 @@
           "monk_level": 2,
           "martial_arts_die": "d6",
           "focus_points": 2,
-          "unarmored_movement_bonus_feet": 10
+          "unarmored_movement_bonus_feet": 10,
+          "uncanny_metabolism_uses": 1
         }
       },
       {
@@ -126,7 +127,8 @@
           "monk_level": 3,
           "martial_arts_die": "d6",
           "focus_points": 3,
-          "unarmored_movement_bonus_feet": 10
+          "unarmored_movement_bonus_feet": 10,
+          "uncanny_metabolism_uses": 1
         }
       },
       {
@@ -140,7 +142,8 @@
           "monk_level": 4,
           "martial_arts_die": "d6",
           "focus_points": 4,
-          "unarmored_movement_bonus_feet": 10
+          "unarmored_movement_bonus_feet": 10,
+          "uncanny_metabolism_uses": 1
         }
       },
       {
@@ -154,7 +157,8 @@
           "monk_level": 5,
           "martial_arts_die": "d8",
           "focus_points": 5,
-          "unarmored_movement_bonus_feet": 10
+          "unarmored_movement_bonus_feet": 10,
+          "uncanny_metabolism_uses": 1
         }
       },
       {
@@ -168,7 +172,8 @@
           "monk_level": 6,
           "martial_arts_die": "d8",
           "focus_points": 6,
-          "unarmored_movement_bonus_feet": 15
+          "unarmored_movement_bonus_feet": 15,
+          "uncanny_metabolism_uses": 1
         }
       },
       {
@@ -181,7 +186,8 @@
           "monk_level": 7,
           "martial_arts_die": "d8",
           "focus_points": 7,
-          "unarmored_movement_bonus_feet": 15
+          "unarmored_movement_bonus_feet": 15,
+          "uncanny_metabolism_uses": 1
         }
       },
       {
@@ -194,7 +200,8 @@
           "monk_level": 8,
           "martial_arts_die": "d8",
           "focus_points": 8,
-          "unarmored_movement_bonus_feet": 15
+          "unarmored_movement_bonus_feet": 15,
+          "uncanny_metabolism_uses": 1
         }
       },
       {
@@ -207,7 +214,8 @@
           "monk_level": 9,
           "martial_arts_die": "d8",
           "focus_points": 9,
-          "unarmored_movement_bonus_feet": 15
+          "unarmored_movement_bonus_feet": 15,
+          "uncanny_metabolism_uses": 1
         }
       },
       {
@@ -221,7 +229,8 @@
           "monk_level": 10,
           "martial_arts_die": "d8",
           "focus_points": 10,
-          "unarmored_movement_bonus_feet": 20
+          "unarmored_movement_bonus_feet": 20,
+          "uncanny_metabolism_uses": 1
         }
       },
       {
@@ -233,7 +242,8 @@
           "monk_level": 11,
           "martial_arts_die": "d10",
           "focus_points": 11,
-          "unarmored_movement_bonus_feet": 20
+          "unarmored_movement_bonus_feet": 20,
+          "uncanny_metabolism_uses": 1
         }
       },
       {
@@ -246,7 +256,8 @@
           "monk_level": 12,
           "martial_arts_die": "d10",
           "focus_points": 12,
-          "unarmored_movement_bonus_feet": 20
+          "unarmored_movement_bonus_feet": 20,
+          "uncanny_metabolism_uses": 1
         }
       },
       {
@@ -259,7 +270,8 @@
           "monk_level": 13,
           "martial_arts_die": "d10",
           "focus_points": 13,
-          "unarmored_movement_bonus_feet": 20
+          "unarmored_movement_bonus_feet": 20,
+          "uncanny_metabolism_uses": 1
         }
       },
       {
@@ -272,7 +284,8 @@
           "monk_level": 14,
           "martial_arts_die": "d10",
           "focus_points": 14,
-          "unarmored_movement_bonus_feet": 25
+          "unarmored_movement_bonus_feet": 25,
+          "uncanny_metabolism_uses": 1
         }
       },
       {
@@ -285,7 +298,8 @@
           "monk_level": 15,
           "martial_arts_die": "d10",
           "focus_points": 15,
-          "unarmored_movement_bonus_feet": 25
+          "unarmored_movement_bonus_feet": 25,
+          "uncanny_metabolism_uses": 1
         }
       },
       {
@@ -298,7 +312,8 @@
           "monk_level": 16,
           "martial_arts_die": "d10",
           "focus_points": 16,
-          "unarmored_movement_bonus_feet": 25
+          "unarmored_movement_bonus_feet": 25,
+          "uncanny_metabolism_uses": 1
         }
       },
       {
@@ -310,7 +325,8 @@
           "monk_level": 17,
           "martial_arts_die": "d12",
           "focus_points": 17,
-          "unarmored_movement_bonus_feet": 25
+          "unarmored_movement_bonus_feet": 25,
+          "uncanny_metabolism_uses": 1
         }
       },
       {
@@ -323,7 +339,8 @@
           "monk_level": 18,
           "martial_arts_die": "d12",
           "focus_points": 18,
-          "unarmored_movement_bonus_feet": 30
+          "unarmored_movement_bonus_feet": 30,
+          "uncanny_metabolism_uses": 1
         }
       },
       {
@@ -336,7 +353,8 @@
           "monk_level": 19,
           "martial_arts_die": "d12",
           "focus_points": 19,
-          "unarmored_movement_bonus_feet": 30
+          "unarmored_movement_bonus_feet": 30,
+          "uncanny_metabolism_uses": 1
         }
       },
       {
@@ -349,7 +367,8 @@
           "monk_level": 20,
           "martial_arts_die": "d12",
           "focus_points": 20,
-          "unarmored_movement_bonus_feet": 30
+          "unarmored_movement_bonus_feet": 30,
+          "uncanny_metabolism_uses": 1
         }
       }
     ]
@@ -658,6 +677,11 @@
               }
             }
           }
+        },
+        {
+          "type": "uses_resource",
+          "resource": "uncanny_metabolism_uses",
+          "recharge": "long_rest"
         }
       ]
     },
